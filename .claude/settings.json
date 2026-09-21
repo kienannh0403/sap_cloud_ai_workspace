@@ -1,5 +1,5 @@
 {
-  "autoMemoryDirectory": "~/.claude/auto-memory/ABAP_CLOUD_AI",
+  "autoMemoryDirectory": "~/.claude/auto-memory/Work_space",
   "hooks": {
     "PreToolUse": [
       {
