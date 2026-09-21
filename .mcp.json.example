@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "cds-kb": {
+      "command": "npx",
+      "args": ["-y", "cds-kb-mcp"],
+      "env": {}
+    },
+    "sap-docs": {
+      "command": "npx",
+      "args": ["-y", "mcp-sap-docs"],
+      "env": {}
+    },
+    "sap_cloud_dev": {
+      "command": "node",
+      "args": ["REPLACE_WITH_YOUR_ADT_MCP_SERVER_ENTRYPOINT"],
+      "env": {
+        "SAP_URL": "https://YOUR-ABAP-CLOUD-HOST",
+        "SAP_USER": "YOUR_USER",
+        "SAP_PASSWORD": "YOUR_PASSWORD"
+      }
+    }
+  }
+}

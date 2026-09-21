@@ -1,0 +1,14 @@
+# Netscape HTTP Cookie File
+# https://curl.haxx.se/rfc/cookie_spec.html
+#
+# Copy this file to cookies.txt (same folder) and fill in your real values.
+# NEVER paste these values into chat with the agent — session cookies are live credentials.
+#
+# For classic on-premise/BTP ABAP Environment via SAP_SESSIONID:
+#   Replace <your.domain.com>, <SYS> (system ID, e.g. DS1), <CLI> (client, e.g. 100)
+# https://<your.domain.com>	FALSE	/	TRUE	0	SAP_SESSIONID_<SYS>_<CLI>	<YOUR_VALUE>
+# https://<your.domain.com>	FALSE	/	TRUE	0	sap-usercontext	<YOUR_VALUE>
+#
+# For BTP/Cloud systems (*.ondemand.com), use these two cookies instead:
+# https://<your.domain>.ondemand.com	FALSE	/	TRUE	0	__VCAP_ID__	<YOUR_VALUE>
+# https://<your.domain>.ondemand.com	FALSE	/	TRUE	0	JSESSIONID	<YOUR_VALUE>
