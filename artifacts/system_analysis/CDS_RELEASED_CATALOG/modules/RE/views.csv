@@ -1,0 +1,52 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_REAUTOMATICRENEWALTYPE,Automatic Renewal Type,Automatic Renewal Type,RE-FX,Dimension,dimension,3,0,,top-level
+I_REAUTOMATICRENEWALTYPETEXT,Automatic Renewal Type - Text,Automatic Renewal Type - Text,RE-FX,,text,6,0,,top-level
+I_RENOTICEGIVINGPARTY,Notice Giving Party,Notice Giving Party,RE-FX,Dimension,dimension,3,0,,top-level
+I_RENOTICEGIVINGPARTYTEXT,Notice Giving Party - Text,Notice Giving Party - Text,RE-FX,,text,6,0,,top-level
+I_RENOTICEPROCEDURE,Contract Notice Procedure,Contract Notice Procedure,RE-FX,Dimension,dimension,3,0,,top-level
+I_RENOTICEPROCEDURETEXT,Contract Notice Procedure - Text,Contract Notice Procedure - Text,RE-FX,,text,5,0,,top-level
+I_RENOTICERULE,Notice Rules,Notice Rules,RE-FX,Dimension,dimension,5,0,,top-level
+I_RENOTICERULETEXT,Notice Rules - Text,Notice Rules - Text,RE-FX,,text,5,0,,top-level
+I_RENOTICERULETYPE,Notice Rule Types,Notice Rule Types,RE-FX,Dimension,dimension,3,0,,top-level
+I_RENOTICERULETYPETEXT,Notice Rule Types - Text,Notice Rule Types - Text,RE-FX,,text,6,0,,top-level
+I_RENOTICETYPE,Notice Types,Notice Types,RE-FX,Dimension,dimension,3,0,,top-level
+I_RENOTICETYPETEXT,Notice Types - Text,Notice Types - Text,RE-FX,,text,6,0,,top-level
+I_REOBJECTTYPE,Real Estate Object Type,Real Estate Object Type,RE-FX,,basic,3,0,,top-level
+I_REOBJECTTYPETEXT,Real Estate Object Type - Text,Real Estate Object Type - Text,RE-FX,,text,7,0,,top-level
+I_RERENEWALRULE,Renewal Rules,Renewal Rules,RE-FX,Dimension,dimension,5,0,,top-level
+I_RERENEWALRULETEXT,Renewal Rules - Text,Renewal Rules - Text,RE-FX,,text,5,0,,top-level
+I_RERENEWALRULETYPE,Renewal Rule Type,Renewal Rule Type,RE-FX,Dimension,dimension,3,0,,top-level
+I_RERENEWALRULETYPETEXT,Renewal Rule Types - Text,Renewal Rule Types - Text,RE-FX,,text,6,0,,top-level
+I_RERENEWALTYPE,Renewal Types,Renewal Types,RE-FX,Dimension,dimension,3,0,,top-level
+I_RERENEWALTYPETEXT,Renewal Types - Text,Renewal Types - Text,RE-FX,,text,6,0,,top-level
+I_REARCHITECTUREOBJECTTYPE,Real Estate Architecture Object Type,Real Estate Architecture Object Type,RE-FX-BD,,basic,4,0,,top-level
+I_REARCHITECTUREOBJECTTYPETEXT,Real Estate Architecture Object Type - Text,Real Estate Architecture Object Type - Text,RE-FX-BD,,text,5,0,,top-level
+I_REGNRCRENTALOBJOWNERSHIP,Real Estate Rental Object Ownership,Real Estate Rental Object Ownership,RE-FX-BD,,basic,2,0,,top-level
+I_REGNRCRENTALOBJOWNERSHIPTEXT,Real Estate Rental Obj Ownership - Text,Real Estate Rental Obj Ownership - Text,RE-FX-BD,,text,5,0,,top-level
+I_REGNRCRENTALOBJPORTFOLIO,Real Estate Rental Object Portfolio,Real Estate Rental Object Portfolio,RE-FX-BD,,basic,2,0,,top-level
+I_REGNRCRENTALOBJPORTFOLIOTEXT,Real Estate Rental Obj Portfolio - Text,Real Estate Rental Obj Portfolio - Text,RE-FX-BD,,text,5,0,,top-level
+I_REGNRCRENTALOBJUSAGECATEGORY,RE Generic Rental Object Usage Category,RE Generic Rental Object Usage Category,RE-FX-BD,,basic,4,0,,top-level
+I_REGNRCRENTALOBJUSAGECATTEXT,Real Estate Int Obj Spacegrp Type - Text,Real Estate Int Obj Spacegrp Type - Text,RE-FX-BD,,text,5,0,,top-level
+I_REGNRCRENTALOBJUSAGETYPE,Real Estate Rental Object Usage Type,Real Estate Rental Object Usage Type,RE-FX-BD,,basic,3,0,,top-level
+I_REGNRCRENTALOBJUSAGETYPETEXT,Generic Rental Object Usage Type - Text,Generic Rental Object Usage Type - Text,RE-FX-BD,,text,5,0,,top-level
+I_RERENTABLEOBJECTCATEGORY,Real Estate Rentable Object Category,Real Estate Rentable Object Category,RE-FX-BD,Dimension,dimension,3,0,,top-level
+I_RERENTABLEOBJECTCATEGORYTEXT,Real Estate Rentable Object Category - Text,Real Estate Rentable Object Category - Text,RE-FX-BD,,text,6,0,,top-level
+I_RECASHFLOWORIGIN,Cash Flow Origin,Cash Flow Origin,RE-FX-CN,Dimension,dimension,3,0,,top-level
+I_RECASHFLOWORIGINTEXT,Cash Flow Origin - Text,Cash Flow Origin - Text,RE-FX-CN,,text,6,0,,top-level
+I_RECASHFLOWPOSTINGSTATUS,Cash Flow Posting Status,Cash Flow Posting Status,RE-FX-CN,Dimension,dimension,3,0,,top-level
+I_RECASHFLOWPOSTINGSTATUSTEXT,Cash Flow Posting Status - Text,Cash Flow Posting Status - Text,RE-FX-CN,,text,6,0,,top-level
+I_RECONDITIONGROUP,Condition Group,Condition Group,RE-FX-CN,Dimension,dimension,2,0,,top-level
+I_RECONDITIONGROUPTEXT,Condition Group - Text,Condition Group - Text,RE-FX-CN,,text,5,0,,top-level
+I_RECONDITIONTYPE,Condition Type,Condition Type,RE-FX-CN,Dimension,dimension,16,0,,top-level
+I_RECONDITIONTYPEBYCNDNGROUP,Condition Type per Condition Group,Condition Type per Condition Group,RE-FX-CN,Dimension,dimension,12,0,,top-level
+I_RECONDITIONTYPETEXT,Condition Type - Text,Condition Type - Text,RE-FX-CN,,text,5,0,,top-level
+I_RECONTRACTDATA,Real Estate Contract,Real Estate Contract,RE-FX-CN,,basic,82,0,Company Code,top-level
+I_RECONTRACTNOTICEPARTY,Contract Notice given by,Contract Notice given by,RE-FX-CN,Dimension,dimension,3,0,,top-level
+I_RECONTRACTNOTICEPARTYTEXT,Contract Notice given by - Text,Contract Notice given by - Text,RE-FX-CN,,text,6,0,,top-level
+I_RECONTRACTNOTICEREASON,Contract Notice Reason,Contract Notice Reason,RE-FX-CN,Dimension,dimension,8,0,,top-level
+I_RECONTRACTNOTICEREASONTEXT,Contract Notice Reason - Text,Contract Notice Reason - Text,RE-FX-CN,,text,4,0,,top-level
+I_REFLOWTYPE,Flow Type,Flow Type,RE-FX-CN,Dimension,dimension,9,0,,top-level
+I_REFLOWTYPETEXT,Flow Type - Text,Flow Type - Text,RE-FX-CN,,text,5,0,,top-level
+I_REINTEGOBJECTINTCONTRSETUP,Integration Object Internal Contr Setup,Integration Object Internal Contr Setup,RE-FX-IP,Dimension,dimension,2,0,,top-level
+I_REINVOICEDATA,Real Estate Invoice Header,Real Estate Invoice Header,RE-FX-RA,,basic,26,0,Business Partner; Company Code; Fiscal Year,top-level
+I_REINVOICEITEMDATA,Real Estate Invoice Item,Real Estate Invoice Item,RE-FX-RA,,basic,14,0,,top-level

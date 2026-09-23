@@ -1,0 +1,29 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_EQUICATEGORYTEXT,Equipment Category - Text,Equipment Category - Text,PM-EQM-EQ,,text,5,0,,alias
+I_EQUIPMENT,Equipment,Equipment,PM-EQM-EQ,Dimension,dimension,72,0,Batch; Equipment; Material / Product; Plant; Storage Location,alias
+I_EQUIPMENTCATEGORY,Equipment Category,Equipment Category,PM-EQM-EQ,Dimension,dimension,12,0,,alias
+I_EQUIPMENTCATEGORYSTDVH,Equipment Category,Equipment Category,PM-EQM-EQ,,value_help,12,0,,alias
+I_EQUIPMENTSTATUS,Equipment Status,Equipment Status,PM-EQM-EQ,,basic,10,0,Equipment,alias
+I_EQUIPMENTSTDVH,Equipment,Equipment,PM-EQM-EQ,,value_help,8,0,Equipment,alias
+I_EQUIPMENTTEXT,Equipment - Text,Equipment - Text,PM-EQM-EQ,,text,10,0,Equipment,alias
+I_EQUIPMENTTEXTDEX,Data Extraction for Equipment - Text,Data Extraction for Equipment - Text,PM-EQM-EQ,,basic,10,0,Equipment,alias
+I_MAINTPLNRGRPSTDVH,Maintenance Planner Group,Maintenance Planner Group,PM-EQM-EQ,,value_help,4,0,,alias
+I_TECHNICALOBJECT,Technical Object,Technical Object,PM-EQM-EQ,Dimension,dimension,85,0,Distribution Channel; Division; Equipment; Material / Product; Sales Group; Sales Office; Sales Organization,alias
+I_TECHNICALOBJECTTEXT,Technical Object - Text,Technical Object - Text,PM-EQM-EQ,,text,9,0,,alias
+I_TECHNICALOBJECTTYPE,Techncial Object Type,Techncial Object Type,PM-EQM-EQ,Dimension,dimension,3,0,,alias
+I_TECHNICALOBJECTTYPESTDVH,Techncial Object Type,Techncial Object Type,PM-EQM-EQ,,value_help,2,0,,alias
+I_TECHNICALOBJECTTYPETEXT,Technical Object Type - Text,Technical Object Type - Text,PM-EQM-EQ,,text,5,0,,alias
+I_TECHOBJAUTHZNGRP,Technical Object Authorization Group,Technical Object Authorization Group,PM-EQM-EQ,Dimension,dimension,2,0,,alias
+I_TECHOBJAUTHZNGRPTEXT,Technical Object Authorization Group - Text,Technical Object Authorization Group - Text,PM-EQM-EQ,,text,5,0,,alias
+I_TECHOBJINSPECTIONLEVELCODE,Technical Object Inspection Level,Technical Object Inspection Level,PM-EQM-EQ,Dimension,dimension,2,0,,alias
+I_TECHOBJINSPECTIONLEVELTEXT,Technical Object Inspection Level - Text,Technical Object Inspection Level - Text,PM-EQM-EQ,,text,4,0,,alias
+I_TECHOBJISEQUIPORFUNCNLLOC,Technical Object is Equi or Func Loc,Technical Object is Equi or Func Loc,PM-EQM-EQ,Dimension,dimension,2,0,,alias
+I_TECHOBJISEQUIPORFUNCNLLOCT,Tech Object is Equi or Func Loc - Text,Tech Object is Equi or Func Loc - Text,PM-EQM-EQ,,basic,5,0,,alias
+I_FLOCCATEGORYTEXT,Functional Location Category - Text,Functional Location Category - Text,PM-EQM-FL,,text,5,0,,alias
+I_FUNCLOCATIONSTRUCTURE,Functional Location Structure,Functional Location Structure,PM-EQM-FL,,basic,7,0,,alias
+I_FUNCLOCATIONSTRUCTURETEXT,Functional Location Structure - Text,Functional Location Structure - Text,PM-EQM-FL,,text,7,0,,alias
+I_FUNCNLLOCATIONHIERARCHYNODE,Functional Location Hiearchy Interface,Functional Location Hiearchy Interface,PM-EQM-FL,,basic,5,0,,alias
+I_FUNCTIONALLOCATION,Functional Location,Functional Location,PM-EQM-FL,Dimension,dimension,61,0,,alias
+I_FUNCTIONALLOCATIONCATEGORY,Functional Location Category,Functional Location Category,PM-EQM-FL,Dimension,dimension,5,0,,alias
+I_FUNCTIONALLOCATIONSTDVH,Functional Location,Functional Location,PM-EQM-FL,,value_help,8,0,,alias
+I_LOCATIONACCOUNTASSIGNMENT,Location and Account Assignment,Location and Account Assignment,PM-EQM-FL,Dimension,dimension,54,1,Address; Business Area; Company Code; Controlling Area; Cost Center; Distribution Channel; Division; Fixed Asset; Sales Group; Sales Office; Sales Organization; WBS Element,alias

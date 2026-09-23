@@ -1,0 +1,24 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_DUNNINGAREA,Dunning Area,Dunning Area,FI-AR-AR-C,Dimension,dimension,4,0,Company Code,component
+I_DUNNINGAREASTDVH,Dunning Area,Dunning Area,FI-AR-AR-C,,value_help,4,0,Company Code,component
+I_DUNNINGAREATEXT,Dunning Area - Text,Dunning Area - Text,FI-AR-AR-C,,text,6,0,Company Code,component
+I_DUNNINGBLOCKINGREASONCODE,Dunning Blocking Reason Code,Dunning Blocking Reason Code,FI-AR-AR-C,Dimension,dimension,2,0,,component
+I_DUNNINGBLOCKINGREASONTEXT,Dunning Blocking Reason - Text,Dunning Blocking Reason - Text,FI-AR-AR-C,,text,4,0,,component
+I_DUNNINGKEY,Dunning Key,Dunning Key,FI-AR-AR-C,Dimension,dimension,3,0,,component
+I_DUNNINGKEYTEXT,Dunning Key - Text,Dunning Key - Text,FI-AR-AR-C,,text,4,0,,component
+I_JOURNALENTRYITEMONETIMEDATA,One-Time Data for Journal Entry Item,One-Time Data for Journal Entry Item,FI-AR-IS,Dimension,dimension,47,0,Company Code; Fiscal Year,component
+I_ONETIMEACCOUNTCUSTOMER,One-Time Account Data for Customer Items,One-Time Account Data for Customer Items,FI-AR-IS,Dimension,dimension,33,0,Company Code; Customer; Fiscal Year,component
+I_ONETIMEACCOUNTSUPPLIER,One-Time Account Data for Supplier Items,One-Time Account Data for Supplier Items,FI-AR-IS,Dimension,dimension,33,0,Company Code; Fiscal Year; Supplier,component
+I_PAYMENTBLOCKINGREASON,Payment Blocking Reason,Payment Blocking Reason,FI-AR-IS,Dimension,dimension,2,0,,component
+I_PAYMENTBLOCKINGREASONTEXT,Payment Blocking Reason - Text,Payment Blocking Reason - Text,FI-AR-IS,,text,4,0,,component
+I_PAYMENTDIFFERENCEREASON,Payment Difference Reason,Payment Difference Reason,FI-AR-IS,Dimension,dimension,6,0,Company Code,component
+I_PAYMENTDIFFERENCEREASONT,Payment Difference Reason - Text,Payment Difference Reason - Text,FI-AR-IS,,basic,7,0,Company Code,component
+I_PAYMENTTERMS,Payment Terms,Payment Terms,FI-AR-IS,Dimension,dimension,5,0,,component
+I_PAYMENTTERMSCONDITIONS,Payment Terms Conditions,Payment Terms Conditions,FI-AR-IS,Dimension,dimension,29,0,,component
+I_PAYMENTTERMSCONDITIONSTEXT,Payment Terms Conditions - Text,Payment Terms Conditions - Text,FI-AR-IS,,text,7,0,,component
+I_PAYMENTTERMSINSTALLMENTITEM,Installment Items for Terms of Payment,Installment Items for Terms of Payment,FI-AR-IS,,basic,6,0,Payment Terms,component
+I_PAYMENTTERMSTEXT,Payment Term - Text,Payment Term - Text,FI-AR-IS,,text,7,0,,component
+I_STATECENTRALBANKPAYTRSN,State Central Bank Payment Reason,State Central Bank Payment Reason,FI-AR-IS,Dimension,dimension,4,0,,component
+I_TAXBALANCESGRP,Grouping Numbers of Tax Balances,Grouping Numbers of Tax Balances,FI-AR-IS,,basic,8,0,,component
+I_USERTOLERANCEGROUP,Tolerance Group for Group of Users,Tolerance Group for Group of Users,FI-AR-IS,Dimension,dimension,13,0,Company Code,component
+I_USERTOUSERTOLERANCEGROUP,User Assignment to UserTolGroup in Acctg,User Assignment to UserTolGroup in Acctg,FI-AR-IS,,basic,3,0,,component

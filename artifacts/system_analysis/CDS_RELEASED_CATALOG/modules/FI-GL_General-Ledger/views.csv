@@ -1,0 +1,234 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_FISCALCALENDARDATEFORLEDGER,Fiscal Calendar Dates for Ledger,Fiscal Calendar Dates for Ledger,FI-GL-GL,Dimension,dimension,33,0,Company Code; Controlling Area; Fiscal Year,component
+I_FISCALCALYEARPERIODFORCOCODE,Fiscal Year Period for Company Code,Fiscal Year Period for Company Code,FI-GL-GL,Dimension,dimension,14,0,Company Code; Fiscal Year,component
+I_FISCALCALYEARPERIODFORLEDGER,Fiscal Year Period for Ledger,Fiscal Year Period for Ledger,FI-GL-GL,Dimension,dimension,20,0,Company Code; Fiscal Year,component
+I_FISCALPERIODFORCOCODETEXT,Fiscal Period for Company Code - Text,Fiscal Period for Company Code - Text,FI-GL-GL,,text,11,0,Company Code; Fiscal Year,component
+I_FISCALPERIODVALUELIST,Fiscal Period Value List,Fiscal Period Value List,FI-GL-GL,Dimension,dimension,1,0,,component
+I_FISCALYEARFORCOMPANYCODE,Fiscal Year for Company Code,Fiscal Year for Company Code,FI-GL-GL,Dimension,dimension,5,0,Company Code; Fiscal Year,component
+I_FISCALYEARFORLEDGER,Fiscal Year for Ledger,Fiscal Year for Ledger,FI-GL-GL,Dimension,dimension,9,0,Company Code; Fiscal Year,component
+I_FISCALYEARPERIODFORCMPNYCODE,Fiscal Year Period For Company Code,Fiscal Year Period For Company Code,FI-GL-GL,Dimension,dimension,17,0,Company Code; Fiscal Year,component
+I_FISCALYEARPERIODFORLEDGER,Fiscal Year Period for Ledger,Fiscal Year Period for Ledger,FI-GL-GL,Dimension,dimension,22,0,Company Code; Fiscal Year,component
+I_FISCALYEARRAWDATA,Fiscal Year Raw Data,Fiscal Year Raw Data,FI-GL-GL,,basic,3,0,,component
+I_FISCALYEARVARIANTSTDVH,Fiscal Year Variant,Fiscal Year Variant,FI-GL-GL,,value_help,2,0,,component
+I_FISCCALENDARDATEFORCOMPCODE,Fiscal Calendar Date For Company Code,Fiscal Calendar Date For Company Code,FI-GL-GL,Dimension,dimension,26,0,Company Code; Fiscal Year,component
+I_BUSINESSAREA,Business Area,Business Area,FI-GL-GL-A,Dimension,dimension,3,0,Business Area,component
+I_BUSINESSAREASTDVH,Business Area,Business Area,FI-GL-GL-A,,value_help,2,0,Business Area,component
+I_BUSINESSAREATEXT,Business Area - Text,Business Area - Text,FI-GL-GL-A,,text,4,0,Business Area,component
+I_CURRENCYROLE,Currency Role,Currency Role,FI-GL-GL-A,Dimension,dimension,5,0,,component
+I_CURRENCYROLETEXT,Currency Role - Text,Currency Role - Text,FI-GL-GL-A,,text,4,0,,component
+I_DEBITCREDITCODE,Debit Credit Code,Debit Credit Code,FI-GL-GL-A,Dimension,dimension,2,0,,component
+I_DEBITCREDITCODETEXT,Debit Credit Code - Text,Debit Credit Code - Text,FI-GL-GL-A,,text,4,0,,component
+I_FINANCIALTRANSACTIONTYPE,Financial Transaction Type,Financial Transaction Type,FI-GL-GL-A,Dimension,dimension,10,0,,component
+I_FINANCIALTRANSACTIONTYPET,Financial Transaction Type - Text,Financial Transaction Type - Text,FI-GL-GL-A,,basic,4,0,,component
+I_FUNCTIONALAREA,Functional Area,Functional Area,FI-GL-GL-A,Dimension,dimension,5,0,Functional Area,component
+I_FUNCTIONALAREAHIERARCHY,Business Transaction Type Hierarchy Node,Business Transaction Type Hierarchy Node,FI-GL-GL-A,Dimension,dimension,8,1,,component
+I_FUNCTIONALAREAHIERARCHYT,Functional Area Hierarchy - Text,Functional Area Hierarchy - Text,FI-GL-GL-A,,basic,6,0,,component
+I_FUNCTIONALAREAHIERNODE,Functional Area Hierarchy Node,Functional Area Hierarchy Node,FI-GL-GL-A,,basic,15,0,Functional Area,component
+I_FUNCTIONALAREAHIERNODET,Functional Area Hierarchy Node - Text,Functional Area Hierarchy Node - Text,FI-GL-GL-A,,basic,8,0,,component
+I_FUNCTIONALAREATEXT,Functional Area - Text,Functional Area - Text,FI-GL-GL-A,,text,4,0,Functional Area,component
+I_GLRECORDTYPE,General Ledger Record Type,General Ledger Record Type,FI-GL-GL-A,Dimension,dimension,2,0,,component
+I_GLRECORDTYPETEXT,General Ledger Record Type - Text,General Ledger Record Type - Text,FI-GL-GL-A,,text,4,0,,component
+I_LEDGER,Ledger,Ledger,FI-GL-GL-A,Dimension,dimension,12,0,,component
+I_LEDGERGROUP,Ledger Group,Ledger Group,FI-GL-GL-A,Dimension,dimension,2,0,,component
+I_LEDGERGROUPTEXT,Ledger Group - Text,Ledger Group - Text,FI-GL-GL-A,,text,4,0,,component
+I_LEDGERTEXT,Ledger - Text,Ledger - Text,FI-GL-GL-A,,text,4,0,,component
+I_POSTINGKEY,Posting Key,Posting Key,FI-GL-GL-A,Dimension,dimension,9,1,,component
+I_POSTINGKEYTEXT,Posting Key - Text,Posting Key - Text,FI-GL-GL-A,,text,5,0,,component
+I_POSTINGKEYTEXTDEX,Posting Key With Special General Leder Code - Text,Posting Key With Special General Leder Code - Text,FI-GL-GL-A,,basic,6,0,,component
+I_POSTINGKEYWITHSPECIALGLCODE,Posting Key with Special General Ledger Code,Posting Key with Special General Ledger Code,FI-GL-GL-A,Dimension,dimension,4,0,,component
+I_POSTINGKEYWTHSPCLGLCODETXT,Posting Key With Special General Leder Code - Text,Posting Key With Special General Leder Code - Text,FI-GL-GL-A,,text,9,0,,component
+I_MNLACCRSACCRUALSUBOBJECT,Manual Accruals Accrual Subobject,Manual Accruals Accrual Subobject,FI-GL-GL-AAC,,basic,29,0,,component
+I_COCODECOUNTRYVATREGISTRATION,Company Code Ctry/Reg VAT Registration,Company Code Ctry/Reg VAT Registration,FI-GL-GL-F,Dimension,dimension,8,0,Company Code,component
+I_CHARTOFACCOUNTS,Chart Of Accounts,Chart Of Accounts,FI-GL-GL-N,Dimension,dimension,8,0,,component
+I_CHARTOFACCOUNTSSTDVH,Chart Of Accounts,Chart Of Accounts,FI-GL-GL-N,,value_help,2,0,,component
+I_CHARTOFACCOUNTSTEXT,Chart Of Accounts - Text,Chart Of Accounts - Text,FI-GL-GL-N,,text,6,0,Chart of Accounts,component
+I_GLACCOUNT,General Ledger Account,General Ledger Account,FI-GL-GL-N,Dimension,dimension,37,0,Chart of Accounts; Company Code; Functional Area; G/L Account,component
+I_GLACCOUNTAUTHZNINCOMPANY,G/L Account Authorization in Company,G/L Account Authorization in Company,FI-GL-GL-N,,basic,3,0,G/L Account,component
+I_GLACCOUNTINCHARTOFACCOUNTS,G/L Account In Chart Of Accounts,G/L Account In Chart Of Accounts,FI-GL-GL-N,Dimension,dimension,39,0,Chart of Accounts; Functional Area; G/L Account,component
+I_GLACCOUNTINCOMPANYCODE,General Ledger Account in Company Code,General Ledger Account in Company Code,FI-GL-GL-N,Dimension,dimension,50,1,Company Code; G/L Account,component
+I_GLACCOUNTINCOMPANYCODESTDVH,General Ledger Account in Company Code,General Ledger Account in Company Code,FI-GL-GL-N,,value_help,4,0,Company Code; G/L Account,component
+I_GLACCOUNTSTDVH,General Ledger Account,General Ledger Account,FI-GL-GL-N,,value_help,10,0,Chart of Accounts; Company Code; G/L Account,component
+I_GLACCOUNTTEXT,General Ledger Account - Text,General Ledger Account - Text,FI-GL-GL-N,,text,9,0,Chart of Accounts; G/L Account,component
+I_GLACCOUNTTEXTINCOMPANYCODE,G/L Account in Company Code - Text,G/L Account in Company Code - Text,FI-GL-GL-N,,basic,9,0,Chart of Accounts; Company Code; G/L Account,component
+I_GLACCOUNTTEXTRAWDATA,General Ledger Account - Text,General Ledger Account - Text,FI-GL-GL-N,,basic,9,0,Chart of Accounts; G/L Account,component
+I_SEGMENT,Segment,Segment,FI-GL-GL-N,Dimension,dimension,3,0,Segment,component
+I_SEGMENTHIERARCHY,Segment Hierarchy,Segment Hierarchy,FI-GL-GL-N,Dimension,dimension,8,1,,component
+I_SEGMENTHIERARCHYTEXT,Segment Hierarchy - Text,Segment Hierarchy - Text,FI-GL-GL-N,,text,6,0,,component
+I_SEGMENTHIERNODE,Segment Hierarchy Node,Segment Hierarchy Node,FI-GL-GL-N,,basic,14,0,Segment,component
+I_SEGMENTHIERNODET,Segment Hierarchy Node - Text,Segment Hierarchy Node - Text,FI-GL-GL-N,,basic,8,0,,component
+I_SEGMENTSTDVH,Segment,Segment,FI-GL-GL-N,,value_help,2,0,Segment,component
+I_SEGMENTTEXT,Segment - Text,Segment - Text,FI-GL-GL-N,,text,4,0,Segment,component
+I_BUSINESSTRANSACTIONCATEGORY,Business Transaction Category,Business Transaction Category,FI-GL-IS,Dimension,dimension,5,1,,component
+I_BUSINESSTRANSACTIONTYPE,Business Transaction Type,Business Transaction Type,FI-GL-IS,Dimension,dimension,8,0,,component
+I_BUSINESSTRANSACTIONTYPEVH,Business Transaction Type,Business Transaction Type,FI-GL-IS,,value_help,2,0,,component
+I_BUSTRANSACTIONCATEGORYTEXT,Business Transaction Category - Text,Business Transaction Category - Text,FI-GL-IS,,text,4,0,,component
+I_BUSTRANSACTIONCATEGORYVH,Business Transaction Category,Business Transaction Category,FI-GL-IS,,value_help,2,0,,component
+I_BUSTRANSACTIONTYPETEXT,Business Transaction Type - Text,Business Transaction Type - Text,FI-GL-IS,,text,4,0,,component
+I_BUSTRANSTYPESTDVH,Business Transaction Type,Business Transaction Type,FI-GL-IS,,value_help,2,0,,component
+I_COCODECRCYTRANSLATIONBASIC,Currency Translation,Currency Translation,FI-GL-IS,,basic,11,0,Company Code,component
+I_COMPANYCODE,Company Code,Company Code,FI-GL-IS,Dimension,dimension,39,0,Chart of Accounts; Company Code; Controlling Area,component
+I_COMPANYCODECURRENCYROLE,Currency Role of Company Code,Currency Role of Company Code,FI-GL-IS,Dimension,dimension,6,0,Company Code,component
+I_COMPANYCODEHIERARCHY,Company Code Hierarchy,Company Code Hierarchy,FI-GL-IS,Dimension,dimension,8,1,,component
+I_COMPANYCODEHIERARCHYT,Company Code Hierarchy - Text,Company Code Hierarchy - Text,FI-GL-IS,,basic,6,0,,component
+I_COMPANYCODEHIERNODE,Company Code Hierarchy Node,Company Code Hierarchy Node,FI-GL-IS,,basic,15,0,Company Code,component
+I_COMPANYCODEHIERNODET,Company Code Hierarchy Node - Text,Company Code Hierarchy Node - Text,FI-GL-IS,,basic,8,0,,component
+I_COMPANYCODESTDVH,Company Code,Company Code,FI-GL-IS,,value_help,2,0,Company Code,component
+I_COMPANYCODEVH,Company Code,Company Code,FI-GL-IS,,value_help,21,0,Chart of Accounts; Company Code; Controlling Area,component
+I_CONTROLLINGAREA,Controlling Area,Controlling Area,FI-GL-IS,Dimension,dimension,22,0,Controlling Area,component
+I_CONTROLLINGAREASTDVH,Controlling Area,Controlling Area,FI-GL-IS,,value_help,2,0,Controlling Area,component
+I_CONTROLLINGBUSTRANSACTYPE,Controlling Business Transaction Type,Controlling Business Transaction Type,FI-GL-IS,Dimension,dimension,4,0,,component
+I_CONTROLLINGBUSTRANSACTYPET,Ctrlg Business Transaction Type - Text,Ctrlg Business Transaction Type - Text,FI-GL-IS,,basic,4,0,,component
+I_CONTROLLINGDEBITCREDITCODE,Controlling Debit Credit Code,Controlling Debit Credit Code,FI-GL-IS,Dimension,dimension,4,1,,component
+I_CONTROLLINGDEBITCREDITCODET,Debit Credit Code in Controlling - Text,Debit Credit Code in Controlling - Text,FI-GL-IS,,basic,4,0,,component
+I_CONTROLLINGOBJECT,Controlling Object,Controlling Object,FI-GL-IS,Dimension,dimension,14,0,Activity Type; Controlling Area; Order (production / maintenance / internal); Sales Document,component
+I_CONTROLLINGOBJECTCLASS,Controlling Object Class,Controlling Object Class,FI-GL-IS,Dimension,dimension,3,0,,component
+I_CONTROLLINGOBJECTCLASST,Controlling Object Class - Text,Controlling Object Class - Text,FI-GL-IS,,basic,5,0,,component
+I_CONTROLLINGOBJECTSTDVH,Controlling Object,Controlling Object,FI-GL-IS,,value_help,2,0,Controlling Area,component
+I_COSTANALYSISRESOURCE,Cost Analysis Resource,Cost Analysis Resource,FI-GL-IS,Dimension,dimension,7,0,Controlling Area,component
+I_COSTANALYSISRESOURCESTDVH,Cost Analysis Resource,Cost Analysis Resource,FI-GL-IS,,value_help,6,0,Controlling Area,component
+I_COSTANALYSISRESOURCETEXT,Cost Analysis Resource - Text,Cost Analysis Resource - Text,FI-GL-IS,,text,9,0,Controlling Area,component
+I_COSTCENTER,Cost Center,Cost Center,FI-GL-IS,Dimension,dimension,118,0,Business Area; Company Code; Controlling Area; Cost Center; Functional Area; Grant; Plant; Profit Center,component
+I_COSTCENTERACTIVITYTYPE,Cost Center Activity Type,Cost Center Activity Type,FI-GL-IS,Dimension,dimension,30,0,Activity Type; Controlling Area,component
+I_COSTCENTERACTIVITYTYPECAT,Cost Center Activity Type Category,Cost Center Activity Type Category,FI-GL-IS,Dimension,dimension,2,0,,component
+I_COSTCENTERACTIVITYTYPECATT,Category of Activity Type - Text,Category of Activity Type - Text,FI-GL-IS,,basic,4,0,,component
+I_COSTCENTERACTIVITYTYPESTDVH,Cost Center Activity Type,Cost Center Activity Type,FI-GL-IS,,value_help,6,0,Activity Type; Controlling Area,component
+I_COSTCENTERACTIVITYTYPETEXT,Cost Center Activity Type - Text,Cost Center Activity Type - Text,FI-GL-IS,,text,11,0,Activity Type; Controlling Area,component
+I_COSTCENTERCATEGORY,Cost Center Category,Cost Center Category,FI-GL-IS,Dimension,dimension,13,0,Functional Area,component
+I_COSTCENTERCATEGORYTEXT,Cost Center Category - Text,Cost Center Category - Text,FI-GL-IS,,text,4,0,,component
+I_COSTCENTERHIERARCHY,Cost Center Hierarchy,Cost Center Hierarchy,FI-GL-IS,Dimension,dimension,11,1,Controlling Area,component
+I_COSTCENTERHIERARCHYNODE,Cost Center Hierarchy Node,Cost Center Hierarchy Node,FI-GL-IS,,basic,18,0,Controlling Area,component
+I_COSTCENTERHIERARCHYNODET,Cost Center Hierarchy Node - Text,Cost Center Hierarchy Node - Text,FI-GL-IS,,basic,12,0,Controlling Area,component
+I_COSTCENTERHIERARCHYTEXT,Cost Center Hierarchy - Text,Cost Center Hierarchy - Text,FI-GL-IS,,text,9,0,,component
+I_COSTCENTERHIERARCHYVH,Cost Center Hierarchy,Cost Center Hierarchy,FI-GL-IS,Dimension,value_help,6,0,,component
+I_COSTCENTERINCOMPANYCODE,Cost Center In Company Code,Cost Center In Company Code,FI-GL-IS,Dimension,dimension,22,0,Company Code; Controlling Area; Cost Center,component
+I_COSTCENTERSTDVH,Cost Center,Cost Center,FI-GL-IS,,value_help,7,0,Company Code; Controlling Area; Cost Center,component
+I_COSTCENTERTEXT,Cost Center - Text,Cost Center - Text,FI-GL-IS,,text,10,0,Controlling Area; Cost Center,component
+I_COSTCTRACTIVITYTYPEHIERARCHY,Cost Center Activity Type Hierarchy,Cost Center Activity Type Hierarchy,FI-GL-IS,Dimension,dimension,11,1,Controlling Area,component
+I_COSTCTRACTIVITYTYPEHIERNODE,Cost Center Activity Type Hierarchy Node,Cost Center Activity Type Hierarchy Node,FI-GL-IS,,basic,18,0,Activity Type; Controlling Area,component
+I_COSTCTRACTIVITYTYPEHIERNODET,CostCtr Activty Type Hierarchy Node - Text,CostCtr Activty Type Hierarchy Node - Text,FI-GL-IS,,basic,12,0,Controlling Area,component
+I_COSTCTRACTIVITYTYPEHIERTEXT,Activity Type Hierarchy - Text,Activity Type Hierarchy - Text,FI-GL-IS,,text,9,0,,component
+I_COSTINGOVERHEADGROUPVH,Costing Overheads Group,Costing Overheads Group,FI-GL-IS,,value_help,4,0,Valuation Area,component
+I_CURRENCYFIELD,Currency Field,Currency Field,FI-GL-IS,Dimension,dimension,2,0,,component
+I_CURRENCYFIELDTEXT,Currency Field - Text,Currency Field - Text,FI-GL-IS,,text,4,0,,component
+I_CUSTOMERSUPPLIERINDUSTRY,Customer Supplier Industry,Customer Supplier Industry,FI-GL-IS,Dimension,dimension,3,0,,component
+I_CUSTOMERSUPPLIERINDUSTRYTEXT,Customer Supplier Industry - Text,Customer Supplier Industry - Text,FI-GL-IS,,text,4,0,,component
+I_CUSTOMERSUPPLIERINDUSTRYVH,Customer Supplier Industry,Customer Supplier Industry,FI-GL-IS,,value_help,2,0,,component
+I_EXTENDEDWHLDGTAXCODE,Extended Withholding Tax Code,Extended Withholding Tax Code,FI-GL-IS,Cube,cube,14,0,,component
+I_EXTENDEDWHLDGTAXCODETEXT,Extended Withholding Tax Code - Text,Extended Withholding Tax Code - Text,FI-GL-IS,Cube,text,6,0,,component
+I_FINANCIALACCOUNTTYPE,Financial Account Type,Financial Account Type,FI-GL-IS,Dimension,dimension,3,0,,component
+I_FINANCIALACCOUNTTYPESTDVH,Financial Account Type,Financial Account Type,FI-GL-IS,,value_help,3,0,,component
+I_FINANCIALACCOUNTTYPETEXT,Financial Account Type - Text,Financial Account Type - Text,FI-GL-IS,,text,5,0,,component
+I_FINANCIALPLANNINGENTRYITEM,Financial Planning Entry Item,Financial Planning Entry Item,FI-GL-IS,Cube,cube,333,31,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Division; Equipment; Fiscal Year; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment; WBS Element,component
+I_FINANCIALSTATEMENTHIER,Financial Statement Hierarchy,Financial Statement Hierarchy,FI-GL-IS,Dimension,dimension,18,1,,component
+I_FINANCIALSTATEMENTHIERNODE,Financial Statement Hierarchy Node,Financial Statement Hierarchy Node,FI-GL-IS,,basic,20,0,,component
+I_FINANCIALSTATEMENTHIERNODET,Financial Statement Hierarchy Node - Text,Financial Statement Hierarchy Node - Text,FI-GL-IS,,basic,10,0,,component
+I_FINANCIALSTATEMENTHIERT,Financial Statement Hierarchy - Text,Financial Statement Hierarchy - Text,FI-GL-IS,,basic,7,0,,component
+I_FINANCIALSTATEMENTLEAFITEM,Financial Statement Leaf,Financial Statement Leaf,FI-GL-IS,Dimension,dimension,4,0,,component
+I_FINANCIALSTATEMENTLEAFITEMT,Financial Statement Leaf - Text,Financial Statement Leaf - Text,FI-GL-IS,,basic,5,0,,component
+I_FINANCIALSTATEMENTVERSIONT,Financial Statement Version - Text,Financial Statement Version - Text,FI-GL-IS,,basic,4,0,,component
+I_FINPLANNINGENTRYITEMCUBE,Financial Planning Entry Item - Cube,Financial Planning Entry Item - Cube,FI-GL-IS,Cube,cube,323,32,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Division; Fiscal Year; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment; WBS Element,component
+I_FINSTATISTICALKEYFIGITEMBSC,Statistical Keyfigure Items,Statistical Keyfigure Items,FI-GL-IS,Cube,cube,60,0,Activity Type; Company Code; Controlling Area; Grant; Segment,component
+I_FINSTATISTICALKEYFIGUREITEM,Statistical Keyfigures per period,Statistical Keyfigures per period,FI-GL-IS,Cube,cube,73,1,Activity Type; Company Code; Controlling Area; Fiscal Year; Grant; Segment,component
+I_FINWBSELEMENTHIERARCHY,Fin WBS Element Hierarchy,Fin WBS Element Hierarchy,FI-GL-IS,Dimension,dimension,7,0,,component
+I_FINWBSELEMENTHIERARCHYNODE,Fin WBS Element Hierarchy Node,Fin WBS Element Hierarchy Node,FI-GL-IS,,basic,15,0,,component
+I_FINWBSELEMENTHIERARCHYNODET,Fin WBS Element Hierarchy Node - Text,Fin WBS Element Hierarchy Node - Text,FI-GL-IS,,basic,7,0,,component
+I_FINWBSELEMENTHIERARCHYTEXT,Fin WBS Element Hierarchy - Text,Fin WBS Element Hierarchy - Text,FI-GL-IS,,text,6,0,,component
+I_GLACCOUNTFLOWTYPE,GLAccount Flow Type,GLAccount Flow Type,FI-GL-IS,Dimension,dimension,2,0,,component
+I_GLACCOUNTFLOWTYPETEXT,G/L Account Flow Type - Text,G/L Account Flow Type - Text,FI-GL-IS,,text,4,0,,component
+I_GLACCOUNTGROUP,General Ledger Account Group,General Ledger Account Group,FI-GL-IS,Dimension,dimension,5,0,Chart of Accounts,component
+I_GLACCOUNTGROUPSTDVH,General Ledger Account Group,General Ledger Account Group,FI-GL-IS,,value_help,4,0,Chart of Accounts,component
+I_GLACCOUNTGROUPTEXT,G/L Account Group - Text,G/L Account Group - Text,FI-GL-IS,,text,6,0,Chart of Accounts,component
+I_GLACCOUNTHIERARCHY,General Ledger Account Hierarchy,General Ledger Account Hierarchy,FI-GL-IS,Dimension,dimension,13,1,Chart of Accounts,component
+I_GLACCOUNTHIERARCHYNODE,G/L Account Hierarchy Node,G/L Account Hierarchy Node,FI-GL-IS,,basic,18,0,Chart of Accounts,component
+I_GLACCOUNTHIERARCHYNODET,G/L Account Hierarchy Node - Text,G/L Account Hierarchy Node - Text,FI-GL-IS,,basic,9,0,,component
+I_GLACCOUNTHIERARCHYTEXT,G/L Account Hierarchy - Text,G/L Account Hierarchy - Text,FI-GL-IS,,text,6,0,,component
+I_GLACCOUNTLINEITEM,General Ledger Account Line Item,General Ledger Account Line Item,FI-GL-IS,Cube,cube,734,51,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Division; Equipment; Fiscal Year; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment; Supplier; Valuation Area,component
+I_GLACCOUNTLINEITEMRAWDATA,Raw Data of G/L Account Line Item,Raw Data of G/L Account Line Item,FI-GL-IS,Cube,cube,603,11,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Division; Equipment; Fiscal Year; G/L Account; Grant; Material / Product; Personnel; Plant; Profitability Segment; Sales Document; Sales Organization; Segment; Supplier; Valuation Area,component
+I_GLACCOUNTTYPE,General Ledger Account Type,General Ledger Account Type,FI-GL-IS,Dimension,dimension,3,0,,component
+I_GLACCOUNTTYPEFLOWTYPE,Flow Type for G/L Account Type,Flow Type for G/L Account Type,FI-GL-IS,Dimension,dimension,2,0,,component
+I_GLACCOUNTTYPEFLOWTYPETXT,Flow Type for G/L Account Type - Text,Flow Type for G/L Account Type - Text,FI-GL-IS,,text,4,0,,component
+I_GLACCOUNTTYPETEXT,G/L Account Type - Text,G/L Account Type - Text,FI-GL-IS,,text,6,0,,component
+I_GLACCTINCHTOFACCTSSTDVH,G/L Account In Chart Of Accounts,G/L Account In Chart Of Accounts,FI-GL-IS,,value_help,5,0,Chart of Accounts; G/L Account,component
+I_GLOBALCOMPANY,Global Company,Global Company,FI-GL-IS,Dimension,dimension,4,0,,component
+I_INTERNALORDER,Internal Order,Internal Order,FI-GL-IS,Dimension,dimension,128,0,Company Code; Controlling Area; Plant; WBS Element,component
+I_INVENTORYVALUATIONTYPE,Inventory Valuation Type,Inventory Valuation Type,FI-GL-IS,Dimension,dimension,4,0,,component
+I_INVTRYSPECIALSTOCKVALNTYPE,Valuation Type of Special Stock,Valuation Type of Special Stock,FI-GL-IS,Dimension,dimension,3,0,,component
+I_INVTRYSPECIALSTOCKVALNTYPET,Valuation Type of Special Stock - Text,Valuation Type of Special Stock - Text,FI-GL-IS,,basic,6,0,,component
+I_JOURNALENTRY,Journal Entry,Journal Entry,FI-GL-IS,Dimension,dimension,131,2,Company Code; Fiscal Year,component
+I_JOURNALENTRYCOMPANYCODEVH,Company Code,Company Code,FI-GL-IS,,value_help,7,0,Company Code,component
+I_JOURNALENTRYITEM,Journal Entry Item,Journal Entry Item,FI-GL-IS,Cube,cube,739,53,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Division; Equipment; Fiscal Year; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment; Supplier; Valuation Area,component
+I_JOURNALENTRYSTDVH,Journal Entry,Journal Entry,FI-GL-IS,,value_help,5,0,Company Code; Fiscal Year,component
+I_JRNLENTRYITEMOBSLTRSNT,Obsolete Reason of Entry Item - Text,Obsolete Reason of Entry Item - Text,FI-GL-IS,,basic,5,0,,component
+I_JRNLENTRYITEMOBSOLETERSN,Obsolete Reason of Journal Entry Item,Obsolete Reason of Journal Entry Item,FI-GL-IS,Dimension,dimension,3,0,,component
+I_LEDGERCOMPANYCODECRCYROLES,Currency Roles for Ledger,Currency Roles for Ledger,FI-GL-IS,Dimension,dimension,43,0,Company Code,component
+I_LEDGERSOURCELEDGER,Mapping between Ledger and Source Ledger,Mapping between Ledger and Source Ledger,FI-GL-IS,Dimension,dimension,4,0,,component
+I_MOVEMENTCATEGORY,Movement Category,Movement Category,FI-GL-IS,Dimension,dimension,2,0,,component
+I_MOVEMENTCATEGORYTEXT,Movement Category - Text,Movement Category - Text,FI-GL-IS,,text,4,0,,component
+I_MULTICURRENCYACCOUNTING,Multiple Currency Accounting,Multiple Currency Accounting,FI-GL-IS,Dimension,dimension,2,0,,component
+I_MULTICURRENCYACCOUNTINGTEXT,Multiple Currency Accounting - Text,Multiple Currency Accounting - Text,FI-GL-IS,,text,4,0,,component
+I_MYSESSIONCONTEXT,Session Context of the current user,Session Context of the current user,FI-GL-IS,,text,3,0,,component
+I_OFFSETTINGACCOUNT,Offsetting Account,Offsetting Account,FI-GL-IS,Dimension,dimension,11,1,,component
+I_OPERATINGCONCERN,Operating Concern,Operating Concern,FI-GL-IS,Dimension,dimension,3,0,,component
+I_OPERATINGCONCERNTEXT,Operating Concern - Text,Operating Concern - Text,FI-GL-IS,,text,4,0,,component
+I_OPERATIONALACCTGDOCITEM,Operational Accounting Document Item,Operational Accounting Document Item,FI-GL-IS,Dimension,dimension,474,26,Activity Type; Billing Document; Company Code; Controlling Area; Customer; Fiscal Year; G/L Account; Grant; Material / Product; Personnel; Plant; Profitability Segment; Sales Document; Sales Document Type; Segment; Supplier; Valuation Area,component
+I_OPLACCTGDOCITEMCLRGHIST,Accounting Doc Item Clearing History,Accounting Doc Item Clearing History,FI-GL-IS,Dimension,dimension,32,0,,component
+I_OPLACCTGDOCITEMFREEDFNDCRCY,Amount in Freely Defined Currency,Amount in Freely Defined Currency,FI-GL-IS,,basic,68,0,Company Code; Fiscal Year,component
+I_PARKEDOPLACCTGDOCASSETITEM,Parked Asset Item,Parked Asset Item,FI-GL-IS,Dimension,dimension,107,0,Activity Type; Company Code; Controlling Area; Fiscal Year; Functional Area; G/L Account; Grant; Material / Product; Order (production / maintenance / internal); Personnel; Plant; Profitability Segment; Segment,component
+I_PARKEDOPLACCTGDOCGLITEM,Parked General Ledger Item,Parked General Ledger Item,FI-GL-IS,Dimension,dimension,150,0,Activity Type; Company Code; Controlling Area; Fiscal Year; Functional Area; G/L Account; Grant; Material / Product; Order (production / maintenance / internal); Personnel; Plant; Profitability Segment; Segment; Valuation Area,component
+I_PARKEDOPLACCTGDOCITEM,Parked Operational Acctg Document Item,Parked Operational Acctg Document Item,FI-GL-IS,Cube,cube,219,0,Activity Type; Chart of Accounts; Company Code; Controlling Area; Fiscal Year; G/L Account; Grant; Material / Product; Order (production / maintenance / internal); Personnel; Plant; Profitability Segment; Segment; Valuation Area,component
+I_PARKEDOPLACCTGDOCPYBLSITEM,Parked Accounts Payable Item,Parked Accounts Payable Item,FI-GL-IS,Dimension,dimension,160,0,Chart of Accounts; Company Code; Controlling Area; Fiscal Year; G/L Account; Grant; Order (production / maintenance / internal); Segment,component
+I_PARKEDOPLACCTGDOCRBLSITEM,Parked Accounts Receivable Item,Parked Accounts Receivable Item,FI-GL-IS,Dimension,dimension,129,0,Chart of Accounts; Company Code; Fiscal Year; G/L Account; Grant,component
+I_PARKEDOPLACCTGDOCUMENT,Parked Accounting Document,Parked Accounting Document,FI-GL-IS,Dimension,dimension,51,0,Company Code; Fiscal Year,component
+I_PARTNERCOMPANY,Partner Company,Partner Company,FI-GL-IS,Dimension,dimension,12,0,,component
+I_PARTNERCOMPANYCUSTOMERAUTHZN,Customer Authorization in Company,Customer Authorization in Company,FI-GL-IS,,basic,3,0,Customer,component
+I_PARTNERCOMPANYGLACCTAUTHZN,G/L Account Authorization in Company,G/L Account Authorization in Company,FI-GL-IS,,basic,4,0,G/L Account,component
+I_PARTNERCOMPANYSUPPLIERAUTHZN,Supplier Authorization in Company,Supplier Authorization in Company,FI-GL-IS,,basic,3,0,Supplier,component
+I_PLANNINGCATEGORY,Planning Category,Planning Category,FI-GL-IS,Dimension,dimension,24,0,,component
+I_PLANNINGCATEGORYTEXT,Planning Category - Text,Planning Category - Text,FI-GL-IS,,text,4,0,,component
+I_PLANNINGCATSOURCEPLANNINGCAT,Src Category Assignment to Plan Category,Src Category Assignment to Plan Category,FI-GL-IS,Dimension,dimension,6,0,,component
+I_PRFTCTRCOMPANYCODEASSIGNMENT,Company code assignment to profit center,Company code assignment to profit center,FI-GL-IS,Fact,fact,11,0,Controlling Area; Profit Center,component
+I_RECONCILIATIONACCTTYPE,Reconciliation Account Type,Reconciliation Account Type,FI-GL-IS,Dimension,dimension,2,0,,component
+I_RECONCILIATIONACCTTYPETEXT,Reconciliation Account Type Description,Reconciliation Account Type Description,FI-GL-IS,,text,4,0,,component
+I_RECURRENCEENDTYPE,Recurrence End Type,Recurrence End Type,FI-GL-IS,Dimension,dimension,3,0,,component
+I_RECURRENCEENDTYPETEXT,Recurrence End Type - Text,Recurrence End Type - Text,FI-GL-IS,,text,6,0,,component
+I_RECURRINGJOURNALENTRY,Recurring Journal Entry,Recurring Journal Entry,FI-GL-IS,,basic,27,0,Company Code; Fiscal Year,component
+I_REFERENCEDOCUMENTTYPE,Reference Document Type,Reference Document Type,FI-GL-IS,Dimension,dimension,2,0,,component
+I_REFERENCEDOCUMENTTYPETEXT,Reference Document Type - Text,Reference Document Type - Text,FI-GL-IS,,text,4,0,,component
+I_REVERSALREASON,Reversal Reason,Reversal Reason,FI-GL-IS,,basic,3,0,,component
+I_REVERSALREASONTEXT,Reversal Reason - Text,Reversal Reason - Text,FI-GL-IS,,text,4,0,,component
+I_REVERSALREASONVALUEHELP,Reversal Reason,Reversal Reason,FI-GL-IS,,basic,2,0,,component
+I_SELECTEDCURRENCYBRANCH,Selected Currency Branch,Selected Currency Branch,FI-GL-IS,Dimension,dimension,2,0,,component
+I_SELECTEDCURRENCYBRANCHTEXT,Selected Currency Branch - Text,Selected Currency Branch - Text,FI-GL-IS,,text,4,0,,component
+I_SEMTAGGLACCOUNTHIERARCHY,General Ledger Account Hierarchy,General Ledger Account Hierarchy,FI-GL-IS,Dimension,dimension,8,1,,component
+I_SPECIALGLCODE,Special General Ledger Code,Special General Ledger Code,FI-GL-IS,Dimension,dimension,7,0,,component
+I_SPECIALGLCODETEXT,Special General Ledger Code - Text,Special General Ledger Code - Text,FI-GL-IS,,text,7,0,,component
+I_STATISTICALKEYFIGURESTDVH,Statistical Key Figure,Statistical Key Figure,FI-GL-IS,,value_help,6,0,Controlling Area,component
+I_STSTCLKEYFIGUREHIERARCHY,Statistical Key Figure Hierarchy,Statistical Key Figure Hierarchy,FI-GL-IS,Dimension,dimension,10,0,Controlling Area,component
+I_STSTCLKEYFIGUREHIERARCHYT,Statistical Key Figure Hierarchy - Text,Statistical Key Figure Hierarchy - Text,FI-GL-IS,,basic,9,0,,component
+I_STSTCLKEYFIGUREHIERNODE,Statistical Key Figure Hierarchy Node,Statistical Key Figure Hierarchy Node,FI-GL-IS,,basic,18,0,Controlling Area,component
+I_STSTCLKEYFIGUREHIERNODET,Statistical Key Figure Hier Node - Text,Statistical Key Figure Hier Node - Text,FI-GL-IS,,basic,12,0,Controlling Area,component
+I_SUBLEDGERACCLINEITEMTYPE,SubLedger Account LineItem Type,SubLedger Account LineItem Type,FI-GL-IS,Dimension,dimension,2,0,,component
+I_SUBLEDGERACCLINEITEMTYPET,Subledger Account Line Item Type - Text,Subledger Account Line Item Type - Text,FI-GL-IS,,basic,4,0,,component
+I_TAXCALCULATIONPROCEDURE,Tax Calculation Procedure,Tax Calculation Procedure,FI-GL-IS,Dimension,dimension,3,0,,component
+I_TAXCODE,Tax Code,Tax Code,FI-GL-IS,Dimension,dimension,19,2,,component
+I_TAXCODETEXT,Tax Code - Text,Tax Code - Text,FI-GL-IS,,text,6,0,,component
+I_TAXCODEVALUEHELP,Tax Code,Tax Code,FI-GL-IS,,basic,3,0,,component
+I_TAXJURISDICTION,Tax Jurisdiction,Tax Jurisdiction,FI-GL-IS,Dimension,dimension,6,0,,component
+I_TAXJURISDICTIONTEXT,Tax Jurisdiction - Text,Tax Jurisdiction - Text,FI-GL-IS,,text,6,0,,component
+I_TAXTYPE,Tax Type,Tax Type,FI-GL-IS,Dimension,dimension,2,0,,component
+I_TAXTYPETEXT,Tax Type - Text,Tax Type - Text,FI-GL-IS,,text,4,0,,component
+I_USERSETGETPARAMFORCTRLGAREA,User Parameter for Controlling Area,User Parameter for Controlling Area,FI-GL-IS,Dimension,dimension,4,0,Controlling Area,component
+I_VIRTUALPLANNINGCATEGORY,Planning Category,Planning Category,FI-GL-IS,Dimension,dimension,4,0,,component
+I_WITHHOLDINGTAXCODE,Withholding Tax Code,Withholding Tax Code,FI-GL-IS,Dimension,dimension,11,0,,component
+I_ORGANIZATIONALCHANGE,Organizational Change,Organizational Change,FI-GL-OC,Dimension,dimension,25,0,,component
+I_ORGANIZATIONALCHANGETEXT,Language Dependent Orgl Change Attributes - Text,Language Dependent Orgl Change Attributes - Text,FI-GL-OC,,text,6,0,,component
+I_PROFITCENTERTOCOSTCENTER,Assgmt of PrftCtr to Cost Center,Assgmt of PrftCtr to Cost Center,FI-GL-OC,Dimension,dimension,18,0,Company Code; Controlling Area; Cost Center,component
+I_PROFITCENTERTOFIXEDASSET,Assgmt of PrftCtr to Fixed Asset,Assgmt of PrftCtr to Fixed Asset,FI-GL-OC,Dimension,dimension,26,0,Company Code; Controlling Area; Fixed Asset; WBS Element,component
+I_PROFITCENTERTONETWORKACTY,Assgmt of PrftCtr to Network Activity,Assgmt of PrftCtr to Network Activity,FI-GL-OC,Dimension,dimension,24,0,Company Code; Controlling Area; Order (production / maintenance / internal),component
+I_PROFITCENTERTOOPENITEM,Assgmt of PrftCtr to Open Item,Assgmt of PrftCtr to Open Item,FI-GL-OC,Dimension,dimension,23,0,Company Code; Controlling Area; Fiscal Year,component
+I_PROFITCENTERTOORDER,Assgmt of PrftCtr to Order,Assgmt of PrftCtr to Order,FI-GL-OC,Dimension,dimension,24,0,Company Code; Controlling Area; Order (production / maintenance / internal); WBS Element,component
+I_PROFITCENTERTOPRODUCT,Assgmt of PrftCtr to Product,Assgmt of PrftCtr to Product,FI-GL-OC,Dimension,dimension,20,0,Company Code; Controlling Area; Material / Product; Plant,component
+I_PROFITCENTERTOPROJECT,Assgmt of PrftCtr to Project,Assgmt of PrftCtr to Project,FI-GL-OC,Dimension,dimension,18,0,Company Code; Controlling Area,component
+I_PROFITCENTERTOPURORDERITEM,Assgmt of PrftCtr to PurOrd Item,Assgmt of PrftCtr to PurOrd Item,FI-GL-OC,,basic,30,0,Company Code; Controlling Area; Cost Center; Fixed Asset; Order (production / maintenance / internal); Purchasing Document; Sales Document,component
+I_PROFITCENTERTOSALESORDERITEM,Assgmt of PrftCtr to SlsOrd Item,Assgmt of PrftCtr to SlsOrd Item,FI-GL-OC,Dimension,dimension,26,0,Company Code; Controlling Area; Cost Center; Order (production / maintenance / internal); Sales Document,component
+I_PROFITCENTERTOWBSELEMENT,Assgmt of PrftCtr to WBS Element,Assgmt of PrftCtr to WBS Element,FI-GL-OC,Dimension,dimension,21,0,Company Code; Controlling Area; WBS Element,component

@@ -1,0 +1,42 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_EWM_DELIVERYCATEGORY_2,Delivery Category,Delivery Category,SCM-EWM-DLP,Dimension,dimension,1,0,,top-level
+I_EWM_DELIVERYTYPETEXT_2,Warehouse Delivery Type - Text,Warehouse Delivery Type - Text,SCM-EWM-DLP,,basic,5,0,,top-level
+I_EWM_DELIVERYTYPE_2,Warehouse Delivery Type,Warehouse Delivery Type,SCM-EWM-DLP,Dimension,dimension,4,0,,top-level
+I_EWM_INBDELIVERYHEADER,Warehouse Inbound Delivery Header,Warehouse Inbound Delivery Header,SCM-EWM-DLP,,basic,21,0,Business Partner,top-level
+I_EWM_INBDELIVERYITEM,Warehouse Inbound Delivery Item,Warehouse Inbound Delivery Item,SCM-EWM-DLP,,basic,86,0,Batch; WBS Element,top-level
+I_EWM_INBDELIVERYITEMSRLNMBR,Warehouse Inb Deliv Item Serial Number,Warehouse Inb Deliv Item Serial Number,SCM-EWM-DLP,,basic,5,0,,top-level
+I_EWM_INBOUNDDELIVERYTYPE_2,Warehouse Inbound Delivery Type,Warehouse Inbound Delivery Type,SCM-EWM-DLP,Dimension,dimension,4,0,,top-level
+I_EWM_OUTBDELIVORDHDR,Warehouse Outbound Delivery Order Header,Warehouse Outbound Delivery Order Header,SCM-EWM-DLP,,basic,33,0,Business Partner; Sales Organization,top-level
+I_EWM_OUTBDELIVORDITEM,Warehouse Outbound Delivery Order Item,Warehouse Outbound Delivery Order Item,SCM-EWM-DLP,,basic,78,0,Batch; Sales Document; WBS Element,top-level
+I_EWM_OUTBDELIVORDITEMSRLNMBR,Warehouse Outb Dlv Ord Itm Serial Number,Warehouse Outb Dlv Ord Itm Serial Number,SCM-EWM-DLP,,basic,5,0,,top-level
+I_EWM_OUTBOUNDDELIVORDERTYPE_2,Warehouse Outbound Delivery Order Type,Warehouse Outbound Delivery Order Type,SCM-EWM-DLP,Dimension,dimension,4,0,,top-level
+I_EWM_AVAILABLESTOCK,Available Stock,Available Stock,SCM-EWM-WOP,,basic,37,0,,top-level
+I_EWM_FIXEDBINASSIGNMENT,Warehouse Fixed Bin Assignment,Warehouse Fixed Bin Assignment,SCM-EWM-WOP,,basic,12,0,,top-level
+I_EWM_HNDLGUNITID,Warehouse Handling Unit Identification,Warehouse Handling Unit Identification,SCM-EWM-WOP,,basic,3,0,,top-level
+I_EWM_PHYSICALINVENTORYITEM,Warehouse Physical Inventory Item,Warehouse Physical Inventory Item,SCM-EWM-WOP,,basic,60,0,Batch; Material / Product; WBS Element,top-level
+I_EWM_PHYSINVTRYITEMROW,Row of PInv Item with Quantity in Whse,Row of PInv Item with Quantity in Whse,SCM-EWM-WOP,,basic,65,0,Batch; Material / Product; WBS Element,top-level
+I_EWM_PHYSSTOCKPROD,Physical Stock for Products,Physical Stock for Products,SCM-EWM-WOP,,basic,91,0,Batch; Material / Product,top-level
+I_EWM_PINVITEMFLATTENEDROW,Flattened Row of PInv Item in Warehouse,Flattened Row of PInv Item in Warehouse,SCM-EWM-WOP,,basic,59,0,Batch; Material / Product; WBS Element,top-level
+I_EWM_PINVITEMROWSRLNMBR,Serial Number of Whse PInv Item Row,Serial Number of Whse PInv Item Row,SCM-EWM-WOP,,basic,11,0,,top-level
+I_EWM_PLANTSTORLOCMAPTOWHSE,Mapping plant and stor loc to warehouse,Mapping plant and stor loc to warehouse,SCM-EWM-WOP,,basic,6,0,Plant; Storage Location,top-level
+I_EWM_PRODUCTSTORAGETYPE,Product Storage Type,Product Storage Type,SCM-EWM-WOP,,basic,57,9,Business Partner; Material / Product,top-level
+I_EWM_PRODUCTWAREHOUSE,Product Warehouse Data,Product Warehouse Data,SCM-EWM-WOP,,basic,83,6,Business Partner; Material / Product,top-level
+I_EWM_QLTYINSPDOCUUID,Whse Quality Insp UUID to Quality Insp,Whse Quality Insp UUID to Quality Insp,SCM-EWM-WOP,,basic,3,0,,top-level
+I_EWM_STORAGEBINACCESSTYPE,Storage Bin Access Type,Storage Bin Access Type,SCM-EWM-WOP,Dimension,dimension,4,0,,top-level
+I_EWM_STORAGEBINACCTYPETEXT,Storage Bin Access Type - Text,Storage Bin Access Type - Text,SCM-EWM-WOP,,text,5,0,,top-level
+I_EWM_STORAGEBINISEMPTYTEXT,Empty Storage Bin Indicator - Text,Empty Storage Bin Indicator - Text,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORAGEBINISFULLTEXT,Full Storage Bin Indicator - Text,Full Storage Bin Indicator - Text,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINISAVAILABLETEXT,Storage Bin Is Available Indicator - Txt,Storage Bin Is Available Indicator - Txt,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINISBLOCKEDTEXT,Storage Bin Is Blocked Indicator - Txt,Storage Bin Is Blocked Indicator - Txt,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINISUTILIZEDTEXT,Storage Bin Is Utilized Indicator - Txt,Storage Bin Is Utilized Indicator - Txt,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINMAXVOLISMNTNDTEXT,Storage Bin Max Volume Is Mntnd - Text,Storage Bin Max Volume Is Mntnd - Text,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINMAXWGTISMNTNDTEXT,Storage Bin Max Weight Is Mntnd - Text,Storage Bin Max Weight Is Mntnd - Text,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINPINVBLOCKTEXT,Block Indicator for Inventory - Text,Block Indicator for Inventory - Text,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINPUTAWAYBLOCKTEXT,Block Indicator for Putaway - Text,Block Indicator for Putaway - Text,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINREMOVALBLOCKTEXT,Block Indicator for Removal - Text,Block Indicator for Removal - Text,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_STORBINTOTCAPISMNTNDTEXT,Storage Bin Max Cap Is Maintained - Txt,Storage Bin Max Cap Is Maintained - Txt,SCM-EWM-WOP,,text,4,0,,top-level
+I_EWM_WAREHOUSEORDER_2,Warehouse Order,Warehouse Order,SCM-EWM-WOP,,basic,42,1,,top-level
+I_EWM_WAREHOUSETASK_2,Open and Confirmed Warehouse Tasks,Open and Confirmed Warehouse Tasks,SCM-EWM-WOP,,basic,142,2,Material / Product,top-level
+I_EWM_WHSEORDERHNDLGUNIT_2,Handling Unit for Warehouse Order,Handling Unit for Warehouse Order,SCM-EWM-WOP,,basic,17,0,Material / Product,top-level
+I_EWM_WHSETASKEXCEPTIONCODE_2,Exception Code for Warehouse Task,Exception Code for Warehouse Task,SCM-EWM-WOP,,basic,6,0,,top-level
+I_EWM_WHSETASKSERIALNUMBER,Serial Number for Warehouse Task,Serial Number for Warehouse Task,SCM-EWM-WOP,,basic,4,0,,top-level

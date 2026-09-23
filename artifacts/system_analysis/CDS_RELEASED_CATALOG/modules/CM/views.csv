@@ -1,0 +1,54 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_LEGALCATEGORYAPI01,Legal Category,Legal Category,CM-CAT,,basic,21,0,,top-level
+I_LGLCNTNTMCATTYPETEXTAPI01,Category Type - Text,Category Type - Text,CM-CAT,,basic,2,0,,top-level
+I_LEGALCONTEXTAPI01,Legal Context,Legal Context,CM-CTX,,basic,22,0,,top-level
+I_LEGALDOCUMENTAPI01,Legal Document,Legal Document,CM-DOC,,basic,18,1,,top-level
+I_LGLCNTNTMCNTNTTYPEAPI01,Document Content Type,Document Content Type,CM-DOC,,basic,2,0,,top-level
+I_LGLCNTNTMCNTNTTYPETXTAPI01,Document Content Type - Text,Document Content Type - Text,CM-DOC,,basic,3,0,,top-level
+I_LGLCNTNTMDOCSTAMPAPI01,Document Stamp Name,Document Stamp Name,CM-DOC,,basic,2,0,,top-level
+I_LGLCNTNTMDOCSTAMPTEXTAPI01,Document Stamp Name - Text,Document Stamp Name - Text,CM-DOC,,basic,3,0,,top-level
+I_LGLCNTNTMDOCSTATUSAPI01,Document Status,Document Status,CM-DOC,,basic,2,0,,top-level
+I_LGLCNTNTMDOCSTATUSTEXTAPI01,Document Status - Text,Document Status - Text,CM-DOC,,basic,3,0,,top-level
+I_LGLCNTNTMDOCTYPETEXTAPI01,Legal Document Type - Text,Legal Document Type - Text,CM-DOC,,basic,3,0,,top-level
+I_LGLCNTNTMLGLDOCSRCETXTAPI01,Legal Document Source - Text,Legal Document Source - Text,CM-DOC,,basic,3,0,,top-level
+I_LGLCNTNTMACCESSLVLAPI01,Access Level,Access Level,CM-GF,,basic,2,0,,top-level
+I_LGLCNTNTMACCESSLVLTEXTAPI01,Access Level - Text,Access Level - Text,CM-GF,,basic,3,0,,top-level
+I_LGLCNTNTMCNTXTSTATUSTXTAPI01,Context Status - Text,Context Status - Text,CM-GF,,basic,3,0,,top-level
+I_LGLCNTNTMGOVLAWAPI01,Governing Law,Governing Law,CM-GF,,basic,2,0,,top-level
+I_LGLCNTNTMGOVLAWTEXTAPI01,Governing Law - Text,Governing Law - Text,CM-GF,,basic,3,0,,top-level
+I_LGLCNTNTMMAINORGTYPETXTAPI01,Main Organisation Type - Text,Main Organisation Type - Text,CM-GF,,basic,3,0,,top-level
+I_LGLCNTNTMPROFILEAPI01,Profile,Profile,CM-GF,,basic,2,0,,top-level
+I_LGLCNTNTMPROFILETEXTAPI01,Profile - Text,Profile - Text,CM-GF,,basic,3,0,,top-level
+I_LGLCNTNTMRNWLTERMNCLAUSET,Renewal Termination Clause - Text,Renewal Termination Clause - Text,CM-GF,,basic,3,0,,top-level
+I_LEGALTRANSACTIONAPI01,Legal Transaction,Legal Transaction,CM-LT,,basic,27,0,,top-level
+I_LEGALTRANSACTIONBASE,Basic Data of Legal Transaction,Basic Data of Legal Transaction,CM-LT,,basic,17,0,,top-level
+I_LEGALTRANSACTIONHLTHTXTAPI01,Legal Transaction Status - Text,Legal Transaction Status - Text,CM-LT,,basic,3,0,,top-level
+I_LGLCNTNTMDATETYPE,Date Type,Date Type,CM-LT,,basic,3,0,,top-level
+I_LGLCNTNTMDATETYPETEXT,Date Type - Text,Date Type - Text,CM-LT,,text,3,0,,top-level
+I_LGLCNTNTMENTITYTYPE,Entity Type,Entity Type,CM-LT,,basic,2,0,,top-level
+I_LGLCNTNTMENTITYTYPETEXT,Entity Type - Text,Entity Type - Text,CM-LT,,text,3,0,,top-level
+I_LGLCNTNTMEXTCNTCTTYPE,External Contact Type,External Contact Type,CM-LT,,basic,2,0,,top-level
+I_LGLCNTNTMEXTCNTCTTYPETEXT,External Contact Type - Text,External Contact Type - Text,CM-LT,,text,3,0,,top-level
+I_LGLCNTNTMINTCNTCTTYPE,Internal Contact Type,Internal Contact Type,CM-LT,,basic,2,0,,top-level
+I_LGLCNTNTMINTCNTCTTYPETEXT,Internal Contact Type - Text,Internal Contact Type - Text,CM-LT,,text,3,0,,top-level
+I_LGLCNTNTMLINKDOBJTYPE,Linked Object Type,Linked Object Type,CM-LT,,basic,2,0,,top-level
+I_LGLCNTNTMLINKDOBJTYPETEXT,Linked Object Type - Text,Linked Object Type - Text,CM-LT,,text,3,0,,top-level
+I_LGLCNTNTMRELSHPTYPE,Relationship Type,Relationship Type,CM-LT,,basic,2,0,,top-level
+I_LGLCNTNTMRELSHPTYPETEXT,Relationship Type - Text,Relationship Type - Text,CM-LT,,text,3,0,,top-level
+I_LGLTRANSCATEGORYAPI01,Categories of Legal Transaction,Categories of Legal Transaction,CM-LT,,basic,8,0,,top-level
+I_LGLTRANSCATEGORYGROUPAPI01,Category Groups of Legal Transaction,Category Groups of Legal Transaction,CM-LT,,basic,6,0,,top-level
+I_LGLTRANSDATESAPI01,Dates of Legal Transaction,Dates of Legal Transaction,CM-LT,,basic,9,0,,top-level
+I_LGLTRANSDOCLINKAPI01,Linked Documents of Legal Transaction,Linked Documents of Legal Transaction,CM-LT,,basic,5,0,,top-level
+I_LGLTRANSENTITYAPI01,Entities of Legal Transaction,Entities of Legal Transaction,CM-LT,,basic,11,0,,top-level
+I_LGLTRANSEXTCONTACTAPI01,External Contacts of Legal Transaction,External Contacts of Legal Transaction,CM-LT,,basic,9,0,Business Partner,top-level
+I_LGLTRANSINTCONTACTAPI01,Internal Contacts of Legal Transaction,Internal Contacts of Legal Transaction,CM-LT,,basic,11,0,,top-level
+I_LGLTRANSLINKEDOBJECTAPI01,Linked Objects of Legal Transaction,Linked Objects of Legal Transaction,CM-LT,,basic,9,0,,top-level
+I_LGLTRANSMANDFLAGTXTAPI01,Mandatory Flag - Text,Mandatory Flag - Text,CM-LT,,basic,3,0,,top-level
+I_LGLTRANSPARENTCATEGORYAPI01,Parent Categories of Legal Transaction,Parent Categories of Legal Transaction,CM-LT,,basic,10,0,,top-level
+I_LGLTRANSRELATIONSHIPAPI01,Relationships of Legal Transaction,Relationships of Legal Transaction,CM-LT,,basic,9,0,,top-level
+I_LGLTRANSRNWLTERMNAPI01,Lifecycle of Legal Transaction,Lifecycle of Legal Transaction,CM-LT,,basic,14,0,,top-level
+I_LGLTRANSSRCETXTAPI01,Legal Transaction Source - Text,Legal Transaction Source - Text,CM-LT,,basic,3,0,,top-level
+I_LGLTRANSWRKFLWEMLDEADLINE,Email Template for Workflow Deadline,Email Template for Workflow Deadline,CM-LT,,basic,23,0,,top-level
+I_LGLTRANSWRKFLWINSTCE,Data for Workflow Instance,Data for Workflow Instance,CM-LT,,basic,21,0,,top-level
+I_LGLTRANSWRKFLWSTARTEDTASKDET,Legal Transaction Workflow Task Details,Legal Transaction Workflow Task Details,CM-LT,,basic,14,0,,top-level
+I_LGLCNTNTMGMTWRKFLWLGLTRANS,Leading Object for Legal Tasks,Leading Object for Legal Tasks,CM-TSK,,basic,10,0,,top-level

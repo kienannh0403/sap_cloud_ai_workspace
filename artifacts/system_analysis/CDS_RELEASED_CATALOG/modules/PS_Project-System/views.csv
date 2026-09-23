@@ -1,0 +1,96 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_BILLINGCONTROLCATEGORY,Billing Control Category,Billing Control Category,PPM-SCL-BIL,Dimension,dimension,2,0,,alias
+I_BILLINGCONTROLCATEGORYTEXT,Billing Control Category - Text,Billing Control Category - Text,PPM-SCL-BIL,,text,5,0,,alias
+I_BLLBLECTRLBILLGCTRLCATASSGMT,FETCH FROM TABLE TBILLGCTRLCAT,FETCH FROM TABLE TBILLGCTRLCAT,PPM-SCL-BIL,,basic,3,0,,alias
+I_PRJBILLGTRANSFCOSTQTYCODETXT,Transfer Quantity and Costs - Text,Transfer Quantity and Costs - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PRJBLGELMENTRBILLGPLNLINK,Billing Plan for Project Billing Element,Billing Plan for Project Billing Element,PPM-SCL-BIL,,basic,8,0,,alias
+I_PRJBLGELMENTRCANCLNSRCCDTEXT,Source which cancels PBEE - Text,Source which cancels PBEE - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PRJBLGELMENTRCANCLNSRCECODE,Source which cancels PBEE,Source which cancels PBEE,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PRJBLGELMENTRDOCBILLGSTATUS,Document Billing Status,Document Billing Status,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PRJBLGELMENTRDOCBILLGSTSTXT,Document Billing Status - Text,Document Billing Status - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PRJBLGELMENTRJRNLENTRLINK,Journal Entry for Billing Element,Journal Entry for Billing Element,PPM-SCL-BIL,,basic,19,0,Company Code; Fiscal Year,alias
+I_PRJBLGELMENTRSRCETYPETEXT,Project billing element entry source type - Text,Project billing element entry source type - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PRJBLGREQITMMNLBILLGSELTEXT,Prj Billg Req Itm Mnl Billg Sel - Txt,Prj Billg Req Itm Mnl Billg Sel - Txt,PPM-SCL-BIL,,text,6,0,,alias
+I_PROJBILLGELMNTENTRSOURCETYPE,Project billing element entry source type,Project billing element entry source type,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PROJBILLGELMOBJECTLINK,Project Billing Element Object Link,Project Billing Element Object Link,PPM-SCL-BIL,,basic,9,0,Company Code; Sales Document,alias
+I_PROJBILLGREQAPPROVALSTATUS,Project Billing Request Approval Status,Project Billing Request Approval Status,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PROJBILLGREQAPPRVLSTATUSTEXT,Proj Billg Req Approval Status - Text,Proj Billg Req Approval Status - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PROJBILLGREQITMMNLBILLGSEL,Prj Billg Req Itm Mnl Billg Selection,Prj Billg Req Itm Mnl Billg Selection,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PROJBILLGREQITMSRCETYPE,Project Billing Request Item Source Type,Project Billing Request Item Source Type,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PROJBILLGREQITMSRCETYPETEXT,Project Billing Req Itm Srce Type - Text,Project Billing Req Itm Srce Type - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PROJBILLGTRANSFCOSTQTYCODE,Transfer Quantity and Costs,Transfer Quantity and Costs,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PROJECTBILLINGCATEGORY,Project Billing Category,Project Billing Category,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PROJECTBILLINGCATEGORYTEXT,Project Billing Category - Text,Project Billing Category - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PROJECTBILLINGELEMENT,Project Billing Element,Project Billing Element,PPM-SCL-BIL,,basic,26,0,Sales Document; WBS Element,alias
+I_PROJECTBILLINGELEMENTENTRFLW,Entry Flow for Project Billing Element,Entry Flow for Project Billing Element,PPM-SCL-BIL,,basic,56,0,SD/LE Document (generic VBELN),alias
+I_PROJECTBILLINGELEMENTENTRY,Entries for Project Billing Element,Entries for Project Billing Element,PPM-SCL-BIL,,basic,75,0,Material / Product; WBS Element,alias
+I_PROJECTBILLINGREQSTATUSTEXT,Project Billing Request Status - Text,Project Billing Request Status - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PROJECTBILLINGREQUEST,Project Billing Request,Project Billing Request,PPM-SCL-BIL,,basic,23,0,SD/LE Document (generic VBELN),alias
+I_PROJECTBILLINGREQUESTITEM,Items for Project Billing Request,Items for Project Billing Request,PPM-SCL-BIL,,basic,62,0,Material / Product,alias
+I_PROJECTBILLINGREQUESTSTATUS,Project Billing Request Status,Project Billing Request Status,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PROJECTBILLINGREQUESTTYPE,Project Billing Request Document Type,Project Billing Request Document Type,PPM-SCL-BIL,Dimension,dimension,3,0,,alias
+I_PROJECTBILLINGREQUESTTYPETXT,Project Billing Request Document Type - Text,Project Billing Request Document Type - Text,PPM-SCL-BIL,,text,6,0,,alias
+I_PROJDMNDASSGMTSTATUS,Assignment Status for Project Demands,Assignment Status for Project Demands,PPM-SCL-DMN,,basic,3,0,,alias
+I_PROJDMNDASSGMTSTATUSTEXT,Assignment Status for Proj Demands – Text,Assignment Status for Proj Demands – Text,PPM-SCL-DMN,,text,5,0,,alias
+I_PROJDMNDEXPENSEDISTRIBUTION,Distribution of Proj Demand for Expense,Distribution of Proj Demand for Expense,PPM-SCL-DMN,,basic,16,0,,alias
+I_PROJDMNDLASTUPDATESOURCE,Update Source for Project Demands,Update Source for Project Demands,PPM-SCL-DMN,Dimension,dimension,3,0,,alias
+I_PROJDMNDLASTUPDTSOURCETXT,Update Source for Project Demands – Text,Update Source for Project Demands – Text,PPM-SCL-DMN,,text,6,0,,alias
+I_PROJDMNDRESOURCEASSIGNMENT,Resource Assignment to Rsce Dmnd,Resource Assignment to Rsce Dmnd,PPM-SCL-DMN,,basic,20,0,,alias
+I_PROJDMNDRSCEASSGMTDISTR,Rsce Assgmt Distribution for Rsce Dmnd,Rsce Assgmt Distribution for Rsce Dmnd,PPM-SCL-DMN,,basic,23,0,,alias
+I_PROJDMNDRSCEREQDISTRIBUTION,Resource Req Distribution for Rsce Dmnd,Resource Req Distribution for Rsce Dmnd,PPM-SCL-DMN,,basic,22,0,,alias
+I_PROJDMNDSOURCEOFSUPPLY,Resource Assignment Source for Proj Dmnds,Resource Assignment Source for Proj Dmnds,PPM-SCL-DMN,,basic,3,0,,alias
+I_PROJDMNDSOURCEOFSUPPLYTEXT,Rsce Assgmt Source for Proj Dmnds - Text,Rsce Assgmt Source for Proj Dmnds - Text,PPM-SCL-DMN,,text,5,0,,alias
+I_PROJECTDEMAND,Project Demand,Project Demand,PPM-SCL-DMN,,basic,50,0,Plant; Purchasing Organization,alias
+I_PROJECTDEMANDCATEGORY,Project Demand Category,Project Demand Category,PPM-SCL-DMN,Dimension,dimension,3,0,,alias
+I_PROJECTDEMANDCATEGORYTEXT,Project Demand Category - Text,Project Demand Category - Text,PPM-SCL-DMN,,text,5,0,,alias
+I_PROJECTDEMANDEXPENSE,Project Demand for Expense,Project Demand for Expense,PPM-SCL-DMN,,basic,10,0,,alias
+I_PROJECTDEMANDMATERIAL,Project Demand for Material,Project Demand for Material,PPM-SCL-DMN,,basic,19,0,Storage Location,alias
+I_PROJECTDEMANDMATERIALSUPPLY,Supply Data of Material Demand,Supply Data of Material Demand,PPM-SCL-DMN,,basic,16,0,,alias
+I_PROJECTDEMANDRESOURCEREQUEST,Resource Request for Resource Demand,Resource Request for Resource Demand,PPM-SCL-DMN,,basic,13,0,,alias
+I_PROJECTDEMANDSERVICE,Project Demand for Service,Project Demand for Service,PPM-SCL-DMN,,basic,18,0,,alias
+I_PROJECTDEMANDSERVICESUPPLY,Supply Data of Service Demand,Supply Data of Service Demand,PPM-SCL-DMN,,basic,11,0,,alias
+I_PROJECTDEMANDSTATUS,Project Demand Status,Project Demand Status,PPM-SCL-DMN,Dimension,dimension,2,0,,alias
+I_PROJECTDEMANDSTATUSTEXT,Project Demand Status - Text,Project Demand Status - Text,PPM-SCL-DMN,,text,5,0,,alias
+I_PROJECTDEMANDTYPE,Project Demand Type,Project Demand Type,PPM-SCL-DMN,Dimension,dimension,4,0,,alias
+I_PROJECTDEMANDTYPETEXT,Project Demand Type - Text,Project Demand Type - Text,PPM-SCL-DMN,,text,5,0,,alias
+I_PROJECTDEMANDWORK,Project Demand for Resource,Project Demand for Resource,PPM-SCL-DMN,,basic,17,0,Activity Type; Cost Center,alias
+I_ENPRJELMDLVBRLDISTRREVN,Dlvrbl Distr of Ent Proj Elmnt with Revenue,Dlvrbl Distr of Ent Proj Elmnt with Revenue,PPM-SCL-STR,,basic,13,0,,alias
+I_ENTERPRISEPROJECT,Enterprise Project,Enterprise Project,PPM-SCL-STR,Dimension,dimension,58,0,Functional Area; Plant; Profit Center; Sales Document; WBS Element,alias
+I_ENTERPRISEPROJECTELEMENT,Enterprise Project Element,Enterprise Project Element,PPM-SCL-STR,Dimension,dimension,53,0,Functional Area; Plant; Profit Center; Sales Document; WBS Element,alias
+I_ENTERPRISEPROJECTELEMENT_2,Enterprise Project Element,Enterprise Project Element,PPM-SCL-STR,Dimension,dimension,49,0,Functional Area; Plant; Profit Center; Sales Document; WBS Element,alias
+I_ENTERPRISEPROJECTROLE,Enterprise Project Role,Enterprise Project Role,PPM-SCL-STR,,basic,12,0,,alias
+I_ENTERPRISEPROJECTROLETYPE,Role Type for Enterprise Projects,Role Type for Enterprise Projects,PPM-SCL-STR,Dimension,dimension,6,0,,alias
+I_ENTERPRISEPROJECTTEAMMEMBER,Team Member of Enterprise Project,Team Member of Enterprise Project,PPM-SCL-STR,,basic,9,0,,alias
+I_ENTPRJELMNTPROFNLSRVCPLNDKPI,Work package attributes and planned KPIs,Work package attributes and planned KPIs,PPM-SCL-STR,,basic,20,0,,alias
+I_ENTPROJBLKFUNCTIONCODE,Blockable Function for Enterprise Projects,Blockable Function for Enterprise Projects,PPM-SCL-STR,Dimension,dimension,3,0,,alias
+I_ENTPROJBLKFUNCTIONCODETEXT,Blockable Function for Ent Projects - Text,Blockable Function for Ent Projects - Text,PPM-SCL-STR,,text,6,0,,alias
+I_ENTPROJBUSSOLUTIONORDERLINK,Enterprise Project Link to Solution Order,Enterprise Project Link to Solution Order,PPM-SCL-STR,,basic,7,0,,alias
+I_ENTPROJCHGDOCUMENTDEX,Data Extraction for Project Change Document,Data Extraction for Project Change Document,PPM-SCL-STR,Fact,fact,19,0,,alias
+I_ENTPROJECTENTITLEMENT,Enterprise Project Entitlement,Enterprise Project Entitlement,PPM-SCL-STR,,basic,11,0,,alias
+I_ENTPROJECTOBJECTLINKTYPE,Object Link Type for Enterprise Projects,Object Link Type for Enterprise Projects,PPM-SCL-STR,,basic,4,0,,alias
+I_ENTPROJECTOBJECTLINKTYPETEXT,Object Link Type for Ent Projects – Text,Object Link Type for Ent Projects – Text,PPM-SCL-STR,,text,3,0,,alias
+I_ENTPROJECTPRIORITYCODE,Priority for Enterprise Projects,Priority for Enterprise Projects,PPM-SCL-STR,Dimension,dimension,2,0,,alias
+I_ENTPROJECTPRIORITYCODETEXT,Priority for Enterprise Projects - Text,Priority for Enterprise Projects - Text,PPM-SCL-STR,,text,5,0,,alias
+I_ENTPROJECTPROJECTOBJECTLINK,Object Link of Enterprise Project,Object Link of Enterprise Project,PPM-SCL-STR,,basic,13,0,,alias
+I_ENTPROJECTROLECATEGORY,Role Category for Enterprise Projects,Role Category for Enterprise Projects,PPM-SCL-STR,Dimension,dimension,3,0,,alias
+I_ENTPROJECTROLECATEGORYTEXT,Role Category for Ent Projects - Text,Role Category for Ent Projects - Text,PPM-SCL-STR,,text,6,0,,alias
+I_ENTPROJECTROLETYPETEXT,Role Type for Ent Projects - Text,Role Type for Ent Projects - Text,PPM-SCL-STR,,text,5,0,,alias
+I_ENTPROJELMNTBLOCKFUNC_2,Blocked Function of Ent Project Element,Blocked Function of Ent Project Element,PPM-SCL-STR,,basic,7,0,,alias
+I_ENTPROJELMNTDLVBRL,Deliverable of Enterprise Project Element,Deliverable of Enterprise Project Element,PPM-SCL-STR,,basic,13,0,,alias
+I_ENTPROJELMNTDLVBRLDISTR,Deliverable Distribution of Ent Proj Elmnt,Deliverable Distribution of Ent Proj Elmnt,PPM-SCL-STR,,basic,11,0,,alias
+I_ENTPROJELMNTDLVBRLREVENUE,Deliverable of Ent Proj Elmnt with Revenue,Deliverable of Ent Proj Elmnt with Revenue,PPM-SCL-STR,,basic,15,0,,alias
+I_ENTPROJELMNTDLVBRLTYPE,Deliverable Type for Ent Proj Elmnts,Deliverable Type for Ent Proj Elmnts,PPM-SCL-STR,Dimension,dimension,2,0,,alias
+I_ENTPROJELMNTDLVBRLTYPETEXT,Deliverable Type for Ent Proj Elmnts - Txt,Deliverable Type for Ent Proj Elmnts - Txt,PPM-SCL-STR,,text,5,0,,alias
+I_ENTPROJPROCESSINGSTATUS,Processing Status for Enterprise Projects,Processing Status for Enterprise Projects,PPM-SCL-STR,Dimension,dimension,3,0,,alias
+I_ENTPROJPROCESSINGSTATUSTEXT,Processing Status for Ent Projects – Text,Processing Status for Ent Projects – Text,PPM-SCL-STR,,text,6,0,,alias
+I_PPM_AUTHZNBYSUBSTITH,Project Authorizations by Substitution,Project Authorizations by Substitution,PPM-SCL-STR,,basic,5,0,,alias
+I_PPM_AUTHZNBYUSERROLEH,Project Authorizations by User Role,Project Authorizations by User Role,PPM-SCL-STR,,basic,5,0,,alias
+I_PPM_AUTHZNBYUSRGRPH,Project Authorizations by User Group,Project Authorizations by User Group,PPM-SCL-STR,,basic,5,0,,alias
+I_PPM_AUTHZNBYUSRH,Project Authorizations by User,Project Authorizations by User,PPM-SCL-STR,,basic,4,0,,alias
+I_PROJECTPROFILECODE,Project Profile Code,Project Profile Code,PPM-SCL-STR,,basic,2,0,,alias
+I_PROJECTPROFILECODETEXT,Project Profile Code - Text,Project Profile Code - Text,PPM-SCL-STR,,text,5,0,,alias
+I_PROJECTTYPE,Project Type,Project Type,PPM-SCL-STR,,basic,2,0,,alias
+I_PROJECTTYPETEXT,Project Type - Text,Project Type - Text,PPM-SCL-STR,,text,5,0,,alias
+I_PROJSRVCORG,Service Organization,Service Organization,PPM-SCL-STR,,basic,19,0,,alias
+I_PROJSRVCORGCOSTCENTER,Cost Center,Cost Center,PPM-SCL-STR,,basic,6,0,,alias
+I_PROJSRVCORGTEXT,Service Organization - Text,Service Organization - Text,PPM-SCL-STR,,text,5,0,,alias

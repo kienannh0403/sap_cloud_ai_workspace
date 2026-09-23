@@ -1,0 +1,74 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_CONTROLOFQUANTITYVALUEUPDATE,Control of quantity and value update,Control of quantity and value update,MM-IM-GF,,basic,8,0,Valuation Area,component
+I_CUSTOMERCOMPANYBYPLANT,Customer Company by Plant,Customer Company by Plant,MM-IM-GF,,basic,7,0,Company Code; Customer; Plant; Valuation Area,component
+I_DFLTVALSFORINVTRYMGMTANDPINV,Default values IM and Physical INV,Default values IM and Physical INV,MM-IM-GF,,basic,4,0,Plant,component
+I_LABELFORM,Label Form,Label Form,MM-IM-GF,Dimension,dimension,2,0,,component
+I_LABELTYPE,Label Type,Label Type,MM-IM-GF,Dimension,dimension,2,0,,component
+I_MATERIALDOCUMENTYEAR,Years in material documents,Years in material documents,MM-IM-GF,Dimension,dimension,1,0,,component
+I_STOCKDETERMINATIONGROUP,Stock Determination Group,Stock Determination Group,MM-IM-GF,Dimension,dimension,4,0,Plant,component
+I_STOCKDETERMINATIONGROUPTEXT,Determination Group for Stock - Text,Determination Group for Stock - Text,MM-IM-GF,,text,7,0,Plant,component
+I_SUPPLIERCOMPANYBYPLANT,Supplier Company by Plant,Supplier Company by Plant,MM-IM-GF,,basic,7,0,Company Code; Plant; Supplier; Valuation Area,component
+V_MMIM_DDL_OM_OR_EMAIL,Output Management Material Documents E-Mail,Output Management E-Mail,MM-IM-GF,,basic,18,0,Batch; Material / Product; Plant; Purchasing Document; Storage Location,component
+V_MMIM_DDL_OM_OR_GR4PO_EMAIL,Output Management Material Documents E-Mail,Output Management E-Mail GR4PO,MM-IM-GF,,basic,12,0,Purchasing Document,component
+V_MMIM_DDL_OM_PARAM,Good Movement Parameter,Goods Movement Parameters,MM-IM-GF,,basic,35,0,Company Code; Material / Product; Movement Type; Plant; Storage Location,component
+V_MMIM_DDL_OM_PARAM_PI,Good Movement Parameter,Physical Inventory Parameters,MM-IM-GF,,basic,10,0,Company Code; Fiscal Year; Plant; Storage Location,component
+I_RESVNACCTASSGMTCATEGORY,Account Assignment Category,Account Assignment Category,MM-IM-RS,Dimension,dimension,3,0,,component
+I_RESVNACCTASSGMTCATEGORYTEXT,Account Assignment Category - Text,Account Assignment Category - Text,MM-IM-RS,,text,6,0,,component
+I_RESVNCOMPLETIONSTATUS,Completion Status of Reservation,Completion Status of Reservation,MM-IM-RS,Dimension,dimension,3,0,,component
+I_RESVNCOMPLETIONSTATUSTEXT,Completion Status of Reservation - Text,Completion Status of Reservation - Text,MM-IM-RS,,text,6,0,,component
+I_INVENTORYTRANSACTIONTYPE,Inventory Transaction Type,Inventory Transaction Type,MM-IM-VDM-PI,Dimension,dimension,5,0,,component
+I_INVENTORYTRANSACTIONTYPET,Inventory Transaction Type - Text,Inventory Transaction Type - Text,MM-IM-VDM-PI,,basic,5,0,,component
+I_PHYSICALINVTRYISACTVBLKD,Physical Inventory stock indicator,Physical Inventory stock indicator,MM-IM-VDM-PI,Dimension,dimension,3,0,,component
+I_PHYSICALINVTRYISACTVBLKDT,Physical Invtry stock indicator - Text,Physical Invtry stock indicator - Text,MM-IM-VDM-PI,,basic,5,0,,component
+I_PHYSINVTRYCOUNTSTS,Physical Inventory Count Status,Physical Inventory Count Status,MM-IM-VDM-PI,Dimension,dimension,3,0,,component
+I_PHYSINVTRYCOUNTSTSTXT,Count Status of Phys Invtry - Text,Count Status of Phys Invtry - Text,MM-IM-VDM-PI,,text,5,0,,component
+I_PHYSINVTRYCUBE,Physical Inventory - Cube,Physical Inventory - Cube,MM-IM-VDM-PI,Cube,cube,90,0,Batch; Fiscal Year; Material / Product; Movement Type; Plant; Storage Location; WBS Element,component
+I_PHYSINVTRYDELETIONSTS,Physical Inventory Deletion Status,Physical Inventory Deletion Status,MM-IM-VDM-PI,Dimension,dimension,3,0,,component
+I_PHYSINVTRYDELETIONSTSTXT,Deletion Status of Phys Invtry - Text,Deletion Status of Phys Invtry - Text,MM-IM-VDM-PI,,text,5,0,,component
+I_PHYSINVTRYDOCFISCALYEAR,Years of physical inventory document,Years of physical inventory document,MM-IM-VDM-PI,Dimension,dimension,1,0,Fiscal Year,component
+I_PHYSINVTRYDOCHEADER,Physical Inventory Document Header,Physical Inventory Document Header,MM-IM-VDM-PI,Dimension,dimension,38,0,Fiscal Year; Plant; Storage Location; Valuation Area,component
+I_PHYSINVTRYDOCITEM,Physical Inventory Document Item,Physical Inventory Document Item,MM-IM-VDM-PI,Dimension,dimension,87,3,Batch; Fiscal Year; Material / Product; Plant; Storage Location; WBS Element,component
+I_PHYSINVTRYGROUPTYPE,Physical Inventory Group Type,Physical Inventory Group Type,MM-IM-VDM-PI,Dimension,dimension,3,0,,component
+I_PHYSINVTRYGROUPTYPETEXT,Group Type for Phys Invtry - Text,Group Type for Phys Invtry - Text,MM-IM-VDM-PI,,text,5,0,,component
+I_PHYSINVTRYPOSTSTS,Physical Inventory Posting Status,Physical Inventory Posting Status,MM-IM-VDM-PI,Dimension,dimension,3,0,,component
+I_PHYSINVTRYPOSTSTSTXT,Posting Status of Phys Invtry - Text,Posting Status of Phys Invtry - Text,MM-IM-VDM-PI,,text,5,0,,component
+I_PHYSINVTRYREASONCODE,Physical Inventory Reason Type,Physical Inventory Reason Type,MM-IM-VDM-PI,,basic,4,0,Movement Type,component
+I_PHYSINVTRYREASONCODETEXT,Reason Type for Phys Invtry - Text,Reason Type for Phys Invtry - Text,MM-IM-VDM-PI,,text,7,0,Movement Type,component
+I_PHYSINVTRYSTATUST,Status of Phys Invtry - Text,Status of Phys Invtry - Text,MM-IM-VDM-PI,,basic,7,0,,component
+I_PHYSINVTRYSTOCKTYPE,Physical Inventory Stock Type,Physical Inventory Stock Type,MM-IM-VDM-PI,Dimension,dimension,2,0,,component
+I_PHYSINVTRYSTOCKTYPETEXT,Stock Type of Phys Invtry - Text,Stock Type of Phys Invtry - Text,MM-IM-VDM-PI,,text,5,0,,component
+I_PHYSINVTRYTYPE,Physical Inventory Type,Physical Inventory Type,MM-IM-VDM-PI,Dimension,dimension,3,0,,component
+I_PHYSINVTRYTYPETEXT,Type of Phys Invtry - Text,Type of Phys Invtry - Text,MM-IM-VDM-PI,,text,5,0,,component
+I_STOCKTAKINGTRANSACTIONTYPE,Trans Types For Invtry and Stk Taking,Trans Types For Invtry and Stk Taking,MM-IM-VDM-PI,Dimension,dimension,5,0,,component
+I_RESERVATIONDOCRECORDTYPE,Reservation Document Record Type,Reservation Document Record Type,MM-IM-VDM-RSV,Dimension,dimension,2,0,Movement Type,component
+I_RESERVATIONDOCUMENTHEADER,Reservation Document Header,Reservation Document Header,MM-IM-VDM-RSV,Dimension,dimension,39,1,Controlling Area; Cost Center; Fixed Asset; Movement Type; Order (production / maintenance / internal); Profit Center; Profitability Segment; WBS Element,component
+I_RESERVATIONDOCUMENTITEM,Reservation Document Item,Reservation Document Item,MM-IM-VDM-RSV,Dimension,dimension,75,0,Batch; G/L Account; Material / Product; Material Group; Movement Type; Plant; Purchasing Document; Storage Location; Supplier; WBS Element,component
+I_CTRLPOSTGEXTWHSEMGMTSYSTTXT,Control Postg for EWM System - Text,Control Postg for EWM System - Text,MM-IM-VDM-SGM,,text,5,0,,component
+I_CTRLPOSTGFOREXTWHSEMGMTSYST,Control Postg for Ext Whse Mgmt Syst,Control Postg for Ext Whse Mgmt Syst,MM-IM-VDM-SGM,Dimension,dimension,2,0,,component
+I_GDSMVTTYPEBYINVTRYTRANSCODE,Goods Movement Type for Transaction,Goods Movement Type for Transaction,MM-IM-VDM-SGM,,basic,3,0,Movement Type,component
+I_GOODSMOVEMENTCODE,Goods Movement Code,Goods Movement Code,MM-IM-VDM-SGM,Dimension,dimension,3,0,,component
+I_GOODSMOVEMENTCODETEXT,Goods Movement Code - Text,Goods Movement Code - Text,MM-IM-VDM-SGM,,text,6,0,,component
+I_GOODSMOVEMENTCUBE,Analytics of Goods Movements - Cube,Analytics of Goods Movements - Cube,MM-IM-VDM-SGM,Cube,cube,156,1,Batch; Company Code; Controlling Area; Cost Center; Delivery; Distribution Channel; Fiscal Year; Functional Area; G/L Account; Material / Product; Material Group; Movement Type; Plant; Profit Center; Profitability Segment; Sales Group; Sales Organization; Storage Location,component
+I_GOODSMOVEMENTREASONCODE,Goods Movement Reason Code,Goods Movement Reason Code,MM-IM-VDM-SGM,Dimension,dimension,4,0,Movement Type,component
+I_GOODSMOVEMENTREASONCODETEXT,Goods Movement Reason Code - Text,Goods Movement Reason Code - Text,MM-IM-VDM-SGM,,text,7,0,Movement Type,component
+I_GOODSMOVEMENTREFDOCTYPE,Goods Mvt Reference Document Type,Goods Mvt Reference Document Type,MM-IM-VDM-SGM,Dimension,dimension,3,0,,component
+I_GOODSMOVEMENTREFDOCTYPETEXT,Goods Mvt Reference Document Type - Text,Goods Mvt Reference Document Type - Text,MM-IM-VDM-SGM,,text,6,0,,component
+I_GOODSMOVEMENTTYPE,Goods Movement Type,Goods Movement Type,MM-IM-VDM-SGM,Dimension,dimension,9,0,Movement Type,component
+I_GOODSMOVEMENTTYPET,Type of Goods Movement - Text,Type of Goods Movement - Text,MM-IM-VDM-SGM,,basic,5,0,Movement Type,component
+I_INVENTORYSPECIALSTOCKTYPE,Inventory Special Stock Type,Inventory Special Stock Type,MM-IM-VDM-SGM,Dimension,dimension,3,0,,component
+I_INVENTORYSPECIALSTOCKTYPET,Type of Inventory Special Stock - Text,Type of Inventory Special Stock - Text,MM-IM-VDM-SGM,,basic,5,0,,component
+I_INVENTORYSTOCKTYPE,Inventory Stock Type,Inventory Stock Type,MM-IM-VDM-SGM,Dimension,dimension,2,0,,component
+I_INVENTORYSTOCKTYPET,Type of Inventory Stock - Text,Type of Inventory Stock - Text,MM-IM-VDM-SGM,,basic,5,0,,component
+I_INVENTORYUSABILITYCODE,Overrule stock type of GoodsMovementType,Overrule stock type of GoodsMovementType,MM-IM-VDM-SGM,Dimension,dimension,3,0,,component
+I_INVENTORYUSABILITYCODETEXT,Ovrrle stk typ of GoodsMvmntType - Txt,Ovrrle stk typ of GoodsMvmntType - Txt,MM-IM-VDM-SGM,,text,6,0,,component
+I_MATERIALDOCUMENTHEADER_2,Material Document Header,Material Document Header,MM-IM-VDM-SGM,Dimension,dimension,28,0,Plant; Storage Location,component
+I_MATERIALDOCUMENTITEM_2,Material Document Item,Material Document Item,MM-IM-VDM-SGM,Dimension,dimension,152,1,Batch; Business Area; Company Code; Controlling Area; Cost Center; Delivery; G/L Account; Material / Product; Movement Type; Order (production / maintenance / internal); Personnel; Plant; Profit Center; Purchasing Document; Storage Location,component
+I_MATERIALDOCUMENTPOSTGTYPETXT,Material Document Posting Type - Text,Material Document Posting Type - Text,MM-IM-VDM-SGM,,text,5,0,,component
+I_MATERIALDOCUMENTPOSTINGTYPE,Material Document Posting Type,Material Document Posting Type,MM-IM-VDM-SGM,Dimension,dimension,2,0,,component
+I_MATERIALSTOCKTIMESERIES,Material Stock For Periods,Material Stock For Periods,MM-IM-VDM-SGM,Cube,cube,31,0,Company Code; Plant; Storage Location,component
+I_MATERIALSTOCK_2,Material Stock Calculation,Material Stock Calculation,MM-IM-VDM-SGM,Cube,cube,37,0,Company Code; Plant; Storage Location; WBS Element,component
+I_MATLSTKATKEYDATEINALTUOM,Stock At Key Date In Alternative UoM,Stock At Key Date In Alternative UoM,MM-IM-VDM-SGM,Cube,cube,34,0,Company Code; Plant; Storage Location,component
+I_STOCKCHANGECATEGORY,Stock Change Category,Stock Change Category,MM-IM-VDM-SGM,Dimension,dimension,2,0,,component
+I_STOCKCHANGECATEGORYT,Category of Stock Change - Text,Category of Stock Change - Text,MM-IM-VDM-SGM,Dimension,dimension,5,0,,component
+I_STOCKQUANTITYCURRENTVALUE_2,Current Stock Quantity and Value,Current Stock Quantity and Value,MM-IM-VDM-SGM,Cube,cube,33,0,Plant; Storage Location,component
+I_STOCKQUANTITYVALUEBYTYPE,Stock Quantity and Value by Type,Stock Quantity and Value by Type,MM-IM-VDM-SGM,Cube,cube,18,0,Plant,component

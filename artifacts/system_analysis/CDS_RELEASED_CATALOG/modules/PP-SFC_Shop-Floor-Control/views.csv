@@ -1,0 +1,24 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_CONFIRMATIONAPPLORIGIN,Confirmation Application Origin,Confirmation Application Origin,PP-VDM,Dimension,dimension,3,0,,keyword
+I_CONFIRMATIONAPPLORIGINTEXT,Confirmation Application Origin - Text,Confirmation Application Origin - Text,PP-VDM,,text,6,0,,keyword
+I_CONFIRMATIONGROUP,Confirmation Group,Confirmation Group,PP-VDM,Dimension,dimension,1,0,,keyword
+I_CONFIRMATIONRECORDTYPE,Confirmation Record Type,Confirmation Record Type,PP-VDM,Dimension,dimension,3,0,,keyword
+I_CONFIRMATIONRECORDTYPETEXT,Confirmation Record Type - Text,Confirmation Record Type - Text,PP-VDM,,text,6,0,,keyword
+I_FINALCONFIRMATIONTYPE,Final Confirmation Type,Final Confirmation Type,PP-VDM,Dimension,dimension,3,0,,keyword
+I_FINALCONFIRMATIONTYPETEXT,Final Confirmation Type - Text,Final Confirmation Type - Text,PP-VDM,,text,6,0,,keyword
+I_MANUFACTURINGORDER,Manufacturing Order,Manufacturing Order,PP-VDM,Dimension,dimension,267,14,Batch; Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Material / Product; Profit Center; WBS Element,keyword
+I_MANUFACTURINGORDERIMPORTANCE,Manufacturing Order Importance Code,Manufacturing Order Importance Code,PP-VDM,Dimension,dimension,3,0,,keyword
+I_MANUFACTURINGORDERITEM,Manufacturing Order Item,Manufacturing Order Item,PP-VDM,Dimension,dimension,174,4,Batch; Business Area; Company Code; Material / Product; WBS Element,keyword
+I_MANUFACTURINGORDERLONGTEXT,Manufacturing Order - Text,Manufacturing Order - Text,PP-VDM,,text,6,0,,keyword
+I_MANUFACTURINGORDEROPERATION,Manufacturing Order Operation,Manufacturing Order Operation,PP-VDM,Dimension,dimension,408,19,Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Material Group; Plant; Profit Center; Supplier; Task List (routing) group,keyword
+I_MFGORDERCONFIRMATION,Manufacturing Order Confirmation,Manufacturing Order Confirmation,PP-VDM,Dimension,dimension,184,5,Business Area; Company Code; Controlling Area; Plant; Profit Center,keyword
+I_MFGORDERFAILEDCONFIRMATION,Manufacturing Order Failed Confirmation,Manufacturing Order Failed Confirmation,PP-VDM,Dimension,dimension,126,0,Business Area; Company Code; Controlling Area; Cost Center; Order (production / maintenance / internal); Plant,keyword
+I_MFGORDEROPERATIONCOMPONENT,Manufacturing Order Operation Component,Manufacturing Order Operation Component,PP-VDM,Dimension,dimension,258,11,Batch; Business Area; Company Code; Controlling Area; Functional Area; G/L Account; Material / Product; Material Group; Movement Type; Plant; Supplier; WBS Element,keyword
+I_MFGORDEROPERATIONLONGTEXT,Manufacturing Order Operation - Text,Manufacturing Order Operation - Text,PP-VDM,,text,11,0,,keyword
+I_MFGORDEROPERATIONPRT,Mfg Order Operation Production Resource Tool,Mfg Order Operation Production Resource Tool,PP-VDM,Dimension,dimension,100,3,Task List (routing) group,keyword
+I_MFGORDEROPERATIONTRGGRPOINT,Manufacturing Order Operation Trigger Point,Manufacturing Order Operation Trigger Point,PP-VDM,Dimension,dimension,49,3,Plant,keyword
+I_MFGORDEROPERATIONVH,Manufacturing Order Operation,Manufacturing Order Operation,PP-VDM,,value_help,10,0,Plant,keyword
+I_MFGORDEROPERATIONWITHSTATUS,Manufacturing Order Operation with Status,Manufacturing Order Operation with Status,PP-VDM,,basic,402,18,Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Plant; Profit Center; Supplier; Task List (routing) group,keyword
+I_ORDERCONFIRMATIONTYPE,Order Confirmation Type,Order Confirmation Type,PP-VDM,Dimension,dimension,3,0,,keyword
+I_ORDERCONFIRMATIONTYPETEXT,Order Confirmation Type - Text,Order Confirmation Type - Text,PP-VDM,,text,6,0,,keyword
+I_REPETITIVEMFGCONFIRMATION,Repetitive Manufacturing Confirmation,Repetitive Manufacturing Confirmation,PP-VDM,Dimension,dimension,79,6,Cost Center; Material / Product; Plant,keyword

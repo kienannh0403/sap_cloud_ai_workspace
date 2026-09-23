@@ -1,0 +1,108 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_BSORDGLACCTLINEITEMCUBE,GL Account Item for Soln Order - Cube,GL Account Item for Soln Order - Cube,CRM-S4-ANA-CDS,Cube,cube,61,2,Company Code; Fiscal Year; Sales Group; Sales Office; Sales Organization,top-level
+I_BUSINESSSOLUTIONORDERCUBE,Solution Order - Cube,Solution Order - Cube,CRM-S4-ANA-CDS,Cube,cube,39,1,Sales Group; Sales Office; Sales Organization,top-level
+I_BUSSOLNORDBASICFINANCIAL,Solution Order for Financial Reporting,Solution Order for Financial Reporting,CRM-S4-ANA-CDS,Dimension,dimension,49,6,Sales Group; Sales Office; Sales Organization,top-level
+I_BUSSOLNORDITMBASICFINANCIAL,Solution Order Item for Fin Reporting,Solution Order Item for Fin Reporting,CRM-S4-ANA-CDS,Dimension,dimension,69,6,Controlling Area; Profit Center; Sales Group; Sales Office; Sales Organization,top-level
+I_BUSSOLNORDITMFINANCIALCUBE,Solution Order Item Financials - Cube,Solution Order Item Financials - Cube,CRM-S4-ANA-CDS,Cube,cube,61,2,Material / Product; Sales Group; Sales Office; Sales Organization,top-level
+I_SERVICECONTRACTCUBE_2,Service Contract - Cube,Service Contract - Cube,CRM-S4-ANA-CDS,Cube,cube,68,4,Sales Group; Sales Office; Sales Organization,top-level
+I_SERVICEORDERCUBE_2,Service Order - Cube,Service Order - Cube,CRM-S4-ANA-CDS,Cube,cube,70,4,Equipment; Material / Product; Sales Group; Sales Office; Sales Organization,top-level
+I_SRVCMGMTORGANIZATIONUNIT,Service Management Organizational Unit,Service Management Organizational Unit,CRM-S4-ANA-CDS,Dimension,dimension,6,0,,top-level
+I_SRVCMGMTORGANIZATIONUNITTEXT,Srvc Mgmt Organizational Unit - Text,Srvc Mgmt Organizational Unit - Text,CRM-S4-ANA-CDS,,text,9,0,,top-level
+I_UPCGSRVCCONTRITEMCUBE,Upcoming Service Contract Item - Cube,Upcoming Service Contract Item - Cube,CRM-S4-ANA-CDS,Cube,cube,70,1,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization,top-level
+I_SRVCDOCCREDITSTATUS,Credit Status of Service Transaction,Credit Status of Service Transaction,CRM-S4-BF-CM,Dimension,dimension,3,0,,top-level
+I_SRVCDOCCREDITSTATUSTEXT,Credit Status of Service Trans - Text,Credit Status of Service Trans - Text,CRM-S4-BF-CM,,text,6,0,,top-level
+I_SRVCDOCITEMCREDITSTATUS,Credit Status of Service Trans Item,Credit Status of Service Trans Item,CRM-S4-BF-CM,Dimension,dimension,3,0,,top-level
+I_SRVCDOCITEMCREDITSTATUSTEXT,Credit Status of Service Trans Itm - Txt,Credit Status of Service Trans Itm - Txt,CRM-S4-BF-CM,,text,6,0,,top-level
+I_BUSINESSACTIVITYCATEGORY,Activity Category,Activity Category,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level
+I_BUSINESSACTIVITYCATEGORYTEXT,Activity Category - Text,Activity Category - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_CUSTMGMTBUSOBJTYPE,Bus Object Type of Service Transaction,Bus Object Type of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_CUSTMGMTBUSOBJTYPETEXT,Bus Obj Type of Srvc Transaction - Text,Bus Obj Type of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
+I_CUSTMGMTITMBUSOBJTYPE,Bus Obj Type of Srvc Transaction Item,Bus Obj Type of Srvc Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_CUSTMGMTITMBUSOBJTYPETEXT,Bus Obj Type of Srvc Trans Item - Text,Bus Obj Type of Srvc Trans Item - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
+I_CUSTMGMTPARTNER,Customer Management Partner,Customer Management Partner,CRM-S4-REP-RFW,,basic,15,0,Address; Business Partner,top-level
+I_RESPONSEPROFILE,Response Profile,Response Profile,CRM-S4-REP-RFW,,basic,2,0,,top-level
+I_RESPONSEPROFILETEXT,Response Profile - Text,Response Profile - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SALESORGANIZATIONUNIT,Sales Organizational Unit,Sales Organizational Unit,CRM-S4-REP-RFW,Dimension,dimension,6,0,,top-level
+I_SALESORGANIZATIONUNITTEXT,Sales Organizational Unit - Text,Sales Organizational Unit - Text,CRM-S4-REP-RFW,,text,9,0,,top-level
+I_SERVICECANCELLATIONPARTY,Service Cancellation Party,Service Cancellation Party,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SERVICECANCELLATIONPARTYTEXT,Service Cancellation Party - Text,Service Cancellation Party - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SERVICECANCELLATIONREASON,Service Cancellation Reason,Service Cancellation Reason,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level
+I_SERVICECANCLNREASONTEXT,Service Cancellation Reason - Text,Service Cancellation Reason - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SERVICECONTRACT,Service Contract,Service Contract,CRM-S4-REP-RFW,,basic,84,0,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level
+I_SERVICECONTRACTCANCLNSTS,Service Contract Cancellation Status,Service Contract Cancellation Status,CRM-S4-REP-RFW,,basic,2,0,,top-level
+I_SERVICECONTRACTCANCLNSTSTXT,Service Contract Cancellation Stat - Txt,Service Contract Cancellation Stat - Txt,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SERVICECONTRACTENHCD,Service Contract Enhanced,Service Contract Enhanced,CRM-S4-REP-RFW,,basic,93,0,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level
+I_SERVICECONTRACTITEM,Service Contract Item,Service Contract Item,CRM-S4-REP-RFW,,basic,123,0,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level
+I_SERVICECONTRACTITEMENHCD,Service Contract Item Enhanced,Service Contract Item Enhanced,CRM-S4-REP-RFW,,basic,137,0,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level
+I_SERVICECONTRACTTYPESTDVH,Service Contract Type,Service Contract Type,CRM-S4-REP-RFW,,value_help,4,0,,top-level
+I_SERVICEDOCBILLINGSTATUS,Billing Status of Service Transaction,Billing Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level
+I_SERVICEDOCBILLINGSTATUSTEXT,Billing Status of Srvc Transaction - Text,Billing Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
+I_SERVICEDOCERRORSTATUS,Error Status of Service Transaction,Error Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SERVICEDOCERRORSTATUSTEXT,Error Status of Srvc Transaction - Text,Error Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SERVICEDOCITEMCATEGORY,Category of Service Transaction Item,Category of Service Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,8,0,,top-level
+I_SERVICEDOCITEMCATEGORYTEXT,Category of Service Transac Item - Text,Category of Service Transac Item - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
+I_SERVICEDOCITEMTYPESLSSTTG,Sales Setting for Srvc Trans Item Cat,Sales Setting for Srvc Trans Item Cat,CRM-S4-REP-RFW,Dimension,dimension,5,0,,top-level
+I_SERVICEDOCOPENSTATUS,Open Status of Service Transaction,Open Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SERVICEDOCOPENSTATUSTEXT,Open Status of Srvc Transaction - Text,Open Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SERVICEDOCPROBLEMCATEGORY,Service transaction problem category,Service transaction problem category,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SERVICEDOCUMENT,Service Transaction,Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,183,8,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level
+I_SERVICEDOCUMENTENHCD,Service Transaction Enhanced,Service Transaction Enhanced,CRM-S4-REP-RFW,Dimension,dimension,197,8,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level
+I_SERVICEDOCUMENTITEM,Service Transaction Item,Service Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,386,14,Batch; Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level
+I_SERVICEDOCUMENTITEMENHCD,Service Transaction Item Enhanced,Service Transaction Item Enhanced,CRM-S4-REP-RFW,Dimension,dimension,409,17,Batch; Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level
+I_SERVICEDOCUMENTITEMPRDCSSR_2,Preceding Transaction of Srvc Trans Item,Preceding Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,9,0,,top-level
+I_SERVICEDOCUMENTITEMPRDCSSR_3,Preceding Transaction of Srvc Trans Item,Preceding Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level
+I_SERVICEDOCUMENTITEMSUCCSSR_2,Follow-Up Transaction of Srvc Trans Item,Follow-Up Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,9,0,,top-level
+I_SERVICEDOCUMENTITEMSUCCSSR_3,Follow-Up Transaction of Srvc Trans Item,Follow-Up Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level
+I_SERVICEDOCUMENTPREDECESSOR,Preceding Service Transaction,Preceding Service Transaction,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level
+I_SERVICEDOCUMENTPRIORITY,Service Transaction Priority,Service Transaction Priority,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SERVICEDOCUMENTPRIORITYTEXT,Service Transaction Priority - Text,Service Transaction Priority - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SERVICEDOCUMENTREFOBJECT,Reference Object of Service Transaction,Reference Object of Service Transaction,CRM-S4-REP-RFW,Fact,fact,17,0,Equipment; Material / Product,top-level
+I_SERVICEDOCUMENTSTATUS,Service Transaction Status,Service Transaction Status,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SERVICEDOCUMENTSTATUSTEXT,Service Transaction Status - Text,Service Transaction Status - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SERVICEDOCUMENTSUCCESSOR,Follow-Up Service Transaction,Follow-Up Service Transaction,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level
+I_SERVICEDOCUMENTTYPE,Service Transaction Type,Service Transaction Type,CRM-S4-REP-RFW,Dimension,dimension,11,0,,top-level
+I_SERVICEDOCUMENTTYPETEXT,Service Transaction Type - Text,Service Transaction Type - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
+I_SERVICEPROFILE,Service Profile,Service Profile,CRM-S4-REP-RFW,,basic,2,0,,top-level
+I_SERVICEPROFILETEXT,Service Profile - Text,Service Profile - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCCANCLNPROCEDURE,Service Cancellation Procedure,Service Cancellation Procedure,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCCANCLNPROCEDURETEXT,Service Cancellation Procedure - Text,Service Cancellation Procedure - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCCONTRITEMPRICEELEMENT,Service Contract Item Pricing Element,Service Contract Item Pricing Element,CRM-S4-REP-RFW,,basic,66,0,Tax Code,top-level
+I_SRVCCONTRITEMWITHAUTORENEWAL,Service Contract Items with Automatic Renewal,Service Contract Items with Automatic Renewal,CRM-S4-REP-RFW,,basic,21,0,Sales Group; Sales Office; Sales Organization,top-level
+I_SRVCDOCBYDOCUMENTTYPE,Service Transaction by Transaction Type,Service Transaction by Transaction Type,CRM-S4-REP-RFW,Dimension,dimension,109,4,Document Condition (pricing); Sales Group; Sales Office; Sales Organization,top-level
+I_SRVCDOCDELIVERYSTATUS,Delivery Status of Service Transaction,Delivery Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level
+I_SRVCDOCDELIVERYSTATUSTEXT,Delivery Status of Srvc Transac - Text,Delivery Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
+I_SRVCDOCESCALATION,Escalation Level of Service Transaction,Escalation Level of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCDOCESCALATIONTEXT,Escalation Level of Srvc Transac - Text,Escalation Level of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCDOCGOODSISSUESTATUS,Goods Issue Status for Srvc Transaction,Goods Issue Status for Srvc Transaction,CRM-S4-REP-RFW,,basic,2,0,,top-level
+I_SRVCDOCGOODSISSUESTATUSTEXT,Goods Issue Status for Srvc Trans - Text,Goods Issue Status for Srvc Trans - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCDOCHEADERLONGTEXT,ESH Long text search,ESH Long text search,CRM-S4-REP-RFW,,text,12,0,,top-level
+I_SRVCDOCITEMBYDOCUMENTTYPE,Srvc Transaction Item by Transac Type,Srvc Transaction Item by Transac Type,CRM-S4-REP-RFW,Dimension,dimension,127,5,Sales Group; Sales Office; Sales Organization,top-level
+I_SRVCDOCITEMLONGTEXT,Service Transaction Item Long Text,Service Transaction Item Long Text,CRM-S4-REP-RFW,,text,13,0,,top-level
+I_SRVCDOCITEMPRICEELEMENT,Service Transaction Item Pricing Element,Service Transaction Item Pricing Element,CRM-S4-REP-RFW,,basic,68,0,Tax Code,top-level
+I_SRVCDOCITEMRELATIONSHIPS,Service Transaction Item Relationships,Service Transaction Item Relationships,CRM-S4-REP-RFW,Fact,fact,8,0,,top-level
+I_SRVCDOCLIFECYCLESTATUS,Service Transaction Life Cycle Status,Service Transaction Life Cycle Status,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCDOCLIFECYCLESTATUSTEXT,Srvc Transaction Life Cycle Status - Txt,Srvc Transaction Life Cycle Status - Txt,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCDOCPAYMENTMETHOD,Service Transaction Payment Method,Service Transaction Payment Method,CRM-S4-REP-RFW,,basic,8,0,Sales Organization,top-level
+I_SRVCDOCPROBLEMCATEGORYTEXT,Service Transaction Problem Cat - Text,Service Transaction Problem Cat - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCDOCQUOTATIONSTATUS,Quotation Status of Service Transaction,Quotation Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCDOCQUOTATIONSTATUSTEXT,Quotation Status of Srvc Transac - Text,Quotation Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCDOCREJECTIONSTATUS,Rejection Status of Service Transaction,Rejection Status of Service Transaction,CRM-S4-REP-RFW,,basic,3,0,,top-level
+I_SRVCDOCREJECTIONSTATUSTEXT,Rejection Status of Srvc Transac - Text,Rejection Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCDOCRELEASESTATUS,Release Status of Service Transaction,Release Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCDOCRELEASESTATUSTEXT,Release Status of Srvc Transac - Text,Release Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCDOCRELFORBILLGSTS,Release for Billing Status of Srvc Trans,Release for Billing Status of Srvc Trans,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCDOCRELFORBILLGSTSTEXT,Rel for Billg Sts of Srvc Trans - Text,Rel for Billg Sts of Srvc Trans - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCITEMRELATIONSHIPTYPE,Service Item Relationships,Service Item Relationships,CRM-S4-REP-RFW,Fact,fact,2,0,,top-level
+I_SRVCMGMTPRODUCTHIERARCHY,Service Product Hierarchy,Service Product Hierarchy,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCMGMTPRODUCTHIERARCHYTEXT,Service Product Hierarchy - Text,Service Product Hierarchy - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCORDITMCONFRELEVANCE,Conf Relevance for Related Service Order,Conf Relevance for Related Service Order,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCORDITMCONFRELEVANCETEXT,Conf Relevance for Reltd Srvc Ord – Text,Conf Relevance for Reltd Srvc Ord – Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCQTANACCEPTANCESTATUS,Status of Service Quotation,Status of Service Quotation,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
+I_SRVCQTANACCEPTANCESTATUSTEXT,Status of Service Quotation - Text,Status of Service Quotation - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCREFERENCEOBJECTTYPE,Type of Service Reference Object,Type of Service Reference Object,CRM-S4-REP-RFW,,basic,2,0,,top-level
+I_SRVCREFERENCEOBJECTTYPETEXT,Type of Service Reference Object - Text,Type of Service Reference Object - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SRVCSEPAMANDATERELEVANCE,Service SEPA Mandate Relevance,Service SEPA Mandate Relevance,CRM-S4-REP-RFW,,basic,2,0,,top-level
+I_SRVCSEPAMANDATERELEVANCETEXT,Service SEPA Mandate Relevance - Text,Service SEPA Mandate Relevance - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
+I_SERVICEDOCITEMNOTE,Service Document Item for Note,Service Document Item for Note,CRM-S4-SRV-SVO-FIO,,basic,15,0,,top-level
+I_SRVCDOCTRANSFERSTATUS,Transfer Status of Service Transaction,Transfer Status of Service Transaction,CRM-S4-SRV-SVO-FIO,Dimension,dimension,3,0,,top-level
+I_SRVCDOCTRANSFERSTATUSTEXT,Transfer Status of Service Transaction - Text,Transfer Status of Service Transaction - Text,CRM-S4-SRV-SVO-FIO,,text,6,0,,top-level

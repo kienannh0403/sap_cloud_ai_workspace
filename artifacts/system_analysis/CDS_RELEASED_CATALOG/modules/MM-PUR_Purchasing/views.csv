@@ -1,0 +1,116 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_SUPLREVALCRITERIONWEIGHT,Criterion Weight for Supplier Evaluation,Criterion Weight for Supplier Evaluation,MM-PUR,,basic,14,0,,component
+I_SUPLREVALCRITRNVARCSCORE,Score Variance for Suplr Eval Criterion,Score Variance for Suplr Eval Criterion,MM-PUR,,basic,8,0,,component
+I_CNTRLPURCONTRCHGREQSTATUS,Central Contract Change Request Status,Central Contract Change Request Status,MM-PUR-ANA,Dimension,dimension,3,0,,component
+I_CNTRLPURCONTRCHGREQSTATUSTXT,Change Request Status - Text,Change Request Status - Text,MM-PUR-ANA,,text,6,0,,component
+I_INVOICEINBOUNDENTRYTYPE,Invoice Inbound Entry Type,Invoice Inbound Entry Type,MM-PUR-ANA,Dimension,dimension,3,0,,component
+I_INVOICEINBOUNDENTRYTYPETXT,Invoice Inbound Entry Type - Text,Invoice Inbound Entry Type - Text,MM-PUR-ANA,,text,6,0,,component
+I_POCHANNELOUTPUTTYPE,PO of Output Type Automatic or Manual,PO of Output Type Automatic or Manual,MM-PUR-ANA,Dimension,dimension,3,0,,component
+I_POCHANNELOUTPUTTYPETXT,PO of Output Type Manual - Text,PO of Output Type Manual - Text,MM-PUR-ANA,,text,5,0,,component
+I_PURORDSCHEDLINEENHCDAPI01,Purchase Order Schedule Line Details,Purchase Order Schedule Line Details,MM-PUR-ANA,,basic,110,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Supplier,component
+I_SCHDAGRSCHDLNENHCDAPI01,Sched Agreement with Schedule Line Details,Sched Agreement with Schedule Line Details,MM-PUR-ANA,,basic,98,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location; Supplier,component
+I_SUPLREVALCLASSFCTNCODE,Supplier Evaluation Classification Code,Supplier Evaluation Classification Code,MM-PUR-ANA,Dimension,dimension,3,0,,component
+I_SUPLREVALCLASSFCTNCODETXT,Supplier Eval Classification Code - Text,Supplier Eval Classification Code - Text,MM-PUR-ANA,,text,6,0,,component
+I_SUPLREVALCLASSIFICATION,Supplier Evaluation Classification,Supplier Evaluation Classification,MM-PUR-ANA,Dimension,dimension,4,0,,component
+I_SUPLREVALCLASSIFICATIONTEXT,Supplier Eval Classification - Text,Supplier Eval Classification - Text,MM-PUR-ANA,,text,5,0,,component
+I_SUPLREVALDELIVCMPLTDCONFIGN,Supplier Evaluation Delivery Completed Configuration,Supplier Evaluation Delivery Completed Configuration,MM-PUR-ANA,Dimension,dimension,3,0,,component
+I_SUPLREVALDELIVCMPLTDCONFIGNT,Supplier Evaluation Delivery Completed Configuration - Text,Supplier Evaluation Delivery Completed Configuration - Text,MM-PUR-ANA,,basic,5,0,,component
+I_SUPLREVALDOCCATCONFIGN,Supplier Eval Doc Catergory Config Value,Supplier Eval Doc Catergory Config Value,MM-PUR-ANA,Dimension,dimension,3,0,,component
+I_SUPLREVALDOCCATCONFIGNT,Supplier Eval Doc Catergory Config - Txt,Supplier Eval Doc Catergory Config - Txt,MM-PUR-ANA,,basic,6,0,,component
+I_SUPLREVALOUTPUTSCORETYPE,Supplier Evaluation Output Score Type,Supplier Evaluation Output Score Type,MM-PUR-ANA,Dimension,dimension,3,0,,component
+I_SUPLREVALOUTPUTSCORETYPETEXT,Supplier Evaluation Output Score Type - Text,Supplier Evaluation Output Score Type - Text,MM-PUR-ANA,,text,5,0,,component
+I_SUPLREVALSCOREOUTPSTATUSTEXT,SE Score Output Status - Text,SE Score Output Status - Text,MM-PUR-ANA,,text,5,0,,component
+I_SUPLREVALSCOREOUTPUTSTATUS,SE Score Output Status,SE Score Output Status,MM-PUR-ANA,Dimension,dimension,3,0,,component
+I_SUPLREVALUATIONSCORESOUTPUT,Supplier Evaluation Scores Output,Supplier Evaluation Scores Output,MM-PUR-ANA,,basic,11,0,Supplier,component
+I_SUPLREVALUSERDEFINEDCRITERIA,Supplier Evaluation Usr Defined Criteria,Supplier Evaluation Usr Defined Criteria,MM-PUR-ANA,,basic,7,0,,component
+I_SUPLREVALUSERDFNDCRITERIACT,User Defined Criteria Count,User Defined Criteria Count,MM-PUR-ANA,,basic,20,0,Material Group; Supplier,component
+I_SUPLREVALUSRDFNDCRITERIATEXT,Supplier Evaluation User Defined Criteria - Text,Supplier Evaluation User Defined Criteria - Text,MM-PUR-ANA,,text,5,0,,component
+I_VARBLPURORDUNITACTVSTATUS,Variable PO Unit Active Status,Variable PO Unit Active Status,MM-PUR-GF-MAS,Dimension,dimension,3,0,,component
+I_VARBLPURORDUNITACTVSTATUSTXT,Variable PO Unit Active Status - Text,Variable PO Unit Active Status - Text,MM-PUR-GF-MAS,,text,6,0,,component
+I_CENTRALPURCHASECONTRACTAPI01,Central Purchase Contract,Central Purchase Contract,MM-PUR-HUB-CTR,,basic,48,1,Company Code; Incoterms; Purchasing Organization; Supplier,component
+I_CENTRALPURCHASECONTRACTBASIC,Central Purchase Contract,Central Purchase Contract,MM-PUR-HUB-CTR,,basic,33,0,Company Code; Incoterms; Purchasing Organization; Supplier,component
+I_CNTRLPURCONTRACTITEMAPI01,Item in Central Purchase Contract,Item in Central Purchase Contract,MM-PUR-HUB-CTR,,basic,46,0,Material Group; Tax Code,component
+I_CNTRLPURCONTRACTITEMBASIC,Item in Central Purchase Contract,Item in Central Purchase Contract,MM-PUR-HUB-CTR,,basic,23,0,Material Group; Tax Code,component
+I_PURGINFORECORDUPDATECODE,Update Code for Purchasing Info Record,Update Code for Purchasing Info Record,MM-PUR-HUB-CTR,Dimension,dimension,3,0,,component
+I_PROCMTHUBCOMPANYCODE,Co Code in Conncd Syst for Cntrl Procmt,Co Code in Conncd Syst for Cntrl Procmt,MM-PUR-HUB-FND,,basic,6,0,,component
+I_PROCMTHUBPLANT,Plant in Connected Syst for Cntrl Procmt,Plant in Connected Syst for Cntrl Procmt,MM-PUR-HUB-FND,,basic,8,0,,component
+I_PROCMTHUBPURGGROUPAPI01,Purchasing Group in Connected System,Purchasing Group in Connected System,MM-PUR-HUB-FND,Dimension,dimension,8,0,,component
+I_PROCMTHUBPURGORGAPI01,Purchasing Org in Connected System,Purchasing Org in Connected System,MM-PUR-HUB-FND,Dimension,dimension,6,0,,component
+I_CNTRLSUPLRCONFWRKFLWCARD,ToDo Workflow Card info Cntrl Suplr Conf,ToDo Workflow Card info Cntrl Suplr Conf,MM-PUR-HUB-PO,,basic,8,0,Purchasing Organization,component
+I_PRMTHBPURORDITMSCHDLNAPI01,Schedule Line of Purchase Order in Procurement Hub,Schedule Line of Purchase Order in Procurement Hub,MM-PUR-HUB-PO,,basic,44,0,Batch; Purchasing Document,component
+I_PRMTHBRPLDPOWRKFLWCARD,ToDo Workflow Card info of MPOC,ToDo Workflow Card info of MPOC,MM-PUR-HUB-PO,,basic,12,0,Company Code; Purchasing Document; Supplier,component
+I_PROCMTHUBPURORDHDRAPI01,Centrally Managed Purchase Order Header,Centrally Managed Purchase Order Header,MM-PUR-HUB-PO,,basic,63,0,Address; Company Code; Customer; Document Condition (pricing); Incoterms; Purchasing Document; Purchasing Organization; Supplier,component
+I_PROCMTHUBPURORDITMAPI01,Centrally Managed Purchase Order Item,Centrally Managed Purchase Order Item,MM-PUR-HUB-PO,,basic,125,0,Company Code; Incoterms; Material / Product; Material Group; Profit Center; Purchasing Document; Tax Code,component
+I_PROCMTHUBRPLDPURCHASEORDER,Extensibility of Purchase Order in Procurement Hub,Extensibility of Purchase Order in Procurement Hub,MM-PUR-HUB-PO,,basic,72,0,Address; Company Code; Document Condition (pricing); Incoterms; Purchasing Document; Purchasing Organization; Supplier,component
+I_PRMTHBRPLDPURCHASEREQNAPI01,Replicated Purchase Requisition,Replicated Purchase Requisition,MM-PUR-HUB-PR,,basic,4,0,,component
+I_PRMTHBRPLDPURREQNEMAILPARAM,Email tmpl Rpld for PRs in Pcmt Hub,Email tmpl Rpld for PRs in Pcmt Hub,MM-PUR-HUB-PR,,basic,7,0,,component
+I_PRMTHBRPLDPURREQNITEMAPI01,Replicated Purchase Requisition Item,Replicated Purchase Requisition Item,MM-PUR-HUB-PR,,basic,77,1,Batch; Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location,component
+I_CENTRALREQFORQUOTATIONITEM,Central Request For Quotation Item,Central Request For Quotation Item,MM-PUR-HUB-RFQ,,basic,47,0,Incoterms; Material Group; Purchasing Document,component
+I_CENTRALREQUESTFORQUOTATION,Central Request For Quotation Header,Central Request For Quotation Header,MM-PUR-HUB-RFQ,,basic,55,0,Company Code; Incoterms,component
+I_CENTRALRFQITEMDISTRIBUTION,Central RFQ Item Distribution,Central RFQ Item Distribution,MM-PUR-HUB-RFQ,,basic,43,0,Address; Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location,component
+I_CENTRALSUPPLIERQUOTATION,Central Supplier Quotation Header,Central Supplier Quotation Header,MM-PUR-HUB-RFQ,,basic,59,0,Company Code; Document Condition (pricing); Incoterms; Supplier,component
+I_CNTRLREQFORQTANSCHEDULELINE,Central RFQ Item Schedule Line,Central RFQ Item Schedule Line,MM-PUR-HUB-RFQ,,basic,14,0,,component
+I_CNTRLREQFORQUOTATIONBIDDER,Central Request For Quotation Bidder,Central Request For Quotation Bidder,MM-PUR-HUB-RFQ,,basic,7,0,Purchasing Document; Supplier,component
+I_CNTRLSUPLRQTANSCHEDULELINE,Central Supplier Quotation Item Schedule Line,Central Supplier Quotation Item Schedule Line,MM-PUR-HUB-RFQ,,basic,15,0,Purchasing Document,component
+I_CNTRLSUPLRQUOTATIONITEMDISTR,Central Supplier Quotation Item Distribution,Central Supplier Quotation Item Distribution,MM-PUR-HUB-RFQ,,basic,31,0,Company Code; Purchasing Document; Purchasing Organization; Storage Location,component
+I_CNTRLSUPPLIERQTANITEMPRICING,Central Supplier Quotation Pricing,Central Supplier Quotation Pricing,MM-PUR-HUB-RFQ,,basic,93,0,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component
+I_CNTRLSUPPLIERQUOTATIONITEM,Central Supplier Quotation Item,Central Supplier Quotation Item,MM-PUR-HUB-RFQ,,basic,58,0,Incoterms; Material / Product; Material Group; Purchasing Document,component
+I_PURCHASECONTRACTAPI01,Purchase Contract,Purchase Contract,MM-PUR-OA-CON,,basic,45,0,Address; Company Code; Incoterms; Purchasing Organization; Supplier,component
+I_PURCHASECONTRACTHISTORYAPI01,Purchase Contract History,Purchase Contract History,MM-PUR-OA-CON,,basic,17,0,Company Code; Purchasing Document; Purchasing Organization,component
+I_PURCHASECONTRACTITEMAPI01,Purchase Contract Item,Purchase Contract Item,MM-PUR-OA-CON,,basic,92,4,Company Code; Incoterms; Material / Product; Material Group; Tax Code,component
+I_PURCHASECONTRACTTYPE,Purchase Contract Type,Purchase Contract Type,MM-PUR-OA-CON,Dimension,dimension,2,0,,component
+I_PURCONTRACCOUNTASSGMTAPI01,Account Assgmt in Purchase Contract,Account Assgmt in Purchase Contract,MM-PUR-OA-CON,,basic,47,3,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Purchasing Document; Tax Code; WBS Element,component
+I_SCHEDGAGRMTHDRAPI01,Purchase Scheduling Agreement,Purchase Scheduling Agreement,MM-PUR-OA-SCH,,basic,42,0,Address; Company Code; Incoterms; Purchasing Document; Purchasing Organization; Supplier,component
+I_SCHEDGAGRMTITMAPI01,Item of Purchase Scheduling Agreement,Item of Purchase Scheduling Agreement,MM-PUR-OA-SCH,,basic,74,0,Company Code; Incoterms; Material / Product; Material Group; Purchasing Document; Tax Code,component
+I_SCHEDGAGRMTRELDOCSCLIAPI01,SchedLine in Rel Doc of Pur Schedg Agrmt,SchedLine in Rel Doc of Pur Schedg Agrmt,MM-PUR-OA-SCH,,basic,18,0,Purchasing Document,component
+I_SCHEDGAGRMTRELEASEDOCAPI01,Release Document of Pur Schedg Agrmt,Release Document of Pur Schedg Agrmt,MM-PUR-OA-SCH,,basic,24,1,Purchasing Document,component
+I_SCHEDGLINEAPI01,Schedule Line in Pur Schedg Agrmt,Schedule Line in Pur Schedg Agrmt,MM-PUR-OA-SCH,,basic,18,0,Purchasing Document,component
+I_POSUBCONTRACTINGCOMPAPI01,Subcontracting Component in PurOrd,Subcontracting Component in PurOrd,MM-PUR-PO,,basic,69,4,Batch; Material / Product; Plant; WBS Element,component
+I_POSUPPLIERCONFIRMATIONAPI01,Supplier Confirmation Data in PurOrd,Supplier Confirmation Data in PurOrd,MM-PUR-PO,,basic,32,0,Batch; Delivery,component
+I_PURCHASEORDERAPI01,Purchase Order,Purchase Order,MM-PUR-PO,,basic,82,0,Address; Company Code; Customer; Document Condition (pricing); Incoterms; Purchasing Organization; Supplier,component
+I_PURCHASEORDERHISTORYAPI01,Purchase Order History,Purchase Order History,MM-PUR-PO,,basic,67,0,Batch; Delivery; Document Condition (pricing); Material / Product; Movement Type; Plant; Purchasing Document; Tax Code,component
+I_PURCHASEORDERITEMAPI01,Purchase Order Item,Purchase Order Item,MM-PUR-PO,,basic,184,2,Company Code; Incoterms; Material / Product; Material Group; Profit Center; Tax Code,component
+I_PURCHASEORDERPARTNERAPI01,Purchase Order Partner,Purchase Order Partner,MM-PUR-PO,,basic,14,0,Personnel; Plant; Purchasing Document; Purchasing Organization; Supplier,component
+I_PURCHASEORDERSTATUS,Status of a purchase order,Status of a purchase order,MM-PUR-PO,,basic,5,0,Purchasing Organization,component
+I_PURCHASINGDOCUMENTITEMSTDVH,Purchasing Document Item,Purchasing Document Item,MM-PUR-PO,,value_help,6,0,Purchasing Document,component
+I_PURCHASINGDOCUMENTSTDVH,Purchasing Document,Purchasing Document,MM-PUR-PO,,value_help,7,0,Purchasing Document; Purchasing Organization,component
+I_PURORDACCOUNTASSIGNMENTAPI01,Account Assignment in Purchase Order,Account Assignment in Purchase Order,MM-PUR-PO,,basic,68,5,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Document; Tax Code; WBS Element,component
+I_PURORDHISTDELIVERYCOSTAPI01,Purchase Order History Delivery Cost,Purchase Order History Delivery Cost,MM-PUR-PO,,basic,37,0,Fiscal Year; Purchasing Document; Supplier,component
+I_PURORDITMPRICINGELEMENTAPI01,Pricing Element in Purchase Order Item,Pricing Element in Purchase Order Item,MM-PUR-PO,,basic,78,1,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component
+I_PURORDPRICINGELEMENTAPI01,Pricing Element in Purchase Order,Pricing Element in Purchase Order,MM-PUR-PO,,basic,70,1,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component
+I_PURORDSCHEDULELINEAPI01,Schedule Line in Purchase Order,Schedule Line in Purchase Order,MM-PUR-PO,,basic,38,0,Batch; Purchasing Document,component
+I_PROCMTHUBBACKENDSOURCESYSTEM,Connected System in Central Procurement,Connected System in Central Procurement,MM-PUR-REQ,Dimension,dimension,4,0,,component
+I_PROCMTUSERDFLTCATALOGSAPI01,Default Catalogs for Users in Procmt,Default Catalogs for Users in Procmt,MM-PUR-REQ,,basic,21,1,Business Partner,component
+I_PROCMTUSRDFLTREQNGGRPSAPI01,Default Reqng Grps for Users in Procmt,Default Reqng Grps for Users in Procmt,MM-PUR-REQ,,basic,21,1,Business Partner,component
+I_PROCMTUSRDFLTSETTINGSAPI01,Default Settings for Users in Procmt,Default Settings for Users in Procmt,MM-PUR-REQ,,basic,46,2,Business Partner; Company Code; Cost Center; Fixed Asset; G/L Account; Material Group; Order (production / maintenance / internal); Plant; Purchasing Organization; Storage Location; WBS Element,component
+I_PURCHASEREQNCHGDOCAPI01,Change Document for Purchase Requisition,Change Document for Purchase Requisition,MM-PUR-REQ,,basic,10,0,,component
+I_PURCHASEREQNCHGDOCITMAPI01,Change Doc Item for Purchase Requisition,Change Doc Item for Purchase Requisition,MM-PUR-REQ,,basic,14,0,,component
+I_PURCHASEREQUISITIONAPI01,Purchase Requisition Header,Purchase Requisition Header,MM-PUR-REQ,,basic,5,0,,component
+I_PURCHASEREQUISITIONITEMAPI01,Purchase Requisition Item,Purchase Requisition Item,MM-PUR-REQ,,basic,110,1,Batch; Company Code; Material / Product; Material Group; Purchasing Organization; Storage Location; Tax Code,component
+I_PURCHASEREQUISITIONTYPE,Purchase Requisition Document Type,Purchase Requisition Document Type,MM-PUR-REQ,Dimension,dimension,5,0,,component
+I_PURREQNACCTASSGMTAPI01,Account Assgmt in Purchase Requisition,Account Assgmt in Purchase Requisition,MM-PUR-REQ,,basic,68,6,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Organization; SD/LE Document (generic VBELN); Sales Document; WBS Element,component
+I_PURREQNRELEASESTATUS,Release Status of Purchase Requisition,Release Status of Purchase Requisition,MM-PUR-REQ,Dimension,dimension,2,0,,component
+I_PURREQNRELEASESTATUSTEXT,Release Status of PurReqn - Text,Release Status of PurReqn - Text,MM-PUR-REQ,,text,5,0,,component
+I_QTNLIFECYCLESTATUS,Quotation Lifecycle Status,Quotation Lifecycle Status,MM-PUR-RFQ,Dimension,dimension,2,0,,component
+I_QTNLIFECYCLESTATUSTEXT,Quotation Lifecycle Status – Text,Quotation Lifecycle Status – Text,MM-PUR-RFQ,,text,4,0,,component
+I_REQUESTFORQUOTATIONTYPE,RFQ Type,RFQ Type,MM-PUR-RFQ,,basic,2,0,,component
+I_REQUESTFORQUOTATION_API01,Request for Quotation,Request for Quotation,MM-PUR-RFQ,,basic,36,0,Company Code; Incoterms,component
+I_RFQBIDDER_API01,Bidder in Request for Quotation,Bidder in Request for Quotation,MM-PUR-RFQ,,basic,5,0,Purchasing Document; Supplier,component
+I_RFQITEM_API01,Item in Request for Quotation,Item in Request for Quotation,MM-PUR-RFQ,,basic,23,0,Incoterms; Material / Product; Material Group; Purchasing Document,component
+I_RFQLIFECYCLESTATUS,RFQ Lifecycle Status,RFQ Lifecycle Status,MM-PUR-RFQ,Dimension,dimension,2,0,,component
+I_RFQLIFECYCLESTATUSTEXT,RFQ Lifecycle Status - Text,RFQ Lifecycle Status - Text,MM-PUR-RFQ,,text,4,0,,component
+I_RFQSCHEDULELINE_API01,Schedule Line in Request for Quotation,Schedule Line in Request for Quotation,MM-PUR-RFQ,,basic,12,0,,component
+I_SUPLRQTNFOLLOWONDOCUMENT,Supplier Quotation Follow On Document,Supplier Quotation Follow On Document,MM-PUR-RFQ,Dimension,dimension,6,0,,component
+I_SUPLRQTNSCHEDULELINE_API01,Schedule Line in Supplier Quotation Item,Schedule Line in Supplier Quotation Item,MM-PUR-RFQ,,basic,13,0,Purchasing Document,component
+I_SUPPLIERQUOTATIONITEM_API01,Item in Supplier Quotation,Item in Supplier Quotation,MM-PUR-RFQ,,basic,33,0,Incoterms; Material / Product; Material Group; Purchasing Document,component
+I_SUPPLIERQUOTATIONTYPE,Supplier Quotation Type,Supplier Quotation Type,MM-PUR-RFQ,,basic,2,0,,component
+I_SUPPLIERQUOTATION_API01,Supplier Quotation,Supplier Quotation,MM-PUR-RFQ,,basic,37,0,Company Code; Document Condition (pricing); Incoterms; Supplier,component
+I_MPPURCHASINGSOURCEITEM,Source List Item,Source List Item,MM-PUR-SQ-QTA,,basic,39,0,Material / Product; Purchasing Organization,component
+I_PURCHASINGINFORECORDAPI01,Purchasing Info Record,Purchasing Info Record,MM-PUR-SQ-QTA,Dimension,dimension,34,0,Material / Product; Material Group,component
+I_PURGINFORECDORGPLNTDATAAPI01,Org Plant Data for Purch Info Record,Org Plant Data for Purch Info Record,MM-PUR-SQ-QTA,,basic,51,0,Incoterms; Purchasing Document; Purchasing Organization; Tax Code,component
+I_PURGQUOTAARRGMTAPI01,Purchasing Quota Arrangement,Purchasing Quota Arrangement,MM-PUR-SQ-QTA,,basic,12,0,Material / Product; Plant,component
+I_PURGQUOTAARRGMTITEMAPI01,Purchasing Quota Arrangement Item,Purchasing Quota Arrangement Item,MM-PUR-SQ-QTA,,basic,36,0,Plant,component
+I_SERVICEENTRYSHEETAPI01,Service Entry Sheet,Service Entry Sheet,MM-PUR-SVC-SES,,basic,23,0,Personnel; Purchasing Organization; Supplier,component
+I_SERVICEENTRYSHEETITEMAPI01,Service Entry Sheet Item,Service Entry Sheet Item,MM-PUR-SVC-SES,,basic,30,0,Purchasing Organization,component
+I_SESACCOUNTASSIGNMENTAPI01,Service Entry Sheet Account Assignment,Service Entry Sheet Account Assignment,MM-PUR-SVC-SES,,basic,58,0,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Organization; WBS Element,component
+I_SESWORKFLOWEMAILDEADLINE,Email Template for Service Entry Sheet Workflow Deadline,Email Template for Service Entry Sheet Workflow Deadline,MM-PUR-SVC-SES,,basic,17,0,Purchasing Organization,component

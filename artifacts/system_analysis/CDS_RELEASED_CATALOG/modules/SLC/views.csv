@@ -1,0 +1,103 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_SUPLRACTIVITYSUPPLIERAPI01,Supplier for Supplier Activity,Supplier for Supplier Activity,SLC-ACT,,basic,16,0,Business Partner,top-level
+I_SUPLRACTLIFECYCLESTATUS,Lifecycle Status of Supplier Activity,Lifecycle Status of Supplier Activity,SLC-ACT,,basic,3,0,,top-level
+I_SUPLRACTLIFECYCLESTATUSTEXT,Lifecycle Status of Suplr Acty - Text,Lifecycle Status of Suplr Acty - Text,SLC-ACT,,text,5,0,,top-level
+I_SUPLRACTTASKLIFECYCLESTS,Lifecycle Status of Suplr Acty Task,Lifecycle Status of Suplr Acty Task,SLC-ACT,,basic,2,0,,top-level
+I_SUPLRACTTASKLIFECYCLESTSTEXT,Lifecycle Sts of Suplr Acty Task - Text,Lifecycle Sts of Suplr Acty Task - Text,SLC-ACT,,text,5,0,,top-level
+I_SUPLRACTYPARTICIPANTAPI01,Participant in Supplier Activity,Participant in Supplier Activity,SLC-ACT,,basic,16,0,,top-level
+I_SUPLRACTYPURCHASERRESPAPI01,Purchaser Resp for Supplier Activity,Purchaser Resp for Supplier Activity,SLC-ACT,,basic,16,0,,top-level
+I_SUPLRACTYTASKCONSTCYSTATUS,Consistency Status of Suplr Acty Task,Consistency Status of Suplr Acty Task,SLC-ACT,,basic,2,0,,top-level
+I_SUPLRACTYTASKCONSTCYSTATUST,Consistency Sts of Suplr Acty Tsk - Text,Consistency Sts of Suplr Acty Tsk - Text,SLC-ACT,,basic,5,0,,top-level
+I_SUPLRACTYTASKEMAILTMPLAPI01,Email Template for Task Notification,Email Template for Task Notification,SLC-ACT,,basic,16,0,,top-level
+I_SUPLRACTYTASKPROCESSORAPI01,Processor of Supplier Activity Task,Processor of Supplier Activity Task,SLC-ACT,,basic,16,0,,top-level
+I_SUPLRACTYTASKPURRRESPAPI01,Purchaser Resp for Supplier Acty Task,Purchaser Resp for Supplier Acty Task,SLC-ACT,,basic,16,0,,top-level
+I_SUPLRACTYTASKSUPPLIERAPI01,Supplier for Supplier Activity Task,Supplier for Supplier Activity Task,SLC-ACT,,basic,16,0,Business Partner,top-level
+I_SUPLRACTYTSKACTIVITYREFAPI01,Activity Reference to Supplier Acty Task,Activity Reference to Supplier Acty Task,SLC-ACT,,basic,4,0,,top-level
+I_SUPPLIERACTIVITYAPI01,Procurement-Related Activity,Procurement-Related Activity,SLC-ACT,,basic,14,0,,top-level
+I_SUPPLIERACTIVITYPRIORITY,Priority of Supplier Activity,Priority of Supplier Activity,SLC-ACT,,basic,3,0,,top-level
+I_SUPPLIERACTIVITYPRIORITYTEXT,Priority of Supplier Activity - Text,Priority of Supplier Activity - Text,SLC-ACT,,text,5,0,,top-level
+I_SUPPLIERACTIVITYTASKAPI01,Supplier Activity Task,Supplier Activity Task,SLC-ACT,,basic,11,0,,top-level
+I_SUPPLIERACTIVITYTASKPRIO,Priority of Supplier Activity Task,Priority of Supplier Activity Task,SLC-ACT,,basic,2,0,,top-level
+I_SUPPLIERACTIVITYTASKPRIOTEXT,Priority of Supplier Activity Task - Text,Priority of Supplier Activity Task - Text,SLC-ACT,,text,5,0,,top-level
+I_SUPPLIERACTIVITYTYPE,Type of Supplier Activity,Type of Supplier Activity,SLC-ACT,,basic,2,0,,top-level
+I_SUPPLIERACTIVITYTYPETEXT,Type of Supplier Activity - Text,Type of Supplier Activity - Text,SLC-ACT,,text,5,0,,top-level
+I_PURCHASINGCATEGORYVALUEHELP,Purchasing Category,Purchasing Category,SLC-CAT,Dimension,dimension,3,0,,top-level
+I_PURGCATAPI01,Purchasing Category,Purchasing Category,SLC-CAT,,basic,10,0,,top-level
+I_PURGCATDESCRIPTIONAPI01,Description of Purchasing Category,Description of Purchasing Category,SLC-CAT,,basic,4,0,,top-level
+I_PURGCATMATERIALGROUPAPI01,Material Group for Purchasing Category,Material Group for Purchasing Category,SLC-CAT,,basic,4,0,Material Group,top-level
+I_PURGCATMEMBERAPI01,Team Member for Purchasing Category,Team Member for Purchasing Category,SLC-CAT,,basic,17,0,Business Partner,top-level
+I_PURGCATPARTYAPI01,Party Referenced by Purchasing Category,Party Referenced by Purchasing Category,SLC-CAT,,basic,21,0,Business Partner,top-level
+I_PURGCATPLANSPENDAPI01,Planned Spend for Purchasing Category,Planned Spend for Purchasing Category,SLC-CAT,,basic,6,0,,top-level
+I_PURGCATPURCHASERRESPAPI01,Purchaser Resp Referenced by Purg Cat,Purchaser Resp Referenced by Purg Cat,SLC-CAT,,basic,18,0,Business Partner,top-level
+I_PURGCATSUPPLIERAPI01,Supplier Referenced by Purg Category,Supplier Referenced by Purg Category,SLC-CAT,,basic,18,0,Business Partner,top-level
+I_PURGCATTRANSLATIONSTSAPI01,Translation Status of Purg Category,Translation Status of Purg Category,SLC-CAT,,basic,4,0,,top-level
+I_SLCMGMTQNAIREEXTNAMEAPI01,External Name of Questionnaire,External Name of Questionnaire,SLC-EVL,,basic,4,0,,top-level
+I_SLCMGMTQNAIREPURGCATAPI01,Purchasing Category of Questionnaire,Purchasing Category of Questionnaire,SLC-EVL,,basic,3,0,,top-level
+I_SLCMGMTQNAIREPURRRESPAPI01,Purchaser Responsible for Questionnaire,Purchaser Responsible for Questionnaire,SLC-EVL,,basic,16,0,,top-level
+I_SLCMGMTQNAIRETRNSLTNSTSAPI01,Translation Status of Questionnaire,Translation Status of Questionnaire,SLC-EVL,,basic,4,0,,top-level
+I_SLCQNAIRELIFECYCLESTS,Lifecycle Status of Questionnaire,Lifecycle Status of Questionnaire,SLC-EVL,,basic,3,0,,top-level
+I_SLCQNAIRELIFECYCLESTSTEXT,Lifecycle Status of Questionnaire - Text,Lifecycle Status of Questionnaire - Text,SLC-EVL,,text,5,0,,top-level
+I_SUPLREVALQUESTIONNAIREAPI01,Supplier Evaluation Questionnaire,Supplier Evaluation Questionnaire,SLC-EVL,,basic,11,0,,top-level
+I_SUPLREVALREQEXTNAMEAPI01,External Name for Supplier Eval Request,External Name for Supplier Eval Request,SLC-EVL,,basic,5,0,,top-level
+I_SUPLREVALREQLANGUAGEAPI01,Language of Supplier Evaluation Request,Language of Supplier Evaluation Request,SLC-EVL,,basic,6,0,,top-level
+I_SUPLREVALREQQSTNATTCHAPI01,Question Attch to Suplr Eval Request,Question Attch to Suplr Eval Request,SLC-EVL,,basic,4,0,,top-level
+I_SUPLREVALREQQSTNVALUEAPI01,Question Value of Supplier Eval Request,Question Value of Supplier Eval Request,SLC-EVL,,basic,6,0,,top-level
+I_SUPLREVALREQSECTITLEAPI01,Section Title of Supplier Eval Request,Section Title of Supplier Eval Request,SLC-EVL,,basic,5,0,,top-level
+I_SUPLREVALREQUESTQNAIREAPI01,Questionnaire for Supplier Eval Request,Questionnaire for Supplier Eval Request,SLC-EVL,,basic,10,0,,top-level
+I_SUPLREVALREQUESTSECTIONAPI01,Section in Supplier Evaluation Request,Section in Supplier Evaluation Request,SLC-EVL,,basic,10,0,,top-level
+I_SUPLREVALREQVALUENAMEAPI01,Value Name for Supplier Eval Request,Value Name for Supplier Eval Request,SLC-EVL,,basic,5,0,,top-level
+I_SUPLREVALRSPAPPRAISERAPI01,Appraiser of Supplier Eval Response,Appraiser of Supplier Eval Response,SLC-EVL,,basic,16,0,,top-level
+I_SUPLREVALRSPLANGUAGEAPI01,Language of Supplier Eval Response,Language of Supplier Eval Response,SLC-EVL,,basic,6,0,,top-level
+I_SUPLREVALRSPLIFECYCLESTS,Lifecycle Status for Suplr Eval Response,Lifecycle Status for Suplr Eval Response,SLC-EVL,,basic,2,0,,top-level
+I_SUPLREVALRSPLIFECYCLESTSTEXT,Lifecycle Sts for Suplr Eval Rsp - Text,Lifecycle Sts for Suplr Eval Rsp - Text,SLC-EVL,,text,5,0,,top-level
+I_SUPLREVALRSPPTYADDRESSAPI01,Party Address for Suplr Eval Response,Party Address for Suplr Eval Response,SLC-EVL,,basic,6,0,,top-level
+I_SUPLREVALRSPPURRRESPAPI01,Purchaser Resp for Suplr Eval Response,Purchaser Resp for Suplr Eval Response,SLC-EVL,,basic,16,0,,top-level
+I_SUPLREVALRSPQNAIREAPI01,Questionnaire for Suplr Eval Response,Questionnaire for Suplr Eval Response,SLC-EVL,,basic,12,0,,top-level
+I_SUPLREVALRSPQUESTIONAPI01,Question for Supplier Eval Response,Question for Supplier Eval Response,SLC-EVL,,basic,22,0,,top-level
+I_SUPLREVALRSPREQUESTREFAPI01,Request Ref for Suplr Eval Response,Request Ref for Suplr Eval Response,SLC-EVL,,basic,4,0,,top-level
+I_SUPLREVALRSPROOTQNAIREAPI01,Root Qnaire for Suplr Eval Response,Root Qnaire for Suplr Eval Response,SLC-EVL,,basic,11,0,,top-level
+I_SUPLREVALRSPSECTIONAPI01,Section in Supplier Evaluation Response,Section in Supplier Evaluation Response,SLC-EVL,,basic,12,0,,top-level
+I_SUPLREVALRSPSTRUCQNAIREAPI01,Structure Qnaire for Suplr Eval Response,Structure Qnaire for Suplr Eval Response,SLC-EVL,,basic,12,0,,top-level
+I_SUPLREVALRSPSUPPLIERAPI01,Supplier Party for Suplr Eval Response,Supplier Party for Suplr Eval Response,SLC-EVL,,basic,17,0,Business Partner,top-level
+I_SUPLREVALRSPVALUATIONAPI01,Valuation of Supplier Eval Response,Valuation of Supplier Eval Response,SLC-EVL,,basic,8,0,,top-level
+I_SUPLREVALSCCRDPURRRESPAPI01,Purchaser Resp for Suplr Eval Scorecard,Purchaser Resp for Suplr Eval Scorecard,SLC-EVL,,basic,16,0,,top-level
+I_SUPLREVALSCCRDQNAIREAPI01,Questionnaire for Suplr Eval Scorecard,Questionnaire for Suplr Eval Scorecard,SLC-EVL,,basic,11,0,,top-level
+I_SUPLREVALSCCRDQUESTIONAPI01,Question for Supplier Eval Scorecard,Question for Supplier Eval Scorecard,SLC-EVL,,basic,11,0,,top-level
+I_SUPLREVALSCCRDRSPREFAPI01,Scorecard Ref to Suplr Eval Response,Scorecard Ref to Suplr Eval Response,SLC-EVL,,basic,7,0,,top-level
+I_SUPLREVALSCCRDSECTIONAPI01,Section of Supplier Evaluation Scorecard,Section of Supplier Evaluation Scorecard,SLC-EVL,,basic,12,0,,top-level
+I_SUPLREVALSCCRDSUPPLIERAPI01,Supplier for Supplier Eval Scorecard,Supplier for Supplier Eval Scorecard,SLC-EVL,,basic,18,0,Business Partner,top-level
+I_SUPLREVALSCCRDTMPLREFAPI01,Template Ref for Suplr Eval Scorecard,Template Ref for Suplr Eval Scorecard,SLC-EVL,,basic,4,0,,top-level
+I_SUPLREVALSCORECARDAPI01,Supplier Evaluation Scorecard,Supplier Evaluation Scorecard,SLC-EVL,,basic,12,0,,top-level
+I_SUPLREVALTMPLEXTNAMEAPI01,Ext Name for Supplier Eval Template,Ext Name for Supplier Eval Template,SLC-EVL,,basic,4,0,,top-level
+I_SUPLREVALTMPLLIFECYCLESTS,Lifecycle Status of Suplr Eval Template,Lifecycle Status of Suplr Eval Template,SLC-EVL,,basic,2,0,,top-level
+I_SUPLREVALTMPLLIFECYCLESTST,Lifecycle Sts of Suplr Eval Tmpl - Text,Lifecycle Sts of Suplr Eval Tmpl - Text,SLC-EVL,,basic,5,0,,top-level
+I_SUPLREVALTMPLPURRRESPAPI01,Purchaser Resp for Eval Template,Purchaser Resp for Eval Template,SLC-EVL,,basic,17,0,,top-level
+I_SUPLREVALTMPLTRNSLTNSTSAPI01,Translation Status of Eval Template,Translation Status of Eval Template,SLC-EVL,,basic,4,0,,top-level
+I_SUPLREVALUATIONTEMPLATEAPI01,Template for Supplier Evaluation,Template for Supplier Evaluation,SLC-EVL,,basic,12,0,,top-level
+I_SUPLRGEVALEMAILTMPLAPI02,Email Template for Eval Notification,Email Template for Eval Notification,SLC-EVL,,basic,16,0,,top-level
+I_SUPLRSCCRDROOTQNAIREAPI01,Root Qnaire for Suplr Eval Scorecard,Root Qnaire for Suplr Eval Scorecard,SLC-EVL,,basic,8,0,,top-level
+I_SUPLRSCCRDSTRUCQNAIREAPI01,Struc Qnaire for Suplr Eval Scorecard,Struc Qnaire for Suplr Eval Scorecard,SLC-EVL,,basic,10,0,,top-level
+I_SUPPLIEREVALRESPONSEAPI01,Supplier Evaluation Response,Supplier Evaluation Response,SLC-EVL,,basic,15,0,,top-level
+I_INACTIVESTATUS,Inactive Status,Inactive Status,SLC-SUP,,basic,3,0,,top-level
+I_INACTIVESTATUSTEXT,Inactive Status - Text,Inactive Status - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCCONSISTENCYSTATUS,Consistency Status,Consistency Status,SLC-SUP,,basic,2,0,,top-level
+I_SLCCONSISTENCYSTATUSTEXT,Consistency Status - Text,Consistency Status - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCMGMTABCCLASSIFICATION,ABC Classification,ABC Classification,SLC-SUP,,basic,2,0,,top-level
+I_SLCMGMTABCCLASSIFICATIONTEXT,ABC Classification - Text,ABC Classification - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCMGMTSTRATEGICIMPORTANCE,Strategic Importance,Strategic Importance,SLC-SUP,,basic,2,0,,top-level
+I_SLCMGMTSTRATEGICIMPRTNCTEXT,Strategic Importance - Text,Strategic Importance - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCPARTYIDENTIFIERTYPE,Party Identifier Type,Party Identifier Type,SLC-SUP,,basic,2,0,,top-level
+I_SLCPARTYIDENTIFIERTYPETEXT,Party Identifier Type - Text,Party Identifier Type - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCPARTYROLE,Party Role,Party Role,SLC-SUP,,basic,2,0,,top-level
+I_SLCPARTYROLETEXT,Party Role - Text,Party Role - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCPARTYTYPE,Party Type,Party Type,SLC-SUP,,basic,2,0,,top-level
+I_SLCPARTYTYPETEXT,Party Type - Text,Party Type - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCPREFERREDANSWER,Preferred Answer,Preferred Answer,SLC-SUP,,basic,2,0,,top-level
+I_SLCPREFERREDANSWERTEXT,Preferred Answer - Text,Preferred Answer - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCQUESTIONNOTEOPTION,Question Note Option,Question Note Option,SLC-SUP,,basic,2,0,,top-level
+I_SLCQUESTIONNOTEOPTIONTEXT,Question Note Option - Text,Question Note Option - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCQUESTIONTYPE,Question Type,Question Type,SLC-SUP,,basic,2,0,,top-level
+I_SLCQUESTIONTYPETEXT,Question Type - Text,Question Type - Text,SLC-SUP,,text,5,0,,top-level
+I_SLCTRANSLATIONSTATUSTEXT,Translation Status - Text,Translation Status - Text,SLC-SUP,,text,5,0,,top-level
+I_SUPPLIERQUALIFICATIONLVL,Level of Supplier Qualification,Level of Supplier Qualification,SLC-SUP,,basic,2,0,,top-level
+I_SUPPLIERQUALIFICATIONLVLTEXT,Level of Supplier Qualification - Text,Level of Supplier Qualification - Text,SLC-SUP,,text,5,0,,top-level

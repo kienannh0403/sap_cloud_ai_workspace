@@ -39,6 +39,24 @@ if echo "$payload" | grep -qE "${tr_token}.{0,60}${verb}" \
   deny "sap-dev-rule.md: agent must never create/delete/modify a Transport Request. Stop and ask the user to supply/manage the TR."
 fi
 
+# Object names: (1) params keys used by create/edit payloads, (2) the "TYPE NAME" in `target`
+# (for action=edit the name lives ONLY in `target`, e.g. "CLAS ZCL_X").
+obj_name=$(echo "$tool_input" | grep -oE '"(object_name|objectname|obj_name|name|class_name|program_name|interface_name|function_name|target_name)"[[:space:]]*:[[:space:]]*"[^"]+"' \
+  | head -1 | sed -E 's/.*:[[:space:]]*"([^"]+)"/\1/' || true)
+target_name=$(echo "$tool_input" | jq -r '(.target // "") | tostring | split(" ")[1] // ""' 2>/dev/null || true)
+
+# Rule: Custom Z/Y objects only — never touch Standard objects (rule §2). Used by CUD and edit calls.
+check_zy() {
+  local n first
+  for n in "$obj_name" "$target_name"; do
+    [[ -z "$n" ]] && continue
+    first=$(echo "${n:0:1}" | tr '[:upper:]' '[:lower:]')
+    if [[ "$first" != "z" && "$first" != "y" ]]; then
+      deny "sap-dev-rule.md: Custom Z/Y objects only. Target object '$n' does not match Z*/Y* naming — never touch Standard objects."
+    fi
+  done
+}
+
 # Below only applies to calls that look like an object CUD action.
 if echo "$payload" | grep -qE '"(action|operation|method)"[[:space:]]*:[[:space:]]*"(create|insert|update|modify|delete|activate)"' \
    || echo "$payload" | grep -qE '\b(create|insert|update|modify|delete|activate)_object\b'; then
@@ -70,15 +88,14 @@ if echo "$payload" | grep -qE '"(action|operation|method)"[[:space:]]*:[[:space:
   fi
 
   # --- Rule: Custom Z/Y objects only — never touch Standard objects. ---
-  # For the sap_cloud_dev tool the object name is in params, not in `target`.
-  obj_name=$(echo "$tool_input" | grep -oE '"(object_name|objectname|obj_name|name|class_name|program_name|interface_name|function_name|target_name)"[[:space:]]*:[[:space:]]*"[^"]+"' \
-    | head -1 | sed -E 's/.*:[[:space:]]*"([^"]+)"/\1/' || true)
-  if [[ -n "$obj_name" ]]; then
-    first_char=$(echo "${obj_name:0:1}" | tr '[:upper:]' '[:lower:]')
-    if [[ "$first_char" != "z" && "$first_char" != "y" ]]; then
-      deny "sap-dev-rule.md: Custom Z/Y objects only. Target object '$obj_name' does not match Z*/Y* naming — never touch Standard objects."
-    fi
-  fi
+  check_zy
+fi
+
+# Edit of an EXISTING object (action=edit*): the payload carries no package/TR (the object already
+# has both) so only Z/Y-only can be enforced here; package/TR discipline for edits stays with the
+# agent (rule §2). Before 2026-09-21 this hook ignored action=edit entirely.
+if echo "$payload" | grep -qE '"(action|operation|method)"[[:space:]]*:[[:space:]]*"edit[a-z_]*"'; then
+  check_zy
 fi
 
 exit 0

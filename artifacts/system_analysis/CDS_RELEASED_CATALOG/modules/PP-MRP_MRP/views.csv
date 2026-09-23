@@ -1,0 +1,72 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_MRPCHANGEREQUESTPRIORITY,MRP Change Request Priority,MRP Change Request Priority,PP-FIO,Dimension,dimension,2,0,,keyword
+I_MRPCHANGEREQUESTPRIORITYTXT,MRP Change Request Priority - Text,MRP Change Request Priority - Text,PP-FIO,,text,5,0,,keyword
+I_MRPCHANGEREQUESTREASON,MRP Change Request Reason,MRP Change Request Reason,PP-FIO,Dimension,dimension,2,0,,keyword
+I_MRPCHANGEREQUESTREASONTXT,MRP Change Request Reason - Text,MRP Change Request Reason - Text,PP-FIO,,text,5,0,,keyword
+I_MRPCHANGEREQUESTREJECTION,MRP Change Request Rejection,MRP Change Request Rejection,PP-FIO,Dimension,dimension,2,0,,keyword
+I_MRPCHANGEREQUESTREJECTIONTXT,MRP Change Request Rejection - Text,MRP Change Request Rejection - Text,PP-FIO,,text,5,0,,keyword
+I_MRPMASTERDATAISSUEBASIC,Master Data Related Issues of an MRP Run,Master Data Related Issues of an MRP Run,PP-MRP,Fact,fact,26,0,Material / Product; Plant,component
+I_MRPMASTERDATAISSUESOURCE,Source of an MRP Master Data Issue,Source of an MRP Master Data Issue,PP-MRP,Dimension,dimension,3,0,,component
+I_MRPMASTERDATAISSUESOURCETEXT,Source of an MRP Master Data Issue - Text,Source of an MRP Master Data Issue - Text,PP-MRP,,text,6,0,,component
+I_PMRPFLXBLCSTRTCATEGORY,Category for PMRP FlxblCstrt,Category for PMRP FlxblCstrt,PP-PMR-ENG,Dimension,dimension,3,0,,keyword
+I_PMRPFLXBLCSTRTCATEGORYTEXT,Category for PMRP FlxblCstrt - Text,Category for PMRP FlxblCstrt - Text,PP-PMR-ENG,,text,6,0,,keyword
+I_PMRPFLXBLCSTRTPERIODTYPE,PMRP Period Type,PMRP Period Type,PP-PMR-ENG,Dimension,dimension,3,0,,keyword
+I_PMRPFLXBLCSTRTPERIODTYPETEXT,PMRP Period Type - Text,PMRP Period Type - Text,PP-PMR-ENG,,text,6,0,,keyword
+I_PMRPFLXBLCSTRTTYPE,Type of PMRP Flexible Constraint,Type of PMRP Flexible Constraint,PP-PMR-ENG,Dimension,dimension,3,0,,keyword
+I_PMRPFLXBLCSTRTTYPETEXT,PMRP FlxblCstrt Type - Text,PMRP FlxblCstrt Type - Text,PP-PMR-ENG,,text,6,0,,keyword
+I_ACTIVEPLNDINDEPRQMT,Active Planned Independent Requirement,Active Planned Independent Requirement,PP-VDM,Dimension,dimension,34,2,Material / Product; Plant; WBS Element,keyword
+I_ACTIVEPLNDINDEPRQMTITEM,Active Planned Independent Requirement Item,Active Planned Independent Requirement Item,PP-VDM,Dimension,dimension,12,0,,keyword
+I_DEPDNTRQMTMRPRELEVANCE,MRP Relevance of Dependent Requirement,MRP Relevance of Dependent Requirement,PP-VDM,Dimension,dimension,3,0,,keyword
+I_DEPDNTRQMTMRPRELEVANCETEXT,Dependent Requirement MRP Relevance - Text,Dependent Requirement MRP Relevance - Text,PP-VDM,,text,6,0,,keyword
+I_DEPENDENTREQUIREMENTSTYPE,Dependent Requirements Type,Dependent Requirements Type,PP-VDM,Dimension,dimension,3,0,,keyword
+I_FORECASTPERIODTYPE,Forecast Period Type,Forecast Period Type,PP-VDM,Dimension,dimension,3,0,,keyword
+I_FORECASTPERIODTYPETEXT,Forecast Period Type - Text,Forecast Period Type - Text,PP-VDM,,text,6,0,,keyword
+I_MRPAREA,MRP Area,MRP Area,PP-VDM,Dimension,dimension,10,0,,keyword
+I_MRPAREACATEGORY,MRP Area Category,MRP Area Category,PP-VDM,Dimension,dimension,3,0,,keyword
+I_MRPAREACATEGORYTEXT,MRP Area Category - Text,MRP Area Category - Text,PP-VDM,,text,6,0,,keyword
+I_MRPAREAPLANNINGFILEENTRY,MRP Area Planning File Entry,MRP Area Planning File Entry,PP-VDM,Fact,fact,13,0,Material / Product; Plant,keyword
+I_MRPAREAPLANT,MRP Area Plant,MRP Area Plant,PP-VDM,Dimension,dimension,3,0,,keyword
+I_MRPAREASTORAGELOCATION,MRP Area Storage Location,MRP Area Storage Location,PP-VDM,Dimension,dimension,6,0,Plant,keyword
+I_MRPAREASUBCONTRACTOR,MRP Area Subcontractor,MRP Area Subcontractor,PP-VDM,Dimension,dimension,6,0,Plant,keyword
+I_MRPAREAVH,MRP Area,MRP Area,PP-VDM,,value_help,4,0,,keyword
+I_MRPCONTROLLER,MRP Controller,MRP Controller,PP-VDM,Dimension,dimension,14,0,Business Area; Plant; Profit Center,keyword
+I_MRPCONTROLLERVH,MRP Controller,MRP Controller,PP-VDM,,value_help,4,0,Plant,keyword
+I_MRPGROUP,MRP Group,MRP Group,PP-VDM,Dimension,dimension,4,0,Plant,keyword
+I_MRPGROUPCONTROLPARAMETER,MRP Group Control Parameter,MRP Group Control Parameter,PP-VDM,,basic,26,0,Plant,keyword
+I_MRPGROUPTEXT,MRP Group - Text,MRP Group - Text,PP-VDM,,text,7,0,Plant,keyword
+I_MRPLOTSIZINGPROCEDURE,MRP Lot Sizing Procedure,MRP Lot Sizing Procedure,PP-VDM,Dimension,dimension,8,0,,keyword
+I_MRPLOTSIZINGPROCEDURETEXT,MRP Lot Sizing Procedure - Text,MRP Lot Sizing Procedure - Text,PP-VDM,,text,5,0,,keyword
+I_MRPLOTSIZINGPROCEDUREVH,MRP Lot Sizing Procedure,MRP Lot Sizing Procedure,PP-VDM,,value_help,3,0,,keyword
+I_MRPPLANNINGPERIOD,MRP Planning Period,MRP Planning Period,PP-VDM,Dimension,dimension,12,0,Plant,keyword
+I_MRPPLANNINGPERIODTEXT,MRP Planning Period - Text,MRP Planning Period - Text,PP-VDM,,text,7,0,Plant,keyword
+I_MRPPLANNINGSCENARIO,MRP Planning Scenario,MRP Planning Scenario,PP-VDM,Dimension,dimension,11,0,,keyword
+I_MRPPLANTCONTROLPARAMETER,MRP Plant Control Parameters,MRP Plant Control Parameters,PP-VDM,Dimension,dimension,24,0,Plant,keyword
+I_MRPPROCEDURE,MRP Procedure,MRP Procedure,PP-VDM,Dimension,dimension,3,0,,keyword
+I_MRPPROCEDURETEXT,MRP Procedure - Text,MRP Procedure - Text,PP-VDM,,text,6,0,,keyword
+I_MRPSAFETYSTOCKMETHOD,MRP Safety Stock Method,MRP Safety Stock Method,PP-VDM,Dimension,dimension,3,0,,keyword
+I_MRPSAFETYSTOCKMETHODTEXT,MRP Safety Stock Method - Text,MRP Safety Stock Method - Text,PP-VDM,,text,6,0,,keyword
+I_MRPTYPE,MRP Type,MRP Type,PP-VDM,Dimension,dimension,4,0,,keyword
+I_MRPTYPETEXT,MRP Type - Text,MRP Type - Text,PP-VDM,,text,5,0,,keyword
+I_MRPTYPEVH,MRP Type,MRP Type,PP-VDM,,value_help,2,0,,keyword
+I_PLANNEDORDER,Planned Order,Planned Order,PP-VDM,Dimension,dimension,186,7,Customer; Material / Product; Purchasing Organization; WBS Element,keyword
+I_PLANNEDORDERACTIONCONTROL,Planned Order Action Control,Planned Order Action Control,PP-VDM,Dimension,dimension,1,0,,keyword
+I_PLANNEDORDERCAPACITY,Planned Order Capacity,Planned Order Capacity,PP-VDM,Dimension,dimension,49,0,,keyword
+I_PLANNEDORDERCATEGORY,Planned Order Category Code,Planned Order Category Code,PP-VDM,Dimension,dimension,3,0,,keyword
+I_PLANNEDORDERCATEGORYTEXT,Planned Order Category - Text,Planned Order Category - Text,PP-VDM,,text,6,0,,keyword
+I_PLANNEDORDERCOMPONENT,Planned Order Component,Planned Order Component,PP-VDM,Dimension,dimension,192,11,Batch; Business Area; G/L Account; Material / Product; Material Group; Movement Type; Plant; Supplier; WBS Element,keyword
+I_PLANNEDORDERSTDVH,Planned Order,Planned Order,PP-VDM,,value_help,3,0,,keyword
+I_PLANNEDORDERTYPE,Planned Order Type,Planned Order Type,PP-VDM,Dimension,dimension,3,0,,keyword
+I_PLANNEDORDERTYPETEXT,Planned Order Type - Text,Planned Order Type - Text,PP-VDM,,text,6,0,,keyword
+I_PLANNINGSTRATEGYGROUP,Planning Strategy Group,Planning Strategy Group,PP-VDM,Dimension,dimension,4,0,,keyword
+I_PLANNINGSTRATEGYGROUPTEXT,Planning Strategy Group - Text,Planning Strategy Group - Text,PP-VDM,,text,5,0,,keyword
+I_PLNDINDEPRQMTBYINTKEY,Planned Independent Requirement by Internal Key,Planned Independent Requirement by Internal Key,PP-VDM,Dimension,dimension,40,2,Material / Product; Plant; WBS Element,keyword
+I_PLNDINDEPRQMTITEMBYINTKEY,Planned Independent Requirement Item by Internal Key,Planned Independent Requirement Item by Internal Key,PP-VDM,Dimension,dimension,12,0,,keyword
+I_PLNDINDEPRQMTITEMHISTORY,History of Planned Independent Requirement Items,History of Planned Independent Requirement Items,PP-VDM,,basic,39,1,Material / Product; Plant,keyword
+I_PLNDINDEPRQMTTYPE,Planned Independent Requirement Type,Planned Independent Requirement Type,PP-VDM,Dimension,dimension,4,0,,keyword
+I_PLNDINDEPRQMTTYPETEXT,Planned Independent Requirement Type - Text,Planned Independent Requirement Type - Text,PP-VDM,,text,5,0,,keyword
+I_PRODFORECASTREQUIREMENTSSPLT,Product Forecast Requirements Split,Product Forecast Requirements Split,PP-VDM,Dimension,dimension,7,0,Plant,keyword
+I_PRODSAFETYTIMEMRPRELEVANCE,MRP Relevance of Product Safety Time,MRP Relevance of Product Safety Time,PP-VDM,Dimension,dimension,3,0,,keyword
+I_PRODSAFETYTIMEMRPRLVNCETEXT,Product Safety Time MRP Relevance - Text,Product Safety Time MRP Relevance - Text,PP-VDM,,text,6,0,,keyword
+I_PRODUCTMRPAREA,MRP Area Details of a Product,MRP Area Details of a Product,PP-VDM,Dimension,dimension,62,0,Material / Product,keyword
+I_PRODUCTPLANNINGSTRATEGY,Product Planning Strategy,Product Planning Strategy,PP-VDM,Dimension,dimension,6,0,,keyword
+I_PRODUCTPLANNINGSTRATEGYTEXT,Product Planning Strategy - Text,Product Planning Strategy - Text,PP-VDM,,text,4,0,,keyword

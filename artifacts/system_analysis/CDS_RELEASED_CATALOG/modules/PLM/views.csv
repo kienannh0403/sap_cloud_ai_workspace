@@ -1,0 +1,4 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_CHANGEMASTERSTATUSSTDVH,Change Number Status,Change Number Status,PLM-WUI-OBJ-ECN,,value_help,2,0,,top-level
+I_CHANGEMASTERSTATUSTEXT,Change Number Status - Text,Change Number Status - Text,PLM-WUI-OBJ-ECN,,text,4,0,,top-level
+I_CHANGEMASTERSTDVH,Change Number,Change Number,PLM-WUI-OBJ-ECN,,value_help,14,0,,top-level

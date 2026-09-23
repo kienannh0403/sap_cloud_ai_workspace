@@ -1,0 +1,174 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_QLTYMGMTINTEGRATIONSCENARIO,QM Integration Scenario,QM Integration Scenario,QM,,basic,3,0,,top-level
+I_QLTYMGMTINTEGSCENSTATE,QM Integration Scenario State,QM Integration Scenario State,QM,,basic,3,0,,top-level
+I_QLTYMGMTINTEGSCENSTATETEXT,QM Integration Scenario State - Text,QM Integration Scenario State - Text,QM,,text,5,0,,top-level
+I_QUALITYCERTIFICATETYPE,Quality Certificate Type,Quality Certificate Type,QM-CA,Dimension,dimension,3,0,,top-level
+I_QUALITYCERTIFICATETYPET,Quality Certificate Type - Text,Quality Certificate Type - Text,QM-CA,,basic,5,0,,top-level
+I_CHARCATTRIBSELDCODESETSTDVH,Selected Set for Characteristic Attribute,Selected Set for Characteristic Attribute,QM-IM,,value_help,5,0,Plant,top-level
+I_CHARCATTRIBSELECTEDCODESET,Selected Set for Characteristic Attribute,Selected Set for Characteristic Attribute,QM-IM,,basic,11,0,Plant,top-level
+I_CHARCATTRIBSELECTEDSETCODE,Selected Set Code for Charc Attribute,Selected Set Code for Charc Attribute,QM-IM,,basic,15,0,Plant,top-level
+I_CHARCATTRIBUTECODE,Characteristic Attribute Code,Characteristic Attribute Code,QM-IM,,basic,10,0,,top-level
+I_CHARCATTRIBUTECODEGRP,Characteristic Attribute Code Group,Characteristic Attribute Code Group,QM-IM,,basic,8,0,,top-level
+I_CHARCATTRIBUTECODEGRPSTD1VH,Characteristic Attribute Code Group,Characteristic Attribute Code Group,QM-IM,,value_help,3,0,,top-level
+I_CHARCATTRIBUTECODEGRPSTDVH,Characteristic Attribute Code Group,Characteristic Attribute Code Group,QM-IM,,value_help,2,0,,top-level
+I_CHARCATTRIBUTECODEGRPTEXT,Characteristic Attribute Code Group - Text,Characteristic Attribute Code Group - Text,QM-IM,,text,5,0,,top-level
+I_CHARCATTRIBUTECODEGRPVH,Characteristic Attribute Code Group,Characteristic Attribute Code Group,QM-IM,,value_help,3,0,,top-level
+I_CHARCATTRIBUTECODESTDVH,Characteristic Attribute Code,Characteristic Attribute Code,QM-IM,,value_help,4,0,,top-level
+I_CHARCATTRIBUTECODETEXT,Characteristic Attribute Code - Text,Characteristic Attribute Code - Text,QM-IM,,text,5,0,,top-level
+I_DEFECTCLASS,Defect Class,Defect Class,QM-IM,,basic,3,0,,top-level
+I_DEFECTCLASSTEXT,Defect Class - Text,Defect Class - Text,QM-IM,,text,5,0,,top-level
+I_INSPECTIONCHARACTERISTIC,Characteristic in Inspection Lot,Characteristic in Inspection Lot,QM-IM,,basic,128,2,Inspection Lot,top-level
+I_INSPECTIONLOT,Inspection Lot,Inspection Lot,QM-IM,,basic,239,2,Batch; Business Area; Company Code; Controlling Area; Cost Center; Equipment; Fixed Asset; G/L Account; Inspection Lot; Material / Product; Movement Type; Plant; Profit Center; Profitability Segment; Sales Organization; WBS Element,top-level
+I_INSPECTIONLOTLONGTEXT,Inspection Lot Long Text,Inspection Lot Long Text,QM-IM,,text,9,0,Inspection Lot,top-level
+I_INSPECTIONLOTORIGIN,Inspection Lot Origin,Inspection Lot Origin,QM-IM,Dimension,dimension,2,0,,top-level
+I_INSPECTIONLOTORIGINSETTINGS,Settings for Inspection Lot Origin,Settings for Inspection Lot Origin,QM-IM,,basic,6,0,,top-level
+I_INSPECTIONLOTORIGINTEXT,Inspection Lot Origin - Text,Inspection Lot Origin - Text,QM-IM,Dimension,text,3,0,,top-level
+I_INSPECTIONLOTORIGINTYPE,Assignment of Inspection Type to Origin,Assignment of Inspection Type to Origin,QM-IM,Dimension,dimension,5,0,,top-level
+I_INSPECTIONLOTSTATUS1,Inspection Lot Status,Inspection Lot Status,QM-IM,,basic,5,0,Inspection Lot,top-level
+I_INSPECTIONLOTSTDVH,Inspection Lot,Inspection Lot,QM-IM,,value_help,5,0,Inspection Lot; Plant,top-level
+I_INSPECTIONLOTTYPE,Inspection Type,Inspection Type,QM-IM,,basic,6,0,,top-level
+I_INSPECTIONLOTTYPETEXT,Inspection Type - Text,Inspection Type - Text,QM-IM,,text,5,0,,top-level
+I_INSPECTIONLOTTYPEVALUEHELP,Inspection Type,Inspection Type,QM-IM,,basic,2,0,,top-level
+I_INSPECTIONLOTVALUEHELP,Inspection Lot,Inspection Lot,QM-IM,,basic,139,1,Batch; Business Area; Company Code; Controlling Area; Cost Center; Equipment; G/L Account; Inspection Lot; Material / Product; Movement Type; Plant; Profit Center; Sales Organization; Storage Location,top-level
+I_INSPECTIONOPERATION,Inspection Operation,Inspection Operation,QM-IM,,basic,28,0,Inspection Lot; Plant; Task List (routing) group,top-level
+I_INSPECTIONOPERATIONSTATUS,Inspection Operation Status,Inspection Operation Status,QM-IM,,basic,9,0,Plant,top-level
+I_INSPECTIONOPERATIONSTDVH,Inspection Operation,Inspection Operation,QM-IM,,value_help,6,0,Inspection Lot; Plant,top-level
+I_INSPECTIONRESULT,Summarized Insp Result for an Insp Charc,Summarized Insp Result for an Insp Charc,QM-IM,,basic,77,0,Inspection Lot,top-level
+I_INSPECTIONRESULTATTRIBUTE,Inspection Result Attributes,Inspection Result Attributes,QM-IM,Dimension,dimension,4,0,,top-level
+I_INSPECTIONRESULTORIGIN,Inspection Result Origin,Inspection Result Origin,QM-IM,Dimension,dimension,2,0,,top-level
+I_INSPECTIONRESULTORIGINTEXT,Inspection Result Origin,Inspection Result Origin,QM-IM,,text,5,0,,top-level
+I_INSPECTIONRESULTSTATUS,Inspection Result Status,Inspection Result Status,QM-IM,,basic,3,0,,top-level
+I_INSPECTIONRESULTSTATUSTEXT,Inspection Result Status - Text,Inspection Result Status - Text,QM-IM,,text,3,0,,top-level
+I_INSPECTIONRESULTVALUE,Single Value of an Inspection Charc Rslt,Single Value of an Inspection Charc Rslt,QM-IM,,basic,60,0,Inspection Lot,top-level
+I_INSPECTIONSCOPE,Inspection Scope,Inspection Scope,QM-IM,,basic,2,0,,top-level
+I_INSPECTIONSCOPETEXT,Inspection Scope - Text,Inspection Scope - Text,QM-IM,,text,5,0,,top-level
+I_INSPECTIONSUBSET,Inspection Point of Inspection Operation,Inspection Point of Inspection Operation,QM-IM,,basic,59,0,Equipment; Inspection Lot; Plant,top-level
+I_INSPECTIONSUBSETTYPE,Inspection Point Type,Inspection Point Type,QM-IM,Dimension,dimension,2,0,,top-level
+I_INSPECTIONSUBSETTYPETEXT,Inspection Point Type - Text,Inspection Point Type - Text,QM-IM,,text,5,0,,top-level
+I_INSPLOTMATLDOCITEM,Material Document Item in Inspection Lot,Material Document Item in Inspection Lot,QM-IM,,basic,11,0,Inspection Lot,top-level
+I_INSPLOTMATLDOCITEMTYPE,Reference Type of Matl Doc Item in Lot,Reference Type of Matl Doc Item in Lot,QM-IM,Dimension,dimension,2,0,,top-level
+I_INSPLOTMATLDOCITEMTYPETEXT,Ref Type of Matl Doc Item in Lot - Text,Ref Type of Matl Doc Item in Lot - Text,QM-IM,,text,5,0,,top-level
+I_INSPLOTSERIALNUMBER,Serial Numbers of Inspection Lot,Serial Numbers of Inspection Lot,QM-IM,,basic,6,0,Inspection Lot; Plant,top-level
+I_INSPLOTSUMMARYCONTROL,Control of Inspection Lot Summary,Control of Inspection Lot Summary,QM-IM,Dimension,dimension,4,0,,top-level
+I_INSPLOTSUMMARYCONTROLTEXT,Control of Inspection Lot Summary - Text,Control of Inspection Lot Summary - Text,QM-IM,,text,7,0,,top-level
+I_INSPLOTUSAGEDECISION,Usage Decision for Inspection Lot,Usage Decision for Inspection Lot,QM-IM,,basic,33,0,Inspection Lot; Plant,top-level
+I_INSPLOTUSGEDCSNLONGTEXT,Inspection Lot Usage Decision Long Text,Inspection Lot Usage Decision Long Text,QM-IM,,text,10,0,Inspection Lot,top-level
+I_INSPQLTYSCOREPROCEDURETXT,Quality Score Procedure - Text,Quality Score Procedure - Text,QM-IM,,text,4,0,,top-level
+I_INSPQUALITYSCOREPROCEDURE,Calculating the Quality Score Procedure,Calculating the Quality Score Procedure,QM-IM,,basic,2,0,,top-level
+I_INSPRESULTATTRIBUTETEXT,Inspection Result Attribute - Text,Inspection Result Attribute - Text,QM-IM,,text,5,0,,top-level
+I_INSPRESULTDOCUREQUIRED,Docu Required for Inspection Results,Docu Required for Inspection Results,QM-IM,,basic,2,0,,top-level
+I_INSPRESULTDOCUREQUIREDTEXT,Docu Required for Insp Results - Text,Docu Required for Insp Results - Text,QM-IM,,text,5,0,,top-level
+I_INSPSPECIMPORTANCECODE,Weighting of Inspection Characteristic,Weighting of Inspection Characteristic,QM-IM,,basic,3,0,,top-level
+I_INSPSPECIMPORTANCECODETEXT,Weighting of Inspection Charc - Text,Weighting of Inspection Charc - Text,QM-IM,,text,3,0,,top-level
+I_INSPSPECRECORDINGTYPE,Recording Type,Recording Type,QM-IM,Dimension,dimension,2,0,,top-level
+I_INSPSPECRECORDINGTYPETEXT,Recording Type - Text,Recording Type - Text,QM-IM,,text,5,0,,top-level
+I_INSPSPECRSLTCALCULATION,Characteristic Result Calculation,Characteristic Result Calculation,QM-IM,,basic,2,0,,top-level
+I_INSPSPECRSLTCALCULATIONTEXT,Characteristic Result Calculation - Text,Characteristic Result Calculation - Text,QM-IM,,text,5,0,,top-level
+I_INSPSUBSETCHARACTERISTIC,Inspection Charc for an Inspection Point,Inspection Charc for an Inspection Point,QM-IM,,basic,31,0,Inspection Lot,top-level
+I_INSPSUBSETRESULT,Insp Result for an Inspection Point,Insp Result for an Inspection Point,QM-IM,,basic,77,0,Inspection Lot,top-level
+I_QLTYMGMTPLANTLVLCONFIGN,Quality Settings at Plant Level,Quality Settings at Plant Level,QM-IM,,basic,5,0,Plant,top-level
+I_QUALITYCONTROLCHARTTYPE,Type of Quality Control Chart,Type of Quality Control Chart,QM-IM,,basic,3,0,,top-level
+I_QUALITYCONTROLCHARTTYPETEXT,Type of Quality Control Chart - Text,Type of Quality Control Chart - Text,QM-IM,,text,5,0,,top-level
+I_SAMPLINGSCHEME,Sampling Scheme,Sampling Scheme,QM-IM,,basic,12,0,,top-level
+I_SAMPLINGSCHEMETEXT,Sampling Scheme - Text,Sampling Scheme - Text,QM-IM,,text,5,0,,top-level
+I_USAGEDECISIONCODE,Usage Decision Code,Usage Decision Code,QM-IM,Dimension,dimension,10,0,,top-level
+I_USAGEDECISIONCODEGROUP,Usage Decision Code Group,Usage Decision Code Group,QM-IM,Dimension,dimension,8,0,,top-level
+I_USAGEDECISIONCODEGROUPSTDVH,Usage Decision Code Group,Usage Decision Code Group,QM-IM,,value_help,3,0,,top-level
+I_USAGEDECISIONCODEGROUPTEXT,Usage Decision Code Group - Text,Usage Decision Code Group - Text,QM-IM,Dimension,text,4,0,,top-level
+I_USAGEDECISIONCODESTDVH,Usage Decision Code,Usage Decision Code,QM-IM,,value_help,4,0,,top-level
+I_USAGEDECISIONCODETEXT,Usage Decision Code - Text,Usage Decision Code - Text,QM-IM,Dimension,text,5,0,,top-level
+I_CONFIGBLCODESCATALOGTEXT,Catalog of Configurable Codes - Text,Catalog of Configurable Codes - Text,QM-PT,,text,3,0,,top-level
+I_CONFIGBLCODESCODEGROUPTEXT,Code Group of Configurable Codes - Text,Code Group of Configurable Codes - Text,QM-PT,,text,6,0,,top-level
+I_CONFIGURABLECODESCATALOG,Catalog of Configurable Codes,Catalog of Configurable Codes,QM-PT,Dimension,dimension,4,0,,top-level
+I_CONFIGURABLECODESCODE,Code of Configurable Codes,Code of Configurable Codes,QM-PT,Dimension,dimension,7,0,,top-level
+I_CONFIGURABLECODESCODEGROUP,Code Group of Configurable Codes,Code Group of Configurable Codes,QM-PT,Dimension,dimension,7,0,,top-level
+I_CONFIGURABLECODESCODETEXT,Code of Configurable Codes - Text,Code of Configurable Codes - Text,QM-PT,,text,8,0,,top-level
+I_INSPECTIONCATALOG,Inspection Catalog,Inspection Catalog,QM-PT,,basic,2,0,,top-level
+I_INSPECTIONCATALOGTEXT,Inspection Catalog - Text,Inspection Catalog - Text,QM-PT,,text,3,0,,top-level
+I_INSPECTIONCODE,Inspection Code,Inspection Code,QM-PT,,basic,7,0,,top-level
+I_INSPECTIONCODEGROUP,Inspection Code Group,Inspection Code Group,QM-PT,,basic,6,0,,top-level
+I_INSPECTIONCODEGROUPSTDVH,Inspection Code Group,Inspection Code Group,QM-PT,,value_help,5,0,,top-level
+I_INSPECTIONCODEGROUPTEXT,Inspection Code Group - Text,Inspection Code Group - Text,QM-PT,,text,6,0,,top-level
+I_INSPECTIONCODESTDVH,Inspection Code,Inspection Code,QM-PT,,value_help,6,0,,top-level
+I_INSPECTIONCODETEXT,Inspection Code - Text,Inspection Code - Text,QM-PT,,text,8,0,,top-level
+I_INSPECTIONMETHODVERSION,Inspection Method Version,Inspection Method Version,QM-PT,,basic,29,0,,top-level
+I_INSPECTIONPLAN,Inspection Plan,Inspection Plan,QM-PT,,basic,10,0,Task List (routing) group,top-level
+I_INSPECTIONPLANVERSION,Version of Inspection Plan,Version of Inspection Plan,QM-PT,,basic,53,0,Plant; Task List (routing) group,top-level
+I_INSPECTIONSELECTEDSET,Inspection Selected Set,Inspection Selected Set,QM-PT,,basic,11,0,Plant,top-level
+I_INSPECTIONSELECTEDSETSTDVH,Inspection Selected Set,Inspection Selected Set,QM-PT,,value_help,6,0,Plant,top-level
+I_INSPECTIONSELECTEDSETTEXT,Inspection Selected Set - Text,Inspection Selected Set - Text,QM-PT,,text,8,0,Plant,top-level
+I_INSPECTORQUALIFICATION,Inspector Qualification,Inspector Qualification,QM-PT,,basic,2,0,,top-level
+I_INSPECTORQUALIFICATIONSTDVH,Inspector Qualification,Inspector Qualification,QM-PT,,value_help,2,0,,top-level
+I_INSPECTORQUALIFICATIONTEXT,Inspector Qualification - Text,Inspector Qualification - Text,QM-PT,,text,5,0,,top-level
+I_INSPLOTDYNAMICRULE,Dynamic modification rule,Dynamic modification rule,QM-PT,Dimension,dimension,5,0,,top-level
+I_INSPLOTDYNAMICRULESTDVH,Dynamic Modification Rule,Dynamic Modification Rule,QM-PT,,value_help,2,0,,top-level
+I_INSPLOTDYNAMICRULETEXT,Dynamic Modification Rule – Text,Dynamic Modification Rule – Text,QM-PT,,text,5,0,,top-level
+I_INSPLOTDYNRULESTAGE,Inspection Stage,Inspection Stage,QM-PT,Dimension,dimension,14,0,,top-level
+I_INSPLOTDYNRULESTAGETEXT,Inspection Stage - Text,Inspection Stage - Text,QM-PT,,text,7,0,,top-level
+I_INSPMETHVERSSTDVH,Inspection Method Version,Inspection Method Version,QM-PT,,value_help,8,0,,top-level
+I_INSPPLANOPCHARCVERSION_2,Version of Insp Plan Characteristic,Version of Insp Plan Characteristic,QM-PT,,basic,118,0,Task List (routing) group,top-level
+I_INSPPLANOPERATIONVERSION_2,Version of Inspection Plan Operation,Version of Inspection Plan Operation,QM-PT,,basic,34,0,Plant; Task List (routing) group,top-level
+I_INSPPLNMATLASSGMTVERSION_2,Version of Material Assgmt in Insp Plan,Version of Material Assgmt in Insp Plan,QM-PT,,basic,24,0,Material / Product; Plant; Task List (routing) group,top-level
+I_INSPSPECADDITIONALCATALOG,Additional Catalog of Master Charc,Additional Catalog of Master Charc,QM-PT,Dimension,dimension,2,0,,top-level
+I_INSPSPECADDLCATALOGTEXT,Addl Catalog of Master Charc - Text,Addl Catalog of Master Charc - Text,QM-PT,,text,3,0,,top-level
+I_INSPSPECADDLCODEGROUP,Additional Code Group of Master Charc,Additional Code Group of Master Charc,QM-PT,,basic,6,0,,top-level
+I_INSPSPECADDLCODEGROUPTEXT,Addl Code Group of Master Charc - Text,Addl Code Group of Master Charc - Text,QM-PT,,text,7,0,,top-level
+I_INSPSPECCATALOG,Assignment of Catalogs to Master Charc,Assignment of Catalogs to Master Charc,QM-PT,,basic,15,0,,top-level
+I_INSPSPECCHARCCATEGORY,Characteristic Category,Characteristic Category,QM-PT,,basic,2,0,,top-level
+I_INSPSPECCHARCCATEGORYTEXT,Characteristic Category - Text,Characteristic Category - Text,QM-PT,,text,5,0,,top-level
+I_INSPSPECCHARCTYPE,Inspection Characteristic Type,Inspection Characteristic Type,QM-PT,,basic,2,0,,top-level
+I_INSPSPECCHARCTYPETEXT,Inspection Characteristic Type - Text,Inspection Characteristic Type - Text,QM-PT,,text,5,0,,top-level
+I_INSPSPECIFICATIONVERSION,Version of Master Insp Characteristic,Version of Master Insp Characteristic,QM-PT,,basic,129,0,Plant,top-level
+I_INSPSPECIFICATIONVERSIONTEXT,Version of Master Insp Charc - Text,Version of Master Insp Charc - Text,QM-PT,,text,9,0,,top-level
+I_INSPSPECPRINTCONTROL,Print Control of Master Characteristic,Print Control of Master Characteristic,QM-PT,,basic,2,0,,top-level
+I_INSPSPECPRINTCONTROLTEXT,Print Control of Master Charc - Text,Print Control of Master Charc - Text,QM-PT,,text,5,0,,top-level
+I_INSPSPECTRANSFERTYPE,Transfer Type of Master Characteristic,Transfer Type of Master Characteristic,QM-PT,Dimension,dimension,2,0,,top-level
+I_INSPSPECTRANSFERTYPETEXT,Transfer Type of Master Charc - Text,Transfer Type of Master Charc - Text,QM-PT,,text,5,0,,top-level
+I_INSPSUBSETFIELDCOMBINATION,Inspection Point Field Combination,Inspection Point Field Combination,QM-PT,Dimension,dimension,16,0,,top-level
+I_INSPSUBSETFIELDCOMBINATIONT,Inspection Point Field Combination - Text,Inspection Point Field Combination - Text,QM-PT,,basic,14,0,,top-level
+I_INSPTOLERANCESPECIFICATION,Inspection Tolerance Specification,Inspection Tolerance Specification,QM-PT,,basic,2,0,,top-level
+I_INSPTOLERANCESPECTEXT,Inspection Tolerance Specification - Text,Inspection Tolerance Specification - Text,QM-PT,,text,5,0,,top-level
+I_MATLQUALITYAUTHGROUP,Material Authzn Group for Qlty Mgmt,Material Authzn Group for Qlty Mgmt,QM-PT,,basic,3,0,,top-level
+I_MATLQUALITYAUTHGROUPTEXT,Material Authzn Group for Qlty Mgmt - Text,Material Authzn Group for Qlty Mgmt - Text,QM-PT,,text,5,0,,top-level
+I_PROCUREMENTBLOCK,Procurement Block,Procurement Block,QM-PT,,basic,2,0,,top-level
+I_PROCUREMENTBLOCKTEXT,Procurement Block - Text,Procurement Block - Text,QM-PT,,text,5,0,,top-level
+I_PRODUCTINSPTYPESETTING,Settings for Inspection Type in Product,Settings for Inspection Type in Product,QM-PT,,basic,33,0,Material / Product; Plant,top-level
+I_QLTYMGMTSYSTEMFORSUPPLIERTXT,Target QM System for Supplier - Text,Target QM System for Supplier - Text,QM-PT,,text,5,0,,top-level
+I_QLTYMGMTSYSTEMTEXT,Quality Management System - Text,Quality Management System - Text,QM-PT,,text,5,0,,top-level
+I_QLTYMSTRDATAAUTHORIZATIONGRP,Authzn Group for Quality Master Data,Authzn Group for Quality Master Data,QM-PT,,basic,2,0,,top-level
+I_QLTYMSTRDATAAUTHZNGROUPTXT,Authzn Group for Qlty Master Data - Text,Authzn Group for Qlty Master Data - Text,QM-PT,,text,5,0,,top-level
+I_QMSYSTASSIGNMENTFORSUPPLIER,QM System Assgmt and QM System Rqmts,QM System Assgmt and QM System Rqmts,QM-PT,,basic,4,0,,top-level
+I_QUALITYMANAGEMENTSYSTEM,Quality Management System,Quality Management System,QM-PT,,basic,5,0,,top-level
+I_QUALITYMGMTCTRLKEY,Control Key for Quality Management,Control Key for Quality Management,QM-PT,Dimension,dimension,5,0,,top-level
+I_QUALITYMGMTCTRLKEYTEXT,Control Key for Quality Management - Text,Control Key for Quality Management - Text,QM-PT,,text,5,0,,top-level
+I_QUALITYMGMTSYSTEMFORSUPPLIER,Target QM System for Supplier,Target QM System for Supplier,QM-PT,,basic,2,0,,top-level
+I_SAMPLEDETERMINATIONRULE,Sample Determination Rule,Sample Determination Rule,QM-PT,,basic,2,0,,top-level
+I_SAMPLEDETERMINATIONRULETEXT,Sample Determination Rule - Text,Sample Determination Rule - Text,QM-PT,,text,5,0,,top-level
+I_SAMPLINGPROCEDURE,Sampling Procedure,Sampling Procedure,QM-PT,Dimension,dimension,43,0,,top-level
+I_SAMPLINGPROCEDURESTDVH,Sampling Procedure,Sampling Procedure,QM-PT,,value_help,2,0,,top-level
+I_SAMPLINGPROCEDURETEXT,Sampling Procedure - Text,Sampling Procedure - Text,QM-PT,,text,5,0,,top-level
+I_SAMPLINGPROCEDUREVALUEHELP,Sampling Procedure,Sampling Procedure,QM-PT,,basic,16,0,,top-level
+I_SAMPLINGTYPE,Sampling Type,Sampling Type,QM-PT,,basic,2,0,,top-level
+I_SAMPLINGTYPETEXT,Sampling Type - Text,Sampling Type - Text,QM-PT,,text,5,0,,top-level
+I_SAMPLINGVALUATIONMODE,Valuation Mode for Inspection Charc,Valuation Mode for Inspection Charc,QM-PT,,basic,10,0,,top-level
+I_SAMPLINGVALUATIONMODETEXT,Valuation Mode for Insp Charc - Text,Valuation Mode for Insp Charc - Text,QM-PT,,text,5,0,,top-level
+I_SMPLGPROCEDMLTPLSAMPLES,Usage of Multiple Samples,Usage of Multiple Samples,QM-PT,Dimension,dimension,2,0,,top-level
+I_SMPLGPROCEDMLTPLSAMPLESTEXT,Usage of Multiple Samples - Text,Usage of Multiple Samples - Text,QM-PT,,text,5,0,,top-level
+I_DEFECT,Defect,Defect,QM-QN,Dimension,dimension,103,2,Batch; Cost Center; Equipment; Inspection Lot; Material / Product; Plant; Storage Location,top-level
+I_DEFECTCODE,Defect Code,Defect Code,QM-QN,Dimension,dimension,8,0,,top-level
+I_DEFECTCODEGROUP,Defect Code Group,Defect Code Group,QM-QN,Dimension,dimension,5,0,,top-level
+I_DEFECTCODEGROUPSTDVH,Defect Code Group,Defect Code Group,QM-QN,,value_help,4,0,,top-level
+I_DEFECTCODEGROUPTEXT,Defect Code Group - Text,Defect Code Group - Text,QM-QN,,text,4,0,,top-level
+I_DEFECTCODESTDVH,Defect Code,Defect Code,QM-QN,,value_help,9,0,,top-level
+I_DEFECTCODETEXT,Defect Code - Text,Defect Code - Text,QM-QN,,text,6,0,,top-level
+I_DEFECTLONGTEXT,Defect Long Text,Defect Long Text,QM-QN,,text,12,0,,top-level
+I_QLTYNOTIFICATION,Quality Notification,Quality Notification,QM-QN,,basic,100,0,Batch; Delivery; Distribution Channel; Division; Inspection Lot; Material / Product; Material Group; Purchasing Organization; Sales Organization; WBS Element,top-level
+I_QLTYNOTIFICATIONACTIVITY,Quality Notification Activity,Quality Notification Activity,QM-QN,,basic,31,0,,top-level
+I_QLTYNOTIFICATIONCAUSE,Quality Notification Item Cause,Quality Notification Item Cause,QM-QN,,basic,29,0,,top-level
+I_QLTYNOTIFICATIONLONGTEXT,Quality Notification Longtext,Quality Notification Longtext,QM-QN,,text,12,0,,top-level
+I_QLTYNOTIFICATIONTASK,Quality Notification Task,Quality Notification Task,QM-QN,,basic,53,0,,top-level
+I_QLTYNOTIFITEMLONGTEXT,Quality Notification Item Long Text,Quality Notification Item Long Text,QM-QN,,text,16,0,,top-level
+I_QUALITYNOTIFICATIONITEM,Quality Notification Item,Quality Notification Item,QM-QN,Dimension,dimension,60,0,,top-level
+I_QUALITYNOTIFICATIONPARTNER,Quality Notification Partner,Quality Notification Partner,QM-QN,,basic,20,0,,top-level
+I_QUALITYTASK,Quality Task,Quality Task,QM-QN,Dimension,dimension,58,0,,top-level
+I_QUALITYTASKLONGTEXT,Quality Task Long Text,Quality Task Long Text,QM-QN,,text,12,0,,top-level

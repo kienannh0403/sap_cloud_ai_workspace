@@ -1,0 +1,6 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_SERVICECOSTLEVEL,Service Cost Level,Service Cost Level,CO-OM,,basic,4,0,,component
+I_SERVICECOSTLEVELTEXT,Service Cost Level - Text,Service Cost Level - Text,CO-OM,,text,5,0,,component
+I_SERVICECOSTLEVELTEXT_2,Service Cost Level - Text,Service Cost Level - Text,CO-OM,,basic,6,0,,component
+I_SERVICECOSTRATE_2,Service Cost Rate,Service Cost Rate,CO-OM,Fact,fact,43,0,Activity Type; Company Code; Controlling Area; Cost Center; Personnel; WBS Element,component
+I_COSTCENTERBUDGET,Cost Center Budget Report,Cost Center Budget Report,CO-OM-CCA-AVC,,basic,80,0,Company Code; Controlling Area; Customer; Distribution Channel; Division; Fiscal Year; G/L Account; Plant; Sales Document; Sales Organization; Segment; Supplier; Valuation Area,component

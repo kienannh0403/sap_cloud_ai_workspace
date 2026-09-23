@@ -1,0 +1,91 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_LANGUAGE,Language,Language,BC-DOC-TTL,Dimension,dimension,3,0,,top-level
+I_LANGUAGETEXT,Language Text,Language Text,BC-DOC-TTL,,text,5,0,,top-level
+I_CONFIGNDEPRECATIONCODE,Configuration Deprecation Code,Configuration Deprecation Code,BC-DWB-DIC,Dimension,dimension,3,0,,top-level
+I_CONFIGNDEPRECATIONCODETEXT,Configuration Deprecation Code Text,Configuration Deprecation Code Text,BC-DWB-DIC,,text,5,0,,top-level
+I_SYSTEMUSER,System User,System User,BC-SEC-USR-ADM,,basic,2,0,,top-level
+I_USER,User,User,BC-SEC-USR-ADM,,basic,9,0,Address,top-level
+I_COUNTRY,Country/Region,Country/Region,BC-SRV-ADR,Dimension,dimension,20,0,,top-level
+I_COUNTRYTEXT,Country/Region - Text,Country/Region - Text,BC-SRV-ADR,,text,8,0,,top-level
+I_COUNTRYVH,Country/Region,Country/Region,BC-SRV-ADR,Dimension,value_help,5,0,,top-level
+I_FAMILYNAMEPREFIX,Family Name Prefix,Family Name Prefix,BC-SRV-ADR,,basic,2,0,,top-level
+I_FAMILYNAMEPREFIXVH,Family Name Prefix,Family Name Prefix,BC-SRV-ADR,,value_help,2,0,,top-level
+I_FORMOFADDRESS,Form of Address,Form of Address,BC-SRV-ADR,Dimension,dimension,2,0,,top-level
+I_FORMOFADDRESSTEXT,Form Of Address - Text,Form Of Address - Text,BC-SRV-ADR,,text,5,0,,top-level
+I_NAMESUPPLEMENT,Name Supplement,Name Supplement,BC-SRV-ADR,,basic,3,0,,top-level
+I_NAMESUPPLEMENTTEXT,Name Supplement - Text,Name Supplement - Text,BC-SRV-ADR,,text,3,0,,top-level
+I_NAMESUPPLEMENTVH,Name Supplement,Name Supplement,BC-SRV-ADR,,value_help,3,0,,top-level
+I_ORGADDRESSDEFAULTRPRSTN,Default Representation of an Org Address,Default Representation of an Org Address,BC-SRV-ADR,Dimension,dimension,87,0,Address,top-level
+I_ORGANIZATIONADDRESS,Address of an Organization,Address of an Organization,BC-SRV-ADR,Dimension,dimension,94,0,Address,top-level
+I_ORGNAMEPOSTLADDRDFLTRPRSTN,Dflt Addr Rprstn for Postal and Org,Dflt Addr Rprstn for Org and Postal,BC-SRV-ADR,Dimension,dimension,58,0,Address,top-level
+I_PERSONADDRESS,Address of a Person,Address of a Person,BC-SRV-ADR,Dimension,dimension,110,0,Address,top-level
+I_PERSONADDRESSDEFAULTRPRSTN,Deafult Represention for Address of a Person,Dflt Represention of a Person Address,BC-SRV-ADR,Dimension,dimension,100,0,Address,top-level
+I_PERSONWORKPLACEADDRESS,Corporate Workplace Address of a Person,Corporate Workplace Address of a Person,BC-SRV-ADR,Fact,fact,41,0,Address,top-level
+I_PHONENUMBERTYPE,Phone Number Type,Phone Number Type,BC-SRV-ADR,,basic,2,0,,top-level
+I_PHONENUMBERTYPETEXT,Text for Phone Number Type,Text for Phone Number Type,BC-SRV-ADR,,text,3,0,,top-level
+I_POSTALCITY,Postal City,Postal City,BC-SRV-ADR,,basic,6,0,,top-level
+I_POSTALCITYTEXT,Description of Postal City,Description of Postal City,BC-SRV-ADR,,text,6,0,,top-level
+I_REGION,Region,Region,BC-SRV-ADR,Dimension,dimension,5,0,,top-level
+I_REGIONALSTRUCCHECKSTATUSTEXT,Regional Structure Check Status - Text,Regional Structure Check Status - Text,BC-SRV-ADR,,text,3,0,,top-level
+I_REGIONALSTRUCTURECHECKSTATUS,Regional Structure Check Status,Regional Structure Check Status,BC-SRV-ADR,,basic,2,0,,top-level
+I_REGIONTEXT,Region - Text,Region - Text,BC-SRV-ADR,,text,7,0,,top-level
+I_REGIONVH,Region,Region,BC-SRV-ADR,,value_help,4,0,,top-level
+I_SECONDARYREGION,Secondary Region,Secondary Region,BC-SRV-ADR,,basic,6,0,,top-level
+I_SECONDARYREGIONTEXT,Description of Secondary Text,Description of Secondary Text,BC-SRV-ADR,,text,8,0,,top-level
+I_STREET,Street,Street,BC-SRV-ADR,,basic,6,0,,top-level
+I_STREETTEXT,Street - Text,Street - Text,BC-SRV-ADR,,text,8,0,,top-level
+I_TAXINGCOUNTY,Taxing County,Taxing County,BC-SRV-ADR,,basic,6,0,,top-level
+I_TAXINGCOUNTYTEXT,Description of Taxing County,Description of Taxing County,BC-SRV-ADR,,text,8,0,,top-level
+I_TERTIARYREGION,Tertiary Region,Tertiary Region,BC-SRV-ADR,,basic,8,0,,top-level
+I_TERTIARYREGIONTEXT,Description of Tertiary Region,Description of Tertiary Region,BC-SRV-ADR,,text,10,0,,top-level
+I_TRANSPORTATIONZONE,Transportation Zone,Transportation Zone,BC-SRV-ADR,,basic,4,0,,top-level
+I_TRANSPORTATIONZONETEXT,Transportation Zone - Text,Transportation Zone - Text,BC-SRV-ADR,,text,4,0,,top-level
+I_TRANSPORTATIONZONEVH,Transport Zone,Transport Zone,BC-SRV-ADR,,value_help,4,0,,top-level
+I_CUSTOMFIELDCODELISTTEXT,Custom Field Code List Value Description,Custom Field Code List Value Description,BC-SRV-APS-EXT-FLD,,text,6,0,,top-level
+I_CUSTOMFIELDCODELISTVALUE,Custom Field Code List Value,Custom Field Code List Value,BC-SRV-APS-EXT-FLD,,basic,4,0,,top-level
+I_CUSTOMFIELDCODELISTVALUEHELP,Valuehelp View for Custom Field Codes,Valuehelp View for Custom Field Codes,BC-SRV-APS-EXT-FLD,,basic,3,0,,top-level
+I_IAMBUSINESSROLE,Business Role,Business Role,BC-SRV-APS-IAM,,basic,10,0,,top-level
+I_IAMBUSINESSROLEPRICECATEGORY,Business Role Price category,Business Role Price Category,BC-SRV-APS-IAM,,basic,4,0,,top-level
+I_IAMBUSINESSROLEPRICECATTEXT,Business Role Price Category Text,Business Role Price Category Text,BC-SRV-APS-IAM,,text,8,0,,top-level
+I_IAMBUSINESSROLETEXT,Business Role Text,Business Role Text,BC-SRV-APS-IAM,,text,7,0,,top-level
+I_IAMBUSINESSUSERBUSINESSROLE,Business User - Business Role assignment,Business User - Business Role assignment,BC-SRV-APS-IAM,,basic,6,0,,top-level
+I_IAMBUSINESSUSERLOGONDETAILS,Business User Logon Details,Business User Logon Details,BC-SRV-APS-IAM,,basic,22,0,,top-level
+I_IAMBUSINESSUSERPRICECATEGORY,Business User Price Category,Business User Price Category,BC-SRV-APS-IAM,,basic,5,0,,top-level
+I_IAMBUSINESSUSERPRICECATTEXT,Business User Price Category Text,Business User Price Category Text,BC-SRV-APS-IAM,,text,6,0,,top-level
+I_IAMSUPPORTUSERREQUESTLOG,Support User Request Log,Support User Request Log,BC-SRV-APS-IAM,,basic,17,0,,top-level
+I_FISCALPERIODRAWDATA,Fiscal Periods Raw Data,Fiscal Periods Raw Data,BC-SRV-ASF-FYV,,basic,7,0,,top-level
+I_FISCALPERIODTEXTRAWDATA,Fiscal Period Texts Raw Data,Fiscal Period Texts Raw Data,BC-SRV-ASF-FYV,,basic,8,0,Fiscal Year,top-level
+I_FISCALYEARVARIANT,Fiscal Year Variant,Fiscal Year Variant,BC-SRV-ASF-FYV,Dimension,dimension,8,0,,top-level
+I_FISCALYEARVARIANTTEXT,Fiscal Year Variant Text,Fiscal Year Variant Text,BC-SRV-ASF-FYV,,text,4,0,,top-level
+I_SHORTENEDFISCALYEAR,Shortened fiscal years in FI-AA,Shortened fiscal years in FI-AA,BC-SRV-ASF-FYV,,basic,7,0,Fiscal Year,top-level
+I_UNITOFMEASURE,Unit of Measure,Unit of Measure,BC-SRV-ASF-UOM,Dimension,dimension,23,0,,top-level
+I_UNITOFMEASURECOMMERCIALNAME,Unit of Measure Assignment of commercial to internal,Unit of Measure Commercial Name,BC-SRV-ASF-UOM,,basic,0,0,,top-level
+I_UNITOFMEASUREDIMENSION,Unit of Measure Dimension,Unit of Measure Dimension,BC-SRV-ASF-UOM,Dimension,dimension,12,0,,top-level
+I_UNITOFMEASUREDIMENSIONTEXT,Unit of Measure Dimension Text,Unit of Measure Dimension Text,BC-SRV-ASF-UOM,,text,5,0,,top-level
+I_UNITOFMEASUREISOCODE,Unit of Measure Iso Code,Unit of Measure ISO Code,BC-SRV-ASF-UOM,,basic,2,0,,top-level
+I_UNITOFMEASUREISOCODETEXT,Unit of Measure Iso Code Text,Unit of Measure ISO Code Text,BC-SRV-ASF-UOM,,text,5,0,,top-level
+I_UNITOFMEASURESTDVH,Value Help for Unit of Measure,Unit of Measure,BC-SRV-ASF-UOM,,value_help,5,0,,top-level
+I_UNITOFMEASURETECHNICALNAME,Unit of Measure Assignment of technical to internal,Unit of Measure Technical Name,BC-SRV-ASF-UOM,,basic,0,0,,top-level
+I_UNITOFMEASURETEXT,Unit of Measure Text,Unit of Measure Text,BC-SRV-ASF-UOM,,text,9,0,,top-level
+I_BUPAIDENTIFICATIONTYPE,CDS View for BP Identification Types,CDS View for BP Identification Types,BC-SRV-BP,,basic,5,0,,top-level
+I_WORKPLACEADDRESS,Employee Workplace Address,Employee Workplace Address,BC-SRV-BP,Dimension,dimension,30,1,Address; Business Partner,top-level
+I_CURRENCY,Currency,Currency,BC-SRV-BSF-CUR,Dimension,dimension,6,0,,top-level
+I_CURRENCYSTDVH,Search help view for Currency Codes,Currency,BC-SRV-BSF-CUR,,value_help,2,0,,top-level
+I_CURRENCYTEXT,Currency Text,Currency Text,BC-SRV-BSF-CUR,,text,6,0,,top-level
+I_EXCHANGERATEFACTORSRAWDATA,Exchange Rate Factors Raw Data,Exchange Rate Factors Raw Data,BC-SRV-BSF-CUR,,basic,11,0,,top-level
+I_EXCHANGERATERAWDATA,Exchange Rate Raw Data,Exchange Rate Raw Data,BC-SRV-BSF-CUR,,basic,10,0,,top-level
+I_EXCHANGERATESPREADRAWDATA,Exchange Rates Spread Raw Data,Exchange Rates Spread Raw Data,BC-SRV-BSF-CUR,,basic,8,0,,top-level
+I_EXCHANGERATETYPE,Exchange Rate Type,Exchange Rate Type,BC-SRV-BSF-CUR,Dimension,dimension,9,0,,top-level
+I_EXCHANGERATETYPESTDVH,Exchange Rate Type,,BC-SRV-BSF-CUR,,value_help,2,0,,top-level
+I_EXCHANGERATETYPETEXT,Exchange Rate Type Text,Exchange Rate Type Text,BC-SRV-BSF-CUR,,text,4,0,,top-level
+I_EXCHRATEQTANTYPERAWDATA,Exchange Rate Quotation Type,Exchange Rate Quotation Type,BC-SRV-BSF-CUR,,basic,6,0,,top-level
+I_BUSINESSUSERBASIC,Business User Basic View,Business User Basic,BC-SRV-BUM,,basic,43,0,Business Partner,top-level
+I_BUSINESSUSERVH,Business User - Value Help,Business User - Value Help,BC-SRV-BUM,,value_help,23,0,Business Partner,top-level
+I_DAYLIGHTSAVINGRULE,Daylight Saving Rule,Daylight Saving Rule,BC-SRV-TIM-TZ,Dimension,dimension,4,0,,top-level
+I_DAYLIGHTSAVINGRULETEXT,Daylight Saving Rule Text,Daylight Saving Rule Text,BC-SRV-TIM-TZ,,text,5,0,,top-level
+I_TIMEZONE,Time Zone,Time Zone,BC-SRV-TIM-TZ,Dimension,dimension,7,0,,top-level
+I_TIMEZONEIANACODEMAP,Time Zone Code According to IANA Time Zone Database,Time Zone Code According to IANA Time Zone Database,BC-SRV-TIM-TZ,Dimension,dimension,5,0,,top-level
+I_TIMEZONEIANACODESTDVH,Time Zone Code According to IANA Time Zone Database,Time Zone Code According to IANA Time Zone Database,BC-SRV-TIM-TZ,,value_help,3,0,,top-level
+I_TIMEZONERULE,Time Zone Rule,Time Zone Rule,BC-SRV-TIM-TZ,Dimension,dimension,5,0,,top-level
+I_TIMEZONERULETEXT,Time Zone Rule Text,Time Zone Rule Text,BC-SRV-TIM-TZ,,text,5,0,,top-level
+I_TIMEZONETEXT,Time Zone Text,Time Zone Text,BC-SRV-TIM-TZ,,text,5,0,,top-level

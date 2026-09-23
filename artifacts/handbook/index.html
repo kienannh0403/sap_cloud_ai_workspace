@@ -14,18 +14,7 @@
     <nav aria-label="Trang">
       <a href="index.html" aria-current="page">Trang chủ</a>
       <a href="mcp.html">MCP</a>
-      <select aria-label="Chọn báo cáo" onchange="if(this.value) window.location.href=this.value">
-        <option value="" selected>Báo cáo ▾</option>
-        <option value="zmfgkh01.html">ZMFGKH01</option>
-        <option value="zmfgkh01-n.html">ZMFGKH01_N</option>
-        <option value="zpm01-ex.html">ZPM01_EX</option>
-        <option value="zrm01.html">ZRM01</option>
-        <option value="zmfglsx.html">ZMFGLSX</option>
-        <option value="zgl02.html">ZGL02</option>
-        <option value="zgl04.html">ZGL04</option>
-        <option value="zma02.html">ZMA02</option>
-        <option value="zma01e.html">ZMA01E</option>
-      </select>
+      <a href="cds-catalog.html">CDS released</a>
     </nav>
   </div>
 </div>
@@ -36,202 +25,37 @@
     <p class="eyebrow">S/4HANA Public Cloud · GM2 · client 080 · DEV</p>
     <h1>Đã làm gì, trên báo cáo nào, và vướng ở đâu</h1>
     <p class="standfirst">
-      Sổ tay cá nhân cho workspace này. Mỗi báo cáo một trang; phần tra cứu MCP dùng chung.
+      Sổ tay cá nhân cho workspace này. Mỗi báo cáo một trang khi có; phần tra cứu (MCP, CDS released) dùng chung.
       Nguồn chi tiết vẫn là <code>INDEX.md</code> của từng target — trang này là lối vào, không thay thế.
     </p>
     <div class="facts">
       <div><span class="k">host</span><span class="v">my437569.s4hana.cloud.sap</span></div>
       <div><span class="k">user</span><span class="v">CB9980000022</span></div>
       <div><span class="k">package local, khỏi TR</span><span class="v">ZANLTK2 · $TMP</span></div>
-      <div><span class="k">cập nhật</span><span class="v">2026-09-15</span></div>
+      <div><span class="k">cập nhật</span><span class="v">2026-09-21</span></div>
     </div>
   </header>
 
-  <section id="bao-cao">
-    <h2>Báo cáo</h2>
+  <section id="tra-cuu">
+    <h2>Tra cứu dùng chung</h2>
     <div class="cards">
 
-      <a class="card" href="zmfgkh01.html">
-        <span class="pill pill-acc">đang làm</span>
-        <span class="t">ZMFGKH01</span>
-        <span class="d">Tạo lệnh sản xuất từ Excel. Upload → 9 check → gọi API chuẩn tạo lệnh → ghi số về bảng.</span>
-        <span class="p">package ZMFGKH01 · 2026-08-11 → 08-13</span>
+      <a class="card" href="cds-catalog.html">
+        <span class="pill pill-ok">mới</span>
+        <span class="t">CDS released theo phân hệ</span>
+        <span class="d">4.025 view released chia 41 folder theo phân hệ, kèm quan hệ giữa các phân hệ. Làm báo cáo nào thì lấy view từ folder của phân hệ đó trước.</span>
+        <span class="p">artifacts/system_analysis/CDS_RELEASED_CATALOG/ · 2026-09-21</span>
       </a>
 
-      <a class="card" href="zmfgkh01-n.html">
-        <span class="pill pill-dgr">có lỗi nặng</span>
-        <span class="t">ZMFGKH01_N</span>
-        <span class="d">Bản viết lại của ZMFGKH01 theo RAP Header–Item + draft. 28 object active, kiến trúc sạch — nhưng executeCreate ghi cùng một số lệnh cho mọi dòng.</span>
-        <span class="p">package ZMFGKH01_N · 2026-08-24</span>
+      <a class="card" href="mcp.html">
+        <span class="pill pill-acc">dùng lại</span>
+        <span class="t">MCP</span>
+        <span class="d">Làm gì được qua MCP, cookie hai tenant, và các bẫy đã calibrate (ACTIVATE, syntax_check, query).</span>
+        <span class="p">sap_cloud_dev (080) · sap_gm2_cus_ro (100)</span>
       </a>
-
-      <a class="card" href="zpm01-ex.html">
-        <span class="pill pill-wrn">chờ quyết định</span>
-        <span class="t">ZPM01_EX</span>
-        <span class="d">Sổ chi tiết công nợ phải trả NCC, NV. Bản FS V1.1 đã active ở ZANLTK2; production chưa đụng.</span>
-        <span class="p">package ZPM01_EX · 2026-07-28</span>
-      </a>
-
-      <a class="card" href="zrm01.html">
-        <span class="pill pill-dgr">rủi ro cao</span>
-        <span class="t">ZRM01 · ZRM01_EX</span>
-        <span class="d">Sổ chi tiết công nợ phải thu khách hàng. Code review read-only hai package, không CUD gì.</span>
-        <span class="p">2026-07-30 · 13 finding Cao</span>
-      </a>
-
-      <a class="card" href="zgl02.html">
-        <span class="pill pill-dgr">rủi ro cao</span>
-        <span class="t">ZGL02</span>
-        <span class="d">Bảng cân đối số phát sinh. Không phải list report — là document generator: 1 GET trả 1 dòng mang PDF + Excel. Hai lỗi chồng nhau làm sai số TK 331/131/141.</span>
-        <span class="p">package ZGL02 · 2026-08-19 · code review + flow dữ liệu · 3 finding Cao</span>
-      </a>
-
-      <a class="card" href="zgl04.html">
-        <span class="pill pill-wrn">chờ quyết định</span>
-        <span class="t">ZGL04</span>
-        <span class="d">Sổ nhật ký chung. Cùng kiến trúc document generator như ZGL02, nhưng tách list thật (ZR_FA_ZGL04N_EXCEL) ra riêng. 2 entity xử lý incl_reserve không nhất quán; không thấy AUTHORITY-CHECK.</span>
-        <span class="p">package ZGL04 · 2026-09-15 · preview flow dữ liệu (read-only)</span>
-      </a>
-
-      <a class="card" href="zma02.html">
-        <span class="pill pill-acc">đã đọc hiểu</span>
-        <span class="t">ZMA02</span>
-        <span class="d">Giá thành thực tế thành phẩm. 4 sub-package: danh mục nhóm chi phí, mapping GL→nhóm, upload Excel, và báo cáo 10 view. Chi phí bám theo OrderID chứ không theo material.</span>
-        <span class="p">package ZMA02 · 2026-09-04 · preview flow dữ liệu + nghiệp vụ (read-only)</span>
-      </a>
-
-      <a class="card" href="zma01e.html">
-        <span class="pill pill-dgr">rủi ro cao</span>
-        <span class="t">ZMA01E</span>
-        <span class="d">Phân bổ chi phí Cost Center → LSX. Action Post gọi thẳng I_JournalEntryTP ghi chứng từ FI loại 'PB'. Ghi log lại nằm trong cleanup( ), và check trùng thiếu pb_type.</span>
-        <span class="p">package ZMA01E · 2026-09-09 · phân tích action Post + reversed (read-only)</span>
-      </a>
-
-      <a class="card" href="zmfglsx.html">
-        <span class="pill pill-wrn">chờ quyết định</span>
-        <span class="t">ZMFGLSX</span>
-        <span class="d">Báo cáo lệnh sản xuất. DCL đã có và đang active nhưng không chạy — cả 3 view khai #NOT_REQUIRED.</span>
-        <span class="p">package ZMFGLSX · 2026-08-18 · review phân quyền</span>
-      </a>
-
-      <div class="card">
-        <span class="pill pill-off">chưa đụng hệ thống</span>
-        <span class="t">ZPM03 · ZPM01</span>
-        <span class="d">Chỉ có FS, hoặc FS đã convert sang markdown. Không object nào bị đụng.</span>
-        <span class="p">FS/ZPM03/ · FS/ZPM01/</span>
-      </div>
 
     </div>
-  </section>
-
-  <section id="con-treo">
-    <h2>Còn treo</h2>
-    <p>Những việc cần anh quyết hoặc cần chạy thật mới biết. Chi tiết nằm ở trang của từng target.</p>
-
-    <div class="wrap">
-      <table>
-        <thead>
-          <tr><th>Target</th><th>Việc</th><th>Vì sao chưa xong</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="mono">ZMFGKH01</td>
-            <td><code>c_obs_id</code> trong <code>ZCL_ZMFGKH01_CREATE_PO</code></td>
-            <td>Đang là placeholder <code>'ZSCE_PROD_ORDER_REST'</code> — cần outbound service id thật</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMFGKH01</td>
-            <td>Ngày trên lệnh vừa tạo</td>
-            <td>Cờ <code>IsEODay</code> và múi giờ <code>Z</code> chưa nghiệm thu bằng một lệnh thật</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMFGKH01</td>
-            <td>Mã ISO cho đơn vị <code>CAI</code></td>
-            <td>Nếu customizing chưa khai thì code báo lỗi — đó là lỗ dữ liệu, không phải lỗi code</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMFGKH01</td>
-            <td>Ẩn cột <span class="mono">Error in Data</span></td>
-            <td>Chưa rõ <code>properties</code> có giữ field trong <code>$select</code> — test bằng nút gear, hoàn tác được</td>
-          </tr>
-          <tr>
-            <td class="mono">ZPM01_EX</td>
-            <td>Q3 — <code>9999999998</code> là G/L account hay Supplier?</td>
-            <td>Không tự trả lời được: user không có quyền đọc business data</td>
-          </tr>
-          <tr>
-            <td class="mono">ZPM01_EX</td>
-            <td>Áp bản V11 về production</td>
-            <td>Chưa được yêu cầu. Đụng object trong package transportable</td>
-          </tr>
-          <tr>
-            <td class="mono">ZRM01 · ZRM01_EX</td>
-            <td>7 câu hỏi nghiệp vụ, gồm join thiếu <code>FiscalYear</code></td>
-            <td>Cần người nghiệp vụ chốt, và cần dữ liệu mẫu để đối chiếu</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMFGLSX</td>
-            <td><code>restrictable="false"</code> trên <code>ZBC_ZMFGLSX</code></td>
-            <td>Không verify được từ XML là restriction <code>WERKS</code> có maintain được trong business role hay không — phải mở app Maintain Business Roles</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMFGLSX</td>
-            <td>Có bảo vệ <code>ZMFG_I_ZMFGLSX</code> không</td>
-            <td>Ai SELECT trực tiếp view này là bỏ qua toàn bộ authorization, kể cả sau khi bật <code>#CHECK</code></td>
-          </tr>
-          <tr>
-            <td class="mono">ZGL02</td>
-            <td><code>ZCL_FA_ENITY_ZGL02</code> (không <code>_3</code>) có xoá được không</td>
-            <td><code>callers</code> trả 403, <code>impact</code> trả <code>null</code> — <b>kể cả cho class đang dùng</b>. Phải where-used trong Eclipse</td>
-          </tr>
-          <tr>
-            <td class="mono">ZGL02</td>
-            <td>10 câu hỏi nghiệp vụ từ flow dữ liệu</td>
-            <td><code>abs()−abs()</code> khi khử kết chuyển · RE 152/153 cộng vào cả 2 cột · tổng cộng không khớp khi lọc subtotal · <code>de_DE</code> · tên TK lấy <code>language="E"</code></td>
-          </tr>
-          <tr>
-            <td class="mono">ZGL02</td>
-            <td>Sửa F-01: thêm <code>ORDER BY</code> hay chuyển sang secondary sorted key</td>
-            <td>Ảnh hưởng cả 4 vị trí. Và sửa xong không kiểm được bằng runtime — cần unit test, mà package hiện có 0 test</td>
-          </tr>
-          <tr>
-            <td class="mono">ZGL02</td>
-            <td><code>DDLX ZFA_R_ZGL02</code> + 2 object IAM chưa đọc</td>
-            <td>MCP không hỗ trợ 3 loại này, curl thì cookie hết hạn giữa session</td>
-          </tr>
-          <tr>
-            <td class="mono">ZGL04</td>
-            <td>UI5 có tái dùng <code>uuid</code> trả về để trúng cache <code>ZTB_ZGL04N_PDF</code> không</td>
-            <td>Chưa xem code UI5; nếu không, PDF/Excel luôn bị sinh lại từ đầu mỗi lần gọi</td>
-          </tr>
-          <tr>
-            <td class="mono">ZGL04</td>
-            <td><code>ZR_FA_ZGL04N_EXCEL</code> xử lý <code>incl_reserve</code> khác <code>ZR_FA_ZGL04N</code></td>
-            <td>Cần nghiệp vụ chốt đây là cố ý hay lệch logic giữa 2 entity</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMA02</td>
-            <td>Dấu của <code>CP_BY_PRODUCT</code> trong <code>Tong_CP</code></td>
-            <td>Code nhân <code>-1</code> rồi lại trừ ⇒ thực chất cộng vào giá thành. Cần người nghiệp vụ chốt ý đồ</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMA02</td>
-            <td>Nội dung <code>ZTB_EINV_VAR_I</code> cho 10 view</td>
-            <td>Quyết định nhóm sản phẩm nào vào view nào, nhưng GM2/080 không có quyền đọc business data</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMA01E</td>
-            <td>Ghi <code>ztb_pbcp_lsx_doc</code> / <code>_log</code> đặt trong <code>cleanup( )</code></td>
-            <td>Cần test post rồi ép lỗi: nếu LUW rollback mà cleanup vẫn ghi thì log mồ côi, lệch với chứng từ FI</td>
-          </tr>
-          <tr>
-            <td class="mono">ZMA01E</td>
-            <td>Check trùng nhánh Post thiếu <code>pb_type</code></td>
-            <td>Cần nghiệp vụ chốt: một kỳ được post mấy loại phân bổ (1 / 2 / 3)?</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <p>Workspace này mới dựng lại ngày 2026-09-21; chưa có trang báo cáo nào. Trang báo cáo cũ nằm ở workspace trước.</p>
   </section>
 
   <section id="quy-uoc">
@@ -247,6 +71,7 @@
           <tr><td class="mono">artifacts/walkthroughs/&lt;TARGET&gt;/</td><td>Trang mô tả, diagram</td></tr>
           <tr><td class="mono">artifacts/fs_docs/&lt;TARGET&gt;/</td><td>FS đã convert sang markdown</td></tr>
           <tr><td class="mono">artifacts/ui5/&lt;TARGET&gt;/</td><td>Project UI5 — loại thư mục ngoài danh sách chuẩn, đặt thêm</td></tr>
+          <tr><td class="mono">artifacts/system_analysis/CDS_RELEASED_CATALOG/</td><td>Danh mục CDS released theo phân hệ; <code>INDEX.md</code> là lối vào</td></tr>
           <tr><td class="mono">artifacts/handbook/</td><td>Sổ tay này. <code>mcp-notebook.md</code> là bản markdown dễ sửa hơn</td></tr>
         </tbody>
       </table>

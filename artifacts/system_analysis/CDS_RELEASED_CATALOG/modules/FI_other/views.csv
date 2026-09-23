@@ -1,0 +1,459 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_CORRESPONDENCETYPE,Correspondence Type,Correspondence Type,FI,,basic,7,0,,top-level
+I_CORRESPONDENCETYPETEXT,Correspondence Type - Text,Correspondence Type - Text,FI,,text,6,0,,top-level
+I_CAACCOUNTASSIGNMENTCATEGORY,Account Assignment Category,Account Assignment Category,FI-CA,Dimension,dimension,2,0,,top-level
+I_CAACCOUNTASSIGNMENTCATEGORYT,Account Assignment Category - Text,Account Assignment Category - Text,FI-CA,,basic,4,0,,top-level
+I_CAACCOUNTDETNCODE,Account Determination Code,Account Determination Code,FI-CA,,basic,2,0,,top-level
+I_CAACCOUNTDETNCODETEXT,Account Determination Code - Text,Account Determination Code - Text,FI-CA,,text,4,0,,top-level
+I_CAACCTASSGMTDISTRCODE,Account Assignment Distribution Code,Account Assignment Distribution Code,FI-CA,,basic,2,0,,top-level
+I_CAACCTASSGMTDISTRCODETEXT,Account Assignment Distr Code - Text,Account Assignment Distr Code - Text,FI-CA,,text,4,0,,top-level
+I_CAACCTDETNTRANSKEY,Account Determination Transaction Key,Account Determination Transaction Key,FI-CA,,basic,2,0,,top-level
+I_CAACCTDETNTRANSKEYTEXT,Account Determination Trans Key - Text,Account Determination Trans Key - Text,FI-CA,,text,4,0,,top-level
+I_CAADJUSTMENTREQUESTREASON,Adjustment Request Reason,Adjustment Request Reason,FI-CA,,basic,2,0,,top-level
+I_CAADJUSTMENTREQUESTREASONT,Adjustment Request Reason - Text,Adjustment Request Reason - Text,FI-CA,,basic,4,0,,top-level
+I_CAALTVEXCHANGERATESETCODE,Alternative Exchange Rate Set Code,Alternative Exchange Rate Set Code,FI-CA,,basic,2,0,,top-level
+I_CAALTVEXCHANGERATESETCODET,Altv Exchange Rate Set Code - Text,Altv Exchange Rate Set Code - Text,FI-CA,,basic,4,0,,top-level
+I_CAAPPLICATIONAREA,Application Area,Application Area,FI-CA,Dimension,dimension,3,0,,top-level
+I_CAAPPLICATIONAREATEXT,Application Area - Text,Application Area - Text,FI-CA,,text,4,0,,top-level
+I_CAAUTHORIZATIONGROUP,Authorization Group,Authorization Group,FI-CA,,basic,4,0,,top-level
+I_CAAUTHORIZATIONGROUPOBJECT,Authorization Group Object,Authorization Group Object,FI-CA,,basic,2,0,,top-level
+I_CAAUTHORIZATIONGROUPOBJECTT,Authorization Group Object - Text,Authorization Group Object - Text,FI-CA,,basic,4,0,,top-level
+I_CAAUTHORIZATIONGROUPTEXT,Authorization Group - Text,Authorization Group - Text,FI-CA,,text,6,0,,top-level
+I_CAAUTHORIZATIONTYPE,Authorization Type,Authorization Type,FI-CA,,basic,2,0,,top-level
+I_CAAUTHORIZATIONTYPETEXT,Authorization Type - Text,Authorization Type - Text,FI-CA,,text,4,0,,top-level
+I_CABUSINESSLOCKREASON,Business Lock Reason,Business Lock Reason,FI-CA,,basic,5,0,,top-level
+I_CABUSINESSLOCKREASONTEXT,Business Lock Reason - Text,Business Lock Reason - Text,FI-CA,,text,6,0,,top-level
+I_CABUSINESSPROCESS,Business Lock Process,Business Lock Process,FI-CA,,basic,4,0,,top-level
+I_CABUSINESSPROCESSTEXT,Business Lock Process - Text,Business Lock Process - Text,FI-CA,,text,4,0,,top-level
+I_CABUSPARTINVOICEITEMSTATUS,Business Partner Invoice Item Status,Business Partner Invoice Item Status,FI-CA,,basic,2,0,,top-level
+I_CABUSPARTINVOICEITEMSTATUST,Bus Partner Invoice Item Status - Text,Bus Partner Invoice Item Status - Text,FI-CA,,basic,4,0,,top-level
+I_CABUSPARTINVOICESTATUS,Business Partner Invoice Status,Business Partner Invoice Status,FI-CA,,basic,2,0,,top-level
+I_CABUSPARTINVOICESTATUSTEXT,Business Partner Invoice Status - Text,Business Partner Invoice Status - Text,FI-CA,,text,4,0,,top-level
+I_CABUSPRTNADDLLOCKEXSTCCODE,BP Additional Lock Existence Code,BP Additional Lock Existence Code,FI-CA,,basic,2,0,,top-level
+I_CABUSPRTNADDLLOCKEXSTCCODET,BP Additional Lock Existence Code - Text,BP Additional Lock Existence Code - Text,FI-CA,,basic,4,0,,top-level
+I_CABUSPRTNPOSTGLOCKEXSTCCODE,BP Posting Lock Existence Code,BP Posting Lock Existence Code,FI-CA,,basic,2,0,,top-level
+I_CABUSPRTNPOSTGLOCKEXSTCCODET,BP Posting Lock Existence Code - Text,BP Posting Lock Existence Code - Text,FI-CA,,basic,4,0,,top-level
+I_CABUSTRANSACTIVITY,Business Transaction Activity,Business Transaction Activity,FI-CA,,basic,2,0,,top-level
+I_CABUSTRANSACTIVITYTEXT,Business Transaction Activity - Text,Business Transaction Activity - Text,FI-CA,,text,4,0,,top-level
+I_CABUSTRANSDOCUMENTTYPE,Business Transaction Document Type,Business Transaction Document Type,FI-CA,,basic,2,0,,top-level
+I_CABUSTRANSDOCUMENTTYPETEXT,Bus Transaction Document Type - Text,Bus Transaction Document Type - Text,FI-CA,,text,4,0,,top-level
+I_CABUSTRANSOBJECT,Business Transaction Object,Business Transaction Object,FI-CA,,basic,2,0,,top-level
+I_CABUSTRANSOBJECTTEXT,Business Transaction Object - Text,Business Transaction Object - Text,FI-CA,,text,4,0,,top-level
+I_CABUSTRANSPROCESS,Business Transaction Process,Business Transaction Process,FI-CA,,basic,2,0,,top-level
+I_CABUSTRANSPROCESSTEXT,Business Transaction Process - Text,Business Transaction Process - Text,FI-CA,,text,4,0,,top-level
+I_CABUSTRANSRELATIONSHIP,Business Transaction Relationship,Business Transaction Relationship,FI-CA,,basic,2,0,,top-level
+I_CABUSTRANSRELATIONSHIPTEXT,Business Transaction Relationship - Text,Business Transaction Relationship - Text,FI-CA,,text,4,0,,top-level
+I_CACASHSECURITYDEPOSITSTATUS,Cash Security Deposit Status,Cash Security Deposit Status,FI-CA,,basic,2,0,,top-level
+I_CACASHSECURITYDEPOSITSTSTEXT,Cash Security Deposit Status - Text,Cash Security Deposit Status - Text,FI-CA,,text,5,0,,top-level
+I_CACHARGESSCHEMA,Charges Schema,Charges Schema,FI-CA,,basic,2,0,,top-level
+I_CACHARGESSCHEMATEXT,Charge Schema - Text,Charge Schema - Text,FI-CA,,text,4,0,,top-level
+I_CACHARGETYPE,Charge Type,Charge Type,FI-CA,,basic,2,0,,top-level
+I_CACHARGETYPETEXT,Charge Type - Text,Charge Type - Text,FI-CA,,text,4,0,,top-level
+I_CACLEARINGCATEGORY,Clearing Category,Clearing Category,FI-CA,,basic,2,0,,top-level
+I_CACLEARINGCATEGORYTEXT,Clearing Category - Text,Clearing Category - Text,FI-CA,,text,4,0,,top-level
+I_CACLEARINGINFORMATION,Clearing Information,Clearing Information,FI-CA,,basic,2,0,,top-level
+I_CACLEARINGINFORMATIONTEXT,Clearing Information - Text,Clearing Information - Text,FI-CA,,text,4,0,,top-level
+I_CACLEARINGREASON,Clearing Reason,Clearing Reason,FI-CA,Dimension,dimension,3,0,,top-level
+I_CACLEARINGREASONTEXT,Clearing Reason - Text,Clearing Reason - Text,FI-CA,,text,4,0,,top-level
+I_CACLEARINGRESTRICTIONCODE,Clearing Restriction Code,Clearing Restriction Code,FI-CA,Dimension,dimension,2,0,,top-level
+I_CACLEARINGRESTRICTIONCODET,Clearing Restriction Code - Text,Clearing Restriction Code - Text,FI-CA,,basic,4,0,,top-level
+I_CACLEARINGSTATUS,Document Clearing Status,Document Clearing Status,FI-CA,,basic,2,0,,top-level
+I_CACLEARINGSTATUSTEXT,Document Clearing Status - Text,Document Clearing Status - Text,FI-CA,,text,4,0,,top-level
+I_CACOLLECTIONAGENCY,Collection Agency,Collection Agency,FI-CA,,basic,5,0,,top-level
+I_CACOLLECTIONSTEP,Collection Step,Collection Step,FI-CA,,basic,18,0,,top-level
+I_CACOLLECTIONSTEPTEXT,Collection Step - Text,Collection Step - Text,FI-CA,,text,4,0,,top-level
+I_CACOLLECTIONSTRATEGY,Collection Strategy,Collection Strategy,FI-CA,,basic,2,0,,top-level
+I_CACOLLECTIONSTRATEGYTEXT,Collection Strategy - Text,Collection Strategy - Text,FI-CA,,text,4,0,,top-level
+I_CACOLLMASTERDATAGROUP,Collection Master Data Group,Collection Master Data Group,FI-CA,,basic,5,0,,top-level
+I_CACOLLMASTERDATAGROUPTEXT,Collection Master Data Group - Text,Collection Master Data Group - Text,FI-CA,,text,5,0,,top-level
+I_CACOMPANYCODEGROUP,Company Code Group,Company Code Group,FI-CA,,basic,4,0,,top-level
+I_CACOMPANYCODEGROUPTEXT,Company Code Group - Text,Company Code Group - Text,FI-CA,,text,4,0,,top-level
+I_CACORRESPNCACTIVITYCODE,Correspondence Activity Code,Correspondence Activity Code,FI-CA,,basic,2,0,,top-level
+I_CACORRESPNCACTIVITYCODET,Correspondence Activity Code - Text,Correspondence Activity Code - Text,FI-CA,,basic,4,0,,top-level
+I_CACORRESPONDENCETYPE,Correspondence Type,Correspondence Type,FI-CA,,basic,5,0,,top-level
+I_CACORRESPONDENCETYPETEXT,Correspondence Type - Text,Correspondence Type - Text,FI-CA,,text,4,0,,top-level
+I_CACORRESPONDENCEVARIANT,Correspondence Variant,Correspondence Variant,FI-CA,,basic,2,0,,top-level
+I_CACORRESPONDENCEVARIANTTEXT,Correspondence Variant - Text,Correspondence Variant - Text,FI-CA,,text,4,0,,top-level
+I_CACRDTWORTHINESSITEMSTATUS,Creditworthiness Item Status,Creditworthiness Item Status,FI-CA,,basic,2,0,,top-level
+I_CACRDTWORTHINESSITEMSTATUST,Creditworthiness Item Status - Text,Creditworthiness Item Status - Text,FI-CA,,basic,4,0,,top-level
+I_CACREDITPOSTINGORIGIN,Credit Posting Origin,Credit Posting Origin,FI-CA,,basic,2,0,,top-level
+I_CACREDITPOSTINGORIGINTEXT,Credit Posting Origin - Text,Credit Posting Origin - Text,FI-CA,,text,4,0,,top-level
+I_CACREDITWORTHINESS,Contract Accounting Creditworthiness,Contract Accounting Creditworthiness,FI-CA,Dimension,dimension,16,0,,top-level
+I_CACREDITWORTHINESSITEM,Creditworthiness Item,Creditworthiness Item,FI-CA,Dimension,dimension,29,0,,top-level
+I_CACREDITWORTHINESSORIGIN,Creditworthiness Origin,Creditworthiness Origin,FI-CA,,basic,2,0,,top-level
+I_CACREDITWORTHINESSORIGINTEXT,Creditworthiness Origin - Text,Creditworthiness Origin - Text,FI-CA,,text,4,0,,top-level
+I_CADBTFLORVALUEADJMTCODE,Doubtful or Value Adjustment Code,Doubtful or Value Adjustment Code,FI-CA,,basic,2,0,,top-level
+I_CADBTFLORVALUEADJMTCODET,Doubtful or Value Adjustment Code - Text,Doubtful or Value Adjustment Code - Text,FI-CA,,basic,4,0,,top-level
+I_CADFLTCLEARINGRSTRCNCODE,Default Clearing Restriction,Default Clearing Restriction,FI-CA,,basic,2,0,,top-level
+I_CADFLTCLEARINGRSTRCNCODET,Default Clearing Restriction - Text,Default Clearing Restriction - Text,FI-CA,,basic,4,0,,top-level
+I_CADIRECTDEBITLIMITCALCMODE,Direct Debit Limit Calculation Mode,Direct Debit Limit Calculation Mode,FI-CA,,basic,2,0,,top-level
+I_CADIRECTDEBITLIMITCALCMODET,Direct Debit Limit Calc Mode - Text,Direct Debit Limit Calc Mode - Text,FI-CA,,basic,4,0,,top-level
+I_CADISPUTEEXTCALLERCODE,Dispute External Caller Code,Dispute External Caller Code,FI-CA,,basic,2,0,,top-level
+I_CADISPUTEEXTCALLERCODETEXT,Dispute External Caller Code - Text,Dispute External Caller Code - Text,FI-CA,,text,4,0,,top-level
+I_CADISPUTETYPE,Dispute Type,Dispute Type,FI-CA,,basic,2,0,,top-level
+I_CADISPUTETYPETEXT,Dispute Type - Text,Dispute Type - Text,FI-CA,,text,4,0,,top-level
+I_CADOCCTNDOCITEMREFTYPE,Doc Container Doc Item Reference Type,Doc Container Doc Item Reference Type,FI-CA,,basic,2,0,,top-level
+I_CADOCCTNDOCITEMREFTYPETEXT,Doc Container Doc Item Ref Type - Text,Doc Container Doc Item Ref Type - Text,FI-CA,,text,4,0,,top-level
+I_CADOCCTNREFTYPE,Document Container Reference Type,Document Container Reference Type,FI-CA,,basic,4,0,,top-level
+I_CADOCCTNREFTYPETEXT,Document Container Reference Type - Text,Document Container Reference Type - Text,FI-CA,,text,4,0,,top-level
+I_CADOCTRANSACTIONCLASS,Document Transaction Class,Document Transaction Class,FI-CA,,basic,2,0,,top-level
+I_CADOCTRANSACTIONCLASSTEXT,Document Transaction Class - Text,Document Transaction Class - Text,FI-CA,,text,4,0,,top-level
+I_CADOCUMENT,Contract Accounting Document,Contract Accounting Document,FI-CA,,basic,65,0,,top-level
+I_CADOCUMENTBPITEM,Document Business Partner Item,Document Business Partner Item,FI-CA,,basic,224,0,Address; Business Area; Chart of Accounts; Company Code; Controlling Area; Personnel; Profit Center; Tax Code,top-level
+I_CADOCUMENTCLASS,Document Class,Document Class,FI-CA,,basic,2,0,,top-level
+I_CADOCUMENTCLASSTEXT,Document Class - Text,Document Class - Text,FI-CA,,text,4,0,,top-level
+I_CADOCUMENTGLITEM,Document General Ledger Item,Document General Ledger Item,FI-CA,,basic,123,11,Business Area; Chart of Accounts; Company Code; Cost Center; Profit Center; Profitability Segment; Tax Code; WBS Element,top-level
+I_CADOCUMENTORIGINCODE,Document Origin Code,Document Origin Code,FI-CA,Dimension,dimension,7,0,,top-level
+I_CADOCUMENTORIGINCODETEXT,Document Origin Code - Text,Document Origin Code - Text,FI-CA,,text,4,0,,top-level
+I_CADOCUMENTSUPPLEMENT,Document Supplement,Document Supplement,FI-CA,,basic,2,0,,top-level
+I_CADOCUMENTSUPPLEMENTTEXT,Document Supplement - Text,Document Supplement - Text,FI-CA,,text,4,0,,top-level
+I_CADOCUMENTTYPE,Document Type,Document Type,FI-CA,Dimension,dimension,8,1,,top-level
+I_CADOCUMENTTYPETEXT,Document Type - Text,Document Type - Text,FI-CA,,text,7,1,,top-level
+I_CADOCUMENTVERSION,Contract Accounting Document Version,Contract Accounting Document Version,FI-CA,,basic,2,0,,top-level
+I_CADOCUMENTVERSIONTEXT,Contract Acc Doc Version - Text,Contract Acc Doc Version - Text,FI-CA,,text,4,0,,top-level
+I_CADUNCHRGANDINTRSTPOSTGCODE,Dunning Charge and Interest Posting Code,Dunning Charge and Interest Posting Code,FI-CA,,basic,2,0,,top-level
+I_CADUNCHRGANDINTRSTPOSTGCODET,Dun Charge and Intrst Postg Code - Text,Dun Charge and Intrst Postg Code - Text,FI-CA,,basic,4,0,,top-level
+I_CADUNNINGEXCEPTIONREASON,Dunning Exception Reason,Dunning Exception Reason,FI-CA,,basic,3,0,,top-level
+I_CADUNNINGEXCEPTIONREASONTEXT,Dunning Exception Reason - Text,Dunning Exception Reason - Text,FI-CA,,text,4,0,,top-level
+I_CADUNNINGLEVEL,Dunning Level,Dunning Level,FI-CA,,basic,30,0,,top-level
+I_CADUNNINGLEVELCATEGORY,Dunning Level Category,Dunning Level Category,FI-CA,,basic,2,0,,top-level
+I_CADUNNINGLEVELCATEGORYTEXT,Dunning Level Category - Text,Dunning Level Category - Text,FI-CA,,text,4,0,,top-level
+I_CADUNNINGLEVELTEXT,Dunning Level - Text,Dunning Level - Text,FI-CA,,text,6,0,,top-level
+I_CADUNNINGMASTERDATAORIGIN,Dunning Master Data Origin,Dunning Master Data Origin,FI-CA,,basic,2,0,,top-level
+I_CADUNNINGMASTERDATAORIGINT,Dunning Master Data Origin - Text,Dunning Master Data Origin - Text,FI-CA,,basic,4,0,,top-level
+I_CADUNNINGNOTICEGROUP,Dunning Notice Group,Dunning Notice Group,FI-CA,,basic,2,0,,top-level
+I_CADUNNINGNOTICEGROUPTEXT,Dunning Notice Group - Text,Dunning Notice Group - Text,FI-CA,,text,4,0,,top-level
+I_CADUNNINGPROCEDURE,Dunning Procedure,Dunning Procedure,FI-CA,Dimension,dimension,14,0,,top-level
+I_CADUNNINGPROCEDURECATEGORY,Dunning Procedure Category,Dunning Procedure Category,FI-CA,,basic,2,0,,top-level
+I_CADUNNINGPROCEDURECATEGORYT,Dunning Procedure Category - Text,Dunning Procedure Category - Text,FI-CA,,basic,4,0,,top-level
+I_CADUNNINGPROCEDURETEXT,Dunning Procedure - Text,Dunning Procedure - Text,FI-CA,,text,4,0,,top-level
+I_CADUNNINGVALUATIONSTATUS,Dunning Valuation Status,Dunning Valuation Status,FI-CA,,basic,2,0,,top-level
+I_CADUNNINGVALUATIONSTATUSTEXT,Dunning Valuation Status - Text,Dunning Valuation Status - Text,FI-CA,,text,4,0,,top-level
+I_CAEUROCONVERSIONSTATUS,Euro Conversion Status,Euro Conversion Status,FI-CA,,basic,2,0,,top-level
+I_CAEUROCONVERSIONSTATUSTEXT,Euro Conversion Status - Text,Euro Conversion Status - Text,FI-CA,,text,4,0,,top-level
+I_CAFACTORINGCLRGCHECKSTATUS,Factoring Clearing Check Status,Factoring Clearing Check Status,FI-CA,,basic,2,0,,top-level
+I_CAFACTORINGCLRGCHECKSTATUST,Factoring Clearing Check Status - Text,Factoring Clearing Check Status - Text,FI-CA,,basic,4,0,,top-level
+I_CAFACTORINGRECEIVABLESTATUS,Factoring Receivable Status,Factoring Receivable Status,FI-CA,,basic,2,0,,top-level
+I_CAFACTORINGRECEIVABLESTATUST,Factoring Receivable Status - Text,Factoring Receivable Status - Text,FI-CA,,basic,4,0,,top-level
+I_CAHOUSEBANKREFERENCE,House Bank Reference,House Bank Reference,FI-CA,,basic,8,0,,top-level
+I_CAHOUSEBANKREFERENCETEXT,House Bank Reference - Text,House Bank Reference - Text,FI-CA,,text,6,0,,top-level
+I_CAINSTALLMENTPLANCATEGORY,Installment Plan Category,Installment Plan Category,FI-CA,,basic,7,0,,top-level
+I_CAINSTALLMENTPLANCATEGORYT,Installment Plan Category - Text,Installment Plan Category - Text,FI-CA,,basic,4,0,,top-level
+I_CAINSTALLMENTPLANHEADER,Contract Accounting Installment Plan,Contract Accounting Installment Plan,FI-CA,Dimension,dimension,41,0,Company Code,top-level
+I_CAINSTALLMENTPLANITEM,Installment Plan Item,Installment Plan Item,FI-CA,Fact,fact,12,0,,top-level
+I_CAINSTLMNTPLANDACTVTNRSN,Installment Plan Deactivation Reason,Installment Plan Deactivation Reason,FI-CA,,basic,2,0,,top-level
+I_CAINSTLMNTPLANDACTVTNRSNT,Installment Plan Deactivation Rsn - Text,Installment Plan Deactivation Rsn - Text,FI-CA,,basic,4,0,,top-level
+I_CAINTERESTCODE,Interest Code,Interest Code,FI-CA,Dimension,dimension,13,0,,top-level
+I_CAINTERESTCODETEXT,Interest Key - Text,Interest Key - Text,FI-CA,,text,4,0,,top-level
+I_CAINTPOSTINGREASONCODE,Internal Posting Reason Code,Internal Posting Reason Code,FI-CA,,basic,2,0,,top-level
+I_CAINTPOSTINGREASONCODETEXT,Internal Posting Reason Code - Text,Internal Posting Reason Code - Text,FI-CA,,text,4,0,,top-level
+I_CAMAINTRANSACTION,Document Main Transaction,Document Main Transaction,FI-CA,Dimension,dimension,5,1,,top-level
+I_CAMAINTRANSACTIONTEXT,Document Main Transaction - Text,Document Main Transaction - Text,FI-CA,,text,6,0,,top-level
+I_CANEGATIVEPOSTINGCTRLCODE,Negative Posting Control Code,Negative Posting Control Code,FI-CA,,basic,2,0,,top-level
+I_CANEGATIVEPOSTINGCTRLCODET,Negative Posting Control Code - Text,Negative Posting Control Code - Text,FI-CA,,basic,4,0,,top-level
+I_CANONDCBLINPUTTAXCODE,Non-Deductible Input Tax Code,Non-Deductible Input Tax Code,FI-CA,,basic,2,0,,top-level
+I_CANONDCBLINPUTTAXCODETEXT,Non-Deductible Input Tax Code - Text,Non-Deductible Input Tax Code - Text,FI-CA,,text,4,0,,top-level
+I_CAOPENITEMLIST,Contract Accounting Open Item List,Contract Accounting Open Item List,FI-CA,,basic,9,0,,top-level
+I_CAOPENITEMLISTITEM,Contract Accounting Open Item List Item,Contract Accounting Open Item List Item,FI-CA,,basic,192,4,Address; Business Area; Chart of Accounts; Company Code; Controlling Area; Personnel; Profit Center; Tax Code,top-level
+I_CAORIGLSTSTCLITEMCODE,Original Statistical Item Code,Original Statistical Item Code,FI-CA,,basic,2,0,,top-level
+I_CAORIGLSTSTCLITEMCODETEXT,Original Statistical Item Code - Text,Original Statistical Item Code - Text,FI-CA,,text,4,0,,top-level
+I_CAOTHERTAXCODE,Other Tax Code,Other Tax Code,FI-CA,,basic,7,0,,top-level
+I_CAOTHERTAXCODETEXT,Other Tax Code - Text,Other Tax Code - Text,FI-CA,,text,6,0,,top-level
+I_CAOVERDUEITEM,Contract Accounting Overdue Item,Contract Accounting Overdue Item,FI-CA,Fact,fact,24,2,Company Code,top-level
+I_CAOVERDUEITEMORIGIN,Overdue Item Origin,Overdue Item Origin,FI-CA,,basic,2,0,,top-level
+I_CAOVERDUEITEMORIGINTEXT,Overdue Item Origin - Text,Overdue Item Origin - Text,FI-CA,,text,4,0,,top-level
+I_CAPARTNERSETTLEMENTSTATUS,Partner Settlement Status,Partner Settlement Status,FI-CA,,basic,2,0,,top-level
+I_CAPARTNERSETTLEMENTSTATUST,Partner Settlement Status - Text,Partner Settlement Status - Text,FI-CA,,basic,4,0,,top-level
+I_CAPAYMENTBILLINGSTATUS,Payment Billing Status,Payment Billing Status,FI-CA,,basic,2,0,,top-level
+I_CAPAYMENTBILLINGSTATUSTEXT,Payment Billing Status - Text,Payment Billing Status - Text,FI-CA,,text,4,0,,top-level
+I_CAPAYMENTEXCEPTIONREASON,Payment Exception Reason,Payment Exception Reason,FI-CA,,basic,3,0,,top-level
+I_CAPAYMENTEXCEPTIONREASONTEXT,Payment Exception Reason - Text,Payment Exception Reason - Text,FI-CA,,text,4,0,,top-level
+I_CAPAYMENTMASTERDATAORIGIN,Payment Master Data Origin,Payment Master Data Origin,FI-CA,,basic,2,0,,top-level
+I_CAPAYMENTMASTERDATAORIGINT,Payment Master Data Origin - Text,Payment Master Data Origin - Text,FI-CA,,basic,4,0,,top-level
+I_CAPAYMENTMETHOD,Payment Method,Payment Method,FI-CA,,basic,25,2,,top-level
+I_CAPAYMENTMETHODTEXT,Payment Method - Text,Payment Method - Text,FI-CA,,text,6,0,,top-level
+I_CAPAYTPRENOTIFICATIONCODE,Payment Prenotification Code,Payment Prenotification Code,FI-CA,,basic,2,0,,top-level
+I_CAPAYTPRENOTIFICATIONCODET,Payment Prenotification Code - Text,Payment Prenotification Code - Text,FI-CA,,basic,4,0,,top-level
+I_CAPAYTSPECIFICATIONCAT,Payment Specification Category,Payment Specification Category,FI-CA,,basic,2,0,,top-level
+I_CAPAYTSPECIFICATIONCATTEXT,Payment Specification Category - Text,Payment Specification Category - Text,FI-CA,,text,4,0,,top-level
+I_CAPERIODCODE,Period Key,Period Key,FI-CA,Dimension,dimension,2,0,,top-level
+I_CAPERIODCODETEXT,Period Key - Text,Period Key - Text,FI-CA,,text,4,0,,top-level
+I_CAPOSTINGREASON,Document Posting Reason,Document Posting Reason,FI-CA,,basic,4,0,,top-level
+I_CAPOSTINGREASONTEXT,Document Posting Reason - Text,Document Posting Reason - Text,FI-CA,,text,6,0,,top-level
+I_CAPROMISETOPAYREASON,Promise to Pay Reason,Promise to Pay Reason,FI-CA,,basic,2,0,,top-level
+I_CAPROMISETOPAYREASONTEXT,Promise to Pay Reason - Text,Promise to Pay Reason - Text,FI-CA,,text,4,0,,top-level
+I_CAPROMISETOPAYWTHDRWLREASON,Withdrawal of Promise to Pay Reason,Withdrawal of Promise to Pay Reason,FI-CA,,basic,6,0,,top-level
+I_CAPROMISETOPAYWTHDRWLREASONT,Promise to Pay Withdrawal Reason - Text,Promise to Pay Withdrawal Reason - Text,FI-CA,,basic,4,0,,top-level
+I_CAPROVIDERCONTRACTHEADER,Provider Contract Header,Provider Contract Header,FI-CA,Dimension,dimension,37,0,Business Partner,top-level
+I_CAPROVIDERCONTRACTITEM,Provider Contract Item,Provider Contract Item,FI-CA,Dimension,dimension,138,0,Business Area; Company Code; Distribution Channel; Division; Order (production / maintenance / internal); Payment Terms; Profit Center; Sales Organization,top-level
+I_CAPROVIDERCONTRACTTECHRSCE,Provider Contract ID,Provider Contract ID,FI-CA,,basic,15,0,,top-level
+I_CARATINGAREA,Rating Area,Rating Area,FI-CA,,basic,2,0,,top-level
+I_CARATINGAREATEXT,Rating Area - Text,Rating Area - Text,FI-CA,,text,4,0,,top-level
+I_CARECEIVABLEADJREASONTEXT,Receivable Adjustment Reason - Text,Receivable Adjustment Reason - Text,FI-CA,,text,4,0,,top-level
+I_CARECEIVABLEADJUSTMENTREASON,Receivable Adjustment Reason,Receivable Adjustment Reason,FI-CA,,basic,2,0,,top-level
+I_CAREQUESTEDSPECIALPERIOD,Requested Special Period,Requested Special Period,FI-CA,,basic,2,0,,top-level
+I_CAREQUESTEDSPECIALPERIODT,Requested Special Period - Text,Requested Special Period - Text,FI-CA,,basic,4,0,,top-level
+I_CARETURNREASON,Return Reason,Return Reason,FI-CA,,basic,9,0,,top-level
+I_CARETURNREASONTEXT,Return Reason - Text,Return Reason - Text,FI-CA,,text,6,0,,top-level
+I_CAREVENUEACCOUNTINGREFTYPE,Revenue Accounting Reference Type,Revenue Accounting Reference Type,FI-CA,,basic,2,0,,top-level
+I_CAREVENUEACCOUNTINGREFTYPET,Revenue Accounting Reference Type - Text,Revenue Accounting Reference Type - Text,FI-CA,,basic,4,0,,top-level
+I_CAREVENUEDISTRSTATUS,Revenue Distribution Status,Revenue Distribution Status,FI-CA,,basic,2,0,,top-level
+I_CAREVENUEDISTRSTATUSTEXT,Revenue Distribution Status - Text,Revenue Distribution Status - Text,FI-CA,,text,4,0,,top-level
+I_CAREVERSALREASON,Reversal Reason,Reversal Reason,FI-CA,,basic,2,0,,top-level
+I_CAREVERSALREASONTEXT,Reversal Reason - Text,Reversal Reason - Text,FI-CA,,text,4,0,,top-level
+I_CAREVNACCTGSERVICETYPE,Revenue Accounting Service Type,Revenue Accounting Service Type,FI-CA,,basic,2,0,,top-level
+I_CAREVNACCTGSERVICETYPETEXT,Revenue Accounting Service Type - Text,Revenue Accounting Service Type - Text,FI-CA,,text,4,0,,top-level
+I_CAREVNACCTGTRANSFRECDORIGIN,Transfer Record Origin Type,Transfer Record Origin Type,FI-CA,,basic,2,0,,top-level
+I_CAREVNACCTGTRANSFRECDORIGINT,Transfer Record Origin Type - Text,Transfer Record Origin Type - Text,FI-CA,,basic,4,0,,top-level
+I_CAROUNDINGITEMCODE,Rounding Item Code,Rounding Item Code,FI-CA,,basic,2,0,,top-level
+I_CAROUNDINGITEMCODETEXT,Rounding Item Code - Text,Rounding Item Code - Text,FI-CA,,text,4,0,,top-level
+I_CASCRTYDEPDOCBPITEMSTATUS,Security Deposit Document BP Item Status,Security Deposit Document BP Item Status,FI-CA,,basic,2,0,,top-level
+I_CASCRTYDEPDOCBPITEMSTATUST,Scrty Deposit Doc BP Item Status - Text,Scrty Deposit Doc BP Item Status - Text,FI-CA,,basic,4,0,,top-level
+I_CASCRTYDEPDOCCATEGORYTEXT,Security Deposit Document Categ - Text,Security Deposit Document Categ - Text,FI-CA,,text,4,0,,top-level
+I_CASCRTYDEPDOCUMENTCATEGORY,Security Deposit Document Category,Security Deposit Document Category,FI-CA,,basic,2,0,,top-level
+I_CASECURITYDEPOSITREQRSN,Security Deposit Request Reason,Security Deposit Request Reason,FI-CA,,basic,2,0,,top-level
+I_CASECURITYDEPOSITREQRSNTEXT,Security Deposit Request Reason - Text,Security Deposit Request Reason - Text,FI-CA,,text,5,0,,top-level
+I_CASECURITYDEPOSITREVERSALRSN,Security Deposit Reversal Reason,Security Deposit Reversal Reason,FI-CA,,basic,2,0,,top-level
+I_CASECURITYDEPOSITRVSLRSNTEXT,Security Deposit Reversal Reason - Text,Security Deposit Reversal Reason - Text,FI-CA,,text,5,0,,top-level
+I_CASEPAPRENOTIFORIGINCODE,SEPA Prenotification Origin Code,SEPA Prenotification Origin Code,FI-CA,,basic,2,0,,top-level
+I_CASEPAPRENOTIFORIGINCODETEXT,SEPA Prenotification Origin Code - Text,SEPA Prenotification Origin Code - Text,FI-CA,,text,4,0,,top-level
+I_CASEPAPRENOTIFRQMTCODE,SEPA Prenotification Requirement Code,SEPA Prenotification Requirement Code,FI-CA,,basic,2,0,,top-level
+I_CASEPAPRENOTIFRQMTCODETEXT,SEPA Prenotif Requirement Code - Text,SEPA Prenotif Requirement Code - Text,FI-CA,,text,4,0,,top-level
+I_CASRVCDISCONNCNREQSTATUS,Disconnection Request Status,Disconnection Request Status,FI-CA,,basic,2,0,,top-level
+I_CASRVCDISCONNCNREQSTATUSTEXT,Disconnection Request Status - Text,Disconnection Request Status - Text,FI-CA,,text,4,0,,top-level
+I_CASRVCDISCONNECTIONREQITEM,Service Disconnection Request Item,Service Disconnection Request Item,FI-CA,Fact,fact,15,2,,top-level
+I_CASRVCDISCONNECTIONREQUEST,Service Disconnection Request,Service Disconnection Request,FI-CA,Fact,fact,26,0,Business Partner; Company Code,top-level
+I_CASRVCRECONNCNREQSTATUS,Reconnection Request Status,Reconnection Request Status,FI-CA,,basic,2,0,,top-level
+I_CASRVCRECONNCNREQSTATUSTEXT,Reconnection Request Status - Text,Reconnection Request Status - Text,FI-CA,,text,4,0,,top-level
+I_CASRVCRECONNECTIONREQUEST,Service Reconnection Request,Service Reconnection Request,FI-CA,Fact,fact,24,0,Business Partner,top-level
+I_CASTATISTICALITEMCODE,Statistical Item Code,Statistical Item Code,FI-CA,,basic,2,0,,top-level
+I_CASTATISTICALITEMCODETEXT,Statistical Item Code - Text,Statistical Item Code - Text,FI-CA,,text,4,0,,top-level
+I_CASUBAPPLICATION,Contract Subapplication,Contract Subapplication,FI-CA,Dimension,dimension,2,0,,top-level
+I_CASUBAPPLICATIONTEXT,Contract Subapplication - Text,Contract Subapplication - Text,FI-CA,,text,4,0,,top-level
+I_CASUBSCRIPTIONCHARGETYPE,Subscription Charge Type,Subscription Charge Type,FI-CA,,basic,2,0,,top-level
+I_CASUBSCRIPTIONCHARGETYPETEXT,Subscription Charge Type - Text,Subscription Charge Type - Text,FI-CA,,text,4,0,,top-level
+I_CASUBSTITUTEDOCCATEGORY,Substitute Document Category,Substitute Document Category,FI-CA,,basic,2,0,,top-level
+I_CASUBSTITUTEDOCCATEGORYTEXT,Substitute Document Category - Text,Substitute Document Category - Text,FI-CA,,text,4,0,,top-level
+I_CASUBTRANSACTION,Document Subtransaction,Document Subtransaction,FI-CA,Dimension,dimension,18,4,,top-level
+I_CASUBTRANSACTIONTEXT,Document Subtransaction - Text,Document Subtransaction - Text,FI-CA,,text,10,2,,top-level
+I_CATAXDETERMINATIONCODE,Tax Determination Code,Tax Determination Code,FI-CA,,basic,9,0,Tax Code,top-level
+I_CATAXSUPPLEMENTSTORAGELOC,Tax Supplement Storage Location,Tax Supplement Storage Location,FI-CA,,basic,2,0,,top-level
+I_CATAXSUPPLEMENTSTORAGELOCT,Tax Supplement Storage Location - Text,Tax Supplement Storage Location - Text,FI-CA,,basic,4,0,,top-level
+I_CATOLERANCEGROUP,Tolerance Group,Tolerance Group,FI-CA,,basic,9,0,,top-level
+I_CATOLERANCEGROUPTEXT,Tolerance Group - Text,Tolerance Group - Text,FI-CA,,text,4,0,,top-level
+I_CATRANSFERREASON,Transfer Posting Reason,Transfer Posting Reason,FI-CA,,basic,2,0,,top-level
+I_CATRANSFERREASONTEXT,Transfer Reason - Text,Transfer Reason - Text,FI-CA,,text,4,0,,top-level
+I_CAWITHHOLDINGTAXCAT,Withholding Tax Category,Withholding Tax Category,FI-CA,,basic,2,0,,top-level
+I_CAWITHHOLDINGTAXCATTEXT,Withholding Tax Category - Text,Withholding Tax Category - Text,FI-CA,,text,4,0,,top-level
+I_CAWITHHOLDINGTAXSUPPLEMENT,Withholding Tax Supplement,Withholding Tax Supplement,FI-CA,,basic,4,0,,top-level
+I_CAWITHHOLDINGTAXSUPPLEMENTT,Withholding Tax Supplement - Text,Withholding Tax Supplement - Text,FI-CA,,basic,6,0,,top-level
+I_CAWORKFLOWCHECKPROCESS,Workflow Check Process,Workflow Check Process,FI-CA,Dimension,dimension,2,0,,top-level
+I_CAWORKFLOWCHECKPROCESSTEXT,Workflow Check Process - Text,Workflow Check Process - Text,FI-CA,,text,4,0,,top-level
+I_CAWORKFLOWCHECKREASON,Workflow Check Reason,Workflow Check Reason,FI-CA,Dimension,dimension,7,0,,top-level
+I_CAWORKFLOWCHECKREASONTEXT,Workflow Check Reason - Text,Workflow Check Reason - Text,FI-CA,,text,4,0,,top-level
+I_CAWRITEOFFDOCUMENT,Contract Accounting Write Off Document,Contract Accounting Write Off Document,FI-CA,Dimension,dimension,53,0,,top-level
+I_CAWRITEOFFHISTORY,Contract Accounting Write Off History,Contract Accounting Write Off History,FI-CA,Fact,fact,30,0,Company Code,top-level
+I_CAWRITEOFFREASON,Write Off Reason,Write Off Reason,FI-CA,,basic,5,0,,top-level
+I_CAWRITEOFFREASONTEXT,Write Off Reason - Text,Write Off Reason - Text,FI-CA,,text,4,0,,top-level
+I_CONACCTPRTNINVCGCHRGANDDISC,Contr Acct Partner Invcg Charge and Disc,Contr Acct Partner Invcg Charge and Disc,FI-CA,,basic,11,0,,top-level
+I_CONTRACCTCATSTDVH,Contract Account Category,Contract Account Category,FI-CA,,value_help,4,0,,top-level
+I_CONTRACCTPRTNRELSHPTYPE,Contract Acct Partner Relationship Type,Contract Acct Partner Relationship Type,FI-CA,,basic,3,0,,top-level
+I_CONTRACCTPRTNRELSHPTYPETXT,Contract Acct Partner Relshp Type - Text,Contract Acct Partner Relshp Type - Text,FI-CA,,text,4,0,,top-level
+I_CONTRACTACCOUNTCATEGORY,Contract Account Category,Contract Account Category,FI-CA,,basic,9,1,,top-level
+I_CONTRACTACCOUNTCATEGORYTEXT,Contract Account Category - Text,Contract Account Category - Text,FI-CA,,text,7,1,,top-level
+I_CONTRACTACCOUNTHEADER,Contract Account,Contract Account,FI-CA,Dimension,dimension,15,0,,top-level
+I_CONTRACTACCOUNTHEADERSTDVH,Contract Account Header,Contract Account Header,FI-CA,,value_help,3,0,,top-level
+I_CONTRACTACCOUNTPARTNER,Contract Account Partner,Contract Account Partner,FI-CA,Dimension,dimension,160,9,Address; Business Area,top-level
+I_PAYMENTCONDITION,Payment Condition,Payment Condition,FI-CA,,basic,6,0,,top-level
+I_PAYMENTCONDITIONTEXT,Payment Condition - Text,Payment Condition - Text,FI-CA,,text,4,0,,top-level
+I_PROVIDERCONTRACT,Provider Contract,Provider Contract,FI-CA,,basic,38,0,Business Partner,top-level
+I_PROVIDERCONTRACTCATEGORY,Provider Contract Category,Provider Contract Category,FI-CA,,basic,2,0,,top-level
+I_PROVIDERCONTRACTCATEGORYTEXT,Provider Contract Category - Text,Provider Contract Category - Text,FI-CA,,text,4,0,,top-level
+I_PROVIDERCONTRACTITEM,Provider Contract Item,Provider Contract Item,FI-CA,,basic,141,1,Business Area; Company Code; Distribution Channel; Division; Order (production / maintenance / internal); Payment Terms; Profit Center; Sales Organization,top-level
+I_PROVIDERCONTRACTMIGRTNSTS,Provider Contract Migration Status,Provider Contract Migration Status,FI-CA,,basic,2,0,,top-level
+I_PROVIDERCONTRACTMIGRTNSTST,Prvdr Contract Migration Status - Text,Prvdr Contract Migration Status - Text,FI-CA,,basic,4,0,,top-level
+I_PROVIDERCONTRACTSENDER,Provider Contract Sender,Provider Contract Sender,FI-CA,,basic,6,0,,top-level
+I_PROVIDERCONTRACTSENDERCAT,Provider Contract Sender Category,Provider Contract Sender Category,FI-CA,,basic,2,0,,top-level
+I_PROVIDERCONTRACTSENDERCATTXT,Provider Contract Sender Category - Text,Provider Contract Sender Category - Text,FI-CA,,text,4,0,,top-level
+I_PROVIDERCONTRACTSENDERTEXT,Provider Contract Sender - Text,Provider Contract Sender - Text,FI-CA,,text,5,0,,top-level
+I_PROVIDERCONTRACTSTATUS,Provider Contract Status,Provider Contract Status,FI-CA,,basic,2,0,,top-level
+I_PROVIDERCONTRACTSTATUSTEXT,Provider Contract Status - Text,Provider Contract Status - Text,FI-CA,,text,4,0,,top-level
+I_PROVIDERCONTRACTTYPE,Provider Contract Type,Provider Contract Type,FI-CA,,basic,2,0,,top-level
+I_PROVIDERCONTRACTTYPETEXT,Provider Contract Type - Text,Provider Contract Type - Text,FI-CA,,text,4,0,,top-level
+I_PRVDRCONTRITEMCHGREASON,Provider Contract Item Change Reason,Provider Contract Item Change Reason,FI-CA,,basic,2,0,,top-level
+I_PRVDRCONTRITEMCHGREASONTXT,Prvdr Contract Item Chg Reason - Text,Prvdr Contract Item Chg Reason - Text,FI-CA,,text,4,0,,top-level
+I_SALESBILLINGPROVIDERCONTRACT,Provider Contract for Sales Billing,Provider Contract for Sales Billing,FI-CA,,basic,27,0,Business Partner,top-level
+I_SLSBILLGPROVIDERCONTRACTITEM,Sales Billing Provider Contract Item,Sales Billing Provider Contract Item,FI-CA,,basic,46,0,Business Area; Company Code; Distribution Channel; Division; Order (production / maintenance / internal); Profit Center; Sales Organization,top-level
+I_CABILLGCYCLE,Billing Cycle,Billing Cycle,FI-CA-INV,Dimension,dimension,6,0,,top-level
+I_CABILLGCYCLETEXT,Name of Billing Cycle,Name of Billing Cycle,FI-CA-INV,,text,5,0,,top-level
+I_CABILLGDOCHEADER,Billing Document Header,Billing Document Header,FI-CA-INV,,basic,84,0,,top-level
+I_CABILLGDOCITEM,Billing Document Item,Billing Document Item,FI-CA-INV,,basic,134,1,Business Area; Company Code; Profit Center; Tax Code,top-level
+I_CABILLGPLN,Billing Plan Header,Billing Plan Header,FI-CA-INV,,basic,42,0,Business Partner,top-level
+I_CABILLGPLNITEM,Billing Plan Item,Billing Plan Item,FI-CA-INV,,basic,103,1,Business Area; Company Code; Distribution Channel; Sales Organization; Tax Code,top-level
+I_CAINVCGCATEGORY,Invoicing Category,Invoicing Category,FI-CA-INV,Dimension,dimension,2,0,,top-level
+I_CAINVCGCATEGORYTEXT,Invoicing Category - Text,Invoicing Category - Text,FI-CA-INV,,text,5,0,,top-level
+I_CAINVCGCHRGANDDISCKEY,Charge and Discount Key,Charge and Discount Key,FI-CA-INV,Dimension,dimension,5,0,,top-level
+I_CAINVCGCHRGANDDISCKEYTEXT,Charge- and Discount Key - Text,Charge- and Discount Key - Text,FI-CA-INV,,text,7,0,,top-level
+I_CAINVCGDOCCHARGEANDDISCOUNT,Invoicing Document Charges and Discounts,Invoicing Document Charges and Discounts,FI-CA-INV,,basic,15,0,,top-level
+I_CAINVCGDOCCHRGANDDISCHISTORY,Invoicing Document History Charges/Discounts,Invoicing Document History Charges/Discounts,FI-CA-INV,,basic,15,0,,top-level
+I_CAINVCGDOCHEADER,Invoicing Document Header,Invoicing Document Header,FI-CA-INV,,basic,98,0,Business Partner; Company Code,top-level
+I_CAINVCGDOCITEM,Invoicing Document Item,Invoicing Document Item,FI-CA-INV,,basic,131,1,Company Code; Tax Code,top-level
+I_CAINVCGDOCOFFSETTING,Invoicing Document Offsetting Items,Invoicing Document Offsetting Items,FI-CA-INV,,basic,23,0,,top-level
+I_CAINVCGDOCPOSTING,Invoicing Document Postings,Invoicing Document Postings,FI-CA-INV,,basic,10,0,,top-level
+I_CAINVCGDOCRELATION,Invoicing Document Object Relationships,Invoicing Document Object Relationships,FI-CA-INV,,basic,10,0,,top-level
+I_CAINVCGDOCSOURCE,Invoicing Document Sources,Invoicing Document Sources,FI-CA-INV,,basic,19,0,,top-level
+I_CAINVCGSCHEDULE,Scheduling,Scheduling,FI-CA-INV,Dimension,dimension,2,0,,top-level
+I_CAINVCGSCHEDULETEXT,Scheduling in Invoicing - Text,Scheduling in Invoicing - Text,FI-CA-INV,,text,5,0,,top-level
+I_CAINVCGTYPEPROCTEXT,Invoicing Type - Process-Specific (Texts),Invoicing Type - Process-Specific (Texts),FI-CA-INV,,text,9,0,,top-level
+I_CAPARTNERSETTLEMENTRULE,Partner Settlement Rule,Partner Settlement Rule,FI-CA-INV,Dimension,dimension,3,0,,top-level
+I_CAPARTNERSETTLEMENTRULET,Partner Settlement Rule - Text,Partner Settlement Rule - Text,FI-CA-INV,,basic,5,0,,top-level
+I_OUTGOINGCHECK,Outgoing Cheque,Outgoing Cheque,FI-FIO-AP,,basic,49,0,Customer; Fiscal Year,top-level
+I_GLACCOUNTLINEITEMSEMTAG,G/L Line Item with Semantic Tag Including FA,G/L Line Item with Semantic Tag Including FA,FI-FIO-GL-HIE,Cube,cube,610,13,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Division; Equipment; Fiscal Year; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment; Supplier; Valuation Area; WBS Element,top-level
+I_SEMANTICTAG,Semantic Tag,Semantic Tag,FI-FIO-GL-HIE,Dimension,dimension,6,0,,top-level
+I_SEMANTICTAGLEAFNODE,Hierarchy Leaf Node with Semantic Tag,Hierarchy Leaf Node with Semantic Tag,FI-FIO-GL-HIE,,basic,11,0,Chart of Accounts; Functional Area; G/L Account,top-level
+I_SEMANTICTAGTEXT,Semantic Tag - Text,Semantic Tag - Text,FI-FIO-GL-HIE,,text,4,0,,top-level
+I_SEMTAGFUNCAREA,Functional Area with Semantic Tag,Functional Area with Semantic Tag,FI-FIO-GL-HIE,Cube,cube,10,0,,top-level
+I_SEMTAGGLACCOUNT,G/L Account with Semantic Tag,G/L Account with Semantic Tag,FI-FIO-GL-HIE,Cube,cube,14,0,G/L Account,top-level
+I_EARMARKEDFUNDSDCSNRSNTYPE,Earmarked Funds Decision Reason Type,Earmarked Funds Decision Reason Type,FI-FM,Dimension,dimension,3,0,,top-level
+I_EARMARKEDFUNDSDCSNRSNTYPETXT,Decision Reason Type - Text,Decision Reason Type - Text,FI-FM,,text,6,0,,top-level
+I_EARMARKEDFUNDSDOCENTRYSTATUS,Earmarked Funds Document Entry Status,Earmarked Funds Document Entry Status,FI-FM,Dimension,dimension,3,0,,top-level
+I_EARMARKEDFUNDSDOCENTRYSTSTXT,Earmarked Funds Doc Entry Status - Text,Earmarked Funds Doc Entry Status - Text,FI-FM,,text,6,0,,top-level
+I_EARMARKEDFUNDS_DCSNREASON,Earmarked Funds Decision Reason,Earmarked Funds Decision Reason,FI-FM,Dimension,dimension,5,0,,top-level
+I_EARMARKEDFUNDS_DCSNREASONTXT,Earmarked Funds Decision Reason - Text,Earmarked Funds Decision Reason - Text,FI-FM,,text,5,0,,top-level
+I_EARMARKEDFUNDS_DOCCATEGORY,Earmarked Funds Document Category,Earmarked Funds Document Category,FI-FM,Dimension,dimension,3,0,,top-level
+I_EARMARKEDFUNDS_DOCCATTEXT,Earmarked Funds Document Category - Text,Earmarked Funds Document Category - Text,FI-FM,,text,6,0,,top-level
+I_EARMARKEDFUNDS_DOCTYPE,Earmarked Funds Document Type,Earmarked Funds Document Type,FI-FM,Dimension,dimension,4,0,,top-level
+I_EARMARKEDFUNDS_DOCTYPETEXT,Earmarked Funds Document Type - Text,Earmarked Funds Document Type - Text,FI-FM,,text,7,0,,top-level
+I_EARMARKEDFUNDS_MNLEDITBLK,Earmarked Funds Manual Editing Block,Earmarked Funds Manual Editing Block,FI-FM,Dimension,dimension,2,0,,top-level
+I_EARMARKEDFUNDS_MNLEDITBLKTXT,Manual Editing Block - Text,Manual Editing Block - Text,FI-FM,,text,5,0,,top-level
+I_FIXEDASSETNATLCLFN,IFixedAssetNatlClfn,IFixedAssetNatlClfn,FI-LOC-AA,Dimension,dimension,4,0,,top-level
+I_FIXEDASSETNATLCLFNTEXT,National Classification Code - Text,National Classification Code - Text,FI-LOC-AA,,text,6,0,,top-level
+I_TAXDEPRECIATIONGROUP,Tax Depreciation Group,Tax Depreciation Group,FI-LOC-AA,Dimension,dimension,4,0,,top-level
+I_TAXDEPRECIATIONGROUPTEXT,Tax Depreciation Group - Text,Tax Depreciation Group - Text,FI-LOC-AA,,text,6,0,,top-level
+I_RU_ASSETDEPRECIATIONGROUP,Russia Asset Depreciation Group,Russia Asset Depreciation Group,FI-LOC-AA-RU,,basic,8,0,,top-level
+I_RU_ASSETDEPRECIATIONGROUPT,Russia Asset Depreciation Group - Text,Russia Asset Depreciation Group - Text,FI-LOC-AA-RU,,basic,9,0,,top-level
+I_RU_ASSETOKOF,Russia Asset OKOF Code,Russia Asset OKOF Code,FI-LOC-AA-RU,,basic,5,0,,top-level
+I_RU_ASSETOKOFTEXT,Russia Asset OKOF Code - Text,Russia Asset OKOF Code - Text,FI-LOC-AA-RU,,text,6,0,,top-level
+I_BUSINESSPLACEVH,Value for Business Place,Value for Business Place,FI-LOC-BUP,,value_help,3,0,Company Code,top-level
+I_CITCLFNITEMINCONSTCYCODETEXT,CIT Item Inconsistency Code - Text,CIT Item Inconsistency Code - Text,FI-LOC-CIT,,text,6,0,,top-level
+I_CITCLFNITEMINCONSTCYCODEVH,CIT Item Inconsistency Code,CIT Item Inconsistency Code,FI-LOC-CIT,Dimension,value_help,3,0,,top-level
+I_CN_PAYMENTREQUISITIONTYPEVH,Payment Requisition Type Description,Payment Requisition Type Description,FI-LOC-CM-CN,Dimension,value_help,3,0,,top-level
+I_CN_PAYTREQNSTRATEGYSTATUST,PaymentRequisitionStrategy Status - Text,PaymentRequisitionStrategy Status - Text,FI-LOC-CM-CN,,basic,6,0,,top-level
+I_CN_PAYTREQNSTRATEGYSTATUSVH,Requisition Strategy Status Description,Requisition Strategy Status Description,FI-LOC-CM-CN,Dimension,value_help,3,0,,top-level
+I_CN_PAYTREQUISITIONPRIORITYT,Payment Requisition Priority - Text,Payment Requisition Priority - Text,FI-LOC-CM-CN,,basic,6,0,,top-level
+I_CN_PAYTREQUISITIONPRIORITYVH,Payment Requisition Priority Description,Payment Requisition Priority Description,FI-LOC-CM-CN,Dimension,value_help,3,0,,top-level
+I_CN_PAYTREQUISITIONSTATUSTEXT,Payment Requisition Status - Text,Payment Requisition Status - Text,FI-LOC-CM-CN,,text,6,0,,top-level
+I_CN_PAYTREQUISITIONSTATUSVH,Payment Requisition Status Description,Payment Requisition Status Description,FI-LOC-CM-CN,Dimension,value_help,3,0,,top-level
+I_CN_PAYTREQUISITIONTYPETEXT,Payment Requisition Type - Text,Payment Requisition Type - Text,FI-LOC-CM-CN,,text,6,0,,top-level
+I_CN_BANKRECEIPT,Bank Receipt Information for China,Bank Receipt Information for China,FI-LOC-EPI-CN,,basic,41,0,Company Code; Profit Center,top-level
+I_CN_BANKRECNCLNMATCHTYPE,CN Bank Reconciliation Match Type,CN Bank Reconciliation Match Type,FI-LOC-EPI-CN,,basic,2,0,,top-level
+I_CN_BANKRECNCLNMATCHTYPETEXT,CN Bank Reconciliation Match Type - Text,CN Bank Reconciliation Match Type - Text,FI-LOC-EPI-CN,,text,4,0,,top-level
+I_CN_BANKRECONCILIATIONSTS,CN Bank Reconciliation Status,CN Bank Reconciliation Status,FI-LOC-EPI-CN,,basic,2,0,,top-level
+I_CN_BANKRECONCILIATIONSTSTEXT,CN Bank Reconciliation Status - Text,CN Bank Reconciliation Status - Text,FI-LOC-EPI-CN,,text,4,0,,top-level
+I_CN_RECONCILIATIONLEDGER,CN Ledger for Bank Reconciliation,CN Ledger for Bank Reconciliation,FI-LOC-EPI-CN,,basic,3,0,Company Code,top-level
+I_CH_PAYTSLIPWTHREFCONTROLDATA,Switzerland Control Data for ISR,Switzerland Control Data for ISR,FI-LOC-FI-CH-QR,,basic,18,0,,top-level
+I_CL_DOCTYPEVCHRTYPEASSGMT,Mappg of Doc Type and Chilean Vchr Type,Mappg of Doc Type and Chilean Vchr Type,FI-LOC-FI-CL,,basic,4,0,Company Code,top-level
+I_CL_GLACCTADDLATTRIBUTES,GL Acct Additional Attributes for Chile,GL Acct Additional Attributes for Chile,FI-LOC-FI-CL,,basic,5,0,Chart of Accounts,top-level
+I_IN_TANACCUMULATIONDETAIL,TAN Exemption Accumulation Detail,TAN Exemption Accumulation Detail,FI-LOC-FI-IN,,basic,10,0,Company Code,top-level
+I_IN_TANEXEMPTIONDETAIL,TAN Exemption Detail,TAN Exemption Detail,FI-LOC-FI-IN,,basic,14,0,Company Code,top-level
+I_JP_ANNEX204ARBOOKCUBE,Japan Annex214 AR Book - Cube,Japan Annex214 AR Book - Cube,FI-LOC-FI-JP,Cube,cube,41,0,Company Code; Customer; Fiscal Year; G/L Account; Material / Product,top-level
+I_JP_ANNEX205APBOOKCUBE,Japan Annex215 AP Book - Cube,Japan Annex215 AP Book - Cube,FI-LOC-FI-JP,Cube,cube,51,0,Company Code; Fiscal Year; G/L Account; Material / Product; Supplier,top-level
+I_JP_INVCSMMRYITEM,Line Items for Japan Invoice Smmry,Line Items for Japan Invoice Smmry,FI-LOC-FI-JP,Dimension,dimension,33,0,Company Code,top-level
+I_JP_INVCSMMRYMONTHLYINVOICE,Monthly Invoice for Japan Invoice Smmry,Monthly Invoice for Japan Invoice Smmry,FI-LOC-FI-JP,Dimension,dimension,25,0,Company Code,top-level
+I_JP_INVCSMMRYPAYERINVOICE,Payer Invoice for Japan Invoice Smmry,Payer Invoice for Japan Invoice Smmry,FI-LOC-FI-JP,Dimension,dimension,27,0,Company Code,top-level
+I_BUSINESSTYPEVH,Type of Business,Type of Business,FI-LOC-FI-KR,,value_help,1,0,,top-level
+I_INDUSTRYTYPEVH,Type of Industry,Type of Industry,FI-LOC-FI-KR,,value_help,1,0,,top-level
+I_KR_BUSINESSPLACE,VAT Reporting Business Place,VAT Reporting Business Place,FI-LOC-FI-KR,,basic,27,0,Company Code,top-level
+I_KR_CUSTVAT,VAT registration by time,VAT registration by time,FI-LOC-FI-KR,,basic,18,0,Customer,top-level
+I_KR_EDCINCGTAXAUTHDOCUMENT,KR Tax Authority Docs for Incoming Invoices,KR Tax Authority Docs for Incoming Invoices,FI-LOC-FI-KR,,basic,36,0,,top-level
+I_KR_EDCOUTGTAXAUTHDOCUMENT,KR Tax Authority Docs for Outgoing Invoices,KR Tax Authority Docs for Outgoing Invoices,FI-LOC-FI-KR,,basic,36,0,,top-level
+I_KR_SUPPLIERVATINFORMATION,KR Time-Dependent VAT Info for Supplier,KR Time-Dependent VAT Info for Supplier,FI-LOC-FI-KR,,basic,13,0,Supplier,top-level
+I_MX_EXTPAYMENTMETHODMAPPING,External Payment Method Mapping for MX,External Payment Method Mapping for MX,FI-LOC-FI-MX,,basic,3,0,,top-level
+I_MX_SUPPLIERTRANSACTIONTYPE,Supplier Transaction Type and Version,Supplier Transaction Type and Version,FI-LOC-FI-MX,,basic,4,0,,top-level
+I_MX_TRANSACTIONTYPE,Mexico Transaction Type,Mexico Transaction Type,FI-LOC-FI-MX,Dimension,dimension,2,0,,top-level
+I_MX_TRANSACTIONTYPETEXT,Mexico Transaction Type - Text,Mexico Transaction Type - Text,FI-LOC-FI-MX,,text,4,0,,top-level
+I_PH_ALPHANUMERICTAXCODE,Philippines Alphanumeric Tax Code,Philippines Alphanumeric Tax Code,FI-LOC-FI-PH,,basic,4,0,,top-level
+I_PH_ALPHANUMERICTAXCODETEXT,Philippines Alphanumeric Tax Code - Text,Philippines Alphanumeric Tax Code - Text,FI-LOC-FI-PH,,text,6,0,,top-level
+I_PH_TAXBALANCEGROUPBYINDUSTRY,Philippines Industries Covered by VAT,Philippines Industries Covered by VAT,FI-LOC-FI-PH,,basic,7,0,Company Code; Tax Code,top-level
+I_CN_CADECSTMSUBSIDIARYITEMVAL,CN Custmzd Subsdry Items Value for CADE,CN Custmzd Subsdry Items Value for CADE,FI-LOC-GAI-CN,,basic,8,0,Company Code,top-level
+I_CN_CADECUSTOMSUBSIDIARYITEM,CN Customized Subsidiary Items for CADE,CN Customized Subsidiary Items for CADE,FI-LOC-GAI-CN,,basic,7,0,Company Code,top-level
+I_CN_CADEDEPRECIATIONKEYINFO,CN Depreciation Key Information for CADE,CN Depreciation Key Information for CADE,FI-LOC-GAI-CN,,basic,6,0,Company Code,top-level
+I_CN_CADEEXCHANGERATE,CN Exchange Rate for CADE,CN Exchange Rate for CADE,FI-LOC-GAI-CN,,basic,5,0,Company Code,top-level
+I_CN_CADEFINSTMNTVERSASSGMT,CN FS Version Assgmt for CADE,CN FS Version Assgmt for CADE,FI-LOC-GAI-CN,,basic,3,0,Company Code,top-level
+I_CN_CADEJOURNALENTRYDOCTYPE,CN Journal Entry Document Type for CADE,CN Journal Entry Document Type for CADE,FI-LOC-GAI-CN,,basic,7,0,Company Code,top-level
+I_CN_CADEJOURNALENTRYMAPPING,CN Journal Entry Mapping for CADE,CN Journal Entry Mapping for CADE,FI-LOC-GAI-CN,,basic,10,0,Company Code,top-level
+I_CN_CADESTATUTORYREPORTTYPE,CN Statutory Report Type for CADE,CN Statutory Report Type for CADE,FI-LOC-GAI-CN,,basic,8,0,Company Code,top-level
+I_CN_CADESUBSIDIARYACCTGITEM,CN Subsidiary Accounting Item for CADE,CN Subsidiary Accounting Item for CADE,FI-LOC-GAI-CN,,basic,6,0,Company Code; G/L Account,top-level
+I_BR_VEHICLEOPERATIONTYPE,Brazil Vehicle Operation Type,Brazil Vehicle Operation Type,FI-LOC-LO-BR,,basic,2,0,,top-level
+I_BR_VEHICLEOPERATIONTYPETEXT,Brazil Vehicle Operation Type - Text,Brazil Vehicle Operation Type - Text,FI-LOC-LO-BR,,text,5,0,,top-level
+I_BR_VEHICLERESTRICTION,Brazil Vehicle Restriction,Brazil Vehicle Restriction,FI-LOC-LO-BR,,basic,2,0,,top-level
+I_BR_VEHICLERESTRICTIONTEXT,Brazil Vehicle Restriction - Text,Brazil Vehicle Restriction - Text,FI-LOC-LO-BR,,text,5,0,,top-level
+I_BR_VEHICLEUSAGETEXT_2,Brazil Nota Fiscal Vehicle Usage - Text,Brazil Nota Fiscal Vehicle Usage - Text,FI-LOC-LO-BR,,basic,5,0,,top-level
+I_BR_VEHICLEUSAGE_2,Brazil Nota Fiscal Vehicle Usage,Brazil Nota Fiscal Vehicle Usage,FI-LOC-LO-BR,,basic,2,0,,top-level
+I_HR_FISCALDOCUMENT,Fiscal documents,Fiscal documents,FI-LOC-LO-HR,,basic,22,0,Company Code; Fiscal Year,top-level
+I_IN_BUSINESSPLACETAXDETAIL,GST India Business Place Tax Attribute,GST India Business Place Tax Attribute,FI-LOC-LO-IN,,basic,10,0,Company Code,top-level
+I_IN_EWBILLDOCDET,Link EWbill to Document for GST India,Link EWbill to Document for GST India,FI-LOC-LO-IN,,basic,16,0,Company Code; Fiscal Year,top-level
+I_IN_INVCREFNMBRDET,Invoice Reference Number for GST India,Invoice Reference Number for GST India,FI-LOC-LO-IN,,basic,18,0,Company Code,top-level
+I_IN_PLANTBUSINESSPLACEDETAIL,GST India Business Place for Plant,GST India Business Place for Plant,FI-LOC-LO-IN,,basic,6,0,Company Code; Plant,top-level
+I_PL_SAFTGENERALSETTINGS,SAFT PL General Settings,SAFT PL General Settings,FI-LOC-SAF-PL,,basic,15,0,Company Code,top-level
+I_CN_TAXINPTVATCAT,China Input VAT Category,China Input VAT Category,FI-LOC-TIM-CN,Dimension,dimension,4,0,,top-level
+I_CN_TAXINPTVATCATT,China Input VAT Category - Text,China Input VAT Category - Text,FI-LOC-TIM-CN,,basic,5,0,,top-level
+I_CN_TAXINVCDEDUCTIONTYPE,China Tax Invoice Deduction Type,China Tax Invoice Deduction Type,FI-LOC-TIM-CN,Dimension,dimension,3,0,,top-level
+I_CN_TAXINVCDEDUCTIONTYPET,China Tax Invoice Deduction Type - Text,China Tax Invoice Deduction Type - Text,FI-LOC-TIM-CN,,basic,4,0,,top-level
+I_CN_TAXINVCGLDNTXSYSTSTS,CN Tax Invoice Golden Tax System Status,CN Tax Invoice Golden Tax System Status,FI-LOC-TIM-CN,Dimension,dimension,2,0,,top-level
+I_CN_TAXINVCINPTPROCGSTS,CN Tax Invoice Incoming Processing Sts,CN Tax Invoice Incoming Processing Sts,FI-LOC-TIM-CN,Dimension,dimension,5,0,,top-level
+I_CN_TAXINVCTYPE,CN Tax Invoice Type,CN Tax Invoice Type,FI-LOC-TIM-CN,Dimension,dimension,2,0,,top-level
+I_CN_TAXINVCTYPET,CN Tax Invoice Type - Text,CN Tax Invoice Type - Text,FI-LOC-TIM-CN,,basic,5,0,,top-level
+I_CN_TAXINVOICEBINDING,China Tax Invoice Binding Information,China Tax Invoice Binding Information,FI-LOC-TIM-CN,,basic,6,0,,top-level
+I_CN_TAXINVOICEHEADER,China Tax Invoice Header,China Tax Invoice Header,FI-LOC-TIM-CN,,basic,50,0,Company Code; Purchasing Organization,top-level
+I_EXTTAXCALCULATIONTRACE,External Tax Calculation Engines Trace,External Tax Calculation Engines Trace,FI-LOC-TXS,,basic,13,0,Company Code; Tax Code,top-level
+I_OPERATIONALACCTGDOCTAXITEM,Indirect Tax Items,Indirect Tax Items,FI-LOC-VAT-GEN,Cube,cube,23,0,Company Code; Fiscal Year; Tax Code,top-level
+I_TAXBASEBALANCESGROUP,Grouping Numbers of Tax Base Balances,Grouping Numbers of Tax Base Balances,FI-LOC-VAT-GEN,,basic,8,0,,top-level
+I_RACONDITIONCATEGORY,Revenue Accounting Condition Category,Revenue Accounting Condition Category,FI-RA,Dimension,dimension,3,0,,top-level
+I_RACONDITIONCATEGORYTEXT,Condition Category - Text,Condition Category - Text,FI-RA,,text,6,0,,top-level
+I_RACONTRACTCATEGORY,Revenue Accounting Contract Category,Revenue Accounting Contract Category,FI-RA,,basic,2,0,,top-level
+I_RACONTRACTCATEGORYTEXT,RA Contract Category - Text,RA Contract Category - Text,FI-RA,,text,5,0,,top-level
+I_RACONTRACTSTATUS,Revenue Accounting Contract Status,Revenue Accounting Contract Status,FI-RA,,basic,3,0,,top-level
+I_RACONTRACTSTATUSTEXT,Revenue Accounting Contract Status - Text,Revenue Accounting Contract Status - Text,FI-RA,,text,6,0,,top-level
+I_RACONTRBALANCEDERIVATIONRULE,RA Contract Balance Derivation Rule,RA Contract Balance Derivation Rule,FI-RA,,basic,3,0,,top-level
+I_RACONTRBALANCEDRVTNRULETEXT,RA Contract Balance Derivation Rule - Text,RA Contract Balance Derivation Rule - Text,FI-RA,,text,6,0,,top-level
+I_RAPERFOBLGNCATEGORY,RA Performance Obligation Category,RA Performance Obligation Category,FI-RA,Dimension,dimension,3,0,,top-level
+I_RAPERFOBLGNCATEGORYTEXT,RA Performance Obligation Category - Text,RA Performance Obligation Category - Text,FI-RA,,text,6,0,,top-level
+I_RAPERFOBLGNCHANGETYPEITEM,Performance Obligation Change Type Item,Performance Obligation Change Type Item,FI-RA,,basic,47,0,,top-level
+I_RAPERFOBLGNDEFERRALMETHOD,Revenue Accounting Deferral Method,Revenue Accounting Deferral Method,FI-RA,,basic,2,0,,top-level
+I_RAPERFOBLGNDEFERRALMETHODTXT,RA Deferral Method - Text,RA Deferral Method - Text,FI-RA,,text,5,0,,top-level
+I_RAPERFOBLGNDISTINCTTYPE,Distinct Type,Distinct Type,FI-RA,Dimension,dimension,3,0,,top-level
+I_RAPERFOBLGNDISTINCTTYPETEXT,Distinct Type - Text,Distinct Type - Text,FI-RA,,text,6,0,,top-level
+I_RAPERFOBLGNEVENTTYPETEXT,Event Type - Text,Event Type - Text,FI-RA,,text,5,0,,top-level
+I_RAPERFOBLGNFLFMTTYPE,Revenue Accounting Fulfillment Type,Revenue Accounting Fulfillment Type,FI-RA,Dimension,dimension,3,0,,top-level
+I_RAPERFOBLGNFLFMTTYPETEXT,Fulfillment Type - Text,Fulfillment Type - Text,FI-RA,,text,6,0,,top-level
+I_RAPERFOBLGNSTARTDATETYPE,Start Date Type,Start Date Type,FI-RA,,basic,3,0,,top-level
+I_RAPERFOBLGNSTARTDATETYPETEXT,Start Date Type - Text,Start Date Type - Text,FI-RA,,text,6,0,,top-level
+I_RAPERFOBLGNSTATUS,RA Performance Obligation Status,RA Performance Obligation Status,FI-RA,Dimension,dimension,3,0,,top-level
+I_RAPERFOBLGNSTATUSTEXT,Performance Obligation Status - Text,Performance Obligation Status - Text,FI-RA,,text,6,0,,top-level
+I_RAPERFOBLGNWITHOUTACCTASSGMT,RA Perf Oblgn Without Acct Assgmt,RA Perf Oblgn Without Acct Assgmt,FI-RA,,basic,78,0,Business Partner; Company Code; Customer,top-level
+I_RAPERFOBLIGATIONEVENTTYPE,Event Type,Event Type,FI-RA,,basic,2,0,,top-level
+I_RAPERFORMANCEOBLIGATION,RA Performance Obligation,RA Performance Obligation,FI-RA,Dimension,dimension,123,1,Business Area; Business Partner; Company Code; Controlling Area; Cost Center; Customer; Functional Area; Order (production / maintenance / internal); Profit Center; Profitability Segment; Segment; WBS Element,top-level
+I_RAPOSTINGCATEGORY,Posting Category,Posting Category,FI-RA,Dimension,dimension,3,0,,top-level
+I_RAPOSTINGCATEGORYTEXT,Posting Category - Text,Posting Category - Text,FI-RA,,text,6,0,,top-level
+I_RAPOSTLEVELOFCONTRACTBALANCE,RA Contract Balance Post Level,RA Contract Balance Post Level,FI-RA,,basic,3,0,,top-level
+I_RAPOSTLEVELOFCONTRACTBALTEXT,RA Contract Balance Post Level - Text,RA Contract Balance Post Level - Text,FI-RA,,text,6,0,,top-level
+I_RARECNCLNKEYSTATUSTEXT,Reconciliation Key Status - Text,Reconciliation Key Status - Text,FI-RA,,text,6,0,,top-level
+I_RARECONCILIATIONKEYSTATUS,Reconciliation Key Status,Reconciliation Key Status,FI-RA,Dimension,dimension,3,0,,top-level
+I_REVENUEACCOUNTINGCONTRACT,Revenue Accounting Contract,Revenue Accounting Contract,FI-RA,Dimension,dimension,54,1,Business Partner; Company Code; Customer,top-level
+I_REVENUEACCOUNTINGMAPPING,Revenue Accounting Mapping,Revenue Accounting Mapping,FI-RA,,basic,17,0,Company Code,top-level
+I_REVNACCTGCHANGETYPE,Change Type,Change Type,FI-RA,,basic,3,0,,top-level
+I_REVNACCTGCHANGETYPETEXT,Change Type - Text,Change Type - Text,FI-RA,,text,6,0,,top-level
+I_REVNACCTGRECONCILIATIONKEY,Revenue Accounting Reconciliation Key,Revenue Accounting Reconciliation Key,FI-RA,Dimension,dimension,27,0,Company Code; Fiscal Year,top-level
+I_UNITEDSTATESTAXCATEGORY,United States Tax Category,United States Tax Category,FI-TXL-EXT,Dimension,dimension,2,0,,top-level
+I_UNITEDSTATESTAXCATEGORYTEXT,United States Tax Category - Text,United States Tax Category - Text,FI-TXL-EXT,,text,4,0,,top-level
+I_UNITEDSTATESTAXSOURCING,US External Tax Sourcing,US External Tax Sourcing,FI-TXL-EXT,Dimension,dimension,2,0,,top-level
+I_UNITEDSTATESTAXSOURCINGTEXT,US External Tax Sourcing - Text,US External Tax Sourcing - Text,FI-TXL-EXT,,text,4,0,,top-level
+I_US_TAXPARTNERTAXDOCUMENT,US TaxPartnerTaxDocument,US TaxPartnerTaxDocument,FI-TXL-EXT,Dimension,dimension,24,0,Company Code; Fiscal Year,top-level
+I_US_TAXPARTNERTAXDOCUMENTITEM,US TaxPartnerTaxDocumentItem,US TaxPartnerTaxDocumentItem,FI-TXL-EXT,Dimension,dimension,101,0,Company Code; Customer; Material Group; Purchasing Document; SD/LE Document (generic VBELN); Supplier; WBS Element,top-level
+I_US_TAXSTATE,US External Tax State,US External Tax State,FI-TXL-EXT,Dimension,dimension,2,0,,top-level
+I_US_TAXSTATETEXT,US External Tax State - Text,US External Tax State - Text,FI-TXL-EXT,,text,4,0,,top-level
+I_US_TXPARTTXJURISDICTIONLEVEL,US Tax Partner Tax Jurisdiction Level,US Tax Partner Tax Jurisdiction Level,FI-TXL-EXT,Dimension,dimension,29,0,Company Code; G/L Account,top-level
+I_CSGNMTANDSTOTAXPRPSL,Tax Proposal Posting Header,Tax Proposal Posting Header,FI-TXL-TGM,,basic,41,0,Company Code; Customer; Delivery; Fiscal Year; Incoterms; Sales Organization,top-level
+I_CSGNMTANDSTOTAXPRPSLITEM,Tax Proposal Posting Item,Tax Proposal Posting Item,FI-TXL-TGM,,basic,40,0,Batch; Company Code; Customer; Material / Product; Plant; Sales Document,top-level
+I_CSGNMTANDSTOTXPRPSLTAXITEM,Tax Proposal Posting Tax Data,Tax Proposal Posting Tax Data,FI-TXL-TGM,,basic,15,0,Company Code; Tax Code,top-level

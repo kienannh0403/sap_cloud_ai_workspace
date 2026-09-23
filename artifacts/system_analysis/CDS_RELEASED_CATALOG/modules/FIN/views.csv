@@ -1,0 +1,515 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_CNSLDTNPERIODCATEGORY,Consolidation Period Category,Consolidation Period Category,FIN-CS-COR-MON,Dimension,dimension,3,0,,top-level
+I_CNSLDTNPERIODCATEGORYTEXT,Consolidation Period Category - Text,Consolidation Period Category - Text,FIN-CS-COR-MON,,text,5,0,,top-level
+I_CNSLDTNTASK,Consolidation Task,Consolidation Task,FIN-CS-COR-MON,Dimension,dimension,7,0,,top-level
+I_CNSLDTNTASKGROUP,Consolidation Task Group,Consolidation Task Group,FIN-CS-COR-MON,Dimension,dimension,4,0,,top-level
+I_CNSLDTNTASKGROUPASSIGNMENT,Consolidation Task Group Assignment,Consolidation Task Group Assignment,FIN-CS-COR-MON,,basic,10,0,,top-level
+I_CNSLDTNTASKGROUPTEXT,Consolidation Task Group - Text,Consolidation Task Group - Text,FIN-CS-COR-MON,,text,5,0,,top-level
+I_CNSLDTNTASKRUNSTATUS,Consolidation Task Run Status,Consolidation Task Run Status,FIN-CS-COR-MON,Dimension,dimension,3,0,,top-level
+I_CNSLDTNTASKRUNSTATUSTEXT,Consolidation Task Run Status - Text,Consolidation Task Run Status - Text,FIN-CS-COR-MON,,text,6,0,,top-level
+I_CNSLDTNTASKTEXT,Consolidation Task - Text,Consolidation Task - Text,FIN-CS-COR-MON,,text,5,0,,top-level
+I_CNSLDTNTSKDOCTYPEDTACOLL,Cnsldtn DC Task Document Type Assignment,Cnsldtn DC Task Document Type Assignment,FIN-CS-COR-MON,,basic,9,0,,top-level
+I_CNSLDTNTSKGRPTSKASSIGNMENT,Consolidation Task Group Task Assignment,Consolidation Task Group Task Assignment,FIN-CS-COR-MON,,basic,7,0,,top-level
+I_CNSLDTNUNITTASKRUN,Consolidation Unit Task Run,Consolidation Unit Task Run,FIN-CS-COR-MON,,basic,17,0,,top-level
+I_CNSLDTNGROUPJRNLENTRITMDEX,Group Journal Entry Item Extraction,Group Journal Entry Item Extraction,FIN-CS-EA,,basic,124,3,Business Area; Chart of Accounts; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Fiscal Year; Functional Area; Material / Product; Order (production / maintenance / internal); Plant; Profit Center; Sales Organization; Segment; Supplier,top-level
+I_CNSLDTNNODEFORELIMRPTGDEX,Cnsldtn Node For Elim Reporting DEX,Cnsldtn Node For Elim Reporting DEX,FIN-CS-EA,,basic,10,0,,top-level
+I_CNSLDTNADHOCITEM,Consolidation Ad Hoc Item,Consolidation Ad Hoc Item,FIN-CS-MD,Dimension,dimension,8,2,,top-level
+I_CNSLDTNADHOCITEMTEXT,Consolidation Ad Hoc Item - Text,Consolidation Ad Hoc Item - Text,FIN-CS-MD,,text,8,0,,top-level
+I_CNSLDTNADHOCITEMVH,Consolidation Ad Hoc Item,Consolidation Ad Hoc Item,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNADHOCSET,Consolidation Ad Hoc Set,Consolidation Ad Hoc Set,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNADHOCSETBRKDWNTYPE,Consolidation Ad Hoc Set Breakdown Type,Consolidation Ad Hoc Set Breakdown Type,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNADHOCSETBRKDWNTYPET,Cnsldtn Ad Hoc Set Breakdown Type - Text,Cnsldtn Ad Hoc Set Breakdown Type - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNADHOCSETBRKDWNTYPEVH,Consolidation Ad Hoc Set Breakdown Type,Consolidation Ad Hoc Set Breakdown Type,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNADHOCSETITEM,Consolidation Ad Hoc Set Item,Consolidation Ad Hoc Set Item,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNADHOCSETTEXT,Consolidation Ad Hoc Set - Text,Consolidation Ad Hoc Set - Text,FIN-CS-MD,,text,8,0,,top-level
+I_CNSLDTNADHOCSETVH,Consolidation Ad Hoc Set,Consolidation Ad Hoc Set,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNAPPORTIONMENT,Consolidation Apportionment,Consolidation Apportionment,FIN-CS-MD,Dimension,dimension,4,1,,top-level
+I_CNSLDTNAPPORTIONMENTTEXT_2,Consolidation Apportionment - Text,Consolidation Apportionment - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNBILLINGDOCUMENTTYPE,Cnsldtn Combined Billing Document Type,Cnsldtn Combined Billing Document Type,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNBILLINGDOCUMENTTYPET,Cnsldtn Combined Billing Doc Type - Text,Cnsldtn Combined Billing Doc Type - Text,FIN-CS-MD,,basic,7,1,,top-level
+I_CNSLDTNBILLINGDOCUMENTTYPEVH,Cnsldtn Combined Billing Document Type,Cnsldtn Combined Billing Document Type,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNBREAKDOWNCATEGORY,Consolidation Breakdown Category,Consolidation Breakdown Category,FIN-CS-MD,Dimension,dimension,5,0,,top-level
+I_CNSLDTNBREAKDOWNCATEGORYT,Consolidation Breakdown Category - Text,Consolidation Breakdown Category - Text,FIN-CS-MD,,basic,7,0,,top-level
+I_CNSLDTNBREAKDOWNCATEGORYVH,Consolidation Breakdown Category,Consolidation Breakdown Category,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNBREAKDOWNTYPE,Consolidation Breakdown Type,Consolidation Breakdown Type,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNBREAKDOWNTYPET,Consolidation Breakdown Type - Text,Consolidation Breakdown Type - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNBREAKDOWNTYPEVH,Consolidation Breakdown Type,Consolidation Breakdown Type,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNBRKDWNBYSUBASSGMT,Breakdown By Subassignment,Breakdown By Subassignment,FIN-CS-MD,,basic,12,0,,top-level
+I_CNSLDTNBUSAREAHIERNODE,Consolidation Business Area - Hier Node,Consolidation Business Area - Hier Node,FIN-CS-MD,,basic,13,0,,top-level
+I_CNSLDTNBUSAREAHIERNODET,Cnsldtn Business Area Hier Node - Text,Cnsldtn Business Area Hier Node - Text,FIN-CS-MD,,basic,8,0,,top-level
+I_CNSLDTNBUSINESSAREA,Consolidation Combined Business Area,Consolidation Combined Business Area,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNBUSINESSAREAHIERARCHY,Consolidation Business Area Hierarchy,Consolidation Business Area Hierarchy,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNBUSINESSAREAHIERTEXT,Cnsldtn Business Area Hierarchy - Text,Cnsldtn Business Area Hierarchy - Text,FIN-CS-MD,,text,7,0,,top-level
+I_CNSLDTNBUSINESSAREAT,Cnsldtn Combined Business Area - Text,Cnsldtn Combined Business Area - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNBUSINESSAREAVH,Consolidation Combined Business Area,Consolidation Combined Business Area,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNCHARTOFACCOUNTS,Consolidation Chart of Accounts,Consolidation Chart of Accounts,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNCHARTOFACCOUNTST,Consolidation Chart of Accounts - Text,Consolidation Chart of Accounts - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNCHARTOFACCOUNTSVH,Consolidation Chart of Accounts,Consolidation Chart of Accounts,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNCONTROLLINGAREA,Consolidation Combined Controlling Area,Consolidation Combined Controlling Area,FIN-CS-MD,Dimension,dimension,5,1,,top-level
+I_CNSLDTNCONTROLLINGAREAT,Cnsldtn Combined Controlling Area - Text,Cnsldtn Combined Controlling Area - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNCONTROLLINGAREAVH,Consolidation Combined Controlling Area,Consolidation Combined Controlling Area,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNCOSTCENTER,Consolidation Combined Cost Center,Consolidation Combined Cost Center,FIN-CS-MD,Dimension,dimension,9,1,,top-level
+I_CNSLDTNCOSTCENTERHIERARCHY,Consolidation Cost Center Hierarchy,Consolidation Cost Center Hierarchy,FIN-CS-MD,Dimension,dimension,8,0,,top-level
+I_CNSLDTNCOSTCENTERHIERNODE,Consolidation Cost Center - Hier Node,Consolidation Cost Center - Hier Node,FIN-CS-MD,,basic,15,0,,top-level
+I_CNSLDTNCOSTCENTERHIERNODET,Cnsldtn Cost Center Hier Node - Text,Cnsldtn Cost Center Hier Node - Text,FIN-CS-MD,,basic,12,0,,top-level
+I_CNSLDTNCOSTCENTERHIERTEXT,Cnsldtn Cost Center Hierarchy - Text,Cnsldtn Cost Center Hierarchy - Text,FIN-CS-MD,,text,9,0,,top-level
+I_CNSLDTNCOSTCENTERT,Consolidation Combined Cost Center - Txt,Consolidation Combined Cost Center - Txt,FIN-CS-MD,,basic,10,2,,top-level
+I_CNSLDTNCOSTCENTERVH,Consolidation Cost Center,Consolidation Cost Center,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNCOUNTRY,Consolidation Combined Country/Region,Consolidation Combined Country/Region,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNCOUNTRYT,Cnsldtn Combined Country/Region - Txt,Cnsldtn Combined Country/Region - Txt,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNCOUNTRYVH,Consolidation Combined Country/Region,Consolidation Combined Country/Region,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNCRCYCNVRSNDIFFTYPE,Currency Conversion Difference Type,Currency Conversion Difference Type,FIN-CS-MD,Dimension,dimension,4,1,,top-level
+I_CNSLDTNCRCYCNVRSNDIFFTYPET_2,Currency Cnvrsns Difference Type - Text,Currency Cnvrsns Difference Type - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNCRCYTRNSLTNMETHOD,Cnsldtn Currency Translation Method,Cnsldtn Currency Translation Method,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNCRCYTRNSLTNMETHODT,Cnsldtn Currency Translation Method - Txt,Cnsldtn Currency Translation Method - Txt,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNCRCYTRNSLTNMETHODVH,Cnsldtn Currency Translation Method,Cnsldtn Currency Translation Method,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNCUSTOMER,Consolidation Combined Customer,Consolidation Combined Customer,FIN-CS-MD,Dimension,dimension,7,1,,top-level
+I_CNSLDTNCUSTOMERGROUP,Consolidation Combined Customer Group,Consolidation Combined Customer Group,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNCUSTOMERGROUPT,Cnsldtn Combined Customer Group - Text,Cnsldtn Combined Customer Group - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNCUSTOMERGROUPVH,Consolidation Combined Customer Group,Consolidation Combined Customer Group,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNCUSTOMERT,Consolidation Combined Customer - Text,Consolidation Combined Customer - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNCUSTOMERVH,Consolidation Combined Customer,Consolidation Combined Customer,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNDISTRIBUTIONCHANNEL,Cnsldtn Combined Distribution Channel,Cnsldtn Combined Distribution Channel,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNDISTRIBUTIONCHANNELT,Cnsldtn Cmbnd Distribution Channel - Txt,Cnsldtn Cmbnd Distribution Channel - Txt,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNDISTRIBUTIONCHANNELVH,Cnsldtn Combined Distribution Channel,Cnsldtn Combined Distribution Channel,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNDIVISION,Consolidation Combined Division,Consolidation Combined Division,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNDIVISIONT,Consolidation Combined Division - Text,Consolidation Combined Division - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNDIVISIONVH,Consolidation Combined Division,Consolidation Combined Division,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNDOCTYPEBUSINESSAPPL,Cnsldtn Doc Type Business Appl,Cnsldtn Doc Type Business Appl,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNDOCTYPEBUSINESSAPPLT,Cnsldtn Doc Type Business Appl - Text,Cnsldtn Doc Type Business Appl - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNDOCTYPEHIERARCHYT_2,Cnsldtn Document Type Hierarchy - Text,Cnsldtn Document Type Hierarchy - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNDOCTYPEHIERARCHY_2,Consolidation Document Type Hierarchy,Consolidation Document Type Hierarchy,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNDOCTYPEHIERNODET_2,Cnsldtn Document Type Hier Node - Text,Cnsldtn Document Type Hier Node - Text,FIN-CS-MD,,basic,10,0,,top-level
+I_CNSLDTNDOCTYPEHIERNODE_2,Cnsldtn Document Type - Hierarchy Node,Cnsldtn Document Type - Hierarchy Node,FIN-CS-MD,,basic,13,0,,top-level
+I_CNSLDTNDOCUMENTTYPETEXT_2,Consolidation Document Type - Text,Consolidation Document Type - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNDOCUMENTTYPE_2,Consolidation Document Type,Consolidation Document Type,FIN-CS-MD,Dimension,dimension,15,2,,top-level
+I_CNSLDTNFINANCIALDATASOURCE,Consolidation Financial Data Source,Consolidation Financial Data Source,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNFINANCIALDATASOURCET,Cnsldtn Financial Data Source - Text,Cnsldtn Financial Data Source - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNFINANCIALDATASOURCEVH,Consolidation Financial Data Source,Consolidation Financial Data Source,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNFINMANAGEMENTAREA,Consolidation Financial Management Area,Consolidation Financial Management Area,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNFINMANAGEMENTAREAT,Cnsldtn Financial Management Area - Text,Cnsldtn Financial Management Area - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNFINMANAGEMENTAREAVH,Consolidation Financial Management Area,Consolidation Financial Management Area,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNFINSERVICESBRANCH,Consolidation Financial Services Branch,Consolidation Financial Services Branch,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNFINSERVICESBRANCHT,Cnsldtn Financial Services Branch - Text,Cnsldtn Financial Services Branch - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNFINSERVICESBRANCHVH,Consolidation Financial Services Branch,Consolidation Financial Services Branch,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNFINSRVCSPRODGROUPVH,Cnsldtn Financial Services Product Group,Cnsldtn Financial Services Product Group,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNFINSRVCSPRODUCTGROUP,Cnsldtn Financial Services Product Group,Cnsldtn Financial Services Product Group,FIN-CS-MD,Dimension,dimension,4,0,,top-level
+I_CNSLDTNFINSRVCSPRODUCTGROUPT,Cnsldtn Fin Srvcs Product Group - Text,Cnsldtn Fin Srvcs Product Group - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNFINSTMNTITEMTYPE,Financial Statement Item Type,Financial Statement Item Type,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNFINSTMNTITEMTYPET,Financial Statement Item Type - Text,Financial Statement Item Type - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNFINSTMNTITEMTYPEVH,Financial Statement Item Type,Financial Statement Item Type,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNFINTRANSTYPE,Cnsldtn Cmbnd Fin Transaction Type,Cnsldtn Cmbnd Fin Transaction Type,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNFINTRANSTYPEHIERARCHY,Cnsldtn Financial Trans Type Hierarchy,Cnsldtn Financial Trans Type Hierarchy,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNFINTRANSTYPEHIERNODE,Cnsldtn Fin Transaction Type - Hier Node,Cnsldtn Fin Transaction Type - Hier Node,FIN-CS-MD,,basic,13,0,,top-level
+I_CNSLDTNFINTRANSTYPEHIERNODET,Cnsldtn Fin Trans Type Hier Node - Txt,Cnsldtn Fin Trans Type Hier Node - Txt,FIN-CS-MD,,basic,10,0,,top-level
+I_CNSLDTNFINTRANSTYPEHIERTEXT,Cnsldtn Fin Trans Type Hierarchy - Txt,Cnsldtn Fin Trans Type Hierarchy - Txt,FIN-CS-MD,,text,7,0,,top-level
+I_CNSLDTNFINTRANSTYPET,Cnsldtn Cmbnd Fin Transaction Type - Txt,Cnsldtn Cmbnd Fin Transaction Type - Txt,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNFINTRANSTYPEVH,Cnsldtn Cmbnd Fin Transaction Type,Cnsldtn Cmbnd Fin Transaction Type,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNFSITEMBYTIMEVERSION,Consolidation FS Item by Time Version,Consolidation FS Item by Time Version,FIN-CS-MD,,basic,29,0,,top-level
+I_CNSLDTNFSITEMCASHFLOW,FS Item Cash Flow Selection,FS Item Cash Flow Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNFSITEMCASHFLOWTEXT,FS Item Cash Flow Selection - Text,FS Item Cash Flow Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNFSITEMCASHFLOWVH,FS Item Cash Flow Selection,FS Item Cash Flow Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNFSITEMCRCYTRNSLTN,FS Item Currency Translation Selection,FS Item Currency Translation Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNFSITEMCRCYTRNSLTNTEXT,FS Item Currency Trans Selection - Text,FS Item Currency Trans Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNFSITEMCRCYTRNSLTNVH,FS Item Currency Translation Selection,FS Item Currency Translation Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNFSITEMCUSTSPCFC,FS Item Other Selection,FS Item Other Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNFSITEMCUSTSPCFCTEXT,FS Item Other Selection - Text,FS Item Other Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNFSITEMCUSTSPCFCVH,FS Item Other Selection,FS Item Other Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNFSITEMDATACOLL,FS Item Data Collection Selection,FS Item Data Collection Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNFSITEMDATACOLLTEXT,FS Item Data Collection Selection - Text,FS Item Data Collection Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNFSITEMDATACOLLVH,FS Item Data Collection Selection,FS Item Data Collection Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNFSITEMELIMINATION,FS Item Elimination Selection,FS Item Elimination Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNFSITEMELIMINATIONTEXT,FS Item Elimination Selection - Text,FS Item Elimination Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNFSITEMELIMINATIONVH,FS Item Elimination Selection,FS Item Elimination Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNFSITEMHIERARCHYTEXT_2,Consolidation FS Item Hierarchy - Text,Consolidation FS Item Hierarchy - Text,FIN-CS-MD,,basic,9,0,,top-level
+I_CNSLDTNFSITEMHIERARCHY_2,Consolidation FS Item Hierarchy,Consolidation FS Item Hierarchy,FIN-CS-MD,Dimension,dimension,8,0,,top-level
+I_CNSLDTNFSITEMHIERNODETEXT_2,Consolidation FS Item HierNode - Txt,Consolidation FS Item HierNode - Txt,FIN-CS-MD,,basic,12,0,,top-level
+I_CNSLDTNFSITEMHIERNODE_2,Consolidation FS Item - Hierarchy Node,Consolidation FS Item - Hierarchy Node,FIN-CS-MD,,basic,16,0,,top-level
+I_CNSLDTNFSITEMROLE,FS Item Role Selection,FS Item Role Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNFSITEMROLETEXT,FS Item Role Selection - Text,FS Item Role Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNFSITEMROLEVH,FS Item Role Selection,FS Item Role Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNFSITEMSCOPE,FS Item Scope Selection,FS Item Scope Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNFSITEMSCOPETEXT,FS Item Scope Selection - Text,FS Item Scope Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNFSITEMSCOPEVH,FS Item Scope Selection,FS Item Scope Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNFSITEMTEXT_2,Cnsldtn Fincancial Statement Item - Text,Cnsldtn Fincancial Statement Item - Text,FIN-CS-MD,,basic,9,0,,top-level
+I_CNSLDTNFSITEMVH,Consolidation Financial Statement Item,Consolidation Financial Statement Item,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNFSITEM_2,Consolidation Financial Statement Item,Consolidation Financial Statement Item,FIN-CS-MD,Dimension,dimension,20,0,,top-level
+I_CNSLDTNFUNCNLAREAHIERARCHY,Consolidation Functional Area Hierarchy,Consolidation Functional Area Hierarchy,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNFUNCNLAREAHIERARCHYT,Cnsldtn Functional Area Hier Dir - Text,Cnsldtn Functional Area Hier Dir - Text,FIN-CS-MD,,basic,7,0,,top-level
+I_CNSLDTNFUNCNLAREAHIERNODE,Cnsldtn Functional Area - Hier Node,Cnsldtn Functional Area - Hier Node,FIN-CS-MD,,basic,13,0,,top-level
+I_CNSLDTNFUNCNLAREAHIERNODET,Cnsldtn Functional Area HierNode - Text,Cnsldtn Functional Area HierNode - Text,FIN-CS-MD,,basic,10,0,,top-level
+I_CNSLDTNFUNCTIONALAREA,Consolidation Combined Functional Area,Consolidation Combined Functional Area,FIN-CS-MD,Dimension,dimension,7,1,,top-level
+I_CNSLDTNFUNCTIONALAREAT,Cnsldtn Combined Functional Area - Text,Cnsldtn Combined Functional Area - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNFUNCTIONALAREAVH,Consolidation Combined Functional Area,Consolidation Combined Functional Area,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNFUND,Consolidation Fund,Consolidation Fund,FIN-CS-MD,Dimension,dimension,7,0,,top-level
+I_CNSLDTNFUNDT,Consolidation Fund - Text,Consolidation Fund - Text,FIN-CS-MD,,basic,8,0,,top-level
+I_CNSLDTNFUNDVH,Consolidation Fund,Consolidation Fund,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNGHGCATEGORY,Consolidation Greenhouse Gas Category,Consolidation Greenhouse Gas Category,FIN-CS-MD,Dimension,dimension,4,0,,top-level
+I_CNSLDTNGHGCATEGORYT,Consolidation GHG Category - Text,Consolidation GHG Category - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNGHGCATEGORYVH,Consolidation Greenhouse Gas Category,Consolidation Greenhouse Gas Category,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNGHGSCOPE,Consolidation Greenhouse Gas Scope,Consolidation Greenhouse Gas Scope,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNGHGSCOPET,Consolidation GHG Scope - Text,Consolidation GHG Scope - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNGHGSCOPEVH,Consolidation Greenhouse Gas Scope,Consolidation Greenhouse Gas Scope,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNGHGSCP2CALCMETHOD,Cnsldtn GHG Scope 2 Calculation Method,Cnsldtn GHG Scope 2 Calculation Method,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNGHGSCP2CALCMETHODT,Cnsldtn GHG Scope 2 Calc Method - Text,Cnsldtn GHG Scope 2 Calc Method - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNGHGSCP2CALCMETHODVH,Cnsldtn GHG Scope 2 Calculation Method,Cnsldtn GHG Scope 2 Calculation Method,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNGHGSCP2CNTRCTLINSTR,Cnsldtn GHG Scp 2 Contractual Instrument,Cnsldtn GHG Scp 2 Contractual Instrument,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNGHGSCP2CNTRCTLINSTRT,Cnsldtn GHG Scp 2 Cntrctl Instr - Text,Cnsldtn GHG Scp 2 Cntrctl Instr - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNGHGSCP2CNTRCTLINSTRVH,Cnsldtn GHG Scp 2 Contractual Instrument,Cnsldtn GHG Scp 2 Contractual Instrument,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNGLACCOUNTT_2,Consolidation Combined G/L Account - Txt,Consolidation Combined G/L Account - Txt,FIN-CS-MD,,basic,10,1,,top-level
+I_CNSLDTNGLACCOUNTVH,Consolidation Combined G/L Account,Consolidation Combined G/L Account,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNGLACCOUNT_2,Consolidation Combined G/L Account,Consolidation Combined G/L Account,FIN-CS-MD,Dimension,dimension,10,2,,top-level
+I_CNSLDTNGLCHARTOFACCOUNTS,Cnsldtn Combined G/L Chart Of Accounts,Cnsldtn Combined G/L Chart Of Accounts,FIN-CS-MD,Dimension,dimension,5,1,,top-level
+I_CNSLDTNGLCHARTOFACCOUNTST,Cnsldtn Combined G/L Chart Of Accounts - Txt,Cnsldtn Combined G/L Chart Of Accounts - Txt,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNGLCHARTOFACCOUNTSVH,Cnsldtn Combined G/L Chart Of Accounts,Cnsldtn Combined G/L Chart Of Accounts,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNGLOBALPARAMETER,Consolidation Global Parameter,Consolidation Global Parameter,FIN-CS-MD,,basic,12,0,,top-level
+I_CNSLDTNGRANT,Consolidation Grant,Consolidation Grant,FIN-CS-MD,Dimension,dimension,5,0,,top-level
+I_CNSLDTNGRANTT,Consolidation Grant - Text,Consolidation Grant - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNGRANTVH,Consolidation Grant,Consolidation Grant,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNGROUPSTRUCTURE_2,Consolidation Group Structure,Consolidation Group Structure,FIN-CS-MD,,basic,18,0,,top-level
+I_CNSLDTNGROUPT_2,Consolidation Group - Text,Consolidation Group - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNGROUPVH,Consolidation Group,Consolidation Group,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNGROUP_3,Consolidation Group,Consolidation Group,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNINDUSTRY,Consolidation Combined Industry,Consolidation Combined Industry,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNINDUSTRYT,Consolidation Combined Industry - Text,Consolidation Combined Industry - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNINDUSTRYVH,Consolidation Combined Industry,Consolidation Combined Industry,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNINVESTMENTMETHOD,Consolidation Investment Method,Consolidation Investment Method,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNINVESTMENTMETHODTEXT,Consolidation Investment Method - Text,Consolidation Investment Method - Text,FIN-CS-MD,,text,5,0,,top-level
+I_CNSLDTNINVESTMENTMETHODVH,Consolidation Investment Method,Consolidation Investment Method,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNMATERIAL,Consolidation Combined Material,Consolidation Combined Material,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNMATERIALGROUP,Consolidation Combined Material Group,Consolidation Combined Material Group,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNMATERIALGROUPT,Cnsldtn Combined Material Group - Text,Cnsldtn Combined Material Group - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNMATERIALGROUPVH,Consolidation Combined Material Group,Consolidation Combined Material Group,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNMATERIALHIERARCHY,Consolidation Material Hierarchy,Consolidation Material Hierarchy,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNMATERIALHIERARCHYT,Consolidation Material Hierarchy - Text,Consolidation Material Hierarchy - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNMATERIALHIERNODE,Consolidation Material - Hierarchy Node,Consolidation Material - Hierarchy Node,FIN-CS-MD,,basic,13,0,,top-level
+I_CNSLDTNMATERIALHIERNODET,Consolidation Material HierNode - Text,Consolidation Material HierNode - Text,FIN-CS-MD,,basic,10,0,,top-level
+I_CNSLDTNMATERIALT,Consolidation Combined Material - Text,Consolidation Combined Material - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNMATERIALVH,Consolidation Combined Material,Consolidation Combined Material,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNMETHOD,Consolidation Method,Consolidation Method,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNMETHODTEXT,Consolidation Method - Text,Consolidation Method - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNMETHODVH,Consolidation Method,Consolidation Method,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNORDER,Consolidation Combined Order,Consolidation Combined Order,FIN-CS-MD,Dimension,dimension,5,1,,top-level
+I_CNSLDTNORDERTEXT,Consolidation Combined Order - Text,Consolidation Combined Order - Text,FIN-CS-MD,,text,7,1,,top-level
+I_CNSLDTNORDERVH,Consolidation Combined Order,Consolidation Combined Order,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNPLANT,Consolidation Combined Plant,Consolidation Combined Plant,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNPLANTT,Consolidation Combined Plant - Text,Consolidation Combined Plant - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNPLANTVH,Consolidation Combined Plant,Consolidation Combined Plant,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNPOSTINGLEVEL,Consolidation Posting Level,Consolidation Posting Level,FIN-CS-MD,Dimension,dimension,7,1,,top-level
+I_CNSLDTNPOSTINGLEVELTEXT_2,Consolidation Posting Level - Text,Consolidation Posting Level - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNPRFTCTRFORELIMHN,Cnsldtn Profit Ctr for Elim - HierNode,Cnsldtn Profit Ctr for Elim - HierNode,FIN-CS-MD,,basic,14,0,,top-level
+I_CNSLDTNPRODUCT,Consolidation Combined Product,Consolidation Combined Product,FIN-CS-MD,Dimension,dimension,7,1,,top-level
+I_CNSLDTNPRODUCTGROUP,Consolidation Combined Product Group,Consolidation Combined Product Group,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNPRODUCTGROUPT,Cnsldtn Combined Product Group - Text,Cnsldtn Combined Product Group - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNPRODUCTGROUPVH,Consolidation Combined Product Group,Consolidation Combined Product Group,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNPRODUCTT,Consolidation Combined Product - Text,Consolidation Combined Product - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNPRODUCTVH,Consolidation Combined Product,Consolidation Combined Product,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNPROFITCENTER,Consolidation Combined Profit Center,Consolidation Combined Profit Center,FIN-CS-MD,Dimension,dimension,10,1,,top-level
+I_CNSLDTNPROFITCENTERELIMNODE,Cnsldtn Profit Center Elimination Node,Cnsldtn Profit Center Elimination Node,FIN-CS-MD,Dimension,dimension,4,0,,top-level
+I_CNSLDTNPROFITCENTERELIMNODET,Cnsldtn Profit Center Elim Node - Text,Cnsldtn Profit Center Elim Node - Text,FIN-CS-MD,,basic,7,0,,top-level
+I_CNSLDTNPROFITCENTERFORELIM,Cnsldtn Profit Center for Elimination,Cnsldtn Profit Center for Elimination,FIN-CS-MD,Dimension,dimension,8,2,,top-level
+I_CNSLDTNPROFITCENTERFORELIMVH,Cnsldtn Profit Center for Elimination,Cnsldtn Profit Center for Elimination,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNPROFITCENTERHIERARCHY,Consolidation Profit Center Hierarchy,Consolidation Profit Center Hierarchy,FIN-CS-MD,Dimension,dimension,8,0,,top-level
+I_CNSLDTNPROFITCENTERHIERNODE,Consolidation Profit Center - Hier Node,Consolidation Profit Center - Hier Node,FIN-CS-MD,,basic,15,0,,top-level
+I_CNSLDTNPROFITCENTERHIERNODET,Cnsldtn Profit Center Hier Node - Text,Cnsldtn Profit Center Hier Node - Text,FIN-CS-MD,,basic,12,0,,top-level
+I_CNSLDTNPROFITCENTERHIERTEXT,Cnsldtn Profit Center Hierarchy - Text,Cnsldtn Profit Center Hierarchy - Text,FIN-CS-MD,,text,9,0,,top-level
+I_CNSLDTNPROFITCENTERT,Cnsldtn Combined Profit Center - Text,Cnsldtn Combined Profit Center - Text,FIN-CS-MD,,basic,10,2,,top-level
+I_CNSLDTNPROFITCENTERVH,Consolidation Profit Center,Consolidation Profit Center,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNPROFITCTRFORELIMT_2,Cnsldtn Profit Center for Elim - Text,Cnsldtn Profit Center for Elim - Text,FIN-CS-MD,,basic,7,0,,top-level
+I_CNSLDTNREPORTINGLEVEL,Consolidation Reporting Level,Consolidation Reporting Level,FIN-CS-MD,Dimension,dimension,4,1,,top-level
+I_CNSLDTNREPORTINGLEVELTEXT_2,Consolidation Reporting Level - Text,Consolidation Reporting Level - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNRPTDFINDATAUPLDMETH,Cnsldtn Reported Fin Data Upload Method,Cnsldtn Reported Fin Data Upload Method,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNRPTDFINDATAUPLDMETHT,Cnsldtn Rptd Fin Data Upld Method - Text,Cnsldtn Rptd Fin Data Upld Method - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNRPTDFINDATAUPLDMETHVH,Cnsldtn Reported Fin Data Upload Method,Cnsldtn Reported Fin Data Upload Method,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNRPTGITEM,Consolidation Reporting Item,Consolidation Reporting Item,FIN-CS-MD,Dimension,dimension,5,0,,top-level
+I_CNSLDTNRPTGITEMHIERARCHYT_2,Reporting Item Hierarchy Directory - Txt,Reporting Item Hierarchy Directory - Txt,FIN-CS-MD,,basic,8,0,,top-level
+I_CNSLDTNRPTGITEMHIERARCHY_2,Reporting Item Hierarchy,Reporting Item Hierarchy,FIN-CS-MD,Dimension,dimension,8,0,,top-level
+I_CNSLDTNRPTGITEMHIERNODET_2,Cnsldtn Reporting Item Hier Node - Text,Cnsldtn Reporting Item Hier Node - Text,FIN-CS-MD,,basic,12,0,,top-level
+I_CNSLDTNRPTGITEMHIERNODE_2,Consolidation Reporting Item - Hier Node,Consolidation Reporting Item - Hier Node,FIN-CS-MD,,basic,15,0,,top-level
+I_CNSLDTNRPTGITEMTEXT_2,Consolidation Reporting Item - Text,Consolidation Reporting Item - Text,FIN-CS-MD,,basic,8,0,,top-level
+I_CNSLDTNRPTGITEM_2,Consolidation Reporting Item,Consolidation Reporting Item,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNRPTGITMTEXT,Consolidation Reporting Item - Text,Consolidation Reporting Item - Text,FIN-CS-MD,,text,7,0,,top-level
+I_CNSLDTNSALESDISTRICT,Consolidation Combined Sales District,Consolidation Combined Sales District,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNSALESDISTRICTT,Cnsldtn Combined Sales District - Text,Cnsldtn Combined Sales District - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNSALESDISTRICTVH,Consolidation Combined Sales District,Consolidation Combined Sales District,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNSALESORGANIZATION,Cnsldtn Combined Sales Organization,Cnsldtn Combined Sales Organization,FIN-CS-MD,Dimension,dimension,6,1,,top-level
+I_CNSLDTNSALESORGANIZATIONT,Cnsldtn Cmbnd Sales Organization - Txt,Cnsldtn Cmbnd Sales Organization - Txt,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNSALESORGANIZATIONVH,Cnsldtn Combined Sales Organization,Cnsldtn Combined Sales Organization,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNSEGMENT,Consolidation Combined Segment,Consolidation Combined Segment,FIN-CS-MD,Dimension,dimension,7,1,,top-level
+I_CNSLDTNSEGMENTELIMNODE,Cnsldtn Segment Elimination Node,Cnsldtn Segment Elimination Node,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNSEGMENTELIMNODET,Cnsldtn Segment Elimination Node - Text,Cnsldtn Segment Elimination Node - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNSEGMENTFORELIM,Cnsldtn Segment For Mgmt Elim Purpose,Cnsldtn Segment For Mgmt Elim Purpose,FIN-CS-MD,Dimension,dimension,6,2,,top-level
+I_CNSLDTNSEGMENTFORELIMT_2,Cnsldtn Segment for Elimination - Text,Cnsldtn Segment for Elimination - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNSEGMENTFORELIMVH,Cnsldtn Segment For Mgmt Elim Purpose,Cnsldtn Segment For Mgmt Elim Purpose,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNSEGMENTHIERARCHY,Consolidation Segment Hierarchy,Consolidation Segment Hierarchy,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNSEGMENTHIERARCHYT,Consolidation Segment Hierarchy - Text,Consolidation Segment Hierarchy - Text,FIN-CS-MD,,basic,7,0,,top-level
+I_CNSLDTNSEGMENTHIERNODE,Consolidation Segment - Hierarchy Node,Consolidation Segment - Hierarchy Node,FIN-CS-MD,,basic,13,0,,top-level
+I_CNSLDTNSEGMENTHIERNODET,Consolidation Segment Hier Node - Text,Consolidation Segment Hier Node - Text,FIN-CS-MD,,basic,10,0,,top-level
+I_CNSLDTNSEGMENTT,Consolidation Combined Segment - Text,Consolidation Combined Segment - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNSEGMENTVH,Consolidation Combined Segment,Consolidation Combined Segment,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNSELECTION,Consolidation Selection,Consolidation Selection,FIN-CS-MD,Dimension,dimension,4,0,,top-level
+I_CNSLDTNSELECTIONT,Consolidation Selection - Text,Consolidation Selection - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNSELECTIONVH,Consolidation Selection,Consolidation Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNSGMTFORELIMHIERNODE,Cnsldtn Segment for Mgmt Elim - HierNode,Cnsldtn Segment for Mgmt Elim - HierNode,FIN-CS-MD,,basic,13,0,,top-level
+I_CNSLDTNSUBASSIGNMENT,Consolidation Subassignment,Consolidation Subassignment,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNSUBASSIGNMENTT,Consolidation Subassignment - Text,Consolidation Subassignment - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNSUBASSIGNMENTVH,Consolidation Breakdown Type,Consolidation Breakdown Type,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNSUBITEM,Consolidation Subitem,Consolidation Subitem,FIN-CS-MD,Dimension,dimension,5,0,,top-level
+I_CNSLDTNSUBITEMCATEGORY,Consolidation Subitem Category,Consolidation Subitem Category,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNSUBITEMCATEGORYTEXT,Consolidation Subitem Category - Text,Consolidation Subitem Category - Text,FIN-CS-MD,,text,5,0,,top-level
+I_CNSLDTNSUBITEMCATEGORYVH,Consolidation Subitem Category,Consolidation Subitem Category,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNSUBITEMTEXT,Consolidation Subitem - Text,Consolidation Subitem - Text,FIN-CS-MD,,text,8,0,,top-level
+I_CNSLDTNSUBITEMVH,Consolidation Subitem,Consolidation Subitem,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNSUPPLIER,Consolidation Combined Supplier,Consolidation Combined Supplier,FIN-CS-MD,Dimension,dimension,7,1,,top-level
+I_CNSLDTNSUPPLIERT,Consolidation Combined Supplier - Text,Consolidation Combined Supplier - Text,FIN-CS-MD,,basic,8,2,,top-level
+I_CNSLDTNSUPPLIERVH,Consolidation Combined Supplier,Consolidation Combined Supplier,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNSUSTMODEOFTRANSPORT,Cnsldtn Sustainability Mode of Transport,Cnsldtn Sustainability Mode of Transport,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNSUSTMODEOFTRANSPORTT,Cnsldtn Sust Mode of Transport - Text,Cnsldtn Sust Mode of Transport - Text,FIN-CS-MD,,basic,6,0,,top-level
+I_CNSLDTNSUSTMODEOFTRANSPORTVH,Cnsldtn Sustainability Mode of Transport,Cnsldtn Sustainability Mode of Transport,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNTASKCATEGORY,Consolidation Task Category,Consolidation Task Category,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNTASKCATEGORYTEXT,Consolidation Task Category - Text,Consolidation Task Category - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNTASKCATEGORYVH,Consolidation Task Category,Consolidation Task Category,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNUNITBYTIMEVERSION_2,Consolidation Unit by Time and Version,Consolidation Unit by Time and Version,FIN-CS-MD,,basic,22,0,,top-level
+I_CNSLDTNUNITBYTIME_2,Consolidation Unit by Time,Consolidation Unit by Time,FIN-CS-MD,,basic,7,0,,top-level
+I_CNSLDTNUNITDATACOLL,Cons Unit Data Collection Selection,Cons Unit Data Collection Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNUNITDATACOLLTEXT,Cons Unit Data Coll Selection - Text,Cons Unit Data Coll Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNUNITDATACOLLVH,Cons Unit Data Collection Selection,Cons Unit Data Collection Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNUNITELIMNODE,Cnsldtn Unit Mgmt Elim Node,Cnsldtn Unit Mgmt Elim Node,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNUNITELIMNODETEXT,Cnsldtn Unit Mgmt Elim Node - Text,Cnsldtn Unit Mgmt Elim Node - Text,FIN-CS-MD,,text,5,0,,top-level
+I_CNSLDTNUNITFORELIMHIERNODE_2,Cnsldtn Unit for Mgmt Elim - Hier Node,Cnsldtn Unit for Mgmt Elim - Hier Node,FIN-CS-MD,,basic,15,0,,top-level
+I_CNSLDTNUNITFORELIMINATIONT_2,Cnsldtn Unit for Mgmt Elimination - Text,Cnsldtn Unit for Mgmt Elimination - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNUNITFORELIMINATIONVH,Cnsldtn Unit for Mgmt Elimination,Cnsldtn Unit for Mgmt Elimination,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNUNITFORELIMINATION_2,Cnsldtn Unit for Mgmt Elimination,Cnsldtn Unit for Mgmt Elimination,FIN-CS-MD,Dimension,dimension,4,0,,top-level
+I_CNSLDTNUNITHIERARCHY,Consolidation Unit Hierarchy,Consolidation Unit Hierarchy,FIN-CS-MD,Dimension,dimension,6,0,,top-level
+I_CNSLDTNUNITHIERARCHYTEXT,Consolidation Unit Hierarchy - Text,Consolidation Unit Hierarchy - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNUNITHIERNODETEXT_2,Consolidation Unit Hierarchy Node - Text,Consolidation Unit Hierarchy Node - Text,FIN-CS-MD,,basic,10,0,,top-level
+I_CNSLDTNUNITHIERNODE_3,Consolidation Unit - Hierarchy Node,Consolidation Unit - Hierarchy Node,FIN-CS-MD,,basic,15,0,,top-level
+I_CNSLDTNUNITPARTNER,Cons Unit Partner Selection,Cons Unit Partner Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNUNITPARTNERTEXT,Cons Unit Partner Selection - Text,Cons Unit Partner Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNUNITPARTNERVH,Cons Unit Partner Selection,Cons Unit Partner Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNUNITPOSTINGRULE,Cons Unit Posting Rule Selection,Cons Unit Posting Rule Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNUNITPOSTINGRULETEXT,Cons Unit Posting Rule Selection - Text,Cons Unit Posting Rule Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNUNITPOSTINGRULEVH,Cons Unit Posting Rule Selection,Cons Unit Posting Rule Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNUNITTEXT_3,Consolidation Unit - Text,Consolidation Unit - Text,FIN-CS-MD,,basic,8,0,,top-level
+I_CNSLDTNUNITTEXT_4,Consolidation Unit - Text,Consolidation Unit - Text,FIN-CS-MD,,basic,7,0,,top-level
+I_CNSLDTNUNITVALIDATION,Cons Unit Validation Selection,Cons Unit Validation Selection,FIN-CS-MD,Dimension,dimension,2,0,,top-level
+I_CNSLDTNUNITVALIDATIONTEXT,Cons Unit Validation Selection - Text,Cons Unit Validation Selection - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNUNITVALIDATIONVH,Cons Unit Validation Selection,Cons Unit Validation Selection,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNUNITVH,Consolidation Unit,Consolidation Unit,FIN-CS-MD,,value_help,2,0,,top-level
+I_CNSLDTNUNIT_3,Consolidation Unit,Consolidation Unit,FIN-CS-MD,,basic,10,0,,top-level
+I_CNSLDTNUNIT_4,Consolidation Unit,Consolidation Unit,FIN-CS-MD,Dimension,dimension,13,0,,top-level
+I_CNSLDTNVERSION,Consolidation Version,Consolidation Version,FIN-CS-MD,Dimension,dimension,27,0,,top-level
+I_CNSLDTNVERSIONRUNMODE,Consolidation Version Run Mode,Consolidation Version Run Mode,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNVERSIONRUNMODETEXT,Consolidation Version Run Mode - Text,Consolidation Version Run Mode - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNVERSIONRUNMODEVH,Consolidation Version Run Mode,Consolidation Version Run Mode,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNVERSIONT,Consolidation Version - Text,Consolidation Version - Text,FIN-CS-MD,,basic,5,0,,top-level
+I_CNSLDTNVERSIONTYPE,Consolidation Version Type,Consolidation Version Type,FIN-CS-MD,Dimension,dimension,3,0,,top-level
+I_CNSLDTNVERSIONTYPETEXT,Consolidation Version Type - Text,Consolidation Version Type - Text,FIN-CS-MD,,text,6,0,,top-level
+I_CNSLDTNVERSIONTYPEVH,Consolidation Version Type,Consolidation Version Type,FIN-CS-MD,,value_help,3,0,,top-level
+I_CNSLDTNVERSIONVH,Consolidation Version,Consolidation Version,FIN-CS-MD,,value_help,2,0,,top-level
+I_CERTAINTYLEVELTEXT,Certainty Level - Text,Certainty Level - Text,FIN-FSCM-CLM,,text,5,0,,top-level
+I_CERTAINTYLEVEL_2,Certainty Level,Certainty Level,FIN-FSCM-CLM,,basic,3,0,,top-level
+I_FINCOPITEMCUBE,Cop Item - Cube,Cop Item - Cube,FIN-FSCM-CLM,Cube,cube,15,0,Company Code,top-level
+I_DEFAULTBUSINESSPARTNER,Bank Netting Business Partner,Bank Netting Business Partner,FIN-FSCM-CLM-BAM,,basic,11,0,Business Partner,top-level
+I_HOUSEBANK,Master data for House Bank,Master data for House Bank,FIN-FSCM-CLM-BAM,Dimension,dimension,35,2,Business Partner; Company Code,top-level
+I_HOUSEBANKACCOUNTLINKAGE,House Bank Account Linkage,House Bank Account Linkage,FIN-FSCM-CLM-BAM,,basic,24,0,,top-level
+I_HOUSEBANKACCOUNTTEXT,House Bank Account - Text,House Bank Account - Text,FIN-FSCM-CLM-BAM,,text,8,0,,top-level
+I_HOUSEBANKBASIC,House Bank Basic,House Bank Basic,FIN-FSCM-CLM-BAM,Dimension,dimension,7,0,Company Code,top-level
+I_RISKBUSINESSPARTNER,Bank Risk Business Partner,Bank Risk Business Partner,FIN-FSCM-CLM-BAM,,basic,6,0,Business Partner,top-level
+I_COLLECTIONGROUP,Collection Group,Collection Group,FIN-FSCM-COL,Dimension,dimension,4,0,,top-level
+I_COLLECTIONGROUPTEXT,Collection Group - Text,Collection Group - Text,FIN-FSCM-COL,,text,4,0,,top-level
+I_COLLECTIONPRIORITY,Collection Priority,Collection Priority,FIN-FSCM-COL,Dimension,dimension,3,0,,top-level
+I_COLLECTIONPRIORITYTEXT,Collection Priority - Text,Collection Priority - Text,FIN-FSCM-COL,,text,4,0,,top-level
+I_COLLECTIONSEGMENT,Collection Segment,Collection Segment,FIN-FSCM-COL,Dimension,dimension,3,0,,top-level
+I_COLLECTIONSEGMENTTEXT,Collection Segment - Text,Collection Segment - Text,FIN-FSCM-COL,,text,4,0,,top-level
+I_COLLECTIONSPROFILE,Collections Profile,Collections Profile,FIN-FSCM-COL,,basic,2,0,,top-level
+I_COLLECTIONSPROFILETEXT,Collections Profile - Text,Collections Profile - Text,FIN-FSCM-COL,,text,4,0,,top-level
+I_CRDTACCTINFOCATEGORY,Credit Account Information Category,Credit Account Information Category,FIN-FSCM-CR,,basic,2,0,,top-level
+I_CRDTACCTINFOCATEGORYTEXT,Info Category for Credit Mgmt Account - Text,Info Category for Credit Mgmt Account - Text,FIN-FSCM-CR,,text,5,0,,top-level
+I_CRDTACCTINFORMATIONTYPE,Information Type at Credit Mgmt Account,Information Type at Credit Mgmt Account,FIN-FSCM-CR,,basic,4,0,,top-level
+I_CRDTACCTINFORMATIONTYPETEXT,Info Type at Credit Mgmt Account - Text,Info Type at Credit Mgmt Account - Text,FIN-FSCM-CR,,text,7,0,,top-level
+I_CRDTMACCOUNTCREDITLIMIT,Credit Mgmt Account Credit Limit,Credit Mgmt Account Credit Limit,FIN-FSCM-CR,,basic,10,0,Business Partner,top-level
+I_CRDTMBUSPARTNERGROUP,Business Partner Credit Group,Business Partner Credit Group,FIN-FSCM-CR,,basic,2,0,,top-level
+I_CRDTMBUSPARTNERGROUPNAME,Business Partner Credit Group Name,Business Partner Credit Group Name,FIN-FSCM-CR,,basic,4,0,,top-level
+I_CREDITACCOUNTADDITIONALINFO,Credit Account Additional Information,Credit Account Additional Information,FIN-FSCM-CR,,basic,18,0,,top-level
+I_CREDITBLOCKREASON,CreditManagement Block Reason,CreditManagement Block Reason,FIN-FSCM-CR,Dimension,dimension,2,0,,top-level
+I_CREDITBLOCKREASONTEXT,CreditManagement Block Reason - Text,CreditManagement Block Reason - Text,FIN-FSCM-CR,,text,4,0,,top-level
+I_CREDITCASECONTACT,Credit Case Contact,Credit Case Contact,FIN-FSCM-CR,,basic,2,0,,top-level
+I_CREDITCONTROLAREA,Credit Control Area,Credit Control Area,FIN-FSCM-CR,Dimension,dimension,4,0,,top-level
+I_CREDITCONTROLAREASTDVH,Credit Control Area,Credit Control Area,FIN-FSCM-CR,,value_help,2,0,,top-level
+I_CREDITCONTROLAREATEXT,Credit Control Area - Text,Credit Control Area - Text,FIN-FSCM-CR,,text,4,0,,top-level
+I_CREDITEXPOSUREITEM,Credit Exposure Items,Credit Exposure Items,FIN-FSCM-CR,,basic,18,0,,top-level
+I_CREDITMANAGEMENTACCOUNT,Credit Management Account,Credit Management Account,FIN-FSCM-CR,,basic,21,0,Business Partner,top-level
+I_CREDITMANAGEMENTBP,Credit Management Business Partner,Credit Management Business Partner,FIN-FSCM-CR,Dimension,dimension,10,0,Business Partner,top-level
+I_CREDITMANAGEMENTSEGMENT,Credit Management Segment,Credit Management Segment,FIN-FSCM-CR,Dimension,dimension,8,0,,top-level
+I_CREDITMANAGEMENTSEGMENTTXT,Credit Management Segment - Text,Credit Management Segment - Text,FIN-FSCM-CR,,text,3,0,,top-level
+I_CREDITRISKCLASS,Credit Management Risk Class,Credit Management Risk Class,FIN-FSCM-CR,Dimension,dimension,2,0,,top-level
+I_CREDITRISKCLASSTEXT,Credit Management Risk Class - Text,Credit Management Risk Class - Text,FIN-FSCM-CR,,text,4,0,,top-level
+I_CUSTOMERCREDITGROUP,Customer Credit Group,Customer Credit Group,FIN-FSCM-CR,Dimension,dimension,2,0,,top-level
+I_CUSTOMERCREDITGROUPTEXT,Customer Credit Group - Text,Customer Credit Group - Text,FIN-FSCM-CR,,text,4,0,,top-level
+I_CASEATTRIBUTES,Case Attributes,Case Attributes,FIN-FSCM-DM,Dimension,dimension,11,0,,top-level
+I_CASEINDIVSTATUS,Case Individual Status,Case Individual Status,FIN-FSCM-DM,Dimension,dimension,9,0,,top-level
+I_CASEINDIVSTATUSTEXT,Case Individual Status - Text,Case Individual Status - Text,FIN-FSCM-DM,,text,6,0,,top-level
+I_CASEREASON,Case Reason,Case Reason,FIN-FSCM-DM,Dimension,dimension,4,0,,top-level
+I_CASEREASONTEXT,Case Reason - Text,Case Reason - Text,FIN-FSCM-DM,,text,6,0,,top-level
+I_CASESTATPROFILE,Case Status Profile,Case Status Profile,FIN-FSCM-DM,Dimension,dimension,4,0,,top-level
+I_CASESTATPROFILETEXT,Case Status Profile - Text,Case Status Profile - Text,FIN-FSCM-DM,,text,4,0,,top-level
+I_CASESTATUS,Case Status,Case Status,FIN-FSCM-DM,Dimension,dimension,2,0,,top-level
+I_CASESTATUSTEXT,Case Status - Text,Case Status - Text,FIN-FSCM-DM,,text,4,0,,top-level
+I_CASETYPE,Case Type,Case Type,FIN-FSCM-DM,Dimension,dimension,2,0,,top-level
+I_CASETYPETEXT,Case Type - Text,Case Type - Text,FIN-FSCM-DM,,text,4,0,,top-level
+I_DISPUTECASECONTACT,Dispute Case Contact,Dispute Case Contact,FIN-FSCM-DM,,basic,3,0,,top-level
+I_DISPUTECASELINKEDOBJECT,Linked Objects of a Dispute Case,Linked Objects of a Dispute Case,FIN-FSCM-DM,,basic,8,0,,top-level
+I_ROOTCAUSE,Root Cause,Root Cause,FIN-FSCM-DM,Dimension,dimension,4,0,,top-level
+I_ROOTCAUSETEXT,Root Cause - Text,Root Cause - Text,FIN-FSCM-DM,,text,6,0,,top-level
+I_CASHFLOWDELTADATA,Delta Extraction Cash FLow,Delta Extraction Cash FLow,FIN-FSCM-FQM,Cube,cube,9,0,Company Code,top-level
+I_CASHPLANNINGGROUP,Cash Planning Group,Cash Planning Group,FIN-FSCM-FQM,Dimension,dimension,3,0,,top-level
+I_CASHPLANNINGGROUPTEXT,Cash Planning Group - Text,Cash Planning Group - Text,FIN-FSCM-FQM,,text,5,0,,top-level
+I_PLANNINGLEVEL,Planning Level,Planning Level,FIN-FSCM-FQM,Dimension,dimension,3,0,,top-level
+I_PLANNINGLEVELTEXT,Planning Level - Text,Planning Level - Text,FIN-FSCM-FQM,,text,5,0,,top-level
+I_CREDITSPREADID,Credit Spread ID,Credit Spread ID,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_FINANCIALINSTRPRODCAT,Product Category,Product Category,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINANCIALINSTRPRODCATTEXT,Product Category - Text,Product Category - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_FINANCIALINSTRPRODTYPETEXT,Product Type - Text,Product Type - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_FINANCIALINSTRPRODUCTTYPE,Product Type,Product Type,FIN-FSCM-TRM,Dimension,dimension,7,0,,top-level
+I_FINANCIALINSTRTRANSTYPE,Transaction Type,Transaction Type,FIN-FSCM-TRM,Dimension,dimension,6,0,,top-level
+I_FINANCIALINSTRTRANSTYPETEXT,Transaction Type - Text,Transaction Type - Text,FIN-FSCM-TRM,,text,7,0,,top-level
+I_FINANCIALPOSITION,Financial Status Financial Position,Financial Status Financial Position,FIN-FSCM-TRM,Dimension,dimension,5,0,,top-level
+I_FINANCIALPOSITIONGROUP,Financial Status Financial Position Grp,Financial Status Financial Position Grp,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINANCIALTRANSACTION,Financial Transaction,Financial Transaction,FIN-FSCM-TRM,Dimension,dimension,125,3,Business Area; Company Code; Controlling Area; Cost Center; Functional Area; Grant; Profit Center; Segment; WBS Element,top-level
+I_FINANCIALTRANSACTIONSTDVH,FinancialTransaction,FinancialTransaction,FIN-FSCM-TRM,,value_help,17,0,Company Code,top-level
+I_FINCNDNCONDITIONCATEGORY,Financial Condition Condition Category,Financial Condition Condition Category,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_FINCNDNCONDITIONCATEGORYTEXT,Financial Condition Condition Category - Text,Financial Condition Condition Category - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_FINCNDNCONDITIONTYPE,Financial Condition Condition Type,Financial Condition Condition Type,FIN-FSCM-TRM,Dimension,dimension,6,0,,top-level
+I_FINCNDNCONDITIONTYPETEXT,Financial Con Condition Type - Text,Financial Con Condition Type - Text,FIN-FSCM-TRM,,text,7,0,,top-level
+I_FINCNDNINTERESTCATEGORY,Financial Condition Interest Category,Financial Condition Interest Category,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINCNDNINTERESTCATEGORYTEXT,Fin Condition Interest Category - Text,Fin Condition Interest Category - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FININSTRACTIVITYCATEGORY,Financial Instrument Activity Category,Financial Instrument Activity Category,FIN-FSCM-TRM,Dimension,dimension,7,0,,top-level
+I_FININSTRACTIVITYCATEGORYTEXT,Fin Instrument Activity Category - Text,Fin Instrument Activity Category - Text,FIN-FSCM-TRM,,text,9,0,,top-level
+I_FININSTRTRANSCAT,Transaction Category,Transaction Category,FIN-FSCM-TRM,Dimension,dimension,4,0,,top-level
+I_FININSTRTRANSCATTEXT,Transaction Category - Text,Transaction Category - Text,FIN-FSCM-TRM,,text,7,0,,top-level
+I_FININSTRUMENTSTATUS,Financial Instrument Status,Financial Instrument Status,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FININSTRUMENTSTATUSTEXT,Financial Instrument Status - Text,Financial Instrument Status - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FININTRSTRATEADJMTSTATUS,Fin Interest Rate Adjustment Status,Fin Interest Rate Adjustment Status,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FININTRSTRATEADJMTSTATUSTEXT,Fin Interest Rate Adjmt Status - Text,Fin Interest Rate Adjmt Status - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FINTRANSACTIONDIRECTION,Financial Transaction Direction,Financial Transaction Direction,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINTRANSACTIONDIRECTIONTEXT,Financial Transaction Direction - Text,Financial Transaction Direction - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FINTRANSACTIVITY,Financial Transaction Activity,Financial Transaction Activity,FIN-FSCM-TRM,,basic,64,0,Company Code,top-level
+I_FINTRANSACTIVITYCATEGORY,Financial Transaction Activity Category,Financial Transaction Activity Category,FIN-FSCM-TRM,Dimension,dimension,10,0,Company Code,top-level
+I_FINTRANSCNTRCONFSTATUS,Financial Transaction Counterconfirmation Status,Financial Transaction Counterconfirmation Status,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINTRANSCNTRCONFSTATUSTEXT,Fin Trans Cntrconf Status - Text,Fin Trans Cntrconf Status - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FINTRANSCONFSTATUS,Financial Transaction Confirmation Status,Financial Transaction Confirmation Status,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINTRANSCONFSTATUSTEXT,Fin Trans Confirmation Status - Text,Fin Trans Confirmation Status - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FINTRANSFLOWCATEGORY,Financial Transaction Flow Category,Financial Transaction Flow Category,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_FINTRANSFLOWCATEGORYTEXT,Fin Transaction Flow Category - Text,Fin Transaction Flow Category - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_FINTRANSFLOWFIXBLKGRSNTXT,Fin Trans Flow Fixing Blkg Rsn - Text,Fin Trans Flow Fixing Blkg Rsn - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FINTRANSFLOWFIXINGBLKGRSN,Fin Trans Flow Fixing Blocking Reason,Fin Trans Flow Fixing Blocking Reason,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINTRANSFLOWFIXINGSTATUS,Fin Trans Flow Fixing Status,Fin Trans Flow Fixing Status,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINTRANSFLOWFIXSTATUSTEXT,Fin Trans Flow Fixing Status - Text,Fin Trans Flow Fixing Status - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FINTRANSFLOWTYPE,Financial Transaction Flow Type,Financial Transaction Flow Type,FIN-FSCM-TRM,,basic,7,0,,top-level
+I_FINTRANSFLOWTYPETEXT,Fincial Transaction Flow Type - Text,Fincial Transaction Flow Type - Text,FIN-FSCM-TRM,,text,7,0,,top-level
+I_FINTRANSNOTICEPERIODUNIT,Financial Transaction Notice Period Unit,Financial Transaction Notice Period Unit,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINTRANSNOTICEPERIODUNITTEXT,Fin Trans Notice Period Unit - Text,Fin Trans Notice Period Unit - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FINTRANSPROCGCATEGORY,Financial Transaction Processing Category,Financial Transaction Processing Category,FIN-FSCM-TRM,Dimension,dimension,6,0,,top-level
+I_FINTRANSPROCGCATEGORYTEXT,Fin Trans Processing Category - Text,Fin Trans Processing Category - Text,FIN-FSCM-TRM,,text,9,0,,top-level
+I_FINTRANSPRODUCTGROUP,Financial Transaction Product Groups,Financial Transaction Product Groups,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_FINTRANSPRODUCTGROUPTEXT,Fin Transaction Product Group - Text,Fin Transaction Product Group - Text,FIN-FSCM-TRM,,text,4,0,,top-level
+I_FINTRANSRELEASESTATUS,Financial Transaction Release Status,Financial Transaction Release Status,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_FINTRANSRELEASESTATUSTEXT,Fin Transaction Release Status - Text,Fin Transaction Release Status - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_FIXEDVARIABLEINTERESTCAT,Fixed Variable Interest Category,Fixed Variable Interest Category,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_FIXEDVARIABLEINTERESTCATT,Fixed Variable Interest Category - Text,Fixed Variable Interest Category - Text,FIN-FSCM-TRM,,basic,5,0,,top-level
+I_FTR_COUNTERPARTY,Counterparty,Counterparty,FIN-FSCM-TRM,,basic,15,0,Business Partner,top-level
+I_FXFIXINGREFERENCE,Foreign Exchange Fixing Reference,Foreign Exchange Fixing Reference,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_FXFIXINGREFERENCETEXT,Foreign Exchange Fixing Reference - Text,Foreign Exchange Fixing Reference - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_HEDGEDITEM,Hedged Item,Hedged Item,FIN-FSCM-TRM,Dimension,dimension,11,0,Company Code,top-level
+I_HEDGINGINSTRUMENT,Hedging Instrument,Hedging Instrument,FIN-FSCM-TRM,Dimension,dimension,11,0,Company Code,top-level
+I_HEDGINGRELATIONSHIP,Hedging Relationship,Hedging Relationship,FIN-FSCM-TRM,Dimension,dimension,19,0,Company Code,top-level
+I_IMPLIEDVOLATILITYIDENTIFIER,Implied Volatility Identifier,Implied Volatility Identifier,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_IMPLIEDVOLATILITYIDENTIFIERT,Implied Volatility Identifier - Text,Implied Volatility Identifier - Text,FIN-FSCM-TRM,,basic,5,0,,top-level
+I_MKTDATABASISSPREADID,Market Data Basis Spread ID,Market Data Basis Spread ID,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_OPTIONPUTCALLCODE,Option Put Call Code,Option Put Call Code,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_OPTIONPUTCALLCODETEXT,Option Put Call Code - Text,Option Put Call Code - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_REFERENCEENTITY,ReferenceEntity Attribute,ReferenceEntity Attribute,FIN-FSCM-TRM,Dimension,dimension,6,0,Business Partner,top-level
+I_REFERENCEINTERESTRATE,Reference Interest Rate,Reference Interest Rate,FIN-FSCM-TRM,Dimension,dimension,7,0,,top-level
+I_REFERENCEINTERESTRATEVAL,Reference Interest Rate Value,Reference Interest Rate Value,FIN-FSCM-TRM,,basic,4,0,,top-level
+I_SCRTYCLASSGENCLASSFCTNTEXT,Security Class Gen Classification - Text,Security Class Gen Classification - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_SCRTYCLASSSTOCKCATEGORYTEXT,Security Class Stock Category - Text,Security Class Stock Category - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_SECURITIESACCTCLPOSMSTRDATA,Class Position in Securities Account,Class Position in Securities Account,FIN-FSCM-TRM,,basic,10,0,Company Code,top-level
+I_SECURITYACCOUNT,Security Account,Security Account,FIN-FSCM-TRM,Dimension,dimension,9,0,Company Code,top-level
+I_SECURITYACCOUNTCATEGORY,Security Account Category,Security Account Category,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_SECURITYACCOUNTCATEGORYTEXT,Security Account Category - Text,Security Account Category - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_SECURITYACCOUNTGROUP,Security Account Group,Security Account Group,FIN-FSCM-TRM,Dimension,dimension,4,0,Company Code,top-level
+I_SECURITYACCOUNTTYPE,Security Account Type,Security Account Type,FIN-FSCM-TRM,Dimension,dimension,4,0,,top-level
+I_SECURITYACCOUNTTYPETEXT,Security Account Type - Text,Security Account Type - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_SECURITYCLASS,Security Class,Security Class,FIN-FSCM-TRM,Dimension,dimension,68,0,,top-level
+I_SECURITYCLASSBASIC,Security Class Basic,Security Class Basic,FIN-FSCM-TRM,,basic,28,0,,top-level
+I_SECURITYCLASSBOND,Security Class Bond,Security Class Bond,FIN-FSCM-TRM,Dimension,dimension,18,0,,top-level
+I_SECURITYCLASSCONDITIONITEM,Security Class Condition Item,Security Class Condition Item,FIN-FSCM-TRM,,basic,105,0,,top-level
+I_SECURITYCLASSFUNDTYPE,Security Class Fund Type,Security Class Fund Type,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_SECURITYCLASSFUNDTYPETEXT,Security Class Fund Type - Text,Security Class Fund Type - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_SECURITYCLASSGENCLASSFCTN,Security Class General Classification,Security Class General Classification,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_SECURITYCLASSQUOTATION,Security Class Quotation,Security Class Quotation,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_SECURITYCLASSQUOTATIONTEXT,Security Class Quotation - Text,Security Class Quotation - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_SECURITYCLASSSECONDARYINDEX,Security Class Secondary Index,Security Class Secondary Index,FIN-FSCM-TRM,,basic,4,0,,top-level
+I_SECURITYCLASSSTOCK,Security Class Stock,Security Class Stock,FIN-FSCM-TRM,Dimension,dimension,9,0,,top-level
+I_SECURITYCLASSSTOCKCATEGORY,Security Class Stock Category,Security Class Stock Category,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_SECURITYCLASSTRANSFERTYPE,Security Class Security Type,Security Class Security Type,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_SECURITYCLASSTRANSFTYPETEXT,Security Class Security Type - Text,Security Class Security Type - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_SECURITYEXCHANGE,Security Exchange,Security Exchange,FIN-FSCM-TRM,Dimension,dimension,4,0,,top-level
+I_SECURITYPRICETYPE,Market Data Security Price Type,Market Data Security Price Type,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_SECURITYPRICETYPETEXT,Market Data Security Price Type - Text,Market Data Security Price Type - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_STKSUBSCRPNRGHTINVMTCERTCNDN,Stock SubscrpnRght InvmtCert Condition,Stock SubscrpnRght InvmtCert Condition,FIN-FSCM-TRM,,basic,11,0,,top-level
+I_TREASURYCOMPANYCODESETTING,Treasury Company Code Additional Data,Treasury Company Code Additional Data,FIN-FSCM-TRM,Dimension,dimension,4,0,Company Code,top-level
+I_TREASURYCONTRACTTYPE,Treasury Contract Type,Treasury Contract Type,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_TREASURYCONTRACTTYPETEXT,Treasury Contract Type - Text,Treasury Contract Type - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_TREASURYGLACCASSIGNREFTEXT,Treasury Account Assignment Ref - Text,Treasury Account Assignment Ref - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_TREASURYGLACCOUNTASSIGNREF,Treasury Account Assignment Reference,Treasury Account Assignment Reference,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_TREASURYHEDGINGCLASSFCTN,Treasury Hedging Classification,Treasury Hedging Classification,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_TREASURYLEDGERTRANSACTION,Treasury Ledger Transaction,Treasury Ledger Transaction,FIN-FSCM-TRM,,basic,16,0,Company Code,top-level
+I_TREASURYPAYTREQGROUPING,Treasury Payment Request Grouping,Treasury Payment Request Grouping,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_TREASURYPAYTREQGROUPINGTEXT,Treasury Payment Request Grouping - Text,Treasury Payment Request Grouping - Text,FIN-FSCM-TRM,,text,6,0,,top-level
+I_TREASURYPORTFOLIO,Portfolio,Portfolio,FIN-FSCM-TRM,Dimension,dimension,4,0,Company Code,top-level
+I_TREASURYPORTFOLIOTEXT,Portfolio - Text,Portfolio - Text,FIN-FSCM-TRM,,text,7,0,Company Code,top-level
+I_TREASURYPOSITIONIDENTIFIER,Treasury Position Identifier,Treasury Position Identifier,FIN-FSCM-TRM,Fact,fact,32,0,Company Code; Cost Center; Functional Area; Grant; Profit Center; WBS Element,top-level
+I_TREASURYREVERSALREASON,Treasury Reversal Reason,Treasury Reversal Reason,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_TREASURYREVERSALREASONTEXT,Treasury Reversal Reason - Text,Treasury Reversal Reason - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_TREASURYUPDATETYPE,Treasury Update Type,Treasury Update Type,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_TREASURYUPDATETYPETEXT,Treasury Update Type - Text,Treasury Update Type - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_TREASURYVALUATIONAREA,Treasury Valuation Area,Treasury Valuation Area,FIN-FSCM-TRM,Dimension,dimension,4,0,,top-level
+I_TREASURYVALUATIONCLASS,Treasury Valuation Class,Treasury Valuation Class,FIN-FSCM-TRM,Dimension,dimension,4,0,,top-level
+I_TREASURYVALUATIONCLASSTEXT,Treasury Valuation Class - Text,Treasury Valuation Class - Text,FIN-FSCM-TRM,,text,7,0,,top-level
+I_TRSYCSHFLOWDEBTINVMTCODE,Debt Investment Indicator,Debt Investment Indicator,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_TRSYCSHFLOWDEBTINVMTCODET,Debt Investment Indicator - Text,Debt Investment Indicator - Text,FIN-FSCM-TRM,,basic,5,0,,top-level
+I_TRSYFINSTSCOUNTRYGEOPOINT,Geographical Center of a Country/Region,Geographical Center of a Country/Region,FIN-FSCM-TRM,Dimension,dimension,4,0,,top-level
+I_TRSYHDGGCLASSFCTNTEXT,Treasury Hedging Classification - Text,Treasury Hedging Classification - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_TRSYHEDGINGRELSHPPROFILE,Hedging Relationship Profile,Hedging Relationship Profile,FIN-FSCM-TRM,Dimension,dimension,4,0,,top-level
+I_TRSYHEDGINGRELSHPPROFILETXT,Hedging Relationship Profile - Text,Hedging Relationship Profile - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_TRSYHEDGINGRELSHPSCENARIO,Hedging Relationship Scenario,Hedging Relationship Scenario,FIN-FSCM-TRM,Dimension,dimension,5,0,,top-level
+I_TRSYHEDGINGRELSHPSCENARIOTXT,Hedging Relationship Scenario - Text,Hedging Relationship Scenario - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_TRSYLEDGERTRANSACTIONFLOW,Treasury Ledger Flow,Treasury Ledger Flow,FIN-FSCM-TRM,,basic,35,0,,top-level
+I_TRSYPOSMANAGEMENTPROCEDURE,Treasury Position Management Procedure,Treasury Position Management Procedure,FIN-FSCM-TRM,Dimension,dimension,14,0,,top-level
+I_TRSYPOSMANAGEMENTPROCTEXT,Treasury Position Management Proc - Text,Treasury Position Management Proc - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_VOLATILITYPROFILE_2,Volatility Profile Information,Volatility Profile Information,FIN-FSCM-TRM,Dimension,dimension,3,0,,top-level
+I_VOLATILITYTYPE,Volatility Type,Volatility Type,FIN-FSCM-TRM,Dimension,dimension,2,0,,top-level
+I_VOLATILITYTYPETEXT,Volatility Type - Text,Volatility Type - Text,FIN-FSCM-TRM,,text,5,0,,top-level
+I_TRSYCTPTYLIMITPRODUCTGROUP,Treasury Counterparty Limit Product Group,Treasury Counterparty Limit Product Group,FIN-FSCM-TRM-CR,Dimension,dimension,2,0,,top-level
+I_TRSYCTPTYLIMITPRODUCTGRPTEXT,Treasury Counterparty Limit Product Group - Text,Treasury Counterparty Limit Product Group - Text,FIN-FSCM-TRM-CR,,text,4,0,,top-level
+I_TRSYCTPTYLIMITTYPE,Treasury Counterparty Limit Type,Treasury Counterparty Limit Type,FIN-FSCM-TRM-CR,,basic,6,0,,top-level
+I_TRSYCTPTYLIMITTYPETEXT,Treasury Counterparty Limit Type - Text,Treasury Counterparty Limit Type - Text,FIN-FSCM-TRM-CR,,text,5,0,,top-level
+I_TRSYCTPTYLMTUTILZNBASE,Treasury Counterparty Limit Utilization Base,Treasury Counterparty Limit Utilization Base,FIN-FSCM-TRM-CR,,basic,3,0,,top-level
+I_TRSYCTPTYLMTUTILZNBASETEXT,Treasury Counterparty Limit Utilization Base - Text,Treasury Counterparty Limit Utilization Base - Text,FIN-FSCM-TRM-CR,,text,4,0,,top-level
+I_FINANCIALTRANSACTIONNPVTYPE,Fin Transaction Net Present Value Type,Fin Transaction Net Present Value Type,FIN-FSCM-TRM-MR,Dimension,dimension,2,0,,top-level
+I_FINANCIALTRANSACTIONNPVTYPET,Fin Trans Net Present Value Type - Text,Fin Trans Net Present Value Type - Text,FIN-FSCM-TRM-MR,,basic,5,0,,top-level
+I_FINTRANSACTIONNPVCUBE,Financial Transaction NPV - Cube,Financial Transaction NPV - Cube,FIN-FSCM-TRM-MR,Cube,cube,25,0,Company Code,top-level
+I_TRSYMKTRSKKEYFIGURESET,Treasury Market Risk Key Figure Set,Treasury Market Risk Key Figure Set,FIN-FSCM-TRM-MR,,basic,6,0,,top-level
+I_TRSYMKTRSKKEYFIGURESETTEXT,Treasury Market Risk Key Figure Set - Text,Treasury Market Risk Key Figure Set - Text,FIN-FSCM-TRM-MR,,text,4,0,,top-level
+I_FINANCIALDATASOURCE,Financial Data Source,Financial Data Source,FIN-IE-FS,Dimension,dimension,2,0,,top-level
+I_FINANCIALDATASOURCET,Financial Data Source - Text,Financial Data Source - Text,FIN-IE-FS,,basic,6,0,,top-level
+I_FINANCIALSERVICESBRANCH,Financial Services Branch,Financial Services Branch,FIN-IE-FS,Dimension,dimension,2,0,,top-level
+I_FINANCIALSERVICESBRANCHT,Financial Services Branch - Text,Financial Services Branch - Text,FIN-IE-FS,,basic,6,0,,top-level
+I_FINSERVICESPRODUCTGROUP,Financial Services Product Group,Financial Services Product Group,FIN-IE-FS,Dimension,dimension,3,0,,top-level
+I_FINSERVICESPRODUCTGROUPT,Financial Services Product Group - Text,Financial Services Product Group - Text,FIN-IE-FS,,basic,6,0,,top-level
+I_FINSRVCSPRODGROUPHIERARCHY,Fin Services Product Group Hierarchy,Fin Services Product Group Hierarchy,FIN-IE-FS,Dimension,dimension,6,0,,top-level
+I_FINSRVCSPRODGRPHIERARCHYT,Fin Srvcs Product Group Hierarchy - Text,Fin Srvcs Product Group Hierarchy - Text,FIN-IE-FS,,basic,7,0,,top-level
+I_FINSRVCSPRODGRPHIERNODE,Fin Srvcs Product Group Hierarchy Node,Fin Srvcs Product Group Hierarchy Node,FIN-IE-FS,,basic,13,0,,top-level
+I_FINSRVCSPRODGRPHIERNODET,FS Product Group Hierarchy Node - Text,FS Product Group Hierarchy Node - Text,FIN-IE-FS,,basic,9,0,,top-level

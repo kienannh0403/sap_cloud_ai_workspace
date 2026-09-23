@@ -1,0 +1,4 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_INSURANCECLAIMDAMAGECATEGORY,Insur Claim Damage Category,Insur Claim Damage Category,FS-CM,Dimension,dimension,3,0,,top-level
+I_INSURANCECLAIMSCOPEOFLOSS,Insurance Claim Scope Of Loss,Insurance Claim Scope Of Loss,FS-CM,Dimension,dimension,4,0,,top-level
+I_INSURANCECLAIMSCOPEOFLOSSTXT,Insur Clm Scope Of Loss - Txt,Insur Clm Scope Of Loss - Txt,FS-CM,,text,7,0,,top-level

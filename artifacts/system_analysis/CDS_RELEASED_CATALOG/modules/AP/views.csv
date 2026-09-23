@@ -1,0 +1,44 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_BUPAIDENTIFICATION,Business Partner Identification,Business Partner Identification,AP-MD-BP,Dimension,dimension,12,0,Business Partner,top-level
+I_BUSINESSPARTNER,Business Partner,Business Partner,AP-MD-BP,Dimension,dimension,121,4,Business Partner,top-level
+I_BUSINESSPARTNERINDUSTRY,Core View for BUT0IS,Core View for BUT0IS,AP-MD-BP,Dimension,dimension,8,0,Business Partner,top-level
+I_BUSINESSPARTNERROLESTDVH,Business Partner Role,Business Partner Role,AP-MD-BP,,value_help,3,0,,top-level
+I_BUSINESSPARTNERSTANDARDUSAGE,Basic View for Business Partner Standard Usage,Basic View for BP Standard Usage,AP-MD-BP,,basic,2,0,,top-level
+I_BUSINESSPARTNERTAXNUMBER,Core view for Tax Number,Core view for Tax Number,AP-MD-BP,Dimension,dimension,7,0,Business Partner,top-level
+I_BUSINESSPARTNERTOBPROLE,Business Partner assignment to BP Role,Business Partner assignment to BP Role,AP-MD-BP,Dimension,dimension,7,0,Business Partner,top-level
+I_BUSINESSPARTNERTOBPROLE_2,Business Partner assignment to BP Role,Business Partner assignment to BP Role,AP-MD-BP,Dimension,dimension,9,0,Business Partner,top-level
+I_BUSINESSPARTNERVH,Business Partner,Business Partner,AP-MD-BP,,value_help,25,0,Business Partner,top-level
+I_BUSPARTADDRESS,Business Partner Address,Business Partner Address,AP-MD-BP,Dimension,dimension,15,0,Address; Business Partner,top-level
+I_BUSPARTSTANDARDUSAGETEXT,Texts for I_Businesspartnerstandardusage,Texts for I_Businesspartnerstandardusage,AP-MD-BP,,text,3,0,,top-level
+I_CONTACTPERSONDEPARTMENT,Value Help for Dept of Contact Person,Value Help for Dept of Contact Person,AP-MD-BP,Dimension,dimension,2,0,,top-level
+I_CONTACTPERSONDEPARTMENTT,Department of Contact Person Textview,Department of Contact Person Textview,AP-MD-BP,,basic,4,0,,top-level
+I_CONTACTPERSONFUNCTION,Value Help for Func of Contact Person,Value Help for Func of Contact Person,AP-MD-BP,Dimension,dimension,2,0,,top-level
+I_CONTACTPERSONFUNCTIONT,Function of Contact Person Textview,Function of Contact Person Textview,AP-MD-BP,,basic,4,0,,top-level
+I_PAYMENTCARD,Core View for Payment Card,Core View for Payment Card,AP-MD-BP,,basic,10,0,Business Partner,top-level
+I_PAYMENTCARDLOCK,View for Payment Card Lock,View for Payment Card Lock,AP-MD-BP,,basic,2,0,,top-level
+I_PAYMENTCARDTYPE,Core View for table CCARD,Core View for table CCARD,AP-MD-BP,,basic,10,0,,top-level
+I_BUSINESSPARTNERADDRESSTYPE,Business Partner Address Types,Business Partner Address Types,AP-MD-BP-RAP,,basic,2,0,,top-level
+I_BUSINESSPARTNERADDRESSTYPET,Business Partner Address Types Text,Business Partner Address Types Text,AP-MD-BP-RAP,,basic,3,0,,top-level
+I_BUSINESSPARTNERGROUPING,Business Partner Grouping,Business Partner Grouping,AP-MD-BP-RAP,,basic,2,0,,top-level
+I_BUSINESSPARTNERGROUPINGTEXT,Business Partner Grouping - Text,Business Partner Grouping - Text,AP-MD-BP-RAP,,text,3,0,,top-level
+I_BUSINESSPARTNERGROUPTYPETEXT,Business Partner Group Type - Text,Business Partner Group Type - Text,AP-MD-BP-RAP,,text,4,0,,top-level
+I_BUSINESSPARTNERLEGALFORM,Business Partner Legal Form,Business Partner Legal Form,AP-MD-BP-RAP,,basic,2,0,,top-level
+I_BUSINESSPARTNERLEGALFORMTEXT,Business Partner Legal Form - Text,Business Partner Legal Form - Text,AP-MD-BP-RAP,,text,4,0,,top-level
+I_BUSINESSPARTNEROCCUPATION,Business Partner Occupation,Business Partner Occupation,AP-MD-BP-RAP,,basic,2,0,,top-level
+I_BUSINESSPARTNERPRINTFORMAT,Business Partner Print Format,Business Partner Print Format,AP-MD-BP-RAP,,basic,3,0,,top-level
+I_BUSINESSPARTNERPRINTFORMATT,Business Partner Category - Text,Business Partner Category - Text,AP-MD-BP-RAP,,basic,4,0,,top-level
+I_BUSINESSPARTNERTYPE,Business Partner Types,Business Partner Types,AP-MD-BP-RAP,Dimension,dimension,2,0,,top-level
+I_BUSINESSPARTNERTYPETEXT,Business Partner Type - Text,Business Partner Type - Text,AP-MD-BP-RAP,,text,3,0,,top-level
+I_BUSPARTBIRTHDATESTATUS,Business Partner Birth Date status,Business Partner Birth Date status,AP-MD-BP-RAP,,basic,2,0,,top-level
+I_BUSPARTBIRTHDATESTATUSTEXT,Birth Date Status - Text,Birth Date Status - Text,AP-MD-BP-RAP,,text,3,0,,top-level
+I_BUSPARTCATEGORY,Business Partner Category,Business Partner Category,AP-MD-BP-RAP,Dimension,dimension,3,0,,top-level
+I_BUSPARTCATEGORYTEXT,Business Partner Category - Text,Business Partner Category - Text,AP-MD-BP-RAP,,text,5,0,,top-level
+I_BUSPARTCUSTSELECTEDTAXTYPE,Business Partner Tax Number Categories,Business Partner Tax Number Categories,AP-MD-BP-RAP,,basic,2,0,,top-level
+I_BUSPARTINDUSTRYKEY,Business Partner Industry Key,Business Partner Industry Key,AP-MD-BP-RAP,Dimension,dimension,4,0,,top-level
+I_BUSPARTINDUSTRYKEYTEXT,Business Partner Industry Key Text,Business Partner Industry Key Text,AP-MD-BP-RAP,,text,5,0,,top-level
+I_BUSPARTINDUSTRYSYSTEM,Business Partner Industry System,Business Partner Industry System,AP-MD-BP-RAP,,basic,2,0,,top-level
+I_BUSPARTINDUSTRYSYSTEMTEXT,Industry System - Text,Industry System - Text,AP-MD-BP-RAP,,text,3,0,,top-level
+I_BUSPARTMARITALSTATUS,BUPA Marital Status,BUPA Marital Status,AP-MD-BP-RAP,,basic,2,0,,top-level
+I_BUSPARTMARITALSTATUSTEXT,BUPA Marital Status - Text,BUPA Marital Status - Text,AP-MD-BP-RAP,,text,3,0,,top-level
+I_BUSPARTOCCUPATIONTEXT,Business Partner Occupation - Text,Business Partner Occupation - Text,AP-MD-BP-RAP,,text,3,0,,top-level
+I_BUSPARTTAXTYPETEXT,Business Partner Tax Type - Text,Business Partner Tax Type - Text,AP-MD-BP-RAP,,text,3,0,,top-level

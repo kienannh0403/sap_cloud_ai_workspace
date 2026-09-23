@@ -1,0 +1,35 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_CUSTOMERACCOUNTASSGMTGROUP,Customer Account Assignment Group,Customer Account Assignment Group,SD-BIL-GF,Dimension,dimension,2,0,,component
+I_CUSTOMERACCOUNTASSGMTGROUPT,Account Assignment Group of Customer - Text,Account Assignment Group of Customer - Text,SD-BIL-GF,,basic,5,0,,component
+I_INCOTERMSCLASSIFICATION,Incoterms Classification,Incoterms Classification,SD-BIL-GF,Dimension,dimension,3,0,Incoterms,component
+I_INCOTERMSCLASSIFICATIONTEXT,Incoterms Classification - Text,Incoterms Classification - Text,SD-BIL-GF,,text,5,0,Incoterms,component
+I_INVOICELISTSTATUS,Invoice List Status,Invoice List Status,SD-BIL-GF,Dimension,dimension,2,0,,component
+I_INVOICELISTSTATUSTEXT,Invoice List Status - Text,Invoice List Status - Text,SD-BIL-GF,,text,5,0,,component
+I_OVERALLBILLINGBLOCKSTATUS,Overall Billing Block Status,Overall Billing Block Status,SD-BIL-GF,Dimension,dimension,3,0,,component
+I_OVERALLBILLINGBLOCKSTATUST,Overall Billing Block Status - Text,Overall Billing Block Status - Text,SD-BIL-GF,,basic,5,0,,component
+I_OVERALLBILLINGSTATUS,Overall Billing Status,Overall Billing Status,SD-BIL-GF,Dimension,dimension,3,0,,component
+I_OVERALLBILLINGSTATUSTEXT,Overall Billing Status - Text,Overall Billing Status - Text,SD-BIL-GF,,text,5,0,,component
+I_OVRLBILLINGDOCREQSTATUS,Overall Billing Document Request Status,Overall Billing Document Request Status,SD-BIL-GF,Dimension,dimension,3,0,,component
+I_OVRLBILLINGDOCREQSTATUSTEXT,Overall Billing Document Request Status - Text,Overall Billing Document Request Status - Text,SD-BIL-GF,,text,5,0,,component
+I_PRELIMBILLGDOCSTATUS,Preliminary Billing Document Status,Preliminary Billing Document Status,SD-BIL-GF,Dimension,dimension,3,0,,component
+I_PRELIMBILLGDOCSTATUSTEXT,Preliminary Billing Document Status - Text,Preliminary Billing Document Status - Text,SD-BIL-GF,,text,5,0,,component
+I_VATREGISTRATIONORIGIN,VAT Registration Origin,VAT Registration Origin,SD-BIL-GF,Dimension,dimension,3,0,,component
+I_VATREGISTRATIONORIGINTEXT,VAT Registration Origin - Text,VAT Registration Origin - Text,SD-BIL-GF,,text,6,0,,component
+I_INVOICELISTTYPE,Invoice List Type,Invoice List Type,SD-BIL-IL,Dimension,dimension,7,0,,component
+I_INVOICELISTTYPESTDVH,Invoice List Type,Invoice List Type,SD-BIL-IL,,value_help,2,0,,component
+I_INVOICELISTTYPETEXT,Invoice List Type - Text,Invoice List Type - Text,SD-BIL-IL,,text,5,0,,component
+I_CUSTPROJSLSORDITMBILLGPLN,Billing Plan of Sales Order Item for Customer Project,Billing Plan of Sales Order Item for Customer Project,SD-BIL-IV-BP,,basic,14,0,Distribution Channel; Division; Sales Document; Sales Organization,component
+I_CUSTPROJSLSORDITMBILLGPLNITM,Billing Plan Item of Sales Order Item for Customer Project,Billing Plan Item of Sales Order Item for Customer Project,SD-BIL-IV-BP,,basic,32,2,Distribution Channel; Division; Sales Document; Sales Organization,component
+I_SDBILLINGPLAN,Billing Plan for SD Documents,Billing Plan for SD Documents,SD-BIL-IV-BP,Dimension,dimension,17,0,SD/LE Document (generic VBELN),component
+I_SDBILLINGPLANITEM,Billing Plan Item for SD Documents,Billing Plan Item for SD Documents,SD-BIL-IV-BP,Dimension,dimension,43,2,Payment Terms,component
+I_SDDOCUMENTPAYMENTCARDTYPE,SD Document Payment Card Type,SD Document Payment Card Type,SD-BIL-IV-PC,Dimension,dimension,3,0,,component
+I_SDDOCUMENTPAYMENTCARDTYPET,SD Document Payment Card Type - Text,SD Document Payment Card Type - Text,SD-BIL-IV-PC,,basic,5,0,,component
+I_SLSDOCPAYMENTPLANITEMDETAILS,Sales Document Payment Plan Item Details,Sales Document Payment Plan Item Details,SD-BIL-IV-PC,,basic,55,0,Distribution Channel; Division; Sales Document; Sales Document Type; Sales Organization,component
+I_PRELIMBILLGDOCITEMPRCGELMNT,Prelim Billg Doc Item Pricing Element,Prelim Billg Doc Item Pricing Element,SD-BIL-PBD,,basic,75,0,G/L Account; Tax Code,component
+I_PRELIMBILLINGDOCITEMPARTNER,Preliminary Billing Document Item Partner,Preliminary Billing Document Item Partner,SD-BIL-PBD,,basic,14,0,Address; Customer; Personnel; Supplier,component
+I_PRELIMBILLINGDOCITEMSTDVH,Preliminary Billing Document Item,Preliminary Billing Document Item,SD-BIL-PBD,,value_help,6,0,Sales Organization,component
+I_PRELIMBILLINGDOCPARTNER,Preliminary Billing Document Partner,Preliminary Billing Document Partner,SD-BIL-PBD,,basic,18,0,Address; Business Partner; Customer; Personnel; Supplier,component
+I_PRELIMBILLINGDOCPRCGELMNT,Prelim Billing Document Pricing Element,Prelim Billing Document Pricing Element,SD-BIL-PBD,,basic,69,0,G/L Account; Tax Code,component
+I_PRELIMBILLINGDOCUMENT,Preliminary Billing Document,Preliminary Billing Document,SD-BIL-PBD,Dimension,dimension,135,3,Company Code; Customer; Distribution Channel; Division; Document Condition (pricing); Incoterms; Payment Terms; Sales Organization,component
+I_PRELIMBILLINGDOCUMENTITEM,Preliminary Billing Document Item,Preliminary Billing Document Item,SD-BIL-PBD,Dimension,dimension,291,8,Batch; Business Area; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Material / Product; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; Tax Code; WBS Element,component
+I_PRELIMBILLINGDOCUMENTSTDVH,Preliminary Billing Document,Preliminary Billing Document,SD-BIL-PBD,,value_help,3,0,Sales Organization,component

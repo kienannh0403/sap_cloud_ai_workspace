@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danh mục CDS released — Sổ tay ABAP_CLOUD_AI</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <a class="home" href="index.html">Sổ tay ABAP_CLOUD_AI</a>
+    <nav aria-label="Trang">
+      <a href="index.html">Trang chủ</a>
+      <a href="mcp.html">MCP</a>
+      <a href="cds-catalog.html" aria-current="page">CDS released</a>
+    </nav>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="masthead">
+    <p class="eyebrow">Tra cứu · dùng lại cho mọi báo cáo và chức năng</p>
+    <h1>Danh mục CDS view released, chia theo phân hệ</h1>
+    <p class="standfirst">
+      Làm báo cáo nào thì xác định phân hệ trước, rồi lấy view từ đúng folder phân hệ đó. Chỉ khi không thấy mới ra folder liên quan,
+      rồi mới tra ngoài. Nguồn chi tiết: <code>artifacts/system_analysis/CDS_RELEASED_CATALOG/INDEX.md</code>.
+    </p>
+    <div class="facts">
+      <div><span class="k">nguồn</span><span class="v">CDSView_Released_updated (1).xlsx</span></div>
+      <div><span class="k">view</span><span class="v">4.025 duy nhất / 4.489 dòng</span></div>
+      <div><span class="k">folder</span><span class="v">41 = 16 ưu tiên + 25 còn lại</span></div>
+      <div><span class="k">sinh ngày</span><span class="v">2026-09-21</span></div>
+    </div>
+  </header>
+
+  <section id="quy-trinh">
+    <h2>Chọn view cho một báo cáo mới</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Bước</th><th>Làm gì</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">1</td><td>Xác định phân hệ của báo cáo (bảng bên dưới) → mở <code>modules/&lt;folder&gt;/README.md</code>, tra <code>views.csv</code>. Cột <code>key_entities</code> cho biết view có Customer, Material, Company Code…</td></tr>
+          <tr><td class="mono">2</td><td>Không thấy → xem bảng “Phân hệ liên quan” cuối README, hoặc <code>relations/entity_hubs.md</code> (biết cần <i>dữ liệu gì</i>, chưa biết <i>view nào</i>).</td></tr>
+          <tr><td class="mono">3</td><td>Vẫn không thấy → grep <code>catalog_all.csv</code> (mọi view, có cột <code>folder</code>). Hết cách mới ra sap-docs hoặc hệ thống.</td></tr>
+          <tr><td class="mono">4</td><td>Lần đầu dùng một view: đọc lại trên hệ thống <code>SAP(action=read, target=DDLS &lt;tên&gt;)</code>. Trong file = released theo nguồn anh cung cấp, <b>chưa verify trên hệ thống</b>.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="uu-tien">
+    <h2>16 phân hệ ưu tiên (Sheet1)</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Folder</th><th>Phân hệ</th><th>View</th><th>Cách gán</th><th>Ghi chú</th></tr></thead>
+        <tbody>
+<tr><td class="mono">FI-GL_General-Ledger</td><td>General Ledger</td><td class="mono">233</td><td>component 233</td><td>gồm cả I_CostCenter, I_CompanyCode, I_GLAccount (component FI-GL-IS)</td></tr>
+<tr><td class="mono">FI-AP_Accounts-Payable</td><td>Accounts Payable</td><td class="mono">11</td><td>component 11</td><td></td></tr>
+<tr><td class="mono">FI-AR_Accounts-Receivable</td><td>Accounts Receivable</td><td class="mono">23</td><td>component 23</td><td></td></tr>
+<tr><td class="mono">FI-AA_Asset-Accounting</td><td>Asset Accounting</td><td class="mono">9</td><td>component 9</td><td></td></tr>
+<tr><td class="mono">CO-OM_Cost-Center-Accounting</td><td>Cost Center Accounting</td><td class="mono">5</td><td>component 5</td><td>chỉ 5 view; cost center thực nằm ở FI-GL</td></tr>
+<tr><td class="mono">MM-PUR_Purchasing</td><td>Purchasing</td><td class="mono">115</td><td>component 115</td><td></td></tr>
+<tr><td class="mono">MM-IM_Inventory-Management</td><td>Inventory Management</td><td class="mono">73</td><td>component 73</td><td></td></tr>
+<tr><td class="mono">SD-SLS_Sales</td><td>Sales</td><td class="mono">191</td><td>component 191</td><td></td></tr>
+<tr><td class="mono">SD-BIL_Billing</td><td>Billing</td><td class="mono">34</td><td>component 34</td><td></td></tr>
+<tr><td class="mono">PP-SFC_Shop-Floor-Control</td><td>Shop Floor Control</td><td class="mono">23</td><td>keyword 23</td><td>suy luận theo từ khoá tên view (lệnh sản xuất, xác nhận)</td></tr>
+<tr><td class="mono">PP-MRP_MRP</td><td>MRP</td><td class="mono">71</td><td>keyword 68, component 3</td><td>suy luận theo từ khoá tên view (MRP, planned order, requirement)</td></tr>
+<tr><td class="mono">LO-MD-BOM_Bill-of-Material</td><td>Bill of Material</td><td class="mono">9</td><td>component 9</td><td></td></tr>
+<tr><td class="mono">LO-MD-MM_Material-Master</td><td>Material Master</td><td class="mono">102</td><td>component 102</td><td></td></tr>
+<tr><td class="mono">EAM-WCM_Work-Clearance-Management</td><td>Work Clearance Management</td><td class="mono">0</td><td>—</td><td>file KHÔNG có view nào cho Work Clearance Management</td></tr>
+<tr><td class="mono">EAM-OBJ_Technical-Objects</td><td>Technical Objects</td><td class="mono">28</td><td>alias 28</td><td>alias: Sheet1 ghi EAM-OBJ, file có PM-EQM-EQ/FL (Equipment, Functional Location)</td></tr>
+<tr><td class="mono">PS_Project-System</td><td>Project System</td><td class="mono">95</td><td>alias 95</td><td>alias: Sheet1 ghi PS, file chỉ có PPM-SCL-* (Enterprise Project, WBS, project billing)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <p class="lbl">Cách gán</p>
+      <p><b>component</b>: component của view nằm dưới component trong Sheet1 (tin cậy cao). <b>alias</b>: Sheet1 ghi component không có trong file,
+      gán sang component cùng nội dung sau khi đối chiếu tên view. <b>keyword</b>: gán theo từ khoá tên view — <b>suy luận</b>, dùng có kiểm tra.</p>
+    </div>
+  </section>
+
+  <section id="con-lai">
+    <h2>25 nhóm còn lại</h2>
+    <p>Phần không thuộc phân hệ nào ở Sheet1, gom theo module gốc: <code>&lt;TOP&gt;_other</code> nếu module đó đã có folder ưu tiên, ngược lại tên module.
+    Bên trong vẫn có cột <code>component</code> để lọc mịn hơn.</p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Folder</th><th>View</th><th>Component chính</th></tr></thead>
+        <tbody>
+<tr><td class="mono">FIN</td><td class="mono">514</td><td>FIN-CS-MD, FIN-FSCM-TRM, FIN-FSCM-CR, FIN-FSCM-DM</td></tr>
+<tr><td class="mono">FI_other</td><td class="mono">458</td><td>FI-CA, FI-RA, FI-CA-INV, FI-FM</td></tr>
+<tr><td class="mono">PP_other</td><td class="mono">300</td><td>PP-VDM-MD, PP-VDM, PP-KAB-VDM, PP-BD-WKC</td></tr>
+<tr><td class="mono">CA</td><td class="mono">249</td><td>CA-CL, CA-JVA, CA-DMS, CA-ATP-PAL</td></tr>
+<tr><td class="mono">SD_other</td><td class="mono">199</td><td>SD-MD-CM, SD-BF-PR, SD-BF-CM, SD-MD-MM</td></tr>
+<tr><td class="mono">QM</td><td class="mono">173</td><td>QM-PT, QM-IM, QM-QN, QM</td></tr>
+<tr><td class="mono">LO_other</td><td class="mono">158</td><td>LO-MD-BP, LO-AB, LO-WTY-FIO, LO-MD-SN</td></tr>
+<tr><td class="mono">LE</td><td class="mono">116</td><td>LE-SHP-GF, LE-DSD, LE-TRA, LE-SHP-FIO-ANA</td></tr>
+<tr><td class="mono">CRM</td><td class="mono">107</td><td>CRM-S4-REP-RFW, CRM-S4-ANA-CDS, CRM-S4-BF-CM, CRM-S4-SRV-SVO-FIO</td></tr>
+<tr><td class="mono">SLC</td><td class="mono">102</td><td>SLC-EVL, SLC-SUP, SLC-ACT, SLC-CAT</td></tr>
+<tr><td class="mono">BC</td><td class="mono">90</td><td>BC-SRV-ADR, BC-SRV-BSF-CUR, BC-SRV-APS-IAM, BC-SRV-ASF-UOM</td></tr>
+<tr><td class="mono">MM_other</td><td class="mono">85</td><td>MM, MM-IV-LIV, MM-IV-INT-WF</td></tr>
+<tr><td class="mono">TM</td><td class="mono">79</td><td>TM, TM-FRM, TM-MD-ORG, TM-FRS</td></tr>
+<tr><td class="mono">PM_other</td><td class="mono">69</td><td>PM-WOC-MN, PM-WOC-MO, PM-PRM-MP, PM</td></tr>
+<tr><td class="mono">CM</td><td class="mono">53</td><td>CM-LT, CM-DOC, CM-GF, CM-CAT</td></tr>
+<tr><td class="mono">RE</td><td class="mono">51</td><td>RE-FX, RE-FX-CN, RE-FX-BD, RE-FX-RA</td></tr>
+<tr><td class="mono">AP</td><td class="mono">43</td><td>AP-MD-BP-RAP, AP-MD-BP</td></tr>
+<tr><td class="mono">SCM</td><td class="mono">41</td><td>SCM-EWM-WOP, SCM-EWM-DLP</td></tr>
+<tr><td class="mono">PSM</td><td class="mono">35</td><td>PSM, PSM-FM-UP, PSM-GM-GTE-MD, PSM-FM-MD</td></tr>
+<tr><td class="mono">CO_other</td><td class="mono">34</td><td>CO-PC-PCP, CO-PC-OBJ-ORD, CO-PC-ML, CO-PC-ACT</td></tr>
+<tr><td class="mono">SUS</td><td class="mono">32</td><td>SUS-INT, SUS-PFM-INT</td></tr>
+<tr><td class="mono">EC</td><td class="mono">8</td><td>EC-PCA-MD</td></tr>
+<tr><td class="mono">FS</td><td class="mono">3</td><td>FS-CM</td></tr>
+<tr><td class="mono">PLM</td><td class="mono">3</td><td>PLM-WUI-OBJ-ECN</td></tr>
+<tr><td class="mono">FT</td><td class="mono">1</td><td>FT-ITR-CLS</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="quan-he">
+    <h2>Quan hệ giữa các phân hệ</h2>
+    <p>Hai phân hệ <b>liên quan</b> khi cùng có từ 2 view trở lên chứa cùng một entity (Sales Document, Material, Company Code…), lấy từ cột <i>Data element</i>
+    của sheet Fields. Đây là bằng chứng <b>dùng chung khoá dữ liệu</b>, không phải association CDS đã kiểm chứng. Cột <span class="mono">D/M/O</span> = số entity
+    loại DOC (chứng từ) / MASTER (dữ liệu chủ) / ORG (đơn vị tổ chức) dùng chung.</p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Phân hệ A</th><th>Phân hệ B</th><th>D/M/O</th><th>Chứng từ dùng chung</th></tr></thead>
+        <tbody>
+<tr><td class="mono">MM-PUR_Purchasing</td><td class="mono">MM-IM_Inventory-Management</td><td class="mono">3/8/5</td><td>Delivery, Order (production / maintenance / internal), Purchasing Document</td></tr>
+<tr><td class="mono">MM-PUR_Purchasing</td><td class="mono">SD-SLS_Sales</td><td class="mono">2/11/5</td><td>Document Condition (pricing), Order (production / maintenance / internal)</td></tr>
+<tr><td class="mono">FI-GL_General-Ledger</td><td class="mono">SD-SLS_Sales</td><td class="mono">2/7/7</td><td>Order (production / maintenance / internal), Sales Document</td></tr>
+<tr><td class="mono">FI-GL_General-Ledger</td><td class="mono">MM-PUR_Purchasing</td><td class="mono">1/11/6</td><td>Order (production / maintenance / internal)</td></tr>
+<tr><td class="mono">MM-IM_Inventory-Management</td><td class="mono">SD-SLS_Sales</td><td class="mono">1/7/4</td><td>Order (production / maintenance / internal)</td></tr>
+<tr><td class="mono">FI-GL_General-Ledger</td><td class="mono">MM-IM_Inventory-Management</td><td class="mono">1/6/5</td><td>Order (production / maintenance / internal)</td></tr>
+<tr><td class="mono">FI-GL_General-Ledger</td><td class="mono">SD-BIL_Billing</td><td class="mono">1/4/4</td><td>Sales Document</td></tr>
+<tr><td class="mono">SD-SLS_Sales</td><td class="mono">SD-BIL_Billing</td><td class="mono">1/4/3</td><td>Sales Document</td></tr>
+<tr><td class="mono">FI-GL_General-Ledger</td><td class="mono">PS_Project-System</td><td class="mono">1/2/4</td><td>Sales Document</td></tr>
+<tr><td class="mono">SD-SLS_Sales</td><td class="mono">PS_Project-System</td><td class="mono">1/2/2</td><td>Sales Document</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Đủ cặp và láng giềng của từng phân hệ: <code>relations/module_pairs.md</code>, cuối mỗi README, và <code>relations/entity_hubs.md</code>.</p>
+
+    <h3>Luồng nghiệp vụ (kiến thức SAP, không lấy từ file)</h3>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Luồng</th><th>Chuỗi folder</th></tr></thead>
+        <tbody>
+          <tr><td>Order-to-Cash</td><td class="mono">SD-SLS → LE → MM-IM (xuất kho) → SD-BIL → FI-AR → FI-GL</td></tr>
+          <tr><td>Procure-to-Pay</td><td class="mono">MM-PUR → MM-IM → MM_other (MM-IV) → FI-AP → FI-GL</td></tr>
+          <tr><td>Plan-to-Produce</td><td class="mono">LO-MD-MM + LO-MD-BOM → PP-MRP → PP-SFC → MM-IM → CO_other → FI-GL</td></tr>
+          <tr><td>Dự án · Bảo trì</td><td class="mono">PS ↔ CO / SD-SLS / MM-PUR · EAM-OBJ → PM_other → CO</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="bay">
+    <h2>Bẫy khi tra</h2>
+    <div class="trap">
+      <p class="lbl">component không theo trực giác</p>
+      <p><code>I_CostCenter</code>, <code>I_CompanyCode</code>, <code>I_GLAccount</code> nằm ở <code>FI-GL-*</code>, không phải CO. <code>I_Customer</code>, <code>I_Supplier</code>, <code>I_Plant</code> ở
+      <code>LO-MD-*</code> (folder <code>LO_other</code>); <code>I_BusinessPartner</code> ở <code>AP-MD-BP</code> (folder <code>AP</code>). Master data của SD nằm ngoài folder SD.</p>
+    </div>
+    <div class="trap">
+      <p class="lbl">tên có hậu tố</p>
+      <p><code>I_PurchaseOrderAPI01</code>, <code>I_PurchaseRequisitionAPI01</code>, <code>I_MaterialDocumentHeader_2</code>. Tìm theo phần thân tên, đừng tìm tên “gọn”.</p>
+    </div>
+    <div class="trap">
+      <p class="lbl">không thấy trong sheet CDS ≠ không tồn tại</p>
+      <p><code>I_BillingDocument</code>/<code>Item</code> thật ra có trong sheet <b>Fields</b> (chỉ không có ở sheet CDS) — xem mục dưới. <code>I_Material</code>, <code>I_ProductionOrder</code> (khác <code>I_ProductionVersion</code>, đã verify released), <code>I_SalesPricingCondition</code> vẫn chưa thấy ở đâu trong file. File chỉ là nguồn anh cung cấp — tra sap-docs hoặc hệ thống trước khi kết luận.
+      Folder <code>SD-BIL_Billing</code> hiện chỉ có view trạng thái, loại, billing plan, preliminary billing document.</p>
+    </div>
+    <div class="note">
+      <p class="lbl">1.914 view chỉ ở sheet Fields — một số ĐÃ verify released</p>
+      <p>Sheet Fields không nói released hay chưa, nên mặc định không đưa vào folder phân hệ (<code>_fields_only/</code>). Nhưng đối chiếu 2026-09-23 với nguồn khác cho thấy <code>I_TaxCodeRate</code>, <code>I_ActlCostGMatlValueChainItem</code>, <code>I_ActualCostingRunResult</code>, <code>I_ActualCostingActivityResult</code>, <code>I_InventoryPriceByKeyDate_2</code>, <code>I_BillingDocument</code>/<code>Item</code> đã released thật hoặc là candidate mạnh. "Chỉ ở Fields" không đồng nghĩa "chưa xác nhận được".</p>
+    </div>
+    <div class="trap">
+      <p class="lbl">catalog không có BDEF/action (view ghi)</p>
+      <p>File xlsx chỉ liệt CDS view đọc. Mọi BO ghi/action dạng behavior-projection (hậu tố <code>TP</code>, ví dụ <code>I_FreightOrderTP</code>, <code>I_PlndIndepRqmtTp</code>, <code>I_ActualCostRateTP</code>) <b>hoàn toàn vắng mặt</b> — kể cả ở <code>_fields_only/</code>. Cần ghi/action thì tra thẳng ADT/BDEF.</p>
+    </div>
+    <div class="trap">
+      <p class="lbl"><code>#PUBLIC_LOCAL_API</code> ≠ released C1</p>
+      <p><code>I_ActualCostRate</code> và <code>I_AccountingCostRate_2</code> có annotation này nhưng KHÔNG nằm trong <code>released-objects-index.json</code> → dùng trong class ABAP Cloud báo "use not permitted". View đúng cho "Manage Cost Rates – Actual" là <code>I_ActualCostRateTP</code>. Chỉ index released chính thức (hoặc View Browser ADT) mới xác thực được, không suy từ annotation.</p>
+    </div>
+    <div class="note">
+      <p class="lbl">Kiến thức đã verify thật, đối chiếu từ dự án khác</p>
+      <p><code>artifacts/system_analysis/CDS_RELEASED_CATALOG/verified_external/</code> (FI, CO, PP, LE-TM, QM) — field/association/bẫy đã xác nhận bằng released-objects-index hoặc test sống, tin cậy hơn suy luận theo tên trong <code>views.csv</code>. Tenant nguồn khác — vẫn nên xác nhận lại trước khi đưa vào TS.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Sinh tự động bằng <span class="mono">build_catalog.py</span>; đổi file xlsx thì chạy lại, không sửa tay trong <span class="mono">modules/</span>.</p>
+    <p><span class="mono">artifacts/handbook/cds-catalog.html</span></p>
+  </footer>
+
+</div>
+</body>
+</html>

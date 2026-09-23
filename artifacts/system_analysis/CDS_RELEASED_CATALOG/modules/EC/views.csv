@@ -1,0 +1,9 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_PROFITCENTER,Profit Center,Profit Center,EC-PCA-MD,Dimension,dimension,49,0,Company Code; Controlling Area; Profit Center; Segment,top-level
+I_PROFITCENTERHIERARCHY,Profit Center Hierarchy,Profit Center Hierarchy,EC-PCA-MD,Dimension,dimension,11,1,Controlling Area,top-level
+I_PROFITCENTERHIERARCHYNODE,Profit Center Hierarchy Node,Profit Center Hierarchy Node,EC-PCA-MD,,basic,18,0,Controlling Area,top-level
+I_PROFITCENTERHIERARCHYNODET,Profit Center Hierarchy Node - Text,Profit Center Hierarchy Node - Text,EC-PCA-MD,,basic,12,0,Controlling Area,top-level
+I_PROFITCENTERHIERARCHYTEXT,Profit Center Hierarchy - Text,Profit Center Hierarchy - Text,EC-PCA-MD,,text,9,0,,top-level
+I_PROFITCENTERSTDVH,Profit Center,Profit Center,EC-PCA-MD,,value_help,6,0,Controlling Area; Profit Center,top-level
+I_PROFITCENTERTEXT,Profit Center - Text,Profit Center - Text,EC-PCA-MD,,text,10,0,Controlling Area; Profit Center,top-level
+I_PROFITCENTERVH,Profit Center,Profit Center,EC-PCA-MD,,value_help,13,0,Controlling Area; Profit Center; Segment,top-level

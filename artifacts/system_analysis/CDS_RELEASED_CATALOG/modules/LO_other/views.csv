@@ -1,0 +1,159 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_FRTCOSTALLOCACCTGTRANSFSTS,Frt Cost Alloc Acctg Transfer Status,Frt Cost Alloc Acctg Transfer Status,LO-AB,Dimension,dimension,3,0,,top-level
+I_FRTCOSTALLOCBUSPROCCAT,Frt Cost Alloc Business Process Category,Frt Cost Alloc Business Process Category,LO-AB,Dimension,dimension,3,0,,top-level
+I_FRTCOSTALLOCDOC,Freight Cost Allocation Document,Freight Cost Allocation Document,LO-AB,,basic,68,0,Company Code; Distribution Channel; Division; Purchasing Organization; Sales Group; Sales Office; Sales Organization,top-level
+I_FRTCOSTALLOCDOCSTDVH,Freight Cost Allocation Document,Freight Cost Allocation Document,LO-AB,,value_help,8,0,Company Code; Distribution Channel; Division; Purchasing Organization; Sales Organization,top-level
+I_FRTCOSTALLOCDOCTYPEVH,Settlement Document Type,Settlement Document Type,LO-AB,,value_help,2,0,,top-level
+I_FRTCOSTALLOCITM,Freight Cost Allocation Document Item,Freight Cost Allocation Document Item,LO-AB,,basic,113,0,Company Code; Controlling Area; G/L Account; Material / Product; Plant,top-level
+I_FRTCOSTALLOCITMPRCGELMNT,Frt Cost Allocation Item Pricing Element,Frt Cost Allocation Item Pricing Element,LO-AB,,basic,67,0,G/L Account,top-level
+I_FRTCOSTALLOCITMSTDVH,Freight Cost Allocation Document Item,Freight Cost Allocation Document Item,LO-AB,,value_help,3,0,,top-level
+I_FRTCOSTALLOCPRCGELMNT,Freight Cost Allocation Pricing Element,Freight Cost Allocation Pricing Element,LO-AB,,basic,61,0,,top-level
+I_PERSSETTLMTDOC,Personnel Settlement Document,Personnel Settlement Document,LO-AB,,basic,101,1,Company Code; Distribution Channel; Division; Personnel; Sales Group; Sales Office; Sales Organization,top-level
+I_PERSSETTLMTDOCITEM,Personnel Settlement Document Item,Personnel Settlement Document Item,LO-AB,,basic,89,1,Company Code; Controlling Area; G/L Account; Material / Product; Plant,top-level
+I_SALESSPCFCPRODUCTGROUP1,Sales Specific Product Group 1,Sales Specific Product Group 1,LO-AB,Dimension,dimension,2,0,,top-level
+I_SALESSPCFCPRODUCTGROUP1TEXT,Sales Specific Product Group 1 - Text,Sales Specific Product Group 1 - Text,LO-AB,,text,5,0,,top-level
+I_SALESSPCFCPRODUCTGROUP2,Sales Specific Product Group 2,Sales Specific Product Group 2,LO-AB,Dimension,dimension,2,0,,top-level
+I_SALESSPCFCPRODUCTGROUP2TEXT,Sales Specific Product Group 2 - Text,Sales Specific Product Group 2 - Text,LO-AB,,text,5,0,,top-level
+I_SALESSPCFCPRODUCTGROUP3,Sales Specific Product Group 3,Sales Specific Product Group 3,LO-AB,Dimension,dimension,2,0,,top-level
+I_SALESSPCFCPRODUCTGROUP3TEXT,Sales Specific Product Group 3 - Text,Sales Specific Product Group 3 - Text,LO-AB,,text,5,0,,top-level
+I_SALESSPCFCPRODUCTGROUP4,Sales Specific Product Group 4,Sales Specific Product Group 4,LO-AB,Dimension,dimension,2,0,,top-level
+I_SALESSPCFCPRODUCTGROUP4TEXT,Sales Specific Product Group 4 - Text,Sales Specific Product Group 4 - Text,LO-AB,,text,5,0,,top-level
+I_SALESSPCFCPRODUCTGROUP5,Sales Specific Product Group 5,Sales Specific Product Group 5,LO-AB,Dimension,dimension,2,0,,top-level
+I_SALESSPCFCPRODUCTGROUP5TEXT,Sales Specific Product Group 5 - Text,Sales Specific Product Group 5 - Text,LO-AB,,text,5,0,,top-level
+I_SETTLMTDOC,Settlement Document,Settlement Document,LO-AB,Dimension,dimension,240,0,Distribution Channel; Division; Incoterms; Purchasing Organization; Sales Group; Sales Office; Sales Organization,top-level
+I_SETTLMTDOCCUSTPRCGELMNT,Settlmt Doc Customer Pricing Element,Settlmt Doc Customer Pricing Element,LO-AB,,basic,66,4,Tax Code,top-level
+I_SETTLMTDOCITEM,Settlement Document Item,Settlement Document Item,LO-AB,Dimension,dimension,238,0,Batch; Controlling Area; G/L Account; Incoterms; Material / Product; Plant,top-level
+I_SETTLMTDOCITEMPARTNER,Settlement Document Item Partner,Settlement Document Item Partner,LO-AB,Dimension,dimension,28,0,Address; Business Partner; Customer; Personnel; Supplier,top-level
+I_SETTLMTDOCITMCUSTPRCGELMNT,Settlmt Doc Item Cust Pricing Element,Settlmt Doc Item Cust Pricing Element,LO-AB,,basic,70,4,Tax Code,top-level
+I_SETTLMTDOCITMSUPLRPRCGELMNT,Settlmt Doc Item Suplr Pricing Element,Settlmt Doc Item Suplr Pricing Element,LO-AB,,basic,70,4,Tax Code,top-level
+I_SETTLMTDOCPARTNER,Settlement Document Partner,Settlement Document Partner,LO-AB,Dimension,dimension,26,0,Address; Business Partner; Customer; Personnel; Supplier,top-level
+I_SETTLMTDOCSUPLRPRCGELMNT,Settlmt Doc Supplier Pricing Element,Settlmt Doc Supplier Pricing Element,LO-AB,,basic,66,4,Tax Code,top-level
+I_SETTLMTDOCTYPE,Settlement Document Type,Settlement Document Type,LO-AB,Dimension,dimension,29,0,,top-level
+I_SETTLMTPROCESSCAT,Settlement Process Category,Settlement Process Category,LO-AB,Dimension,dimension,3,0,,top-level
+I_SETTLMTPROCESSTYPE,Settlement Process Type,Settlement Process Type,LO-AB,Dimension,dimension,29,0,,top-level
+I_SETTLMTPROCESSTYPESTDVH,Settlement Process Type,Settlement Process Type,LO-AB,,value_help,3,0,,top-level
+I_RETSMGMTPROCESS,Returns Management Process,Returns Management Process,LO-ARM,,basic,6,0,,top-level
+I_RETURNREASON,Return Reason,Return Reason,LO-ARM,Dimension,dimension,2,0,,top-level
+I_RETURNREASONTEXT,Return Reason - Text,Return Reason - Text,LO-ARM,,text,5,0,,top-level
+I_RETURNSDOCUMENTTYPE,Returns Document Type,Returns Document Type,LO-ARM,Dimension,dimension,3,0,,top-level
+I_RETURNSDOCUMENTTYPETEXT,Returns Document Type - Text,Returns Document Type - Text,LO-ARM,,text,5,0,,top-level
+I_RETURNSFOLLOWUPACTIVITY,Logistical Follow-Up Activities for Customer Returns,Logistical Follow-Up Activities for Customer Returns,LO-ARM,Dimension,dimension,3,1,,top-level
+I_RETURNSFOLLOWUPACTIVITYTEXT,Logistical Follow-Up Activities for Customer Returns - Text,Logistical Follow-Up Activities for Customer Returns - Text,LO-ARM,,text,5,0,,top-level
+I_RETURNSINSPECTIONCODE,Returns Inspection Code,Returns Inspection Code,LO-ARM,Dimension,dimension,2,0,,top-level
+I_RETURNSINSPECTIONCODETEXT,Returns Inspection Code - Text,Returns Inspection Code - Text,LO-ARM,,text,5,0,,top-level
+I_RETURNSREFUNDEXTENT,Returns Refund Extent,Returns Refund Extent,LO-ARM,Dimension,dimension,2,0,,top-level
+I_RETURNSREFUNDEXTENTTEXT,Returns Refund Extent - Text,Returns Refund Extent - Text,LO-ARM,,text,5,0,,top-level
+I_RETURNSINSPECTIONITEM_2,Returns Inspection Item,Returns Inspection Item,LO-ARM-INS,,basic,27,0,Material / Product; Storage Location; Supplier,top-level
+I_RETURNSINSPECTION_2,Returns Inspection,Returns Inspection,LO-ARM-INS,,basic,10,0,Delivery,top-level
+I_CNDNCONTRACTVTNSTATUS,Condition Contract Activation Status,Condition Contract Activation Status,LO-GT-CHB,Dimension,dimension,3,0,,top-level
+I_CNDNCONTRACTVTNSTATUSTEXT,Condition Contract Activation Status - Text,Condition Contract Activation Status - Text,LO-GT-CHB,,text,6,0,,top-level
+I_CNDNCONTRBUSVOLSELCRITERIA,Condition Contract Bus Vol Sel Critra,Condition Contract Bus Vol Sel Critra,LO-GT-CHB,Dimension,dimension,120,6,Company Code; Customer; Distribution Channel; Division; Material / Product; Plant; Purchasing Organization; Sales Group; Sales Office; Sales Organization; Supplier,top-level
+I_CNDNCONTRPROCVAR,Condition Contract Process Variant,Condition Contract Process Variant,LO-GT-CHB,Dimension,dimension,12,0,,top-level
+I_CNDNCONTRSETTLMTCAL,Settlmt Calendar of Condition Contract,Settlmt Calendar of Condition Contract,LO-GT-CHB,,basic,15,0,,top-level
+I_CNDNCONTRSETTLMTDETLDSTMNT,Cndn Contr Settlmt Detailed Statement,Cndn Contr Settlmt Detailed Statement,LO-GT-CHB,,basic,33,0,,top-level
+I_CNDNCONTRTYPE,Condition Contract Type,Condition Contract Type,LO-GT-CHB,Dimension,dimension,23,0,,top-level
+I_CONDITIONCONTRACT,Condition Contract,Condition Contract,LO-GT-CHB,Dimension,dimension,121,2,Company Code; Distribution Channel; Division; Payment Terms; Purchasing Organization; Sales Group; Sales Office; Sales Organization,top-level
+I_CONDITIONDOCUMENT,Condition Document,Condition Document,LO-GT-CHB,,basic,25,0,Company Code; Distribution Channel; Division; Purchasing Organization; Sales Organization,top-level
+I_HANDLINGUNITHEADER,Handling Unit Header,Handling Unit Header,LO-HU,,basic,83,0,Sales Organization; Shipping Point,top-level
+I_HANDLINGUNITITEM,Handling Unit Item,Handling Unit Item,LO-HU,,basic,40,0,Batch; Delivery; Inspection Lot; Material / Product; Plant; Storage Location,top-level
+I_PACKINGINSTRUCTIONCOMPONENT,Packing Instruction Component,Packing Instruction Component,LO-HU,,basic,17,0,,top-level
+I_PACKINGINSTRUCTIONHEADER,Packing Instruction Header,Packing Instruction Header,LO-HU,,basic,47,0,,top-level
+I_BUSINESSPARTNERBANK,Business Partner Bank,Business Partner Bank,LO-MD-BP,Dimension,dimension,29,1,Business Partner,top-level
+I_BUSINESSPARTNERCUSTOMER,Business Partner Customer,Business Partner Customer,LO-MD-BP,Dimension,dimension,97,0,Business Partner; Customer; Plant; Supplier,top-level
+I_BUSINESSPARTNERSUPPLIER,Business Partner Supplier,Business Partner Supplier,LO-MD-BP,Dimension,dimension,67,0,Business Partner; Customer; Supplier,top-level
+I_BUSPARTINDUSTRYCODE,Business Partner Industry Code,Business Partner Industry Code,LO-MD-BP,,basic,2,0,,top-level
+I_BUSPARTINDUSTRYCODETEXT,BusPartIndustryCode - Text,BusPartIndustryCode - Text,LO-MD-BP,,text,3,0,,top-level
+I_CONTACTPERSON,Contact Person,Contact Person,LO-MD-BP,Dimension,dimension,18,1,Customer; Supplier,top-level
+I_CUSTADDRDEPDNTEXTIDENTIFIER,Customer External Identifier for Address,Customer External Identifier for Address,LO-MD-BP,,basic,6,0,Customer,top-level
+I_CUSTADDRDEPDNTINFORMATION,Info Dependent on Customer Address,Info Dependent on Customer Address,LO-MD-BP,,basic,9,0,Customer,top-level
+I_CUSTCNDNGROUPVALUEHELPTEXT,Customer Condition Group - Text,Customer Condition Group - Text,LO-MD-BP,,text,4,0,,top-level
+I_CUSTDEPARTMENTADDRDEPDNTINFO,Department dependent on Customer Address,Department dependent on Customer Address,LO-MD-BP,,basic,10,0,Customer,top-level
+I_CUSTOMER,Customer,Customer,LO-MD-BP,Dimension,dimension,131,0,Customer; Supplier,top-level
+I_CUSTOMERACCOUNTGROUP,Customer Account Group,Customer Account Group,LO-MD-BP,Dimension,dimension,2,0,,top-level
+I_CUSTOMERACCOUNTGROUPSTDVH,Customer Account Group,Customer Account Group,LO-MD-BP,,value_help,2,0,,top-level
+I_CUSTOMERACCOUNTGROUPTEXT,Customer Account Group - Text,Customer Account Group - Text,LO-MD-BP,,text,5,0,,top-level
+I_CUSTOMERCOMPANY,Customer Company,Customer Company,LO-MD-BP,Dimension,dimension,76,0,Company Code; Customer; Payment Terms; Personnel,top-level
+I_CUSTOMERCONDITIONGROUPVH,Customer Condition Group,Customer Condition Group,LO-MD-BP,Dimension,value_help,2,0,,top-level
+I_CUSTOMERDUNNING,Customer Company Code Dunning Fields,Customer Company Code Dunning Fields,LO-MD-BP,Dimension,dimension,20,0,Company Code; Customer,top-level
+I_CUSTOMERSALESAREA,Customer Sales Area,Customer Sales Area,LO-MD-BP,Dimension,dimension,92,2,Customer; Distribution Channel; Division; Incoterms; Payment Terms; Sales Group; Sales Office; Sales Organization,top-level
+I_CUSTOMERSEPAMANDATE,Customer SEPA Mandate,Customer SEPA Mandate,LO-MD-BP,,basic,29,0,,top-level
+I_CUSTOMERTAXGROUPING,Customer Tax Grouping,Customer Tax Grouping,LO-MD-BP,,basic,11,0,Customer,top-level
+I_CUSTOMERTOBUSINESSPARTNER,Customer to BusinessPartner Relationship,Customer to BusinessPartner Relationship,LO-MD-BP,Dimension,dimension,4,0,Customer,top-level
+I_CUSTOMERUNLOADINGPOINT,Customer Unloading Point,Customer Unloading Point,LO-MD-BP,Dimension,dimension,34,0,Customer,top-level
+I_CUSTOMERWITHTAX,Customer WithHolding Tax,Customer WithHolding Tax,LO-MD-BP,Dimension,dimension,17,0,Company Code; Customer,top-level
+I_CUSTOMER_TO_BUSINESSPARTNER,Customer to BusinessPartner Relationship,Customer to BusinessPartner Relationship,LO-MD-BP,Dimension,dimension,5,0,Customer,top-level
+I_CUSTOMER_VH,Customer,Customer,LO-MD-BP,,value_help,30,0,Business Partner; Customer,top-level
+I_CUSTRCVGPTADDRDEPDNTINFO,Receiving Points dependent on Address,Receiving Points dependent on Address,LO-MD-BP,,basic,6,0,Customer,top-level
+I_CUSTSALESAREATAX,Customer Sales Area Tax,Customer Sales Area Tax,LO-MD-BP,Dimension,dimension,15,0,Customer; Division; Sales Organization,top-level
+I_CUSTSALESPARTNERCOUNTER,Partner Counter,Partner Counter,LO-MD-BP,,basic,1,0,,top-level
+I_CUSTSALESPARTNERFUNC,Customer Sales Area Partner Function,Customer Sales Area Partner Function,LO-MD-BP,Dimension,dimension,20,0,Customer; Distribution Channel; Division; Personnel; Sales Organization; Supplier,top-level
+I_CUSTSLSAREAADDRDEPDNTINFO,Info Depdnt on Cust Addr and Sales Area,Info Depdnt on Cust Addr and Sales Area,LO-MD-BP,,basic,27,0,Customer; Distribution Channel; Division; Incoterms; Sales Group; Sales Office; Sales Organization,top-level
+I_CUSTSLSAREAADDRDEPDNTTAXINFO,Customer Sales Area Address dep Tax,Customer Sales Area Address dep Tax,LO-MD-BP,,basic,16,0,Customer; Division; Sales Organization,top-level
+I_CUSTUNLDGPTADDRDEPDNTINFO,Unloading Points dependent on Address,Unloading Points dependent on Address,LO-MD-BP,,basic,36,0,Customer,top-level
+I_SUPLRBANKDETAILSBYINTID,Supplier Bank Details by Internal ID,Supplier Bank Details by Internal ID,LO-MD-BP,Dimension,dimension,12,0,Supplier,top-level
+I_SUPLRBKDETSBYINTIDSTDVH,Supplier Bank Details by Internal ID,Supplier Bank Details by Internal ID,LO-MD-BP,,value_help,5,0,Supplier,top-level
+I_SUPPLIER,Supplier,Supplier,LO-MD-BP,Dimension,dimension,157,1,Customer; Supplier,top-level
+I_SUPPLIERACCOUNTGROUP,Supplier Account Group,Supplier Account Group,LO-MD-BP,Dimension,dimension,4,0,,top-level
+I_SUPPLIERACCOUNTGROUPSTDVH,Supplier Account Group,Supplier Account Group,LO-MD-BP,,value_help,2,0,,top-level
+I_SUPPLIERACCOUNTGROUPTEXT,Supplier Account Group - Text,Supplier Account Group - Text,LO-MD-BP,,text,5,0,,top-level
+I_SUPPLIERCOMPANY,Supplier Company,Supplier Company,LO-MD-BP,Fact,fact,78,0,Company Code; Payment Terms; Personnel; Supplier,top-level
+I_SUPPLIERDUNNING,Supplier Company Code Dunning,Supplier Company Code Dunning,LO-MD-BP,,basic,20,0,Company Code; Supplier,top-level
+I_SUPPLIERPARTNERCOUNTER,Supplier Partner Counter,Supplier Partner Counter,LO-MD-BP,,basic,1,0,,top-level
+I_SUPPLIERPARTNERFUNC,Supplier Purchasing Partner Function,Supplier Purchasing Partner Function,LO-MD-BP,Dimension,dimension,20,0,Personnel; Plant; Purchasing Organization; Supplier,top-level
+I_SUPPLIERPURCHASINGORG,Supplier Purchasing Organization,Supplier Purchasing Organization,LO-MD-BP,Dimension,dimension,55,0,Incoterms; Payment Terms; Purchasing Organization,top-level
+I_SUPPLIERSUBRANGE,Supplier Subrange,Supplier Subrange,LO-MD-BP,Dimension,dimension,20,0,Supplier,top-level
+I_SUPPLIERTOBUSINESSPARTNER,Supplier to BusinessPartner Relationship,Supplier to BusinessPartner Relationship,LO-MD-BP,Dimension,dimension,4,0,Supplier,top-level
+I_SUPPLIERWITHHOLDINGTAX,Supplier WithHolding Tax,Supplier WithHolding Tax,LO-MD-BP,Dimension,dimension,15,0,Company Code; Supplier,top-level
+I_SUPPLIER_TO_BUSINESSPARTNER,Supplier to BusinessPartner Relationship,Supplier to BusinessPartner Relationship,LO-MD-BP,Dimension,dimension,5,0,Supplier,top-level
+I_SUPPLIER_VH,Supplier,Supplier,LO-MD-BP,,value_help,20,0,Business Partner; Supplier,top-level
+I_PLANT,Plant,Plant,LO-MD-PL,Dimension,dimension,25,1,Plant; Purchasing Organization; Valuation Area,top-level
+I_PLANTCATEGORYT,Plant Category - Text,Plant Category - Text,LO-MD-PL,,basic,4,0,,top-level
+I_PLANTSTDVH,Plant,Plant,LO-MD-PL,Dimension,value_help,2,0,Plant,top-level
+I_VALUATIONAREA,Valuation Area,Valuation Area,LO-MD-PL,Dimension,dimension,3,0,Company Code; Valuation Area,top-level
+I_SERIALNOEXPLICITNESSLEVEL,Level of Explicitness for Serial Number,Level of Explicitness for Serial Number,LO-MD-SN,,basic,3,0,,top-level
+I_SERIALNOEXPLICITNESSLEVELTXT,Lvl of Explicitness for Serial No - Text,Lvl of Explicitness for Serial No - Text,LO-MD-SN,,text,5,0,,top-level
+I_SERIALNUMBERDELIVERYDOCUMENT,Serial Number in Delivery Document,Serial Number in Delivery Document,LO-MD-SN,,basic,9,0,Delivery; Equipment; Material / Product,top-level
+I_SERIALNUMBERHANDLINGUNIT,Serial Number in Handling Unit,Serial Number in Handling Unit,LO-MD-SN,,basic,10,0,Equipment; Material / Product,top-level
+I_SERIALNUMBERINSPECTIONLOT,Serial Number in Inspection Lot,Serial Number in Inspection Lot,LO-MD-SN,,basic,7,0,Equipment; Inspection Lot; Material / Product,top-level
+I_SERIALNUMBERMAINTENANCEORDER,Serial Number in Maintenance Order,Serial Number in Maintenance Order,LO-MD-SN,,basic,7,0,Equipment; Material / Product; Order (production / maintenance / internal),top-level
+I_SERIALNUMBERMANUFACTURINGORD,Serial Number in Manufacturing Order,Serial Number in Manufacturing Order,LO-MD-SN,,basic,9,0,Equipment; Material / Product; Order (production / maintenance / internal),top-level
+I_SERIALNUMBERMATERIALDOC_2,Serial Number in Material Document,Serial Number in Material Document,LO-MD-SN,,basic,11,0,Equipment; Material / Product,top-level
+I_SERIALNUMBERPHYSINVENTORYDOC,Serial Number in Physical Inventory Doc,Serial Number in Physical Inventory Doc,LO-MD-SN,,basic,12,0,Equipment; Fiscal Year; Material / Product,top-level
+I_SERIALNUMBERPROFILETEXT,Serial Number Profile - Text,Serial Number Profile - Text,LO-MD-SN,,text,4,0,,top-level
+I_SERIALNUMBERPURCHASEORDER,Serial Number in Purchase Order,Serial Number in Purchase Order,LO-MD-SN,,basic,9,0,Equipment; Material / Product; Purchasing Document,top-level
+I_SERIALNUMBERPURCHASEREQN,Serial Number in Purchase Requisition,Serial Number in Purchase Requisition,LO-MD-SN,,basic,9,0,Equipment; Material / Product,top-level
+I_SERIALNUMBERSALESORDER,Serial Number in Sales Order,Serial Number in Sales Order,LO-MD-SN,,basic,9,0,Equipment; Material / Product; Sales Document,top-level
+I_SERIALNUMBERSTOCKSEGMENT,Serial Number Stock Segment,Serial Number Stock Segment,LO-MD-SN,Dimension,dimension,27,0,Equipment; Material / Product; Plant; Storage Location; WBS Element,top-level
+I_STRUCDARTICLEEXPLSNRLVTAPPL,Transaction Key for structured materials,Transaction Key for structured materials,LO-RFM-MD-ART,Dimension,dimension,2,0,,top-level
+I_WARRANTYCLAIMITEMTYPEVH,Item type based on claim type,Item type based on claim type,LO-WTY-FIO,,value_help,4,0,,top-level
+I_WARRANTYCLAIMVERSIONCATEGORY,Claim Version category for Warranty,Claim Version category for Warranty,LO-WTY-FIO,Dimension,dimension,2,0,,top-level
+I_WARRANTYRETURNEDPARTSSTATUS,Status for Parts to be returned,Status for Parts to be returned,LO-WTY-FIO,,basic,5,0,,top-level
+I_WRNTYCLAIMAPPLICATIONLOG,Warranty claim application log,Warranty claim application log,LO-WTY-FIO,Dimension,dimension,7,0,,top-level
+I_WRNTYCLAIMCATEGORY,Claim Category,Claim Category,LO-WTY-FIO,Dimension,dimension,2,0,,top-level
+I_WRNTYCLAIMCATEGORYTEXT,Claim Category - Txt,Claim Category - Txt,LO-WTY-FIO,,text,5,0,,top-level
+I_WRNTYCLAIMCOVERAGETYPE,Coverage Type,Coverage Type,LO-WTY-FIO,Dimension,dimension,2,0,,top-level
+I_WRNTYCLAIMCOVERAGETYPETEXT,Coverage Type - Text,Coverage Type - Text,LO-WTY-FIO,,text,4,0,,top-level
+I_WRNTYCLAIMCTRLGITEMTYPETEXT,Warranty Claim Ctrlg Item Type - Text,Warranty Claim Ctrlg Item Type - Text,LO-WTY-FIO,,text,5,0,,top-level
+I_WRNTYCLAIMDECISIONCODE,Warranty Decision Code,Warranty Decision Code,LO-WTY-FIO,Dimension,dimension,3,0,,top-level
+I_WRNTYCLAIMDECISIONCODETEXT,Warranty Decision Code - Text,Warranty Decision Code - Text,LO-WTY-FIO,,text,5,0,,top-level
+I_WRNTYCLAIMHEADER,Warranty Claim Header,Warranty Claim Header,LO-WTY-FIO,,basic,60,0,,top-level
+I_WRNTYCLAIMITEM,Warranty Claim Item,Warranty Claim Item,LO-WTY-FIO,,basic,46,0,Document Condition (pricing),top-level
+I_WRNTYCLAIMITEMDFLTCNDNTYPE,Wrnty Claim Item Dflt Cndn Type,Wrnty Claim Item Dflt Cndn Type,LO-WTY-FIO,Dimension,dimension,13,0,,top-level
+I_WRNTYCLAIMITEMTYPE,Warranty Item Type,Warranty Item Type,LO-WTY-FIO,Dimension,dimension,3,0,,top-level
+I_WRNTYCLAIMITEMTYPECATALOG,Warranty Item Type Catalog,Warranty Item Type Catalog,LO-WTY-FIO,,basic,3,0,,top-level
+I_WRNTYCLAIMITEMTYPECATALOGTXT,Warranty Item Type Catalog - Text,Warranty Item Type Catalog - Text,LO-WTY-FIO,,text,6,0,,top-level
+I_WRNTYCLAIMITEMTYPETEXT,Warranty Item Type - Text,Warranty Item Type - Text,LO-WTY-FIO,,text,5,0,,top-level
+I_WRNTYCLAIMOBJECTTYPE,Reference Object Type,Reference Object Type,LO-WTY-FIO,Dimension,dimension,2,0,,top-level
+I_WRNTYCLAIMOBJECTTYPETEXT,Reference Object Type - Text,Reference Object Type - Text,LO-WTY-FIO,,text,4,0,,top-level
+I_WRNTYCLAIMPARTNER,Warrty Claim Partner,Warrty Claim Partner,LO-WTY-FIO,,basic,17,0,Supplier,top-level
+I_WRNTYCLAIMPROCESSINGSTATUS,Warranty processing status,Warranty processing status,LO-WTY-FIO,Dimension,dimension,6,0,,top-level
+I_WRNTYCLAIMPROCESSINGSTSTEXT,Warranty processing status - Text,Warranty processing status - Text,LO-WTY-FIO,,text,4,0,,top-level
+I_WRNTYCLAIMTYPE,Warrnty Claim Type,Warrnty Claim Type,LO-WTY-FIO,Dimension,dimension,4,0,,top-level
+I_WRNTYCLAIMTYPETEXT,Warrnty Claim Type - Text,Warrnty Claim Type - Text,LO-WTY-FIO,,text,4,0,,top-level
+I_WRNTYCLAIMVERSION,Warranty Claim Version,Warranty Claim Version,LO-WTY-FIO,,basic,41,0,Document Condition (pricing),top-level
+I_WRNTYCLAIMVERSIONCATEGORYTXT,Version category - Text,Version category - Text,LO-WTY-FIO,,text,5,0,,top-level
+I_WRNTYCLMCONTROLLINGITEMTYPE,Warranty Claim Controlling item type,Warranty Claim Controlling item type,LO-WTY-FIO,Dimension,dimension,2,0,,top-level
+I_WRNTYDEFECTCODETEXT,Defect code for warranty - Text,Defect code for warranty - Text,LO-WTY-FIO,,text,4,0,,top-level
+I_WRNTYRETURNEDPARTSSTATUSTEXT,Return Parts Status - Text,Return Parts Status - Text,LO-WTY-FIO,,text,6,0,,top-level
+I_WRNTYRETURNEDSTATUS,Status for Parts to be returned,Status for Parts to be returned,LO-WTY-FIO,,basic,5,0,,top-level
+I_WRNTYRETURNEDSTATUSTEXT,Status for Parts to be returned - Text,Status for Parts to be returned - Text,LO-WTY-FIO,,text,6,0,,top-level

@@ -1,0 +1,10 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_DOCUMENTBOMLINK,Document Link for Bill of Material,Document Link for Bill of Material,LO-MD-BOM,,basic,7,0,,component
+I_EQUIPMENTBOMLINK,Equipment to BOM Link,Equipment to BOM Link,LO-MD-BOM,,basic,7,0,Equipment; Plant,component
+I_FUNCTIONALLOCBOMLINK,Link Between Functional Location and BOM,Link Between Functional Location and BOM,LO-MD-BOM,,basic,7,0,Plant,component
+I_MATERIALBOMLINK,Material Link for Bill of Material,Material Link for Bill of Material,LO-MD-BOM,Fact,fact,13,0,Material / Product; Plant,component
+I_MATERIALBOMLINKDEX,Data Extraction MAST,Data Extraction MAST,LO-MD-BOM,Fact,fact,0,0,,component
+I_PROJECTBOMLINK,Work Breakdown Structure Link for BOM,Work Breakdown Structure Link for BOM,LO-MD-BOM,,basic,8,0,Material / Product; Plant,component
+I_SALESORDERBOMLINK,Sales Order Link for BOM,Sales Order Link for BOM,LO-MD-BOM,,basic,9,0,Material / Product; Plant,component
+I_SALESORDERBOMLINKDEX,Data extraction for SO bomlink,Data extraction for SO bomlink,LO-MD-BOM,Fact,fact,0,0,,component
+I_STANDARDBOMLINK,Standard Link for BOM,Standard Link for BOM,LO-MD-BOM,,basic,7,0,Plant,component

@@ -1,0 +1,35 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_MATLINVTRYLDGRQTYSTRUCTURE,Matl Invtry Ledger with Qty Structure,Matl Invtry Ledger with Qty Structure,CO-PC-ACT,,basic,31,0,Controlling Area; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area; WBS Element,top-level
+I_TRANSBSDMATLVALUECHAINITEM,Transaction-Based Material Value Chain Item,Transaction-Based Material Value Chain Item,CO-PC-ACT,Fact,fact,39,0,Controlling Area; G/L Account; Material / Product; Movement Type; SD/LE Document (generic VBELN); Supplier; Valuation Area; WBS Element,top-level
+I_INVENTORYPRICEBYKEYDATE,Inventory Price By KeyDate,Inventory Price By KeyDate,CO-PC-ML,Cube,cube,31,0,Company Code; Fiscal Year; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area,top-level
+I_MATERIALLEDGERCUBE_LIT,Line Item for Material Ledger - Cube,Line Item for Material Ledger - Cube,CO-PC-ML,Cube,cube,78,0,Company Code; Controlling Area; Fiscal Year; G/L Account; Material / Product; Material Group; Plant; Segment; Valuation Area,top-level
+I_MATERIALVALUATIONTYPEVH,Inventory Valuation Type,Inventory Valuation Type,CO-PC-ML,Dimension,value_help,6,0,Valuation Area,top-level
+I_EVENTBASEDPROCESSINGKEY,Event-Based Posting Processing Key,Event-Based Posting Processing Key,CO-PC-OBJ-ORD,,basic,3,0,,top-level
+I_EVENTBASEDPROCESSINGKEYSTDVH,Event-Based Posting Processing Key,Event-Based Posting Processing Key,CO-PC-OBJ-ORD,,value_help,2,0,,top-level
+I_EVENTBASEDPROCESSINGKEYTEXT,Event-Based Processing Key - Text,Event-Based Processing Key - Text,CO-PC-OBJ-ORD,,text,4,0,,top-level
+I_MFGORDERACTLPLANTGTLDGRCOST,Manufacturing Order Actual Plan Target Ledger Specific Cost,Manufacturing Order Actual Plan Target Ledger Specific Cost,CO-PC-OBJ-ORD,Cube,cube,74,0,Chart of Accounts; Company Code; Controlling Area; G/L Account; Material / Product; Plant; WBS Element,top-level
+I_MFGORDEREVTBSDWIPVARIANCE,Event-Based WIP and Variance of Manufacturing Order,Event-Based WIP and Variance of Manufacturing Order,CO-PC-OBJ-ORD,Cube,cube,62,0,Company Code; Controlling Area; G/L Account; Plant,top-level
+I_PCCACTLTGTCOSTCUBE,Actual and Target Costs for PCC - Cube,Actual and Target Costs for PCC - Cube,CO-PC-OBJ-PER,Cube,cube,38,0,Chart of Accounts; Company Code; Controlling Area; G/L Account; Material / Product; Plant,top-level
+I_PCCEVTBSDWIPVARIANCECUBE,WIP and Variance for Event-Based PCC - Cube,WIP and Variance for Event-Based PCC - Cube,CO-PC-OBJ-PER,Cube,cube,30,0,Company Code; G/L Account; Plant,top-level
+I_COSTCOMPONENTSTDVH,Cost Component,Cost Component,CO-PC-PCP,,value_help,4,0,,top-level
+I_COSTINGOVERHEADGROUP,Costing Overhead Group,Costing Overhead Group,CO-PC-PCP,Dimension,dimension,5,0,Valuation Area,top-level
+I_COSTINGOVERHEADGROUPTEXT,Cost Overhead Group - Text,Cost Overhead Group - Text,CO-PC-PCP,,text,6,0,Valuation Area,top-level
+I_COSTINGTYPE,Costing Type,Costing Type,CO-PC-PCP,Dimension,dimension,8,0,,top-level
+I_COSTINGTYPESTDVH,Costing Type,Costing Type,CO-PC-PCP,,value_help,3,0,,top-level
+I_COSTINGTYPETEXT,Costing Type - Text,Costing Type - Text,CO-PC-PCP,,text,4,0,,top-level
+I_COSTINGVALUATIONVARIANT,Valuation Variant in Costing,Valuation Variant in Costing,CO-PC-PCP,Dimension,dimension,6,0,,top-level
+I_COSTINGVALUATIONVARIANTSTDVH,Valuation Variant,Valuation Variant,CO-PC-PCP,,value_help,9,0,,top-level
+I_COSTINGVALUATIONVARTEXT,Valuation Variant in Costing - Text,Valuation Variant in Costing - Text,CO-PC-PCP,,text,4,0,,top-level
+I_COSTINGVARIANTSTDVH,Costing Variant,Costing Variant,CO-PC-PCP,,value_help,7,0,,top-level
+I_COSTINGVARIANTTEXT,Costing Variant - Text,Costing Variant - Text,CO-PC-PCP,,text,4,0,,top-level
+I_COSTINGVERSION,Costing Version,Costing Version,CO-PC-PCP,Dimension,dimension,9,0,,top-level
+I_COSTINGVERSIONTEXT,Costing Version - Text,Costing Version - Text,CO-PC-PCP,,text,8,0,,top-level
+I_COSTORIGINGROUP,Cost Origin Group,Cost Origin Group,CO-PC-PCP,Dimension,dimension,6,0,Controlling Area,top-level
+I_COSTORIGINGROUPTEXT,Cost Origin Group - Text,Cost Origin Group - Text,CO-PC-PCP,,text,8,0,Controlling Area,top-level
+I_PRODCOSTESTCOSTCOMPRAWDEX,Prod Cost Est Cost Comp Raw Data Ext,Prod Cost Est Cost Comp Raw Data Ext,CO-PC-PCP,Fact,fact,135,0,,top-level
+I_PRODCOSTINGCOSTINGVARIANTVH,Costing Variant,Costing Variant,CO-PC-PCP,,value_help,5,0,,top-level
+I_PRODUCTCOSTESTIMATE,Product Cost Estimate,Product Cost Estimate,CO-PC-PCP,Fact,fact,104,4,Business Area; Company Code; Controlling Area; Material / Product; Plant; Profit Center; Task List (routing) group; Valuation Area,top-level
+I_SLSDOCCOSTINGVARIANTVH,Costing Variant,Costing Variant,CO-PC-PCP,,value_help,2,0,,top-level
+I_SLSORDPROJVALNSTRATEGYSTDVH,Valuationn Strategy,Valuationn Strategy,CO-PC-PCP,,value_help,3,0,,top-level
+I_SLSORDPROJVALNSTRATEGYTEXT,Valuation Strategy - Text,Valuation Strategy - Text,CO-PC-PCP,,text,4,0,,top-level
+I_SLSORDPROJVALUATIONSTRATEGY,Valuation Strategy,Valuation Strategy,CO-PC-PCP,,basic,2,0,,top-level

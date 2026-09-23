@@ -1,0 +1,200 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_CREDITMEMOREQUESTITEMCUBE,Credit Memo Request Item - Cube,Credit Memo Request Item - Cube,SD-ANA,Cube,cube,103,4,Business Area; Customer; Distribution Channel; Division; Material / Product; Material Group; Payment Terms; Sales Document Type; Sales Group; Sales Office; Sales Organization,top-level
+I_CUSTOMERRETURNITEMCUBE_2,Customer Return Item - Cube,Customer Return Item - Cube,SD-ANA,Cube,cube,125,0,Business Area; Customer; Distribution Channel; Division; Material / Product; Payment Terms; Sales Group; Sales Office; Sales Organization; Shipping Point,top-level
+I_CUSTOMERRETURNRATECUBE,Customer Return Rate - Cube,Customer Return Rate - Cube,SD-ANA,Cube,cube,111,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Material / Product; Profit Center; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization,top-level
+I_DEBITMEMOREQUESTITEMCUBE,Debit Memo Request Item - Cube,Debit Memo Request Item - Cube,SD-ANA,Cube,cube,103,4,Business Area; Customer; Distribution Channel; Division; Material / Product; Material Group; Payment Terms; Sales Document Type; Sales Group; Sales Office; Sales Organization,top-level
+I_SALESANALYTICSCUBE_1,Sales Volume and Open Sales - Cube,Sales Volume and Open Sales - Cube,SD-ANA,Cube,cube,150,8,Billing Document; Customer; Delivery; Distribution Channel; Division; Material / Product; Material Group; Profit Center; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization; Shipping Point,top-level
+I_SALESCONTRACTITEMCUBE,Sales Contract Item - Cube,Sales Contract Item - Cube,SD-ANA,Cube,cube,213,6,Business Area; Customer; Distribution Channel; Division; Fiscal Year; Material / Product; Material Group; Payment Terms; Profit Center; Sales Document Type; Sales Group; Sales Office; Sales Organization; Storage Location,top-level
+I_SALESCONTRACTITEMFLFMTCUBE,Sales Contract Fulfillment Rate - Cube,Sales Contract Fulfillment Rate - Cube,SD-ANA,Cube,cube,48,5,Customer; Distribution Channel; Material / Product; Sales Document Type; Sales Group; Sales Office; Sales Organization,top-level
+I_SALESORDERCUBE,Sales Order - Cube,Sales Order - Cube,SD-ANA,Cube,cube,177,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization,top-level
+I_SALESORDERITEMCUBE,Sales Order Item - Cube,Sales Order Item - Cube,SD-ANA,Cube,cube,378,11,Batch; Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,top-level
+I_SALESQUOTATIONITEMCUBE_2,Sales Quotation Item - Cube,Sales Quotation Item - Cube,SD-ANA,Cube,cube,237,0,Business Area; Customer; Distribution Channel; Division; Fiscal Year; Incoterms; Material / Product; Payment Terms; Profit Center; Sales Document Type; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location,top-level
+I_SALESSCHEDGAGRMTITEMCUBE,Sales Scheduling Agreement Item - Cube,Sales Scheduling Agreement Item - Cube,SD-ANA,Cube,cube,76,0,Customer; Distribution Channel; Division; Material / Product; Sales Group; Sales Office; Sales Organization,top-level
+I_SDDOCUMENTOBJECT,SD Document Object,SD Document Object,SD-ANA,Dimension,dimension,2,0,,top-level
+I_SDDOCUMENTOBJECTTEXT,SD Document Object - Text,SD Document Object - Text,SD-ANA,,text,5,0,,top-level
+I_SLSDOCITMREQDDELIVCONFSTS,Sales Document Item Requested Delivery Confirmation Status,Sales Document Item Requested Delivery Confirmation Status,SD-ANA,Dimension,dimension,2,0,,top-level
+I_SLSDOCITMREQDDELIVCONFSTSTXT,Sales Document Item Requested Deliv Confirmation Sts - Text,Sales Document Item Requested Deliv Confirmation Sts - Text,SD-ANA,,text,5,0,,top-level
+I_SLSORDCONFANALYTICSCUBE,Confirmation of Sales Orders - Cube,Confirmation of Sales Orders - Cube,SD-ANA,Cube,cube,383,8,Batch; Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,top-level
+I_SLSQTANCONVERSIONRATECUBE,Sales Quotation Conversion Rate - Cube,Sales Quotation Conversion Rate - Cube,SD-ANA,Cube,cube,47,1,Customer; Distribution Channel; Division; Material / Product; Sales Document Type; Sales Group; Sales Office; Sales Organization,top-level
+I_SALESPERFORMANCEDATASOURCE,Sales Performance Data Source,Sales Performance Data Source,SD-ANA-SP,,basic,2,0,,top-level
+I_SALESPLANPURPOSE,Sales Plan Purpose,Sales Plan Purpose,SD-ANA-SP,,basic,3,0,,top-level
+I_SALESPLANPURPOSETEXT,Sales Plan Purpose - Text,Sales Plan Purpose - Text,SD-ANA-SP,,text,5,0,,top-level
+I_SLSPERFORMANCEDATASOURCETEXT,Sales Performance Data Source - Text,Sales Performance Data Source - Text,SD-ANA-SP,,text,5,0,,top-level
+I_SLSPERFORMANCEPLANACTUALCUBE,Planned and Actual Sales Perf – Cube,Planned and Actual Sales Perf – Cube,SD-ANA-SP,Cube,cube,116,0,Business Area; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Material / Product; Plant; Profit Center; SD/LE Document (generic VBELN); Sales Document Type; Sales Group; Sales Office; Sales Organization,top-level
+I_SDAPPROVALREASON,Approval Reason for SD Document,Approval Reason for SD Document,SD-BF,Dimension,dimension,3,0,,top-level
+I_SDAPPROVALREASONT,Approval Reason for SD Document - Text,Approval Reason for SD Document - Text,SD-BF,,basic,5,0,,top-level
+I_CENTRALCREDITCHECKSTATUS,Central Credit Check Status,Central Credit Check Status,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_CENTRALCREDITCHECKSTATUSTEXT,Status of Central Credit Check - Text,Status of Central Credit Check - Text,SD-BF-CM,,text,5,0,,top-level
+I_CENTRALCREDITCHKTECHERRSTS,Central Credit Check Technical Error Status,Central Credit Check Technical Error Status,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_CENTRALCREDITCHKTECHERRSTST,Technical Error Status of Central Credit Check - Text,Technical Error Status of Central Credit Check - Text,SD-BF-CM,,basic,5,0,,top-level
+I_CREDITBLOCKEDDELIVERYDOC,Credit Blocked Delivery Document,Credit Blocked Delivery Document,SD-BF-CM,,basic,36,0,Customer; Delivery; Sales Office; Sales Organization; Shipping Point,top-level
+I_CREDITBLOCKEDSALESDOCUMENT,Credit Blocked Sales Document,Credit Blocked Sales Document,SD-BF-CM,,basic,44,0,Customer; Distribution Channel; Division; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization,top-level
+I_CUSTOMERPAYTGUARPROCED,Customer Payment Guarantee Procedure,Customer Payment Guarantee Procedure,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_CUSTOMERPAYTGUARPROCEDT,Cust Payment Guarantee Procedure - Text,Cust Payment Guarantee Procedure - Text,SD-BF-CM,,basic,5,0,,top-level
+I_EXPRTINSURCREDITCHECKSTATUS,Export Credit Insurance Credit Check Status,Export Credit Insurance Credit Check Status,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_EXPRTINSURCREDITCHECKSTATUST,Status of Credit Chk Against Export Credit Insurance - Text,Status of Credit Chk Against Export Credit Insurance - Text,SD-BF-CM,,basic,5,0,,top-level
+I_FINDOCCREDITCHECKSTATUS,Financial Document Credit Check Status,Financial Document Credit Check Status,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_FINDOCCREDITCHECKSTATUST,Status of Credit Check Against Financial Document - Text,Status of Credit Check Against Financial Document - Text,SD-BF-CM,,basic,5,0,,top-level
+I_MAXDOCVALUECREDITCHECKSTS,Maximum Document Value Credit Check Status,Maximum Document Value Credit Check Status,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_MAXDOCVALUECREDITCHECKSTST,Maximum Document Value Credit Check Status - Text,Maximum Document Value Credit Check Status - Text,SD-BF-CM,,basic,5,0,,top-level
+I_PAYMENTGUARANTEEFORM,Payment Guarantee Form,Payment Guarantee Form,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_PAYMENTGUARANTEEFORMTEXT,Payment Guarantee Form - Text,Payment Guarantee Form - Text,SD-BF-CM,,text,5,0,,top-level
+I_PAYMENTGUARANTEEPROCEDURE,Payment Guarantee Procedure,Payment Guarantee Procedure,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_PAYMENTGUARANTEEPROCEDURET,Payment Guarantee Procedure - Text,Payment Guarantee Procedure - Text,SD-BF-CM,,basic,5,0,,top-level
+I_PAYMENTTERMCREDITCHECKSTS,Payment Terms Credit Check Status,Payment Terms Credit Check Status,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_PAYMENTTERMCREDITCHECKSTST,Credit Check Status for Payment Terms - Text,Credit Check Status for Payment Terms - Text,SD-BF-CM,,basic,5,0,,top-level
+I_PAYTAUTHSNCREDITCHECKSTS,Payment Authorization Credit Check Status,Payment Authorization Credit Check Status,SD-BF-CM,Dimension,dimension,2,0,,top-level
+I_PAYTAUTHSNCREDITCHECKSTSTEXT,Credit Check Status for Payment Authorization - Text,Credit Check Status for Payment Authorization - Text,SD-BF-CM,,text,5,0,,top-level
+I_TOTALCREDITCHECKSTATUS,Total Credit Check Status,Total Credit Check Status,SD-BF-CM,Dimension,dimension,3,0,,top-level
+I_TOTALCREDITCHECKSTATUSTEXT,Total Credit Check Status - Text,Total Credit Check Status - Text,SD-BF-CM,,text,5,0,,top-level
+I_COLLECTIVEPROCESSING,Collective Processing for Sales Orders,Collective Processing for Sales Orders,SD-BF-MD,,basic,29,0,Shipping Point,top-level
+I_COLLECTIVEPROCESSINGERRORLOG,Collective Processing Error Log,Collective Processing Error Log,SD-BF-MD,,basic,13,0,SD/LE Document (generic VBELN),top-level
+I_INCOTERMSVERSION,Incoterms Version,Incoterms Version,SD-BF-MD,,basic,2,0,,top-level
+I_INCOTERMSVERSIONTEXT,Incoterms Version - Text,Incoterms Version - Text,SD-BF-MD,,text,5,0,,top-level
+I_MATERIALSTATISTICSGROUP,Material Statistics Group,Material Statistics Group,SD-BF-MD,,basic,2,0,,top-level
+I_MATERIALSTATISTICSGROUPTEXT,Material Statistics Group - Text,Material Statistics Group - Text,SD-BF-MD,,text,5,0,,top-level
+I_MATLACCOUNTASSIGNMENTGROUP,Material Account Assignment Group,Material Account Assignment Group,SD-BF-MD,Dimension,dimension,2,0,,top-level
+I_MATLACCOUNTASSIGNMENTGROUPT,Account Assignment Group of Material - Text,Account Assignment Group of Material - Text,SD-BF-MD,,basic,5,0,,top-level
+I_OVERALLPRCINCOMPLETIONSTS,Overall Pricing Incompletion Status,Overall Pricing Incompletion Status,SD-BF-MD,Dimension,dimension,2,0,,top-level
+I_OVERALLPRCINCOMPLETIONSTST,Overall Pricing Incompletion Status - Text,Overall Pricing Incompletion Status - Text,SD-BF-MD,,basic,5,0,,top-level
+I_OVRLITMBILLGINCOMPLTNSTS,Overall Item Billing Incompletion Status,Overall Item Billing Incompletion Status,SD-BF-MD,Dimension,dimension,2,0,,top-level
+I_OVRLITMBILLGINCOMPLTNSTSTEXT,Overall Billing Incompletion Status of Items - Text,Overall Billing Incompletion Status of Items - Text,SD-BF-MD,,text,5,0,,top-level
+I_STATISTICALVALUECONTROL,Statistical Value Control,Statistical Value Control,SD-BF-MD,Dimension,dimension,2,0,,top-level
+I_STATISTICALVALUECONTROLTEXT,Statistical Value Control - Text,Statistical Value Control - Text,SD-BF-MD,,text,5,0,,top-level
+I_STOCKTYPETEXT_2,Stock Type - Text,Stock Type - Text,SD-BF-MD,,basic,5,0,,top-level
+I_STOCKTYPE_2,Stock Type,Stock Type,SD-BF-MD,Dimension,dimension,2,0,,top-level
+I_PARTNERFUNCTION,Partner Function,Partner Function,SD-BF-PD,Dimension,dimension,4,0,,top-level
+I_PARTNERFUNCTIONTEXT,Partner Function - Text,Partner Function - Text,SD-BF-PD,,text,5,0,,top-level
+I_SDDOCUMENTITEMPARTNER,SD Document Item Partner,SD Document Item Partner,SD-BF-PD,,basic,27,0,Address; Business Partner; Customer; Personnel; SD/LE Document (generic VBELN); Supplier,top-level
+I_SDDOCUMENTPARTNER,SD Document Partner,SD Document Partner,SD-BF-PD,,basic,32,0,Address; Business Partner; Customer; Personnel; SD/LE Document (generic VBELN); Supplier,top-level
+I_CNDNAMOUNTLIMITEXCEEDEDTEXT,Condition Amount Limit Exceeded - Text,Condition Amount Limit Exceeded - Text,SD-BF-PR,,text,5,0,,top-level
+I_CNDNEXCLUSIONPROCEDURETEXT,Condition Exclusion Procedure - Text,Condition Exclusion Procedure - Text,SD-BF-PR,,text,5,0,,top-level
+I_CONDITIONAMOUNTLIMITEXCEEDED,Condition Amount Limit Exceeded,Condition Amount Limit Exceeded,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONBASISLIMITEXCEEDED,Condition Basis Limit Exceeded,Condition Basis Limit Exceeded,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONCALCULATIONTYPE,Condition Calculation Type,Condition Calculation Type,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONCALCULATIONTYPETEXT,Condition Calculation Type - Text,Condition Calculation Type - Text,SD-BF-PR,,text,5,0,,top-level
+I_CONDITIONCATEGORY,Condition Category,Condition Category,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONCATEGORYTEXT,Condition Category - Text,Condition Category - Text,SD-BF-PR,,text,5,0,,top-level
+I_CONDITIONCLASS,Condition Class,Condition Class,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONCLASSTEXT,Condition Class - Text,Condition Class - Text,SD-BF-PR,,text,5,0,,top-level
+I_CONDITIONCONTROL,Condition Control,Condition Control,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONCONTROLTEXT,Condition Control - Text,Condition Control - Text,SD-BF-PR,,text,5,0,,top-level
+I_CONDITIONEXCLUSIONPROCEDURE,Condition Exclusion Procedure,Condition Exclusion Procedure,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONINACTIVEREASON,Condition Inactive Reason,Condition Inactive Reason,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONINACTIVEREASONTEXT,Condition Inactive Reason - Text,Condition Inactive Reason - Text,SD-BF-PR,,text,5,0,,top-level
+I_CONDITIONORIGIN,Condition Origin,Condition Origin,SD-BF-PR,,basic,2,0,,top-level
+I_CONDITIONORIGINTEXT,Condition Origin - Text,Condition Origin - Text,SD-BF-PR,,text,5,0,,top-level
+I_CONDITIONRATERATIOUNIT,Condition Rate Ratio Unit,Condition Rate Ratio Unit,SD-BF-PR,,basic,3,0,,top-level
+I_PRCGPROCEDITEMPRNTTYPE,Print Type for Pricing Procedure Item,Print Type for Pricing Procedure Item,SD-BF-PR,,basic,2,0,,top-level
+I_PRCGPROCEDITEMSUBTOTALTEXT,Pricing Procedure Subtotal Line - Text,Pricing Procedure Subtotal Line - Text,SD-BF-PR,,text,5,0,,top-level
+I_PRCGPROCEDITMPRNTTYPETEXT,Print Type for Pricing Procedure Item - Text,Print Type for Pricing Procedure Item - Text,SD-BF-PR,,text,5,0,,top-level
+I_PRICINGPROCEDUREITEMSUBTOTAL,Pricing Procedure Subtotal Line,Pricing Procedure Subtotal Line,SD-BF-PR,,basic,2,0,,top-level
+I_PRICINGTYPE,Pricing Type,Pricing Type,SD-BF-PR,,basic,2,0,,top-level
+I_PRICINGTYPETEXT,Pricing Type - Text,Pricing Type - Text,SD-BF-PR,,text,5,0,,top-level
+I_PURGPRICINGPROCEDURE,Pricing Procedure in Purchasing,Pricing Procedure in Purchasing,SD-BF-PR,,basic,8,0,,top-level
+I_PURGPRICINGPROCEDURETEXT,Purchasing Pricing Procedure - Text,Purchasing Pricing Procedure - Text,SD-BF-PR,,text,8,0,,top-level
+I_REPRICINGPRICINGTYPE,Pricing Type Used for Repricing,Pricing Type Used for Repricing,SD-BF-PR,,basic,2,0,,top-level
+I_SALESPRICEELEMENTACCESSLEVEL,Access Level for Price Elements,Access Level for Price Elements,SD-BF-PR,,basic,4,0,,top-level
+I_SLSCNDNEXCLSNFORPRCGPROCED,Condition Exclusion for Pricing Procedure in Sales,Condition Exclusion for Pricing Procedure in Sales,SD-BF-PR,,basic,8,0,,top-level
+I_SLSPRCELEMENTACCESSLEVELTEXT,Price Element Access Level - Text,Price Element Access Level - Text,SD-BF-PR,,text,5,0,,top-level
+I_SLSPRCGCNDNEXCLSNGROUPTEXT,Condition Exclusion Group for Pricing in Sales - Text,Condition Exclusion Group for Pricing in Sales - Text,SD-BF-PR,,text,6,0,,top-level
+I_SLSPRCGCNDNEXCLUSIONGROUP,Condition Exclusion Group for Pricing in Sales,Condition Exclusion Group for Pricing in Sales,SD-BF-PR,,basic,6,0,,top-level
+I_SLSPRCGCNDNTYPEINEXCLSNGROUP,Condition Type in Exclusion Group for Pricing in Sales,Condition Type in Exclusion Group for Pricing in Sales,SD-BF-PR,,basic,5,0,,top-level
+I_SLSPRICINGPROCEDURE,Pricing Procedure in Sales,Pricing Procedure in Sales,SD-BF-PR,,basic,8,0,,top-level
+I_SLSPRICINGPROCEDURETEXT,Pricing Procedure in Sales - Text,Pricing Procedure in Sales - Text,SD-BF-PR,,text,8,0,,top-level
+I_CUSTOMERTAXCLASSIFICATION,Customer Tax Classification,Customer Tax Classification,SD-BF-TX,Dimension,dimension,4,0,,top-level
+I_CUSTOMERTAXCLASSIFICATIONT,Customer Tax Classification - Text,Customer Tax Classification - Text,SD-BF-TX,,basic,7,0,,top-level
+I_SDDOCUMENTCATEGORY,SD Document Category,SD Document Category,SD-CRF,Dimension,dimension,3,0,,top-level
+I_SDDOCUMENTCATEGORYTEXT,SD Document Category - Text,SD Document Category - Text,SD-CRF,,text,6,0,,top-level
+I_DISTRIBUTIONCHANNEL,Distribution Channel,Distribution Channel,SD-CRF-ORG,Dimension,dimension,4,0,Distribution Channel,top-level
+I_DISTRIBUTIONCHANNELTEXT,Distribution Channel - Text,Distribution Channel - Text,SD-CRF-ORG,,text,5,0,Distribution Channel,top-level
+I_DIVISION,Division,Division,SD-CRF-ORG,Dimension,dimension,4,0,Division,top-level
+I_DIVISIONTEXT,Division - Text,Division - Text,SD-CRF-ORG,,text,5,0,Division,top-level
+I_SALESAREA,Sales Area,Sales Area,SD-CRF-ORG,,basic,16,0,Distribution Channel; Division; Sales Organization,top-level
+I_SALESAREASALESOFFICE,Sales Offices for Sales Area,Sales Offices for Sales Area,SD-CRF-ORG,,basic,8,0,Distribution Channel; Division; Sales Office; Sales Organization,top-level
+I_SALESDISTRICT,Sales District,Sales District,SD-CRF-ORG,Dimension,dimension,3,0,,top-level
+I_SALESDISTRICTTEXT,Sales District - Text,Sales District - Text,SD-CRF-ORG,,text,5,0,,top-level
+I_SALESGROUP,Sales Group,Sales Group,SD-CRF-ORG,Dimension,dimension,2,0,Sales Group,top-level
+I_SALESGROUPTEXT,Sales Group - Text,Sales Group - Text,SD-CRF-ORG,,text,5,0,Sales Group,top-level
+I_SALESOFFICE,Sales Office,Sales Office,SD-CRF-ORG,Dimension,dimension,2,0,Sales Office,top-level
+I_SALESOFFICESALESGROUP,Sales Groups for Sales office,Sales Groups for Sales office,SD-CRF-ORG,,basic,4,0,Sales Group; Sales Office,top-level
+I_SALESOFFICETEXT,Sales Office - Text,Sales Office - Text,SD-CRF-ORG,,text,5,0,Sales Office,top-level
+I_SALESORGANIZATION,Sales Organization,Sales Organization,SD-CRF-ORG,Dimension,dimension,13,0,Sales Organization,top-level
+I_SALESORGANIZATIONTEXT,Sales Organization - Text,Sales Organization - Text,SD-CRF-ORG,,text,5,0,Sales Organization,top-level
+I_SLSORGANIZATIONDISTRCHNL,Distribution Channel for Sales Org,Distribution Channel for Sales Org,SD-CRF-ORG,,basic,6,0,Distribution Channel; Sales Organization,top-level
+I_CNDNPRPSDVALDFRMDATECODETEXT,Proposed Valid from Date for Conditions - Text,Proposed Valid from Date for Conditions - Text,SD-MD-CM,,text,5,0,,top-level
+I_CNDNPRPSDVALDTODATECODETEXT,Proposed Valid to Date for Conditions - Text,Proposed Valid to Date for Conditions - Text,SD-MD-CM,,text,5,0,,top-level
+I_CNDNPRPSDVALIDFROMDATECODE,Proposed Valid from Date for Conditions,Proposed Valid from Date for Conditions,SD-MD-CM,,basic,2,0,,top-level
+I_CNDNPRPSDVALIDTODATECODE,Proposed Valid to Date for Conditions,Proposed Valid to Date for Conditions,SD-MD-CM,,basic,2,0,,top-level
+I_CNDNVALUEZEROPROCESSINGCODE,Zero Condition Value Processing Indicator,Zero Condition Value Processing Indicator,SD-MD-CM,,basic,2,0,,top-level
+I_CNDNVALZEROPROCGCODETEXT,Zero Condition Value Processing Indicator - Text,Zero Condition Value Processing Indicator - Text,SD-MD-CM,,text,5,0,,top-level
+I_CONDITIONACCTASSGMTRELEVANCE,Condition Account Assignment Relevance,Condition Account Assignment Relevance,SD-MD-CM,,basic,2,0,,top-level
+I_CONDITIONACCTASSGMTRELEVTEXT,Condition Acc Assignment Relevance - Text,Condition Acc Assignment Relevance - Text,SD-MD-CM,,text,5,0,,top-level
+I_CONDITIONAPPLICATION,Condition Application,Condition Application,SD-MD-CM,,basic,2,0,,top-level
+I_CONDITIONAPPLICATIONTEXT,Condition Application - Text,Condition Application - Text,SD-MD-CM,,text,3,0,,top-level
+I_CONDITIONMANUALENTRY,Priority Indicator for Manual Conditions,Priority Indicator for Manual Conditions,SD-MD-CM,,basic,2,0,,top-level
+I_CONDITIONMANUALENTRYTEXT,Priority Indicator for Manual Conditions - Text,Priority Indicator for Manual Conditions - Text,SD-MD-CM,,text,5,0,,top-level
+I_CONDITIONTYPE,Condition Type,Condition Type,SD-MD-CM,,basic,6,0,,top-level
+I_CONDITIONTYPETEXT,Condition Type - Text,Condition Type - Text,SD-MD-CM,,text,7,0,,top-level
+I_CONDITIONUSAGE,Condition Usage,Condition Usage,SD-MD-CM,,basic,2,0,,top-level
+I_CONDITIONUSAGETEXT,Condition Usage - Text,Condition Usage - Text,SD-MD-CM,,text,3,0,,top-level
+I_PRCGCNDNAMOUNTROUNDINGRULE,Round Rule of Pricing Condition Amount,Round Rule of Pricing Condition Amount,SD-MD-CM,,basic,2,0,,top-level
+I_PRCGCNDNAMTROUNDINGRULETEXT,Round Rule of Pricing Condition Amount - Text,Round Rule of Pricing Condition Amount - Text,SD-MD-CM,,text,5,0,,top-level
+I_PRCGCNDNDELTNMETHODTEXT,Condition Record Deletion Indicator - Text,Condition Record Deletion Indicator - Text,SD-MD-CM,,text,5,0,,top-level
+I_PRCGCONDITIONAMOUNTSIGNTEXT,Pricing Condition Amount Sign - Text,Pricing Condition Amount Sign - Text,SD-MD-CM,,text,5,0,,top-level
+I_PRCGCONDITIONDELETIONMETHOD,Condition Record Deletion Indicator,Condition Record Deletion Indicator,SD-MD-CM,,basic,2,0,,top-level
+I_PRCGDATEIDENTIFICATIONCODE,Condition Pricing date,Condition Pricing date,SD-MD-CM,,basic,2,0,,top-level
+I_PRCGDTEIDNCODETEXT,Condition Pricing date - Text,Condition Pricing date - Text,SD-MD-CM,,text,5,0,,top-level
+I_PRICINGACCESS,Access for Pricing,Access for Pricing,SD-MD-CM,,basic,9,0,,top-level
+I_PRICINGACCESSFIELD,Field in Access for Pricing,Field in Access for Pricing,SD-MD-CM,,basic,15,0,,top-level
+I_PRICINGACCESSSEQUENCE,Access Sequence for Pricing,Access Sequence for Pricing,SD-MD-CM,,basic,5,0,,top-level
+I_PRICINGACCESSSEQUENCETEXT,Access Sequence for Pricing - Text,Access Sequence for Pricing - Text,SD-MD-CM,,text,6,0,,top-level
+I_PRICINGCONDITIONAMOUNTSIGN,Pricing Condition Amount Sign,Pricing Condition Amount Sign,SD-MD-CM,,basic,2,0,,top-level
+I_PRICINGCONDITIONTABLE,Condition Table for Pricing,Condition Table for Pricing,SD-MD-CM,,basic,7,0,,top-level
+I_PRICINGCONDITIONTABLEFIELD,Field in Pricing Condition Table,Field in Pricing Condition Table,SD-MD-CM,,basic,8,0,,top-level
+I_PRICINGCONDITIONTABLETEXT,Condition Table for Pricing - Text,Condition Table for Pricing - Text,SD-MD-CM,,text,6,0,,top-level
+I_PRICINGCONDITIONTYPE,Pricing Condition Type,Pricing Condition Type,SD-MD-CM,,basic,45,1,,top-level
+I_PRICINGCONDITIONTYPETEXT,Pricing Condition Type - Text,Pricing Condition Type - Text,SD-MD-CM,,text,5,0,,top-level
+I_PRICINGSCALEBASIS,Pricing Scale Basis,Pricing Scale Basis,SD-MD-CM,,basic,2,0,,top-level
+I_PRICINGSCALEBASISSHORT,Pricing Scale Type,Pricing Scale Type,SD-MD-CM,,basic,2,0,,top-level
+I_PRICINGSCALEBASISSHORTTEXT,Pricing Scale Type - Text,Pricing Scale Type - Text,SD-MD-CM,,text,5,0,,top-level
+I_PRICINGSCALEBASISTEXT,Pricing Scale Basis - Text,Pricing Scale Basis - Text,SD-MD-CM,,text,5,0,,top-level
+I_PRICINGSCALETYPE,Pricing Scale Type,Pricing Scale Type,SD-MD-CM,,basic,2,0,,top-level
+I_PRICINGSCALETYPETEXT,Pricing Scale Type - Text,Pricing Scale Type - Text,SD-MD-CM,,text,5,0,,top-level
+I_PURGPRCGCNDNRECDSUPLMNT,Condition Supplement for Pricing in Purchasing,Condition Supplement for Pricing in Purchasing,SD-MD-CM,,basic,50,0,Payment Terms,top-level
+I_PURGPRCGCNDNRECORDSCALE,Pricing Scale in Purchasing,Pricing Scale in Purchasing,SD-MD-CM,,basic,15,0,,top-level
+I_PURGPRCGCONDITIONRECORD,Condition Record for Pricing in Purchasing,Condition Record for Pricing in Purchasing,SD-MD-CM,,basic,55,0,Payment Terms,top-level
+I_SALESPRICINGACCESSSEQUENCE,Access Sequence for Pricing,Access Sequence for Pricing,SD-MD-CM,,basic,2,0,,top-level
+I_SALESPRICINGCONDITIONFIELD,Sales Pricing Field Catalog,Sales Pricing Field Catalog,SD-MD-CM,,basic,5,0,,top-level
+I_SLSPRCGCNDNRECDSUPLMNT,Condition Supplement for Pricing in Sales,Condition Supplement for Pricing in Sales,SD-MD-CM,,basic,58,0,Payment Terms,top-level
+I_SLSPRCGCNDNRECORDSCALE,Pricing Scale in Sales,Pricing Scale in Sales,SD-MD-CM,,basic,15,0,,top-level
+I_SLSPRCGCONDITIONRECORD,Condition Record for Pricing in Sales,Condition Record for Pricing in Sales,SD-MD-CM,,basic,66,0,Payment Terms; Tax Code,top-level
+I_SLSPRICINGACCESSSEQUENCETEXT,Access Sequence for Pricing - Text,Access Sequence for Pricing - Text,SD-MD-CM,,text,4,0,,top-level
+I_SLSPRICINGCONDITIONFIELDTEXT,Sales Pricing Field Catalog  - Text,Sales Pricing Field Catalog  - Text,SD-MD-CM,,text,7,0,,top-level
+I_SLSPRICINGCONDITIONTYPE,Pricing Condition Type in Sales,Pricing Condition Type in Sales,SD-MD-CM,,basic,38,0,,top-level
+I_SLSPRICINGCONDITIONTYPETEXT,Pricing Condition Type in Sales - Text,Pricing Condition Type in Sales - Text,SD-MD-CM,,text,4,0,,top-level
+I_STRUCTURECONDITION,Structure Condition,Structure Condition,SD-MD-CM,,basic,2,0,,top-level
+I_STRUCTURECONDITIONTEXT,Structure Condition - Text,Structure Condition - Text,SD-MD-CM,,text,5,0,,top-level
+I_TAXCONDITIONTYPE,Condition Type for Tax on Sales and Purchase,Condition Type for Tax on Sales and Purchase,SD-MD-CM,,basic,6,0,,top-level
+I_TAXCONDITIONTYPETEXT,Condition Type for Tax in Sales and Purchase - Text,Condition Type for Tax in Sales and Purchase - Text,SD-MD-CM,,text,6,0,,top-level
+I_VARIANTCONDITION,Variant Condition,Variant Condition,SD-MD-CM,,basic,2,0,,top-level
+I_VARIANTCONDITIONTEXT,Variant Condition - Text,Variant Condition - Text,SD-MD-CM,,text,3,0,,top-level
+I_CUSTOMERCLASSIFICATION,Customer Classification,Customer Classification,SD-MD-MM,Dimension,dimension,2,0,,top-level
+I_CUSTOMERCLASSIFICATIONTEXT,Customer Classification - Text,Customer Classification - Text,SD-MD-MM,,text,5,0,,top-level
+I_CUSTOMERGROUP,Customer Group,Customer Group,SD-MD-MM,Dimension,dimension,3,0,,top-level
+I_CUSTOMERGROUPTEXT,Customer Group - Text,Customer Group - Text,SD-MD-MM,,text,5,0,,top-level
+I_CUSTOMERMATERIALITEMUSAGE,Customer Material Item Usage,Customer Material Item Usage,SD-MD-MM,Dimension,dimension,2,0,,top-level
+I_CUSTOMERMATERIALITEMUSAGET,Customer Material Item Usage - Text,Customer Material Item Usage - Text,SD-MD-MM,,basic,5,0,,top-level
+I_CUSTOMERMATERIAL_2,Customer Material,Customer Material,SD-MD-MM,Dimension,dimension,35,0,Distribution Channel; Material / Product; Sales Organization,top-level
+I_CUSTOMERPAYMENTTERMS,Customer Payment Terms,Customer Payment Terms,SD-MD-MM,Dimension,dimension,2,0,Payment Terms,top-level
+I_CUSTOMERPAYMENTTERMSTEXT,Customer Payment Terms - Text,Customer Payment Terms - Text,SD-MD-MM,,text,5,0,Payment Terms,top-level
+I_CUSTOMERPRICEGROUP,Customer Price Group,Customer Price Group,SD-MD-MM,Dimension,dimension,2,0,,top-level
+I_CUSTOMERPRICEGROUPTEXT,Customer Price Group - Text,Customer Price Group - Text,SD-MD-MM,,text,5,0,,top-level
+I_ITEMCATEGORYGROUP,Item Category Group,Item Category Group,SD-MD-MM,Dimension,dimension,3,0,,top-level
+I_ITEMCATEGORYGROUPTEXT,Item Category Group - Text,Item Category Group - Text,SD-MD-MM,,text,5,0,,top-level
+I_MATERIALCOMMISSIONGROUP,Material Commission Group,Material Commission Group,SD-MD-MM,Dimension,dimension,2,0,,top-level
+I_MATERIALCOMMISSIONGROUPTEXT,Material Commission Group - Text,Material Commission Group - Text,SD-MD-MM,,text,5,0,,top-level
+I_MATERIALPRICINGGROUP,Material Pricing Group,Material Pricing Group,SD-MD-MM,Dimension,dimension,2,0,,top-level
+I_MATERIALPRICINGGROUPTEXT,Material Pricing Group - Text,Material Pricing Group - Text,SD-MD-MM,,text,5,0,,top-level
+I_PRICELISTTYPE,Price List Type,Price List Type,SD-MD-MM,Dimension,dimension,2,0,,top-level
+I_PRICELISTTYPETEXT,Price List Type - Text,Price List Type - Text,SD-MD-MM,,text,5,0,,top-level

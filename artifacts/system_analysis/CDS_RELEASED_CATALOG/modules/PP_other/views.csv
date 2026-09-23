@@ -1,0 +1,301 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_WORKCENTERPOOLEDCAPACITY,Work Center Pooled Capacity,Work Center Pooled Capacity,PP-BD-WKC,Dimension,dimension,65,0,Plant,top-level
+I_KANBANOUTPUT,Kanban Card,Kanban Card,PP-KAB,,basic,24,0,Material / Product,top-level
+I_JITCALLDELIVERY,JIT Call Link to Delivery,JIT Call Link to Delivery,PP-KAB-VDM,,basic,15,0,Delivery; Plant; Supplier,top-level
+I_JITCALLOUTBOUNDTYPE,JIT Call Outbound Type,JIT Call Outbound Type,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_JITCALLOUTBOUNDTYPETXT,JIT Call Outbound Type - Text,JIT Call Outbound Type - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_JITCALLPROFILE,JIT Call Profile,JIT Call Profile,PP-KAB-VDM,,basic,6,0,,top-level
+I_JITCALLPROFILETEXT,JIT Call Profile - Text,JIT Call Profile - Text,PP-KAB-VDM,,text,4,0,,top-level
+I_JITCALLSUMMARIZATIONSTRATEGY,JIT Call Summarization Strategy,JIT Call Summarization Strategy,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_JITCALLSUMMARIZATIONSTRGYTXT,JIT Call Summarization Strategy - Text,JIT Call Summarization Strategy - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_JITCALLTIMEDEFINITION,JIT Call Time Definition,JIT Call Time Definition,PP-KAB-VDM,Dimension,dimension,6,0,Plant,top-level
+I_JITCALLUSAGEOFMSGDETN,JIT Call Usage of Message Determination,JIT Call Usage of Message Determination,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_JITCALLUSAGEOFMSGDETNTXT,JIT Call Usage of Message Determination - Text,JIT Call Usage of Message Determination - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCALCADOPTIONSTRATEGY,Kanban Calculation Adoption Strategy,Kanban Calculation Adoption Strategy,PP-KAB-VDM,,basic,8,0,Plant,top-level
+I_KANBANCALCCHANGEPROPOSAL,Kanban Calculation Change Proposals,Kanban Calculation Change Proposals,PP-KAB-VDM,,basic,47,0,,top-level
+I_KANBANCALCDELINITCTN,Kanban Calculation Delete Initial Containers,Kanban Calculation Delete Initial Containers,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KANBANCALCDELINITCTNTXT,Kanban Calculation Delete Initial Containers - Text,Kanban Calculation Delete Initial Containers - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCALCDELLOCKEDCTN,Kanban Calculation Delete Locked Containers,Kanban Calculation Delete Locked Containers,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KANBANCALCDELLOCKEDCTNTXT,Kanban Calculation Delete Locked Containers - Text,Kanban Calculation Delete Locked Containers - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCALCLOCKINGSEQUENCE,Kanban Calculation Locking Sequence,Kanban Calculation Locking Sequence,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KANBANCALCLOCKINGSQNCTXT,Kanban Calculation Locking Sequence - Text,Kanban Calculation Locking Sequence - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCALCPROFILETEXT,Kanban Calculation Profile - Text,Kanban Calculation Profile - Text,PP-KAB-VDM,,text,7,0,Plant,top-level
+I_KANBANCALCREQUIREMENTDISTR,Kanban Calculation Requirement Distribution,Kanban Calculation Requirement Distribution,PP-KAB-VDM,,basic,11,0,Material / Product; Plant; Storage Location,top-level
+I_KANBANCALCREQUIREMENTTYPE,Kanban Calculation Requirement Type,Kanban Calculation Requirement Type,PP-KAB-VDM,,basic,10,0,Material / Product; Plant; Storage Location,top-level
+I_KANBANCALCSMOOTHINGTYPE,Kanban Calculation Smoothing Type,Kanban Calculation Smoothing Type,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KANBANCALCSMOOTHINGTYPETXT,Kanban Calculation Smoothing Type - Text,Kanban Calculation Smoothing Type - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCALCULATIONERRORLOG,Kanban Calculation Error Log,Kanban Calculation Error Log,PP-KAB-VDM,,basic,14,0,,top-level
+I_KANBANCALCULATIONPROFILE,Kanban Calculation Profile,Kanban Calculation Profile,PP-KAB-VDM,,basic,24,0,Plant,top-level
+I_KANBANCALCUNLOCKINGSEQUENCE,Kanban Calculation Unlocking Sequence,Kanban Calculation Unlocking Sequence,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KANBANCALCUNLOCKINGSQNCTXT,Kanban Calculation Unlocking Sequence - Text,Kanban Calculation Unlocking Sequence - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCARDPRINTCTRL,Kanban Card Print Control,Kanban Card Print Control,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KANBANCARDPRINTCTRLTEXT,Kanban Card Print Control - Text,Kanban Card Print Control - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCONTAINER,Kanban Container,Kanban Container,PP-KAB-VDM,,basic,63,0,Order (production / maintenance / internal),top-level
+I_KANBANCONTAINERSTATUS,Kanban Container Status,Kanban Container Status,PP-KAB-VDM,Dimension,dimension,2,0,,top-level
+I_KANBANCONTAINERSTATUSSTDVH,Kanban Container Status,Kanban Container Status,PP-KAB-VDM,,value_help,2,0,,top-level
+I_KANBANCONTAINERSTATUSTEXT,Kanban Container Status - Text,Kanban Container Status - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCONTAINERSTSSEQUENCE,Kanban Container Status Sequence,Kanban Container Status Sequence,PP-KAB-VDM,,basic,9,0,,top-level
+I_KANBANCONTROLCYCLE,Kanban Control Cycle,Kanban Control Cycle,PP-KAB-VDM,,basic,98,0,Material / Product,top-level
+I_KANBANCONTROLCYCLECATEGORY,Kanban Control Cycle Category Code,Kanban Control Cycle Category Code,PP-KAB-VDM,Dimension,dimension,2,0,,top-level
+I_KANBANCONTROLCYCLECATTEXT,Kanban Control Cycle Category - Text,Kanban Control Cycle Category - Text,PP-KAB-VDM,,text,4,0,,top-level
+I_KANBANCONTROLCYCLESTDVH,Kanban Control Cycle,Kanban Control Cycle,PP-KAB-VDM,,value_help,7,0,Material / Product,top-level
+I_KANBANCTNCALCTYPE,Kanban Container Calculation Type,Kanban Container Calculation Type,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KANBANCTNCALCTYPETEXT,Kanban Container Calculation Type - Text,Kanban Container Calculation Type - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KANBANCTNCLASSICALERRORLOG,Kanban Container Classical Error Log,Kanban Container Classical Error Log,PP-KAB-VDM,,basic,21,0,,top-level
+I_KANBANCTNDETAILEDQTY,Kanban Container Detailed Quantities,Kanban Container Detailed Quantities,PP-KAB-VDM,,basic,14,0,Batch; Material / Product,top-level
+I_KANBANCTNEVENTDRIVENERRORLOG,Kanban Container Event Driven Error Log,Kanban Container Event Driven Error Log,PP-KAB-VDM,,basic,17,0,,top-level
+I_KANBANCTNSTSSEQUENCETEXT,Kanban Container Status Sequence - Text,Kanban Container Status Sequence - Text,PP-KAB-VDM,,text,5,0,,top-level
+I_KANBANDELIVERY,Kanban Delivery,Kanban Delivery,PP-KAB-VDM,,basic,12,0,Customer; Delivery,top-level
+I_KANBANSTATUS,Kanban Status Code,Kanban Status Code,PP-KAB-VDM,Dimension,dimension,2,0,,top-level
+I_KANBANSTATUSTEXT,Kanban Status - Text,Kanban Status - Text,PP-KAB-VDM,,text,4,0,,top-level
+I_KNBNCALCDEPDNTRQMTSSELRULE,Dependent Requirements Selection Rule,Dependent Requirements Selection Rule,PP-KAB-VDM,,basic,9,0,Plant; Storage Location,top-level
+I_KNBNCALCNEWCTNLKNG,Kanban Calculation New Container Locking,Kanban Calculation New Container Locking,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KNBNCALCNEWCTNLKNGTXT,Kanban Calculation New Container Locking - Text,Kanban Calculation New Container Locking - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KNBNCALCNEWCTNNMBRASSGMT,Kanban Calculation Number Assignment,Kanban Calculation Number Assignment,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KNBNCALCNEWCTNNMBRASSGMTTXT,Kanban Calculation Number Assignment - Text,Kanban Calculation Number Assignment - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KNBNCNTRLCYCLIFECYCSTSSTDVH,Kanban Control Cycle Lifecycle Status,Kanban Control Cycle Lifecycle Status,PP-KAB-VDM,,value_help,2,0,,top-level
+I_KNBNCONTROLCYCLIFECYCSTS,Kanban Control Cycle Life Cycle Status,Kanban Control Cycle Life Cycle Status,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KNBNCTNREPLNMTTRGGRLOGIC,Replenishment Trigger Logic,Replenishment Trigger Logic,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KNBNCTNREPLNMTTRGGRLOGICTEXT,Replenishment Trigger Logic - Text,Replenishment Trigger Logic - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KNBNCTRLCYCLECATEGORYSTDVH,Kanban Control Cycle Category,Kanban Control Cycle Category,PP-KAB-VDM,,value_help,2,0,,top-level
+I_KNBNCTRLCYCLIFECYCSTSTXT,Kanban Control Cycle Life Cycle Status - Text,Kanban Control Cycle Life Cycle Status - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KNBNEXTPROCMTCTRLTYPE,Kanban External Procurement Control Type,Kanban External Procurement Control Type,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KNBNEXTPROCMTCTRLTYPETXT,Kanban External Procurement Control Type - Text,Kanban External Procurement Control Type - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KNBNEXTPROCMTREPLNMTSTRGY,Kanban Control Cycle External Procurement Strategy,Kanban Control Cycle External Procurement Strategy,PP-KAB-VDM,Dimension,dimension,18,0,Plant,top-level
+I_KNBNEXTPROCMTREPLNMTSTRGYTXT,Kanban Control Cyc Ext Proc Strat - Text,Kanban Control Cyc Ext Proc Strat - Text,PP-KAB-VDM,,text,7,0,Plant,top-level
+I_KNBNEXTPROCMTREPLNMTSTRGYVH,Replenishment Strategy for External Procurement,Replenishment Strategy for External Procurement,PP-KAB-VDM,,value_help,4,0,Plant,top-level
+I_KNBNINHPRODNCTRLTYPE,Kanban Inhouse Production Control Type,Kanban Inhouse Production Control Type,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KNBNINHPRODNCTRLTYPETXT,Kanban Inhouse Production Control Type - Text,Kanban Inhouse Production Control Type - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KNBNPRODNREPLNMTSTRGY,Kanban Control Cycle In-House Prod Strat,Kanban Control Cycle In-House Prod Strat,PP-KAB-VDM,Dimension,dimension,21,0,Plant,top-level
+I_KNBNPRODNREPLNMTSTRGYTXT,Knbn Cntrl Cyc In House Prodn Strat - Text,Knbn Cntrl Cyc In House Prodn Strat - Text,PP-KAB-VDM,,text,7,0,Plant,top-level
+I_KNBNPRODNREPLNMTSTRGYVH,Replenishment Strategy for In-House Production,Replenishment Strategy for In-House Production,PP-KAB-VDM,,value_help,4,0,Plant,top-level
+I_KNBNREPLNMTSTRGYTYPE,Kanban Replenishment Strategy Type,Kanban Replenishment Strategy Type,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KNBNREPLNMTSTRGYTYPESTDVH,Kanban Replenishment Strategy Type,Kanban Replenishment Strategy Type,PP-KAB-VDM,,value_help,2,0,,top-level
+I_KNBNREPLNMTSTRGYTYPETXT,Kanban Replenishment Strategy Type - Text,Kanban Replenishment Strategy Type - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KNBNSTKTRANSFCTRLTYPE,Kanban Stock Transfer Control Type,Kanban Stock Transfer Control Type,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_KNBNSTKTRANSFCTRLTYPETXT,Kanban Stock Transfer Control Type - Text,Kanban Stock Transfer Control Type - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_KNBNSTKTRANSFREPLNMTSTRGY,Kanban Control Cycle Stock Transf Strat,Kanban Control Cycle Stock Transf Strat,PP-KAB-VDM,Dimension,dimension,17,0,Movement Type; Plant,top-level
+I_KNBNSTKTRANSFREPLNMTSTRGYTXT,Kanban Contrl Cyc Stock Trans Str - Text,Kanban Contrl Cyc Stock Trans Str - Text,PP-KAB-VDM,,text,7,0,Plant,top-level
+I_KNBNSTKTRANSFREPLNMTSTRGYVH,Replenishment Strategy for Stock Transfer,Replenishment Strategy for Stock Transfer,PP-KAB-VDM,,value_help,4,0,Plant,top-level
+I_PRODUCTIONSUPPLYAREA,Production Supply Area,Production Supply Area,PP-KAB-VDM,Dimension,dimension,21,0,Plant,top-level
+I_PRODUCTIONSUPPLYAREASTDVH,Production Supply Area,Production Supply Area,PP-KAB-VDM,,value_help,4,0,Plant,top-level
+I_PRODUCTIONSUPPLYAREATEXT,Production Supply Area - Text,Production Supply Area - Text,PP-KAB-VDM,,text,6,0,Plant,top-level
+I_SUMMARIZEDJITCALL,Summarized JIT Call,Summarized JIT Call,PP-KAB-VDM,,basic,13,0,Plant; Purchasing Organization,top-level
+I_SUMMARIZEDJITCALLITEM,Summarized JIT Call Item,Summarized JIT Call Item,PP-KAB-VDM,,basic,20,0,Material / Product; Plant,top-level
+I_SUMMARIZEDJITCALLSTDVH,Summarized JIT Call,Summarized JIT Call,PP-KAB-VDM,,value_help,6,0,Plant,top-level
+I_SUMZDJITCALLMSGISPROCD,Summarized JIT Call Message Is Processed,Summarized JIT Call Message Is Processed,PP-KAB-VDM,Dimension,dimension,3,0,,top-level
+I_SUMZDJITCALLMSGISPROCDTEXT,Sum JIT Call Msg Is Processed - Text,Sum JIT Call Msg Is Processed - Text,PP-KAB-VDM,,text,6,0,,top-level
+I_BATCHSPLITTYPE,Batch Split Type,Batch Split Type,PP-VDM,Dimension,dimension,3,0,,top-level
+I_BATCHSPLITTYPETEXT,Batch Split Type - Text,Batch Split Type - Text,PP-VDM,,text,6,0,,top-level
+I_BOMEXPLOSIONDATE,BOM Explosion Date,BOM Explosion Date,PP-VDM,Dimension,dimension,10,0,Material / Product; Plant,top-level
+I_CAPACITYREQUIREMENT,Capacity Requirement Header,Capacity Requirement Header,PP-VDM,Dimension,dimension,26,0,Order (production / maintenance / internal); Task List (routing) group,top-level
+I_CAPACITYREQUIREMENTCONF,Capacity Requirement Confirmation Code,Capacity Requirement Confirmation Code,PP-VDM,Dimension,dimension,3,0,,top-level
+I_CAPACITYREQUIREMENTCONFTEXT,Capacity Requirement Confirmation - Text,Capacity Requirement Confirmation - Text,PP-VDM,,text,6,0,,top-level
+I_CAPACITYREQUIREMENTITEM,Capacity Requirement Item,Capacity Requirement Item,PP-VDM,Dimension,dimension,4,0,,top-level
+I_CAPACITYREQUIREMENTITEMCAP,Capacity Requirement Item Capacity,Capacity Requirement Item Capacity,PP-VDM,Dimension,dimension,120,5,Order (production / maintenance / internal); Personnel,top-level
+I_CAPACITYREQUIREMENTORIGIN,Capacity Requirement Origin,Capacity Requirement Origin,PP-VDM,Dimension,dimension,3,0,,top-level
+I_CAPACITYREQUIREMENTORIGNTEXT,Capacity Requirement Origin - Text,Capacity Requirement Origin - Text,PP-VDM,,text,6,0,,top-level
+I_CAPACITYREQUIREMENTSTDVH,Capacity Requirement Header,Capacity Requirement Header,PP-VDM,,value_help,1,0,,top-level
+I_CONFFAILEDACTUALCOSTCALC,Failed Actual Cost Calculations,Failed Actual Cost Calculations,PP-VDM,,basic,14,0,Order (production / maintenance / internal),top-level
+I_CONTROLRECIPEDESTINATION,Control Recipe Destination,Control Recipe Destination,PP-VDM,Dimension,dimension,8,0,Plant,top-level
+I_CONTROLRECIPEDESTINATIONTYPE,Control Recipe Destination Type,Control Recipe Destination Type,PP-VDM,Dimension,dimension,3,0,,top-level
+I_CONTROLRECIPEDESTTYPETEXT,Control Recipe Destination Type - Text,Control Recipe Destination Type - Text,PP-VDM,,text,6,0,,top-level
+I_DEPENDENTRQMTSTYPETEXT,Dependent Requirements Type - Text,Dependent Requirements Type - Text,PP-VDM,,text,6,0,,top-level
+I_FAILEDGOODSMOVEMENT,Failed Goods Movement Header,Failed Goods Movement Header,PP-VDM,Dimension,dimension,4,0,,top-level
+I_FAILEDGOODSMOVEMENTITEM,Failed Goods Movement Item,Failed Goods Movement Item,PP-VDM,Dimension,dimension,141,5,Batch; Material / Product; Order (production / maintenance / internal); Plant; Supplier; WBS Element,top-level
+I_LEADTIMEREDUCNSTRATEGYTEXT,Lead Time Reduction Strategy - Text,Lead Time Reduction Strategy - Text,PP-VDM,,text,7,0,Plant,top-level
+I_LEADTIMEREDUCTIONSTRATEGY,Lead Time Reduction Strategy,Lead Time Reduction Strategy,PP-VDM,Dimension,dimension,4,0,Plant,top-level
+I_LOGISTICSORDERSTDVH,Logistics Order,Logistics Order,PP-VDM,,value_help,6,0,Order (production / maintenance / internal); Plant,top-level
+I_MATLCOMPDISCONTINUATIONTYPE,Material Discontinuation Type,Material Discontinuation Type,PP-VDM,Dimension,dimension,3,0,,top-level
+I_MATLCOMPDSCONTNTYPETEXT,Material Discontinuation Type - Text,Material Discontinuation Type - Text,PP-VDM,,text,6,0,,top-level
+I_MATLPROCMTEXTERNALTYPE,Material Procurement External Type,Material Procurement External Type,PP-VDM,Dimension,dimension,2,0,,top-level
+I_MATLPROCMTEXTERNALTYPETEXT,Material Procurement External Type - Text,Material Procurement External Type - Text,PP-VDM,,text,7,0,,top-level
+I_MATLPROCMTTYPETOCATEGORY,Material Procurement Type To Category,Material Procurement Type To Category,PP-VDM,Fact,fact,4,0,,top-level
+I_MATLPROCUREMENTCATEGORY,Material Procurement Category,Material Procurement Category,PP-VDM,Dimension,dimension,3,0,,top-level
+I_MATLPROCUREMENTCATEGORYTEXT,Material Procurement Category - Text,Material Procurement Category - Text,PP-VDM,,text,6,0,,top-level
+I_MATLPROCUREMENTEXTERNALTYPE,Material Procurement External Type,Material Procurement External Type,PP-VDM,Dimension,dimension,6,0,,top-level
+I_MATLPROCUREMENTPROFILE,Material Procurement Profile,Material Procurement Profile,PP-VDM,Dimension,dimension,21,2,Plant,top-level
+I_MATLPROCUREMENTPROFILETEXT,Material Procurement Profile - Text,Material Procurement Profile - Text,PP-VDM,,text,7,0,Plant,top-level
+I_MATLPROCUREMENTTYPE,Material Procurement Type,Material Procurement Type,PP-VDM,Dimension,dimension,3,0,,top-level
+I_MATLPROCUREMENTTYPETEXT,Material Procurement Type - Text,Material Procurement Type - Text,PP-VDM,,text,6,0,,top-level
+I_MFGORDERCATEGORY,Manufacturing Order Category,Manufacturing Order Category,PP-VDM,Dimension,dimension,3,0,,top-level
+I_MFGORDERCATEGORYTEXT,Manufacturing Order Category - Text,Manufacturing Order Category - Text,PP-VDM,,text,6,0,,top-level
+I_MFGORDERCOMPONENTLONGTEXT,Manufacturing Order Component - Text,Manufacturing Order Component - Text,PP-VDM,,text,14,0,,top-level
+I_MFGORDERCOMPONENTWITHSTATUS,Manufacturing Order Component with Status,Manufacturing Order Component with Status,PP-VDM,Fact,fact,249,1,Batch; Business Area; Company Code; Controlling Area; Functional Area; G/L Account; Material / Product; Material Group; Movement Type; Plant; Supplier; WBS Element,top-level
+I_MFGORDERDOCDGOODSMOVEMENT,Documented Goods Movement of a Manufacturing Order,Documented Goods Movement of a Manufacturing Order,PP-VDM,,basic,82,0,Batch; Controlling Area; G/L Account; Material / Product; Movement Type; Plant; Supplier; WBS Element,top-level
+I_MFGORDERDOCUMENTLINK,Manufacturing Order Document Link,Manufacturing Order Document Link,PP-VDM,Fact,fact,33,0,,top-level
+I_MFGORDERFAILEDCONFGROUP,Mfg Order Failed Confirmation Group,Mfg Order Failed Confirmation Group,PP-VDM,Dimension,dimension,14,0,,top-level
+I_MFGORDERFAILEDCONFLOG,Manufacturing Order Failed Confirmation Log,Manufacturing Order Failed Confirmation Log,PP-VDM,,basic,10,0,,top-level
+I_MFGORDERFOREXTRACTION,Manufacturing Order,Manufacturing Order,PP-VDM,Dimension,dimension,193,1,Batch; Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Material / Product; Profit Center; WBS Element,top-level
+I_MFGORDERITEMSERIALNUMBER,Manufacturing Order Item Serial Number,Manufacturing Order Item Serial Number,PP-VDM,Dimension,dimension,32,2,Equipment; Material / Product,top-level
+I_MFGORDERSEQUENCE,Manufacturing Order Sequence,Manufacturing Order Sequence,PP-VDM,Dimension,dimension,48,5,,top-level
+I_MFGORDERSEQUENCELONGTEXT,Manufacturing Order Sequence - Text,Manufacturing Order Sequence - Text,PP-VDM,,text,10,0,,top-level
+I_MFGORDERSEQUENCESTDVH,Manufacturing Order Sequence,Manufacturing Order Sequence,PP-VDM,,value_help,7,0,,top-level
+I_MFGORDERSTDVH,Manufacturing Order,Manufacturing Order,PP-VDM,,value_help,5,0,,top-level
+I_MFGORDERTYPE,Manufacturing Order Type,Manufacturing Order Type,PP-VDM,Dimension,dimension,4,0,,top-level
+I_MFGORDERTYPETEXT,Manufacturing Order Type - Text,Manufacturing Order Type - Text,PP-VDM,,text,5,0,,top-level
+I_MFGORDERWITHSTATUS,Manufacturing Order Header with Status,Manufacturing Order Header with Status,PP-VDM,,basic,312,13,Batch; Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Material / Product; Profit Center; WBS Element,top-level
+I_MFGORDOPBYSEMANTICKEYSTDVH,Manufacturing Order Operation,Manufacturing Order Operation,PP-VDM,,value_help,15,0,Plant,top-level
+I_OPERATIONCONTROLPROFILE,Operation Control Profile,Operation Control Profile,PP-VDM,Dimension,dimension,18,0,,top-level
+I_OPERATIONCONTROLPROFILETEXT,Operation Control Profile - Text,Operation Control Profile - Text,PP-VDM,,text,5,0,,top-level
+I_OPERATIONEXTERNALPROCESSING,Operation External Processing Code,Operation External Processing Code,PP-VDM,Dimension,dimension,3,0,,top-level
+I_OPERATIONEXTERNALPROCTEXT,Operation External Processing - Text,Operation External Processing - Text,PP-VDM,,text,5,0,,top-level
+I_ORDER,Order Header,Order Header,PP-VDM,Dimension,dimension,27,0,Company Code; Controlling Area; Order (production / maintenance / internal); Plant; Profit Center,top-level
+I_ORDERCATEGORY,Order Category,Order Category,PP-VDM,Dimension,dimension,3,0,,top-level
+I_ORDERCATEGORYTEXT,Order Category - Text,Order Category - Text,PP-VDM,,text,6,0,,top-level
+I_ORDERTYPE,Order Type,Order Type,PP-VDM,Dimension,dimension,32,0,Functional Area,top-level
+I_ORDERTYPEDETAILS,Order Type Details,Order Type Details,PP-VDM,Dimension,dimension,29,0,Plant,top-level
+I_ORDERTYPETEXT,Order Type - Text,Order Type - Text,PP-VDM,,text,5,0,,top-level
+I_ORDERTYPEVH,Order Type,Order Type,PP-VDM,,value_help,4,0,,top-level
+I_PLANNINGSCENARIOSTATUS,MRP Planning Scenario Status,MRP Planning Scenario Status,PP-VDM,Dimension,dimension,3,0,,top-level
+I_PLANNINGSCENARIOSTATUSTEXT,MRP Planning Scenario Status - Text,MRP Planning Scenario Status - Text,PP-VDM,,text,6,0,,top-level
+I_PRODUCTIONSCHEDGPROFILETEXT,Production Scheduling Profile - Text,Production Scheduling Profile - Text,PP-VDM,,text,7,0,Plant,top-level
+I_PRODUCTIONSCHEDULINGPROFILE,Production Scheduling Profile,Production Scheduling Profile,PP-VDM,Dimension,dimension,8,0,Plant,top-level
+I_PRODUCTIONSUPERVISOR,Production Supervisor,Production Supervisor,PP-VDM,Dimension,dimension,6,0,Plant,top-level
+I_RANGEOFCOVERAGEPROFILE,Range of Coverage Profile,Range of Coverage Profile,PP-VDM,Dimension,dimension,4,0,Plant,top-level
+I_RANGEOFCOVERAGEPROFILETEXT,Range of Coverage Profile - Text,Range of Coverage Profile - Text,PP-VDM,,text,7,0,Plant,top-level
+I_REPETITIVEMFGPROFILE,Repetitive Manufacturing Profile,Repetitive Manufacturing Profile,PP-VDM,Dimension,dimension,10,0,,top-level
+I_REPETITIVEMFGPROFILETEXT,Repetitive Manufacturing Profile - Text,Repetitive Manufacturing Profile - Text,PP-VDM,,text,5,0,,top-level
+I_REPORTINGPERIOD,Reporting Period Code,Reporting Period Code,PP-VDM,Dimension,dimension,3,0,,top-level
+I_REPORTINGPERIODTEXT,Reporting Period - Text,Reporting Period - Text,PP-VDM,,text,6,0,,top-level
+I_RPTVMFGCONFGRBATCHCHARC,Batch Characteristics of Confirmation in Repetitive Mfg,Batch Characteristics of Confirmation in Repetitive Mfg,PP-VDM,,basic,20,0,Batch; Material / Product,top-level
+I_RPTVMFGCONFMATLDOCITEM,Material Document Item of Confirmation in Repetitive Mfg,Material Document Item of Confirmation in Repetitive Mfg,PP-VDM,,basic,87,0,Batch; Plant; WBS Element,top-level
+I_RPTVMFGCONFPROCESSINGTYPE,Processing Type for Confirmation in Repetitive Manufacturing,Processing Type for Confirmation in Repetitive Manufacturing,PP-VDM,Dimension,dimension,3,0,,top-level
+I_RPTVMFGCONFPROCESSINGTYPETXT,Repetitive Manufacturing Confirmation Processing Type - Text,Repetitive Manufacturing Confirmation Processing Type - Text,PP-VDM,,text,6,0,,top-level
+I_RPTVMFGCONFREVERSALTYPE,Reversal Type for Confirmation in Repetitive Manufacturing,Reversal Type for Confirmation in Repetitive Manufacturing,PP-VDM,Dimension,dimension,3,0,,top-level
+I_RPTVMFGCONFREVERSALTYPETEXT,Repetitive Manufacturing Confirmation Reversal Type - Text,Repetitive Manufacturing Confirmation Reversal Type - Text,PP-VDM,,text,6,0,,top-level
+I_RPTVMFGPRODCOSTCTRLGORDER,Product Cost Controlling Order in Repetitive Manufacturing,Product Cost Controlling Order in Repetitive Manufacturing,PP-VDM,Fact,fact,31,0,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center,top-level
+I_RPTVMFGPRODCOSTCTRLGORDITEM,Product Cost Controlling Order Item in Repetitive Mfg,Product Cost Controlling Order Item in Repetitive Mfg,PP-VDM,Dimension,dimension,50,2,Business Area; Material / Product; Order (production / maintenance / internal); WBS Element,top-level
+I_SAFETYTIMEPERIODPROFILE,Period Profile for Safety Time,Period Profile for Safety Time,PP-VDM,Dimension,dimension,4,0,Plant,top-level
+I_SAFETYTIMEPERIODPROFILETEXT,Period Profile for Safety Time - Text,Period Profile for Safety Time - Text,PP-VDM,,text,7,0,Plant,top-level
+I_SCHEDULINGFLOATPROFILE,Scheduling Float Profile,Scheduling Float Profile,PP-VDM,Dimension,dimension,7,0,Plant,top-level
+I_SCHEDULINGREDUCTIONLEVEL,Scheduling Reduction Level,Scheduling Reduction Level,PP-VDM,Dimension,dimension,3,0,,top-level
+I_SCHEDULINGREDUCTIONLEVELTEXT,Scheduling Reduction Level - Text,Scheduling Reduction Level - Text,PP-VDM,,text,6,0,,top-level
+I_SCHEDULINGTYPE,Scheduling Type,Scheduling Type,PP-VDM,Dimension,dimension,7,0,,top-level
+I_SCHEDULINGTYPETEXT,Scheduling Type - Text,Scheduling Type - Text,PP-VDM,,text,5,0,,top-level
+I_STORAGECOSTSPERCENTAGECODE,Percentage Code for Storage Costs,Percentage Code for Storage Costs,PP-VDM,Dimension,dimension,4,0,Plant,top-level
+I_TRIGGERPOINTUSAGE,Trigger Point Usage,Trigger Point Usage,PP-VDM,Dimension,dimension,2,0,,top-level
+I_TRIGGERPOINTUSAGETEXT,Trigger Point Usage - Text,Trigger Point Usage - Text,PP-VDM,,text,5,0,,top-level
+I_VARIANCEREASON,Variance Reason Code,Variance Reason Code,PP-VDM,Dimension,dimension,4,0,Plant,top-level
+I_VARIANCEREASONTEXT,Variance Reason - Text,Variance Reason - Text,PP-VDM,,text,7,0,Plant,top-level
+I_ACTIVITYALTERNATIVETEXT,Alternative Text for Activity,Alternative Text for Activity,PP-VDM-MD,,text,4,0,,top-level
+I_ACTIVITYDESCORIGINTYPE,Activity Description Origin Type,Activity Description Origin Type,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_ACTIVITYDESCORIGINTYPETEXT,Activity Description Origin Type - Text,Activity Description Origin Type - Text,PP-VDM-MD,,text,4,0,,top-level
+I_AVAILABLECAPACITYINTERVAL,Available Capacity Interval,Available Capacity Interval,PP-VDM-MD,Dimension,dimension,15,0,,top-level
+I_AVAILABLECAPACITYSHIFT,Available Capacity Shift,Available Capacity Shift,PP-VDM-MD,Dimension,dimension,20,0,,top-level
+I_AVAILABLECAPACITYTYPE,Available Capacity Type Code,Available Capacity Type Code,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_AVAILABLECAPACITYTYPETEXT,Available Capacity Type - Text,Available Capacity Type - Text,PP-VDM-MD,,text,4,0,,top-level
+I_BILLOFOPERATIONSGROUP,Bill of Operations Group,Bill of Operations Group,PP-VDM-MD,Dimension,dimension,3,0,,top-level
+I_BILLOFOPERATIONSSTATUS,Bill of Operations Status Code,Bill of Operations Status Code,PP-VDM-MD,Dimension,dimension,3,0,,top-level
+I_BILLOFOPERATIONSSTATUSTEXT,Bill of Operations Status - Text,Bill of Operations Status - Text,PP-VDM-MD,,text,4,0,,top-level
+I_BILLOFOPERATIONSTYPE,Bill of Operations Type,Bill of Operations Type,PP-VDM-MD,Dimension,dimension,4,0,,top-level
+I_BILLOFOPERATIONSTYPETEXT,Bill of Operations Type - Text,Bill of Operations Type - Text,PP-VDM-MD,,text,5,0,,top-level
+I_BILLOFOPERATIONSUSAGE,Bill of Operations Usage,Bill of Operations Usage,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_BILLOFOPERATIONSUSAGETEXT,Bill of Operations Usage - Text,Bill of Operations Usage - Text,PP-VDM-MD,,text,4,0,,top-level
+I_BOOAPPLICATION,Bill of Operation Application Code,Bill of Operation Application Code,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_BOOAPPLICATIONTEXT,Bill of Operations Application - Text,Bill of Operations Application - Text,PP-VDM-MD,,text,4,0,,top-level
+I_BOOOPERATIONINTERNALID,Bill of Operations Operation Internal ID,Bill of Operations Operation Internal ID,PP-VDM-MD,Dimension,dimension,5,0,Task List (routing) group,top-level
+I_CAPACITY,Capacity Header,Capacity Header,PP-VDM-MD,Dimension,dimension,67,2,Plant,top-level
+I_CAPACITYBYSEMANTICKEYSTDVH,Capacity By Semantic Key,Capacity By Semantic Key,PP-VDM-MD,,value_help,5,0,Plant,top-level
+I_CAPACITYCATEGORY,Capacity Category,Capacity Category,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_CAPACITYCATEGORYTEXT,Capacity Category - Text,Capacity Category - Text,PP-VDM-MD,,text,4,0,,top-level
+I_CAPACITYRESPPLANNER,Capacity Responsible Planner,Capacity Responsible Planner,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_CAPACITYRESPPLANNERTEXT,Capacity Responsible Planner - Text,Capacity Responsible Planner - Text,PP-VDM-MD,,text,4,0,,top-level
+I_CAPACITYSTDVH,Capacity Header,Capacity Header,PP-VDM-MD,,value_help,4,0,,top-level
+I_CAPACITYTEXT,Capacity - Text,Capacity - Text,PP-VDM-MD,,text,4,0,,top-level
+I_DOCUMENTPRODNRSCETOOL,Document Production Resource Tool,Document Production Resource Tool,PP-VDM-MD,Dimension,dimension,19,0,,top-level
+I_EMPLOYEESUITABILITY,Employee Suitability,Employee Suitability,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_EMPLOYEESUITABILITYTEXT,Employee Suitability - Text,Employee Suitability - Text,PP-VDM-MD,,text,7,0,Plant,top-level
+I_EMPLOYEEWAGEGROUP,Employee Wage Group,Employee Wage Group,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_EMPLOYEEWAGEGROUPTEXT,Employee Wage Group - Text,Employee Wage Group - Text,PP-VDM-MD,,text,6,0,Plant,top-level
+I_EQUIPMENTPRODNRSCETOOL,Equipment Production Resource Tool,Equipment Production Resource Tool,PP-VDM-MD,Dimension,dimension,46,0,Equipment,top-level
+I_LOCATION,Location,Location,PP-VDM-MD,Dimension,dimension,7,0,Address; Plant,top-level
+I_LOCATIONGROUP,Location Group Code,Location Group Code,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_LOCATIONGROUPTEXT,Location Group - Text,Location Group - Text,PP-VDM-MD,,text,6,0,Plant,top-level
+I_MACHINETYPE,Machine Type,Machine Type,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_MACHINETYPETEXT,Machine Type - Text,Machine Type - Text,PP-VDM-MD,,text,4,0,,top-level
+I_MATERIALPRODNRSCETOOL,Material Production Resource Tool,Material Production Resource Tool,PP-VDM-MD,Dimension,dimension,51,1,Material / Product; Plant,top-level
+I_MFGBILLOFOPERATIONS,Manufacturing Bill of Operations,Manufacturing Bill of Operations,PP-VDM-MD,Dimension,dimension,17,0,Task List (routing) group,top-level
+I_MFGBILLOFOPERATIONSCHGST,Manufacturing Bill of Operations Change State,Manufacturing Bill of Operations Change State,PP-VDM-MD,Dimension,dimension,66,0,Plant; Task List (routing) group,top-level
+I_MFGBILLOFOPERATIONSOPERATION,Manufacturing Bill of Operations Operation,Manufacturing Bill of Operations Operation,PP-VDM-MD,Dimension,dimension,10,0,Task List (routing) group,top-level
+I_MFGBILLOFOPERATIONSSEQUENCE,Manufacturing Bill of Operations Sequence,Manufacturing Bill of Operations Sequence,PP-VDM-MD,Dimension,dimension,9,0,Task List (routing) group,top-level
+I_MFGBILLOFOPERATIONSSTDVH,Manufacturing Bill of Operations,Manufacturing Bill of Operations,PP-VDM-MD,,value_help,5,0,Task List (routing) group,top-level
+I_MFGBOOMATERIALASSGMTCHGST,Change State of Material Assgmt to Manufacturing BOO,Change State of Material Assgmt to Manufacturing BOO,PP-VDM-MD,Dimension,dimension,40,2,Material / Product; Plant; Sales Document; Task List (routing) group; WBS Element,top-level
+I_MFGBOOMATERIALASSIGNMENT,Material Assignment to Manufacturing Bill of Operations,Material Assignment to Manufacturing Bill of Operations,PP-VDM-MD,Dimension,dimension,14,1,Material / Product; Plant; Task List (routing) group,top-level
+I_MFGBOOOPBOMITEMCHANGESTATE,Manufacturing BOO Operation BOM Item Change State,Manufacturing BOO Operation BOM Item Change State,PP-VDM-MD,Dimension,dimension,39,2,Task List (routing) group,top-level
+I_MFGBOOOPERATIONCHANGESTATE,Manufacturing Bill of Operations Operation Change State,Manufacturing Bill of Operations Operation Change State,PP-VDM-MD,Dimension,dimension,196,1,Company Code; Material Group; Plant; Purchasing Document; Purchasing Organization; Supplier; Task List (routing) group,top-level
+I_MFGBOOOPERATIONPRTINTID,PRT Internal ID of Mfg BOO Operation,PRT Internal ID of Mfg BOO Operation,PP-VDM-MD,Dimension,dimension,11,0,Task List (routing) group,top-level
+I_MFGBOOOPPRODNRSCETOOLCHGST,Mfg BOO Op Prodn Rsce Tool Change State,Mfg BOO Op Prodn Rsce Tool Change State,PP-VDM-MD,Dimension,dimension,57,0,Task List (routing) group,top-level
+I_MFGBOOSEQUENCECHANGESTATE,Manufacturing Bill of Operations Sequence Change State,Manufacturing Bill of Operations Sequence Change State,PP-VDM-MD,Dimension,dimension,33,0,Task List (routing) group,top-level
+I_MFGBOOSUBOPERATIONCHGST,Manufacturing Bill of Operations Sub Operation Change State,Manufacturing Bill of Operations Sub Operation Change State,PP-VDM-MD,Dimension,dimension,154,1,Material Group; Plant; Purchasing Document; Purchasing Organization; Supplier; Task List (routing) group,top-level
+I_MISCPRODNRSCETOOL,Miscellaneous Production Resource Tool,Miscellaneous Production Resource Tool,PP-VDM-MD,Dimension,dimension,51,0,,top-level
+I_MISCPRODNRSCETOOLTEXT,Miscellaneous PRT - Text,Miscellaneous PRT - Text,PP-VDM-MD,,text,7,0,,top-level
+I_MSRGPOINTPRODNRSCETOOL,Measuring Point Production Resource Tool,Measuring Point Production Resource Tool,PP-VDM-MD,Dimension,dimension,37,0,,top-level
+I_OPERATIONDATEOFFSETREFCODE,Operation Date Offset Reference Code,Operation Date Offset Reference Code,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_OPERATIONDATEOFFSTREFCODETXT,Operation Date Offset Reference Code - Text,Operation Date Offset Reference Code - Text,PP-VDM-MD,,text,4,0,,top-level
+I_OPERATIONSETUPGROUP,Operation Setup Group,Operation Setup Group,PP-VDM-MD,Dimension,dimension,6,0,Plant,top-level
+I_OPERATIONSETUPGROUPCATEGORY,Operation Setup Group Category,Operation Setup Group Category,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_OPERATIONSETUPGROUPCATTEXT,Operation Setup Group Category - Text,Operation Setup Group Category - Text,PP-VDM-MD,,text,6,0,Plant,top-level
+I_OPERATIONSETUPGROUPTEXT,Operation Setup Group - Text,Operation Setup Group - Text,PP-VDM-MD,,text,8,0,Plant,top-level
+I_OPERATIONSETUPTYPE,Operation Setup Type,Operation Setup Type,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_OPERATIONSETUPTYPETEXT,Operation Setup Type - Text,Operation Setup Type - Text,PP-VDM-MD,,text,6,0,Plant,top-level
+I_OPERATIONSTANDARDTEXT,Standard Text for Operation,Standard Text for Operation,PP-VDM-MD,Dimension,text,2,0,,top-level
+I_OPERATIONSTANDARDTEXTTEXT,Standard Text for Operation - Text,Standard Text for Operation - Text,PP-VDM-MD,,text,4,0,,top-level
+I_PRODNRSCETOOLBYINTERNALKEY,Production Resource Tool by Internal Key,Production Resource Tool by Internal Key,PP-VDM-MD,Dimension,dimension,31,3,Equipment; Material / Product; Plant,top-level
+I_PRODNRSCETOOLCATEGORY,Production Resource Tool Category,Production Resource Tool Category,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_PRODNRSCETOOLCATEGORYTEXT,Production Resource Tool Category - Text,Production Resource Tool Category - Text,PP-VDM-MD,,text,6,0,,top-level
+I_PRODNRSCETOOLCATEGORYTEXT_2,Production Resource Tool Category - Text,Production Resource Tool Category - Text,PP-VDM-MD,,basic,6,0,,top-level
+I_PRODNRSCETOOLCATEGORY_2,Production Resource Tool Category,Production Resource Tool Category,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_PRODNRSCETOOLCONTROLPRFLTEXT,Production Resource Tool Control Profile - Text,Production Resource Tool Control Profile - Text,PP-VDM-MD,,text,4,0,,top-level
+I_PRODNRSCETOOLCONTROLPROFILE,Production Resource Tool Control Profile,Production Resource Tool Control Profile,PP-VDM-MD,Dimension,dimension,7,0,,top-level
+I_PRODNRSCETOOLGROUP,Production Resource Tool Group,Production Resource Tool Group,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_PRODNRSCETOOLGROUPTEXT,Production Resource Tool Group - Text,Production Resource Tool Group - Text,PP-VDM-MD,,text,5,0,,top-level
+I_PRODNRSCETOOLMASTERDATA,Production Resource Tool Master Data,Production Resource Tool Master Data,PP-VDM-MD,Dimension,dimension,57,3,,top-level
+I_PRODNRSCETOOLSTANDARDTEXT,Standard Text for Production Resource Tool,Standard Text for Production Resource Tool,PP-VDM-MD,Dimension,text,2,0,,top-level
+I_PRODNRSCETOOLSTDTEXTTEXT,Standard Text for Production Resource Tool - Text,Standard Text for Production Resource Tool - Text,PP-VDM-MD,,text,4,0,,top-level
+I_PRODNRSCETOOLTEXT,Production Resource Tool - Text,Production Resource Tool - Text,PP-VDM-MD,,text,17,0,,top-level
+I_PRODUCTIONLINESTDVH,Production Line,Production Line,PP-VDM-MD,,value_help,4,0,Plant,top-level
+I_PRODUCTIONRESOURCETYPE,Production Resource Type,Production Resource Type,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_PRODUCTIONRESOURCETYPETEXT,Production Resource Type - Text,Production Resource Type - Text,PP-VDM-MD,,text,4,0,,top-level
+I_PRODUCTIONRESOURCEUSAGE,Production Resource Usage,Production Resource Usage,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_PRODUCTIONRESOURCEUSAGETEXT,Production Resource Usage - Text,Production Resource Usage - Text,PP-VDM-MD,,text,5,0,,top-level
+I_PRODUCTIONVERSION,Production Version,Production Version,PP-VDM-MD,Dimension,dimension,72,0,Material / Product; Plant,top-level
+I_PRODUCTIONVERSIONBASICSTDVH,Production Version Basic,Production Version Basic,PP-VDM-MD,,value_help,8,0,Material / Product; Plant,top-level
+I_PRODUCTIONVERSIONGROUP,Production Version Group,Production Version Group,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_RESPONSIBLEPLANNERGROUP,Responsible Planner Group,Responsible Planner Group,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_SEQUENCECATEGORY,Sequence Category,Sequence Category,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_SEQUENCECATEGORYTEXT,Sequence Category - Text,Sequence Category - Text,PP-VDM-MD,,text,4,0,,top-level
+I_SEQUENCESCHEDULINGALGNMTTEXT,Sequence Scheduling Alignment - Text,Sequence Scheduling Alignment - Text,PP-VDM-MD,,text,4,0,,top-level
+I_SEQUENCESCHEDULINGALIGNMENT,Sequence Scheduling Alignment,Sequence Scheduling Alignment,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_SHIFTDEFINITION,Shift Definition Code,Shift Definition Code,PP-VDM-MD,Dimension,dimension,18,1,,top-level
+I_SHIFTDEFINITIONTEXT,Shift Definition - Text,Shift Definition - Text,PP-VDM-MD,,text,6,0,,top-level
+I_SHIFTGROUPING,Shift Grouping Code,Shift Grouping Code,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_SHIFTGROUPINGTEXT,Shift Grouping - Text,Shift Grouping - Text,PP-VDM-MD,,text,4,0,,top-level
+I_SHIFTNUMBER,Shift Number,Shift Number,PP-VDM-MD,Dimension,dimension,5,0,,top-level
+I_SHIFTSEQUENCE,Shift Sequence Code,Shift Sequence Code,PP-VDM-MD,Dimension,dimension,5,1,,top-level
+I_SHIFTSEQUENCETEXT,Shift Sequence - Text,Shift Sequence - Text,PP-VDM-MD,,text,6,0,,top-level
+I_STANDARDWORKFMLAPARAMGROUP,Standard Work Formula Parameter Group,Standard Work Formula Parameter Group,PP-VDM-MD,Dimension,dimension,14,0,,top-level
+I_STANDARDWORKFMLAPARAMGRPTEXT,Standard Work Formula Parameter Group - Text,Standard Work Formula Parameter Group - Text,PP-VDM-MD,,text,4,0,,top-level
+I_STANDARDWORKFORMULAPARAMETER,Standard Work Formula Parameter,Standard Work Formula Parameter,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_STANDARDWORKFORMULAPARAMTEXT,Standard Work Formula Parameter - Text,Standard Work Formula Parameter - Text,PP-VDM-MD,,text,4,0,,top-level
+I_WORKBREAK,Work Break,Work Break,PP-VDM-MD,Dimension,dimension,9,0,,top-level
+I_WORKBREAKSCHEDULE,Work Break Schedule,Work Break Schedule,PP-VDM-MD,Dimension,dimension,6,1,,top-level
+I_WORKBREAKSCHEDULETEXT,Work Break Schedule - Text,Work Break Schedule - Text,PP-VDM-MD,,text,7,0,,top-level
+I_WORKCENTER,Work Center,Work Center,PP-VDM-MD,Dimension,dimension,134,0,Plant,top-level
+I_WORKCENTERBYSEMANTICKEY,Work Center By Semantic Key,Work Center By Semantic Key,PP-VDM-MD,Dimension,dimension,87,0,Plant,top-level
+I_WORKCENTERCAPACITY,Work Center Capacity,Work Center Capacity,PP-VDM-MD,Dimension,dimension,30,0,Plant,top-level
+I_WORKCENTERCATEGORY,Work Center Category,Work Center Category,PP-VDM-MD,Dimension,dimension,3,0,,top-level
+I_WORKCENTERCATEGORYTEXT,Work Center Category - Text,Work Center Category - Text,PP-VDM-MD,,text,4,0,,top-level
+I_WORKCENTERCOSTCENTER,Work Center Cost Center,Work Center Cost Center,PP-VDM-MD,Dimension,dimension,36,0,Activity Type; Controlling Area; Cost Center; Plant,top-level
+I_WORKCENTERLOCATION,Work Center Location,Work Center Location,PP-VDM-MD,Dimension,dimension,7,0,Address; Plant,top-level
+I_WORKCENTERLOCATIONGROUP,Work Center Location Group,Work Center Location Group,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_WORKCENTERLOCATIONGROUPTEXT,Work Center Location Group - Text,Work Center Location Group - Text,PP-VDM-MD,,text,6,0,Plant,top-level
+I_WORKCENTERRESPONSIBLE,Work Center Responsible,Work Center Responsible,PP-VDM-MD,Dimension,dimension,4,0,Plant,top-level
+I_WORKCENTERSTDVH,Work Center,Work Center,PP-VDM-MD,,value_help,7,0,Plant,top-level
+I_WORKCENTERTEXT,Work Center - Text,Work Center - Text,PP-VDM-MD,,text,8,0,Plant,top-level
+I_WORKCENTERTEXTBYSEMANTICKEY,Work Center by Semantic Key - Text,Work Center by Semantic Key - Text,PP-VDM-MD,,basic,10,0,Plant,top-level
+I_WORKCENTERTYPE,Work Center Type,Work Center Type,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_WORKCENTERTYPETEXT,Work Center Type - Text,Work Center Type - Text,PP-VDM-MD,,text,4,0,,top-level
+I_WORKDAYRULE,WorkDay Rule Code,WorkDay Rule Code,PP-VDM-MD,Dimension,dimension,2,0,,top-level
+I_WORKDAYRULETEXT,WorkDay Rule - Text,WorkDay Rule - Text,PP-VDM-MD,,text,4,0,,top-level
+I_WRKCTRBYSEMANTICKEYSTDVH,Work Center By Semantic Key,Work Center By Semantic Key,PP-VDM-MD,,value_help,7,0,Plant,top-level

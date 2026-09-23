@@ -1,0 +1,86 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_MANUFACTURERPARTPROFILE,Manufacturer Part Profile,Manufacturer Part Profile,MM,Dimension,dimension,2,0,,top-level
+I_MANUFACTURERPARTPROFILETEXT,Manufacturer Part Profile - Text,Manufacturer Part Profile - Text,MM,,text,5,0,,top-level
+I_PLANTPURCHASINGORGANIZATION,Responsible Purg Org for Plant,Responsible Purg Org for Plant,MM,Fact,fact,4,0,Plant; Purchasing Organization,top-level
+I_PRICINGDATECONTROL,Control of Pricing Date,Control of Pricing Date,MM,Dimension,dimension,3,0,,top-level
+I_PRICINGDATECONTROLTXT,Pricing Date Control - Text,Pricing Date Control - Text,MM,,text,6,0,,top-level
+I_PURCHASEORDERCHANGEDOCUMENT,Purchase Order Change Document,Purchase Order Change Document,MM,,basic,10,0,Purchasing Organization,top-level
+I_PURCHASEORDERTYPE,Purchase Order Type,Purchase Order Type,MM,Dimension,dimension,6,0,,top-level
+I_PURCHASINGDOCUMENTCATEGORY,Purchasing Document Category,Purchasing Document Category,MM,Dimension,dimension,3,0,,top-level
+I_PURCHASINGDOCUMENTORIGIN,Purchasing Document Origin,Purchasing Document Origin,MM,Dimension,dimension,3,0,,top-level
+I_PURCHASINGDOCUMENTORIGINTEXT,Purchasing Document Origin - Text,Purchasing Document Origin - Text,MM,,text,6,0,,top-level
+I_PURCHASINGDOCUMENTSTATUS,Status of Purchasing Document,Status of Purchasing Document,MM,Dimension,dimension,3,0,,top-level
+I_PURCHASINGDOCUMENTSTATUSTEXT,Purchasing Document Status - Text,Purchasing Document Status - Text,MM,,text,6,0,,top-level
+I_PURCHASINGDOCUMENTTYPE,Purchasing Document Type,Purchasing Document Type,MM,Dimension,dimension,9,0,,top-level
+I_PURCHASINGDOCUMENTTYPETEXT,Purchasing Document Type - Text,Purchasing Document Type - Text,MM,,text,7,0,,top-level
+I_PURCHASINGGROUP,Purchasing Group,Purchasing Group,MM,Dimension,dimension,7,0,,top-level
+I_PURCHASINGOBJECTCATEGORY,Purchasing Object Category,Purchasing Object Category,MM,Dimension,dimension,3,0,,top-level
+I_PURCHASINGOBJECTCATEGORYTEXT,Purchasing Object Category - Text,Purchasing Object Category - Text,MM,,text,5,0,,top-level
+I_PURCHASINGORGANIZATION,Purchasing Organization,Purchasing Organization,MM,Dimension,dimension,5,0,Company Code,top-level
+I_PURCHASINGPROCESSINGSTATUS,Purchasing Processing Status,Purchasing Processing Status,MM,Dimension,dimension,3,0,,top-level
+I_PURGAGGRGDPRODCMPLNCSUPLRSTS,Compliance Status of Supplier,Compliance Status of Supplier,MM,Dimension,dimension,3,0,,top-level
+I_PURGAGGRGDSFTYDATASHEETSTS,Compliance Status of Safety Data Sheet,Compliance Status of Safety Data Sheet,MM,Dimension,dimension,3,0,,top-level
+I_PURGAGGRGDSFTYDATASHEETSTST,Compliance Sts of Safety Data Sht - Text,Compliance Sts of Safety Data Sht - Text,MM,,basic,6,0,,top-level
+I_PURGDOCOUTPUTCHANGETEXT,Purchasing Document Output Change - Text,Purchasing Document Output Change - Text,MM,,text,4,0,,top-level
+I_PURGDOCOUTPUTRELEVANTCHANGE,Purchasing Doc Output Relevant Change,Purchasing Doc Output Relevant Change,MM,,basic,5,0,,top-level
+I_PURGDOCUMENTCATEGORYTEXT,Purchasing Document Category - Text,Purchasing Document Category - Text,MM,,text,6,0,,top-level
+I_PURGDOCUMENTITEMCATEGORY,Item Category for Purchasing Document,Item Category for Purchasing Document,MM,Dimension,dimension,5,0,,top-level
+I_PURGDOCUMENTITEMCATEGORYTEXT,Purchasing Document Item Category - Text,Purchasing Document Item Category - Text,MM,,text,6,0,,top-level
+I_PURGDOCUMENTPROCESSCODE,Purchasing Document Process Code,Purchasing Document Process Code,MM,Dimension,dimension,3,0,,top-level
+I_PURGDOCUMENTPROCESSCODETEXT,Purchasing Document Process Code - Text,Purchasing Document Process Code - Text,MM,,text,6,0,,top-level
+I_PURGINFORECORDUPDATECODET,Update Code for Purg Info Record - Text,Update Code for Purg Info Record - Text,MM,,basic,6,0,,top-level
+I_PURGOBJITEMTXTOBJOUTPRLVNCE,Output Relevance of Purchasing Itm Notes,Output Relevance of Purchasing Itm Notes,MM,,basic,16,0,,top-level
+I_PURGOBJTEXTOBJECTOUTPRLVNCE,Output Relevance of Purchasing Notes,Output Relevance of Purchasing Notes,MM,,basic,13,0,,top-level
+I_PURGOUTPUTOPERATIONCODE,Purchasing Output Operation Code,Purchasing Output Operation Code,MM,Dimension,dimension,3,0,,top-level
+I_PURGOUTPUTOPERATIONCODETEXT,Purchasing Output Operation Code - Text,Purchasing Output Operation Code - Text,MM,,text,6,0,,top-level
+I_PURGPROCESSINGSTATUSTEXT,Purchasing Processing Status - Text,Purchasing Processing Status - Text,MM,,text,6,0,,top-level
+I_PURGPRODCMPLNCDNGRSGOODSSTS,Compliance Sts of Dangerous Goods Item,Compliance Sts of Dangerous Goods Item,MM,Dimension,dimension,3,0,,top-level
+I_PURGPRODCMPLNCDNGRSGOODSSTST,Compliance Sts of Dngrs Goods Itm - Text,Compliance Sts of Dngrs Goods Itm - Text,MM,,basic,6,0,,top-level
+I_PURGPRODCMPLNCSUPPLIERSTATUS,Compliance Status of Supplier by Item,Compliance Status of Supplier by Item,MM,Dimension,dimension,3,0,,top-level
+I_PURGPRODCMPLNCSUPPLIERSTST,Compliance Sts of Suplr by Item - Text,Compliance Sts of Suplr by Item - Text,MM,,basic,6,0,,top-level
+I_PURGPRODCMPLNCTOTDNGRSGDSSTS,Compliance Status of Dangerous Goods,Compliance Status of Dangerous Goods,MM,Dimension,dimension,3,0,,top-level
+I_PURGPRODUCTMARKETABILITYSTS,Compliance Status of Marketability,Compliance Status of Marketability,MM,Dimension,dimension,3,0,,top-level
+I_PURGPRODUCTMARKETABILITYSTST,Compliance Sts of Marketability - Text,Compliance Sts of Marketability - Text,MM,,basic,6,0,,top-level
+I_PURGRELSTRATEGYCONTROLCODE,Release Indicator in Purchasing Doc,Release Indicator in Purchasing Doc,MM,,basic,2,0,,top-level
+I_PURGRELSTRATEGYCONTROLCODET,Release Indicator in Purg Doc - Text,Release Indicator in Purg Doc - Text,MM,,basic,3,0,,top-level
+I_PURGSAFETYDATASHEETSTATUS,Compliance Status of Safety Data Sheet,Compliance Status of Safety Data Sheet,MM,Dimension,dimension,3,0,,top-level
+I_PURGSAFETYDATASHEETSTATUST,Compliance Sts of Safety Data Sht - Text,Compliance Sts of Safety Data Sht - Text,MM,,basic,6,0,,top-level
+I_PURGTOTDANGEROUSGOODSSTST,Compliance Sts of Dangerous Goods - Text,Compliance Sts of Dangerous Goods - Text,MM,,basic,6,0,,top-level
+I_PURGTOTPRODCMPLNCSUPLRSTST,Compliance Status of Supplier - Text,Compliance Status of Supplier - Text,MM,,basic,6,0,,top-level
+I_PURGTOTPRODMARKETABILITYSTS,Compliance Status of Marketability,Compliance Status of Marketability,MM,Dimension,dimension,3,0,,top-level
+I_PURGTOTPRODMARKETABILITYSTST,Compliance Sts of Marketability - Text,Compliance Sts of Marketability - Text,MM,,basic,6,0,,top-level
+I_PURORDCHANGEDOCUMENTITEM,Purchase Order Change Document Items,Purchase Order Change Document Items,MM,,basic,16,0,Purchasing Organization,top-level
+I_PURPRODUCTTAXCLASSIFICATION,Purchasing Product Tax Classification,Purchasing Product Tax Classification,MM,Dimension,dimension,4,0,,top-level
+I_PURPRODUCTTAXCLASSIFICATIONT,Product Tax Classification - Text,Product Tax Classification - Text,MM,,basic,6,0,,top-level
+I_PURREQNRELEASECONTROLCODE,Release Indicator in PurReqn,Release Indicator in PurReqn,MM,,basic,2,0,,top-level
+I_PURREQNRELEASECONTROLCODET,Release Indicator in PurReqn - Text,Release Indicator in PurReqn - Text,MM,,basic,3,0,,top-level
+I_STORAGELOCATIONADDRESS,Assigned addresses of storage locations,Assigned addresses of storage locations,MM,,basic,8,1,Address; Plant; Storage Location,top-level
+I_SUPLRCONFCATINTERNALASSGMT,Supplier Confirmation Cat Assignment,Supplier Confirmation Cat Assignment,MM,Dimension,dimension,3,0,,top-level
+I_SUPPLIERCONFCONTROLKEY,Control Key for Supplier Confirmation,Control Key for Supplier Confirmation,MM,,basic,2,0,,top-level
+I_SUPPLIERCONFCONTROLKEYTEXT,Supplier Confirmation Control Key - Text,Supplier Confirmation Control Key - Text,MM,,text,5,0,,top-level
+I_SUPPLIERCONFIRMATIONCATEGORY,Supplier Confirmation Category,Supplier Confirmation Category,MM,Dimension,dimension,2,0,,top-level
+I_SUPLRINVCWRKFLWEMLDEADLINE,Supplier Invoice Details for Workflow Deadline Email,Supplier Invoice Details for Workflow Deadline Email,MM-IV-INT-WF,,basic,22,1,Company Code; Fiscal Year,top-level
+I_SUPCSGNMTPPLINEINVCHISTAPI01,Consignment and Pipeline History of Supplier Invoice,Consignment and Pipeline History of Supplier Invoice,MM-IV-LIV,,basic,7,0,Fiscal Year,top-level
+I_SUPCSGNMTPPLINEWTHDRWLAPI01,Consignment and Pipeline Withdrawal of Supplier,Consignment and Pipeline Withdrawal of Supplier,MM-IV-LIV,,basic,25,0,Business Area; Company Code; Material / Product; Plant; Profit Center; Tax Code,top-level
+I_SUPLRINVCCHGDOCAPI01,Change Documents for Supplier Invoices,Change Documents for Supplier Invoices,MM-IV-LIV,,basic,10,0,,top-level
+I_SUPLRINVCCHGDOCITMAPI01,Change Document Items for Supplier Invoices,Change Document Items for Supplier Invoices,MM-IV-LIV,,basic,13,0,,top-level
+I_SUPLRINVCHEADERWHLDGTAXAPI01,Withholding Tax for Supplier Invoice,Withholding Tax for Supplier Invoice,MM-IV-LIV,,basic,9,0,Fiscal Year,top-level
+I_SUPLRINVCITEMASSETAPI01,Asset Item of Supplier Invoice,Asset Item of Supplier Invoice,MM-IV-LIV,,basic,24,0,Company Code; Fiscal Year; Fixed Asset; G/L Account; Profit Center; Tax Code,top-level
+I_SUPLRINVCITEMCSGNMTAPI01,Consignment Settlement Item,Consignment Settlement Item,MM-IV-LIV,,basic,23,0,Business Area; Company Code; Fiscal Year; G/L Account; Material / Product; Plant; Profit Center; Tax Code,top-level
+I_SUPLRINVCITEMMATERIALAPI01,Material Item of Supplier Invoice,Material Item of Supplier Invoice,MM-IV-LIV,,basic,21,0,Company Code; Fiscal Year; Material / Product; Plant; Tax Code; Valuation Area,top-level
+I_SUPLRINVCITEMPURORDREFAPI01,Purchase Order Ref of Supplier Invoice,Purchase Order Ref of Supplier Invoice,MM-IV-LIV,,basic,42,0,Fiscal Year; Material / Product; Plant; Purchasing Document; Supplier; Tax Code,top-level
+I_SUPLRINVCITMACCTASSGMTAPI01,Account Assignment for Supplier Invoice,Account Assignment for Supplier Invoice,MM-IV-LIV,,basic,49,0,Activity Type; Business Area; Controlling Area; Cost Center; Fiscal Year; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Personnel; Profit Center; SD/LE Document (generic VBELN); Tax Code; WBS Element,top-level
+I_SUPLRINVCSELDDELIVNOTEAPI01,Delivery Note Ref for Supplier Invoice,Delivery Note Ref for Supplier Invoice,MM-IV-LIV,,basic,4,0,Fiscal Year,top-level
+I_SUPLRINVCSELDINBBOLAPI01,Bill of Lading Ref for Supplier Invoice,Bill of Lading Ref for Supplier Invoice,MM-IV-LIV,,basic,4,0,Fiscal Year,top-level
+I_SUPLRINVCSELDPURGDOCAPI01,Purchasing Document Ref for Supplier Inv,Purchasing Document Ref for Supplier Inv,MM-IV-LIV,,basic,5,0,Fiscal Year; Purchasing Document,top-level
+I_SUPLRINVCSELDSESLEANAPI01,Service Entry Sheet Ref for Supplier Inv,Service Entry Sheet Ref for Supplier Inv,MM-IV-LIV,,basic,5,0,Fiscal Year,top-level
+I_SUPLRINVCSTSANDORIGNAPI01,Supplier Invoice Status and Origin,Supplier Invoice Status and Origin,MM-IV-LIV,,basic,5,0,Fiscal Year,top-level
+I_SUPLRINVCSTSORIGNTXTAPI01,Supplier Invoice Status and Origin - Text,Supplier Invoice Status and Origin - Text,MM-IV-LIV,,basic,4,0,,top-level
+I_SUPLRINVCSUPLRTOLSTTGSAPI01,Tolerance Settings for Supplier Invoice,Tolerance Settings for Supplier Invoice,MM-IV-LIV,,basic,3,0,Company Code,top-level
+I_SUPLRINVOICEITEMGLACCTAPI01,G/L Account Item of Supplier Invoice,G/L Account Item of Supplier Invoice,MM-IV-LIV,,basic,49,0,Activity Type; Business Area; Company Code; Controlling Area; Cost Center; Fiscal Year; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Personnel; Profit Center; SD/LE Document (generic VBELN); Tax Code; WBS Element,top-level
+I_SUPPLIERINVCSTATUSTXTAPI01,Supplier Invoice Status - Text,Supplier Invoice Status - Text,MM-IV-LIV,,basic,6,0,,top-level
+I_SUPPLIERINVOICEAPI01,Supplier Invoice,Supplier Invoice,MM-IV-LIV,,basic,91,0,Company Code; Fiscal Year; Payment Terms,top-level
+I_SUPPLIERINVOICEBLOCKAPI01,Supplier Invoice Block Logistics,Supplier Invoice Block Logistics,MM-IV-LIV,,basic,10,0,Company Code; Fiscal Year; Supplier,top-level
+I_SUPPLIERINVOICESTATUSAPI01,Supplier Invoice Status,Supplier Invoice Status,MM-IV-LIV,Dimension,dimension,3,0,,top-level
+I_SUPPLIERINVOICETAXAPI01,Tax for Supplier Invoice,Tax for Supplier Invoice,MM-IV-LIV,,basic,14,0,Fiscal Year,top-level
+I_SUPPLIERINVOICEUPLOADAPI01,Supplier Invoice Upload,Supplier Invoice Upload,MM-IV-LIV,,basic,9,0,Company Code,top-level

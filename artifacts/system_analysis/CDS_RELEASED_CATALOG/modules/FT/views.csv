@@ -1,0 +1,2 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_TRDCLASSFCTNNMBRTEXT,Number - Text,Number - Text,FT-ITR-CLS,,text,13,0,,top-level

@@ -1,0 +1,80 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
+I_BUSTRANSDOCITEMTYPECODE,BTD Item Type Code,BTD Item Type Code,TM,Dimension,dimension,2,0,,top-level
+I_BUSTRANSDOCITMTYPECODETEXT,BTD Item Type Code - Text,BTD Item Type Code - Text,TM,,text,5,0,,top-level
+I_BUSTRANSDOCTYPECODE,Business Transaction Document Type Code,Business Transaction Document Type Code,TM,Dimension,dimension,2,0,,top-level
+I_BUSTRANSDOCTYPECODETEXT,Business Trans Doc Type Code - Text,Business Trans Doc Type Code - Text,TM,,text,5,0,,top-level
+I_TRANSPMEANSOFTRANSPORT,Transportation Means of Transport,Transportation Means of Transport,TM,Dimension,dimension,5,0,,top-level
+I_TRANSPMEANSOFTRANSPORTT,Transportation Means of Transport - Text,Transportation Means of Transport - Text,TM,,basic,5,0,,top-level
+I_TRANSPMOVEMENTTYPE,Transportation Order Movement Type,Transportation Order Movement Type,TM,Dimension,dimension,2,0,,top-level
+I_TRANSPMOVEMENTTYPETEXT,TranspOrd Movement Type - Text,TranspOrd Movement Type - Text,TM,,text,5,0,,top-level
+I_TRANSPNUMBERINGSCHEME,Transportation Numbering Scheme,Transportation Numbering Scheme,TM,,basic,2,0,,top-level
+I_TRANSPORDCONFIRMATIONSTATUS,Confirmation Status,Confirmation Status,TM,Dimension,dimension,2,0,,top-level
+I_TRANSPORDCONFIRMATIONSTSTEXT,Confirmation Status - Text,Confirmation Status - Text,TM,,text,5,0,,top-level
+I_TRANSPORDCREATIONTYPE,Transportation Order Creation Type,Transportation Order Creation Type,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDCREATIONTYPETEXT,Transp Order Creation Type - Text,Transp Order Creation Type - Text,TM,,text,6,0,,top-level
+I_TRANSPORDERCATEGORYT_2,Transportation Order Category - Text,Transportation Order Category - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDERCATEGORY_2,Transportation Order Category,Transportation Order Category,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDEVENTCODETEXT_2,Transportation Order Event Code - Text,Transportation Order Event Code - Text,TM,,basic,5,0,,top-level
+I_TRANSPORDEVENTCODE_2,Transportation Order Event Code,Transportation Order Event Code,TM,Dimension,dimension,4,0,,top-level
+I_TRANSPORDEXECSTATUSTEXT_2,Transp Order Execution Status - Text,Transp Order Execution Status - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDEXECSTATUS_2,Transportation Order Execution Status,Transportation Order Execution Status,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDGOODSMVTSTATUS,Transp Order Goods Movement Status,Transp Order Goods Movement Status,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDGOODSMVTSTSTEXT,Transp Ord Goods Movement Status - Text,Transp Ord Goods Movement Status - Text,TM,,text,6,0,,top-level
+I_TRANSPORDINVCGCARRIERLEVEL,Transp Order Invoicing Carrier Level,Transp Order Invoicing Carrier Level,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDINVCGCARRIERLVLT,Transp Ord Invoicing Carrier Lvl - Text,Transp Ord Invoicing Carrier Lvl - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDITEMCATEGORYT_2,Transp Order Item Category - Text,Transp Order Item Category - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDITEMCATEGORY_2,Transportation Order Item Category,Transportation Order Item Category,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDITEMTYPETEXT_2,Transportation Order Item Type - Text,Transportation Order Item Type - Text,TM,,basic,5,0,,top-level
+I_TRANSPORDITEMTYPE_2,Transportation Order Item Type,Transportation Order Item Type,TM,Dimension,dimension,4,0,,top-level
+I_TRANSPORDLIFECYCLESTATUS_2,Transportation Order Lifecycle Status,Transportation Order Lifecycle Status,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDLIFECYCSTATUST_2,Transp Order Lifecycle Status - Text,Transp Order Lifecycle Status - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDPLANNINGSTATUST_2,Transp Order Planning Status - Text,Transp Order Planning Status - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDPLANNINGSTATUS_2,Transportation Order Planning Status,Transportation Order Planning Status,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDSHIPPINGTYPET_2,Transp Order Shipping Type - Text,Transp Order Shipping Type - Text,TM,,basic,5,0,,top-level
+I_TRANSPORDSHIPPINGTYPE_2,Transportation Order Shipping Type,Transportation Order Shipping Type,TM,Dimension,dimension,2,0,,top-level
+I_TRANSPORDSTAGECATEGORYT_2,Transp Order Stage Category - Text,Transp Order Stage Category - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDSTAGECATEGORY_2,Transportation Order Stage Category,Transportation Order Stage Category,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDSTAGETYPETEXT_2,Transportation Order Stage Type - Text,Transportation Order Stage Type - Text,TM,,basic,5,0,,top-level
+I_TRANSPORDSTAGETYPE_2,Transportation Order Stage Type,Transportation Order Stage Type,TM,Dimension,dimension,4,0,,top-level
+I_TRANSPORDSTGEINVCGCARRLVL,Transp Order Stage Invcg Carrier Level,Transp Order Stage Invcg Carrier Level,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDSTGEINVCGCARRLVLT,Transp Ord Stg Invcg Carrier Lvl - Text,Transp Ord Stg Invcg Carrier Lvl - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDSTOPCATEGORYT_2,Transp Order Stop Category - Text,Transp Order Stop Category - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDSTOPCATEGORY_2,Transportation Order Stop Category,Transportation Order Stop Category,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDSTOPROLET_2,Transportation Order Stop Role - Text,Transportation Order Stop Role - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDSTOPROLE_2,Transportation Order Stop Role,Transportation Order Stop Role,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDSUBCONTRGSTATUS_2,Transp Order Subcontracting Status,Transp Order Subcontracting Status,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDSUBCONTRGSTST_2,Transp Order Subcontracting Sts - Text,Transp Order Subcontracting Sts - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDWHSEPROCGSTATUS,Transp Ord Warehouse Processing Status,Transp Ord Warehouse Processing Status,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORDWHSEPROCGSTSTEXT,Transp Ord Warehs Procg Status - Text,Transp Ord Warehs Procg Status - Text,TM,,text,6,0,,top-level
+I_TRANSPORTATIONMODECATEGORY,Transportation Mode Category,Transportation Mode Category,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPORTATIONMODECATEGORYT,Transportation Mode Category - Text,Transportation Mode Category - Text,TM,,basic,6,0,,top-level
+I_TRANSPORTATIONMODETEXT_2,Transportation Mode - Text,Transportation Mode - Text,TM,,basic,5,0,,top-level
+I_TRANSPORTATIONMODE_2,Transportation Mode,Transportation Mode,TM,Dimension,dimension,4,0,,top-level
+I_TRANSPORTATIONORDERTYPET_2,Transportation Order Type - Text,Transportation Order Type - Text,TM,,basic,5,0,,top-level
+I_TRANSPORTATIONORDERTYPE_2,Transportation Order Type,Transportation Order Type,TM,Dimension,dimension,4,0,,top-level
+I_TRANSPSCACCODE,Transportation SCAC Code,Transportation SCAC Code,TM,Dimension,dimension,2,0,,top-level
+I_TRANSPSCACCODETEXT,Transportation SCAC Code - Text,Transportation SCAC Code - Text,TM,,text,5,0,,top-level
+I_TRANSPSTOPHNDLGEXECSTATUS,Transp Ord Stop Hndlg Exec Status,Transp Ord Stop Hndlg Exec Status,TM,Dimension,dimension,3,0,,top-level
+I_TRANSPSTOPHNDLGEXECSTATUST,Transp Ord Stop Hndlg Exec Status - Text,Transp Ord Stop Hndlg Exec Status - Text,TM,,basic,6,0,,top-level
+I_TRANSPORDDNGRSGDSSTATUS,Transp Order Dangerous Goods Status,Transp Order Dangerous Goods Status,TM-FRM,Dimension,dimension,2,0,,top-level
+I_TRANSPORDDNGRSGDSSTATUSTEXT,Transp Ord Dangerous Goods Status - Text,Transp Ord Dangerous Goods Status - Text,TM-FRM,,text,5,0,,top-level
+I_TRANSPORDDOCREF_2,Transp Order Document Reference,Transp Order Document Reference,TM-FRM,,basic,13,0,,top-level
+I_TRANSPORDEVENTISRECALLED,Transportation Order Event is Recalled,Transportation Order Event is Recalled,TM-FRM,Dimension,dimension,2,0,,top-level
+I_TRANSPORDEVENTISRECALLEDTEXT,Transp Order Event is Recalled - Text,Transp Order Event is Recalled - Text,TM-FRM,,text,5,0,,top-level
+I_TRANSPORDEXECUTIONBLOCKTEXT,Ind Transp Ord Exe Block - Text,Ind Transp Ord Exe Block - Text,TM-FRM,,text,5,0,,top-level
+I_TRANSPORDEXECUTIONISBLOCKED,Transportation Order Execution Block,Transportation Order Execution Block,TM-FRM,Dimension,dimension,2,0,,top-level
+I_TRANSPORDITEMCOMMODITYCODE,Transp Order Item Commodity Code,Transp Order Item Commodity Code,TM-FRM,,basic,8,0,,top-level
+I_TRANSPORDITEMDOCREF,Transp Order Item Document Reference,Transp Order Item Document Reference,TM-FRM,,basic,13,0,,top-level
+I_TRANSPORDITEMSEAL,Transportation Order Item Seal,Transportation Order Item Seal,TM-FRM,,basic,7,0,,top-level
+I_TRANSPORDPLANNINGBLOCK,Transportation Order Planning Block,Transportation Order Planning Block,TM-FRM,Dimension,dimension,2,0,,top-level
+I_TRANSPORDPLANNINGBLOCKTEXT,Transp Ord Planning Block - Text,Transp Ord Planning Block - Text,TM-FRM,,text,5,0,,top-level
+I_TRANSPORTATIONORDERBP_2,Transportation Order Business Partner,Transportation Order Business Partner,TM-FRM,,basic,9,0,Business Partner,top-level
+I_TRANSPORTATIONORDEREVENT,Transportation Order Event,Transportation Order Event,TM-FRM,,basic,23,0,,top-level
+I_TRANSPORTATIONORDERITEM_2,Transportation Order Item,Transportation Order Item,TM-FRM,,basic,100,0,Material / Product,top-level
+I_TRANSPORTATIONORDERSTAGE_2,Transportation Order Stage,Transportation Order Stage,TM-FRM,,basic,37,0,,top-level
+I_TRANSPORTATIONORDERSTOP_2,Transportation Order Stop,Transportation Order Stop,TM-FRM,,basic,36,0,,top-level
+I_TRANSPORTATIONORDER_2,Transportation Order,Transportation Order,TM-FRM,,basic,91,0,Company Code,top-level
+I_PURCHASEORDITMTRANSPSETTLMT,Purchase order Item Transportation sett,Purchase order Item Transportation sett,TM-FRS,,basic,12,0,Purchasing Document,top-level
+I_TRANSPCOCODEBPASSGMT,Company Code and Business Partner Assgmt,Company Code and Business Partner Assgmt,TM-MD-ORG,,basic,10,0,Business Partner,top-level
+I_TRANSPPURGGROUP,Purchasing Group,Purchasing Group,TM-MD-ORG,,basic,2,0,,top-level
+I_TRANSPPURGORG,Purchasing Organization,Purchasing Organization,TM-MD-ORG,,basic,5,0,,top-level
