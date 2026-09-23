@@ -96,7 +96,7 @@ The class runs for **every row of every read**. Budget accordingly:
 
 ## After creating both objects
 
-This is a two-object change with a dependency (the CDS view references the class by name). Per `sap-dev-rule.md` §5, run [Skill: activation-guard]'s 3 gates after **each** object, not once at the end — and Gate 3 specifically on the projection/consumption views and service bindings above the modified view, since the annotation propagates upward.
+This is a two-object change with a dependency (the CDS view references the class by name). Per `sap-dev-rule.md` §5, run [Skill: activation-guard]'s 4 gates after **each** object, not once at the end — and Gate 3 specifically on the projection/consumption views and service bindings above the modified view, since the annotation propagates upward.
 
 Write the unit test with the template in [Skill: abap-unit-testing] (`references/test-class-patterns.md`) — assert on the computed value for a known input row, not merely that the field is non-initial.
 

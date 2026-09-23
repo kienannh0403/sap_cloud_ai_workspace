@@ -50,7 +50,7 @@ Arguments: $ARGUMENTS
 6. **Boundary, Activation & Ripple Check — `[Skill: activation-guard]`**:
    - Ensure NO Standard Objects were modified (Z/Y custom only).
    - Deploy and activate the edited object(s) yourself using your system-execution tool — do not just hand the user a to-do list. Run all 3 `[Skill: activation-guard]` gates: full activation log (no unresolved Error, every Warning explicitly assessed against strict(2)/Clean Core, never dismissed just because activation returned "success"), confirmed active state (not sitting inactive server-side), and — the gate that matters most for a fix touching an object other things already depend on — the ripple/cross-impact check against every consumer identified in the Phase 3 Cross-Impact Report. Re-verify each of those consumers is still active with no new error, not just the object you directly edited.
-   - Only after all 3 gates pass on the edited object AND every impacted consumer, report the final object list with confirmed Activation Status per object (never "should be fine, please activate").
+   - Only after all 4 gates pass on the edited object AND every impacted consumer, report the final object list with confirmed Activation Status per object (never "should be fine, please activate").
 
 ## Output Format
 

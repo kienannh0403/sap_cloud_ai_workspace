@@ -72,7 +72,7 @@ All prefixes come from [Skill: naming-convention] (FPT standard: `DO_` domain, `
 
 ## After each object
 
-DDIC metadata objects have no abaplint target, so there is no lint gate for them — go straight from create to activate. Then run [Skill: activation-guard]'s 3 gates **per object**, not once at the end of Step 0: this layer sits at the bottom of the longest dependency chain in the workspace (DDIC → CDS → BDEF → behavior pool → projection → service), which is exactly where one quietly-broken object cascades upward.
+DDIC metadata objects have no abaplint target, so there is no lint gate for them — go straight from create to activate. Then run [Skill: activation-guard]'s 4 gates **per object**, not once at the end of Step 0: this layer sits at the bottom of the longest dependency chain in the workspace (DDIC → CDS → BDEF → behavior pool → projection → service), which is exactly where one quietly-broken object cascades upward.
 
 ## References
 

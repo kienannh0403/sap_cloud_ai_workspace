@@ -1,6 +1,6 @@
 ---
 name: activation-guard
-description: After creating, editing, or deleting any SAP object (CDS view, DDIC object, BDEF, class, service definition/binding), verify it is genuinely active with zero unresolved errors/warnings AND that no other object depending on it broke as a side effect. Use immediately after every "Push → Activate" (or delete) step in any workflow that mutates SAP system objects, before marking that step DONE in a build ledger — this is what stops a chain reaction of activation failures propagating through Steps N+1, N+2...
+description: After creating, editing, or deleting any SAP object (CDS view, DDIC object, BDEF, class, service definition/binding), verify it is genuinely active with zero unresolved errors/warnings, that no other object depending on it broke as a side effect, AND that the code you just changed introduces zero new ATC findings (any priority). Use immediately after every "Push → Activate" (or delete) step in any workflow that mutates SAP system objects, before marking that step DONE in a build ledger — this is what stops a chain reaction of activation failures propagating through Steps N+1, N+2... and what keeps a TR move from failing a Clean Core check later.
 ---
 
 # Activation Guard
@@ -18,9 +18,9 @@ Either one produces exactly the symptom this skill exists to catch: object N loo
 
 Immediately after every DEPLOY & ACTIVATE (or DELETE) of any SAP object, in any workflow — `/sap-dev-create-report`, `/sap-dev-create-transactional-app`, `/sap-dev-api-inbound`, `/sap-dev-api-outbound`, `/sap-dev-bug-fix`, or any ad-hoc object change — before that workflow marks the corresponding ledger row DONE and moves on.
 
-> Tool note: examples below use `mcp__sap_bmw_dev__SAP` as the connected ADT/system-execution tool. If a different MCP server is connected, use `ToolSearch` to find its equivalent action (`sap-dev-rule.md` §9) — the 3 gates below are the requirement, not the specific tool call syntax.
+> Tool note: examples below use `mcp__sap_bmw_dev__SAP` as the connected ADT/system-execution tool. If a different MCP server is connected, use `ToolSearch` to find its equivalent action (`sap-dev-rule.md` §9) — the 4 gates below are the requirement, not the specific tool call syntax.
 
-## Protocol — 3 gates, all must pass before DONE
+## Protocol — 4 gates, all must pass before DONE
 
 ### Gate 1 — Full Activation Log Capture (never trust a boolean)
 
@@ -47,13 +47,41 @@ This is what actually prevents "N+1 breaks because N changed."
   - Class/program: `SAP(action="analyze", params={"type": "callers", "object_uri": "..."})`
   - Broader multi-hop impact: `SAP(action="analyze", params={"type": "impact", "object_type": "...", "object_name": "...", "max_depth": 3})`
 - **This matters most when the object you just touched is a fix/edit to something already built EARLIER in this same ledger.** Cross-check every dependent that is ALSO already in this ledger's scope: is it still active with no new error? Re-run Gate 1 + Gate 2 on each one that's downstream and already marked DONE.
-- If a previously-DONE ledger row now fails because of this change, do not silently re-fix it and move on — mark it `REGRESSED` in the ledger first (see [Skill: scratchpad] Ledger Format), noting which step caused it, THEN fix it in dependency order, then flip it back to `DONE` only once it re-passes all 3 gates.
+- If a previously-DONE ledger row now fails because of this change, do not silently re-fix it and move on — mark it `REGRESSED` in the ledger first (see [Skill: scratchpad] Ledger Format), noting which step caused it, THEN fix it in dependency order, then flip it back to `DONE` only once it re-passes all 4 gates.
 - If the connected tool has no impact/where-used capability for this object type, do not silently skip this gate — record in the ledger: "Ripple check unavailable for this object type via the connected tool; dependents not automatically re-verified" so the gap is visible, not hidden.
+
+### Gate 4 — ATC Check, zero NEW findings (added 2026-09-23, user standing rule)
+
+**Why:** ATC (ABAP Test Cockpit) is a different check from Gate 1's syntax/activation messages — it covers Clean
+Core / cloud-readiness / code-quality rules that don't block activation but DO block a TR release later. Running
+it now, object by object, means a TR move never has to stop and re-check — that's the whole point (user,
+2026-09-23): *"bắt buộc phải ATC check, sửa tất cả các lỗi ATC... để khi move TR không cần phải check lại."*
+Applies to **every package**, local or transportable — not just objects headed for a TR.
+
+- Run: `SAP(action="test", params={"type": "atc", "object_url": "<uri of the object>"})`.
+  Result shape: `summary.errors` (priority 1), `summary.warnings` (priority 2), `summary.infos` (priority 3);
+  each item in `worklist.objects[].findings[]` carries `priority` (1/2/3) and `line`.
+- **Scope = diff, not the whole object** (user-approved 2026-09-23): a finding blocks DONE only if it lands on a
+  line you added or changed in THIS step. Pre-existing findings on untouched lines do not block — the object may
+  already carry legacy findings from before this session touched it, and this gate is not a mandate to retroactively
+  clean unrelated old code.
+  - Get the changed-line set the same way Gate 1 does for warnings (`sap-cloud-dev-connection.md` memory: diff the
+    pre-edit and post-edit source with `difflib` opcodes). Match each finding's `line` against that set.
+  - Findings whose line is NOT in the changed set: note the count in the ledger evidence (e.g. "12 pre-existing
+    ATC findings untouched, not introduced by this step"), do not fix them as part of this step, do not let them
+    block DONE.
+  - Findings whose line IS in the changed set: **all three priorities (1 error / 2 warning / 3 info) must be
+    fixed to 0** before this gate passes — same standard as Gate 1's "no unassessed warning," now applied to ATC.
+- If a genuinely new finding cannot be fixed (architectural constraint, ATC rule doesn't apply to this pattern,
+  etc.), do not silently accept it: stop and ask the user, and only record `PASS — unverified, user-accepted`
+  (rule §11) with the user's explicit written acceptance — never a plain PASS with an unresolved new finding.
+- New object (nothing pre-existing) → the changed-line set is the whole file; Gate 4 then IS "zero findings,
+  whole object" for that object, which is the correct outcome for brand-new code.
 
 ## Ledger integration
 
-Only mark a ledger row `DONE` after all 3 gates pass. A regression found by Gate 3 goes to `REGRESSED`, not a fresh generic `FAILED` — the distinct status is what makes the cascade visible to a human skimming the ledger later, instead of looking like an unrelated new failure.
+Only mark a ledger row `DONE` after all 4 gates pass. A regression found by Gate 3 goes to `REGRESSED`, not a fresh generic `FAILED` — the distinct status is what makes the cascade visible to a human skimming the ledger later, instead of looking like an unrelated new failure. A Gate 4 finding that can't be fixed follows rule §11 (`PASS — unverified, user-accepted`), never a silent pass.
 
 ## What this replaces
 
-Any workflow step that previously said just "Execute: Lint → Push → Activate" now reads "Execute: Lint → Push → Activate → [Skill: activation-guard]." A bare "Activated" claim without having run all 3 gates is not sufficient completion evidence.
+Any workflow step that previously said just "Execute: Lint → Push → Activate" now reads "Execute: Lint → Push → Activate → [Skill: activation-guard]." A bare "Activated" claim without having run all 4 gates is not sufficient completion evidence.

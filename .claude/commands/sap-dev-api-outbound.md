@@ -21,7 +21,7 @@ Act as an Expert SAP Integration Architect & ABAP Cloud Developer. Design, imple
 This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rules in `sap-dev-rule.md` (§6-10). In particular: activation success is not completion evidence — Phase 2 below verifies with a real outbound call, and [Skill: activation-guard] verifies activation itself is genuinely clean and hasn't broken anything downstream before that; progress/log output uses [Skill: caveman].
 
 [EXECUTION PROTOCOL — CRITICAL]
-After generating the ABAP code for each step: GENERATE -> VALIDATE (LINTING) -> DEPLOY & ACTIVATE -> [Skill: activation-guard] (all 3 gates must pass before the step counts as done). All outbound calls MUST go through `ZCL_API_FWK=>execute_api`.
+After generating the ABAP code for each step: GENERATE -> VALIDATE (LINTING) -> DEPLOY & ACTIVATE -> [Skill: activation-guard] (all 4 gates must pass before the step counts as done). All outbound calls MUST go through `ZCL_API_FWK=>execute_api`.
 
 ## Phase 0 — Input Validation Gate
 
