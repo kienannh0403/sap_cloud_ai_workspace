@@ -169,7 +169,7 @@ Thay đổi đi kèm:
 | 2 | Tạo `SC4SAP_SKELETON/INDEX.md` | F2 | Em | Rule §4 bắt buộc |
 | 3 | Ghi kết quả integrity vào dòng F1 | F1 | Em | Đã có 6/6 PASS |
 | 4 | Xoá `.claude/.unlock` | B3, F3 | **Anh** | Sau khi xong mục 1–3 và 5 |
-| 5 | Sửa `tools:` của 2 agent consultant | ngoài ledger | Em, khi anh đồng ý | Đang trỏ tới server không tồn tại (`sap_nfg_dev`, `sap_bmw_dev`, `cds-kb_global_host`) |
+| 5 | ~~Sửa `tools:` của 2 agent consultant~~ — xong trong commit `de0eac2` (2026-09-24): agent trỏ `sap_cloud_dev` / `sap_gm2_cus_ro` / `sap-docs-upstream`; kèm thêm `reviewer-lead` + Phase 2.5 | ngoài ledger | — | Đã xong |
 | 6 | Kiểm phần *unverified* trong `configs/` trên tenant | E5, E10 | Em | Chưa object nào đọc thử trên 080 |
 | 7 | `country/vn.md` | A2 | Anh quyết | Mới có `I_VN_EDocInvoice` trong FI README |
 | 8 | 2 hook cũ: đường dẫn tương đối, `timeout: 5000` (giây) | C3 | Em, khi anh đồng ý | Hook mới đã dùng `$CLAUDE_PROJECT_DIR` |
@@ -181,7 +181,7 @@ Thay đổi đi kèm:
 
 ## 5. Đề xuất thứ tự tiếp theo
 
-1. Em sửa mục 5 (và 8, 12 nếu anh muốn) trong lúc `.unlock` còn mở, rồi chạy integrity check.
+1. Em sửa mục 8, 12 nếu anh muốn, trong lúc `.unlock` còn mở, rồi chạy integrity check.
 2. Em làm F1 và INDEX.md (F2).
 3. Commit + push phần nhóm F lên GitHub.
 4. Anh xoá `.claude/.unlock`.

@@ -1,8 +1,6 @@
 # ABAP Cloud AI — Claude Code Workspace
 
-Pair-programming workspace for **SAP BTP ABAP Environment** / **S/4HANA Cloud (Clean Core)** with Claude Code.
-
-Forked and customized from [dovoanhtruong/abap-agent-claudecode-workspace](https://github.com/dovoanhtruong/abap-agent-claudecode-workspace) for local ABAP Cloud development.
+Pair-programming workspace for **SAP S/4HANA Cloud Public Edition** (ABAP Cloud, Clean Core) with Claude Code. Two DEV tenants: client 080 (write) and client 100 (read / test / debug only) — see `.claude/common/system-config.md`.
 
 @.claude/rules/sap-dev-rule.md
 @.claude/common/system-config.md
@@ -26,11 +24,11 @@ Forked and customized from [dovoanhtruong/abap-agent-claudecode-workspace](https
 - **`.claude/` is locked** (rule §14, hook-enforced): to modify rules/skills/hooks on the user's request, the USER must first create `.claude/.unlock` (the agent must never create that file) — remind them, and remind them to delete it afterwards.
 - **Naming defaults** follow [Skill: naming-convention], sourced from the project sheet `artifacts/naming_convention/` (CDS/RAP as `Z<prefix>_<module>_<tcode>`, e.g. `ZR_SD_ZSD01` / `ZBP_R_SD_ZSD01`; service `ZUI_`/`ZAPI_` + `_O2`/`_O4`; communication, IAM, application job, launchpad `_UI5R`, form; tables `ZA_`/`ZD_`; packages `ZFPT_*`). Explicit TS/user names always win.
 
-## Recommended MCP servers
+## MCP servers in use
 
-For accurate CDS/documentation lookups (used by `find-released-cds-view` and several other skills), connect:
-- [cds-kb-mcp](https://github.com/dovoanhtruong/cds-kb-mcp) — semantic search over 7,355 released S/4HANA Cloud CDS views.
-- [mcp-sap-docs](https://github.com/dovoanhtruong/mcp-sap-docs) — SAP Help Portal / Accelerator Hub / Fiori Library search.
-- Your SAP ADT / ABAP Cloud MCP server — name it so the PreToolUse matcher `mcp__sap_[a-z0-9]+_dev__.*` covers CUD calls (see `.mcp.json.example`).
+- `sap_cloud_dev` — `tools/vsp/vsp.exe`, client 080 (write), cookie `tools/vsp/cookies_dev.txt`. Matches the PreToolUse matcher `mcp__sap_[a-z0-9]+_dev__.*` (pre-cud-guard).
+- `sap_gm2_cus_ro` — `tools/vsp/vsp.exe`, client 100 (read / test / debug only — `tier-readonly-guard.sh` denies create/edit/delete).
+- `sap-docs-upstream` — SAP documentation search + API release state (`sap_search_objects`, `sap_get_object_details`) — the lookup for released CDS / classes / BDEFs.
+- Released CDS views by module: the local catalog `artifacts/system_analysis/CDS_RELEASED_CATALOG/` (the old `cds-kb` MCP endpoint is dead).
 
-Copy `.mcp.json.example` → `.mcp.json` (gitignored locally if you prefer secrets elsewhere) and fill in commands. Full setup details in `README.md`.
+`.mcp.json`, `vsp.exe` and cookie files are local only (not committed). Cookie refresh and setup: `README.md` → "Bắt đầu".
