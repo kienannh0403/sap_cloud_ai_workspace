@@ -4,7 +4,7 @@
 ![SAP](https://img.shields.io/badge/SAP-ABAP%20Cloud%20%C2%B7%20Clean%20Core-0FAAFF)
 ![Skills](https://img.shields.io/badge/skills-54-2EA44F)
 ![Workflows](https://img.shields.io/badge/workflows-9-E8590C)
-![Subagents](https://img.shields.io/badge/subagents-6-8957E5)
+![Subagents](https://img.shields.io/badge/subagents-7-8957E5)
 ![Modules](https://img.shields.io/badge/modules-11-0FAAFF)
 ![Guardrails](https://img.shields.io/badge/guardrails-hook--enforced-CF222E)
 
@@ -67,7 +67,10 @@ flowchart LR
     CR --> BUILD["Build RAP tuần tự<br/>mỗi object: Lint → Activate<br/>→ activation-guard 4 gate"]
     CTA --> BUILD
     BUILD --> G2{{"👤 Kiểm tra chạy thật<br/>phải có bằng chứng, tối đa 3 vòng"}}
-    G2 --> WT["📦 Walkthrough + báo cáo rủi ro<br/>artifacts/walkthroughs/&lt;TARGET&gt;/"]
+    G2 --> RV{"🔍 reviewer-lead duyệt độc lập<br/>(Phase 2.5, tối đa 3 vòng)"}
+    RV -->|"APPROVE"| WT["📦 Walkthrough + báo cáo rủi ro<br/>artifacts/walkthroughs/&lt;TARGET&gt;/"]
+    RV -->|"CHANGES_REQUIRED<br/>sửa trong phạm vi TS"| BUILD
+    RV -->|"BLOCK"| STOP{{"👤 Dừng, hỏi người dùng"}}
 ```
 
 ---
@@ -283,6 +286,14 @@ Chỉ phiên chính (Manager) mới được ghi vào SAP. Subagent chỉ soạn
 ```
 
 Mọi workflow build đều hỏi lại thông tin còn thiếu (package, TR, chỗ hổng trong TS) trước khi động vào hệ thống. Không có bằng chứng activation thì không đánh dấu xong.
+
+Với `/sap-dev-create-report` và `/sap-dev-create-transactional-app`, sau khi kiểm tra chạy thật đạt còn một bước **Phase 2.5 — duyệt độc lập**:
+1. Manager đọc lại source đang active của mọi object từ hệ thống, lưu vào `final_source.md`.
+2. `reviewer-lead` so bản build với TS và ledger, ghi kết luận vào `artifacts/scratchpads/<TARGET>/review_verdict.md`.
+3. Xử lý theo kết luận:
+   - **APPROVE:** sang walkthrough.
+   - **CHANGES_REQUIRED:** sửa trong phạm vi TS rồi duyệt lại. Tối đa 3 vòng, quá 3 vòng thì dừng và hỏi người dùng.
+   - **BLOCK:** dừng và hỏi người dùng. Manager không bao giờ tự vượt qua BLOCK.
 
 ---
 
