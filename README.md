@@ -66,8 +66,10 @@ flowchart LR
     G1 --> CTA["/sap-dev-create-transactional-app"]
     CR --> BUILD["Build RAP tuần tự<br/>mỗi object: Lint → Activate<br/>→ activation-guard 4 gate"]
     CTA --> BUILD
-    BUILD --> G2{{"👤 Kiểm tra chạy thật<br/>phải có bằng chứng, tối đa 3 vòng"}}
-    G2 --> RV{"🔍 reviewer-lead duyệt độc lập<br/>(Phase 2.5, tối đa 3 vòng)"}
+    BUILD --> SV["🧪 Phase 2 tự kiểm trên client 100<br/>data: case dương / âm / biên<br/>UI: checklist từ FS + TS"]
+    SV --> G2{{"👤 Phần kiểm tay còn lại<br/>F4, hiển thị, action — tối đa 3 vòng"}}
+    G2 --> LOG["📒 Ghi mọi case vào sổ tay<br/>artifacts/handbook/&lt;target&gt;.html"]
+    LOG --> RV{"🔍 reviewer-lead duyệt độc lập<br/>(Phase 2.5, tối đa 3 vòng)"}
     RV -->|"APPROVE"| WT["📦 Walkthrough + báo cáo rủi ro<br/>artifacts/walkthroughs/&lt;TARGET&gt;/"]
     RV -->|"CHANGES_REQUIRED<br/>sửa trong phạm vi TS"| BUILD
     RV -->|"BLOCK"| STOP{{"👤 Dừng, hỏi người dùng"}}
@@ -96,6 +98,7 @@ WORK_SPACE/
 │   ├── commands/                    # ⚙️ 9 workflow dạng slash command
 │   ├── hooks/                       # 🔒 7 hook (xem bảng bên dưới)
 │   ├── scripts/integrity-check.sh   # ✅ Kiểm tra toàn vẹn sau mọi thay đổi .claude/
+│   ├── scripts/odata-verify/        # 🧪 fetch.sh + ui-check.js: tự kiểm data/UI qua OData (chỉ đọc)
 │   └── settings.json                # Đăng ký hook + thư mục memory
 └── artifacts/                       # 📦 Mọi output (có commit vào git)
     ├── fs_docs/<TARGET>/            #   FS đầu vào
@@ -287,7 +290,25 @@ Chỉ phiên chính (Manager) mới được ghi vào SAP. Subagent chỉ soạn
 
 Mọi workflow build đều hỏi lại thông tin còn thiếu (package, TR, chỗ hổng trong TS) trước khi động vào hệ thống. Không có bằng chứng activation thì không đánh dấu xong.
 
-Với `/sap-dev-create-report` và `/sap-dev-create-transactional-app`, sau khi kiểm tra chạy thật đạt còn một bước **Phase 2.5 — duyệt độc lập**:
+### Phase 2 — kiểm tra chạy thật
+
+Với `/sap-dev-create-report` và `/sap-dev-create-transactional-app`, Manager tự kiểm phần lớn trên client 100 (chỉ đọc, có quyền xem data). Người dùng chỉ kiểm phần máy không chứng minh được. Chuẩn so sánh luôn là **FS + TS**, không phải một checklist cố định.
+
+| Bước | Ai làm | Nội dung |
+|---|---|---|
+| 2.0a | Manager | `fetch.sh samecode`: source trên 080 và 100 có giống nhau không. Khác nhau thì toàn bộ chuyển sang kiểm tay |
+| 2.0b | Manager | Data qua OData, bằng count assertion (chỉ in số dòng, không in giá trị). Mỗi rule TS §5 có 2 case (dương `total=N`, âm `total=0`). Rule có ngưỡng thêm case biên. Mỗi filter TS §2 có 2 case |
+| 2.U | Manager | Dựng `ui_checklist.md` từ FS + TS (ID `UI-nn`), so với `$metadata` qua `ui-check.js`: cột, thứ tự, label, filter, value help, text, action, facet. Có cả chiều ngược: phần nào có trên màn mà spec không có là **thừa**. FS và TS lệch nhau thì dừng lại hỏi |
+| 2.M | Người dùng | Phần metadata không chứng minh được: bấm F4 thật, lỗi hiển thị, action/lifecycle. Gửi screenshot, Manager đối chiếu |
+| 2.3 | Manager | Ghi **mọi case** (TC-nn / UI-nn / M-nn) cùng mong đợi, thực tế, PASS/FAIL, evidence vào `artifacts/handbook/<target>.html#kiem-thu`. Lần mới ở trên, không xóa lần cũ |
+
+Script dùng chung: `.claude/scripts/odata-verify/fetch.sh` (samecode / srvurl / metadata / sample) và `ui-check.js`. Chạy không kèm tham số để xem hướng dẫn. Script chỉ gọi GET, lấy host và cookie từ `.mcp.json`. Hạn chế đã biết: endpoint F4 (`srvd_f4`) trả 403 với user dev, nên F4 vẫn phải kiểm tay.
+
+`/sap-dev-bug-fix` dùng cùng cách ghi sổ tay (bước 7): `R-nn` tái hiện bug trước và sau khi sửa (trên data thật của client 100 nếu được), `UT-nn` unit test theo ma trận dương/âm/biên, `REG-nn` hồi quy cho từng object phụ thuộc.
+
+### Phase 2.5 — duyệt độc lập
+
+Sau khi Phase 2 đạt còn một bước **Phase 2.5 — duyệt độc lập**:
 1. Manager đọc lại source đang active của mọi object từ hệ thống, lưu vào `final_source.md`.
 2. `reviewer-lead` so bản build với TS và ledger, ghi kết luận vào `artifacts/scratchpads/<TARGET>/review_verdict.md`.
 3. Xử lý theo kết luận:
