@@ -15,7 +15,7 @@ Bản HTML: `artifacts/handbook/workspace-build.html`.
 | B | Dọn bản copy của workspace cũ | 4 | ✅ 3/4 · 🟡 B3 |
 | C | Nền an toàn (git, memory, hook, MCP) | 5 | ✅ 5/5 |
 | D | Chuẩn bị nguồn tham chiếu sc4sap | 1 | ✅ 1/1 |
-| E | Build khung theo sc4sap cho Public Cloud | 10 | ✅ 10/10, **chưa commit git** |
+| E | Build khung theo sc4sap cho Public Cloud | 10 | ✅ 10/10, commit `b659c5a` |
 | F | Đóng việc | 3 | ⬜ 0/3 (F2 làm được một phần) |
 | G | Việc phụ: catalog CDS released | 1 | ✅ 1/1 (còn 3 câu hỏi mở) |
 | H | Đổi rule thường trực: ATC | 1 | ✅ 1/1 |
@@ -64,7 +64,7 @@ Mục đích: có điểm rollback, memory riêng, hook hoạt động đúng, M
 |---|---|---|---|
 | D1 | Clone sc4sap (chỉ đọc) | `git clone --depth 1` vào `artifacts/scratchpads/SC4SAP_SKELETON/sc4sap_repo/` (git bỏ qua thư mục này). Đã đọc `common/`, `exceptions/`, `configs/`, `hooks/`, `tests/` | ✅ |
 
-### Nhóm E — Build khung (✅ 10/10, chưa commit)
+### Nhóm E — Build khung (✅ 10/10, commit `b659c5a`)
 
 Mục đích: lấy khung của sc4sap (config theo tầng, blocklist dữ liệu, hook, kiểm tra tự động) và viết lại cho Public Cloud.
 
@@ -81,7 +81,7 @@ Mục đích: lấy khung của sc4sap (config theo tầng, blocklist dữ liệ
 | E9 | Ghi chú theo target | Rule §4/§14: kiến thức riêng của từng báo cáo vào `artifacts/system_analysis/<TARGET>/notes/`. Sửa skill scratchpad/handoff + 2 command | Memory cập nhật, không tạo trùng | ✅ |
 | E10 | Mở rộng ra 11 module | Thêm FI, CO, MM, PP, QM, PM, PS, TM, EWM, TR (xem 3.2) | integrity 6/6; bật module không có README bị bắt | ✅ |
 
-**Chưa xong trong nhóm E:** toàn bộ thay đổi **chưa commit git**.
+**Git:** đã commit `b659c5a` trên nhánh `feat/sc4sap-group-e` (2026-09-24), chưa merge vào `main`. Không commit `.claude/Documents/` (xlsx, chờ anh quyết) và `artifacts/scratchpads/_session/` (snapshot tự sinh).
 
 ### Nhóm F — Đóng việc (⬜ 0/3)
 
@@ -151,7 +151,7 @@ Thay đổi đi kèm:
   - `phutai-go-cus-connection`: chặn ghi trên client 100 giờ do hook đảm nhận.
   - `artifacts-per-tcode-layout`: `notes/` đã vào rule.
 
-### 3.4 File thay đổi (chưa commit)
+### 3.4 File thay đổi (commit `b659c5a`)
 
 - **Mới:**
   - `.claude/common/` (3), `.claude/configs/` (11 module), `.claude/exceptions/` (10).
@@ -165,7 +165,7 @@ Thay đổi đi kèm:
 
 | # | Việc | Thuộc nhóm | Ai | Ghi chú |
 |---|---|---|---|---|
-| 1 | Commit git toàn bộ nhóm E + handbook | E | Em, khi anh đồng ý | Commit cuối vẫn là `8d59813` |
+| 1 | ~~Commit git nhóm E~~ → đã commit `b659c5a` trên nhánh `feat/sc4sap-group-e`; **còn merge vào `main`** | E | Anh quyết | `git switch main && git merge --ff-only feat/sc4sap-group-e` |
 | 2 | Tạo `SC4SAP_SKELETON/INDEX.md` | F2 | Em | Rule §4 bắt buộc |
 | 3 | Ghi kết quả integrity vào dòng F1 | F1 | Em | Đã có 6/6 PASS |
 | 4 | Xoá `.claude/.unlock` | B3, F3 | **Anh** | Sau khi xong mục 1–3 và 5 |
@@ -183,7 +183,7 @@ Thay đổi đi kèm:
 
 1. Em sửa mục 5 (và 8, 12 nếu anh muốn) trong lúc `.unlock` còn mở, rồi chạy integrity check.
 2. Em làm F1 và INDEX.md (F2).
-3. Em commit git sau khi anh duyệt danh sách file.
+3. Merge nhánh `feat/sc4sap-group-e` vào `main` (anh quyết).
 4. Anh xoá `.claude/.unlock`.
 
 ## 6. Ghi chú quá trình

@@ -33,7 +33,7 @@
     <div class="facts">
       <div><span class="k">ledger</span><span class="v">artifacts/scratchpads/SC4SAP_SKELETON/ledger.md</span></div>
       <div><span class="k">nhóm xong</span><span class="v">A · B · C · D · E · G · H</span></div>
-      <div><span class="k">còn lại</span><span class="v">F (đóng việc) · commit git</span></div>
+      <div><span class="k">còn lại</span><span class="v">F (đóng việc) · merge nhánh vào main</span></div>
       <div><span class="k">module</span><span class="v">11 · SD FI CO MM PP QM PM PS TM EWM TR</span></div>
     </div>
   </header>
@@ -48,7 +48,7 @@
           <tr><td class="mono"><a href="#nhom-b">B</a></td><td>Dọn bản copy của workspace cũ</td><td class="mono">4</td><td><span class="pill pill-ok">xong 3/4</span> <span class="pill pill-wrn">B3 dở</span></td></tr>
           <tr><td class="mono"><a href="#nhom-c">C</a></td><td>Nền an toàn: git, memory, hook, MCP</td><td class="mono">5</td><td><span class="pill pill-ok">xong 5/5</span></td></tr>
           <tr><td class="mono"><a href="#nhom-d">D</a></td><td>Chuẩn bị nguồn tham chiếu sc4sap</td><td class="mono">1</td><td><span class="pill pill-ok">xong 1/1</span></td></tr>
-          <tr><td class="mono"><a href="#nhom-e">E</a></td><td>Build khung theo sc4sap cho Public Cloud</td><td class="mono">10</td><td><span class="pill pill-ok">xong 10/10</span> <span class="pill pill-wrn">chưa commit</span></td></tr>
+          <tr><td class="mono"><a href="#nhom-e">E</a></td><td>Build khung theo sc4sap cho Public Cloud</td><td class="mono">10</td><td><span class="pill pill-ok">xong 10/10</span> commit <code>b659c5a</code></td></tr>
           <tr><td class="mono"><a href="#nhom-f">F</a></td><td>Đóng việc</td><td class="mono">3</td><td><span class="pill pill-dgr">chưa 0/3</span> F2 làm được một phần</td></tr>
           <tr><td class="mono"><a href="#nhom-g">G</a></td><td>Việc phụ: catalog CDS released</td><td class="mono">1</td><td><span class="pill pill-ok">xong 1/1</span> còn 3 câu hỏi mở</td></tr>
           <tr><td class="mono"><a href="#nhom-h">H</a></td><td>Đổi rule thường trực: ATC</td><td class="mono">1</td><td><span class="pill pill-ok">xong 1/1</span></td></tr>
@@ -120,7 +120,7 @@
 
   <section id="nhom-e">
     <h2>Nhóm E — Build khung</h2>
-    <p>Mục đích: lấy khung của sc4sap (config theo tầng, blocklist dữ liệu, hook, kiểm tra tự động) và viết lại cho Public Cloud. <span class="pill pill-ok">xong 10/10</span> <span class="pill pill-wrn">chưa commit git</span></p>
+    <p>Mục đích: lấy khung của sc4sap (config theo tầng, blocklist dữ liệu, hook, kiểm tra tự động) và viết lại cho Public Cloud. <span class="pill pill-ok">xong 10/10</span> commit <code>b659c5a</code> (nhánh <code>feat/sc4sap-group-e</code>)</p>
     <div class="wrap">
       <table>
         <thead><tr><th>#</th><th>Việc</th><th>Nội dung đã làm</th><th>Bằng chứng</th><th>Tình trạng</th></tr></thead>
@@ -253,7 +253,7 @@
       <table>
         <thead><tr><th>#</th><th>Việc</th><th>Ai</th><th>Ghi chú</th></tr></thead>
         <tbody>
-          <tr><td class="mono">1</td><td><b>Commit git</b> toàn bộ nhóm E</td><td>Em, khi anh đồng ý</td><td>Commit cuối vẫn là <code>8d59813</code></td></tr>
+          <tr><td class="mono">1</td><td>Merge nhánh <code>feat/sc4sap-group-e</code> vào <code>main</code></td><td>Anh quyết</td><td>Đã commit <code>b659c5a</code>; merge: <code>git merge --ff-only</code></td></tr>
           <tr><td class="mono">2</td><td>Tạo <code>SC4SAP_SKELETON/INDEX.md</code> (F2)</td><td>Em</td><td>Rule §4 bắt buộc; phần handbook đã có</td></tr>
           <tr><td class="mono">3</td><td><b>F1</b> đánh dấu dòng integrity trong ledger</td><td>Em</td><td>Script đã 6/6 PASS, chưa ghi vào dòng F1</td></tr>
           <tr><td class="mono">4</td><td><b>F3 / B3</b> xoá <code>.claude/.unlock</code></td><td><b>Anh</b></td><td>Lock tắt từ 2026-09-21; xoá sau khi xong F</td></tr>
@@ -271,7 +271,7 @@
     </div>
     <div class="note">
       <p class="lbl">thứ tự đề xuất</p>
-      <p>(1) Em sửa mục 5 (và 8) khi <code>.unlock</code> còn mở, chạy integrity → (2) F1, F2 → (3) commit git sau khi anh duyệt danh sách file → (4) anh xoá <code>.claude/.unlock</code>.</p>
+      <p>(1) Em sửa mục 5 (và 8) khi <code>.unlock</code> còn mở, chạy integrity → (2) F1, F2 → (3) merge nhánh vào <code>main</code> → (4) anh xoá <code>.claude/.unlock</code>.</p>
     </div>
   </section>
 
