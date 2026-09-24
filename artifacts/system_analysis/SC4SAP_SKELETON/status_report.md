@@ -81,7 +81,7 @@ Mục đích: lấy khung của sc4sap (config theo tầng, blocklist dữ liệ
 | E9 | Ghi chú theo target | Rule §4/§14: kiến thức riêng của từng báo cáo vào `artifacts/system_analysis/<TARGET>/notes/`. Sửa skill scratchpad/handoff + 2 command | Memory cập nhật, không tạo trùng | ✅ |
 | E10 | Mở rộng ra 11 module | Thêm FI, CO, MM, PP, QM, PM, PS, TM, EWM, TR (xem 3.2) | integrity 6/6; bật module không có README bị bắt | ✅ |
 
-**Git:** đã commit `b659c5a` trên nhánh `feat/sc4sap-group-e` (2026-09-24), chưa merge vào `main`. Không commit `.claude/Documents/` (xlsx, chờ anh quyết) và `artifacts/scratchpads/_session/` (snapshot tự sinh).
+**Git:** commit `b659c5a` (2026-09-24), đã merge vào `main` và **push lên GitHub** `kienannh0403/sap_cloud_ai_workspace` (private) — `main` = `2ecda22`. Không commit `.claude/Documents/` (xlsx, chờ anh quyết) và `artifacts/scratchpads/_session/` (snapshot tự sinh).
 
 ### Nhóm F — Đóng việc (⬜ 0/3)
 
@@ -165,7 +165,7 @@ Thay đổi đi kèm:
 
 | # | Việc | Thuộc nhóm | Ai | Ghi chú |
 |---|---|---|---|---|
-| 1 | ~~Commit git nhóm E~~ → đã commit `b659c5a` trên nhánh `feat/sc4sap-group-e`; **còn merge vào `main`** | E | Anh quyết | `git switch main && git merge --ff-only feat/sc4sap-group-e` |
+| 1 | ~~Commit + push nhóm E~~ — xong: `main` = `2ecda22` trên GitHub `kienannh0403/sap_cloud_ai_workspace` | E | — | Đã xong 2026-09-24 |
 | 2 | Tạo `SC4SAP_SKELETON/INDEX.md` | F2 | Em | Rule §4 bắt buộc |
 | 3 | Ghi kết quả integrity vào dòng F1 | F1 | Em | Đã có 6/6 PASS |
 | 4 | Xoá `.claude/.unlock` | B3, F3 | **Anh** | Sau khi xong mục 1–3 và 5 |
@@ -183,7 +183,7 @@ Thay đổi đi kèm:
 
 1. Em sửa mục 5 (và 8, 12 nếu anh muốn) trong lúc `.unlock` còn mở, rồi chạy integrity check.
 2. Em làm F1 và INDEX.md (F2).
-3. Merge nhánh `feat/sc4sap-group-e` vào `main` (anh quyết).
+3. Commit + push phần nhóm F lên GitHub.
 4. Anh xoá `.claude/.unlock`.
 
 ## 6. Ghi chú quá trình
