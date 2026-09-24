@@ -15,9 +15,13 @@
 set -euo pipefail
 
 # --- Local (non-transportable) packages exempt from the TR requirement (rule §2). ---
-# Space-separated; each entry may use shell globs (e.g. "ZLOCAL_*"). Matched case-insensitively.
-# $TMP is always local; ZANLTK2 is a named local package added on user request.
-LOCAL_NO_TR_PACKAGES='ZANLTK2 $TMP'
+# Single source: LOCAL_NO_TR_PACKAGES in .claude/common/system-config.md = $TMP + package ZLOCAL
+# + every package below ZLOCAL (the hook only sees the package NAME, not the SAP hierarchy, so
+# each sub-package is listed by name — add a new one there when it is created under ZLOCAL).
+# Comma/space separated; entries may use shell globs; matched case-insensitively.
+# Missing/unreadable config -> empty list -> TR required everywhere (fail closed).
+source "$(dirname "$0")/lib-config.sh"
+LOCAL_NO_TR_PACKAGES=$(cfg LOCAL_NO_TR_PACKAGES | tr ',' ' ')
 
 input=$(cat)
 tool_input=$(echo "$input" | jq -c '.tool_input // {}' 2>/dev/null || echo '{}')
@@ -83,7 +87,7 @@ if echo "$payload" | grep -qE '"(action|operation|method)"[[:space:]]*:[[:space:
   # Skipped for local packages in LOCAL_NO_TR_PACKAGES (rule §2 local exception).
   if [[ "$is_local" == "no" ]]; then
     if ! echo "$payload" | grep -qE '[a-z0-9]{3}[a-z][0-9]{6}'; then
-      deny "sap-dev-rule.md: TR mandatory for object CUD in transportable package '$pkg' — none found. Ask the user to supply a TR (never auto-generate). If '$pkg' is a local package, add it to LOCAL_NO_TR_PACKAGES in this hook."
+      deny "sap-dev-rule.md: TR mandatory for object CUD in transportable package '$pkg' — none found. Ask the user to supply a TR (never auto-generate). If '$pkg' is a package below ZLOCAL, the user adds it to LOCAL_NO_TR_PACKAGES in .claude/common/system-config.md."
     fi
   fi
 

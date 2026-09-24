@@ -141,7 +141,7 @@ Rule trong prompt có thể bị bỏ qua, hook thì không.
 
 | Hook | Khi nào chạy | Làm gì |
 |---|---|---|
-| `pre-cud-guard.sh` | Trước lệnh MCP trên server `_dev` | Chỉ cho sửa object Z/Y (cả `edit`); create/delete phải có package, và có TR nếu package transportable (`ZANLTK2`, `$TMP` được miễn TR); agent không được tạo/sửa/xoá TR |
+| `pre-cud-guard.sh` | Trước lệnh MCP trên server `_dev` | Chỉ cho sửa object Z/Y (cả `edit`); create/delete phải có package và TR; **các package trong `ZLOCAL` hoặc `$TMP` được miễn TR** (danh sách `LOCAL_NO_TR_PACKAGES` trong `common/system-config.md`); agent không được tạo/sửa/xoá TR |
 | `tier-readonly-guard.sh` | Trước mọi lệnh MCP SAP | Chặn create/edit/delete trên client 100 (`READONLY_SERVERS`); nếu `SAP_TIER` khác DEV thì chặn mọi thao tác ghi |
 | `block-forbidden-tables.sh` | Trước MCP `query` và Bash `datapreview` | So SQL với `exceptions/`: nhóm cấm → chặn, nhóm nhạy cảm → hỏi người dùng |
 | `workspace-write-guard.sh` | Trước Write/Edit/Bash | Khoá `.claude/` (chỉ mở khi **người dùng** tự tạo `.claude/.unlock`); file mới phải nằm trong `artifacts/` |
@@ -288,6 +288,7 @@ Mọi workflow build đều hỏi lại thông tin còn thiếu (package, TR, ch
 ## ⚙️ Ghi chú cho developer
 
 - **Thêm skill:** tạo `.claude/.unlock`, thêm `.claude/skills/<name>/SKILL.md` với `name` (trùng tên thư mục) và `description`. Phần thân giữ gọn, nội dung nặng đưa vào `references/`. Sau đó chạy `bash .claude/scripts/integrity-check.sh` rồi xoá `.unlock`.
+- **Tạo package mới dưới `ZLOCAL`:** thêm tên package đó vào `LOCAL_NO_TR_PACKAGES` trong `.claude/common/system-config.md`, vì hook chỉ thấy tên package chứ không biết package cha. Chưa thêm thì hook sẽ đòi TR.
 - **Thêm module:** tạo `.claude/configs/<MODULE>/README.md` **trước**, rồi mới thêm vào `SAP_ACTIVE_MODULES` trong `common/system-config.md`. Làm ngược thứ tự thì integrity check báo FAIL.
 - **Memory** của workspace nằm ngoài repo (`~/.claude/auto-memory/Work_space`), chỉ chứa sở thích, feedback và tham chiếu chung. Trạng thái task để trong ledger/handoff; kiến thức theo target để trong `notes/`.
 - **Sổ tay:** `artifacts/handbook/index.html` tổng hợp MCP, catalog CDS và tiến độ dựng workspace.

@@ -15,6 +15,7 @@ SAP_TIER=DEV
 BLOCKLIST_PROFILE=standard
 WRITE_SERVERS=sap_cloud_dev
 READONLY_SERVERS=sap_gm2_cus_ro
+LOCAL_NO_TR_PACKAGES=$TMP,ZLOCAL,YTEST_UPLOAD_EXCEL,ZANLTK2,ZBOOK_RAP,ZHAIHT32,ZHOANGTD21,ZNNAM,ZTEST_N,ZTIENNBH,ZTRAIN,ZTRUCTT19,ZVIHT9,ZWRK_JOB_DECL,YTRUCTT01,YTRUCTT02,YTRUCTT03,YTRUCTT04,ZTRUCTT_PRJ01
 ```
 
 ## Meaning
@@ -29,6 +30,7 @@ READONLY_SERVERS=sap_gm2_cus_ro
 | `SAP_TIER` | `DEV` | Rule §2: every connection is DEV. Any other value makes `tier-readonly-guard.sh` block ALL SAP mutations |
 | `BLOCKLIST_PROFILE` | `standard` | Ledger A3: `minimal` files (deny) + protected business data (warn); strict-only files excluded |
 | `WRITE_SERVERS` | `sap_cloud_dev` | MCP server name. Host my437569, client 080, SID GM2 — the only place objects are written |
+| `LOCAL_NO_TR_PACKAGES` | `$TMP` + `ZLOCAL` + every package below it | User 2026-09-24: packages under ZLOCAL or `$TMP` need no TR. `pre-cud-guard.sh` sees only the package name, so the ZLOCAL tree is listed by name — read on 080 2026-09-24 (`SAP read DEVC`): 12 children + 5 grandchildren under ZTRUCTT19, no deeper level. **A new package created under ZLOCAL must be added here**, otherwise the hook asks for a TR (fail-safe). Not in the list = TR required |
 | `READONLY_SERVERS` | `sap_gm2_cus_ro` | Host my437557, client 100 — read / test / debug only. `tier-readonly-guard.sh` denies create/edit/delete on it |
 
 ## Not recorded here (on purpose)

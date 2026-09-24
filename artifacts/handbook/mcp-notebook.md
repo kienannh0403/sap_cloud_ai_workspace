@@ -19,7 +19,7 @@
 | MCP tài liệu | `sap-docs` — `search`, `fetch`, `sap_search_objects`, `abap_feature_matrix`… |
 | MCP tài liệu (dự phòng) | `sap-docs-upstream` — cùng bộ tool, endpoint của Marian Zeis |
 | MCP `cds-kb` | ⚠️ **chết** — xem §1.2 |
-| Package local, **không cần TR** | `ZANLTK2`, `$TMP` (allowlist trong `.claude/hooks/pre-cud-guard.sh`) |
+| Package **không cần TR** | `$TMP` + mọi package trong cây `ZLOCAL` (danh sách `LOCAL_NO_TR_PACKAGES` trong `.claude/common/system-config.md`) |
 | Mọi package khác | **transportable → bắt buộc TR**, và agent không bao giờ được tạo/sửa/xoá TR |
 
 ### Cookie — hai đường đọc, hai cookie khác nhau
