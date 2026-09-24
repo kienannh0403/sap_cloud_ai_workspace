@@ -203,7 +203,7 @@ Hook đảm bảo "việc đó có xảy ra hay không". Còn "làm có tốt kh
 
 **🧭 Quản trị & năng suất (6):**
 - `activation-guard`: **4 gate** sau mỗi lần ghi object (log activation, trạng thái active, ảnh hưởng dây chuyền, 0 lỗi ATC mới).
-- `naming-convention`: chuẩn đặt tên `ZFPT_*`, `ZA_` / `ZR_` / `ZC_`.
+- `naming-convention`: chuẩn đặt tên theo sheet của dự án (`artifacts/naming_convention/`). CDS/RAP đặt tên `Z<prefix>_<module>_<tcode>` (VD `ZR_SD_ZSD01`, `ZBP_R_SD_ZSD01`); service `ZUI_` / `ZAPI_` + `_O2` / `_O4`; ngoài ra có quy tắc cho communication, IAM, application job, launchpad `_UI5R`, form; bảng `ZA_` / `ZD_`; package `ZFPT_*`.
 - `scratchpad`: kế hoạch + ledger.
 - `handoff`: ghi chú chuyển phiên.
 - `grill-me`: phỏng vấn làm rõ yêu cầu.

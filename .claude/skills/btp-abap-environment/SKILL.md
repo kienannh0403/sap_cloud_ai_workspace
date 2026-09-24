@@ -23,7 +23,7 @@ SAP BTP Subaccount
 
 | Artifact                      | Purpose                                                      |
 | ----------------------------- | ------------------------------------------------------------ |
-| **Communication Scenario**    | Template defining inbound/outbound services and auth methods (ADT object, `Z_*`) |
+| **Communication Scenario**    | Template defining inbound/outbound services and auth methods (ADT object; name per [Skill: naming-convention]: `ZSCE_*`, system `ZSYS_*`, arrangement `ZARR_*`, outbound service `ZOB_*_REST`) |
 | **Communication System**      | Represents the external system (host, port, credentials)     |
 | **Communication Arrangement** | Binds scenario + system + user, activating the integration   |
 | **Communication User**        | Technical user for inbound communication                     |

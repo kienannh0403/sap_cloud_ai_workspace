@@ -24,7 +24,7 @@ Forked and customized from [dovoanhtruong/abap-agent-claudecode-workspace](https
 - **Reference layer** (sc4sap-style, rule §15): `.claude/common/` (system config, context-loading protocol, cloud ABAP constraints), `.claude/configs/<MODULE>/` (Public Cloud module knowledge — 11 modules: SD, FI, CO, MM, PP, QM, PM, PS, TM, EWM, TR), `.claude/exceptions/` (data-extraction blocklist, profile `standard`). Loaded by tier, never all at once. `bash .claude/scripts/integrity-check.sh` after any `.claude/` change.
 - **Outputs** always go under `artifacts/` (rule §4, hook-enforced) — never `.claude/` or the workspace root.
 - **`.claude/` is locked** (rule §14, hook-enforced): to modify rules/skills/hooks on the user's request, the USER must first create `.claude/.unlock` (the agent must never create that file) — remind them, and remind them to delete it afterwards.
-- **Naming defaults** follow [Skill: naming-convention] (`ZFPT_*` packages, `ZA_`/`ZR_`/`ZC_` RAP tree). Explicit TS/user names always win.
+- **Naming defaults** follow [Skill: naming-convention], sourced from the project sheet `artifacts/naming_convention/` (CDS/RAP as `Z<prefix>_<module>_<tcode>`, e.g. `ZR_SD_ZSD01` / `ZBP_R_SD_ZSD01`; service `ZUI_`/`ZAPI_` + `_O2`/`_O4`; communication, IAM, application job, launchpad `_UI5R`, form; tables `ZA_`/`ZD_`; packages `ZFPT_*`). Explicit TS/user names always win.
 
 ## Recommended MCP servers
 
