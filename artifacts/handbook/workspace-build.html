@@ -23,7 +23,7 @@
 <div class="page">
 
   <header class="masthead">
-    <p class="eyebrow">Task SC4SAP_SKELETON · cập nhật 2026-09-23</p>
+    <p class="eyebrow">Task SC4SAP_SKELETON · cập nhật 2026-09-24</p>
     <h1>Dựng workspace Public Cloud theo khung sc4sap: đã làm gì, còn gì</h1>
     <p class="standfirst">
       Lấy khung của superclaude-for-sap (sc4sap) làm mẫu, viết lại cho S/4HANA Public Cloud. Nguồn sự thật là ledger;
@@ -32,7 +32,7 @@
     </p>
     <div class="facts">
       <div><span class="k">ledger</span><span class="v">artifacts/scratchpads/SC4SAP_SKELETON/ledger.md</span></div>
-      <div><span class="k">nhóm xong</span><span class="v">A · B · C · D · E · G · H</span></div>
+      <div><span class="k">nhóm xong</span><span class="v">A · B · C · D · E · G · H · <a href="#cap-nhat-24">cập nhật 24/09</a></span></div>
       <div><span class="k">còn lại</span><span class="v">F (đóng việc)</span></div>
       <div><span class="k">module</span><span class="v">11 · SD FI CO MM PP QM PM PS TM EWM TR</span></div>
     </div>
@@ -178,6 +178,24 @@
         <thead><tr><th>#</th><th>Việc</th><th>Nội dung đã làm</th><th>Tình trạng</th></tr></thead>
         <tbody>
           <tr><td class="mono">H1</td><td>ATC bắt buộc (Gate 4)</td><td>Mỗi lần create/edit/delete phải có 0 lỗi ATC <b>mới</b> (chỉ tính dòng mình sửa, mọi package). Sửa skill <code>activation-guard</code> và 8 file đang ghi "3 gate". Đã commit <code>8d59813</code></td><td><span class="pill pill-ok">xong</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="cap-nhat-24">
+    <h2>Cập nhật 2026-09-24 — sau nhóm E</h2>
+    <p>Các việc làm thêm sau khi xong nhóm E. Tất cả đã commit và push lên GitHub <code>kienannh0403/sap_cloud_ai_workspace</code> (private).</p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Việc</th><th>Nội dung</th><th>Commit</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td>Đưa repo lên GitHub</td><td>Merge commit "Initial commit" của GitHub (giữ README của workspace), push <code>main</code>; không force, không có secret trong lịch sử</td><td class="mono">2ecda22</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td>README tiếng Việt</td><td>Viết lại toàn bộ theo workspace hiện tại; bỏ ghi chú fork và link repo ngoài</td><td class="mono">387d4d1</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td>Miễn TR cho cây ZLOCAL</td><td><code>$TMP</code> + <code>ZLOCAL</code> và 17 package con/cháu (đọc trên 080) được miễn TR. Danh sách nằm ở <code>LOCAL_NO_TR_PACKAGES</code> trong <code>system-config.md</code>; tạo package mới dưới ZLOCAL thì phải thêm tên vào đó. Chạy thử 12/12</td><td class="mono">c103b9f</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td>Naming convention theo sheet dự án</td><td>Skill <code>naming-convention</code> theo <code>artifacts/naming_convention/</code>: CDS/RAP <code>Z&lt;prefix&gt;_&lt;module&gt;_&lt;tcode&gt;</code> (<code>ZR_SD_ZSD01</code>, <code>ZBP_R_SD_ZSD01</code>), service <code>_O2/_O4</code>, thêm communication, IAM, job, launchpad <code>_UI5R</code>, form. 23/23 dòng sheet có trong skill</td><td class="mono">6206795</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td>reviewer-lead + sửa tools của agent</td><td>(anh làm) Thêm agent <code>reviewer-lead</code> và Phase 2.5 duyệt độc lập cho <code>/sap-dev-create-*</code>; agent consultant trỏ đúng <code>sap_cloud_dev</code> / <code>sap_gm2_cus_ro</code> / <code>sap-docs-upstream</code></td><td class="mono">de0eac2</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td>README + CLAUDE.md theo reviewer-lead</td><td>Badge 7 subagent, sơ đồ có bước duyệt (APPROVE / CHANGES_REQUIRED / BLOCK); <code>CLAUDE.md</code> bỏ dòng fork, liệt kê MCP đang dùng thật</td><td class="mono">7c0a5f6 · 40b0325</td><td><span class="pill pill-ok">xong</span></td></tr>
         </tbody>
       </table>
     </div>

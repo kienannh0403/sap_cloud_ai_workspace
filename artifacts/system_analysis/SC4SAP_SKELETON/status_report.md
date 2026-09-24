@@ -1,6 +1,6 @@
 # Báo cáo — Workspace Public Cloud theo khung sc4sap
 
-Cập nhật: 2026-09-23 (cuối phiên) · Nguồn sự thật: `artifacts/scratchpads/SC4SAP_SKELETON/ledger.md`
+Cập nhật: 2026-09-24 · Nguồn sự thật: `artifacts/scratchpads/SC4SAP_SKELETON/ledger.md`
 Khung tham chiếu: sc4sap v0.6.18 (MIT), bản clone `artifacts/scratchpads/SC4SAP_SKELETON/sc4sap_repo/`.
 Không đụng object SAP, package hay TR nào trong toàn bộ task này.
 Bản HTML: `artifacts/handbook/workspace-build.html`.
@@ -106,6 +106,19 @@ Mục đích: kiểm tra lần cuối, ghi tài liệu, khoá lại `.claude/`.
 | # | Việc | Nội dung đã làm | Tình trạng |
 |---|---|---|---|
 | H1 | ATC bắt buộc (Gate 4) | Mỗi lần create/edit/delete phải có 0 lỗi ATC **mới** (chỉ tính dòng mình sửa, mọi package). Sửa skill `activation-guard` và 8 file đang ghi "3 gate". Đã commit (`8d59813`) | ✅ |
+
+## 2b. Cập nhật 2026-09-24 — sau nhóm E
+
+Tất cả đã commit và push lên GitHub `kienannh0403/sap_cloud_ai_workspace` (private).
+
+| Việc | Nội dung | Commit | Tình trạng |
+|---|---|---|---|
+| Đưa repo lên GitHub | Merge commit "Initial commit" của GitHub (giữ README của workspace), push `main`; không force, không có secret trong lịch sử | `2ecda22` | ✅ |
+| README tiếng Việt | Viết lại toàn bộ theo workspace hiện tại; bỏ ghi chú fork và link repo ngoài | `387d4d1` | ✅ |
+| Miễn TR cho cây ZLOCAL | `$TMP` + `ZLOCAL` và 17 package con/cháu (đọc trên 080), danh sách `LOCAL_NO_TR_PACKAGES` trong `system-config.md`; package mới dưới ZLOCAL phải thêm tên. Chạy thử 12/12 | `c103b9f` | ✅ |
+| Naming convention theo sheet dự án | Skill theo `artifacts/naming_convention/`: CDS/RAP `Z<prefix>_<module>_<tcode>`, service `_O2/_O4`, thêm communication / IAM / job / launchpad `_UI5R` / form; 23/23 dòng sheet có trong skill | `6206795` | ✅ |
+| reviewer-lead + sửa tools của agent | (anh làm) agent `reviewer-lead` + Phase 2.5 cho `/sap-dev-create-*`; agent consultant trỏ đúng MCP | `de0eac2` | ✅ |
+| README + CLAUDE.md theo reviewer-lead | Badge 7 subagent, sơ đồ có bước duyệt; `CLAUDE.md` bỏ dòng fork, liệt kê MCP đang dùng thật | `7c0a5f6`, `40b0325` | ✅ |
 
 ---
 
