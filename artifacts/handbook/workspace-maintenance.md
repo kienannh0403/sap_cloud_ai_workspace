@@ -77,6 +77,7 @@ rm -rf ~/.claude/projects/<ngăn-cũ>
 | Hook `.claude/` lock chặn cả `~/.claude/` | `workspace-write-guard.sh` match chuỗi `.claude/` trong lệnh, không phân biệt home hay workspace. `rm -rf ~/.claude/projects/...` bị chặn dù nằm ngoài workspace → cần user tự tạo `.claude/.unlock` (agent bị cấm tạo), hoặc user tự chạy lệnh. **Nhớ xoá `.unlock` sau đó.** |
 | Thay chuỗi không có ranh giới | `ABAP_CLOUD_AI/ABAP_CLOUD_AI` thay thô sẽ biến `ABAP_CLOUD_AI_SYS2` thành `MCP_PhuTAI_GO_DEV_SYS2`. Bắt buộc dùng negative lookahead `(?![A-Za-z0-9_])`. |
 | Heredoc `cat > file.py <<'PY'` rồi chạy | Bị auto-mode classifier chặn. Dùng Write tool tạo script, rồi mới `python -X utf8 <file>`. |
+| Agent không sửa được `tools:` / `model:` của subagent | Dù đã có `.unlock`, auto-mode classifier vẫn chặn agent sửa frontmatter `tools:`/`model:` hoặc tạo file mới trong `.claude/agents/` (tự đổi quyền). Phần mô tả (prose) thì sửa được. Cách làm: agent soạn file trong `artifacts/scratchpads/_session/`, user tự copy hoặc dán vào. |
 
 ---
 
@@ -104,3 +105,4 @@ không trùng bất kỳ lệnh ghi nào — nhiều khả năng do cơ chế d�
 | Ngày | Việc | Kết quả |
 |---|---|---|
 | 2026-08-28 | Đổi tên `ABAP_CLOUD_AI\ABAP_CLOUD_AI` → `MCP_PhuTAI_GO_DEV`; migrate session | 12 session + 5 sub-folder chuyển sang ngăn mới, 9.006 path rewrite, JSON hợp lệ 100%, sub-folder byte-identical. Backup `~/.claude/backups/project-sessions-ABAP_CLOUD_AI-old-20260828.tar.gz` (7.2 MB, 31/31 file). Ngăn cũ đã xoá. |
+| 2026-09-24 | Đối chiếu bài "Dây chuyền 4 agent" (cuongmeai.com) → sửa cấu hình agent + thêm `reviewer-lead` | Sửa tool SAP cũ `sap_nfg/bmw_dev` → `sap_cloud_dev`/`sap_gm2_cus_ro` (consultant-executor, activation-guard), cds-kb chết → `sap-docs-upstream` (consultant-lead), tester-lead → opus. Thêm `reviewer-lead` (opus, chỉ đọc) + Phase 2.5 "Independent Final Review" vào `/sap-dev-create-report` và `/sap-dev-create-transactional-app`. `integrity-check.sh` 6/6 PASS (7 agent). |

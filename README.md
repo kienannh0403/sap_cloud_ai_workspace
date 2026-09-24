@@ -12,7 +12,7 @@ Workspace lập trình cặp với Claude Code trên **SAP S/4HANA Cloud Public 
 
 - **54 skill** tự kích hoạt khi mô tả khớp với yêu cầu: 36 skill kỹ thuật ABAP Cloud và 18 skill nghiệp vụ SAP Public Cloud.
 - **9 workflow** dạng slash command, đi từ FS tới code đã activate.
-- **6 subagent** chia 3 nhóm Consultant / Dev / Tester, mỗi nhóm có Lead và Executor.
+- **7 subagent**: 3 nhóm Consultant / Dev / Tester (mỗi nhóm có Lead và Executor) và `reviewer-lead` duyệt độc lập trước khi đóng build.
 - **Tầng tham chiếu cho 11 module**, cộng blocklist dữ liệu nhạy cảm.
 - **Rule luôn nạp** giữ kỷ luật Clean Core.
 - **Hook** chặn cứng các thao tác rủi ro nhất bằng code, không chỉ dặn trong prompt.
@@ -36,7 +36,7 @@ flowchart LR
     subgraph ONDEMAND["Nạp khi cần (theo tầng)"]
         SK["54 skill<br/>.claude/skills/*"] --> REF["references/*<br/>template, deep-dive"]
         WF["9 workflow<br/>.claude/commands/*"]
-        AG["6 subagent<br/>Consultant/Dev/Tester × Lead/Executor"]
+        AG["7 subagent<br/>Consultant/Dev/Tester × Lead/Executor + Reviewer"]
         LAYER["common/ · configs/&lt;MODULE&gt;/ · exceptions/"]
     end
     subgraph ENFORCE["Hook chặn bằng code"]
@@ -89,7 +89,7 @@ WORK_SPACE/
 │   ├── configs/<MODULE>/            # 📘 Kiến thức Public Cloud của 11 module: CDS / RAP BO / BAdI released
 │   ├── exceptions/                  # 🚫 Blocklist dữ liệu nhạy cảm (profile standard)
 │   ├── skills/<name>/SKILL.md       # 📚 54 skill (+ references/ nạp khi cần)
-│   ├── agents/<team>-<layer>.md     # 🤖 6 subagent
+│   ├── agents/<team>-<layer>.md     # 🤖 7 subagent
 │   ├── commands/                    # ⚙️ 9 workflow dạng slash command
 │   ├── hooks/                       # 🔒 7 hook (xem bảng bên dưới)
 │   ├── scripts/integrity-check.sh   # ✅ Kiểm tra toàn vẹn sau mọi thay đổi .claude/
@@ -220,6 +220,7 @@ Workflow gọi subagent qua `[Agent: y]` để phân tích và soạn nháp đ�
 | Consultant | `consultant-lead`: dịch FS / code thành phát hiện kỹ thuật | `consultant-executor`: tiền xử lý (convert FS, chép ảnh, quét object) |
 | Dev | `dev-lead`: logic behavior pool, class hỗ trợ | `dev-executor`: DDIC / CDS / BDEF / projection theo TS |
 | Tester | `tester-lead`: kịch bản test, đánh giá rủi ro | `tester-executor`: khung ABAP Unit, quét pattern |
+| Reviewer | `reviewer-lead`: duyệt độc lập build so với TS (Phase 2.5 của `/sap-dev-create-*`), kết luận APPROVE / CHANGES_REQUIRED / BLOCK, chỉ đọc | — |
 
 Chỉ phiên chính (Manager) mới được ghi vào SAP. Subagent chỉ soạn nháp vào `artifacts/scratchpads/<TARGET>/`, không bao giờ đánh dấu DONE. Manager phải đọc file của subagent trước khi push, activate và chạy activation-guard.
 

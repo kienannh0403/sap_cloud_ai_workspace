@@ -64,11 +64,24 @@ Per step: GENERATE (draft per the row's spec) → check the name against [Skill:
 
 2.1 Evidence floor (`sap-dev-rule.md` §11): a bare "looks fine" is not a PASS. If the user's reply has no concrete data, ask again for the actual field values/payload before recording a result. Log each attempt in the Scratchpad ledger's Verify Attempts table.
 
-2.2 Compare the pasted actual result against the TS-documented logic field by field, especially the "Complex Logic" entries from TS §5. PASS → Phase 3. MISMATCH → root-cause it (trace the actual-vs-expected diff to the specific object/field responsible — do not guess), fix, redeploy the affected object(s), and ask the user to re-test. After 3 mismatch iterations, STOP — write up the concrete unresolved discrepancy and ask the user rather than attempting a 4th blind fix (`sap-dev-rule.md` §7). If the user insists on accepting an unverified result, record it as "PASS — unverified, user-accepted", never as a plain PASS.
+2.2 Compare the pasted actual result against the TS-documented logic field by field, especially the "Complex Logic" entries from TS §5. PASS → Phase 2.5. MISMATCH → root-cause it (trace the actual-vs-expected diff to the specific object/field responsible — do not guess), fix, redeploy the affected object(s), and ask the user to re-test. After 3 mismatch iterations, STOP — write up the concrete unresolved discrepancy and ask the user rather than attempting a 4th blind fix (`sap-dev-rule.md` §7). If the user insists on accepting an unverified result, record it as "PASS — unverified, user-accepted", never as a plain PASS.
+
+## Phase 2.5 — Independent Final Review (max 3 rounds)
+
+2.5.0 Save `artifacts/scratchpads/[ReportName]/final_source.md`: the current active source of every object in the ledger, read back from the system (not from chat memory), one section per object.
+
+2.5.1 Dispatch [Agent: reviewer-lead] with inputs = the TS path, the ledger path, and `final_source.md`; output = `artifacts/scratchpads/[ReportName]/review_verdict.md`. Read the verdict file from disk before acting on it (`sap-dev-rule.md` §12).
+
+2.5.2 Act on the verdict:
+- **APPROVE** → Phase 3.
+- **CHANGES_REQUIRED** → fix each finding within TS scope (every change goes through Push → Activate → [Skill: activation-guard]; if a fix changes runtime behavior, re-run the affected Phase 2 check), refresh `final_source.md`, re-dispatch. After 3 rounds still not APPROVE, STOP and ask the user (`sap-dev-rule.md` §7).
+- **BLOCK** → STOP. Show the user the blocking findings and ask how to proceed; never override a BLOCK yourself.
+
+A finding the user explicitly accepts in writing is recorded in the ledger as "accepted by user" and listed in the walkthrough.
 
 ## Phase 3 — Walkthrough & Risk Report
 
-3.0 Save `artifacts/walkthroughs/[ReportName]/walkthrough.md`: what was built (object list from the ledger, all DONE), what was verified and how (cite the actual filter values and results from Phase 2 — never "should work"), and any known risks/manual steps outstanding (e.g. "Metadata Extension pending manual creation in ADT"). If a UI Service Binding (Step 7) was created, optionally use [Skill: sap-fiori-apps-reference] to generate the Fiori Launchpad URL from its Semantic Object/Action and include it in the walkthrough.
+3.0 Save `artifacts/walkthroughs/[ReportName]/walkthrough.md`: what was built (object list from the ledger, all DONE), what was verified and how (cite the actual filter values and results from Phase 2 — never "should work"), the Phase 2.5 review verdict with any user-accepted findings, and any known risks/manual steps outstanding (e.g. "Metadata Extension pending manual creation in ADT"). If a UI Service Binding (Step 7) was created, optionally use [Skill: sap-fiori-apps-reference] to generate the Fiori Launchpad URL from its Semantic Object/Action and include it in the walkthrough.
 
 [OUTPUT FORMAT]
 For each Phase-1 step, report in the chat using [Skill: caveman] style for the narration only (short, evidence-based, no filler) — the source code and log content below stay verbatim, never compressed (`sap-dev-rule.md` §10):

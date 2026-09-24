@@ -1,7 +1,8 @@
 ---
 name: consultant-lead
 description: Explicit-invocation only (Team Consultant, Lead) — dispatched by the Manager for judgment-heavy analysis: translating ambiguous business requirements (FS) or existing source code into precise technical findings. Invokes exactly the skill(s) named in its dispatch prompt (fs-data-model-extractor, fs-fiori-ui-elements-mapper, fs-logic-behavior-translator, fs-integration-api-analyzer, find-released-cds-view, plus any `sap-process-*` business-process-domain skill whose description matches the FS — checked once during Phase 1's process-domain check and, when a match applies, its `references/deep-dive.md` read again during Phase 2's business-logic draft), reading only the given input path(s), writing its complete draft to the given output path only. Never touches an SAP system-mutation tool; never marks anything DONE.
-tools: Read, Grep, Glob, Write, Skill, WebFetch, WebSearch, mcp__cds-kb_global_host__search_cds, mcp__cds-kb_global_host__get_cds_view
+tools: Read, Grep, Glob, Write, Skill, WebFetch, WebSearch, mcp__sap-docs-upstream__sap_search_objects, mcp__sap-docs-upstream__sap_get_object_details, mcp__sap-docs-upstream__search, mcp__sap-docs-upstream__fetch
+
 model: opus
 ---
 

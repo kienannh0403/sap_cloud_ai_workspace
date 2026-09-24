@@ -18,7 +18,7 @@ Either one produces exactly the symptom this skill exists to catch: object N loo
 
 Immediately after every DEPLOY & ACTIVATE (or DELETE) of any SAP object, in any workflow — `/sap-dev-create-report`, `/sap-dev-create-transactional-app`, `/sap-dev-api-inbound`, `/sap-dev-api-outbound`, `/sap-dev-bug-fix`, or any ad-hoc object change — before that workflow marks the corresponding ledger row DONE and moves on.
 
-> Tool note: examples below use `mcp__sap_bmw_dev__SAP` as the connected ADT/system-execution tool. If a different MCP server is connected, use `ToolSearch` to find its equivalent action (`sap-dev-rule.md` §9) — the 4 gates below are the requirement, not the specific tool call syntax.
+> Tool note: examples below use `mcp__sap_cloud_dev__SAP` (the write server, `WRITE_SERVERS` in `.claude/common/system-config.md`) as the connected ADT/system-execution tool. If a different MCP server is connected, use `ToolSearch` to find its equivalent action (`sap-dev-rule.md` §9) — the 4 gates below are the requirement, not the specific tool call syntax.
 
 ## Protocol — 4 gates, all must pass before DONE
 
