@@ -90,6 +90,7 @@ This table must cover 100% of what create-transactional-app's Steps 0-8 will nee
 5.0 Cross-check the TS draft against `fs_markdown.md`:
 - 100% of FS fields are present with exact names (no placeholders) and each one has a concrete DDIC home (a field in a named New Table, with type/length/key decided — not just a bullet point).
 - Every field has documented source + derivation logic (new-table input field, or released-view lookup).
+- 100% of the FS's UI requirements (text, tables and transcribed mockups) appear in TS §4/§7 as `UI-nn` rows citing their FS source, with the FS wording kept (labels, order) — no FS screen element without a row, no row without an FS source.
 - If the FS implies a status/lifecycle, the Status Machine is 100% specified: every state, every transition, its trigger and precondition — not just "some statuses."
 - Every key field that isn't pure user input has an explicit numbering mechanism decided (Number Range / managed / early / late), including batch-safety if multiple rows can be created in one request.
 - Every row in the Coding Implementation Plan has a clear source/target, references no field absent from the Verified Data Model, and Step 0 (DDIC Foundation) is present and complete if TS §3 defines any new table.
@@ -127,6 +128,7 @@ Base object name: [Tên gốc + suffix theo từng node, vd _H/_FG/_RM]
 - List Report: Selection Fields, Line Items (thứ tự), Default Sorting, Toolbar (buttons + điều kiện enable)
 - Object Page: Facet theo từng node trong cây, field layout, toolbar riêng mỗi facet nếu có
 - [Mọi hành vi UI đặc biệt — freeze column, popup, v.v. — ghi rõ đây là cấu hình manifest.json/UI, không phải CDS annotation]
+- **Traceability (MANDATORY):** every UI requirement above is one line with an ID `UI-nn` and its FS source, e.g. `UI-07 — Filter "Plant" mandatory, value help on plants — FS §3.2 / mockup "Selection screen"`. Cover everything the FS states about the screen (labels in the FS wording, order, value help, defaults, text-for-code display, actions, formatting…) — `/sap-dev-create-*` Phase 2.U verifies the build against exactly these rows.
 
 ## 5. Business Logic & Behavior
 - **Status Machine** [MANDATORY nếu có lifecycle]: bảng Action / Precondition / Kết quả — đầy đủ mọi state và transition

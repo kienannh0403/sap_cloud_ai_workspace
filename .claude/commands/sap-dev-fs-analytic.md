@@ -64,6 +64,7 @@ This table must cover 100% of what create-report's Steps 1-7 will need (Interfac
 5.0 Cross-check the TS draft against `fs_markdown.md`:
 - 100% of FS fields are present with exact names (no placeholders).
 - Every field has documented source + derivation logic.
+- 100% of the FS's UI requirements (text, tables and transcribed mockups) appear in TS §4/§7 as `UI-nn` rows citing their FS source, with the FS wording kept (labels, order) — no FS screen element without a row, no row without an FS source.
 - Every row in the Coding Implementation Plan has a clear source/target and references no field absent from the Verified Data Model.
 
 PASS → Phase 6. FAIL → fix the specific gap in the phase it belongs to, then re-run this gate. Log each attempt in the Scratchpad ledger's Verify Attempts table (see Scratchpad skill) so the 3-iteration cap is tracked, not just remembered. After 3 failed iterations, STOP — list the exact unresolved blockers and ask the user instead of continuing to guess (Red Flags, `sap-dev-rule.md` §7).
@@ -97,6 +98,7 @@ Report Type: [Read-only OR Transactional/Actionable — determined strictly from
 - Selection Fields (Filters): [List, mark mandatory ones]
 - Line Items: [100% of display fields in sequence, mapped to Output Fields above]
 - Default Sorting/Grouping: [List]
+- **Traceability (MANDATORY):** every UI requirement above is one line with an ID `UI-nn` and its FS source, e.g. `UI-07 — Filter "Plant" mandatory, value help on plants — FS §3.2 / mockup "Selection screen"`. Cover everything the FS states about the screen (labels in the FS wording, order, value help, defaults, text-for-code display, actions, formatting…) — `/sap-dev-create-*` Phase 2.U verifies the build against exactly these rows.
 
 ## 5. Business Logic & Behavior
 - Derived/Calculated Fields (CDS): [List]
