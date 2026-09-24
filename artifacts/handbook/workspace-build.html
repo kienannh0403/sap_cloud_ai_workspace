@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dựng workspace theo sc4sap — Sổ tay ABAP_CLOUD_AI</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <a class="home" href="index.html">Sổ tay ABAP_CLOUD_AI</a>
+    <nav aria-label="Trang">
+      <a href="index.html">Trang chủ</a>
+      <a href="mcp.html">MCP</a>
+      <a href="cds-catalog.html">CDS released</a>
+      <a href="workspace-build.html" aria-current="page">Dựng workspace</a>
+    </nav>
+  </div>
+</div>
+
+<div class="page">
+
+  <header class="masthead">
+    <p class="eyebrow">Task SC4SAP_SKELETON · cập nhật 2026-09-23</p>
+    <h1>Dựng workspace Public Cloud theo khung sc4sap: đã làm gì, còn gì</h1>
+    <p class="standfirst">
+      Lấy khung của superclaude-for-sap (sc4sap) làm mẫu, viết lại cho S/4HANA Public Cloud. Nguồn sự thật là ledger;
+      bản markdown đầy đủ là <code>artifacts/system_analysis/SC4SAP_SKELETON/status_report.md</code>.
+      Không đụng object SAP, package hay TR nào.
+    </p>
+    <div class="facts">
+      <div><span class="k">ledger</span><span class="v">artifacts/scratchpads/SC4SAP_SKELETON/ledger.md</span></div>
+      <div><span class="k">nhóm xong</span><span class="v">A · B · C · D · E · G · H</span></div>
+      <div><span class="k">còn lại</span><span class="v">F (đóng việc) · commit git</span></div>
+      <div><span class="k">module</span><span class="v">11 · SD FI CO MM PP QM PM PS TM EWM TR</span></div>
+    </div>
+  </header>
+
+  <section id="tong-quan">
+    <h2>Tổng quan</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Nhóm</th><th>Mục đích</th><th>Số việc</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono"><a href="#nhom-a">A</a></td><td>Các quyết định của anh trước khi build</td><td class="mono">4</td><td><span class="pill pill-ok">xong 4/4</span></td></tr>
+          <tr><td class="mono"><a href="#nhom-b">B</a></td><td>Dọn bản copy của workspace cũ</td><td class="mono">4</td><td><span class="pill pill-ok">xong 3/4</span> <span class="pill pill-wrn">B3 dở</span></td></tr>
+          <tr><td class="mono"><a href="#nhom-c">C</a></td><td>Nền an toàn: git, memory, hook, MCP</td><td class="mono">5</td><td><span class="pill pill-ok">xong 5/5</span></td></tr>
+          <tr><td class="mono"><a href="#nhom-d">D</a></td><td>Chuẩn bị nguồn tham chiếu sc4sap</td><td class="mono">1</td><td><span class="pill pill-ok">xong 1/1</span></td></tr>
+          <tr><td class="mono"><a href="#nhom-e">E</a></td><td>Build khung theo sc4sap cho Public Cloud</td><td class="mono">10</td><td><span class="pill pill-ok">xong 10/10</span> <span class="pill pill-wrn">chưa commit</span></td></tr>
+          <tr><td class="mono"><a href="#nhom-f">F</a></td><td>Đóng việc</td><td class="mono">3</td><td><span class="pill pill-dgr">chưa 0/3</span> F2 làm được một phần</td></tr>
+          <tr><td class="mono"><a href="#nhom-g">G</a></td><td>Việc phụ: catalog CDS released</td><td class="mono">1</td><td><span class="pill pill-ok">xong 1/1</span> còn 3 câu hỏi mở</td></tr>
+          <tr><td class="mono"><a href="#nhom-h">H</a></td><td>Đổi rule thường trực: ATC</td><td class="mono">1</td><td><span class="pill pill-ok">xong 1/1</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="nhom-a">
+    <h2>Nhóm A — Quyết định của anh</h2>
+    <p>Mục đích: chốt phạm vi trước khi build, để không phải đoán. <span class="pill pill-ok">xong 4/4</span></p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Anh đã chọn</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">A1</td><td>Danh sách module cho lần build đầu</td><td>21/09: <b>chỉ SD</b>. 23/09 mở rộng thành <b>11 module</b> (E10)</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">A2</td><td>Ngành / quốc gia</td><td><b>vn</b>, không chọn ngành</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">A3</td><td>Mức blocklist dữ liệu</td><td><b>standard</b>: minimal (chặn) + dữ liệu giao dịch (hỏi); bỏ phần log audit và workflow</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">A4</td><td>Xác nhận <code>C:\WORK_SPACE</code> là workspace mới</td><td>"đây là work space mới"; workspace cũ giữ 11 target cũ</td><td><span class="pill pill-ok">xong</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="nhom-b">
+    <h2>Nhóm B — Dọn bản copy</h2>
+    <p>Mục đích: bản copy không mang theo rác, secret hay đường dẫn phụ thuộc workspace cũ. <span class="pill pill-ok">xong 3/4</span> <span class="pill pill-wrn">1 dở</span></p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Nội dung đã làm</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">B1</td><td>Bỏ <code>.venv_markitdown</code> (371 MB)</td><td>Anh xoá ngày 21; ngày 23 cài lại (markitdown 0.1.8), chuyển thử HTML → md đạt. <b>Vẫn thiếu <code>scripts/office_to_md.py</code></b> nên chưa đọc được DOCX/XLSX</td><td><span class="pill pill-ok">xong</span> còn treo script</td></tr>
+          <tr><td class="mono">B2</td><td>Soát secret trong <code>.mcp.json</code></td><td>Không có password (dùng cookie). API key của <code>sap-docs</code> nằm thẳng trong args, nên đã chặn không cho vào git</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">B3</td><td>Xoá <code>.unlock</code> cũ, chỉ tạo lại khi cần sửa <code>.claude/</code></td><td>Anh đã xoá rồi tạo lại cho nhóm E. <b>Hiện <code>.unlock</code> vẫn còn</b>, lock đang tắt</td><td><span class="pill pill-wrn">dở</span> gộp với F3</td></tr>
+          <tr><td class="mono">B4</td><td>Tách vsp.exe và cookie khỏi workspace cũ</td><td>Trỏ <code>C:/WORK_SPACE/tools/vsp/</code>; mỗi tenant một file cookie (<code>cookies_dev.txt</code> cho 080, <code>cookies_cus.txt</code> cho 100). Cookie refresh lại ngày 23</td><td><span class="pill pill-ok">xong</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="nhom-c">
+    <h2>Nhóm C — Nền an toàn</h2>
+    <p>Mục đích: có điểm rollback, memory riêng, hook đúng, MCP chạy được. <span class="pill pill-ok">xong 5/5</span></p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Nội dung đã làm</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">C1</td><td><code>git init</code> + commit baseline</td><td>Commit <code>b167a9d</code> (374 file), không có secret. Hook chặn tạo <code>.gitignore</code> ở root nên ignore nằm ở <code>.git/info/exclude</code></td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">C2</td><td>Memory riêng cho workspace</td><td><code>~/.claude/auto-memory/Work_space</code> (nằm ngoài workspace). Chép 18 memory cần thiết, sửa 7 cái</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">C3</td><td>jq có sẵn, matcher hook khớp tên server</td><td>jq 1.8.2. Lúc đó server 100 <b>không</b> bị hook nào chặn ghi; đã vá ở E7</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">C4</td><td>Test hook chặn (Z/Y, package, TR)</td><td>10 payload giả đúng hết, trừ lỗ hổng <code>edit</code> bỏ qua kiểm Z/Y. <b>Vá ngày 21</b>: <code>edit</code> giờ cũng bắt buộc Z/Y</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">C5</td><td>MCP sống</td><td><code>search ZCL_*</code> chạy trên cả hai server; kiểm lại sau restart ngày 23</td><td><span class="pill pill-ok">xong</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="nhom-d">
+    <h2>Nhóm D — Nguồn tham chiếu</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Nội dung đã làm</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">D1</td><td>Clone sc4sap (chỉ đọc)</td><td><code>git clone --depth 1</code> vào <code>artifacts/scratchpads/SC4SAP_SKELETON/sc4sap_repo/</code> (git bỏ qua). Đã đọc <code>common/</code>, <code>exceptions/</code>, <code>configs/</code>, <code>hooks/</code>, <code>tests/</code></td><td><span class="pill pill-ok">xong</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="nhom-e">
+    <h2>Nhóm E — Build khung</h2>
+    <p>Mục đích: lấy khung của sc4sap (config theo tầng, blocklist dữ liệu, hook, kiểm tra tự động) và viết lại cho Public Cloud. <span class="pill pill-ok">xong 10/10</span> <span class="pill pill-wrn">chưa commit git</span></p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Nội dung đã làm</th><th>Bằng chứng</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">E1</td><td>Thư mục khung</td><td><code>.claude/common/</code>, <code>configs/</code>, <code>exceptions/</code>, <code>scripts/</code>; đặt trong <code>.claude/</code> vì hook chặn file mới ở root</td><td>—</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E2</td><td>Tách rule theo tầng</td><td>Giữ §1–§14, thêm §15 + <code>context-loading-protocol.md</code> (4 tầng). <code>CLAUDE.md</code> nạp <code>system-config.md</code>; 6 agent có khối baseline</td><td>0/60 tham chiếu <code>§N</code> bị gãy</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E3</td><td>File cấu hình hệ thống</td><td><code>common/system-config.md</code>: Public Cloud, 11 module, vn, DEV, blocklist standard, 080 ghi, 100 chỉ đọc; hook đọc trực tiếp</td><td>Release/FPS để trống có chủ đích</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E4</td><td>Ràng buộc ABAP Cloud</td><td><code>common/cloud-abap-constraints.md</code>: câu lệnh cấm, API thay thế, bảng chuyển hướng</td><td>19/20 class released; bỏ <code>CL_DEMO_XML_ACCESS</code></td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E5</td><td>Config SD</td><td><code>configs/SD/</code>: README, released-objects, functional</td><td>43 BDEF + 7 spot + 58 BAdI interface released</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E6</td><td>Blocklist dữ liệu</td><td>README + 9 file: 8 file chặn, 1 file hỏi (chứng từ giao dịch)</td><td>Tên view đối chiếu catalog + sap-docs</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E7</td><td>Hook</td><td>5 hook mới (bảng bên dưới); kiểm TR dùng lại <code>pre-cud-guard.sh</code></td><td>Chạy thử 34/34; chạy thật sau restart</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E8</td><td>Script kiểm tra toàn vẹn</td><td><code>bash .claude/scripts/integrity-check.sh</code>, 6 phép kiểm</td><td>6/6 PASS; test âm bắt đúng</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E9</td><td>Ghi chú theo target</td><td>Rule §4/§14: kiến thức riêng của báo cáo vào <code>notes/</code>; sửa skill scratchpad/handoff + 2 command</td><td>Memory cập nhật, không trùng</td><td><span class="pill pill-ok">xong</span></td></tr>
+          <tr><td class="mono">E10</td><td>Mở rộng ra 11 module</td><td>Thêm FI, CO, MM, PP, QM, PM, PS, TM, EWM, TR (bảng bên dưới)</td><td>integrity 6/6; module thiếu README bị bắt</td><td><span class="pill pill-ok">xong</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="nhom-f">
+    <h2>Nhóm F — Đóng việc</h2>
+    <p>Mục đích: kiểm tra lần cuối, ghi tài liệu, khoá lại <code>.claude/</code>. <span class="pill pill-dgr">chưa 0/3</span></p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Nội dung</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">F1</td><td>Integrity check sau mọi thay đổi <code>.claude/</code></td><td>Đã chạy 6/6 PASS sau lần sửa cuối, <b>chưa ghi vào ledger</b></td><td><span class="pill pill-dgr">chưa</span> chỉ còn ghi ledger</td></tr>
+          <tr><td class="mono">F2</td><td>Handbook + <code>SC4SAP_SKELETON/INDEX.md</code></td><td>Handbook <b>đã có</b> (trang này). <b>INDEX.md chưa có</b> (rule §4 bắt buộc)</td><td><span class="pill pill-wrn">một phần</span></td></tr>
+          <tr><td class="mono">F3</td><td>Anh xoá <code>.claude/.unlock</code></td><td>Chờ xong F1, F2 và các sửa <code>.claude/</code> còn lại</td><td><span class="pill pill-dgr">chưa</span> việc của anh</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="nhom-g">
+    <h2>Nhóm G — Catalog CDS released</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Nội dung đã làm</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">G1</td><td>Catalog CDS released theo module</td><td>4.025 view chia 41 folder, quan hệ giữa các module, trang <a href="cds-catalog.html">CDS released</a>. Ngày 23 thêm <code>verified_external/</code> (FI, CO, PP, LE-TM, QM). Đã commit <code>c283cda</code></td><td><span class="pill pill-ok">xong</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <p class="lbl">câu hỏi mở của G1</p>
+      <p>(a) Sheet1 có đúng danh sách module anh muốn ưu tiên không; (b) file xlsx nằm trong <code>.claude/Documents/</code>, trái rule §4; (c) sửa skill <code>find-released-cds-view</code> để tra catalog trước (cần <code>.unlock</code>).</p>
+    </div>
+  </section>
+
+  <section id="nhom-h">
+    <h2>Nhóm H — Rule thường trực</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Nội dung đã làm</th><th>Tình trạng</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">H1</td><td>ATC bắt buộc (Gate 4)</td><td>Mỗi lần create/edit/delete phải có 0 lỗi ATC <b>mới</b> (chỉ tính dòng mình sửa, mọi package). Sửa skill <code>activation-guard</code> và 8 file đang ghi "3 gate". Đã commit <code>8d59813</code></td><td><span class="pill pill-ok">xong</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="hook">
+    <h2>Chi tiết nhóm E — hook mới đang chạy</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Hook</th><th>Khi nào</th><th>Làm gì</th><th>Thử thật sau restart</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">tier-readonly-guard.sh</td><td>Trước mọi lệnh MCP SAP</td><td>Chặn create/edit/delete trên client 100; tier khác DEV thì chặn mọi thao tác ghi</td><td><span class="pill pill-ok">chặn</span> <code>edit</code> trên 100</td></tr>
+          <tr><td class="mono">block-forbidden-tables.sh</td><td>Trước MCP <code>query</code> và Bash <code>datapreview</code></td><td>Dữ liệu cá nhân, giá, HR, bank, thuế: <b>chặn</b>. Chứng từ bán, giao, hoá đơn, mua, kế toán: <b>hỏi anh</b></td><td><span class="pill pill-ok">chặn</span> <code>echo … KNA1</code>, query <code>I_Customer</code></td></tr>
+          <tr><td class="mono">activation-verify.sh</td><td>Sau khi ghi object trên 080</td><td>Nhắc chạy đủ 4 gate activation-guard</td><td>chạy thử OK</td></tr>
+          <tr><td class="mono">session-start.sh</td><td>Mở, resume, sau compact</td><td>Tóm tắt cấu hình, cảnh báo <code>.unlock</code>, chỉ ledger/handoff gần nhất</td><td><span class="pill pill-ok">đã hiện</span> đầu phiên</td></tr>
+          <tr><td class="mono">pre-compact.sh</td><td>Trước compact</td><td>Snapshot vào <code>artifacts/scratchpads/_session/</code> (giữ 10 bản), nhắc chạy handoff</td><td>chạy thử OK</td></tr>
+          <tr><td class="mono">pre-cud-guard.sh</td><td>(có từ trước)</td><td>Kiểm tra TR/package, chỉ cho sửa object Z/Y; nhóm E không viết hook TR riêng</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <p class="lbl">ảnh hưởng tới công việc hằng ngày</p>
+      <p>Query <code>I_SalesOrder</code>, <code>I_BillingDocument</code>, <code>I_PurchaseOrderAPI01</code>… sẽ hỏi anh xác nhận; pricing element và master khách hàng (<code>I_Customer</code>) bị chặn hẳn. Thấy phiền thì đổi <code>BLOCKLIST_PROFILE</code> trong <code>.claude/common/system-config.md</code>.</p>
+    </div>
+  </section>
+
+  <section id="module">
+    <h2>Chi tiết nhóm E — 11 module, điều cần nhớ</h2>
+    <p>Anh chọn "10 module Public Cloud", cộng SD là 11. Bỏ Ariba, BW, HCM vì không có module ABAP trên Public Cloud. File nằm ở <code>.claude/configs/&lt;MODULE&gt;/</code>.</p>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Module</th><th>File</th><th>Điều cần nhớ</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">SD</td><td>README · released-objects · functional</td><td>Pricing element bị chặn đọc; đơn bán hàng, hoá đơn phải hỏi anh</td></tr>
+          <tr><td class="mono">FI</td><td>README · released-objects</td><td>BO bút toán <code>I_JournalEntryTP</code> nằm ở AC-INT. <b>VN eInvoice: <code>I_VN_EDocInvoice</code> released</b></td></tr>
+          <tr><td class="mono">CO</td><td>README · released-objects</td><td><code>I_ActualCostRate</code> có annotation nhưng không dùng được; ghi qua <code>I_ActualCostRateTP</code></td></tr>
+          <tr><td class="mono">MM</td><td>README · released-objects</td><td><b><code>I_PurchaseOrder</code> không released</b> → <code>I_PurchaseOrderAPI01</code>. <code>ME_PROCESS_PO_CUST</code> → <code>ES_MMPUR_PROCESS_PO_CLOUD</code></td></tr>
+          <tr><td class="mono">PP</td><td>README · released-objects</td><td>Đơn sản xuất đọc qua <code>I_ManufacturingOrder</code>; BOM dùng họ <code>…DEX_2/_3</code>; <code>WORKORDER_UPDATE</code> → <code>ES_COBADICFL_MFGORDER</code></td></tr>
+          <tr><td class="mono">QM</td><td>README</td><td>Tên view là <code>I_QltyNotification</code>, không phải <code>I_QualityNotification</code></td></tr>
+          <tr><td class="mono">PM</td><td>README</td><td><b><code>I_MaintenanceOrder</code> không released</b> → <code>I_MaintenanceOrderBasic</code></td></tr>
+          <tr><td class="mono">PS</td><td>README</td><td>Không còn PS cổ điển: Enterprise Projects (PPM-SCL). <code>I_Project</code>, <code>I_WBSElement*</code> không released</td></tr>
+          <tr><td class="mono">TM</td><td>README</td><td>Chỉ đọc qua họ view TP; catalog local không có TP</td></tr>
+          <tr><td class="mono">EWM</td><td>README</td><td>Thay cho WM; chỉ 1 BO released</td></tr>
+          <tr><td class="mono">TR</td><td>README</td><td>Treasury; vài view deprecated, đã ghi bản thay thế</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="trap">
+      <p class="lbl">chưa kiểm trên tenant</p>
+      <p>Object trong <code>configs/</code> chỉ được tra trong kho release của SAP (sap-docs) và catalog local; chưa object nào được đọc thử trên my437569/080. Phần SSCUI, Fiori app, flexible workflow và release/FPS đánh dấu <i>unverified</i>.</p>
+    </div>
+  </section>
+
+  <section id="ket-noi">
+    <h2>Kết nối và memory</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Việc</th><th>Kết quả</th></tr></thead>
+        <tbody>
+          <tr><td>Refresh cookie 100</td><td><code>cookies_cus.txt</code> 17:14 · curl <code>200 application/atomsvc+xml</code></td></tr>
+          <tr><td>Refresh cookie 080</td><td><code>cookies_dev.txt</code> 17:17 · curl <code>200 application/atomsvc+xml</code></td></tr>
+          <tr><td>Sau restart VS Code</td><td><code>search ZCL_*</code> chạy được trên cả hai server</td></tr>
+          <tr><td>Memory mới</td><td class="mono">hook-live-test-no-real-sensitive-query</td></tr>
+          <tr><td>Memory đã sửa</td><td><code>phutai-go-cus-connection</code> (chặn ghi trên 100 giờ do hook), <code>artifacts-per-tcode-layout</code> (<code>notes/</code> đã vào rule)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="con-treo">
+    <h2>Chưa làm / còn treo</h2>
+    <div class="wrap">
+      <table>
+        <thead><tr><th>#</th><th>Việc</th><th>Ai</th><th>Ghi chú</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">1</td><td><b>Commit git</b> toàn bộ nhóm E</td><td>Em, khi anh đồng ý</td><td>Commit cuối vẫn là <code>8d59813</code></td></tr>
+          <tr><td class="mono">2</td><td>Tạo <code>SC4SAP_SKELETON/INDEX.md</code> (F2)</td><td>Em</td><td>Rule §4 bắt buộc; phần handbook đã có</td></tr>
+          <tr><td class="mono">3</td><td><b>F1</b> đánh dấu dòng integrity trong ledger</td><td>Em</td><td>Script đã 6/6 PASS, chưa ghi vào dòng F1</td></tr>
+          <tr><td class="mono">4</td><td><b>F3 / B3</b> xoá <code>.claude/.unlock</code></td><td><b>Anh</b></td><td>Lock tắt từ 2026-09-21; xoá sau khi xong F</td></tr>
+          <tr><td class="mono">5</td><td>Sửa <code>tools:</code> của 2 agent consultant</td><td>Em, khi anh đồng ý</td><td>Trỏ tới server không tồn tại (<code>sap_nfg_dev</code>, <code>sap_bmw_dev</code>, <code>cds-kb_global_host</code>)</td></tr>
+          <tr><td class="mono">6</td><td>Phần <i>unverified</i> trong <code>configs/</code></td><td>Em</td><td>Chưa đọc thử trên tenant</td></tr>
+          <tr><td class="mono">7</td><td><code>country/vn.md</code></td><td>Anh quyết</td><td>Mới có <code>I_VN_EDocInvoice</code> trong FI README</td></tr>
+          <tr><td class="mono">8</td><td>2 hook cũ: đường dẫn tương đối, <code>timeout: 5000</code> (giây)</td><td>Em, khi anh đồng ý</td><td>Hook mới đã dùng <code>$CLAUDE_PROJECT_DIR</code></td></tr>
+          <tr><td class="mono">9</td><td>File xlsx nằm trong <code>.claude/Documents/</code></td><td>Anh quyết</td><td>Trái rule §4; đề xuất chuyển sang <code>artifacts/</code></td></tr>
+          <tr><td class="mono">10</td><td>Thiếu <code>scripts/office_to_md.py</code></td><td>Anh quyết</td><td>Skill convert chưa đọc được DOCX/XLSX</td></tr>
+          <tr><td class="mono">11</td><td>Ignore nằm ở <code>.git/info/exclude</code></td><td>Anh</td><td>Không đi theo repo; <code>.gitignore</code> thật anh phải tự tạo</td></tr>
+          <tr><td class="mono">12</td><td>Catalog CDS: xác nhận Sheet1 (G1)</td><td>Anh</td><td>Câu hỏi mở từ 2026-09-21</td></tr>
+          <tr><td class="mono">13</td><td>Thư mục <code>artifacts/scratchpads/_session/</code></td><td>—</td><td>Hook <code>pre-compact</code> tự tạo; có thể đưa vào ignore</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <p class="lbl">thứ tự đề xuất</p>
+      <p>(1) Em sửa mục 5 (và 8) khi <code>.unlock</code> còn mở, chạy integrity → (2) F1, F2 → (3) commit git sau khi anh duyệt danh sách file → (4) anh xoá <code>.claude/.unlock</code>.</p>
+    </div>
+  </section>
+
+  <section id="bai-hoc">
+    <h2>Ghi chú quá trình</h2>
+    <div class="trap">
+      <p class="lbl">auto mode chặn sửa <code>.claude/</code></p>
+      <p>Lần đầu làm nhóm E ở auto mode bị chặn (<code>[Self-Modification]</code>) dù đã có <code>.unlock</code>. Làm lại ở manual mode.</p>
+    </div>
+    <div class="trap">
+      <p class="lbl">test hook bằng query thật</p>
+      <p>Em đã gửi query <code>I_Customer</code> thật lên 080 vì tưởng cookie đã chết, nhưng server còn sống. Hook đã chặn, và 080 không có quyền đọc dữ liệu, nên không lộ gì. Từ nay em chỉ thử bằng payload giả, <code>A999</code> hoặc <code>echo</code>, và kiểm server sống hay chết trước (memory <code>hook-live-test-no-real-sensitive-query</code>).</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Bản markdown: <span class="mono">artifacts/system_analysis/SC4SAP_SKELETON/status_report.md</span></p>
+    <p><span class="mono">artifacts/handbook/workspace-build.html</span></p>
+  </footer>
+
+</div>
+</body>
+</html>

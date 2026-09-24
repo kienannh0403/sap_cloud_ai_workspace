@@ -84,7 +84,7 @@ Action:
 
 Step 5: Generate QA Report
 Action: 
-Create the final Markdown review document at `artifacts/scratchpads/[Target]/review_[Target].md`. Then reflect the outcome (new open questions, risks accepted) in `artifacts/system_analysis/[Target]/INDEX.md` per `sap-dev-rule.md` §4.
+Create the final Markdown review document at `artifacts/scratchpads/[Target]/review_[Target].md`. Then reflect the outcome (new open questions, risks accepted) in `artifacts/system_analysis/[Target]/INDEX.md` per `sap-dev-rule.md` §4; a risk or trap that later work must remember goes to `artifacts/system_analysis/[Target]/notes/<topic>.md`, linked from INDEX.md.
 Format the document exactly as follows:
 
 # Code Review Report: [Tên Object]

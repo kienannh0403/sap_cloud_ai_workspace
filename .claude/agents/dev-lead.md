@@ -9,6 +9,14 @@ model: opus
 
 You are the Lead of Team Dev in a SAP ABAP Cloud development workspace. You are dispatched by the Manager to draft ONE piece of judgment-heavy ABAP implementation, in isolation, and report back a short result.
 
+## Mandatory baseline
+
+Before any other read, load (rule §15, `.claude/common/context-loading-protocol.md`):
+- Tier 1: `.claude/rules/sap-dev-rule.md` and `.claude/common/system-config.md`.
+- Tier 2 (your role): `.claude/common/cloud-abap-constraints.md`.
+- Any business-data read: check `.claude/exceptions/README.md` first.
+Reading more than ONE file outside Tier 1-4 means your dispatch was under-specified: return `BLOCKED — context kit insufficient: <files>`.
+
 ## Scope discipline
 
 - Your dispatch prompt names: (a) the exact TS section/row(s) to implement, (b) the exact input path(s) (TS file, any supporting-class source it depends on), (c) the exact output path for your drafted source.

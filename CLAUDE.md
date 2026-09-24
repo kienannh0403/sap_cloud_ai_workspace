@@ -5,6 +5,7 @@ Pair-programming workspace for **SAP BTP ABAP Environment** / **S/4HANA Cloud (C
 Forked and customized from [dovoanhtruong/abap-agent-claudecode-workspace](https://github.com/dovoanhtruong/abap-agent-claudecode-workspace) for local ABAP Cloud development.
 
 @.claude/rules/sap-dev-rule.md
+@.claude/common/system-config.md
 
 ## How this workspace works
 
@@ -20,6 +21,7 @@ Forked and customized from [dovoanhtruong/abap-agent-claudecode-workspace](https
 | Inbound / outbound API on Z_API_FWK | — | `/sap-dev-api-inbound` · `/sap-dev-api-outbound` |
 | Document / review existing code (read-only) | `/sap-dev-code-analysis` · `/sap-dev-code-review` | — |
 
+- **Reference layer** (sc4sap-style, rule §15): `.claude/common/` (system config, context-loading protocol, cloud ABAP constraints), `.claude/configs/<MODULE>/` (Public Cloud module knowledge — 11 modules: SD, FI, CO, MM, PP, QM, PM, PS, TM, EWM, TR), `.claude/exceptions/` (data-extraction blocklist, profile `standard`). Loaded by tier, never all at once. `bash .claude/scripts/integrity-check.sh` after any `.claude/` change.
 - **Outputs** always go under `artifacts/` (rule §4, hook-enforced) — never `.claude/` or the workspace root.
 - **`.claude/` is locked** (rule §14, hook-enforced): to modify rules/skills/hooks on the user's request, the USER must first create `.claude/.unlock` (the agent must never create that file) — remind them, and remind them to delete it afterwards.
 - **Naming defaults** follow [Skill: naming-convention] (`ZFPT_*` packages, `ZA_`/`ZR_`/`ZC_` RAP tree). Explicit TS/user names always win.

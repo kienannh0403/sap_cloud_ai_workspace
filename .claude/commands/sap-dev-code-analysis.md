@@ -45,7 +45,7 @@ Step 2: Generate Final Technical Report
 Action:
 Create the final, comprehensive Markdown document. 
 Location: `artifacts/system_analysis/[Target]/analysis_report.md`.
-Then create or update `artifacts/system_analysis/[Target]/INDEX.md` per `sap-dev-rule.md` §4 — the short entry point (what the object is, status, open questions, blockers, file map) that later sessions read instead of this full report.
+Then create or update `artifacts/system_analysis/[Target]/INDEX.md` per `sap-dev-rule.md` §4 — the short entry point (what the object is, status, open questions, blockers, file map) that later sessions read instead of this full report. Findings worth keeping beyond this report (traps, decisions, data-preview results) go to `artifacts/system_analysis/[Target]/notes/<topic>.md`, one per file, each linked from INDEX.md.
 Format the report exactly as follows:
 
 # [Tên Đối Tượng/Package] - System Analysis Report
