@@ -101,15 +101,15 @@ WORK_SPACE/
 │   ├── scripts/odata-verify/        # 🧪 fetch.sh + ui-check.js: tự kiểm data/UI qua OData (chỉ đọc)
 │   ├── scripts/handbook/            # 📒 render_target.py: handbook.json → trang sổ tay
 │   └── settings.json                # Đăng ký hook + thư mục memory
-└── artifacts/                       # 📦 Mọi output (có commit vào git)
+└── artifacts/                       # 📦 Mọi output (🔒 = chỉ trên máy, không đưa lên git)
     ├── targets/<TARGET>/            #   MỌI THỨ của 1 báo cáo/chức năng
     │   ├── INDEX.md · handbook.json #   lối vào · nguồn trang sổ tay
-    │   ├── fs/ ts/ build/ forms/    #   FS · TS · ledger/nháp/verify · form PDF/Excel
+    │   ├── fs/ 🔒 ts/ build/ forms/ #   FS khách hàng · TS · ledger/nháp/verify · form (.xdp/.xlsx lên git; spec, data mẫu, logo 🔒)
     │   └── ddlx/ test/ notes/ walkthrough*.md
-    ├── documents/                   #   UM tool, naming convention
+    ├── documents/ 🔒                #   UM tool, naming convention, tài liệu SAP CDS
     ├── system_analysis/CDS_RELEASED_CATALOG/  # Catalog 4.025 CDS view released theo module
     ├── scratchpads/_session/        #   Snapshot của hook pre-compact
-    └── handbook/                    #   Sổ tay HTML (mở index.html bằng double-click)
+    └── handbook/ 🔒                 #   Sổ tay HTML cá nhân (mở index.html bằng double-click)
 ```
 
 Quy ước đặt file (rule §4): **mỗi báo cáo/chức năng một folder** `artifacts/targets/<TARGET>/`, chi tiết ở `.claude/common/handbook-target.md`. `INDEX.md` là lối vào; `handbook.json` là nguồn của trang sổ tay (mục đích, sơ đồ object, form, version + ngày + thay đổi, ATC theo version, test case và kết quả), render bằng `python .claude/scripts/handbook/render_target.py <TARGET>`. Kiến thức riêng của target đó (bẫy đã gặp, quyết định ngoài spec) để trong `notes/<chủ đề>.md` cùng thư mục, không để trong memory.
@@ -329,5 +329,8 @@ Sau khi Phase 2 đạt còn một bước **Phase 2.5 — duyệt độc lập**
 - **Tạo package mới dưới `ZLOCAL`:** thêm tên package đó vào `LOCAL_NO_TR_PACKAGES` trong `.claude/common/system-config.md`, vì hook chỉ thấy tên package chứ không biết package cha. Chưa thêm thì hook sẽ đòi TR.
 - **Thêm module:** tạo `.claude/configs/<MODULE>/README.md` **trước**, rồi mới thêm vào `SAP_ACTIVE_MODULES` trong `common/system-config.md`. Làm ngược thứ tự thì integrity check báo FAIL.
 - **Memory** của workspace nằm ngoài repo (`~/.claude/auto-memory/Work_space`), chỉ chứa sở thích, feedback và tham chiếu chung. Trạng thái task để trong ledger/handoff; kiến thức theo target để trong `notes/`.
-- **Sổ tay:** `artifacts/handbook/index.html` tổng hợp MCP, catalog CDS, tiến độ dựng workspace và một trang cho mỗi báo cáo/chức năng (sinh từ `handbook.json`; menu và thẻ trang chủ do script tự cập nhật, không sửa tay).
-- **Ignore:** quy tắc ignore hiện nằm ở `.git/info/exclude` (chỉ có trên máy đang dùng). Clone sang máy khác thì cần tạo `.gitignore` bỏ qua `.mcp.json`, `tools/vsp/cookies*.txt`, `tools/vsp/vsp.exe`, `.venv*/`, `.claude/.unlock`, `.claude/settings.local.json`.
+- **Sổ tay (chỉ trên máy):** `artifacts/handbook/index.html` tổng hợp MCP, catalog CDS, tiến độ dựng workspace và một trang cho mỗi báo cáo/chức năng (sinh từ `handbook.json`; menu và thẻ trang chủ do script tự cập nhật, không sửa tay).
+- **Ignore:** quy tắc ignore hiện nằm ở `.git/info/exclude` (chỉ có trên máy đang dùng). Clone sang máy khác thì cần tạo `.gitignore` bỏ qua:
+  - bí mật và file máy: `.mcp.json`, `tools/vsp/cookies*.txt`, `tools/vsp/vsp.exe`, `.venv*/`, `.claude/.unlock`, `.claude/settings.local.json`;
+  - **tài liệu khách hàng và thông tin cá nhân (không bao giờ push, từ 2026-09-25):** `artifacts/handbook/`, `artifacts/documents/`, `artifacts/targets/*/fs/`, `artifacts/targets/*/forms/logo_*`, `artifacts/targets/*/forms/*_data.xml`, `artifacts/targets/*/forms/*.spec.json`.
+  Vì vậy clone repo về sẽ **không có** sổ tay, UM, naming convention và FS; các file đó chỉ nằm trên máy làm việc.
