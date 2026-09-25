@@ -37,7 +37,7 @@ python -m venv .venv_markitdown && ./.venv_markitdown/Scripts/pip.exe install 'm
 
 ```bash
 ./.venv_markitdown/Scripts/python.exe -X utf8 scripts/office_to_md.py \
-  "FS/[Target]/[File].docx" -o "artifacts/scratchpads/[Target]/"
+  "FS/[Target]/[File].docx" -o "artifacts/targets/[Target]/build/"
 ```
 
 Produces `[File].md` plus a sibling `[File]_assets/` folder holding the real embedded images, and prints how many it extracted.
@@ -68,7 +68,7 @@ The 332 KB image was a legible Fiori screenshot with a business rule highlighted
 
 ```bash
 ./.venv_markitdown/Scripts/python.exe -X utf8 scripts/office_to_md.py \
-  "FS/[Target]/[File].xlsx" -o "artifacts/scratchpads/[Target]/"
+  "FS/[Target]/[File].xlsx" -o "artifacts/targets/[Target]/build/"
 ```
 
 One Markdown table per sheet, each under an `## <SheetName>` heading.
@@ -85,7 +85,7 @@ Material, Plant, Order and Batch numbers are all numeric-looking codes that may 
 
 ```bash
 ./.venv_markitdown/Scripts/markitdown.exe "FS/[Target]/[File].pdf" \
-  -o "artifacts/scratchpads/[Target]/fs_markdown.md"
+  -o "artifacts/targets/[Target]/fs/fs_markdown.md"
 ```
 
 Same image limitation applies: embedded pictures are lost. For a PDF whose content is largely diagrams or mockups, fall back to [Skill: fs-vision-extractor] on the original.
@@ -100,4 +100,4 @@ Per `sap-dev-rule.md` §11, "it converted" is not evidence the content survived.
 
 ## 5. Hand off to analysis
 
-Once the `.md` exists, **stop reading the original document** — read `artifacts/scratchpads/[Target]/[File].md` instead. It preserves headings, lists and tables for Data Model and UI element extraction. Images in `[File]_assets/` go to [Skill: fs-vision-extractor] for transcription.
+Once the `.md` exists, **stop reading the original document** — read `artifacts/targets/[Target]/fs/[File].md` instead. It preserves headings, lists and tables for Data Model and UI element extraction. Images in `[File]_assets/` go to [Skill: fs-vision-extractor] for transcription.

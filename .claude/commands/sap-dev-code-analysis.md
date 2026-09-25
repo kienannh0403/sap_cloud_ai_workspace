@@ -28,7 +28,7 @@ Step 0: System Scanning & Component Discovery
 Required Skill: [Skill: scratchpad]
 Action:
 - Use whichever MCP tool your environment exposes for reading/searching SAP objects to get the initial structure/list of objects (`sap-dev-rule.md` §9) — if it isn't loaded yet, use `ToolSearch` to find it first.
-- Create `artifacts/scratchpads/[Target]/scratchpad_analysis.md` (`sap-dev-rule.md` §4 — one sub-folder per target).
+- Create `artifacts/targets/[Target]/build/scratchpad_analysis.md` (`sap-dev-rule.md` §4 — one sub-folder per target).
 - Document the tree structure in the scratchpad and select the top priority objects that contain the core logic/data models.
 
 Step 1: Deep Dive Analysis
@@ -44,8 +44,10 @@ Action:
 Step 2: Generate Final Technical Report
 Action:
 Create the final, comprehensive Markdown document. 
-Location: `artifacts/system_analysis/[Target]/analysis_report.md`.
-Then create or update `artifacts/system_analysis/[Target]/INDEX.md` per `sap-dev-rule.md` §4 — the short entry point (what the object is, status, open questions, blockers, file map) that later sessions read instead of this full report. Findings worth keeping beyond this report (traps, decisions, data-preview results) go to `artifacts/system_analysis/[Target]/notes/<topic>.md`, one per file, each linked from INDEX.md.
+Location: `artifacts/targets/[Target]/analysis/analysis_report.md`.
+Then create or update `artifacts/targets/[Target]/INDEX.md` per `sap-dev-rule.md` §4 — the short entry point (what the object is, status, open questions, blockers, file map) that later sessions read instead of this full report. Findings worth keeping beyond this report (traps, decisions, data-preview results) go to `artifacts/targets/[Target]/notes/<topic>.md`, one per file, each linked from INDEX.md.
+
+Handbook record: create/refresh `artifacts/targets/[Target]/handbook.json` (`.claude/common/handbook-target.md`) with `purpose` and `objects` (each analysed object with its `uses`, so the page shows the object diagram) — no version is opened by an analysis — then run `python .claude/scripts/handbook/render_target.py [Target]`.
 Format the report exactly as follows:
 
 # [Tên Đối Tượng/Package] - System Analysis Report

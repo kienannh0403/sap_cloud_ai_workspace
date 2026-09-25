@@ -13,8 +13,14 @@ mutation tool; the user uploads the template in the app.
 the parser/renderer code (markers, cell syntax, rendering, limits, known defects). Never invent a
 format/color/align code that is not listed there.
 
+## Gate: no form sample in the FS → no form
+Build a template **only when the FS contains a form sample** — a mock-up/image/table that shows the
+printed Excel layout (title, blocks, column order). An ALV screen mock-up or a bare "cho phép export ra
+excel" is **not** a form sample. If none is found, stop: tell the user the FS has no form sample and
+produce nothing (user rule, 2026-09-25). Do not design a layout on your own.
+
 ## Inputs to settle first (ask with [Skill: grill-me] if the FS is silent)
-- **TARGET** (tcode / report the form belongs to) → output folder `artifacts/forms/<TARGET>/`.
+- **TARGET** (tcode / report the form belongs to) → output folder `artifacts/targets/<TARGET>/forms/`.
 - **Report Name** (upload app) = the tcode, **≤ 10 chars**.
 - **Template name** ≤ 20 chars — default per [Skill: naming-convention] §7 (Excel form): `<tcode>_EXC` (e.g. `ZSD01_EXC`). Same name on every system, so the ABAP constant does not change between DEV/TEST/PRD.
 - Which blocks **repeat** (→ nested tables) and whether any table needs **per-level row formats** (subtotal/group lines → level field + values).
@@ -31,12 +37,12 @@ FS in DOCX/XLSX/PDF → convert with [Skill: document-markdown-converter] first;
 2. **Every printed text is a field** — captions, column titles, signatures included (a raw literal is never printed).
    Name labels `LBL_*`, `HDR_*`/`HEADER*`, `SEC_*`, `SIGN*`, `TITLE*`; data fields use business names (≤ 30 chars).
    Table and level-field names: letters/digits only, **no `_`** (`TABLE1`, `ZLEVEL`).
-3. **Write the spec** `artifacts/forms/<TARGET>/<template>.spec.json` (schema in the script docstring;
+3. **Write the spec** `artifacts/targets/<TARGET>/forms/<template>.spec.json` (schema in the script docstring;
    worked example: `references/example-spec.json`). Put label texts in `fields.<NAME>.text` and data
    sources (released CDS field) in `fields.<NAME>.source`. Always UTF-8 — Vietnamese text stays intact.
 4. **Build + lint:**
    ```
-   python .claude/skills/excel-form-template/scripts/build_form.py build artifacts/forms/<TARGET>/<template>.spec.json --out-dir artifacts/forms/<TARGET>
+   python .claude/skills/excel-form-template/scripts/build_form.py build artifacts/targets/<TARGET>/forms/<template>.spec.json --out-dir artifacts/targets/<TARGET>/forms
    ```
    Errors block the write — fix the spec and rerun until `0 error(s)`; assess every warning. Default output
    is **only** `<template>.xlsx` (the upload file) — the user's standing preference. Add `--with-fields`
@@ -45,7 +51,7 @@ FS in DOCX/XLSX/PDF → convert with [Skill: document-markdown-converter] first;
 5. **Hand over** (chat): upload steps — app "Upload Template file excel" → Create → Report Name / Template →
    upload `<template>.xlsx` → Create → check the "View data" tab (status stays `I`, that is normal).
    Then the checks below.
-6. Record the form in `artifacts/system_analysis/<TARGET>/INDEX.md` (file map + open points).
+6. Record the form in `artifacts/targets/<TARGET>/INDEX.md` (file map + open points).
 
 **Linting an existing template** (user-supplied or already uploaded, e.g. "export looks wrong"):
 ```

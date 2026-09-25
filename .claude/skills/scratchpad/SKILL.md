@@ -10,12 +10,12 @@ description: Uses a persistent scratchpad file to plan, draft, and track complex
 **Description:** Utilizes a persistent artifact or scratch file to meticulously plan, track, and draft work before committing changes to the main codebase.
 
 ## Instructions
-1. Before starting a complex task, create or open a scratchpad file under `artifacts/scratchpads/<TARGET>/` (rule §4 — one sub-folder per target — fixed location so any later session/agent can find it; workflows may specify an exact filename).
+1. Before starting a complex task, create or open a scratchpad file under `artifacts/targets/<TARGET>/build/` (rule §4 — one sub-folder per target — fixed location so any later session/agent can find it; workflows may specify an exact filename).
 2. Outline the step-by-step implementation plan within the scratchpad.
 3. Draft code snippets, queries, or API payloads in the scratchpad for validation.
 4. Use the scratchpad as a working memory space to keep track of variables, file paths, and intermediate states.
 5. Only move code from the scratchpad to actual source files once confident in the logic.
-6. A finding that outlives the task — a decision taken beyond the spec, a trap hit, a data-preview/test result, an object-specific system quirk — does not stay buried in the scratchpad: write it to `artifacts/system_analysis/<TARGET>/notes/<topic>.md` (one small file per finding) and add a one-line link to that target's `INDEX.md` (rule §4). Never into auto-memory.
+6. A finding that outlives the task — a decision taken beyond the spec, a trap hit, a data-preview/test result, an object-specific system quirk — does not stay buried in the scratchpad: write it to `artifacts/targets/<TARGET>/notes/<topic>.md` (one small file per finding) and add a one-line link to that target's `INDEX.md` (rule §4). Never into auto-memory.
 
 ## Ledger Format (multi-step / multi-session workflows)
 

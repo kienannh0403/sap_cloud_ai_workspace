@@ -2,7 +2,7 @@
 
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-native-7A5AF8)
 ![SAP](https://img.shields.io/badge/SAP-ABAP%20Cloud%20%C2%B7%20Clean%20Core-0FAAFF)
-![Skills](https://img.shields.io/badge/skills-55-2EA44F)
+![Skills](https://img.shields.io/badge/skills-56-2EA44F)
 ![Workflows](https://img.shields.io/badge/workflows-9-E8590C)
 ![Subagents](https://img.shields.io/badge/subagents-7-8957E5)
 ![Modules](https://img.shields.io/badge/modules-11-0FAAFF)
@@ -10,7 +10,7 @@
 
 Workspace lập trình cặp với Claude Code trên **SAP S/4HANA Cloud Public Edition** (ABAP Cloud, Clean Core). Claude làm việc như một developer SAP có kỷ luật:
 
-- **55 skill** tự kích hoạt khi mô tả khớp với yêu cầu: 37 skill kỹ thuật ABAP Cloud và 18 skill nghiệp vụ SAP Public Cloud.
+- **56 skill** tự kích hoạt khi mô tả khớp với yêu cầu: 38 skill kỹ thuật ABAP Cloud và 18 skill nghiệp vụ SAP Public Cloud.
 - **9 workflow** dạng slash command, đi từ FS tới code đã activate.
 - **7 subagent**: 3 nhóm Consultant / Dev / Tester (mỗi nhóm có Lead và Executor) và `reviewer-lead` duyệt độc lập trước khi đóng build.
 - **Tầng tham chiếu cho 11 module**, cộng blocklist dữ liệu nhạy cảm.
@@ -34,7 +34,7 @@ flowchart LR
         CM --> CFG["common/system-config.md<br/>hệ thống · module · tier"]
     end
     subgraph ONDEMAND["Nạp khi cần (theo tầng)"]
-        SK["55 skill<br/>.claude/skills/*"] --> REF["references/*<br/>template, deep-dive"]
+        SK["56 skill<br/>.claude/skills/*"] --> REF["references/*<br/>template, deep-dive"]
         WF["9 workflow<br/>.claude/commands/*"]
         AG["7 subagent<br/>Consultant/Dev/Tester × Lead/Executor + Reviewer"]
         LAYER["common/ · configs/&lt;MODULE&gt;/ · exceptions/"]
@@ -56,7 +56,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    FS["📄 Tài liệu FS<br/>artifacts/fs_docs/&lt;TARGET&gt;/"] --> A{"Cần Z-table<br/>mới?"}
+    FS["📄 Tài liệu FS<br/>artifacts/targets/&lt;TARGET&gt;/fs/"] --> A{"Cần Z-table<br/>mới?"}
     A -->|"không — dữ liệu có trong CDS released"| FA["/sap-dev-fs-analytic"]
     A -->|"có — app hoàn toàn mới"| FAT["/sap-dev-fs-analytic-transactional-app"]
     FA --> TS["📋 TS + Verify Loop<br/>(tối đa 3 vòng)"]
@@ -70,7 +70,7 @@ flowchart LR
     SV --> G2{{"👤 Phần kiểm tay còn lại<br/>F4, hiển thị, action — tối đa 3 vòng"}}
     G2 --> LOG["📒 Ghi mọi case vào sổ tay<br/>artifacts/handbook/&lt;target&gt;.html"]
     LOG --> RV{"🔍 reviewer-lead duyệt độc lập<br/>(Phase 2.5, tối đa 3 vòng)"}
-    RV -->|"APPROVE"| WT["📦 Walkthrough + báo cáo rủi ro<br/>artifacts/walkthroughs/&lt;TARGET&gt;/"]
+    RV -->|"APPROVE"| WT["📦 Walkthrough + báo cáo rủi ro<br/>artifacts/targets/&lt;TARGET&gt;/"]
     RV -->|"CHANGES_REQUIRED<br/>sửa trong phạm vi TS"| BUILD
     RV -->|"BLOCK"| STOP{{"👤 Dừng, hỏi người dùng"}}
 ```
@@ -93,25 +93,26 @@ WORK_SPACE/
 │   │   └── cloud-abap-constraints.md    # Câu lệnh cấm + API thay thế (đã tra kho release SAP)
 │   ├── configs/<MODULE>/            # 📘 Kiến thức Public Cloud của 11 module: CDS / RAP BO / BAdI released
 │   ├── exceptions/                  # 🚫 Blocklist dữ liệu nhạy cảm (profile standard)
-│   ├── skills/<name>/SKILL.md       # 📚 55 skill (+ references/ nạp khi cần)
+│   ├── skills/<name>/SKILL.md       # 📚 56 skill (+ references/ nạp khi cần)
 │   ├── agents/<team>-<layer>.md     # 🤖 7 subagent
 │   ├── commands/                    # ⚙️ 9 workflow dạng slash command
 │   ├── hooks/                       # 🔒 7 hook (xem bảng bên dưới)
 │   ├── scripts/integrity-check.sh   # ✅ Kiểm tra toàn vẹn sau mọi thay đổi .claude/
 │   ├── scripts/odata-verify/        # 🧪 fetch.sh + ui-check.js: tự kiểm data/UI qua OData (chỉ đọc)
+│   ├── scripts/handbook/            # 📒 render_target.py: handbook.json → trang sổ tay
 │   └── settings.json                # Đăng ký hook + thư mục memory
 └── artifacts/                       # 📦 Mọi output (có commit vào git)
-    ├── fs_docs/<TARGET>/            #   FS đầu vào
-    ├── technical_specifications/<TARGET>/
-    ├── scratchpads/<TARGET>/        #   Nháp, ledger, handoff
-    ├── walkthroughs/<TARGET>/
-    ├── metadata_extensions/
-    ├── system_analysis/<TARGET>/    #   INDEX.md + notes/ + báo cáo phân tích
-    │   └── CDS_RELEASED_CATALOG/    #   Catalog 4.025 CDS view released theo module
+    ├── targets/<TARGET>/            #   MỌI THỨ của 1 báo cáo/chức năng
+    │   ├── INDEX.md · handbook.json #   lối vào · nguồn trang sổ tay
+    │   ├── fs/ ts/ build/ forms/    #   FS · TS · ledger/nháp/verify · form PDF/Excel
+    │   └── ddlx/ test/ notes/ walkthrough*.md
+    ├── documents/                   #   UM tool, naming convention
+    ├── system_analysis/CDS_RELEASED_CATALOG/  # Catalog 4.025 CDS view released theo module
+    ├── scratchpads/_session/        #   Snapshot của hook pre-compact
     └── handbook/                    #   Sổ tay HTML (mở index.html bằng double-click)
 ```
 
-Quy ước đặt file (rule §4): **loại artifact trước, target sau**. Mỗi target có `artifacts/system_analysis/<TARGET>/INDEX.md` làm lối vào. Kiến thức riêng của target đó (bẫy đã gặp, quyết định ngoài spec) để trong `notes/<chủ đề>.md` cùng thư mục, không để trong memory.
+Quy ước đặt file (rule §4): **mỗi báo cáo/chức năng một folder** `artifacts/targets/<TARGET>/`, chi tiết ở `.claude/common/handbook-target.md`. `INDEX.md` là lối vào; `handbook.json` là nguồn của trang sổ tay (mục đích, sơ đồ object, form, version + ngày + thay đổi, ATC theo version, test case và kết quả), render bằng `python .claude/scripts/handbook/render_target.py <TARGET>`. Kiến thức riêng của target đó (bẫy đã gặp, quyết định ngoài spec) để trong `notes/<chủ đề>.md` cùng thư mục, không để trong memory.
 
 ---
 
@@ -159,7 +160,7 @@ Hook đảm bảo "việc đó có xảy ra hay không". Còn "làm có tốt kh
 
 ---
 
-## 📚 Danh mục skill (55)
+## 📚 Danh mục skill (56)
 
 **🔎 Phân tích FS / Consultant (7):**
 - `fs-data-model-extractor`: data model từ FS, thiết kế Z-table.
@@ -201,8 +202,9 @@ Hook đảm bảo "việc đó có xảy ra hay không". Còn "làm có tốt kh
 - `odata`: service definition / binding.
 - `badi-enhancement`: BAdI released.
 
-**🧾 Form (1):**
+**🧾 Form (2):**
 - `excel-form-template`: FS → template Excel cho tool FIS Export Excel (`ZCL_EXPORT_EXCEL_XLSX`) + từ điển field + ABAP TYPES; lint template theo luật parser (UM v0.2).
+- `pdf-form-template`: form in trong FS → Adobe form `.xdp` có binding + XML mẫu (header logo, bảng, nhóm có dòng cộng, ký tên, số trang); kiểm tra binding tự động.
 
 **🔐 Nền tảng & bảo mật (4):**
 - `authorization-iam`: DCL, IAM app, business role.
@@ -231,7 +233,7 @@ Workflow gọi subagent qua `[Agent: y]` để phân tích và soạn nháp đ�
 | Tester | `tester-lead`: kịch bản test, đánh giá rủi ro | `tester-executor`: khung ABAP Unit, quét pattern |
 | Reviewer | `reviewer-lead`: duyệt độc lập build so với TS (Phase 2.5 của `/sap-dev-create-*`), kết luận APPROVE / CHANGES_REQUIRED / BLOCK, chỉ đọc | — |
 
-Chỉ phiên chính (Manager) mới được ghi vào SAP. Subagent chỉ soạn nháp vào `artifacts/scratchpads/<TARGET>/`, không bao giờ đánh dấu DONE. Manager phải đọc file của subagent trước khi push, activate và chạy activation-guard.
+Chỉ phiên chính (Manager) mới được ghi vào SAP. Subagent chỉ soạn nháp vào `artifacts/targets/<TARGET>/build/`, không bao giờ đánh dấu DONE. Manager phải đọc file của subagent trước khi push, activate và chạy activation-guard.
 
 ---
 
@@ -249,7 +251,7 @@ Chỉ phiên chính (Manager) mới được ghi vào SAP. Subagent chỉ soạn
    Mỗi tenant một file cookie riêng. Không commit `.mcp.json`, `vsp.exe` hay file cookie thật.
 4. **Lấy cookie:** chạy `vsp.exe --browser-auth … --cookie-save tools/vsp/cookies_<dev|cus>.txt`, đăng nhập SSO trên Chrome (nên đóng Chrome trước). Sau đó restart VS Code để server MCP đọc cookie mới.
 5. Muốn chuyển FS dạng PDF/PPTX/HTML thì tạo venv MarkItDown: `python -m venv .venv_markitdown` rồi `.venv_markitdown\Scripts\pip install "markitdown[all]"`. Hiện chưa có `scripts/office_to_md.py` nên chưa chuyển được DOCX/XLSX.
-6. Bỏ FS vào `artifacts/fs_docs/<TARGET>/`.
+6. Bỏ FS vào `artifacts/targets/<TARGET>/fs/`.
 7. Cơ chế khoá: muốn sửa `.claude/` thì **người dùng** tự tạo file rỗng `.claude/.unlock`. Sửa xong thì chạy `bash .claude/scripts/integrity-check.sh` rồi xoá `.unlock`. Không commit `.unlock`.
 
 ### 9 workflow
@@ -258,18 +260,18 @@ Chỉ phiên chính (Manager) mới được ghi vào SAP. Subagent chỉ soạn
 
 ```bash
 # FS → Technical Specification
-/sap-dev-fs-analytic artifacts/fs_docs/<TARGET>/<FS>.docx <TARGET>
-# Duyệt artifacts/technical_specifications/<TARGET>/TS.md, rồi TS → object RAP đã activate
-/sap-dev-create-report <PACKAGE> <TR> artifacts/technical_specifications/<TARGET>/TS.md
+/sap-dev-fs-analytic artifacts/targets/<TARGET>/fs/<FS>.docx <TARGET>
+# Duyệt artifacts/targets/<TARGET>/ts/TS.md, rồi TS → object RAP đã activate
+/sap-dev-create-report <PACKAGE> <TR> artifacts/targets/<TARGET>/ts/TS.md
 ```
 
 **Luồng B — app transactional hoàn toàn mới (chưa có Z-table/CDS):**
 
 ```bash
 # FS → TS gồm cả thiết kế DDIC (bảng, domain, number range, status machine)
-/sap-dev-fs-analytic-transactional-app artifacts/fs_docs/<TARGET>/<FS>.docx <TARGET>
+/sap-dev-fs-analytic-transactional-app artifacts/targets/<TARGET>/fs/<FS>.docx <TARGET>
 # TS → DDIC + cây RAP đầy đủ + OData binding
-/sap-dev-create-transactional-app <PACKAGE> <TR> artifacts/technical_specifications/<TARGET>/TS.md
+/sap-dev-create-transactional-app <PACKAGE> <TR> artifacts/targets/<TARGET>/ts/TS.md
 ```
 
 **Bảo trì & tích hợp:**
@@ -303,7 +305,7 @@ Với `/sap-dev-create-report` và `/sap-dev-create-transactional-app`, Manager 
 | 2.0b | Manager | Data qua OData, bằng count assertion (chỉ in số dòng, không in giá trị). Mỗi rule TS §5 có 2 case (dương `total=N`, âm `total=0`). Rule có ngưỡng thêm case biên. Mỗi filter TS §2 có 2 case |
 | 2.U | Manager | Dựng `ui_checklist.md` từ FS + TS (ID `UI-nn`), so với `$metadata` qua `ui-check.js`: cột, thứ tự, label, filter, value help, text, action, facet. Có cả chiều ngược: phần nào có trên màn mà spec không có là **thừa**. FS và TS lệch nhau thì dừng lại hỏi |
 | 2.M | Người dùng | Phần metadata không chứng minh được: bấm F4 thật, lỗi hiển thị, action/lifecycle. Gửi screenshot, Manager đối chiếu |
-| 2.3 | Manager | Ghi **mọi case** (TC-nn / UI-nn / M-nn) cùng mong đợi, thực tế, PASS/FAIL, evidence vào `artifacts/handbook/<target>.html#kiem-thu`. Lần mới ở trên, không xóa lần cũ |
+| 2.3 | Manager | Ghi **mọi case** (TC-nn / UI-nn / M-nn) cùng mong đợi, thực tế, PASS/FAIL, evidence vào `artifacts/targets/<TARGET>/handbook.json`, render ra `artifacts/handbook/<target>.html#kiem-thu`. Lần mới ở trên, không xóa lần cũ |
 
 Script dùng chung: `.claude/scripts/odata-verify/fetch.sh` (samecode / srvurl / metadata / sample) và `ui-check.js`. Chạy không kèm tham số để xem hướng dẫn. Script chỉ gọi GET, lấy host và cookie từ `.mcp.json`. Hạn chế đã biết: endpoint F4 (`srvd_f4`) trả 403 với user dev, nên F4 vẫn phải kiểm tay.
 
@@ -313,7 +315,7 @@ Script dùng chung: `.claude/scripts/odata-verify/fetch.sh` (samecode / srvurl /
 
 Sau khi Phase 2 đạt còn một bước **Phase 2.5 — duyệt độc lập**:
 1. Manager đọc lại source đang active của mọi object từ hệ thống, lưu vào `final_source.md`.
-2. `reviewer-lead` so bản build với TS và ledger, ghi kết luận vào `artifacts/scratchpads/<TARGET>/review_verdict.md`.
+2. `reviewer-lead` so bản build với TS và ledger, ghi kết luận vào `artifacts/targets/<TARGET>/build/review_verdict.md`.
 3. Xử lý theo kết luận:
    - **APPROVE:** sang walkthrough.
    - **CHANGES_REQUIRED:** sửa trong phạm vi TS rồi duyệt lại. Tối đa 3 vòng, quá 3 vòng thì dừng và hỏi người dùng.
@@ -327,5 +329,5 @@ Sau khi Phase 2 đạt còn một bước **Phase 2.5 — duyệt độc lập**
 - **Tạo package mới dưới `ZLOCAL`:** thêm tên package đó vào `LOCAL_NO_TR_PACKAGES` trong `.claude/common/system-config.md`, vì hook chỉ thấy tên package chứ không biết package cha. Chưa thêm thì hook sẽ đòi TR.
 - **Thêm module:** tạo `.claude/configs/<MODULE>/README.md` **trước**, rồi mới thêm vào `SAP_ACTIVE_MODULES` trong `common/system-config.md`. Làm ngược thứ tự thì integrity check báo FAIL.
 - **Memory** của workspace nằm ngoài repo (`~/.claude/auto-memory/Work_space`), chỉ chứa sở thích, feedback và tham chiếu chung. Trạng thái task để trong ledger/handoff; kiến thức theo target để trong `notes/`.
-- **Sổ tay:** `artifacts/handbook/index.html` tổng hợp MCP, catalog CDS và tiến độ dựng workspace.
+- **Sổ tay:** `artifacts/handbook/index.html` tổng hợp MCP, catalog CDS, tiến độ dựng workspace và một trang cho mỗi báo cáo/chức năng (sinh từ `handbook.json`; menu và thẻ trang chủ do script tự cập nhật, không sửa tay).
 - **Ignore:** quy tắc ignore hiện nằm ở `.git/info/exclude` (chỉ có trên máy đang dùng). Clone sang máy khác thì cần tạo `.gitignore` bỏ qua `.mcp.json`, `tools/vsp/cookies*.txt`, `tools/vsp/vsp.exe`, `.venv*/`, `.claude/.unlock`, `.claude/settings.local.json`.

@@ -29,7 +29,7 @@ After generating the ABAP code for each step: GENERATE -> VALIDATE (LINTING) -> 
 
 0.1 GRILL-ME ON GAPS: [Skill: grill-me] (max 1-3 targeted questions).
 
-0.2 PLANNING & DRAFTING: [Skill: scratchpad] + [Skill: fs-integration-api-analyzer] — check the SAP Accelerator Hub for an existing standard API before assuming a custom one is needed; analyze trigger points, data extraction logic, payload structure, response handling. Save to `artifacts/scratchpads/[API_Name]/scratchpad_outbound.md` (doubles as the build ledger — TODO/DOING/DONE/FAILED/REGRESSED per step).
+0.2 PLANNING & DRAFTING: [Skill: scratchpad] + [Skill: fs-integration-api-analyzer] — check the SAP Accelerator Hub for an existing standard API before assuming a custom one is needed; analyze trigger points, data extraction logic, payload structure, response handling. Save to `artifacts/targets/[API_Name]/build/scratchpad_outbound.md` (doubles as the build ledger — TODO/DOING/DONE/FAILED/REGRESSED per step).
 
 ## Phase 1 — Build
 
@@ -49,7 +49,9 @@ Step 3 — Framework Configuration: instruct the user to configure the Outbound 
 
 ## Phase 3 — Walkthrough
 
-Save `artifacts/walkthroughs/[API_Name]/walkthrough_outbound.md`: objects built, the actual Phase 2 call evidence (payload sent + target response — never "should work"), and any outstanding risks.
+Save `artifacts/targets/[API_Name]/walkthrough_outbound.md`: objects built, the actual Phase 2 call evidence (payload sent + target response — never "should work"), and any outstanding risks.
+
+Handbook record (mandatory): in `artifacts/targets/[API_Name]/handbook.json` (`.claude/common/handbook-target.md`) set `kind` = "API outbound", `purpose`, `objects` with their `uses`; open version `1.0` (or the next minor for a change) with date, `changes`, **ATC over every object of the API** and one `tests` block with every call/unit-test case and its result; then run `python .claude/scripts/handbook/render_target.py [API_Name]`.
 
 [OUTPUT FORMAT]
 Per step, narrate in [Skill: caveman] style (short, evidence-based); the source code and results below stay verbatim, never compressed (`sap-dev-rule.md` §10): Object Name & Applied Skill (e.g., `ZR_MY_OUTBOUND` — [Skill: rap]); the validated ABAP source code (markdown, verbatim); SYSTEM EXECUTION RESULT (Validation Log, Activation Status, [Skill: activation-guard] gate results).

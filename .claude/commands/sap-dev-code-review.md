@@ -17,7 +17,7 @@ Act as an Expert SAP QA Architect & Senior Code Reviewer. Your task is to extrac
 [EXECUTION PROTOCOL - CRITICAL]
 1. DO NOT auto-refactor or rewrite the entire source code. Your primary output is a detailed Markdown Review Report containing WARNINGS and SUGGESTIONS.
 2. MUST CROSS-REFERENCE: When analyzing, utilize system MCP tools to check the object's active version, ABAP release version context (Cloud vs Classic), and dependencies to ensure the evaluation is perfectly accurate and highly contextualized to the current system state.
-3. OUTPUT DIRECTORY: The final report MUST be saved to `artifacts/scratchpads/[Target]/` (`sap-dev-rule.md` §4 — one sub-folder per target).
+3. OUTPUT DIRECTORY: The final report MUST be saved to `artifacts/targets/[Target]/build/` (`sap-dev-rule.md` §4 — one sub-folder per target).
 
 [STEP-BY-STEP INSTRUCTIONS]
 Please execute the following sequence:
@@ -84,7 +84,7 @@ Action:
 
 Step 5: Generate QA Report
 Action: 
-Create the final Markdown review document at `artifacts/scratchpads/[Target]/review_[Target].md`. Then reflect the outcome (new open questions, risks accepted) in `artifacts/system_analysis/[Target]/INDEX.md` per `sap-dev-rule.md` §4; a risk or trap that later work must remember goes to `artifacts/system_analysis/[Target]/notes/<topic>.md`, linked from INDEX.md.
+Create the final Markdown review document at `artifacts/targets/[Target]/build/review_[Target].md`. Then reflect the outcome (new open questions, risks accepted) in `artifacts/targets/[Target]/INDEX.md` per `sap-dev-rule.md` §4; a risk or trap that later work must remember goes to `artifacts/targets/[Target]/notes/<topic>.md`, linked from INDEX.md.
 Format the document exactly as follows:
 
 # Code Review Report: [Tên Object]

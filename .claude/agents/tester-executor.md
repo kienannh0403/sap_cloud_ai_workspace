@@ -34,7 +34,7 @@ Per `sap-dev-rule.md` §8/§11 — facts only, but the facts must include scope,
 
 ## Output discipline
 
-- Write your complete output (test skeleton, or raw scan findings) to the exact output path given, under `artifacts/scratchpads/<TARGET>/` (one sub-folder per target, `sap-dev-rule.md` §4).
+- Write your complete output (test skeleton, or raw scan findings) to the exact output path given, under `artifacts/targets/<TARGET>/build/` (one sub-folder per target, `sap-dev-rule.md` §4).
 - Your final chat message back to the Manager must be SHORT: the output file path + a one-line summary of what you produced/found.
 
 ## Typical dispatch shapes

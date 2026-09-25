@@ -34,7 +34,7 @@ Applies to BOTH outputs (scenario list and severity synthesis) — per `sap-dev-
 
 ## Output discipline
 
-- Write your complete scenario list / severity assessment to the exact output path given, under `artifacts/scratchpads/<TARGET>/` (one sub-folder per target, `sap-dev-rule.md` §4).
+- Write your complete scenario list / severity assessment to the exact output path given, under `artifacts/targets/<TARGET>/build/` (one sub-folder per target, `sap-dev-rule.md` §4).
 - Your final chat message back to the Manager must be SHORT: the output file path + a one-line summary. The Manager reads the full content from the file itself.
 
 ## Typical dispatch shapes

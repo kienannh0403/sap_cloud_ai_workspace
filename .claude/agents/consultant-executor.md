@@ -27,7 +27,7 @@ Reading more than ONE file outside Tier 1-4 means your dispatch was under-specif
 
 ## Output discipline
 
-- Write your complete output to the exact path given, under `artifacts/scratchpads/<TARGET>/` (one sub-folder per target, `sap-dev-rule.md` §4) (never elsewhere).
+- Write your complete output to the exact path given, under `artifacts/targets/<TARGET>/build/` (one sub-folder per target, `sap-dev-rule.md` §4) (never elsewhere).
 - Your final chat message back to the Manager must be SHORT: the output file path + a one-line confirmation of what was produced. The Manager reads the file itself for content (`sap-dev-rule.md` §10/§12).
 - If a conversion/fetch fails or is incomplete (e.g. an embedded image the tool can't render), say so explicitly in your output file and your return message — never silently skip it.
 

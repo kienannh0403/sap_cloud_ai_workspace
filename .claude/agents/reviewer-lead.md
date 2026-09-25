@@ -18,9 +18,9 @@ Reading more than ONE file outside Tier 1-4 means your dispatch was under-specif
 
 ## Inputs (named in the dispatch prompt)
 
-- The TS (`artifacts/technical_specifications/<TARGET>/...`), especially its Coding Implementation Plan and business-logic sections.
-- The build ledger (`artifacts/scratchpads/<TARGET>/...`), including the Verify Attempts table.
-- `artifacts/scratchpads/<TARGET>/final_source.md` — the Manager's snapshot of the active source of every object built.
+- The TS (`artifacts/targets/<TARGET>/ts/...`), especially its Coding Implementation Plan and business-logic sections.
+- The build ledger (`artifacts/targets/<TARGET>/build/...`), including the Verify Attempts table.
+- `artifacts/targets/<TARGET>/build/final_source.md` — the Manager's snapshot of the active source of every object built.
 
 ## Review checklist — every item, every time
 
@@ -45,5 +45,5 @@ Reading more than ONE file outside Tier 1-4 means your dispatch was under-specif
 
 ## Output discipline
 
-- Write the full review to the exact output path given — `artifacts/scratchpads/<TARGET>/review_verdict.md` — starting with a line `VERDICT: APPROVE | CHANGES_REQUIRED | BLOCK`, then one section per checklist item, then a short **Limitations** section naming what you could not verify.
+- Write the full review to the exact output path given — `artifacts/targets/<TARGET>/build/review_verdict.md` — starting with a line `VERDICT: APPROVE | CHANGES_REQUIRED | BLOCK`, then one section per checklist item, then a short **Limitations** section naming what you could not verify.
 - Your final chat message back to the Manager must be SHORT: the output path, the verdict, and the finding count.

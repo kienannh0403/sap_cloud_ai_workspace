@@ -9,7 +9,7 @@ argument-hint: <fs-file-path> <package-name>
 Act as an Expert SAP Solution Architect and Technical Analyst. Deeply read and analyze a Functional Specification (FS) document, then translate business logic, UI requirements, and data constraints into a Technical Specification (TS) strictly aligned with SAP ABAP Cloud and Clean Core architecture. The TS you produce is the ONLY input `/sap-dev-create-report` will read — it must be complete enough that create-report never has to guess or design on its own.
 
 [INPUT DATA]
-- Functional Specification (FS): file(s) in `artifacts/fs_docs/`, or FS text pasted directly. Arguments: $ARGUMENTS
+- Functional Specification (FS): file(s) in `artifacts/targets/<TARGET>/fs/` (if the user dropped them elsewhere, move them there first), or FS text pasted directly. Arguments: $ARGUMENTS
 
 [GOVERNING RULES]
 This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rules in `sap-dev-rule.md` (§6-10). In particular: no TS handoff without passing the Verify Loop (Phase 5); progress updates use [Skill: caveman]; never re-print full drafts already saved to a file, reference the path instead.
@@ -18,9 +18,9 @@ This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rule
 
 ## Phase 0 — Intake & Pre-processing
 
-0.0 TASK LEDGER: Use [Skill: scratchpad] to create `artifacts/scratchpads/[ReportName]/scratchpad.md` with the Ledger Format (TODO/DOING/DONE/FAILED) covering Phases 0-6. Update it immediately after each phase — it is the single source of truth for progress, not this conversation's history.
+0.0 TASK LEDGER: Use [Skill: scratchpad] to create `artifacts/targets/[ReportName]/build/scratchpad.md` with the Ledger Format (TODO/DOING/DONE/FAILED) covering Phases 0-6. Update it immediately after each phase — it is the single source of truth for progress, not this conversation's history.
 
-0.1 DOCUMENT PRE-PROCESSING: Dispatch `[Agent: consultant-executor]` with [Skill: document-markdown-converter] to convert binary FS files (PDF/DOCX/XLSX) in `artifacts/fs_docs/` into `artifacts/scratchpads/[ReportName]/fs_markdown.md`. Skip if the FS is already plain text/Markdown. From here on, read `fs_markdown.md` only — never the original binary.
+0.1 DOCUMENT PRE-PROCESSING: Dispatch `[Agent: consultant-executor]` with [Skill: document-markdown-converter] to convert binary FS files (PDF/DOCX/XLSX) in `artifacts/targets/<TARGET>/fs/` into `artifacts/targets/[ReportName]/fs/fs_markdown.md`. Skip if the FS is already plain text/Markdown. From here on, read `fs_markdown.md` only — never the original binary.
 
 0.2 VISUAL EXTRACTION: If the FS contains images (UI mockups, flowcharts, Excel screenshots), dispatch `[Agent: consultant-executor]` with [Skill: fs-vision-extractor] to transcribe them into Markdown and append the result into `fs_markdown.md` under a clearly labeled heading (e.g. `## Extracted from Image: <name>`). Skip if the FS has no images.
 
@@ -28,7 +28,7 @@ This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rule
 
 ## Phase 1 — Data Model Foundation (single dispatch — every later phase reuses this vocabulary)
 
-1.0 DATA MODEL EXTRACTION + RELEASED CDS VALIDATION: Dispatch `[Agent: consultant-lead]` ONCE, naming all three sub-tasks in the same dispatch prompt to run in sequence inside that one agent — do not split into separate dispatches, (b) strictly needs (a)'s output and (c) is cheap to run alongside them, so there is no parallelism to gain and only round-trip overhead to lose: (a) [Skill: fs-data-model-extractor] on `fs_markdown.md` → internal Data Model Draft (Base Views/Tables, Joins & Conditions, Key Fields, Hardcoded Filters, Output Fields); (b) [Skill: find-released-cds-view] on that draft → verify every source is a released Clean-Core-Level-A CDS view (S/4HANA Cloud Public), replacing any unreleased/internal table or view with the best released alternative matching grain and field coverage; (c) PROCESS-DOMAIN SKILL CHECK — check whether any `sap-process-*` skill (business-process domain knowledge, `.claude/skills/sap-process-*/` — auto-discovered by description match against the FS content) is relevant to this FS's business domain, and invoke any that apply; if none apply, say so explicitly rather than skipping the check silently. Output: **Verified Data Model** — the field/source vocabulary every later phase must reuse verbatim (identical field and view names) to avoid drift. Persist it as a `## Verified Data Model` section in `artifacts/scratchpads/[ReportName]/scratchpad.md`, plus a `## Relevant Process-Domain Skill(s)` section naming exactly which `sap-process-*` skill(s) applied from (c) (or "None") — Phase 2's dispatched agents read this file, not conversation history, and reuse this list instead of re-discovering it themselves (this is the one and only domain-discovery pass — keeps token cost to one check instead of one per Phase-2 dispatch).
+1.0 DATA MODEL EXTRACTION + RELEASED CDS VALIDATION: Dispatch `[Agent: consultant-lead]` ONCE, naming all three sub-tasks in the same dispatch prompt to run in sequence inside that one agent — do not split into separate dispatches, (b) strictly needs (a)'s output and (c) is cheap to run alongside them, so there is no parallelism to gain and only round-trip overhead to lose: (a) [Skill: fs-data-model-extractor] on `fs_markdown.md` → internal Data Model Draft (Base Views/Tables, Joins & Conditions, Key Fields, Hardcoded Filters, Output Fields); (b) [Skill: find-released-cds-view] on that draft → verify every source is a released Clean-Core-Level-A CDS view (S/4HANA Cloud Public), replacing any unreleased/internal table or view with the best released alternative matching grain and field coverage; (c) PROCESS-DOMAIN SKILL CHECK — check whether any `sap-process-*` skill (business-process domain knowledge, `.claude/skills/sap-process-*/` — auto-discovered by description match against the FS content) is relevant to this FS's business domain, and invoke any that apply; if none apply, say so explicitly rather than skipping the check silently. Output: **Verified Data Model** — the field/source vocabulary every later phase must reuse verbatim (identical field and view names) to avoid drift. Persist it as a `## Verified Data Model` section in `artifacts/targets/[ReportName]/build/scratchpad.md`, plus a `## Relevant Process-Domain Skill(s)` section naming exactly which `sap-process-*` skill(s) applied from (c) (or "None") — Phase 2's dispatched agents read this file, not conversation history, and reuse this list instead of re-discovering it themselves (this is the one and only domain-discovery pass — keeps token cost to one check instead of one per Phase-2 dispatch).
 
 ## Phase 2 — Domain Analysis (parallel via dedicated subagents)
 
@@ -36,11 +36,13 @@ This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rule
 
 Threshold (starting heuristic — tighten once real dispatch-timing data exists): dispatch sequentially instead of in parallel only if the Verified Data Model lists fewer than ~15 output fields total AND `fs_markdown.md` is under ~2 pages — below that size, three parallel dispatches cost more in spin-up overhead than they save. At or above the threshold, always dispatch in parallel — the result is identical content either way, only faster.
 
-2.A UI/UX ANALYSIS: [Skill: fs-fiori-ui-elements-mapper] → UI Layout Draft (Selection Fields, Line Items, Sorting/Grouping, Object Page Facets). Output: `artifacts/scratchpads/[ReportName]/draft_ui.md`.
+2.A UI/UX ANALYSIS: [Skill: fs-fiori-ui-elements-mapper] → UI Layout Draft (Selection Fields, Line Items, Sorting/Grouping, Object Page Facets). Output: `artifacts/targets/[ReportName]/build/draft_ui.md`.
 
-2.B BUSINESS LOGIC EXTRACTION: [Skill: fs-logic-behavior-translator] → Business Logic Draft (Report Type, CDS-level derived fields, Virtual Elements/ABAP-level complex logic, Actions/Determinations, Clean Core violations + released replacements, Authorization Check). This skill already mandates MCP-verified replacements for any unreleased API it flags — do not skip that check. Output: `artifacts/scratchpads/[ReportName]/draft_logic.md`.
+2.B BUSINESS LOGIC EXTRACTION: [Skill: fs-logic-behavior-translator] → Business Logic Draft (Report Type, CDS-level derived fields, Virtual Elements/ABAP-level complex logic, Actions/Determinations, Clean Core violations + released replacements, Authorization Check). This skill already mandates MCP-verified replacements for any unreleased API it flags — do not skip that check. Output: `artifacts/targets/[ReportName]/build/draft_logic.md`.
 
-2.C INTEGRATION & API ANALYSIS: [Skill: fs-integration-api-analyzer] → Integration Draft (Integration Pattern, OData Service Model, API Style Compliance, Field Mapping Table, Security/Auth). If the FS has no integration/interface requirements, output exactly "N/A — FS has no integration requirements" rather than skipping the step silently. Output: `artifacts/scratchpads/[ReportName]/draft_integration.md`.
+2.C INTEGRATION & API ANALYSIS: [Skill: fs-integration-api-analyzer] → Integration Draft (Integration Pattern, OData Service Model, API Style Compliance, Field Mapping Table, Security/Auth). If the FS has no integration/interface requirements, output exactly "N/A — FS has no integration requirements" rather than skipping the step silently. Output: `artifacts/targets/[ReportName]/build/draft_integration.md`.
+
+2.F FORM ANALYSIS (inline, by the Manager — no dispatch): find every **form sample** in `fs_markdown.md` and the extracted images — a mock-up of a printed/PDF document (e.g. section "Form in", "Mẫu báo cáo" with Output PDF) or of an Excel output file. **Gate:** an ALV/screen mock-up or a bare "cho phép export ra excel" is NOT a form sample → no form (user rule 2026-09-25); never design a layout the FS does not show. For each sample, record in `artifacts/targets/[ReportName]/build/draft_forms.md`: form type (PDF → [Skill: pdf-form-template]; Excel → [Skill: excel-form-template]), name per [Skill: naming-convention] §7 (PDF `<SYSTEM>_F_<tcode>`, Excel `<tcode>_EXC`), FS source (section + image), the data contract (root / nodes / repeating rows as the target skill defines it), every `(n)` marker mapped to a Verified Data Model field (or "blank — filled by hand" / "static text"), subtotal/total fields and where they are computed (ABAP, never the form), and paper/font/margin rules from the FS general-rules table. No sample → write exactly "N/A — FS has no form sample".
 
 2.D RECONCILIATION: Read back each of the three draft files yourself (`sap-dev-rule.md` §12 — a dispatch's completion message is not sufficient evidence). To keep this cheap on context, read only each file's **Field Name Index** (the flat list at the very top of the file) first and cross-check those names against the Verified Data Model; open the full draft body only for a file whose Index shows a name that doesn't match, to get the context needed to resolve it. List any mismatch as a Conflict and resolve it (align naming, or return to Phase 1 if a field is genuinely missing) before proceeding to Phase 3.
 
@@ -53,7 +55,7 @@ Threshold (starting heuristic — tighten once real dispatch-timing data exists)
 | # | Object Name | Type | Purpose | Source/Base + Join/Association | Field Mapping (which TS output field(s) it delivers) | Corresponding create-report Step |
 |---|---|---|---|---|---|---|
 
-This table must cover 100% of what create-report's Steps 1-7 will need (Interface View, DCL, Behavior Definition, Behavior Pool Class, Projection View, Metadata Extension, Projection Behavior, Service Definition/Binding) — enough that create-report performs zero independent design or lookup.
+This table must cover 100% of what create-report's Steps 1-7 will need (Interface View, DCL, Behavior Definition, Behavior Pool Class, Projection View, Metadata Extension, Projection Behavior, Service Definition/Binding) — enough that create-report performs zero independent design or lookup. Forms from §8 add rows too: the template artifact (Type `Form template PDF` / `Form template Excel`, built by create step "Form templates") and the ABAP that fills and renders it (data class, print/export action) in the normal class/behavior steps.
 
 ## Phase 4 — Assemble TS
 
@@ -65,6 +67,7 @@ This table must cover 100% of what create-report's Steps 1-7 will need (Interfac
 - 100% of FS fields are present with exact names (no placeholders).
 - Every field has documented source + derivation logic.
 - 100% of the FS's UI requirements (text, tables and transcribed mockups) appear in TS §4/§7 as `UI-nn` rows citing their FS source, with the FS wording kept (labels, order) — no FS screen element without a row, no row without an FS source.
+- Every form sample found in 2.F has a §8 row whose every `(n)` marker is mapped (data field, blank or static), and §8 has no form without an FS sample.
 - Every row in the Coding Implementation Plan has a clear source/target and references no field absent from the Verified Data Model.
 
 PASS → Phase 6. FAIL → fix the specific gap in the phase it belongs to, then re-run this gate. Log each attempt in the Scratchpad ledger's Verify Attempts table (see Scratchpad skill) so the 3-iteration cap is tracked, not just remembered. After 3 failed iterations, STOP — list the exact unresolved blockers and ask the user instead of continuing to guess (Red Flags, `sap-dev-rule.md` §7).
@@ -73,8 +76,10 @@ PASS → Phase 6. FAIL → fix the specific gap in the phase it belongs to, then
 
 6.0 Save the TS, mark the ledger fully DONE. If the session ends here before `/sap-dev-create-report` runs, use [Skill: handoff] to summarize state for the next session.
 
+HANDBOOK RECORD: create/refresh `artifacts/targets/[ReportName]/INDEX.md` and `handbook.json` (`.claude/common/handbook-target.md`) — `title`, `kind` = "Báo cáo", `module`, `purpose` from TS §1, `forms` from TS §8 (files still empty), `status` = "TS xong" — then run `python .claude/scripts/handbook/render_target.py [ReportName]`.
+
 [OUTPUT FORMAT — CRITICAL]
-Save the final TS as Markdown directly under `artifacts/technical_specifications/[ReportName]/TS.md` (relative to workspace root). Do not add introductory or concluding remarks outside the template. Use CamelCase for `[ReportName]`.
+Save the final TS as Markdown directly under `artifacts/targets/[ReportName]/ts/TS.md` (relative to workspace root). Do not add introductory or concluding remarks outside the template. Use CamelCase for `[ReportName]`.
 
 ```
 # Technical Specification: [ReportName]
@@ -111,8 +116,10 @@ Report Type: [Read-only OR Transactional/Actionable — determined strictly from
 ## 7. Tính Năng & Hành Vi (Features & Actions)
 [Buttons/links/actions and the logic each triggers, if the FS specifies any — otherwise "None"]
 
-## 8. Print Form
-[Brief description only if the FS requires printing. Note: handled by a separate print-form flow, out of scope for this report engine]
+## 8. Forms (PDF / Excel)
+[From 2.F — one table per form sample, or exactly "N/A — FS has no form sample"]
+| Form | Type | Name | FS source | Data contract (root → nodes → repeating rows) | Field mapping `(n)` → Verified Data Model field / blank / static | Totals computed in |
+|---|---|---|---|---|---|---|
 
 ## 9. Coding Implementation Plan
 [Full table from Phase 3.1]

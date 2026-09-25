@@ -27,7 +27,7 @@ Reading more than ONE file outside Tier 1-4 means your dispatch was under-specif
 
 ## Output discipline
 
-- Write your complete drafted source (plus your lint/dry-run findings) to the exact output path given, under `artifacts/scratchpads/<TARGET>/` (one sub-folder per target, `sap-dev-rule.md` §4).
+- Write your complete drafted source (plus your lint/dry-run findings) to the exact output path given, under `artifacts/targets/<TARGET>/build/` (one sub-folder per target, `sap-dev-rule.md` §4).
 - Your final chat message back to the Manager must be SHORT: the output file path, a one-line summary of what was implemented, and any open items/assumptions. The Manager reads the full source from the file itself before pushing/activating.
 
 ## Typical dispatch shapes

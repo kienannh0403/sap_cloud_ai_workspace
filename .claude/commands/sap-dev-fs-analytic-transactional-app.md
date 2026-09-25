@@ -11,7 +11,7 @@ argument-hint: <fs-file-path> <package-name>
 Act as an Expert SAP Solution Architect and Technical Analyst. Deeply read and analyze a Functional Specification (FS) document describing a brand-new transactional business object, then translate its data structure, status/lifecycle rules, UI requirements, and actions into a Technical Specification (TS) strictly aligned with SAP ABAP Cloud, Clean Core, and RAP architecture. The TS you produce is the ONLY input `/sap-dev-create-transactional-app` will read — it must be complete enough (down to DDIC field/type/key level) that create-transactional-app never has to guess or design on its own.
 
 [INPUT DATA]
-- Functional Specification (FS): file(s) in `artifacts/fs_docs/`, or FS text pasted directly. Arguments: $ARGUMENTS
+- Functional Specification (FS): file(s) in `artifacts/targets/<TARGET>/fs/` (if the user dropped them elsewhere, move them there first), or FS text pasted directly. Arguments: $ARGUMENTS
 
 [GOVERNING RULES]
 This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rules in `sap-dev-rule.md` (§6-10). In particular: no TS handoff without passing the Verify Loop (Phase 5); progress updates use [Skill: caveman]; never re-print full drafts already saved to a file, reference the path instead. A structural gap (an entity/field with no table, key, or type decided) is a HARD BLOCK — do not placeholder it; a business-value gap (e.g. an exact config value still pending from another app/team) may be recorded as `[assumption]`/`TBD` per `sap-dev-rule.md` §11 as long as it doesn't stop the build.
@@ -20,9 +20,9 @@ This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rule
 
 ## Phase 0 — Intake & Pre-processing
 
-0.0 TASK LEDGER: Use [Skill: scratchpad] to create `artifacts/scratchpads/[AppName]/scratchpad.md` with the Ledger Format (TODO/DOING/DONE/FAILED) covering Phases 0-6. Update it immediately after each phase — it is the single source of truth for progress, not this conversation's history.
+0.0 TASK LEDGER: Use [Skill: scratchpad] to create `artifacts/targets/[AppName]/build/scratchpad.md` with the Ledger Format (TODO/DOING/DONE/FAILED) covering Phases 0-6. Update it immediately after each phase — it is the single source of truth for progress, not this conversation's history.
 
-0.1 DOCUMENT PRE-PROCESSING: Dispatch `[Agent: consultant-executor]` with [Skill: document-markdown-converter] to convert binary FS files (PDF/DOCX/XLSX) in `artifacts/fs_docs/` into `artifacts/scratchpads/[AppName]/fs_markdown.md`. Skip if the FS is already plain text/Markdown. From here on, read `fs_markdown.md` only — never the original binary.
+0.1 DOCUMENT PRE-PROCESSING: Dispatch `[Agent: consultant-executor]` with [Skill: document-markdown-converter] to convert binary FS files (PDF/DOCX/XLSX) in `artifacts/targets/<TARGET>/fs/` into `artifacts/targets/[AppName]/fs/fs_markdown.md`. Skip if the FS is already plain text/Markdown. From here on, read `fs_markdown.md` only — never the original binary.
 
 0.2 VISUAL EXTRACTION: If the FS contains images (UI mockups, flowcharts, Excel screenshots), dispatch `[Agent: consultant-executor]` with [Skill: fs-vision-extractor] to transcribe them into Markdown and append the result into `fs_markdown.md` under a clearly labeled heading (e.g. `## Extracted from Image: <name>`). Skip if the FS has no images.
 
@@ -42,7 +42,7 @@ Unlike `/sap-dev-fs-analytic` (which only *looks up* an existing view), this pha
 
 (d) PROCESS-DOMAIN SKILL CHECK: check whether any `sap-process-*` skill (business-process domain knowledge, `.claude/skills/sap-process-*/` — auto-discovered by description match against the FS content) is relevant to this FS's business domain, and invoke any that apply; if none apply, say so explicitly rather than skipping the check silently.
 
-Output: **Verified Data Model** — (a) the New Table Design (entity → field → type/key/domain) and (b) the released reference views and the field they supply — the vocabulary every later phase must reuse verbatim (identical field/table/view names) to avoid drift. Persist it as a `## Verified Data Model` section in `artifacts/scratchpads/[AppName]/scratchpad.md`, plus a `## Relevant Process-Domain Skill(s)` section naming exactly which `sap-process-*` skill(s) applied from (d) (or "None") — Phase 2's dispatched agents read this file, not conversation history, and reuse this list instead of re-discovering it themselves (this is the one and only domain-discovery pass — keeps token cost to one check instead of one per Phase-2 dispatch).
+Output: **Verified Data Model** — (a) the New Table Design (entity → field → type/key/domain) and (b) the released reference views and the field they supply — the vocabulary every later phase must reuse verbatim (identical field/table/view names) to avoid drift. Persist it as a `## Verified Data Model` section in `artifacts/targets/[AppName]/build/scratchpad.md`, plus a `## Relevant Process-Domain Skill(s)` section naming exactly which `sap-process-*` skill(s) applied from (d) (or "None") — Phase 2's dispatched agents read this file, not conversation history, and reuse this list instead of re-discovering it themselves (this is the one and only domain-discovery pass — keeps token cost to one check instead of one per Phase-2 dispatch).
 
 ## Phase 2 — Domain Analysis (parallel via dedicated subagents)
 
@@ -50,11 +50,13 @@ Output: **Verified Data Model** — (a) the New Table Design (entity → field �
 
 Threshold (starting heuristic — tighten once real dispatch-timing data exists): dispatch sequentially instead of in parallel only if the Verified Data Model lists fewer than ~15 fields total across all new tables AND `fs_markdown.md` is under ~2 pages — below that size, three parallel dispatches cost more in spin-up overhead than they save. At or above the threshold, always dispatch in parallel — the result is identical content either way, only faster.
 
-2.A UI/UX ANALYSIS: [Skill: fs-fiori-ui-elements-mapper] → UI Layout Draft (List Report Selection Fields/Line Items/Sorting, Object Page Facets per composition-tree node, toolbar buttons per facet with their enable/visibility condition). Output: `artifacts/scratchpads/[AppName]/draft_ui.md`.
+2.A UI/UX ANALYSIS: [Skill: fs-fiori-ui-elements-mapper] → UI Layout Draft (List Report Selection Fields/Line Items/Sorting, Object Page Facets per composition-tree node, toolbar buttons per facet with their enable/visibility condition). Output: `artifacts/targets/[AppName]/build/draft_ui.md`.
 
-2.B BUSINESS LOGIC & LIFECYCLE EXTRACTION: [Skill: fs-logic-behavior-translator] → Business Logic Draft covering: **Status Machine** (every valid status value, every transition, the action/event that triggers it, and its precondition — if the FS implies a lifecycle at all), **Numbering** (which field, by which mechanism — Number Range vs. BDEF managed/early/late — and whether it's scoped per-parent, e.g. a child row counter that restarts per header), **Actions/Determinations/Validations** across the whole tree (not just the root), Clean Core violations + released replacements, Authorization Check needs (both DCL-level and any per-action custom Authorization Object the FS implies, e.g. "only role X can press button Y"). This skill already mandates MCP-verified replacements for any unreleased API it flags — do not skip that check. Output: `artifacts/scratchpads/[AppName]/draft_logic.md`.
+2.B BUSINESS LOGIC & LIFECYCLE EXTRACTION: [Skill: fs-logic-behavior-translator] → Business Logic Draft covering: **Status Machine** (every valid status value, every transition, the action/event that triggers it, and its precondition — if the FS implies a lifecycle at all), **Numbering** (which field, by which mechanism — Number Range vs. BDEF managed/early/late — and whether it's scoped per-parent, e.g. a child row counter that restarts per header), **Actions/Determinations/Validations** across the whole tree (not just the root), Clean Core violations + released replacements, Authorization Check needs (both DCL-level and any per-action custom Authorization Object the FS implies, e.g. "only role X can press button Y"). This skill already mandates MCP-verified replacements for any unreleased API it flags — do not skip that check. Output: `artifacts/targets/[AppName]/build/draft_logic.md`.
 
-2.C INTEGRATION & API ANALYSIS: [Skill: fs-integration-api-analyzer] → Integration Draft (Integration Pattern, OData Service Model, API Style Compliance, Field Mapping Table, Security/Auth). If the FS has no integration/interface requirements, output exactly "N/A — FS has no integration requirements" rather than skipping the step silently. Output: `artifacts/scratchpads/[AppName]/draft_integration.md`.
+2.C INTEGRATION & API ANALYSIS: [Skill: fs-integration-api-analyzer] → Integration Draft (Integration Pattern, OData Service Model, API Style Compliance, Field Mapping Table, Security/Auth). If the FS has no integration/interface requirements, output exactly "N/A — FS has no integration requirements" rather than skipping the step silently. Output: `artifacts/targets/[AppName]/build/draft_integration.md`.
+
+2.F FORM ANALYSIS (inline, by the Manager — no dispatch): find every **form sample** in `fs_markdown.md` and the extracted images — a mock-up of a printed/PDF document (e.g. section "Form in", "Mẫu báo cáo" with Output PDF) or of an Excel output file. **Gate:** an ALV/screen mock-up or a bare "cho phép export ra excel" is NOT a form sample → no form (user rule 2026-09-25); never design a layout the FS does not show. For each sample, record in `artifacts/targets/[AppName]/build/draft_forms.md`: form type (PDF → [Skill: pdf-form-template]; Excel → [Skill: excel-form-template]), name per [Skill: naming-convention] §7 (PDF `<SYSTEM>_F_<tcode>`, Excel `<tcode>_EXC`), FS source (section + image), the data contract (root / nodes / repeating rows as the target skill defines it), every `(n)` marker mapped to a Verified Data Model field (or "blank — filled by hand" / "static text"), subtotal/total fields and where they are computed (ABAP, never the form), and paper/font/margin rules from the FS general-rules table. No sample → write exactly "N/A — FS has no form sample".
 
 2.D RECONCILIATION: Read back each of the three draft files yourself (`sap-dev-rule.md` §12 — a dispatch's completion message is not sufficient evidence). To keep this cheap on context, read only each file's **Field Name Index** (the flat list at the very top of the file) first and cross-check those names against the Verified Data Model; open the full draft body only for a file whose Index shows a name that doesn't match, to get the context needed to resolve it. List any mismatch as a Conflict and resolve it (align naming, or return to Phase 1 if a field/entity is genuinely missing) before proceeding to Phase 3.
 
@@ -79,7 +81,7 @@ This table MUST include, in dependency order, every step group `/sap-dev-create-
 - **Step 7 — Service Definition & Binding**.
 - **Step 8 — Fiori App Configuration** (only if the FS requires an App Descriptor / `manifest.json` level setting, e.g. frozen table columns — otherwise omit this row entirely, do not invent one).
 
-This table must cover 100% of what create-transactional-app's Steps 0-8 will need — enough that create-transactional-app performs zero independent design or lookup.
+This table must cover 100% of what create-transactional-app's Steps 0-8 will need — enough that create-transactional-app performs zero independent design or lookup. Forms from §8 add rows too: the template artifact (Type `Form template PDF` / `Form template Excel`, built by create step "Form templates") and the ABAP that fills and renders it (data class, print/export action) in the normal class/behavior steps.
 
 ## Phase 4 — Assemble TS
 
@@ -88,6 +90,7 @@ This table must cover 100% of what create-transactional-app's Steps 0-8 will nee
 ## Phase 5 — Verify Loop (max 3 automatic iterations)
 
 5.0 Cross-check the TS draft against `fs_markdown.md`:
+- Every form sample found in 2.F has a §8 row whose every `(n)` marker is mapped (data field, blank or static), and §8 has no form without an FS sample.
 - 100% of FS fields are present with exact names (no placeholders) and each one has a concrete DDIC home (a field in a named New Table, with type/length/key decided — not just a bullet point).
 - Every field has documented source + derivation logic (new-table input field, or released-view lookup).
 - 100% of the FS's UI requirements (text, tables and transcribed mockups) appear in TS §4/§7 as `UI-nn` rows citing their FS source, with the FS wording kept (labels, order) — no FS screen element without a row, no row without an FS source.
@@ -101,8 +104,10 @@ PASS → Phase 6. FAIL → fix the specific gap in the phase it belongs to, then
 
 6.0 Save the TS, mark the ledger fully DONE. If the session ends here before `/sap-dev-create-transactional-app` runs, use [Skill: handoff] to summarize state for the next session.
 
+HANDBOOK RECORD: create/refresh `artifacts/targets/[AppName]/INDEX.md` and `handbook.json` (`.claude/common/handbook-target.md`) — `title`, `kind` = "Chức năng", `module`, `purpose` from TS §1, `forms` from TS §8 (files still empty), `status` = "TS xong" — then run `python .claude/scripts/handbook/render_target.py [AppName]`.
+
 [OUTPUT FORMAT — CRITICAL]
-Save the final TS as Markdown directly under `artifacts/technical_specifications/[AppName]/TS.md` (relative to workspace root). Do not add introductory or concluding remarks outside the template. Use CamelCase for `[AppName]`.
+Save the final TS as Markdown directly under `artifacts/targets/[AppName]/ts/TS.md` (relative to workspace root). Do not add introductory or concluding remarks outside the template. Use CamelCase for `[AppName]`.
 
 ```
 # Technical Specification: [AppName]
@@ -143,8 +148,10 @@ Base object name: [Tên gốc + suffix theo từng node, vd _H/_FG/_RM]
 ## 7. Tính Năng & Hành Vi (Features & Actions)
 [Bảng: Nút | Vị trí | Điều kiện enable | Ghi chú — 100% action trong FS]
 
-## 8. Print Form
-[Brief description only if the FS requires printing — otherwise "Không áp dụng"]
+## 8. Forms (PDF / Excel)
+[From 2.F — one table per form sample, or exactly "N/A — FS has no form sample"]
+| Form | Type | Name | FS source | Data contract (root → nodes → repeating rows) | Field mapping `(n)` → Verified Data Model field / blank / static | Totals computed in |
+|---|---|---|---|---|---|---|
 
 ## 9. Coding Implementation Plan
 [Full table from Phase 3.1 — PHẢI đủ Step 0 (DDIC Foundation) → Step 8 (Fiori App Configuration, nếu có)]

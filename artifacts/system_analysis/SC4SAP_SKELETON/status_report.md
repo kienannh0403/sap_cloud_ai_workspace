@@ -1,6 +1,6 @@
 # Báo cáo — Workspace Public Cloud theo khung sc4sap
 
-Cập nhật: 2026-09-24 · Nguồn sự thật: `artifacts/scratchpads/SC4SAP_SKELETON/ledger.md`
+Cập nhật: 2026-09-25 · Nguồn sự thật: `artifacts/scratchpads/SC4SAP_SKELETON/ledger.md`
 Khung tham chiếu: sc4sap v0.6.18 (MIT), bản clone `artifacts/scratchpads/SC4SAP_SKELETON/sc4sap_repo/`.
 Không đụng object SAP, package hay TR nào trong toàn bộ task này.
 Bản HTML: `artifacts/handbook/workspace-build.html`.
@@ -120,6 +120,18 @@ Tất cả đã commit và push lên GitHub `kienannh0403/sap_cloud_ai_workspace
 | reviewer-lead + sửa tools của agent | (anh làm) agent `reviewer-lead` + Phase 2.5 cho `/sap-dev-create-*`; agent consultant trỏ đúng MCP | `de0eac2` | ✅ |
 | README + CLAUDE.md theo reviewer-lead | Badge 7 subagent, sơ đồ có bước duyệt; `CLAUDE.md` bỏ dòng fork, liệt kê MCP đang dùng thật | `7c0a5f6`, `40b0325` | ✅ |
 
+## 2c. Cập nhật 2026-09-25 — form Excel
+
+Commit `01f25df` trên nhánh `docs/phase2-readme-handbook`, chưa push.
+
+| Việc | Nội dung | Commit | Tình trạng |
+|---|---|---|---|
+| Đối chiếu UM Export Excel với code | Đọc package `ZEXCEL` trên 080 (`ZCL_EXPORT_EXCEL_XLSX`, `ZCL_GET_STYLE_TMPL_EXPORT_N`, app `ZR_UPLOAD_TMPL`). UM v0.2 ở `artifacts/documents/UM_Excel_Tool/`: `iv_generate` bắt buộc, cỡ chữ 2 chữ số, 8 màu, 7 mã căn lề, output lùi 1 hàng 1 cột, giới hạn Report Name ≤ 10 / Template ≤ 20. `ZEXCEL_UPLOAD` là bản thử nghiệm, exporter không dùng. 3 lỗi code tool ghi lại, chưa sửa | `01f25df` | ✅ |
+| Skill `excel-form-template` (skill thứ 55) | FS → spec JSON → template `.xlsx`; lint theo regex thật của parser. Từ điển field / ABAP TYPES chỉ sinh khi gọi thêm cờ. Thử với mẫu UM và FS ZMFGBOM: lint 0 lỗi; chưa upload/export thật | `01f25df` | ✅ · chưa test thật |
+| Skill `pdf-form-template` (skill thứ 56) | Form in trong FS → `.xdp` có binding + XML mẫu từ spec JSON, `check_xdp.py` kiểm binding. ZMFGLSX + ZAA01 preview OK trong Designer; dựng lại từ spec khớp bản duyệt. Gate: không có form mẫu → không vẽ | — | ✅ · chưa commit |
+| Form vào flow dev | fs-analytic 2.F + TS §8 bảng Forms + Verify Loop; create-report Step 8 / create-transactional-app Step 9 dựng form; 2.M upload + render; walkthrough | — | ✅ · chưa commit |
+| Naming: Excel form | Sheet chuyển sang `artifacts/documents/naming_convention/`, thêm `<tcode>_EXC` (tên Template, dùng chung mọi hệ thống); skill `naming-convention` §7 + skill Excel cập nhật | `01f25df` | ✅ |
+
 ---
 
 ## 3. Chi tiết bổ sung cho nhóm E
@@ -181,16 +193,20 @@ Thay đổi đi kèm:
 | 1 | ~~Commit + push nhóm E~~ — xong: `main` = `2ecda22` trên GitHub `kienannh0403/sap_cloud_ai_workspace` | E | — | Đã xong 2026-09-24 |
 | 2 | Tạo `SC4SAP_SKELETON/INDEX.md` | F2 | Em | Rule §4 bắt buộc |
 | 3 | Ghi kết quả integrity vào dòng F1 | F1 | Em | Đã có 6/6 PASS |
-| 4 | Xoá `.claude/.unlock` | B3, F3 | **Anh** | Sau khi xong mục 1–3 và 5 |
+| 4 | Xoá `.claude/.unlock` | B3, F3 | **Anh** | Mở lại 2026-09-25 cho skill Excel, còn tồn tại |
 | 5 | ~~Sửa `tools:` của 2 agent consultant~~ — xong trong commit `de0eac2` (2026-09-24): agent trỏ `sap_cloud_dev` / `sap_gm2_cus_ro` / `sap-docs-upstream`; kèm thêm `reviewer-lead` + Phase 2.5 | ngoài ledger | — | Đã xong |
 | 6 | Kiểm phần *unverified* trong `configs/` trên tenant | E5, E10 | Em | Chưa object nào đọc thử trên 080 |
 | 7 | `country/vn.md` | A2 | Anh quyết | Mới có `I_VN_EDocInvoice` trong FI README |
 | 8 | 2 hook cũ: đường dẫn tương đối, `timeout: 5000` (giây) | C3 | Em, khi anh đồng ý | Hook mới đã dùng `$CLAUDE_PROJECT_DIR` |
 | 9 | File xlsx nằm trong `.claude/Documents/` | G1 | Anh quyết | Đề xuất chuyển sang `artifacts/` |
-| 10 | Thiếu `scripts/office_to_md.py` | B1 | Anh quyết | Skill convert chưa đọc được DOCX/XLSX |
+| 10 | Thiếu `scripts/office_to_md.py` | B1 | Anh quyết | Skill convert chưa đọc được DOCX/XLSX; 2026-09-25 gặp lại với FS ZMFGBOM |
 | 11 | `.gitignore` thật (hiện ở `.git/info/exclude`) | C1 | Anh | Hook chặn em tạo file ở root |
 | 12 | Xác nhận Sheet1 của catalog; sửa skill `find-released-cds-view` | G1 | Anh / Em | Skill cần `.unlock` |
 | 13 | Thư mục `artifacts/scratchpads/_session/` | E7 | — | Hook `pre-compact` tự tạo; có thể đưa vào ignore |
+| 14 | ~~Skill form PDF (`.xdp`)~~ — xong 2026-09-25 (`pdf-form-template`) | ngoài ledger | — | Xong |
+| 15 | Skill cũ `fis-excel-form` (`~/.claude/skills/`) | ngoài ledger | Anh quyết | Trùng skill mới, sai theo code |
+| 16 | Test thật skill Excel | ngoài ledger | Anh | Upload `ZMFGBOM_EXC.xlsx` + export |
+| 17 | Push `01f25df` | ngoài ledger | Anh quyết | Cùng nhánh docs Phase 2 |
 
 ## 5. Đề xuất thứ tự tiếp theo
 

@@ -27,7 +27,7 @@ Reading more than ONE file outside Tier 1-4 means your dispatch was under-specif
 
 ## Output discipline
 
-- Write your COMPLETE draft/finding to the exact output path given, under `artifacts/scratchpads/<TARGET>/` (one sub-folder per target, `sap-dev-rule.md` §4) (never elsewhere — the same `artifacts/`-only rule that governs the Manager applies to you).
+- Write your COMPLETE draft/finding to the exact output path given, under `artifacts/targets/<TARGET>/build/` (one sub-folder per target, `sap-dev-rule.md` §4) (never elsewhere — the same `artifacts/`-only rule that governs the Manager applies to you).
 - Your final chat message back to the Manager must be SHORT: the output file path, a one-line summary, and the list of field/finding names you referenced (never the full draft prose — per `sap-dev-rule.md` §10, the Manager reads the file itself for the content).
 - If the input is incomplete for the task given (e.g. a referenced field/image is missing), do not guess or placeholder it — write the gap explicitly into your output file as an open item, and say so in your short return message.
 

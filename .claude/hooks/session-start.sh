@@ -21,14 +21,17 @@ if [[ "$source_evt" == "startup" ]]; then
 fi
 
 # Most recently touched ledgers / handoffs = where work was left.
-recent=$(find "$root/artifacts/scratchpads" -maxdepth 2 -type f \( -name 'ledger*.md' -o -name 'handoff_*.md' \) \
-  -printf '%T@ %P\n' 2>/dev/null | sort -rn | head -3 | cut -d' ' -f2- | sed 's#^#artifacts/scratchpads/#' | paste -sd ',' -)
+recent=$( { find "$root/artifacts/scratchpads" -maxdepth 2 -type f \( -name 'ledger*.md' -o -name 'handoff_*.md' \) \
+    -printf '%T@ artifacts/scratchpads/%P\n' 2>/dev/null
+  find "$root/artifacts/targets" -mindepth 3 -maxdepth 3 -path '*/build/*' -type f \
+    \( -name 'scratchpad*.md' -o -name 'ledger*.md' -o -name 'handoff_*.md' \) \
+    -printf '%T@ artifacts/targets/%P\n' 2>/dev/null; } | sort -rn | head -3 | cut -d' ' -f2- | paste -sd ',' -)
 if [[ -n "$recent" ]]; then
   lines+=("Most recent ledger/handoff files: ${recent//,/, }.")
 fi
 
 if [[ "$source_evt" == "compact" ]]; then
-  lines+=("Context was just COMPACTED: re-read the active ledger and the target's artifacts/system_analysis/<TARGET>/INDEX.md before continuing — do not trust recalled progress (rule §10/§12).")
+  lines+=("Context was just COMPACTED: re-read the active ledger and the target's artifacts/targets/<TARGET>/INDEX.md before continuing — do not trust recalled progress (rule §10/§12).")
 fi
 
 ctx=$(printf '%s\n' "${lines[@]}")
