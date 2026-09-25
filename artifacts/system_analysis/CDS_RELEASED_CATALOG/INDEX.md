@@ -11,7 +11,7 @@ mỗi view đúng 1 folder), kèm quan hệ giữa các phân hệ. Thay cho `cd
   (ưu tiên hơn mô tả 080 nếu có), sheet Fields (số field, `key_entities`) và Sheet1 (phân hệ ưu tiên).
 
 **Trạng thái (2026-09-25):** đã sinh lại. 7.893 view released, trong đó 4.021 có trong xlsx, **3.872 view mới**; 50 view
-chưa có trên tenant 080 (`in_080 = no`); 218 view deprecated/notToBeReleased tách ra `_deprecated/`. Chưa commit git.
+chưa có trên tenant 080 (`in_080 = no`); 218 view deprecated/notToBeReleased tách ra `_deprecated/`.
 
 ## Cách dùng khi làm báo cáo / chức năng
 1. Xác định phân hệ của báo cáo → mở `modules/<folder>/README.md` rồi tra `views.csv` (cột `key_entities` cho biết view có Customer / Material / Company Code...).
