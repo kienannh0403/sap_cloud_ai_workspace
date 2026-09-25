@@ -2,7 +2,7 @@
 
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-native-7A5AF8)
 ![SAP](https://img.shields.io/badge/SAP-ABAP%20Cloud%20%C2%B7%20Clean%20Core-0FAAFF)
-![Skills](https://img.shields.io/badge/skills-54-2EA44F)
+![Skills](https://img.shields.io/badge/skills-55-2EA44F)
 ![Workflows](https://img.shields.io/badge/workflows-9-E8590C)
 ![Subagents](https://img.shields.io/badge/subagents-7-8957E5)
 ![Modules](https://img.shields.io/badge/modules-11-0FAAFF)
@@ -10,7 +10,7 @@
 
 Workspace lập trình cặp với Claude Code trên **SAP S/4HANA Cloud Public Edition** (ABAP Cloud, Clean Core). Claude làm việc như một developer SAP có kỷ luật:
 
-- **54 skill** tự kích hoạt khi mô tả khớp với yêu cầu: 36 skill kỹ thuật ABAP Cloud và 18 skill nghiệp vụ SAP Public Cloud.
+- **55 skill** tự kích hoạt khi mô tả khớp với yêu cầu: 37 skill kỹ thuật ABAP Cloud và 18 skill nghiệp vụ SAP Public Cloud.
 - **9 workflow** dạng slash command, đi từ FS tới code đã activate.
 - **7 subagent**: 3 nhóm Consultant / Dev / Tester (mỗi nhóm có Lead và Executor) và `reviewer-lead` duyệt độc lập trước khi đóng build.
 - **Tầng tham chiếu cho 11 module**, cộng blocklist dữ liệu nhạy cảm.
@@ -34,7 +34,7 @@ flowchart LR
         CM --> CFG["common/system-config.md<br/>hệ thống · module · tier"]
     end
     subgraph ONDEMAND["Nạp khi cần (theo tầng)"]
-        SK["54 skill<br/>.claude/skills/*"] --> REF["references/*<br/>template, deep-dive"]
+        SK["55 skill<br/>.claude/skills/*"] --> REF["references/*<br/>template, deep-dive"]
         WF["9 workflow<br/>.claude/commands/*"]
         AG["7 subagent<br/>Consultant/Dev/Tester × Lead/Executor + Reviewer"]
         LAYER["common/ · configs/&lt;MODULE&gt;/ · exceptions/"]
@@ -93,7 +93,7 @@ WORK_SPACE/
 │   │   └── cloud-abap-constraints.md    # Câu lệnh cấm + API thay thế (đã tra kho release SAP)
 │   ├── configs/<MODULE>/            # 📘 Kiến thức Public Cloud của 11 module: CDS / RAP BO / BAdI released
 │   ├── exceptions/                  # 🚫 Blocklist dữ liệu nhạy cảm (profile standard)
-│   ├── skills/<name>/SKILL.md       # 📚 54 skill (+ references/ nạp khi cần)
+│   ├── skills/<name>/SKILL.md       # 📚 55 skill (+ references/ nạp khi cần)
 │   ├── agents/<team>-<layer>.md     # 🤖 7 subagent
 │   ├── commands/                    # ⚙️ 9 workflow dạng slash command
 │   ├── hooks/                       # 🔒 7 hook (xem bảng bên dưới)
@@ -159,7 +159,7 @@ Hook đảm bảo "việc đó có xảy ra hay không". Còn "làm có tốt kh
 
 ---
 
-## 📚 Danh mục skill (54)
+## 📚 Danh mục skill (55)
 
 **🔎 Phân tích FS / Consultant (7):**
 - `fs-data-model-extractor`: data model từ FS, thiết kế Z-table.
@@ -201,6 +201,9 @@ Hook đảm bảo "việc đó có xảy ra hay không". Còn "làm có tốt kh
 - `odata`: service definition / binding.
 - `badi-enhancement`: BAdI released.
 
+**🧾 Form (1):**
+- `excel-form-template`: FS → template Excel cho tool FIS Export Excel (`ZCL_EXPORT_EXCEL_XLSX`) + từ điển field + ABAP TYPES; lint template theo luật parser (UM v0.2).
+
 **🔐 Nền tảng & bảo mật (4):**
 - `authorization-iam`: DCL, IAM app, business role.
 - `btp-abap-environment`: kết nối, communication arrangement.
@@ -209,7 +212,7 @@ Hook đảm bảo "việc đó có xảy ra hay không". Còn "làm có tốt kh
 
 **🧭 Quản trị & năng suất (6):**
 - `activation-guard`: **4 gate** sau mỗi lần ghi object (log activation, trạng thái active, ảnh hưởng dây chuyền, 0 lỗi ATC mới).
-- `naming-convention`: chuẩn đặt tên theo sheet của dự án (`artifacts/naming_convention/`). CDS/RAP đặt tên `Z<prefix>_<module>_<tcode>` (VD `ZR_SD_ZSD01`, `ZBP_R_SD_ZSD01`); service `ZUI_` / `ZAPI_` + `_O2` / `_O4`; ngoài ra có quy tắc cho communication, IAM, application job, launchpad `_UI5R`, form; bảng `ZA_` / `ZD_`; package `ZFPT_*`.
+- `naming-convention`: chuẩn đặt tên theo sheet của dự án (`artifacts/documents/naming_convention/`). CDS/RAP đặt tên `Z<prefix>_<module>_<tcode>` (VD `ZR_SD_ZSD01`, `ZBP_R_SD_ZSD01`); service `ZUI_` / `ZAPI_` + `_O2` / `_O4`; ngoài ra có quy tắc cho communication, IAM, application job, launchpad `_UI5R`, form; bảng `ZA_` / `ZD_`; package `ZFPT_*`.
 - `scratchpad`: kế hoạch + ledger.
 - `handoff`: ghi chú chuyển phiên.
 - `grill-me`: phỏng vấn làm rõ yêu cầu.

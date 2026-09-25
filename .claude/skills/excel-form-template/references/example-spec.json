@@ -1,0 +1,166 @@
+{
+ "report": "ZFI01",
+ "template": "ZFI01_EXC",
+ "widths": [
+  20,
+  40,
+  10,
+  20,
+  20,
+  20,
+  20
+ ],
+ "rows": [
+  [
+   "HEADER",
+   "<NAME>/<BN10LC>-<6>BR"
+  ],
+  [
+   "HEADER",
+   "<ADDRESS>/<NN10LC>-<2>"
+  ],
+  [
+   "HEADER"
+  ],
+  [
+   "HEADER"
+  ],
+  [
+   "HEADER",
+   "<TITLE_REPORT>/<BN16CC>-<6>"
+  ],
+  [
+   "HEADER",
+   "<PARAMETER01>/<NI10CC>-<6>"
+  ],
+  [
+   "HEADER",
+   "<PARAMETER02>/<BI10RC>-<6>"
+  ],
+  [
+   "HEADER"
+  ],
+  [
+   "ITEM",
+   "<HEADER01>/<BN10CC>|<1>Y",
+   "<HEADER02>/<BN10CC>|<1>Y",
+   "<HEADER03>/<BN10CC>-<2>Y",
+   "",
+   "",
+   "<HEADER06>/<BN10CC>-<1>Y"
+  ],
+  [
+   "ITEM",
+   "",
+   "",
+   "<HEADER07>/<BN10CC>B",
+   "<HEADER08>/<BN10CC>B",
+   "<HEADER08>/<BN10CC>B",
+   "<HEADER07>/<BN10CC>B",
+   "<HEADER08>/<BN10CC>B"
+  ],
+  [
+   "ITEM_TABLE1_ZLEVEL_A",
+   "<RACCT_LEVEL>/<BN10LC>-<1>B",
+   "",
+   "<LAST_DMBTR_S>/<BN10RC>",
+   "<LAST_DMBTR_H>/<BN10RC>",
+   "<LAST_DMBTR_H>/<BN10RC>",
+   "<END_DMBTR_S>/<BN10RC>",
+   "<END_DMBTR_H>/<BN10RC>"
+  ],
+  [
+   "ITEM_TABLE1_ZLEVEL_B",
+   "<RACCT>/<NN10LC>",
+   "<SKBEZ>/<NN10LC>",
+   "<LAST_DMBTR_S>/<NN10RC>",
+   "<LAST_DMBTR_H>/<NN10RC>",
+   "<LAST_DMBTR_H>/<NN10RC>",
+   "<END_DMBTR_S>/<NN10RC>",
+   "<END_DMBTR_H>/<NN10RC>"
+  ],
+  [
+   "ITEM_TABLE1_ZLEVEL_C",
+   "<SKBEZ>/<BN10LC>-<1>B",
+   "",
+   "<LAST_DMBTR_S>/<BN10RC>",
+   "<LAST_DMBTR_H>/<BN10RC>",
+   "<LAST_DMBTR_H>/<BN10RC>",
+   "<END_DMBTR_S>/<BN10RC>",
+   "<END_DMBTR_H>/<BN10RC>"
+  ],
+  [
+   "ITEM"
+  ],
+  [
+   "ITEM",
+   "<HEADER01>/<BN10CC>Y",
+   "<HEADER02>/<BN10CC>Y",
+   "<HEADER07>/<BN10CC>B",
+   "<HEADER08>/<BN10CC>B",
+   "<HEADER08>/<BN10CC>B",
+   "<HEADER07>/<BN10CC>B"
+  ],
+  [
+   "ITEM_TAB2",
+   "<RACCT>/<NN10LC>",
+   "<SKBEZ>/<NN10LC>",
+   "<LAST_DMBTR_S>/<NN10RC>",
+   "<LAST_DMBTR_H>/<NN10RC>",
+   "<LAST_DMBTR_H>/<NN10RC>",
+   "<END_DMBTR_S>/<NN10RC>"
+  ],
+  [
+   "FOOTER"
+  ],
+  [
+   "FOOTER",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "<SIGN01>/<NI10CC>-<1>"
+  ],
+  [
+   "FOOTER",
+   "<SIGN02>/<BN10CC>-<1>",
+   "",
+   "<SIGN05>/<BN10CC>-<1>",
+   "",
+   "",
+   "<SIGN08>/<BN10CC>-<1>"
+  ],
+  [
+   "FOOTER",
+   "<SIGN07>/<NI08CC>-<1>",
+   "",
+   "<SIGN07>/<NI08CC>-<1>",
+   "",
+   "",
+   "<SIGN04>/<NI08CC>-<1>"
+  ]
+ ],
+ "fields": {
+  "NAME": {
+   "kind": "data",
+   "source": "I_CompanyCode.CompanyCodeName"
+  },
+  "TITLE_REPORT": {
+   "kind": "label",
+   "text": "BẢNG CÂN ĐỐI SỐ PHÁT SINH"
+  },
+  "HEADER01": {
+   "kind": "label",
+   "text": "Số tài khoản"
+  },
+  "HEADER02": {
+   "kind": "label",
+   "text": "Tên tài khoản"
+  },
+  "PARAMETER01": {
+   "kind": "data",
+   "source": "selection: Từ ngày ... đến ngày ..."
+  }
+ }
+}

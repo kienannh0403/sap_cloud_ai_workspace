@@ -9,7 +9,7 @@ description: Kiểm tra, đề xuất và tạo tên chuẩn cho các đối tư
 Đảm bảo mọi object (ABAP, CDS/RAP, service, communication, IAM, job, Fiori, form, package) được đặt tên đúng quy định của dự án. Khi đề xuất tên, luôn giải thích ngắn gọn vì sao dùng prefix/suffix đó.
 
 ## Nguồn & thứ tự ưu tiên
-- **Nguồn chính:** sheet "Naming convention" của dự án (`artifacts/naming_convention/Naming_convention.xlsx`, bản chép + hiệu chỉnh: `artifacts/naming_convention/naming_convention_sheet.md`, nhận 2026-09-24). Các mục gắn *(sheet)* bên dưới lấy từ đây.
+- **Nguồn chính:** sheet "Naming convention" của dự án (`artifacts/documents/naming_convention/Naming_convention.xlsx`, bản chép + hiệu chỉnh: `artifacts/documents/naming_convention/naming_convention_sheet.md`, nhận 2026-09-24). Các mục gắn *(sheet)* bên dưới lấy từ đây.
 - Mục gắn *(chuẩn cũ)* là quy tắc mặc định có từ trước, **giữ lại vì sheet không nói tới** (bảng DB, domain/data element, class thường, package, Space/Page, giới hạn độ dài).
 - **Ưu tiên:** tên TS/FS/user chỉ định tường minh > sheet > chuẩn cũ. Nếu TS/user đã chốt một tên/scheme khác (VD bảng `ZTB_*`/`ZTB_*_D`, hay suffix theo node `_H`/`_FG`/`_RM`) thì tên đó THẮNG — không "sửa lại" cho khớp skill này; chỉ dùng mặc định khi tên chưa được chỉ định.
 
@@ -72,7 +72,10 @@ Handler / saver class (local, trong behavior pool) *(chuẩn cũ)*: `LHC_<entity
 | Business Role cho job | `ZBR_JOB_<tên>` | `ZBR_JOB_EINV` |
 
 ### 7. Form / template *(sheet)*
-`<SYSTEM>_F_<tcode>` — tiền tố là tên hệ thống: `DEV_F_ZSD01`, `TEST_F_ZSD01`, `PRD_F_ZSD01`.
+| Loại | Mẫu | Ví dụ | Ghi chú |
+|---|---|---|---|
+| Form, template (form in / PDF) | `<SYSTEM>_F_<tcode>` | `DEV_F_ZSD01`, `TEST_F_ZSD01`, `PRD_F_ZSD01` | Tiền tố là tên hệ thống |
+| Excel form | `<tcode>_EXC` (sheet: `Z<tcode, chức năng>_EXC`) | `ZSD01_EXC`, `ZMFGBOM_EXC` | Tên **Template** trong app "Upload Template file excel" (tool `ZCL_EXPORT_EXCEL_XLSX`). Tcode đã có `Z` thì không thêm `Z` nữa. Không theo hệ thống → dùng chung một tên cho DEV/TEST/PRD. Giới hạn 20 ký tự (`ZTB_UPLOAD_TMPL-TEMPLATE`); Report Name trong app = tcode, ≤ 10 ký tự |
 
 ### 8. Package hierarchy *(chuẩn cũ)*
 - `ZFPT`: root package.
@@ -108,7 +111,7 @@ Mẫu `Z<prefix>_<module>_<tcode>_<node>` (mục 2) cũng phải đếm ký tự
 | Custom entity | `ZCE_Customer` | `ZCE_<module>_<tcode>` (`ZCE_FA_ZGL01`) |
 | Service Definition | luôn có `ZUI_`/`ZAPI_` | được **bỏ prefix** khi dùng chung nhiều binding |
 | Business Role | `BR_` | `ZBR_` |
-| Mới | — | Communication (`ZOB_`, `ZSCE_`, `ZSYS_`, `ZARR_`), `ZBC_`, `ZIAM_…_EXT`, Launchpad `_UI5R`, Application Job (`ZJOB_*`, `ZCL_JOB_`, `ZBC_JOB_`, `ZBR_JOB_`), Form `<SYSTEM>_F_<tcode>` |
+| Mới | — | Communication (`ZOB_`, `ZSCE_`, `ZSYS_`, `ZARR_`), `ZBC_`, `ZIAM_…_EXT`, Launchpad `_UI5R`, Application Job (`ZJOB_*`, `ZCL_JOB_`, `ZBC_JOB_`, `ZBR_JOB_`), Form `<SYSTEM>_F_<tcode>`, Excel form `<tcode>_EXC` (2026-09-25) |
 
 ## Ví dụ (Examples)
 - **User:** "Tôi muốn làm app ZSD01 (module SD) có bảng header/item, RAP model và Fiori app, kèm job chạy đêm."

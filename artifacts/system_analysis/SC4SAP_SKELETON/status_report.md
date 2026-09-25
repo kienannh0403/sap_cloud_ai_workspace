@@ -116,7 +116,7 @@ Tất cả đã commit và push lên GitHub `kienannh0403/sap_cloud_ai_workspace
 | Đưa repo lên GitHub | Merge commit "Initial commit" của GitHub (giữ README của workspace), push `main`; không force, không có secret trong lịch sử | `2ecda22` | ✅ |
 | README tiếng Việt | Viết lại toàn bộ theo workspace hiện tại; bỏ ghi chú fork và link repo ngoài | `387d4d1` | ✅ |
 | Miễn TR cho cây ZLOCAL | `$TMP` + `ZLOCAL` và 17 package con/cháu (đọc trên 080), danh sách `LOCAL_NO_TR_PACKAGES` trong `system-config.md`; package mới dưới ZLOCAL phải thêm tên. Chạy thử 12/12 | `c103b9f` | ✅ |
-| Naming convention theo sheet dự án | Skill theo `artifacts/naming_convention/`: CDS/RAP `Z<prefix>_<module>_<tcode>`, service `_O2/_O4`, thêm communication / IAM / job / launchpad `_UI5R` / form; 23/23 dòng sheet có trong skill | `6206795` | ✅ |
+| Naming convention theo sheet dự án | Skill theo `artifacts/documents/naming_convention/`: CDS/RAP `Z<prefix>_<module>_<tcode>`, service `_O2/_O4`, thêm communication / IAM / job / launchpad `_UI5R` / form; 23/23 dòng sheet có trong skill | `6206795` | ✅ |
 | reviewer-lead + sửa tools của agent | (anh làm) agent `reviewer-lead` + Phase 2.5 cho `/sap-dev-create-*`; agent consultant trỏ đúng MCP | `de0eac2` | ✅ |
 | README + CLAUDE.md theo reviewer-lead | Badge 7 subagent, sơ đồ có bước duyệt; `CLAUDE.md` bỏ dòng fork, liệt kê MCP đang dùng thật | `7c0a5f6`, `40b0325` | ✅ |
 
