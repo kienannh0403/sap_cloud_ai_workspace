@@ -1,103 +1,180 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_COMPANYCODEPERIOD,Company Code Period,Company Code Period,LO-MD-MM,,basic,7,0,Company Code,component
-I_EXTPRODGRP,External Product Group,External Product Group,LO-MD-MM,Dimension,dimension,2,0,,component
-I_EXTPRODGRPTEXT,External Product Group - Text,External Product Group - Text,LO-MD-MM,,text,5,0,,component
-I_INDUSTRYSECTOR,Industry Sector,Industry Sector,LO-MD-MM,,basic,3,0,,component
-I_INDUSTRYSECTORTEXT_2,Industry Sector - Text,Industry Sector - Text,LO-MD-MM,,basic,4,0,,component
-I_INSPLOTOFEWMSMMRYCTRLTEXT,Insp Lot Summary for Wrhs-Mngd Stock - Txt,Insp Lot Summary for Wrhs-Mngd Stock - Txt,LO-MD-MM,,text,3,0,,component
-I_INSPLOTOFEWMSUMMARYCONTROL,Insp Lot Summary for Wrhs-Managed Stock,Insp Lot Summary for Wrhs-Managed Stock,LO-MD-MM,Dimension,dimension,2,0,,component
-I_INTNTNLARTNMBCAT,International Article Number Category,International Article Number Category,LO-MD-MM,Dimension,dimension,2,0,,component
-I_INTNTNLARTNMBCATTEXT,International Article Number Cat - Text,International Article Number Cat - Text,LO-MD-MM,,text,4,0,,component
-I_MRPPROFILE,MRP Profile,MRP Profile,LO-MD-MM,Dimension,dimension,2,0,,component
-I_MRPPROFILETEXT,MRP Profile - Text,MRP Profile - Text,LO-MD-MM,,text,5,0,,component
-I_PRODABCLASSFCTN,ABC Indicator values,ABC Indicator values,LO-MD-MM,Dimension,dimension,2,0,,component
-I_PRODABCLASSFCTNTXT,ABC Indicator text,ABC Indicator text,LO-MD-MM,,text,5,0,,component
-I_PRODCOMPONENTBACKFLUSHCODET,Product Component Backflush Code - Text,Product Component Backflush Code - Text,LO-MD-MM,,basic,4,0,,component
-I_PRODCOMPONENTBACKFLUSHCODEVH,Product Component Backflush Code,Product Component Backflush Code,LO-MD-MM,,value_help,3,0,,component
-I_PRODCONSUMPTIONMODE,Consumption Mode,Consumption Mode,LO-MD-MM,Dimension,dimension,3,0,,component
-I_PRODCONSUMPTIONMODETEXT,Consumption Mode - Text,Consumption Mode - Text,LO-MD-MM,,text,5,0,,component
-I_PRODDEPDNTRQMTSTYPETEXT,Dependent Requirements Type - Text,Dependent Requirements Type - Text,LO-MD-MM,,text,4,0,,component
-I_PRODDEPDNTRQMTSTYPEVH,Dependent Requirements Type,Dependent Requirements Type,LO-MD-MM,,value_help,3,0,,component
-I_PRODLOGISTICSHANDLINGGROUPT,Product Logistics Handling Group - Text,Product Logistics Handling Group - Text,LO-MD-MM,,basic,4,0,,component
-I_PRODLOGISTICSHANDLINGGROUPVH,Logistics Handling Group,Logistics Handling Group,LO-MD-MM,,value_help,2,0,,component
-I_PRODNORDBATDETNCODETEXT,Prodn Order Batch Determination - Text,Prodn Order Batch Determination - Text,LO-MD-MM,,text,4,0,,component
-I_PRODNORDBATDETNCODEVALUEHELP,Production Order Batch Determination,Production Order Batch Determination,LO-MD-MM,,basic,3,0,,component
-I_PRODPLNTINPTASSISTANT,Input Assistance for Product Plant,Input Assistance for Product Plant,LO-MD-MM,,basic,20,0,Material / Product; Material Group; Plant,component
-I_PRODPROCUREMENTTYPE,Product Procurement Type,Product Procurement Type,LO-MD-MM,Dimension,dimension,3,0,,component
-I_PRODPROCUREMENTTYPETEXT,Product Procurement Type - Text,Product Procurement Type - Text,LO-MD-MM,,text,4,0,,component
-I_PRODREQUIREMENTSGROUPINGTEXT,Product Requirements Grouping - Text,Product Requirements Grouping - Text,LO-MD-MM,,text,4,0,,component
-I_PRODREQUIREMENTSGROUPINGVH,Product Requirements Grouping,Product Requirements Grouping,LO-MD-MM,,value_help,3,0,,component
-I_PRODSHELFLIFEEXPRTNDTEPERDT,Shelf Life Exprtn Date Period - Text,Shelf Life Exprtn Date Period - Text,LO-MD-MM,,basic,5,0,,component
-I_PRODSHELFLIFEEXPRTNDTEPERDVH,Shelf Life Expiration Date Period,Shelf Life Expiration Date Period,LO-MD-MM,Dimension,value_help,3,0,,component
-I_PRODUCT,Product,Product,LO-MD-MM,Dimension,dimension,256,0,Division; Material / Product,component
-I_PRODUCTCATEGORY,Product Category Type,Product Category Type,LO-MD-MM,Dimension,dimension,3,0,,component
-I_PRODUCTCATEGORYTEXT,Product Category Type - Text,Product Category Type - Text,LO-MD-MM,,text,4,0,,component
-I_PRODUCTCONSUMPTION,Product Consumption,Product Consumption,LO-MD-MM,,basic,60,0,Fiscal Year; Material / Product; Plant,component
-I_PRODUCTCONSUMPTIONPERIOD,Product Consumption Period,Product Consumption Period,LO-MD-MM,Dimension,dimension,3,0,,component
-I_PRODUCTCONSUMPTIONPERIODTEXT,Product Consumption Period - Text,Product Consumption Period - Text,LO-MD-MM,,text,4,0,,component
-I_PRODUCTDESCRIPTION,Product Descriptions,Product Descriptions,LO-MD-MM,Dimension,dimension,6,0,Material / Product,component
-I_PRODUCTDESCRIPTION_2,Product Descriptions,Product Descriptions,LO-MD-MM,,basic,6,0,Material / Product,component
-I_PRODUCTGROUPTEXT_2,Product Group - Text,Product Group - Text,LO-MD-MM,,basic,6,0,,component
-I_PRODUCTGROUP_2,Product Group,Product Group,LO-MD-MM,Dimension,dimension,8,0,,component
-I_PRODUCTMASTERSTATUS,Product Master Status,Product Master Status,LO-MD-MM,,basic,16,0,Distribution Channel; Material / Product; Plant; Sales Organization; Storage Location; Valuation Area,component
-I_PRODUCTMRPAVAILABILITYTYPET,MRP Availability Type - Text,MRP Availability Type - Text,LO-MD-MM,,basic,4,0,,component
-I_PRODUCTMRPAVAILABILITYTYPEVH,MRP Availability Type,MRP Availability Type,LO-MD-MM,,value_help,3,0,,component
-I_PRODUCTPLANTBASIC,Product Plant,Product Plant,LO-MD-MM,Dimension,dimension,120,1,Material / Product; Plant; Profit Center,component
-I_PRODUCTPLANTCOSTING,Product Plant Costing,Product Plant Costing,LO-MD-MM,,basic,20,0,Material / Product; Plant; Task List (routing) group,component
-I_PRODUCTPLANTFORECAST,Product Plant Forecast,Product Plant Forecast,LO-MD-MM,,basic,13,0,Material / Product; Plant,component
-I_PRODUCTPLANTINTLTRD,Product Plant Intrntionl Trade,Product Plant Intrntionl Trade,LO-MD-MM,,basic,16,0,Material / Product; Plant,component
-I_PRODUCTPLANTPROCUREMENT,Product Plant Procurement,Product Plant Procurement,LO-MD-MM,Dimension,dimension,15,0,Material / Product; Plant,component
-I_PRODUCTPLANTQTMANAGEMENT,Product Plant QM,Product Plant QM,LO-MD-MM,Dimension,dimension,16,0,Material / Product; Plant,component
-I_PRODUCTPLANTSALES,Product plant sales,Product plant sales,LO-MD-MM,,basic,18,1,Material / Product; Plant,component
-I_PRODUCTPLANTSTDVH,Product Plant Active Core Entity,Product Plant Active Core Entity,LO-MD-MM,,value_help,4,0,Material / Product; Plant,component
-I_PRODUCTPLANTSTORAGE,Product plant storage,Product plant storage,LO-MD-MM,Dimension,dimension,15,0,Material / Product; Plant,component
-I_PRODUCTPLANTSUPPLYPLANNING,Product Plant Supply Planning,Product Plant Supply Planning,LO-MD-MM,,basic,92,0,Company Code; Material / Product; Plant; Valuation Area,component
-I_PRODUCTPROCMTPROFILE,Product Procurement Profile,Product Procurement Profile,LO-MD-MM,Dimension,dimension,4,0,Plant,component
-I_PRODUCTPROCMTPROFILETEXT,Product Procurement Profile - Text,Product Procurement Profile - Text,LO-MD-MM,,text,6,0,Plant,component
-I_PRODUCTPROCUREMENT,Product Procurement,Product Procurement,LO-MD-MM,Dimension,dimension,21,0,Material / Product,component
-I_PRODUCTPURCHASETAX,Product Purchase Tax,Product Purchase Tax,LO-MD-MM,Dimension,dimension,7,0,Material / Product,component
-I_PRODUCTQM,Product QM active core entity,Product QM active core entity,LO-MD-MM,,basic,8,0,Material / Product,component
-I_PRODUCTREPLACEMENTPARTTYPET,Product Replacement Part Type - Text,Product Replacement Part Type - Text,LO-MD-MM,,basic,4,0,,component
-I_PRODUCTREPLACEMENTPARTTYPEVH,Replacement Part Type,Replacement Part Type,LO-MD-MM,,value_help,3,0,,component
-I_PRODUCTRETAIL,Product Retail Basic Data,Product Retail Basic Data,LO-MD-MM,Dimension,dimension,53,0,Material / Product,component
-I_PRODUCTSALES,Product Sales,Product Sales,LO-MD-MM,Dimension,dimension,53,0,Material / Product,component
-I_PRODUCTSALESDELIVERY,Product Sales Delivery,Product Sales Delivery,LO-MD-MM,Dimension,dimension,101,0,Distribution Channel; Material / Product; Sales Organization,component
-I_PRODUCTSALESTAX,Product Sales Tax,Product Sales Tax,LO-MD-MM,,basic,7,0,Material / Product,component
-I_PRODUCTSTATUS,Cross-Plant Product Status,Cross-Plant Product Status,LO-MD-MM,Dimension,dimension,2,0,,component
-I_PRODUCTSTATUSTEXT,Cross-Plant Product Status - Text,Cross-Plant Product Status - Text,LO-MD-MM,,text,3,0,,component
-I_PRODUCTSTDVH,Product Value Help,Product Value Help,LO-MD-MM,,value_help,8,0,Material / Product,component
-I_PRODUCTSTORAGELOCATIONBASIC,Product Storage Location,Product Storage Location,LO-MD-MM,Dimension,dimension,27,1,Material / Product; Plant; Storage Location,component
-I_PRODUCTSTORAGE_2,Product Storage,Product Storage,LO-MD-MM,Dimension,dimension,33,0,Material / Product,component
-I_PRODUCTSUPPLYPLANNING,Product SupPlanning active core entity,Product SupPlanning active core entity,LO-MD-MM,,basic,124,2,Company Code; Material / Product; Plant; Valuation Area,component
-I_PRODUCTTAXCLASSIFICATION,Tax Classification for Product,Tax Classification for Product,LO-MD-MM,Dimension,dimension,14,0,Material / Product,component
-I_PRODUCTTEXT,Product - Text,Product - Text,LO-MD-MM,,text,4,0,Material / Product,component
-I_PRODUCTTYPE,Product Type,Product Type,LO-MD-MM,Dimension,dimension,8,0,,component
-I_PRODUCTTYPECODE,Product Type Code,Product Type Code,LO-MD-MM,Dimension,dimension,2,0,,component
-I_PRODUCTTYPECODETEXT,Product Type Code - Text,Product Type Code - Text,LO-MD-MM,,text,5,0,,component
-I_PRODUCTTYPETEXT,Product Type - Text,Product Type - Text,LO-MD-MM,,text,5,0,,component
-I_PRODUCTTYPETEXT_2,Product Type - Text,Product Type - Text,LO-MD-MM,,basic,5,0,,component
-I_PRODUCTTYPE_2,Product Type,Product Type,LO-MD-MM,Dimension,dimension,9,0,,component
-I_PRODUCTUNITOFMEASUREEAN,International Article Number of Product,International Article Number of Product,LO-MD-MM,,basic,12,0,Material / Product,component
-I_PRODUCTUNITSOFMEASURE,Units of Measure of Product,Units of Measure of Product,LO-MD-MM,Dimension,dimension,36,0,Material / Product,component
-I_PRODUCTVALUATIONACCOUNTING_2,Product Valuation Account,Product Valuation Account,LO-MD-MM,,basic,21,0,Company Code; Material / Product; Valuation Area,component
-I_PRODUCTVALUATIONACCT,Product Valuation Account,Product Valuation Account,LO-MD-MM,,basic,38,0,Company Code; Material / Product; Valuation Area,component
-I_PRODUCTVALUATIONAREAVH,Product Valuation Area,Product Valuation Area,LO-MD-MM,,value_help,4,0,Company Code; Valuation Area,component
-I_PRODUCTVALUATIONBASIC,Product Valuation,Product Valuation,LO-MD-MM,,basic,47,0,Company Code; Material / Product; Valuation Area,component
-I_PRODUCTVALUATIONCATEGORYTEXT,Product Valuation Category - Text,Product Valuation Category - Text,LO-MD-MM,,text,3,0,,component
-I_PRODUCTVALUATIONCATEGORYVH,Product Valuation Category,Product Valuation Category,LO-MD-MM,,value_help,4,0,Valuation Area,component
-I_PRODUCTVALUATIONCOSTING,Product Valuation Costing Core Entity,Product Valuation Costing Core Entity,LO-MD-MM,,basic,21,0,Company Code; Material / Product; Valuation Area,component
-I_PRODUCTWORKSCHEDULING,Product WorkScheduling core entity,Product WorkScheduling core entity,LO-MD-MM,,basic,33,0,Material / Product; Plant,component
-I_PRODUNIVERSALHIERARCHYTEXT_2,Product Hierarchy - Text,Product Hierarchy - Text,LO-MD-MM,,basic,8,0,,component
-I_PRODUNIVHIERARCHYBASIC,Product Hierarchy Directory,Product Hierarchy Directory,LO-MD-MM,Dimension,dimension,7,0,,component
-I_PRODUNIVHIERARCHYNODEBASIC,Product Hierarchy Node,Product Hierarchy Node,LO-MD-MM,,basic,14,0,Material / Product,component
-I_PRODUNIVHIERNODETEXT_2,Product Hierarchy Node - Text,Product Hierarchy Node - Text,LO-MD-MM,,basic,8,0,,component
-I_PRODVALNPRICECONTROL,Prod Valn Price Control,Prod Valn Price Control,LO-MD-MM,Dimension,dimension,3,0,,component
-I_PRODVALNPRICECONTROLTEXT,Product Valuation Price Control - Text,Product Valuation Price Control - Text,LO-MD-MM,,text,4,0,,component
-I_PRODVALUATIONCLASS,Valuation Class,Valuation Class,LO-MD-MM,,basic,4,0,,component
-I_PRODVALUATIONCLASSTXT,Valuation Class - Text,Valuation Class - Text,LO-MD-MM,,text,3,0,,component
-I_PRODWHSEROTATIONDATETYPETEXT,Product WM Rotation Date Type - Text,Product WM Rotation Date Type - Text,LO-MD-MM,,text,4,0,,component
-I_PRODWHSEROTATIONDATETYPEVH,Product Warehouse Rotation Date Type,Product Warehouse Rotation Date Type,LO-MD-MM,,value_help,3,0,,component
-I_STORAGELOCATION,Storage Location,Storage Location,LO-MD-MM,Dimension,dimension,13,0,Distribution Channel; Division; Plant; Sales Organization; Storage Location,component
-I_STORAGELOCATIONSTDVH,Storage Location,Storage Location,LO-MD-MM,,value_help,10,0,Company Code; Plant; Storage Location,component
-I_TEMPINDCNDN,Temperature Conditions,Temperature Conditions,LO-MD-MM,,basic,2,0,,component
-I_TEMPINDCNDNTEXT,Temperature Condition Indicator - Text,Temperature Condition Indicator - Text,LO-MD-MM,,text,4,0,,component
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+D_HIERMOVEPRODTOANOTHERNDEP,ActionParameter:ProdHier MoveProduct,ActionParameter:ProdHier MoveProduct,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,no
+D_PRODUCTCHANGED,Product Changed,Product Changed,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO,no
+D_PRODUCTCREATED,Product Created,Product Created,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO,no
+I_BASICMATERIALVH,Basic Material,Basic Material,LO-MD-MM-2CL,,value_help,1,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_BRAND,Brand,Brand,LO-MD-MM-2CL,,basic,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_BRANDTEXT,Brand - Text,Brand - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_COMPANYCODEPERIOD,Company Code Period,Company Code Period,LO-MD-MM-2CL,,basic,7,0,Company Code,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_EXTPRODGRP,External Product Group,External Product Group,LO-MD-MM-2CL,Dimension,dimension,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_EXTPRODGRPTEXT,External Product Group - Text,External Product Group - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_INDUSTRYSECTOR,Industry Sector,Industry Sector,LO-MD-MM-2CL,,basic,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_INDUSTRYSECTORTEXT_2,Industry Sector - Text,Industry Sector - Text,LO-MD-MM-2CL,,basic,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_INDUSTRYSECTORVH,Industry Sector for Products,Industry Sector for Products,LO-MD-MM-2CL,,value_help,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_INSPLOTOFEWMSMMRYCTRLTEXT,Insp Lot Summary for Wrhs-Mngd Stock - Txt,Insp Lot Summary for Wrhs-Mngd Stock - Txt,LO-MD-MM-2CL,,text,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_INSPLOTOFEWMSUMMARYCONTROL,Insp Lot Summary for Wrhs-Managed Stock,Insp Lot Summary for Wrhs-Managed Stock,LO-MD-MM-2CL,Dimension,dimension,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_INTNTNLARTNMBCAT,International Article Number Category,International Article Number Category,LO-MD-MM-2CL,Dimension,dimension,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_INTNTNLARTNMBCATTEXT,International Article Number Cat - Text,International Article Number Cat - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_MRPPROFILE,MRP Profile,MRP Profile,LO-MD-MM-2CL,Dimension,dimension,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_MRPPROFILETEXT,MRP Profile - Text,MRP Profile - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODABCLASSFCTN,ABC Indicator values,ABC Indicator values,LO-MD-MM-2CL,Dimension,dimension,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODABCLASSFCTNTXT,ABC Indicator text,ABC Indicator text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODCOMPONENTBACKFLUSHCODET,Product Component Backflush Code - Text,Product Component Backflush Code - Text,LO-MD-MM-2CL,,basic,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODCOMPONENTBACKFLUSHCODEVH,Product Component Backflush Code,Product Component Backflush Code,LO-MD-MM-2CL,,value_help,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODCONSUMPTIONMODE,Consumption Mode,Consumption Mode,LO-MD-MM-2CL,Dimension,dimension,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODCONSUMPTIONMODETEXT,Consumption Mode - Text,Consumption Mode - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODDEPDNTRQMTSTYPETEXT,Dependent Requirements Type - Text,Dependent Requirements Type - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODDEPDNTRQMTSTYPEVH,Dependent Requirements Type,Dependent Requirements Type,LO-MD-MM-2CL,,value_help,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODEXTASSTMTPRIORITY,External Assortment Priority,External Assortment Priority,LO-MD-MM-2CL,,basic,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODEXTASSTMTPRIORITYTXT,External assortment priority - Text,External assortment priority - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODINTERNALCOMMENTTEXTTP_2,Product Internal Comment Long Texts - TP,Product Internal Comment Long Texts - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODLABORATORYORDESIGNOFFICE,Laboratory or Design Office Basic,Laboratory or Design Office Basic,LO-MD-MM-2CL,,basic,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODLBTRYORDESIGNOFFICETEXT,Laboratory or Design Office - Text,Laboratory or Design Office - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODLBTRYORDESIGNOFFICEVH,Laboratory or Design Office,Laboratory or Design Office,LO-MD-MM-2CL,,value_help,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODLOGISTICSHANDLINGGROUPT,Product Logistics Handling Group - Text,Product Logistics Handling Group - Text,LO-MD-MM-2CL,,basic,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODLOGISTICSHANDLINGGROUPVH,Logistics Handling Group,Logistics Handling Group,LO-MD-MM-2CL,,value_help,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODNORDBATDETNCODETEXT,Prodn Order Batch Determination - Text,Prodn Order Batch Determination - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODNORDBATDETNCODEVALUEHELP,Production Order Batch Determination,Production Order Batch Determination,LO-MD-MM-2CL,,basic,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODPLANTSTORAGELOCATIONTP_2,Product Plant Storage Location - TP,Product Plant Storage Location - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODPLANTSUPPLYPLANNINGTP_2,Product Plant Supply Planning - TP,Product Plant Supply Planning - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODPLANTWORKSCHEDULINGTP_2,Product Plant Work Scheduling - TP,Product Plant Work Scheduling - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODPLNTINPTASSISTANT,Input Assistance for Product Plant,Input Assistance for Product Plant,LO-MD-MM-2CL,,basic,20,0,Material / Product; Material Group; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODPLNTINSPTYPESETTINGTP_2,Inspection Type Settings - TP,Inspection Type Settings - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODPLNTINTLTRADETP_2,Product Plant International Trade - TP,Product Plant International Trade - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODPLNTMRPTEXTTP_2,Product Plant MRP Long Texts - TP,Product Plant MRP Long Texts - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODPLNTQLTYMANAGEMENTTP_2,Product Plant Quality Management - TP,Product Plant Quality Management - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODPROCUREMENTTYPE,Product Procurement Type,Product Procurement Type,LO-MD-MM-2CL,Dimension,dimension,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODPROCUREMENTTYPETEXT,Product Procurement Type - Text,Product Procurement Type - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODREQUIREMENTSGROUPINGTEXT,Product Requirements Grouping - Text,Product Requirements Grouping - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODREQUIREMENTSGROUPINGVH,Product Requirements Grouping,Product Requirements Grouping,LO-MD-MM-2CL,,value_help,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODSHELFLIFEEXPRTNDTEPERDT,Shelf Life Exprtn Date Period - Text,Shelf Life Exprtn Date Period - Text,LO-MD-MM-2CL,,basic,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODSHELFLIFEEXPRTNDTEPERDVH,Shelf Life Expiration Date Period,Shelf Life Expiration Date Period,LO-MD-MM-2CL,Dimension,value_help,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODSLSDELIVERYSALESTAXTP_2,Product Sales Delivery Sales Tax - TP,Product Sales Delivery Sales Tax - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODSLSDELIVPOINTOFSALETP_2,Prod Sales delivery Point Of Sale - TP,Prod Sales delivery Point Of Sale - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCT,Product,Product,LO-MD-MM-2CL,Dimension,dimension,256,0,Division; Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTBASICTEXTTP_2,Product Basic Long Texts - TP,Product Basic Long Texts - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTBRAND,Product Brand,Product Brand,LO-MD-MM-2CL,,basic,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTBRANDTEXT,Product Brand - Text,Product Brand - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTCATEGORY,Product Category Type,Product Category Type,LO-MD-MM-2CL,Dimension,dimension,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTCATEGORYTEXT,Product Category Type - Text,Product Category Type - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTCHANGEDOCUMENT_2,Product Change Document,Product Change Document,LO-MD-MM-2CL,,basic,48,0,Distribution Channel; Material / Product; Plant; Sales Organization; Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTCHANGEMASTERTP_2,Product Change Master - TP,Product Change Master - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTCONSUMPTION,Product Consumption,Product Consumption,LO-MD-MM-2CL,,basic,60,0,Fiscal Year; Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTCONSUMPTIONPERIOD,Product Consumption Period,Product Consumption Period,LO-MD-MM-2CL,Dimension,dimension,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTCONSUMPTIONPERIODTEXT,Product Consumption Period - Text,Product Consumption Period - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTDESCRIPTION,Product Descriptions,Product Descriptions,LO-MD-MM-2CL,Dimension,dimension,6,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTDESCRIPTIONTP_2,Product Description - TP,Product Description - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTDESCRIPTION_2,Product Descriptions,Product Descriptions,LO-MD-MM-2CL,,basic,6,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTEWMSTORAGETYPETP_2,Product EWM Storage Type - TP,Product EWM Storage Type - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTEWMWAREHOUSETP_2,Product EWM Warehouse - TP,Product EWM Warehouse - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTFIELDATTRIBUTES,Product Field Attributes,Product Field Attributes,LO-MD-MM-2CL,,basic,7,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTGROUP,Product Group,Product Group,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTGROUPTEXT,Product Group - Text,Product Group - Text,LO-MD-MM-2CL,,text,0,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTGROUPTEXT_2,Product Group - Text,Product Group - Text,LO-MD-MM-2CL,,basic,6,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTGROUP_2,Product Group,Product Group,LO-MD-MM-2CL,Dimension,dimension,8,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTINSPECTIONTEXTTP_2,Product Inspection Long Texts - TP,Product Inspection Long Texts - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTMASTERSTATUS,Product Master Status,Product Master Status,LO-MD-MM-2CL,,basic,16,0,Distribution Channel; Material / Product; Plant; Sales Organization; Storage Location; Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTMRPAVAILABILITYTYPET,MRP Availability Type - Text,MRP Availability Type - Text,LO-MD-MM-2CL,,basic,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTMRPAVAILABILITYTYPEVH,MRP Availability Type,MRP Availability Type,LO-MD-MM-2CL,,value_help,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANT,Product Plant,Product Plant,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTPLANTBASIC,Product Plant,Product Plant,LO-MD-MM-2CL,Dimension,dimension,120,1,Material / Product; Plant; Profit Center,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTCOSTING,Product Plant Costing,Product Plant Costing,LO-MD-MM-2CL,,basic,20,0,Material / Product; Plant; Task List (routing) group,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTCOSTINGTP_2,Product Plant Costing - TP,Product Plant Costing - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPLANTFORECAST,Product Plant Forecast,Product Plant Forecast,LO-MD-MM-2CL,,basic,13,0,Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTFORECASTTP_2,Product Plant Forecast - TP,Product Plant Forecast - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPLANTINTLTRD,Product Plant Intrntionl Trade,Product Plant Intrntionl Trade,LO-MD-MM-2CL,,basic,16,0,Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTMRP,MRP area data of a Product,MRP area data of a Product,LO-MD-MM-2CL,,basic,107,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTPLANTMRPTP_2,Product Plant MRP - TP,Product Plant MRP - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPLANTPLANNINGTP_2,Product Plant Planning - TP,Product Plant Planning - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPLANTPROCUREMENT,Product Plant Procurement,Product Plant Procurement,LO-MD-MM-2CL,Dimension,dimension,15,0,Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTPROCUREMENTTP_2,Product Plant Procurement - TP,Product Plant Procurement - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPLANTPURCHASETAXTP_2,Product Plant Purchase Tax - TP,Product Plant Purchase Tax - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPLANTQTMANAGEMENT,Product Plant QM,Product Plant QM,LO-MD-MM-2CL,Dimension,dimension,16,0,Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTSALES,Product plant sales,Product plant sales,LO-MD-MM-2CL,,basic,18,1,Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTSALESTP_2,Product Plant Sales - TP,Product Plant Sales - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPLANTSTDVH,Product Plant Active Core Entity,Product Plant Active Core Entity,LO-MD-MM-2CL,,value_help,4,0,Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTSTORAGE,Product plant storage,Product plant storage,LO-MD-MM-2CL,Dimension,dimension,15,0,Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTSTORAGETP_2,Product Plant Storage - TP,Product Plant Storage - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPLANTSUPPLYPLANNING,Product Plant Supply Planning,Product Plant Supply Planning,LO-MD-MM-2CL,,basic,92,0,Company Code; Material / Product; Plant; Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPLANTTP_2,Product Plant - TP,Product Plant - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPROCMTPROFILE,Product Procurement Profile,Product Procurement Profile,LO-MD-MM-2CL,Dimension,dimension,4,0,Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPROCMTPROFILETEXT,Product Procurement Profile - Text,Product Procurement Profile - Text,LO-MD-MM-2CL,,text,6,0,Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPROCUREMENT,Product Procurement,Product Procurement,LO-MD-MM-2CL,Dimension,dimension,21,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTPROCUREMENTTP_2,Product Procurement - TP,Product Procurement - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPROFILECODE,Product Profile Code,Product Profile Code,LO-MD-MM-2CL,,basic,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTPROFILECODETEXT,Product Profile Code - Text,Product Profile Code - Text,LO-MD-MM-2CL,,text,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTPURCHASEORDERTEXTTP_2,Product Purchase Order - Text TP,Product Purchase Order - Text TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTPURCHASETAX,Product Purchase Tax,Product Purchase Tax,LO-MD-MM-2CL,Dimension,dimension,7,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTQM,Product QM active core entity,Product QM active core entity,LO-MD-MM-2CL,,basic,8,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTQUALITYMANAGEMENTTP_2,Product Quality Management - TP,Product Quality Management - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTREPLACEMENTPARTTYPET,Product Replacement Part Type - Text,Product Replacement Part Type - Text,LO-MD-MM-2CL,,basic,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTREPLACEMENTPARTTYPEVH,Replacement Part Type,Replacement Part Type,LO-MD-MM-2CL,,value_help,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTRETAIL,Product Retail Basic Data,Product Retail Basic Data,LO-MD-MM-2CL,Dimension,dimension,53,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSALES,Product Sales,Product Sales,LO-MD-MM-2CL,Dimension,dimension,53,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSALESDELIVERY,Product Sales Delivery,Product Sales Delivery,LO-MD-MM-2CL,Dimension,dimension,101,0,Distribution Channel; Material / Product; Sales Organization,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSALESDELIVERYTEXTTP_2,Product Sales Delivery Long Texts - TP,Product Sales Delivery Long Texts - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTSALESDELIVERYTP_2,Product Sales Delivery - TP,Product Sales Delivery - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTSALESTAX,Product Sales Tax,Product Sales Tax,LO-MD-MM-2CL,,basic,7,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSALESTP_2,Product Sales - TP,Product Sales - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTSCM,Product SCM,Product SCM,LO-MD-MM-2CL,,basic,14,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTSTATUS,Cross-Plant Product Status,Cross-Plant Product Status,LO-MD-MM-2CL,Dimension,dimension,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSTATUSTEXT,Cross-Plant Product Status - Text,Cross-Plant Product Status - Text,LO-MD-MM-2CL,,text,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSTDVH,Product Value Help,Product Value Help,LO-MD-MM-2CL,,value_help,8,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSTORAGELOCATION,Product Storage Location,Product Storage Location,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTSTORAGELOCATIONBASIC,Product Storage Location,Product Storage Location,LO-MD-MM-2CL,Dimension,dimension,27,1,Material / Product; Plant; Storage Location,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSTORAGETP_2,Product Storage - TP,Product Storage - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTSTORAGE_2,Product Storage,Product Storage,LO-MD-MM-2CL,Dimension,dimension,33,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTSUPPLYPLANNING,Product SupPlanning active core entity,Product SupPlanning active core entity,LO-MD-MM-2CL,,basic,124,2,Company Code; Material / Product; Plant; Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTTAXCLASSIFICATION,Tax Classification for Product,Tax Classification for Product,LO-MD-MM-2CL,Dimension,dimension,14,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTTEXT,Product - Text,Product - Text,LO-MD-MM-2CL,,text,4,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTTP_2,Product - TP,Product - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTTYPE,Product Type,Product Type,LO-MD-MM-2CL,Dimension,dimension,8,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTTYPECODE,Product Type Code,Product Type Code,LO-MD-MM-2CL,Dimension,dimension,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTTYPECODETEXT,Product Type Code - Text,Product Type Code - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTTYPECODEVH,Product Type Code,Product Type Code,LO-MD-MM-2CL,,value_help,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTTYPETEXT,Product Type - Text,Product Type - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTTYPETEXT_2,Product Type - Text,Product Type - Text,LO-MD-MM-2CL,,basic,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTTYPEVH,Product Type,Product Type,LO-MD-MM-2CL,,value_help,6,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTTYPE_2,Product Type,Product Type,LO-MD-MM-2CL,Dimension,dimension,9,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTUNITOFMEASUREEAN,International Article Number of Product,International Article Number of Product,LO-MD-MM-2CL,,basic,12,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTUNITOFMEASUREEANTP_2,Product Unit of Measure EAN - TP,Product Unit of Measure EAN - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTUNITOFMEASURETP_2,Product Unit of Measure - TP,Product Unit of Measure - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTUNITSOFMEASURE,Units of Measure of Product,Units of Measure of Product,LO-MD-MM-2CL,Dimension,dimension,36,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTVALUATION,Product Valuation,Product Valuation,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTVALUATIONACCOUNTING_2,Product Valuation Account,Product Valuation Account,LO-MD-MM-2CL,,basic,21,0,Company Code; Material / Product; Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTVALUATIONACCT,Product Valuation Account,Product Valuation Account,LO-MD-MM-2CL,,basic,38,0,Company Code; Material / Product; Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTVALUATIONAREAVH,Product Valuation Area,Product Valuation Area,LO-MD-MM-2CL,,value_help,4,0,Company Code; Valuation Area,component,yes,VDM_MD_PRODUCT,yes
+I_PRODUCTVALUATIONBASIC,Product Valuation,Product Valuation,LO-MD-MM-2CL,,basic,47,0,Company Code; Material / Product; Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTVALUATIONCATEGORYTEXT,Product Valuation Category - Text,Product Valuation Category - Text,LO-MD-MM-2CL,,text,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTVALUATIONCATEGORYVH,Product Valuation Category,Product Valuation Category,LO-MD-MM-2CL,,value_help,4,0,Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTVALUATIONCOSTING,Product Valuation Costing Core Entity,Product Valuation Costing Core Entity,LO-MD-MM-2CL,,basic,21,0,Company Code; Material / Product; Valuation Area,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUCTVALUATIONCOSTINGTP_2,Product Valuation Costing - TP,Product Valuation Costing - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTVALUATIONTP_2,Product Valuation - TP,Product Valuation - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODUCTVH_2,Product Value Help,Product Value Help,LO-MD-MM-2CL,,basic,17,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUCTWORKSCHEDULING,Product WorkScheduling core entity,Product WorkScheduling core entity,LO-MD-MM-2CL,,basic,33,0,Material / Product; Plant,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODUNITOFMEASURETEXTBASIC,Info for Product per Unit of Measure,Info for Product per Unit of Measure,LO-MD-MM-2CL,,basic,7,0,Material / Product,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_PRODUNIVERSALHIERARCHYTEXTTP,Product Universal Hierarchy - Text TP,Product Universal Hierarchy - Text TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,no
+I_PRODUNIVERSALHIERARCHYTEXT_2,Product Hierarchy - Text,Product Hierarchy - Text,LO-MD-MM-2CL,,basic,8,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,yes
+I_PRODUNIVERSALHIERARCHYTP,Product Universal Hierarchy - TP,Product Universal Hierarchy - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,no
+I_PRODUNIVHIERARCHYBASIC,Product Hierarchy Directory,Product Hierarchy Directory,LO-MD-MM-2CL,Dimension,dimension,7,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,yes
+I_PRODUNIVHIERARCHYNODEBASIC,Product Hierarchy Node,Product Hierarchy Node,LO-MD-MM-2CL,,basic,14,0,Material / Product,component,yes,VDM_MD_PRODUCT_HIERARCHY,yes
+I_PRODUNIVHIERNDESBYHIERIDTP,Product Universal Hierarchy Nodes - TP,Product Universal Hierarchy Nodes - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,no
+I_PRODUNIVHIERNODETEXT_2,Product Hierarchy Node - Text,Product Hierarchy Node - Text,LO-MD-MM-2CL,,basic,8,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,yes
+I_PRODUNIVHIERNORMALNODETP,Product Hierarchy Normal Node - TP,Product Hierarchy Normal Node - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,no
+I_PRODUNIVHIERPRODSBYNODETP,Product Hierarchy Products By Node - TP,Product Hierarchy Products By Node - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_HIERARCHY,no
+I_PRODUOMSUPLREANTP_2,Product Supplier EAN - TP,Product Supplier EAN - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODVALNLEDGERACCOUNTTP_2,Product Valuation Ledger Account - TP,Product Valuation Ledger Account - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODVALNLEDGERPRICESTP_2,Product Valuation Ledger Prices - TP,Product Valuation Ledger Prices - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODVALNPRICECONTROL,Prod Valn Price Control,Prod Valn Price Control,LO-MD-MM-2CL,Dimension,dimension,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODVALNPRICECONTROLTEXT,Product Valuation Price Control - Text,Product Valuation Price Control - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODVALUATIONACCOUNTINGTP_2,Product Valuation Accounting - TP,Product Valuation Accounting - TP,LO-MD-MM-2CL,,basic,0,0,,component,yes,VDM_MD_PRODUCT_BO_INTERFACE,no
+I_PRODVALUATIONCLASS,Valuation Class,Valuation Class,LO-MD-MM-2CL,,basic,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODVALUATIONCLASSTXT,Valuation Class - Text,Valuation Class - Text,LO-MD-MM-2CL,,text,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODWHSEROTATIONDATETYPETEXT,Product WM Rotation Date Type - Text,Product WM Rotation Date Type - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_PRODWHSEROTATIONDATETYPEVH,Product Warehouse Rotation Date Type,Product Warehouse Rotation Date Type,LO-MD-MM-2CL,,value_help,3,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_STORAGELOCATION,Storage Location,Storage Location,LO-MD-MM-2CL,Dimension,dimension,13,0,Distribution Channel; Division; Plant; Sales Organization; Storage Location,component,yes,VDM_MD_STORAGE_LOCATION,yes
+I_STORAGELOCATIONSTDVH,Storage Location,Storage Location,LO-MD-MM-2CL,,value_help,10,0,Company Code; Plant; Storage Location,component,yes,VDM_MD_STORAGE_LOCATION,yes
+I_TAXCLASS,Tax Classification,Tax Classification,LO-MD-MM-2CL,,basic,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_TAXCLASSTEXT,Tax Classification - Text,Tax Classification - Text,LO-MD-MM-2CL,,text,5,0,,component,yes,VDM_MD_PRODUCT_DDIC,no
+I_TEMPINDCNDN,Temperature Conditions,Temperature Conditions,LO-MD-MM-2CL,,basic,2,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes
+I_TEMPINDCNDNTEXT,Temperature Condition Indicator - Text,Temperature Condition Indicator - Text,LO-MD-MM-2CL,,text,4,0,,component,yes,VDM_MD_PRODUCT_DDIC,yes

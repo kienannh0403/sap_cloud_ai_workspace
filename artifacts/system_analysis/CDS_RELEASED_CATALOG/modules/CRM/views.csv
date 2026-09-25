@@ -1,108 +1,316 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_BSORDGLACCTLINEITEMCUBE,GL Account Item for Soln Order - Cube,GL Account Item for Soln Order - Cube,CRM-S4-ANA-CDS,Cube,cube,61,2,Company Code; Fiscal Year; Sales Group; Sales Office; Sales Organization,top-level
-I_BUSINESSSOLUTIONORDERCUBE,Solution Order - Cube,Solution Order - Cube,CRM-S4-ANA-CDS,Cube,cube,39,1,Sales Group; Sales Office; Sales Organization,top-level
-I_BUSSOLNORDBASICFINANCIAL,Solution Order for Financial Reporting,Solution Order for Financial Reporting,CRM-S4-ANA-CDS,Dimension,dimension,49,6,Sales Group; Sales Office; Sales Organization,top-level
-I_BUSSOLNORDITMBASICFINANCIAL,Solution Order Item for Fin Reporting,Solution Order Item for Fin Reporting,CRM-S4-ANA-CDS,Dimension,dimension,69,6,Controlling Area; Profit Center; Sales Group; Sales Office; Sales Organization,top-level
-I_BUSSOLNORDITMFINANCIALCUBE,Solution Order Item Financials - Cube,Solution Order Item Financials - Cube,CRM-S4-ANA-CDS,Cube,cube,61,2,Material / Product; Sales Group; Sales Office; Sales Organization,top-level
-I_SERVICECONTRACTCUBE_2,Service Contract - Cube,Service Contract - Cube,CRM-S4-ANA-CDS,Cube,cube,68,4,Sales Group; Sales Office; Sales Organization,top-level
-I_SERVICEORDERCUBE_2,Service Order - Cube,Service Order - Cube,CRM-S4-ANA-CDS,Cube,cube,70,4,Equipment; Material / Product; Sales Group; Sales Office; Sales Organization,top-level
-I_SRVCMGMTORGANIZATIONUNIT,Service Management Organizational Unit,Service Management Organizational Unit,CRM-S4-ANA-CDS,Dimension,dimension,6,0,,top-level
-I_SRVCMGMTORGANIZATIONUNITTEXT,Srvc Mgmt Organizational Unit - Text,Srvc Mgmt Organizational Unit - Text,CRM-S4-ANA-CDS,,text,9,0,,top-level
-I_UPCGSRVCCONTRITEMCUBE,Upcoming Service Contract Item - Cube,Upcoming Service Contract Item - Cube,CRM-S4-ANA-CDS,Cube,cube,70,1,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization,top-level
-I_SRVCDOCCREDITSTATUS,Credit Status of Service Transaction,Credit Status of Service Transaction,CRM-S4-BF-CM,Dimension,dimension,3,0,,top-level
-I_SRVCDOCCREDITSTATUSTEXT,Credit Status of Service Trans - Text,Credit Status of Service Trans - Text,CRM-S4-BF-CM,,text,6,0,,top-level
-I_SRVCDOCITEMCREDITSTATUS,Credit Status of Service Trans Item,Credit Status of Service Trans Item,CRM-S4-BF-CM,Dimension,dimension,3,0,,top-level
-I_SRVCDOCITEMCREDITSTATUSTEXT,Credit Status of Service Trans Itm - Txt,Credit Status of Service Trans Itm - Txt,CRM-S4-BF-CM,,text,6,0,,top-level
-I_BUSINESSACTIVITYCATEGORY,Activity Category,Activity Category,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level
-I_BUSINESSACTIVITYCATEGORYTEXT,Activity Category - Text,Activity Category - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_CUSTMGMTBUSOBJTYPE,Bus Object Type of Service Transaction,Bus Object Type of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_CUSTMGMTBUSOBJTYPETEXT,Bus Obj Type of Srvc Transaction - Text,Bus Obj Type of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
-I_CUSTMGMTITMBUSOBJTYPE,Bus Obj Type of Srvc Transaction Item,Bus Obj Type of Srvc Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_CUSTMGMTITMBUSOBJTYPETEXT,Bus Obj Type of Srvc Trans Item - Text,Bus Obj Type of Srvc Trans Item - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
-I_CUSTMGMTPARTNER,Customer Management Partner,Customer Management Partner,CRM-S4-REP-RFW,,basic,15,0,Address; Business Partner,top-level
-I_RESPONSEPROFILE,Response Profile,Response Profile,CRM-S4-REP-RFW,,basic,2,0,,top-level
-I_RESPONSEPROFILETEXT,Response Profile - Text,Response Profile - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SALESORGANIZATIONUNIT,Sales Organizational Unit,Sales Organizational Unit,CRM-S4-REP-RFW,Dimension,dimension,6,0,,top-level
-I_SALESORGANIZATIONUNITTEXT,Sales Organizational Unit - Text,Sales Organizational Unit - Text,CRM-S4-REP-RFW,,text,9,0,,top-level
-I_SERVICECANCELLATIONPARTY,Service Cancellation Party,Service Cancellation Party,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SERVICECANCELLATIONPARTYTEXT,Service Cancellation Party - Text,Service Cancellation Party - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SERVICECANCELLATIONREASON,Service Cancellation Reason,Service Cancellation Reason,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level
-I_SERVICECANCLNREASONTEXT,Service Cancellation Reason - Text,Service Cancellation Reason - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SERVICECONTRACT,Service Contract,Service Contract,CRM-S4-REP-RFW,,basic,84,0,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level
-I_SERVICECONTRACTCANCLNSTS,Service Contract Cancellation Status,Service Contract Cancellation Status,CRM-S4-REP-RFW,,basic,2,0,,top-level
-I_SERVICECONTRACTCANCLNSTSTXT,Service Contract Cancellation Stat - Txt,Service Contract Cancellation Stat - Txt,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SERVICECONTRACTENHCD,Service Contract Enhanced,Service Contract Enhanced,CRM-S4-REP-RFW,,basic,93,0,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level
-I_SERVICECONTRACTITEM,Service Contract Item,Service Contract Item,CRM-S4-REP-RFW,,basic,123,0,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level
-I_SERVICECONTRACTITEMENHCD,Service Contract Item Enhanced,Service Contract Item Enhanced,CRM-S4-REP-RFW,,basic,137,0,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level
-I_SERVICECONTRACTTYPESTDVH,Service Contract Type,Service Contract Type,CRM-S4-REP-RFW,,value_help,4,0,,top-level
-I_SERVICEDOCBILLINGSTATUS,Billing Status of Service Transaction,Billing Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level
-I_SERVICEDOCBILLINGSTATUSTEXT,Billing Status of Srvc Transaction - Text,Billing Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
-I_SERVICEDOCERRORSTATUS,Error Status of Service Transaction,Error Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SERVICEDOCERRORSTATUSTEXT,Error Status of Srvc Transaction - Text,Error Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SERVICEDOCITEMCATEGORY,Category of Service Transaction Item,Category of Service Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,8,0,,top-level
-I_SERVICEDOCITEMCATEGORYTEXT,Category of Service Transac Item - Text,Category of Service Transac Item - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
-I_SERVICEDOCITEMTYPESLSSTTG,Sales Setting for Srvc Trans Item Cat,Sales Setting for Srvc Trans Item Cat,CRM-S4-REP-RFW,Dimension,dimension,5,0,,top-level
-I_SERVICEDOCOPENSTATUS,Open Status of Service Transaction,Open Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SERVICEDOCOPENSTATUSTEXT,Open Status of Srvc Transaction - Text,Open Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SERVICEDOCPROBLEMCATEGORY,Service transaction problem category,Service transaction problem category,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SERVICEDOCUMENT,Service Transaction,Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,183,8,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level
-I_SERVICEDOCUMENTENHCD,Service Transaction Enhanced,Service Transaction Enhanced,CRM-S4-REP-RFW,Dimension,dimension,197,8,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level
-I_SERVICEDOCUMENTITEM,Service Transaction Item,Service Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,386,14,Batch; Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level
-I_SERVICEDOCUMENTITEMENHCD,Service Transaction Item Enhanced,Service Transaction Item Enhanced,CRM-S4-REP-RFW,Dimension,dimension,409,17,Batch; Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level
-I_SERVICEDOCUMENTITEMPRDCSSR_2,Preceding Transaction of Srvc Trans Item,Preceding Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,9,0,,top-level
-I_SERVICEDOCUMENTITEMPRDCSSR_3,Preceding Transaction of Srvc Trans Item,Preceding Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level
-I_SERVICEDOCUMENTITEMSUCCSSR_2,Follow-Up Transaction of Srvc Trans Item,Follow-Up Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,9,0,,top-level
-I_SERVICEDOCUMENTITEMSUCCSSR_3,Follow-Up Transaction of Srvc Trans Item,Follow-Up Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level
-I_SERVICEDOCUMENTPREDECESSOR,Preceding Service Transaction,Preceding Service Transaction,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level
-I_SERVICEDOCUMENTPRIORITY,Service Transaction Priority,Service Transaction Priority,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SERVICEDOCUMENTPRIORITYTEXT,Service Transaction Priority - Text,Service Transaction Priority - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SERVICEDOCUMENTREFOBJECT,Reference Object of Service Transaction,Reference Object of Service Transaction,CRM-S4-REP-RFW,Fact,fact,17,0,Equipment; Material / Product,top-level
-I_SERVICEDOCUMENTSTATUS,Service Transaction Status,Service Transaction Status,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SERVICEDOCUMENTSTATUSTEXT,Service Transaction Status - Text,Service Transaction Status - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SERVICEDOCUMENTSUCCESSOR,Follow-Up Service Transaction,Follow-Up Service Transaction,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level
-I_SERVICEDOCUMENTTYPE,Service Transaction Type,Service Transaction Type,CRM-S4-REP-RFW,Dimension,dimension,11,0,,top-level
-I_SERVICEDOCUMENTTYPETEXT,Service Transaction Type - Text,Service Transaction Type - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
-I_SERVICEPROFILE,Service Profile,Service Profile,CRM-S4-REP-RFW,,basic,2,0,,top-level
-I_SERVICEPROFILETEXT,Service Profile - Text,Service Profile - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCCANCLNPROCEDURE,Service Cancellation Procedure,Service Cancellation Procedure,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCCANCLNPROCEDURETEXT,Service Cancellation Procedure - Text,Service Cancellation Procedure - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCCONTRITEMPRICEELEMENT,Service Contract Item Pricing Element,Service Contract Item Pricing Element,CRM-S4-REP-RFW,,basic,66,0,Tax Code,top-level
-I_SRVCCONTRITEMWITHAUTORENEWAL,Service Contract Items with Automatic Renewal,Service Contract Items with Automatic Renewal,CRM-S4-REP-RFW,,basic,21,0,Sales Group; Sales Office; Sales Organization,top-level
-I_SRVCDOCBYDOCUMENTTYPE,Service Transaction by Transaction Type,Service Transaction by Transaction Type,CRM-S4-REP-RFW,Dimension,dimension,109,4,Document Condition (pricing); Sales Group; Sales Office; Sales Organization,top-level
-I_SRVCDOCDELIVERYSTATUS,Delivery Status of Service Transaction,Delivery Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level
-I_SRVCDOCDELIVERYSTATUSTEXT,Delivery Status of Srvc Transac - Text,Delivery Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,6,0,,top-level
-I_SRVCDOCESCALATION,Escalation Level of Service Transaction,Escalation Level of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCDOCESCALATIONTEXT,Escalation Level of Srvc Transac - Text,Escalation Level of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCDOCGOODSISSUESTATUS,Goods Issue Status for Srvc Transaction,Goods Issue Status for Srvc Transaction,CRM-S4-REP-RFW,,basic,2,0,,top-level
-I_SRVCDOCGOODSISSUESTATUSTEXT,Goods Issue Status for Srvc Trans - Text,Goods Issue Status for Srvc Trans - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCDOCHEADERLONGTEXT,ESH Long text search,ESH Long text search,CRM-S4-REP-RFW,,text,12,0,,top-level
-I_SRVCDOCITEMBYDOCUMENTTYPE,Srvc Transaction Item by Transac Type,Srvc Transaction Item by Transac Type,CRM-S4-REP-RFW,Dimension,dimension,127,5,Sales Group; Sales Office; Sales Organization,top-level
-I_SRVCDOCITEMLONGTEXT,Service Transaction Item Long Text,Service Transaction Item Long Text,CRM-S4-REP-RFW,,text,13,0,,top-level
-I_SRVCDOCITEMPRICEELEMENT,Service Transaction Item Pricing Element,Service Transaction Item Pricing Element,CRM-S4-REP-RFW,,basic,68,0,Tax Code,top-level
-I_SRVCDOCITEMRELATIONSHIPS,Service Transaction Item Relationships,Service Transaction Item Relationships,CRM-S4-REP-RFW,Fact,fact,8,0,,top-level
-I_SRVCDOCLIFECYCLESTATUS,Service Transaction Life Cycle Status,Service Transaction Life Cycle Status,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCDOCLIFECYCLESTATUSTEXT,Srvc Transaction Life Cycle Status - Txt,Srvc Transaction Life Cycle Status - Txt,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCDOCPAYMENTMETHOD,Service Transaction Payment Method,Service Transaction Payment Method,CRM-S4-REP-RFW,,basic,8,0,Sales Organization,top-level
-I_SRVCDOCPROBLEMCATEGORYTEXT,Service Transaction Problem Cat - Text,Service Transaction Problem Cat - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCDOCQUOTATIONSTATUS,Quotation Status of Service Transaction,Quotation Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCDOCQUOTATIONSTATUSTEXT,Quotation Status of Srvc Transac - Text,Quotation Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCDOCREJECTIONSTATUS,Rejection Status of Service Transaction,Rejection Status of Service Transaction,CRM-S4-REP-RFW,,basic,3,0,,top-level
-I_SRVCDOCREJECTIONSTATUSTEXT,Rejection Status of Srvc Transac - Text,Rejection Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCDOCRELEASESTATUS,Release Status of Service Transaction,Release Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCDOCRELEASESTATUSTEXT,Release Status of Srvc Transac - Text,Release Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCDOCRELFORBILLGSTS,Release for Billing Status of Srvc Trans,Release for Billing Status of Srvc Trans,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCDOCRELFORBILLGSTSTEXT,Rel for Billg Sts of Srvc Trans - Text,Rel for Billg Sts of Srvc Trans - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCITEMRELATIONSHIPTYPE,Service Item Relationships,Service Item Relationships,CRM-S4-REP-RFW,Fact,fact,2,0,,top-level
-I_SRVCMGMTPRODUCTHIERARCHY,Service Product Hierarchy,Service Product Hierarchy,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCMGMTPRODUCTHIERARCHYTEXT,Service Product Hierarchy - Text,Service Product Hierarchy - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCORDITMCONFRELEVANCE,Conf Relevance for Related Service Order,Conf Relevance for Related Service Order,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCORDITMCONFRELEVANCETEXT,Conf Relevance for Reltd Srvc Ord – Text,Conf Relevance for Reltd Srvc Ord – Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCQTANACCEPTANCESTATUS,Status of Service Quotation,Status of Service Quotation,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level
-I_SRVCQTANACCEPTANCESTATUSTEXT,Status of Service Quotation - Text,Status of Service Quotation - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCREFERENCEOBJECTTYPE,Type of Service Reference Object,Type of Service Reference Object,CRM-S4-REP-RFW,,basic,2,0,,top-level
-I_SRVCREFERENCEOBJECTTYPETEXT,Type of Service Reference Object - Text,Type of Service Reference Object - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SRVCSEPAMANDATERELEVANCE,Service SEPA Mandate Relevance,Service SEPA Mandate Relevance,CRM-S4-REP-RFW,,basic,2,0,,top-level
-I_SRVCSEPAMANDATERELEVANCETEXT,Service SEPA Mandate Relevance - Text,Service SEPA Mandate Relevance - Text,CRM-S4-REP-RFW,,text,5,0,,top-level
-I_SERVICEDOCITEMNOTE,Service Document Item for Note,Service Document Item for Note,CRM-S4-SRV-SVO-FIO,,basic,15,0,,top-level
-I_SRVCDOCTRANSFERSTATUS,Transfer Status of Service Transaction,Transfer Status of Service Transaction,CRM-S4-SRV-SVO-FIO,Dimension,dimension,3,0,,top-level
-I_SRVCDOCTRANSFERSTATUSTEXT,Transfer Status of Service Transaction - Text,Transfer Status of Service Transaction - Text,CRM-S4-SRV-SVO-FIO,,text,6,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+C_BUSINESSSOLUTIONORDERITEMDEX,Data Extraction for Bussiness Solution Order,Data Extraction for Bussiness Solution Order,CRM-S4-ANA-BI-2CL,,basic,125,0,Business Partner; Controlling Area; Cost Center; Equipment; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_DEX,no
+C_SERVICECONFIRMATIONITEMDEX,Data Extraction for Service Confirmation,Data Extraction for Service Confirmation,CRM-S4-ANA-BI-2CL,,basic,118,7,Controlling Area; Equipment; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_DEX,no
+C_SERVICECONTRACTITEMDEX,Data Extraction for Service Contract,Data Extraction for Service Contract,CRM-S4-ANA-BI-2CL,,basic,142,0,Controlling Area; Equipment; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_ANALYTICS_DEX,no
+C_SERVICEORDERITEMDEX,Data Extraction for Service Order,Data Extraction for Service Order,CRM-S4-ANA-BI-2CL,,basic,147,5,Controlling Area; Equipment; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_ANALYTICS_DEX,no
+C_SERVICEQUOTATIONDEX,Data Extraction for Service Quotation,Data Extraction for Service Quotation,CRM-S4-ANA-BI-2CL,,basic,37,0,Equipment; Material / Product; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_DEX,no
+C_SERVICEQUOTATIONITEMDEX,Data Extraction for Srvc Quotation Item,Data Extraction for Srvc Quotation Item,CRM-S4-ANA-BI-2CL,,basic,47,0,Equipment; Material / Product; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_DEX,no
+I_BSORDGLACCTLINEITEMCUBE,GL Account Item for Soln Order - Cube,GL Account Item for Soln Order - Cube,CRM-S4-ANA-CDS-2CL,Cube,cube,61,2,Company Code; Fiscal Year; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_SOLUTION_ORDER,yes
+I_BUSINESSSOLUTIONORDERCUBE,Solution Order - Cube,Solution Order - Cube,CRM-S4-ANA-CDS-2CL,Cube,cube,39,1,Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_SOLUTION_ORDER,yes
+I_BUSSOLNORDBASICFINANCIAL,Solution Order for Financial Reporting,Solution Order for Financial Reporting,CRM-S4-ANA-CDS-2CL,Dimension,dimension,49,6,Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_SOLUTION_ORDER,yes
+I_BUSSOLNORDITMBASICFINANCIAL,Solution Order Item for Fin Reporting,Solution Order Item for Fin Reporting,CRM-S4-ANA-CDS-2CL,Dimension,dimension,69,6,Controlling Area; Profit Center; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_SOLUTION_ORDER,yes
+I_BUSSOLNORDITMFINANCIALCUBE,Solution Order Item Financials - Cube,Solution Order Item Financials - Cube,CRM-S4-ANA-CDS-2CL,Cube,cube,61,2,Material / Product; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_SOLUTION_ORDER,yes
+I_SERVICECONTRACTCUBE_2,Service Contract - Cube,Service Contract - Cube,CRM-S4-ANA-CDS-2CL,Cube,cube,68,4,Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_SERVICE_CONTR,yes
+I_SERVICEORDERCUBE_2,Service Order - Cube,Service Order - Cube,CRM-S4-ANA-CDS-2CL,Cube,cube,70,4,Equipment; Material / Product; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_SERVICE_ORDER,yes
+I_SRVCMGMTORGANIZATIONUNIT,Service Management Organizational Unit,Service Management Organizational Unit,CRM-S4-ANA-CDS-2CL,Dimension,dimension,6,0,,top-level,yes,CRMS4_ANALYTICS_COMMON,yes
+I_SRVCMGMTORGANIZATIONUNITTEXT,Srvc Mgmt Organizational Unit - Text,Srvc Mgmt Organizational Unit - Text,CRM-S4-ANA-CDS-2CL,,text,9,0,,top-level,yes,CRMS4_ANALYTICS_COMMON,yes
+I_UPCGSRVCCONTRITEMCUBE,Upcoming Service Contract Item - Cube,Upcoming Service Contract Item - Cube,CRM-S4-ANA-CDS-2CL,Cube,cube,70,1,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_ANALYTICS_SERVICE_CONTR,yes
+I_SRVCDOCCREDITSTATUS,Credit Status of Service Transaction,Credit Status of Service Transaction,CRM-S4-BF-CM-2CL,Dimension,dimension,3,0,,top-level,yes,CRMS4_CREDIT_MGMT,yes
+I_SRVCDOCCREDITSTATUSTEXT,Credit Status of Service Trans - Text,Credit Status of Service Trans - Text,CRM-S4-BF-CM-2CL,,text,6,0,,top-level,yes,CRMS4_CREDIT_MGMT,yes
+I_SRVCDOCITEMCREDITSTATUS,Credit Status of Service Trans Item,Credit Status of Service Trans Item,CRM-S4-BF-CM-2CL,Dimension,dimension,3,0,,top-level,yes,CRMS4_CREDIT_MGMT,yes
+I_SRVCDOCITEMCREDITSTATUSTEXT,Credit Status of Service Trans Itm - Txt,Credit Status of Service Trans Itm - Txt,CRM-S4-BF-CM-2CL,,text,6,0,,top-level,yes,CRMS4_CREDIT_MGMT,yes
+D_SERVICECONFIRMATIONCHANGED,Service Confirmation Changed,Service Confirmation Changed,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICECONFIRMATIONCREATED,Service Confirmation Created,Service Confirmation Created,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICECONFIRMATIONDELETED,Service Confirmation Deleted,Service Confirmation Deleted,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICECONTRACTCHANGED,Service Contract Changed,Service Contract Changed,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICECONTRACTCREATED,Service Contract Created,Service Contract Created,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERCHANGED,Service Order Changed,Service Order Changed,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERCHGDWHENRELEASED,Service Order Changed When Released,Service Order Changed When Released,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERCOMPLETED,Service Order Completed,Service Order Completed,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERCREATED,Service Order Created,Service Order Created,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERDELETED,Service Order Deleted,Service Order Deleted,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERRELEASED,Service Order Released,Service Order Released,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERRELEASEREVOKED,Service Order Release Revoked,Service Order Release Revoked,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERTMPLCHANGED,Service Order Template Changed,Service Order Template Changed,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERTMPLCOMPLETED,Service Order Template Completed,Service Order Template Completed,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERTMPLCREATED,Service Order Template Created,Service Order Template Created,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERTMPLDELETED,Service Order Template Deleted,Service Order Template Deleted,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SERVICEORDERTMPLRELEASED,Service Order Template Released,Service Order Template Released,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+D_SRVCORDTMPLRELEASEREVOKED,Service Order Template Release Revoked,Service Order Template Release Revoked,CRM-S4-BTX-2CL,,basic,0,0,,top-level,yes,CRMS4_ORDER,no
+I_BILLGREQITMSETTLMTSTATUS,Billing Request Item Settlement Status,Billing Request Item Settlement Status,CRM-S4-REP-RFW,,basic,3,0,,top-level,yes,CRMS4_REPORT,no
+I_BILLGREQITMSETTLMTSTATUSTEXT,Billing Request Item Settlement Status - Text,Billing Request Item Settlement Status - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,no
+I_BILLINGREQUESTITEM,Billg Request Line for Srvc Transaction,Billg Request Line for Srvc Transaction,CRM-S4-REP-RFW,,basic,24,0,,top-level,yes,CRMS4_REPORT,no
+I_BUSINESSACTIVITYCATEGORY,Activity Category,Activity Category,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level,yes,CRMS4_REPORT,yes
+I_BUSINESSACTIVITYCATEGORYTEXT,Activity Category - Text,Activity Category - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_BUSINESSSOLUTIONORDER,Solution Order,Solution Order,CRM-S4-REP-RFW,,basic,65,0,Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_REPORT,no
+I_BUSINESSSOLUTIONORDERENHCD,Solution Order Enhanced,Solution Order Enhanced,CRM-S4-REP-RFW,,basic,67,0,Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_REPORT,no
+I_BUSINESSSOLUTIONORDERITEM,Solution Order Item,Solution Order Item,CRM-S4-REP-RFW,,basic,160,0,Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_REPORT,no
+I_BUSSOLNORDITEMPRICEELEMENT,Solution Order Item Pricing Element,Solution Order Item Pricing Element,CRM-S4-REP-RFW,,basic,66,0,Tax Code,top-level,yes,CRMS4_REPORT,no
+I_BUSSOLUTIONORDERITEMENHCD,Solution Order Item Enhanced,Solution Order Item Enhanced,CRM-S4-REP-RFW,,basic,171,0,Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_REPORT,no
+I_CUSTMGMTBUSOBJTYPE,Bus Object Type of Service Transaction,Bus Object Type of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_CUSTMGMTBUSOBJTYPETEXT,Bus Obj Type of Srvc Transaction - Text,Bus Obj Type of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,6,0,,top-level,yes,CRMS4_REPORT,yes
+I_CUSTMGMTITMBUSOBJTYPE,Bus Obj Type of Srvc Transaction Item,Bus Obj Type of Srvc Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_CUSTMGMTITMBUSOBJTYPETEXT,Bus Obj Type of Srvc Trans Item - Text,Bus Obj Type of Srvc Trans Item - Text,CRM-S4-REP-RFW,,text,6,0,,top-level,yes,CRMS4_REPORT,yes
+I_CUSTMGMTPARTNER,Customer Management Partner,Customer Management Partner,CRM-S4-REP-RFW,,basic,15,0,Address; Business Partner,top-level,yes,CRMS4_REPORT,yes
+I_RESPONSEPROFILE,Response Profile,Response Profile,CRM-S4-REP-RFW,,basic,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_RESPONSEPROFILETEXT,Response Profile - Text,Response Profile - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SALESORGANIZATIONUNIT,Sales Organizational Unit,Sales Organizational Unit,CRM-S4-REP-RFW,Dimension,dimension,6,0,,top-level,yes,CRMS4_REPORT,yes
+I_SALESORGANIZATIONUNITTEXT,Sales Organizational Unit - Text,Sales Organizational Unit - Text,CRM-S4-REP-RFW,,text,9,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECANCELLATIONPARTY,Service Cancellation Party,Service Cancellation Party,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECANCELLATIONPARTYTEXT,Service Cancellation Party - Text,Service Cancellation Party - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECANCELLATIONREASON,Service Cancellation Reason,Service Cancellation Reason,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECANCLNREASONTEXT,Service Cancellation Reason - Text,Service Cancellation Reason - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECONTRACT,Service Contract,Service Contract,CRM-S4-REP-RFW,,basic,84,0,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECONTRACTCANCLNSTS,Service Contract Cancellation Status,Service Contract Cancellation Status,CRM-S4-REP-RFW,,basic,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECONTRACTCANCLNSTSTXT,Service Contract Cancellation Stat - Txt,Service Contract Cancellation Stat - Txt,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECONTRACTENHCD,Service Contract Enhanced,Service Contract Enhanced,CRM-S4-REP-RFW,,basic,93,0,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECONTRACTITEM,Service Contract Item,Service Contract Item,CRM-S4-REP-RFW,,basic,123,0,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECONTRACTITEMENHCD,Service Contract Item Enhanced,Service Contract Item Enhanced,CRM-S4-REP-RFW,,basic,137,0,Controlling Area; Material / Product; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,yes
+I_SERVICECONTRACTTYPESTDVH,Service Contract Type,Service Contract Type,CRM-S4-REP-RFW,,value_help,4,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCBILLINGSTATUS,Billing Status of Service Transaction,Billing Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCBILLINGSTATUSTEXT,Billing Status of Srvc Transaction - Text,Billing Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,6,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCERRORSTATUS,Error Status of Service Transaction,Error Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCERRORSTATUSTEXT,Error Status of Srvc Transaction - Text,Error Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCITEMCATEGORY,Category of Service Transaction Item,Category of Service Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,8,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCITEMCATEGORYTEXT,Category of Service Transac Item - Text,Category of Service Transac Item - Text,CRM-S4-REP-RFW,,text,6,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCITEMNOTE,Service Document Item for Note,Service Document Item for Note,CRM-S4-REP-RFW,,basic,15,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCITEMTYPESLSSTTG,Sales Setting for Srvc Trans Item Cat,Sales Setting for Srvc Trans Item Cat,CRM-S4-REP-RFW,Dimension,dimension,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCOPENSTATUS,Open Status of Service Transaction,Open Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCOPENSTATUSTEXT,Open Status of Srvc Transaction - Text,Open Status of Srvc Transaction - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCPROBLEMCATEGORY,Service transaction problem category,Service transaction problem category,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENT,Service Transaction,Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,183,8,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTENHCD,Service Transaction Enhanced,Service Transaction Enhanced,CRM-S4-REP-RFW,Dimension,dimension,197,8,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTITEM,Service Transaction Item,Service Transaction Item,CRM-S4-REP-RFW,Dimension,dimension,386,14,Batch; Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTITEMENHCD,Service Transaction Item Enhanced,Service Transaction Item Enhanced,CRM-S4-REP-RFW,Dimension,dimension,409,17,Batch; Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTITEMPRDCSSR_2,Preceding Transaction of Srvc Trans Item,Preceding Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,9,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTITEMPRDCSSR_3,Preceding Transaction of Srvc Trans Item,Preceding Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTITEMSUCCSSR_2,Follow-Up Transaction of Srvc Trans Item,Follow-Up Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,9,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTITEMSUCCSSR_3,Follow-Up Transaction of Srvc Trans Item,Follow-Up Transaction of Srvc Trans Item,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTITEM_2,Service Transaction Item v2,Service Transaction Item v2,CRM-S4-REP-RFW,,basic,263,1,Controlling Area; Cost Center; Material / Product; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,no
+I_SERVICEDOCUMENTPREDECESSOR,Preceding Service Transaction,Preceding Service Transaction,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTPRIORITY,Service Transaction Priority,Service Transaction Priority,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTPRIORITYTEXT,Service Transaction Priority - Text,Service Transaction Priority - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTREFOBJECT,Reference Object of Service Transaction,Reference Object of Service Transaction,CRM-S4-REP-RFW,Fact,fact,17,0,Equipment; Material / Product,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTSTATUS,Service Transaction Status,Service Transaction Status,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTSTATUSTEXT,Service Transaction Status - Text,Service Transaction Status - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTSUCCESSOR,Follow-Up Service Transaction,Follow-Up Service Transaction,CRM-S4-REP-RFW,Fact,fact,10,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTTYPE,Service Transaction Type,Service Transaction Type,CRM-S4-REP-RFW,Dimension,dimension,11,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENTTYPETEXT,Service Transaction Type - Text,Service Transaction Type - Text,CRM-S4-REP-RFW,,text,6,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEDOCUMENT_2,Service Transaction v2,Service Transaction v2,CRM-S4-REP-RFW,,basic,134,1,Document Condition (pricing); Sales Group; Sales Office; Sales Organization; WBS Element,top-level,yes,CRMS4_REPORT,no
+I_SERVICEPROFILE,Service Profile,Service Profile,CRM-S4-REP-RFW,,basic,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SERVICEPROFILETEXT,Service Profile - Text,Service Profile - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCCANCLNPROCEDURE,Service Cancellation Procedure,Service Cancellation Procedure,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCCANCLNPROCEDURETEXT,Service Cancellation Procedure - Text,Service Cancellation Procedure - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCCONTRITEMPRICEELEMENT,Service Contract Item Pricing Element,Service Contract Item Pricing Element,CRM-S4-REP-RFW,,basic,66,0,Tax Code,top-level,yes,CRMS4_REPORT,yes
+I_SRVCCONTRITEMWITHAUTORENEWAL,Service Contract Items with Automatic Renewal,Service Contract Items with Automatic Renewal,CRM-S4-REP-RFW,,basic,21,0,Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCBYDOCUMENTTYPE,Service Transaction by Transaction Type,Service Transaction by Transaction Type,CRM-S4-REP-RFW,Dimension,dimension,109,4,Document Condition (pricing); Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCDELIVERYSTATUS,Delivery Status of Service Transaction,Delivery Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,3,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCDELIVERYSTATUSTEXT,Delivery Status of Srvc Transac - Text,Delivery Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,6,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCESCALATION,Escalation Level of Service Transaction,Escalation Level of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCESCALATIONTEXT,Escalation Level of Srvc Transac - Text,Escalation Level of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCGOODSISSUESTATUS,Goods Issue Status for Srvc Transaction,Goods Issue Status for Srvc Transaction,CRM-S4-REP-RFW,,basic,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCGOODSISSUESTATUSTEXT,Goods Issue Status for Srvc Trans - Text,Goods Issue Status for Srvc Trans - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCHEADERLONGTEXT,ESH Long text search,ESH Long text search,CRM-S4-REP-RFW,,text,12,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCITEMBYDOCUMENTTYPE,Srvc Transaction Item by Transac Type,Srvc Transaction Item by Transac Type,CRM-S4-REP-RFW,Dimension,dimension,127,5,Sales Group; Sales Office; Sales Organization,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCITEMLONGTEXT,Service Transaction Item Long Text,Service Transaction Item Long Text,CRM-S4-REP-RFW,,text,13,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCITEMPRICEELEMENT,Service Transaction Item Pricing Element,Service Transaction Item Pricing Element,CRM-S4-REP-RFW,,basic,68,0,Tax Code,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCITEMRELATIONSHIPS,Service Transaction Item Relationships,Service Transaction Item Relationships,CRM-S4-REP-RFW,Fact,fact,8,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCLIFECYCLESTATUS,Service Transaction Life Cycle Status,Service Transaction Life Cycle Status,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCLIFECYCLESTATUSTEXT,Srvc Transaction Life Cycle Status - Txt,Srvc Transaction Life Cycle Status - Txt,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCPAYMENTMETHOD,Service Transaction Payment Method,Service Transaction Payment Method,CRM-S4-REP-RFW,,basic,8,0,Sales Organization,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCPROBLEMCATEGORYTEXT,Service Transaction Problem Cat - Text,Service Transaction Problem Cat - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCQUOTATIONSTATUS,Quotation Status of Service Transaction,Quotation Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCQUOTATIONSTATUSTEXT,Quotation Status of Srvc Transac - Text,Quotation Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCQUOTATIONSTATUST_2,Quotation Status of Srvc Transac - Text,Quotation Status of Srvc Transac - Text,CRM-S4-REP-RFW,,basic,5,0,,top-level,yes,CRMS4_REPORT,no
+I_SRVCDOCQUOTATIONSTATUS_2,Quotation Status of Service Transaction,Quotation Status of Service Transaction,CRM-S4-REP-RFW,,basic,2,0,,top-level,yes,CRMS4_REPORT,no
+I_SRVCDOCREJECTIONSTATUS,Rejection Status of Service Transaction,Rejection Status of Service Transaction,CRM-S4-REP-RFW,,basic,3,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCREJECTIONSTATUSTEXT,Rejection Status of Srvc Transac - Text,Rejection Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCRELEASESTATUS,Release Status of Service Transaction,Release Status of Service Transaction,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCRELEASESTATUSTEXT,Release Status of Srvc Transac - Text,Release Status of Srvc Transac - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCRELFORBILLGSTS,Release for Billing Status of Srvc Trans,Release for Billing Status of Srvc Trans,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCDOCRELFORBILLGSTSTEXT,Rel for Billg Sts of Srvc Trans - Text,Rel for Billg Sts of Srvc Trans - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCITEMRELATIONSHIPTYPE,Service Item Relationships,Service Item Relationships,CRM-S4-REP-RFW,Fact,fact,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCMGMTPRODUCTHIERARCHY,Service Product Hierarchy,Service Product Hierarchy,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCMGMTPRODUCTHIERARCHYTEXT,Service Product Hierarchy - Text,Service Product Hierarchy - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCORDITMCONFRELEVANCE,Conf Relevance for Related Service Order,Conf Relevance for Related Service Order,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCORDITMCONFRELEVANCETEXT,Conf Relevance for Reltd Srvc Ord – Text,Conf Relevance for Reltd Srvc Ord – Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCQTANACCEPTANCESTATUS,Status of Service Quotation,Status of Service Quotation,CRM-S4-REP-RFW,Dimension,dimension,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCQTANACCEPTANCESTATUSTEXT,Status of Service Quotation - Text,Status of Service Quotation - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCREFERENCEOBJECTTYPE,Type of Service Reference Object,Type of Service Reference Object,CRM-S4-REP-RFW,,basic,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCREFERENCEOBJECTTYPETEXT,Type of Service Reference Object - Text,Type of Service Reference Object - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCSEPAMANDATERELEVANCE,Service SEPA Mandate Relevance,Service SEPA Mandate Relevance,CRM-S4-REP-RFW,,basic,2,0,,top-level,yes,CRMS4_REPORT,yes
+I_SRVCSEPAMANDATERELEVANCETEXT,Service SEPA Mandate Relevance - Text,Service SEPA Mandate Relevance - Text,CRM-S4-REP-RFW,,text,5,0,,top-level,yes,CRMS4_REPORT,yes
+D_BSORDORDITMSETTODISTRINCRRT,Business Solution Order Item Distribution Incorrect,Business Solution Order Item Distribution Incorrect,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDCHANGED,Business Solution Order Changed,Business Solution Order Changed,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDCREATED,Business Solution Order Created,Business Solution Order Created,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDDELETED,Business Solution Order Deleted,Business Solution Order Deleted,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDERRORRESOLVED,Business Solution Order Error Resolved,Business Solution Order Error Resolved,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDFUPTRANSCREATED,Business Solution Order FUP Created,Business Solution Order FUP Created,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDITMCHANGED,Business Solution Order Item Changed,Business Solution Order Item Changed,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDITMCREATED,Business Solution Order Item Created,Business Solution Order Item Created,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDITMDELETED,Business Solution Order Item Deleted,Business Solution Order Item Deleted,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+D_BUSSOLNORDORDITMSETTODISTRD,Business Solution Order Item Distributed,Business Solution Order Item Distributed,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_ORC_MAIN,no
+I_BSORDITMPRDCSSRSRVCCONTRTP,Business Solution Order Item Preceding Service Contract - TP,Business Solution Order Item Preceding Service Contract - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BSORDITMRATEELEMENTTP,Business Solution Order Item Rate Element - TP,Business Solution Order Item Rate Element - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BSORDITMSUBSCRPNPARAMTP_2,Solution Order Item Subs Param - TP,Solution Order Item Subs Param - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BSORDITMSUBSCRPNPRICEAGRMTTP,Soln Ord Item Subscrpn Price Agrmnt - TP,Soln Ord Item Subscrpn Price Agrmnt - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BSORDITMSUBSCRPNPRICEPARAMTP,Business Solution Order Item Subscrpn Price Parameter - TP,Business Solution Order Item Subscrpn Price Parameter - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BSORDPRDCSSRSRVCCONTRTP,Business Solution Order Preceding Service Contract - TP,Business Solution Order Preceding Service Contract - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSINESSSOLUTIONORDERITEMTP,Business Solution Order Item - TP,Business Solution Order Item - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSINESSSOLUTIONORDERTP,Business Solution Order - TP,Business Solution Order - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDAPPOINTMENTTP,Business Solution Order Appointment - TP,Business Solution Order Appointment - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDFUPENTPROJECTTP,Business Solution Order Follow up Enterprise Project - TP,Business Solution Order Follow up Enterprise Project - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDFUPSALESORDERTP,Business Solution Order Follow up Sales Order - TP,Business Solution Order Follow up Sales Order - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDFUPSRVCCONTRTP,Business Solution Order Follow up Service Contract - TP,Business Solution Order Follow up Service Contract - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDFUPSRVCORDTP,Business Solution Order Follow up Service Order - TP,Business Solution Order Follow up Service Order - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDFUPSUBSCRPNTP,Business Solution Order Follow up Subscription - TP,Business Solution Order Follow up Subscription - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITEMLONGTEXTTP,Business Solution Order Item Long Text - TP,Business Solution Order Item Long Text - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITEMRELATIONSHIPTP,Business Solution Order Item Relationships  - TP,Business Solution Order Item Relationships  - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMAPPOINTMENTTP,Business Solution Order Item Appointment - TP,Business Solution Order Item Appointment - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMCONFIGURATIONTP,Solution Order Item Configuration - TP,Solution Order Item Configuration - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMDURATIONTP,Business Solution Order Item Duration - TP,Business Solution Order Item Duration - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMFUPENTPROJECTTP,Business Solution Order item FUP Enterprise Project - TP,Business Solution Order item FUP Enterprise Project - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMFUPSALESORDERTP,Business Solution Order Item Follow up Sales Order - TP,Business Solution Order Item Follow up Sales Order - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMFUPSRVCCONTRTP,Business Solution Order Item Follow up Service Contract - TP,Business Solution Order Item Follow up Service Contract - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMFUPSRVCORDTP,Business Solution Order Item Follow up Service Order - TP,Business Solution Order Item Follow up Service Order - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMFUPSUBSCRPNTP,Business Solution Order Item Follow up Subscription - TP,Business Solution Order Item Follow up Subscription - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMPARTNERADDRTP,Solution Order Item Partner Address - TP,Solution Order Item Partner Address - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMPARTNERTP,Business Solution Order Item Partner - TP,Business Solution Order Item Partner - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMPRICEELEMENTTP,Business Solution Order Item Price Element - TP,Business Solution Order Item Price Element - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMPRODUCTTP,Business Solution Order Item Product - TP,Business Solution Order Item Product - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMREFOBJECTTP,Business Solution Order Item Reference Object - TP,Business Solution Order Item Reference Object - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMSCHEDULELINETP,Solution Order Item Schedule Lines - TP,Solution Order Item Schedule Lines - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDITMUSERSTATUSTP,Business Solution Order User Status - TP,Business Solution Order User Status - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDLONGTEXTTP,Business Solution Order Long Text - TP,Business Solution Order Long Text - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDPARTNERADDRESSTP,Business Soln Order Partner Address - TP,Business Soln Order Partner Address - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDPARTNERTP,Business Solution Order Partner - TP,Business Solution Order Partner - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDPRICEELEMENTTP,Solution Order Price Element - TP,Solution Order Price Element - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+I_BUSSOLNORDUSERSTATUSTP,Business Solution Order User Status - TP,Business Solution Order User Status - TP,CRM-S4-SOL-SLO,,basic,0,0,,top-level,yes,CRMS4_SOLUTION_ORDER_RAP,no
+C_SERVICECONTRACTSTATUSVH,Life Cycle Status of Service Contract,Life Cycle Status of Service Contract,CRM-S4-SRV-CTR-2CL,,value_help,2,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_ODATA,no
+C_SRVCCONTRPRICINGTYPEVH,Pricing Type of Service Contract,Pricing Type of Service Contract,CRM-S4-SRV-CTR-2CL,,value_help,2,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_ODATA,no
+D_SERVICECONTRACTITEMCHANGED,Service Contract Item Changed,Service Contract Item Changed,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+D_SERVICECONTRACTITEMCREATED,Service Contract Item Created,Service Contract Item Created,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+D_SERVICECONTRACTITEMDELETED,Service Contract Item Deleted,Service Contract Item Deleted,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+D_SRVCCONTRACTPERFORMRENEWALP,Renew Service Contract,Renew Service Contract,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+D_SRVCCONTRCHANGESOLDTOPARTYP,Change Sold-to Party for Srvc Contract,Change Sold-to Party for Srvc Contract,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+D_SRVCCONTRITEMPERFORMRENEWALP,Renew Service Contract Item,Renew Service Contract Item,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+D_SRVCCONTRITEMUPDATEPRICESP,Update Prices for Service Contract Item,Update Prices for Service Contract Item,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+D_SRVCCONTRUPDATEPRICESP,Update Prices for Service Contract,Update Prices for Service Contract,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SERVICECONTRACTITEMTP,Service Contract Item - TP,Service Contract Item - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SERVICECONTRACTITEMTP_2,Service Contract Item - TP,Service Contract Item - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SERVICECONTRACTTP,Service Contract - TP,Service Contract - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SERVICECONTRACTTP_2,Service Contract - TP,Service Contract - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRAPPOINTMENTTP,Service Contract Appointment - TP,Service Contract Appointment - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRDURATIONTP,Service Contract Duration - TP,Service Contract Duration - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRFUPBILLGDOCTP,Follow-Up Billing Document - TP,Follow-Up Billing Document - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRFUPSRVCORDTP,Follow-Up Service Order - TP,Follow-Up Service Order - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITEMAPPOINTMENTTP,Service Contract Item Appointment - TP,Service Contract Item Appointment - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITEMDURATIONTP,Service Contract Item Duration - TP,Service Contract Item Duration - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITEMPARTNERTP,Partner of Service Contract Item - TP,Partner of Service Contract Item - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITEMPRICEELEMENTTP,Service Contract Item Price Element - TP,Service Contract Item Price Element - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITEMPRODUCTTP,Service Contract Item Product List - TP,Service Contract Item Product List - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITEMREFOBJECTTP,Service Contract Item Ref Object - TP,Service Contract Item Ref Object - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITEMUSERSTATUSTP,Service Contract Item User Status - TP,Service Contract Item User Status - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITMBILLGREQITEMTP,Service Contract Item Billg Request - TP,Service Contract Item Billg Request - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITMFUPBILLGDOCTP,Item Follow-Up Billing Document - TP,Item Follow-Up Billing Document - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITMFUPSRVCORDTP,Item Follow-Up Service Order - TP,Item Follow-Up Service Order - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRITMPARTNERADDRESSTP,Partner Address in Srvc Contr Item - TP,Partner Address in Srvc Contr Item - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRPARTNERADDRESSTP,Partner Address in Service Contract - TP,Partner Address in Service Contract - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRPARTNERTP,Service Contract Partner - TP,Service Contract Partner - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+I_SRVCCONTRUSERSTATUSTP,Service Contract User Status - TP,Service Contract User Status - TP,CRM-S4-SRV-CTR-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONTRACT_RAP,no
+C_SRVCCONTRPAYMENTMETHODVH,Payment Method of Service Contract,Payment Method of Service Contract,CRM-S4-SRV-MC-2CL,,value_help,4,0,Company Code,top-level,yes,CRMS4_MASS_CHANGE_SC_ODATA,no
+I_SRVCMGMTPAYMENTTERMSVH,Terms of Payment,Terms of Payment,CRM-S4-SRV-MC-2CL,,value_help,2,0,,top-level,yes,CRMS4_MASS_CHANGE_SC_ODATA,no
+I_SERVICECONFIRMATIONITEMTP,Service Confirmation Item - TP,Service Confirmation Item - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SERVICECONFIRMATIONTP,Service Confirmation - TP,Service Confirmation - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFAPPOINTMENTTP,Service Confirmation Appointment - TP,Service Confirmation Appointment - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFDURATIONTP,Service Confirmation Duration - TP,Service Confirmation Duration - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFFUPBILLGDOCTP,Follow-Up Billing Document - TP,Follow-Up Billing Document - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFFUPTIMESHEETTP,Follow-Up Time Sheet - TP,Follow-Up Time Sheet - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMAPPOINTMENTTP,Service Confirmation Item Dates - TP,Service Confirmation Item Dates - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMDURATIONTP,Service Confirmation Item Duration - TP,Service Confirmation Item Duration - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMLONGTEXTTP,Service Conf Item Notes - TP,Service Conf Item Notes - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMPARTNERADDRESSTP,Partner Address For Srvc Conf Item - TP,Partner Address For Srvc Conf Item - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMPARTNERTP,Service Confirmation Item Partner - TP,Service Confirmation Item Partner - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMPRICEELEMENTTP,Service Confirmation Itm PrgElm - TP,Service Confirmation Itm PrgElm - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMREFOBJECTTP,Service Confirmation Itm Ref Object - TP,Service Confirmation Itm Ref Object - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMSERIALNUMBERTP,Service Conf Serial Number - TP,Service Conf Serial Number - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITEMUSERSTATUSTP,Service Confirmation Item User Status - TP,Service Confirmation Item User Status - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITMFUPBILLGDOCTP,Item Follow-Up Billing Document - TP,Item Follow-Up Billing Document - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFITMFUPTIMESHEETTP,Item Follow-Up Time Sheet - TP,Item Follow-Up Time Sheet - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFLONGTEXTTP,Projection of Long Text - TP,Projection of Long Text - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFPARTNERADDRESSTP,Partner Address For Service Conf - TP,Partner Address For Service Conf - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFPARTNERTP,Service Confirmation Partner - TP,Service Confirmation Partner - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFREFOBJECTTP,Service Confirmation Ref Object - TP,Service Confirmation Ref Object - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SRVCCONFUSERSTATUSTP,Service Confirmation User Status - TP,Service Confirmation User Status - TP,CRM-S4-SRV-SCO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_CONFIRMATION_RAP,no
+I_SERVICEORDERITEMTP,Service Order Item - TP,Service Order Item - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SERVICEORDERTP,Service Order - TP,Service Order - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCDOCEXECUTIONSTATUS,Service Transaction Execution Status,Service Transaction Execution Status,CRM-S4-SRV-SVO-2CL,,basic,4,0,,top-level,yes,CRMS4_SERV_COMMON,no
+I_SRVCDOCEXECUTIONSTATUSTEXT,Service Transact Execution Status - Text,Service Transact Execution Status - Text,CRM-S4-SRV-SVO-2CL,,text,8,0,,top-level,yes,CRMS4_SERV_COMMON,no
+I_SRVCDOCTRANSFERSTATUS,Transfer Status of Service Transaction,Transfer Status of Service Transaction,CRM-S4-SRV-SVO-2CL,Dimension,dimension,3,0,,top-level,yes,CRMS4_SERV_FIORI_UI,yes
+I_SRVCDOCTRANSFERSTATUSTEXT,Transfer Status of Service Transaction - Text,Transfer Status of Service Transaction - Text,CRM-S4-SRV-SVO-2CL,,text,6,0,,top-level,yes,CRMS4_SERV_FIORI_UI,yes
+I_SRVCORDAPPOINTMENTTP,Service Order Appointment - TP,Service Order Appointment - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDDURATIONTP,Service Order Duration - TP,Service Order Duration - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDFUPBILLGDOCTP,Follow-Up Billing Document - TP,Follow-Up Billing Document - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDFUPPURCHASEORDERTP,Follow-Up Purchase Order - TP,Follow-Up Purchase Order - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDFUPPURREQNTP,Follow-Up Purchase Requisition - TP,Follow-Up Purchase Requisition - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDFUPSRVCCONFTP,Follow-Up Service Confirmation - TP,Follow-Up Service Confirmation - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDFUPSRVCENTRSHEETTP,Follow-Up Service Entry Sheet - TP,Follow-Up Service Entry Sheet - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDFUPSUPLRINVCTP,Follow-Up Supplier Invoice - TP,Follow-Up Supplier Invoice - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITEMAPPOINTMENTTP,Service Order Item Appointment - TP,Service Order Item Appointment - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITEMDURATIONTP,Service Order Item Duration - TP,Service Order Item Duration - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITEMLONGTEXTTP,Service Order Item Notes - TP,Service Order Item Notes - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITEMPARTNERADDRESSTP,Partner Address For Srvc Order Item - TP,Partner Address For Srvc Order Item - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITEMPRICEELEMENTTP,Service Order Item Pricing Element - TP,Service Order Item Pricing Element - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITEMREFERENCEOBJECTTP,Service Order Item Reference Object - TP,Service Order Item Reference Object - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITEMUSERSTATUSTP,Service Order Item User Status - TP,Service Order Item User Status - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITMFUPBILLGDOCTP,Item Follow-Up Billing Document - TP,Item Follow-Up Billing Document - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITMFUPPURCHASEORDERTP,Item Follow-Up Purchase Order - TP,Item Follow-Up Purchase Order - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITMFUPPURREQNTP,Item Follow-Up Purchase Requisition - TP,Item Follow-Up Purchase Requisition - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITMFUPSRVCCONFTP,Item Follow-Up Service Confirmation - TP,Item Follow-Up Service Confirmation - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITMFUPSRVCENTRSHEETTP,Item Follow-Up Service Entry Sheet - TP,Item Follow-Up Service Entry Sheet - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITMFUPSUPLRINVCTP,Item Follow-Up Supplier Invoice - TP,Item Follow-Up Supplier Invoice - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDITMPARTNERTP,Service Order Item Partner - TP,Service Order Item Partner - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDLONGTEXTTP,Projection of Long Text - TP,Projection of Long Text - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDPARTNERADDRESSTP,Partner Address For Service Order - TP,Partner Address For Service Order - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDPARTNERTP,Service Order Partner - TP,Service Order Partner - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDPRICEELEMENTTP,Service Order Pricing Element - TP,Service Order Pricing Element - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDREFERENCEOBJECTTP,Service Order Reference Object - TP,Service Order Reference Object - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+I_SRVCORDUSERSTATUSTP,Service Order User Status - TP,Service Order User Status - TP,CRM-S4-SRV-SVO-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_ORDER_RAP,no
+D_SERVICEQUOTATIONCHANGED,Service Quotation Changed,Service Quotation Changed,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION,no
+D_SERVICEQUOTATIONCREATED,Service Quotation Created,Service Quotation Created,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION,no
+D_SRVCQTANAPPRVLWRKFLWCANCELED,Service Quotation Cancel Apprvl Workflow,Service Quotation Cancel Apprvl Workflow,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION,no
+D_SRVCQTANAPPRVLWRKFLWSTARTED,Service Quotation start Apprvl Workflow,Service Quotation start Apprvl Workflow,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION,no
+I_SERVICEQUOTATIONITEMTP,Service Quotation Item - TP,Service Quotation Item - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SERVICEQUOTATIONTP,Service Quotation - TP,Service Quotation - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANAPPOINTMENTTP,Service Quotation Appointment - TP,Service Quotation Appointment - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANDURATIONTP,Service Quotation Duration - TP,Service Quotation Duration - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANFUPSRVCORDTP,Follow-Up Service Order - TP,Follow-Up Service Order - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITEMAPPOINTMENTTP,Service Quotation Item Appointment - TP,Service Quotation Item Appointment - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITEMDURATIONTP,Service Quotation Item Duration - TP,Service Quotation Item Duration - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITEMLONGTEXTTP,Long Text for Service Quotation Item - TP,Long Text for Service Quotation Item - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITEMPARTNERADDRESSTP,Service Quotation Partner Item Address - TP,Service Quotation Partner Item Address - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITEMPARTNERTP,Service Quotation Partner Item - TP,Service Quotation Partner Item - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITEMPRICEELEMENTTP,Service Quotation Item Price Element - TP,Service Quotation Item Price Element - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITEMREFOBJECTTP,Service Quotation Item Ref Object - TP,Service Quotation Item Ref Object - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITEMUSERSTATUSTP,Service Quotation Item User Status - TP,Service Quotation Item User Status - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANITMFUPSRVCORDTP,Item Follow-Up Service Order - TP,Item Follow-Up Service Order - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANLONGTEXTTP,Long Text for Service Quotation Item - TP,Long Text for Service Quotation Item - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANPARTNERADDRESSTP,Service Quotation Partner Address - TP,Service Quotation Partner Address - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANPARTNERTP,Service Quotation Partner - TP,Service Quotation Partner - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANPRICEELEMENTTP,Service Quotation Price Element - TP,Service Quotation Price Element - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANREFERENCEOBJECTTP,Service Quotation Reference Object - TP,Service Quotation Reference Object - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SRVCQTANUSERSTATUSTP,Service Quotation User Status - TP,Service Quotation User Status - TP,CRM-S4-SRV-SVQ-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICE_QUOTATION_RAP,no
+I_SERVICEORDERTEMPLATEITEMTP,Service Order Template Item - TP,Service Order Template Item - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SERVICEORDERTEMPLATETP,Service Order Template - TP,Service Order Template - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLAPPOINTMENTTP,Service Order Template Appointment - TP,Service Order Template Appointment - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLDURATIONTP,Service Order Template Duration - TP,Service Order Template Duration - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLITEMAPPOINTMENTTP,Service Order Tmpl Item Appointment - TP,Service Order Tmpl Item Appointment - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLITEMDURATIONTP,Service Order Tmpl Item Duration - TP,Service Order Tmpl Item Duration - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLITEMLONGTEXTTP,Projection for Long Text of Item - TP,Projection for Long Text of Item - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLITEMUSERSTATUSTP,Service Order Temp Item User Status - TP,Service Order Temp Item User Status - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLITMREFOBJECTTP,Service Order Template Item Ref Obj - TP,Service Order Template Item Ref Obj - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLLONGTEXTTP,Long text for Template - TP,Long text for Template - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLPARTNERADDRESSTP,Partner Address For Srvc Ord Tmpl - TP,Partner Address For Srvc Ord Tmpl - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLPARTNERTP,Service Order Template Partner - TP,Service Order Template Partner - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLREFOBJECTTP,Service Order Template Ref Object - TP,Service Order Template Ref Object - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no
+I_SRVCORDTMPLUSERSTATUSTP,Service Order Template User Status - TP,Service Order Template User Status - TP,CRM-S4-SRV-SVT-2CL,,basic,0,0,,top-level,yes,CRMS4_SERVICEORDERTEMPL_RAP,no

@@ -1,11 +1,14 @@
-"""Build the per-module CDS released-view catalog from the xlsx released-CDS list.
+"""Build the per-module CDS released-view catalog from SAP's official release list.
 
 Run from the workspace root:
     python -X utf8 artifacts/system_analysis/CDS_RELEASED_CATALOG/build_catalog.py
 
-Reads   .claude/Documents/CDSView_Released_updated (1).xlsx   (sheets: CDS, Fields, Sheet1)
-Writes  artifacts/system_analysis/CDS_RELEASED_CATALOG/{modules,relations,_fields_only}/ + catalog_all.csv
-        + module_map.md
+Reads   sap_official/objectReleaseInfo_DDLS.json   (view set + state + component: SAP Cloudification Repository)
+        sap_official/descriptions_080.json         (description + package, read from tenant 080)
+        .claude/Documents/CDSView_Released_updated (1).xlsx   (sheet CDS: description/data category where present;
+                                                               sheet Fields: field counts/entities; Sheet1: priority)
+Writes  artifacts/system_analysis/CDS_RELEASED_CATALOG/{modules,relations,_fields_only,_deprecated}/
+        + catalog_all.csv + module_map.md + sap_official/released_ddls_public_cloud.csv
 Deterministic: re-running overwrites the generated files only. INDEX.md and process_flows.md are
 hand-written and are NOT touched by this script.
 """
@@ -13,6 +16,7 @@ import collections
 import csv
 import datetime
 import glob
+import json
 import os
 import re
 import shutil
@@ -21,6 +25,8 @@ import openpyxl
 
 SRC_GLOB = ".claude/Documents/CDSView_Released_updated*.xlsx"
 OUT = "artifacts/system_analysis/CDS_RELEASED_CATALOG"
+OFFICIAL = os.path.join(OUT, "sap_official", "objectReleaseInfo_DDLS.json")
+DESC_080 = os.path.join(OUT, "sap_official", "descriptions_080.json")
 MIN_VIEWS = 2  # a module "uses" an entity only when >= MIN_VIEWS of its views expose it
 TODAY = datetime.date.today().isoformat()
 
@@ -123,9 +129,27 @@ def main():
     vi_name = {comp: vi for comp, vi in sheet1}
 
     cds_rows = list(wb["CDS"].iter_rows(min_row=2, values_only=True))
-    uniq = {}
+    xl = {}
     for r in cds_rows:  # exact duplicate rows exist (464); keep the first
-        uniq.setdefault(r[1], r)
+        xl.setdefault(r[1], r)
+
+    official = json.load(open(OFFICIAL, encoding="utf-8"))
+    desc080 = json.load(open(DESC_080, encoding="utf-8"))["views"]
+    released = sorted((o for o in official["objects"] if o["state"] == "released"), key=lambda o: o["objectKey"])
+    others = sorted((o for o in official["objects"] if o["state"] != "released"), key=lambda o: o["objectKey"])
+
+    # uniq = the view set: SAP-released DDLS only. Row shape kept as the xlsx CDS row:
+    # (in_user_file, name, end_user_description, description, component, data_category)
+    uniq = {}
+    for o in released:
+        name = o["objectKey"]
+        x = xl.get(name)
+        d = desc080.get(name, {}).get("description", "")
+        uniq[name] = (bool(x), name, (x[2] if x else "") or d, (x[3] if x else "") or d,
+                      o.get("applicationComponent") or (x[4] if x else "") or "",
+                      x[5] if x else None)
+    in_080 = {name: name in desc080 for name in uniq}
+    package = {name: desc080.get(name, {}).get("package", "") for name in uniq}
 
     fields = list(wb["Fields"].iter_rows(min_row=2, values_only=True))
     n_fields = collections.Counter()
@@ -181,6 +205,8 @@ def main():
             "component": r[4], "data_category": r[5] or "", "kind": kind_of(name, r[5]),
             "n_fields": n_fields.get(name, 0), "n_deprecated_fields": n_depr.get(name, 0),
             "key_entities": "; ".join(entities_of(name)), "match_basis": basis, "folder": folder,
+            "in_080": "yes" if in_080[name] else "no", "package": package[name],
+            "in_user_file": "yes" if r[0] else "no",
         })
     records.sort(key=lambda x: (x["folder"], x["component"], x["view"]))
     by_folder = collections.defaultdict(list)
@@ -221,12 +247,12 @@ def main():
         return rows[:limit]
 
     # ---- write outputs (generated dirs are wiped first) ----
-    for sub in ("modules", "relations", "_fields_only"):
+    for sub in ("modules", "relations", "_fields_only", "_deprecated"):
         shutil.rmtree(os.path.join(OUT, sub), ignore_errors=True)
         os.makedirs(os.path.join(OUT, sub))
 
     cols = ["view", "description", "end_user_description", "component", "data_category", "kind",
-            "n_fields", "n_deprecated_fields", "key_entities", "match_basis"]
+            "n_fields", "n_deprecated_fields", "key_entities", "match_basis", "in_080", "package", "in_user_file"]
 
     def write_csv(path, recs, columns):
         with open(path, "w", encoding="utf-8", newline="") as fh:
@@ -250,7 +276,8 @@ def main():
         pk = prio_by_folder.get(f)
         title = f"{f} — {vi_name[pk]}" if pk else f
         lines = [f"# {title}", "",
-                 f"Generated {TODAY} from `.claude/Documents/CDSView_Released_updated (1).xlsx` by `build_catalog.py`. "
+                 f"Generated {TODAY} by `build_catalog.py` from SAP's official release list "
+                 f"(`sap_official/`, SAP update {official['sap_last_update']}) + descriptions read on tenant 080 + the user's xlsx. "
                  "Do not hand-edit; re-run the script.", ""]
         if pk:
             lines += [f"Phân hệ ưu tiên (Sheet1): component `{pk}` = **{vi_name[pk]}**.", ""]
@@ -264,7 +291,11 @@ def main():
         else:
             lines += [f"**{len(recs)} view** · data category: " + ", ".join(f"{k} {v}" for k, v in cat.most_common())
                       + " · loại: " + ", ".join(f"{k} {v}" for k, v in kinds.most_common())
-                      + f" · {depr_views} view có field DEPRECATED/DECOMMISSIONED.", "",
+                      + f" · {depr_views} view có field DEPRECATED/DECOMMISSIONED"
+                      + f" · {sum(1 for r in recs if r['in_user_file'] == 'no')} view mới so với file xlsx của user"
+                      + f" · {sum(1 for r in recs if r['in_080'] == 'no')} view chưa có trên tenant 080.", "",
+                      "> Cột `n_fields`/`key_entities` chỉ có cho view nằm trong sheet Fields của xlsx; view mới = 0/rỗng "
+                      "(không phải view không có field). Đọc DDLS để biết field.", "",
                       "## Component trong nhóm", "", "| Component | Số view | Cách gán |", "|---|---:|---|"]
             lines += [f"| {c} | {n} | {b} |" for (c, b), n in sorted(comp_count.items())]
             if any(b in ("alias", "keyword") for (_c, b) in comp_count):
@@ -286,8 +317,9 @@ def main():
                     lines.append(f"| {other} | {nd} | {nm} | {no} | {', '.join(k['DOC'] + k['MASTER']) or '—'} |")
         lines += ["", "## Cách dùng", "",
                   "1. Tìm view trong `views.csv` (cột `key_entities` cho biết view chứa Customer / Material / Company Code...).",
-                  "2. View nằm trong file = nguồn user cung cấp là *released*; lần đầu dùng vẫn verify trên hệ thống "
-                  "(`SAP(action=read, target=DDLS <tên>)`) trước khi đưa vào TS.",
+                  "2. Mọi view ở đây là *released* theo danh sách chính thức của SAP. Cột `in_080 = no` → tenant 080 chưa có "
+                  "view đó (release mới hơn tenant), đừng dùng. Lần đầu dùng vẫn đọc `SAP(action=read, target=DDLS <tên>)` "
+                  "trước khi đưa vào TS.",
                   "3. Không tìm thấy ở đây thì mới ra các folder liên quan (bảng trên), rồi mới tra ngoài.", ""]
         with open(os.path.join(d, "README.md"), "w", encoding="utf-8", newline="\n") as fh:
             fh.write("\n".join(lines))
@@ -360,20 +392,50 @@ def main():
     with open(os.path.join(OUT, "module_map.md"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("\n".join(lines) + "\n")
 
-    # ---- views only in the Fields sheet ----
+    # ---- views only in the Fields sheet (not SAP-released) ----
+    state_of = {o["objectKey"]: o["state"] for o in official["objects"]}
     only = sorted(set(n_fields) - set(uniq))
     write_csv(os.path.join(OUT, "_fields_only", "views.csv"),
-              [{"view": v, "component": f_comp.get(v, ""), "n_fields": n_fields[v], "n_deprecated_fields": n_depr.get(v, 0)}
-               for v in only], ["view", "component", "n_fields", "n_deprecated_fields"])
+              [{"view": v, "component": f_comp.get(v, ""), "n_fields": n_fields[v], "n_deprecated_fields": n_depr.get(v, 0),
+                "sap_state": state_of.get(v, "not in SAP list")} for v in only],
+              ["view", "component", "n_fields", "n_deprecated_fields", "sap_state"])
+    st = collections.Counter(state_of.get(v, "not in SAP list") for v in only)
     with open(os.path.join(OUT, "_fields_only", "README.md"), "w", encoding="utf-8", newline="\n") as fh:
-        fh.write("# Views chỉ có trong sheet Fields\n\n"
-                 f"{len(only)} view xuất hiện trong sheet **Fields** nhưng **không** có trong sheet **CDS** "
-                 f"({sum(1 for v in only if not f_comp.get(v))} view không có cả component). "
-                 "File không nói chúng có released hay không, nên **không** đưa vào các folder phân hệ. "
-                 "Chỉ dùng để tra field; muốn dùng view thì verify release trên hệ thống trước.\n")
+        fh.write("# Views chỉ có trong sheet Fields — KHÔNG released\n\n"
+                 f"{len(only)} view có trong sheet **Fields** của xlsx nhưng **không** nằm trong danh sách released chính thức "
+                 "của SAP (`sap_official/`). Trạng thái theo SAP: "
+                 + ", ".join(f"{k} {n}" for k, n in st.most_common())
+                 + ". Không dùng trong ABAP Cloud; cột `sap_state` = deprecated thì xem view thay thế ở `_deprecated/`.\n")
+
+    # ---- deprecated / notToBeReleased (SAP list) ----
+    dep = [{"view": o["objectKey"], "state": o["state"], "component": o.get("applicationComponent", ""),
+            "successors": "; ".join(s["objectKey"] for s in o.get("successors") or []),
+            "description": desc080.get(o["objectKey"], {}).get("description", ""),
+            "in_user_file": "yes" if o["objectKey"] in xl else "no"} for o in others]
+    write_csv(os.path.join(OUT, "_deprecated", "views.csv"), dep,
+              ["view", "state", "component", "successors", "description", "in_user_file"])
+    with open(os.path.join(OUT, "_deprecated", "README.md"), "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("# Views deprecated / notToBeReleased (SAP list)\n\n"
+                 f"{len(dep)} view: " + ", ".join(f"{k} {n}" for k, n in collections.Counter(d['state'] for d in dep).most_common())
+                 + ". Không dùng cho code mới — cột `successors` là view SAP chỉ định thay thế. "
+                 f"{sum(1 for d in dep if d['in_user_file'] == 'yes')} view trong số này vẫn nằm trong file xlsx của user.\n")
+
+    # ---- flat official list ----
+    with open(os.path.join(OUT, "sap_official", "released_ddls_public_cloud.csv"), "w", encoding="utf-8-sig", newline="") as fh:
+        w = csv.writer(fh, lineterminator="\n")
+        w.writerow(["name", "state", "application_component", "software_component", "successors", "in_080", "package",
+                    "in_user_file", "description", "data_category"])
+        for o in released + others:
+            k = o["objectKey"]
+            x = xl.get(k)
+            w.writerow([k, o["state"], o.get("applicationComponent", ""), o.get("softwareComponent", ""),
+                        "; ".join(s["objectKey"] for s in o.get("successors") or []),
+                        "yes" if k in desc080 else "no", desc080.get(k, {}).get("package", ""), "yes" if x else "no",
+                        (x[3] if x else "") or desc080.get(k, {}).get("description", ""), (x[5] if x else "") or ""])
 
     # ---- console summary for verification ----
-    print("unique views:", len(uniq), "| duplicate rows dropped:", len(cds_rows) - len(uniq))
+    print("released views:", len(uniq), "| not released:", len(others), "| xlsx CDS unique:", len(xl),
+          "| xlsx released:", sum(1 for r in uniq.values() if r[0]), "| missing on 080:", sum(1 for v in in_080.values() if not v))
     print("folders:", len(by_folder), "| views assigned:", sum(len(v) for v in by_folder.values()))
     basis = collections.Counter(r["match_basis"] for r in records)
     print("match basis:", dict(basis))

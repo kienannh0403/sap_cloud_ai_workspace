@@ -18,6 +18,14 @@ fi
 
 if [[ "$source_evt" == "startup" ]]; then
   lines+=("Standing check (memory check-mcp-alive-each-session): verify both SAP MCP servers are alive before SAP work.")
+  # SAP release watch: released-object list (GitHub) + API Hub package date vs local snapshots (~2 s, 7 s cap).
+  watch="$root/artifacts/system_analysis/SAP_RELEASE_WATCH/refresh_sap_release_watch.py"
+  if [[ -f "$watch" ]] && command -v python >/dev/null 2>&1; then
+    watch_msg=$(cd "$root" && timeout 7 python -X utf8 "$watch" --check 2>/dev/null)
+    if [[ $? -eq 10 ]]; then
+      lines+=("$watch_msg — run it now (memory sap-release-watch), then tell the user what SAP added/deprecated (SAP_RELEASE_WATCH/changelog.md); on a NEW SAP RELEASE also write whats_new/<release>.md.")
+    fi
+  fi
 fi
 
 # Most recently touched ledgers / handoffs = where work was left.

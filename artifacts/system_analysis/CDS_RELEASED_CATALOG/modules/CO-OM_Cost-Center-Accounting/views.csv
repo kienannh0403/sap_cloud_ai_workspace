@@ -1,6 +1,64 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_SERVICECOSTLEVEL,Service Cost Level,Service Cost Level,CO-OM,,basic,4,0,,component
-I_SERVICECOSTLEVELTEXT,Service Cost Level - Text,Service Cost Level - Text,CO-OM,,text,5,0,,component
-I_SERVICECOSTLEVELTEXT_2,Service Cost Level - Text,Service Cost Level - Text,CO-OM,,basic,6,0,,component
-I_SERVICECOSTRATE_2,Service Cost Rate,Service Cost Rate,CO-OM,Fact,fact,43,0,Activity Type; Company Code; Controlling Area; Cost Center; Personnel; WBS Element,component
-I_COSTCENTERBUDGET,Cost Center Budget Report,Cost Center Budget Report,CO-OM-CCA-AVC,,basic,80,0,Company Code; Controlling Area; Customer; Distribution Channel; Division; Fiscal Year; G/L Account; Plant; Sales Document; Sales Organization; Segment; Supplier; Valuation Area,component
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_ACTUALCOSTRATEDEX,Data Extraction for Actual Cost Rate,Data Extraction for Actual Cost Rate,CO-OM-2CL,,basic,22,0,Activity Type; Company Code; Controlling Area; Cost Center,component,yes,RAP_FIN_CO_COST_RATE,no
+I_ACTUALCOSTRATETP,Actual Cost Rate - TP,Actual Cost Rate - TP,CO-OM-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_RATE,no
+I_CONTROLLINGOBJECT,Controlling Object,Controlling Object,CO-OM-2CL,Dimension,dimension,14,0,Activity Type; Controlling Area; Order (production / maintenance / internal); Sales Document,component,yes,FINS_CONTROLLING_OBJECT_VDM,yes
+I_CONTROLLINGOBJECTSTDVH,Controlling Object,Controlling Object,CO-OM-2CL,,value_help,2,0,Controlling Area,component,yes,FINS_CONTROLLING_OBJECT_VDM,yes
+I_COSTANALYSISRESOURCE,Cost Analysis Resource,Cost Analysis Resource,CO-OM-2CL,Dimension,dimension,7,0,Controlling Area,component,yes,FINS_COST_ANLYS_RESOURCE_VDM,yes
+I_COSTANALYSISRESOURCESTDVH,Cost Analysis Resource,Cost Analysis Resource,CO-OM-2CL,,value_help,6,0,Controlling Area,component,yes,FINS_COST_ANLYS_RESOURCE_VDM,yes
+I_COSTANALYSISRESOURCETEXT,Cost Analysis Resource - Text,Cost Analysis Resource - Text,CO-OM-2CL,,text,9,0,Controlling Area,component,yes,FINS_COST_ANLYS_RESOURCE_VDM,yes
+I_COSTCENTER,Cost Center,Cost Center,CO-OM-2CL,Dimension,dimension,118,0,Business Area; Company Code; Controlling Area; Cost Center; Functional Area; Grant; Plant; Profit Center,component,yes,FINS_COST_CENTER_VDM,yes
+I_COSTCENTERACTIVITYTYPE,Cost Center Activity Type,Cost Center Activity Type,CO-OM-2CL,Dimension,dimension,30,0,Activity Type; Controlling Area,component,yes,FINS_COSTCTR_ACTIVITY_TYPE_VDM,yes
+I_COSTCENTERACTIVITYTYPESTDVH,Cost Center Activity Type,Cost Center Activity Type,CO-OM-2CL,,value_help,6,0,Activity Type; Controlling Area,component,yes,FINS_COSTCTR_ACTIVITY_TYPE_VDM,yes
+I_COSTCENTERACTIVITYTYPETEXT,Cost Center Activity Type - Text,Cost Center Activity Type - Text,CO-OM-2CL,,text,11,0,Activity Type; Controlling Area,component,yes,FINS_COSTCTR_ACTIVITY_TYPE_VDM,yes
+I_COSTCENTERCATEGORY,Cost Center Category,Cost Center Category,CO-OM-2CL,Dimension,dimension,13,0,Functional Area,component,yes,FINS_COST_CENTER_CATEGORY_VDM,yes
+I_COSTCENTERCATEGORYTEXT,Cost Center Category - Text,Cost Center Category - Text,CO-OM-2CL,,text,4,0,,component,yes,FINS_COST_CENTER_CATEGORY_VDM,yes
+I_COSTCENTERCHANGELOG,Cost Center Change Log,Cost Center Change Log,CO-OM-2CL,,basic,33,0,Business Area; Company Code; Controlling Area; Cost Center,component,yes,FINS_COST_CENTER_VDM,yes
+I_COSTCENTERHIERARCHY,Cost Center Hierarchy,Cost Center Hierarchy,CO-OM-2CL,Dimension,dimension,11,1,Controlling Area,component,yes,FINS_COST_CENTER_HIER_VDM,yes
+I_COSTCENTERHIERARCHYNODE,Cost Center Hierarchy Node,Cost Center Hierarchy Node,CO-OM-2CL,,basic,18,0,Controlling Area,component,yes,FINS_COST_CENTER_HIER_VDM,yes
+I_COSTCENTERHIERARCHYNODET,Cost Center Hierarchy Node - Text,Cost Center Hierarchy Node - Text,CO-OM-2CL,,basic,12,0,Controlling Area,component,yes,FINS_COST_CENTER_HIER_VDM,yes
+I_COSTCENTERHIERARCHYTEXT,Cost Center Hierarchy - Text,Cost Center Hierarchy - Text,CO-OM-2CL,,text,9,0,,component,yes,FINS_COST_CENTER_HIER_VDM,yes
+I_COSTCENTERHIERARCHYVH,Cost Center Hierarchy,Cost Center Hierarchy,CO-OM-2CL,Dimension,value_help,6,0,,component,yes,FINS_COST_CENTER_HIER_VDM,yes
+I_COSTCENTERINCOMPANYCODE,Cost Center In Company Code,Cost Center In Company Code,CO-OM-2CL,Dimension,dimension,22,0,Company Code; Controlling Area; Cost Center,component,yes,FINS_COST_CENTER_VDM,yes
+I_COSTCENTERSTDVH,Cost Center,Cost Center,CO-OM-2CL,,value_help,7,0,Company Code; Controlling Area; Cost Center,component,yes,FINS_COST_CENTER_VDM,yes
+I_COSTCENTERTEXT,Cost Center - Text,Cost Center - Text,CO-OM-2CL,,text,10,0,Controlling Area; Cost Center,component,yes,FINS_COST_CENTER_VDM,yes
+I_COSTCTRACTIVITYTYPEHIERARCHY,Cost Center Activity Type Hierarchy,Cost Center Activity Type Hierarchy,CO-OM-2CL,Dimension,dimension,11,1,Controlling Area,component,yes,FINS_CSCTR_ACTYTP_HIER_VDM,yes
+I_COSTCTRACTIVITYTYPEHIERNODE,Cost Center Activity Type Hierarchy Node,Cost Center Activity Type Hierarchy Node,CO-OM-2CL,,basic,18,0,Activity Type; Controlling Area,component,yes,FINS_CSCTR_ACTYTP_HIER_VDM,yes
+I_COSTCTRACTIVITYTYPEHIERNODET,CostCtr Activty Type Hierarchy Node - Text,CostCtr Activty Type Hierarchy Node - Text,CO-OM-2CL,,basic,12,0,Controlling Area,component,yes,FINS_CSCTR_ACTYTP_HIER_VDM,yes
+I_COSTCTRACTIVITYTYPEHIERTEXT,Activity Type Hierarchy - Text,Activity Type Hierarchy - Text,CO-OM-2CL,,text,9,0,,component,yes,FINS_CSCTR_ACTYTP_HIER_VDM,yes
+I_ENTPROJSETTLMTDISTRRULE,Ent Project Settlement Distribution Rule,Ent Project Settlement Distribution Rule,CO-OM-2CL,,basic,56,0,Company Code; Controlling Area; Fixed Asset; Functional Area; G/L Account; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; WBS Element,component,yes,RAP_FIN_CO_PROJSETTLMTRULE,no
+I_ENTPROJSETTLMTRULE,Enterprise Project Settlement Rule,Enterprise Project Settlement Rule,CO-OM-2CL,,basic,28,0,Functional Area; Plant; Profit Center; WBS Element,component,yes,RAP_FIN_CO_PROJSETTLMTRULE,no
+I_INTERNALORDER,Internal Order,Internal Order,CO-OM-2CL,Dimension,dimension,128,0,Company Code; Controlling Area; Plant; WBS Element,component,yes,FINS_INTERNAL_ORDER_VDM,yes
+I_PLANCOSTRATEDEX,Data Extraction for Plan Cost Rate,Data Extraction for Plan Cost Rate,CO-OM-2CL,,basic,22,0,Activity Type; Company Code; Controlling Area; Cost Center,component,yes,RAP_FIN_CO_COST_RATE,no
+I_PLANCOSTRATETP,Plan Cost Rate - TP,Plan Cost Rate - TP,CO-OM-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_RATE,no
+I_SERVICECOSTLEVEL,Service Cost Level,Service Cost Level,CO-OM-2CL,,basic,4,0,,component,yes,FINS_CO_CUST,yes
+I_SERVICECOSTLEVELTEXT,Service Cost Level - Text,Service Cost Level - Text,CO-OM-2CL,,text,5,0,,component,yes,FINS_CO_CUST,yes
+I_SERVICECOSTLEVELTEXT_2,Service Cost Level - Text,Service Cost Level - Text,CO-OM-2CL,,basic,6,0,,component,yes,FINS_CO_CUST,yes
+I_SERVICECOSTRATEDEX,Data Extraction for Service Cost Rate,Data Extraction for Service Cost Rate,CO-OM-2CL,,basic,29,0,Activity Type; Company Code; Controlling Area; Cost Center; Personnel; WBS Element,component,yes,RAP_FIN_CO_COST_RATE,no
+I_SERVICECOSTRATETP,Service Cost Rate - TP,Service Cost Rate - TP,CO-OM-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_RATE,no
+I_SERVICECOSTRATE_2,Service Cost Rate,Service Cost Rate,CO-OM-2CL,Fact,fact,43,0,Activity Type; Company Code; Controlling Area; Cost Center; Personnel; WBS Element,component,yes,FINS_CO_COST_RATE,yes
+I_STATISTICALKEYFIGURE,Statistical Key Figure,Statistical Key Figure,CO-OM-2CL,,basic,21,0,Controlling Area,component,yes,FINS_STSTCL_KEY_FIGURE_VDM,no
+I_STATISTICALKEYFIGURESTDVH,Statistical Key Figure,Statistical Key Figure,CO-OM-2CL,,value_help,6,0,Controlling Area,component,yes,FINS_STSTCL_KEY_FIGURE_VDM,yes
+I_STATISTICALKEYFIGURETEXT,Statistical Key Figure - Text,Statistical Key Figure - Text,CO-OM-2CL,,text,6,0,Controlling Area,component,yes,FINS_STSTCL_KEY_FIGURE_VDM,no
+I_STSTCLKEYFIGUREHIERARCHY,Statistical Key Figure Hierarchy,Statistical Key Figure Hierarchy,CO-OM-2CL,Dimension,dimension,10,0,Controlling Area,component,yes,FINS_STATKEYFIG_HIER_VDM,yes
+I_STSTCLKEYFIGUREHIERARCHYT,Statistical Key Figure Hierarchy - Text,Statistical Key Figure Hierarchy - Text,CO-OM-2CL,,basic,9,0,,component,yes,FINS_STATKEYFIG_HIER_VDM,yes
+I_STSTCLKEYFIGUREHIERNODE,Statistical Key Figure Hierarchy Node,Statistical Key Figure Hierarchy Node,CO-OM-2CL,,basic,18,0,Controlling Area,component,yes,FINS_STATKEYFIG_HIER_VDM,yes
+I_STSTCLKEYFIGUREHIERNODET,Statistical Key Figure Hier Node - Text,Statistical Key Figure Hier Node - Text,CO-OM-2CL,,basic,12,0,Controlling Area,component,yes,FINS_STATKEYFIG_HIER_VDM,yes
+C_COSTCENTERACTUALQUERY,Cost Center Actuals - Query,Cost Center Actuals - Query,CO-OM-CCA-2CL,,basic,58,1,Activity Type; Company Code; Fiscal Year; G/L Account,component,yes,FINS_CO_ANALYTICS,no
+C_COSTCENTERBUDGETQUERY,Cost Center Budget - Query,Cost Center Budget - Query,CO-OM-CCA-2CL,,basic,0,0,,component,yes,FINS_CO_ANALYTICS,no
+C_COSTCENTERPLANACTUALQUERY,Cost Center Plan and Actual Values - Query,Cost Center Plan and Actual Values - Query,CO-OM-CCA-2CL,,basic,46,1,Activity Type; Company Code; Fiscal Year; G/L Account,component,yes,FINS_CO_ANALYTICS,no
+FINS_MDI_COSTCENTER,Cost Center MDI Attributes,Cost Center MDI Attributes,CO-OM-CCA-2CL,,basic,0,0,,component,yes,FINS_GEN_MDI_COST_CENTER,no
+FINS_MDI_COSTCENTER_HEADER,Cost Center MDI Header,Cost Center MDI Header,CO-OM-CCA-2CL,,basic,0,0,,component,yes,FINS_GEN_MDI_COST_CENTER,no
+FINS_MDI_COSTCENTER_TEXT,Cost Center MDI Texts,Cost Center MDI Texts,CO-OM-CCA-2CL,,text,0,0,,component,yes,FINS_GEN_MDI_COST_CENTER,no
+I_ACTPLNCOSTCENTERRPTGCUBE,Cost Center Review Booklet - Cube,Cost Center Review Booklet - Cube,CO-OM-CCA-2CL,,basic,155,0,Activity Type; Company Code; Controlling Area; Customer; Fiscal Year; G/L Account; Segment; Supplier,component,yes,FINS_CO_ANALYTICS,no
+I_BUDGETCOSTCENTER,Budget Carrying Cost Center,Budget Carrying Cost Center,CO-OM-CCA-2CL,,basic,0,0,,component,yes,FINS_CO_ANALYTICS,no
+I_BUDGETCOSTCENTERRPTGCUBE,Cost Center Review Booklet Budget - Cube,Cost Center Review Booklet Budget - Cube,CO-OM-CCA-2CL,,basic,0,0,,component,yes,FINS_CO_ANALYTICS,no
+I_BUDGETGLACCTHIERGROUPT,Budget GL Account Hierarchy Group - Text,Budget GL Account Hierarchy Group - Text,CO-OM-CCA-2CL,,basic,0,0,,component,yes,FINS_CO_ANALYTICS,no
+D_COSTCTRCREATEVALIDITYPERIODP,Cost Center Create Validity Period Parameter And Result,Cost Center Create Validity Period Parameter And Result,CO-OM-CCA-A-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_CENTER,no
+D_COSTCTRCRTEVALDTYPERIODTXTP,Cost Center Create Validity Period Text Parameter And Result,Cost Center Create Validity Period Text Parameter And Result,CO-OM-CCA-A-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_CENTER,no
+D_COSTCTRUPDATEVALIDITYPERIODP,Cost Center Update Validity Period Parameter And Result,Cost Center Update Validity Period Parameter And Result,CO-OM-CCA-A-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_CENTER,no
+D_COSTCTRUPDTVALDTYPERIODTXTP,Cost Center Update Validity Period Text Parameter And Result,Cost Center Update Validity Period Text Parameter And Result,CO-OM-CCA-A-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_CENTER,no
+I_COSTCENTERTEXTTP_2,Cost Center - Text,Cost Center - Text,CO-OM-CCA-A-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_CENTER,no
+I_COSTCENTERTP_2,Cost Center,Cost Center,CO-OM-CCA-A-2CL,,basic,0,0,,component,yes,RAP_FIN_CO_COST_CENTER,no
+I_STATISTICALKEYFIGURETEXTTP_2,Statistical Key Figure - Text TP,Statistical Key Figure - Text TP,CO-OM-CCA-A-2CL,,basic,0,0,,component,yes,FINS_STSTCL_KEY_FIGURE_RAP,no
+I_STATISTICALKEYFIGURETP_2,Statistical Key Figure - TP,Statistical Key Figure - TP,CO-OM-CCA-A-2CL,,basic,0,0,,component,yes,FINS_STSTCL_KEY_FIGURE_RAP,no
+I_COSTCENTERBUDGET,Cost Center Budget Report,Cost Center Budget Report,CO-OM-CCA-AVC-2CL,,basic,80,0,Company Code; Controlling Area; Customer; Distribution Channel; Division; Fiscal Year; G/L Account; Plant; Sales Document; Sales Organization; Segment; Supplier; Valuation Area,component,yes,ODATA_COST_CENTER_BDGT_REPORT,yes

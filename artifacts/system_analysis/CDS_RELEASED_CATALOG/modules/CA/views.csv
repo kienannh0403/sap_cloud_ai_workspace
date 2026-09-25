@@ -1,250 +1,454 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_SDSCHEDULELINEWTHOPENRQMTQTY,Schedule Line With Open Rqmt Qty for SD,Schedule Line With Open Rqmt Qty for SD,CA-ATP,,basic,36,0,Batch; Customer; Material / Product; Plant; Sales Document; Sales Document Type; Storage Location; WBS Element,top-level
-I_OBJVALDETNACTIVATIONSTATUS,Activation Status,Activation Status,CA-ATP-OVD,Dimension,dimension,3,0,,top-level
-I_OBJVALDETNACTIVATIONSTSTEXT,Activation Status - Text,Activation Status - Text,CA-ATP-OVD,,text,6,0,,top-level
-I_COLLECTIVEALLOCATIONTYPE,Collective Allocation Type,Collective Allocation Type,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_COLLECTIVEALLOCATIONTYPET,Collective Allocation Type - Text,Collective Allocation Type - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_HRZCONSUMPTIONDIRECTION,Horizontal Consumption Direction,Horizontal Consumption Direction,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_HRZCONSUMPTIONDIRECTIONT,Horizontal Consumption Direction - Text,Horizontal Consumption Direction - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_PRODALLOCACTIVATIONSTATUS,Product Allocation Activation Status,Product Allocation Activation Status,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_PRODALLOCACTIVATIONSTATUST,Product Allocation Activation Status - Text,Product Allocation Activation Status - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_PRODALLOCCHARCCSTRTSTATUS,Product Allocation Characteristic Constraint Status,Product Allocation Characteristic Constraint Status,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_PRODALLOCCHARCCSTRTSTATUST,Product Allocation Characteristic Constraint Status - Text,Product Allocation Characteristic Constraint Status - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_PRODALLOCCHECKDATETIMETYPE,Product Allocation Check Date Time Type,Product Allocation Check Date Time Type,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_PRODALLOCCHECKDATETIMETYPET,Product Allocation Check Date Time Type - Text,Product Allocation Check Date Time Type - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_PRODALLOCCHECKMETHOD,Product Allocation Check Method,Product Allocation Check Method,CA-ATP-PAL,Dimension,dimension,3,0,,top-level
-I_PRODALLOCCHECKMETHODT,Product Allocation Check Method - Text,Product Allocation Check Method - Text,CA-ATP-PAL,,basic,6,0,,top-level
-I_PRODALLOCCHKDATASNPSHTTYPE,Product Allocation Check Data Snapshot Type,Product Allocation Check Data Snapshot Type,CA-ATP-PAL,Dimension,dimension,3,0,,top-level
-I_PRODALLOCCHKDATASNPSHTTYPET,Product Allocation Check Data Snapshot Type - Text,Product Allocation Check Data Snapshot Type - Text,CA-ATP-PAL,,basic,6,0,,top-level
-I_PRODALLOCCHKPERDCNSMPNTYPE,Product Allocation Check Period Consumption Type,Product Allocation Check Period Consumption Type,CA-ATP-PAL,Dimension,dimension,3,0,,top-level
-I_PRODALLOCCHKPERDCNSMPNTYPET,Product Allocation Check Period Consumption Type - Text,Product Allocation Check Period Consumption Type - Text,CA-ATP-PAL,,basic,6,0,,top-level
-I_PRODALLOCCHKRSTRCNSTATUS,Product Allocation Check Restriction Status,Product Allocation Check Restriction Status,CA-ATP-PAL,Dimension,dimension,3,0,,top-level
-I_PRODALLOCCHKRSTRCNSTATUST,Product Allocation Check Restriction Status - Text,Product Allocation Check Restriction Status - Text,CA-ATP-PAL,,basic,6,0,,top-level
-I_PRODALLOCCONSISTENCYSTATUS,Product Allocation Consistency Status,Product Allocation Consistency Status,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_PRODALLOCCONSISTENCYSTATUST,Product Allocation Consistency Status - Text,Product Allocation Consistency Status - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_PRODALLOCLIFECYCLESTATUS,Product Allocation Lifecycle Status,Product Allocation Lifecycle Status,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_PRODALLOCLIFECYCLESTATUST,Product Allocation Lifecycle Status - Text,Product Allocation Lifecycle Status - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_PRODUCTALLOCATIONPERIODTYPE,Product Allocation Period Type,Product Allocation Period Type,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_PRODUCTALLOCATIONPERIODTYPET,Product Allocation Period Type - Text,Product Allocation Period Type - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_VERTICALCONSUMPTIONDIRECTION,Vertical  Consumption Direction,Vertical  Consumption Direction,CA-ATP-PAL,Dimension,dimension,2,0,,top-level
-I_VRTCONSUMPTIONDIRECTIONT,Vertical  Consumption Direction - Text,Vertical  Consumption Direction - Text,CA-ATP-PAL,Dimension,dimension,5,0,,top-level
-I_CLFNCHARACTERISTIC,Classification Characteristic,Classification Characteristic,CA-CL,,basic,52,0,Plant,top-level
-I_CLFNCHARACTERISTICDEX,Classification Characteristic DEX,Classification Characteristic DEX,CA-CL,Dimension,dimension,48,0,Plant,top-level
-I_CLFNCHARACTERISTICFORKEYDATE,Clfn Characteristic for Key Date,Clfn Characteristic for Key Date,CA-CL,,basic,52,0,Plant,top-level
-I_CLFNCHARCAUTHOR,Author of Classification Characteristic,Author of Classification Characteristic,CA-CL,Dimension,dimension,3,0,,top-level
-I_CLFNCHARCAUTHORTEXT,Author of Clfn Characteristic - Text,Author of Clfn Characteristic - Text,CA-CL,,text,6,0,,top-level
-I_CLFNCHARCDATATYPE,Data Type of Clfn Characteristic,Data Type of Clfn Characteristic,CA-CL,Dimension,dimension,3,0,,top-level
-I_CLFNCHARCDATATYPETEXT,Data Type of Clfn Characteristic - Text,Data Type of Clfn Characteristic - Text,CA-CL,,text,6,0,,top-level
-I_CLFNCHARCDESC,Description of Clfn Characteristic,Description of Clfn Characteristic,CA-CL,,basic,9,0,,top-level
-I_CLFNCHARCDESCDEX,Description of Clfn Characteristic DEX,Description of Clfn Characteristic DEX,CA-CL,,basic,10,0,,top-level
-I_CLFNCHARCDESCFORKEYDATE,Description of Clfn Charc for Key Date,Description of Clfn Charc for Key Date,CA-CL,,basic,8,0,,top-level
-I_CLFNCHARCEXPONENTFORMAT,Exponent Format of Clfn Characteristic,Exponent Format of Clfn Characteristic,CA-CL,Dimension,dimension,3,0,,top-level
-I_CLFNCHARCEXPONENTFORMATTEXT,Exponent Format of Clfn Charc - Text,Exponent Format of Clfn Charc - Text,CA-CL,,text,6,0,,top-level
-I_CLFNCHARCGROUP,Group of Classification Characteristic,Group of Classification Characteristic,CA-CL,Dimension,dimension,3,0,,top-level
-I_CLFNCHARCGROUPSTDVH,Group of Classification Characteristic,Group of Classification Characteristic,CA-CL,,value_help,2,0,,top-level
-I_CLFNCHARCGROUPTEXT,Group of Clfn Characteristic - Text,Group of Clfn Characteristic - Text,CA-CL,,text,5,0,,top-level
-I_CLFNCHARCRESTRICTION,Restriction of Clfn Characteristic,Restriction of Clfn Characteristic,CA-CL,,basic,2,0,,top-level
-I_CLFNCHARCRESTRICTIONDEX,Restriction of Clfn Characteristic,Restriction of Clfn Characteristic,CA-CL,Dimension,dimension,3,0,,top-level
-I_CLFNCHARCSTATUS,Status of Classification Characteristic,Status of Classification Characteristic,CA-CL,Dimension,dimension,4,0,,top-level
-I_CLFNCHARCSTATUSSTDVH,Status of Classification Characteristic,Status of Classification Characteristic,CA-CL,,value_help,2,0,,top-level
-I_CLFNCHARCSTATUSTEXT,Status of Clfn Characteristic - Text,Status of Clfn Characteristic - Text,CA-CL,,text,5,0,,top-level
-I_CLFNCHARCVALINTERVALTYPE,Interval Type of Clfn Charc Value,Interval Type of Clfn Charc Value,CA-CL,Dimension,dimension,3,0,,top-level
-I_CLFNCHARCVALINTERVALTYPETEXT,Interval Type of Clfn Charc Value - Text,Interval Type of Clfn Charc Value - Text,CA-CL,,text,6,0,,top-level
-I_CLFNCHARCVALUE,Value of Classification Characteristic,Value of Classification Characteristic,CA-CL,,basic,32,0,,top-level
-I_CLFNCHARCVALUEDESC,Clfn Characteristic Value Description,Clfn Characteristic Value Description,CA-CL,,basic,10,0,,top-level
-I_CLFNCHARCVALUEDESCDEX,Clfn Charc Value Description DEX,Clfn Charc Value Description DEX,CA-CL,,basic,11,0,,top-level
-I_CLFNCHARCVALUEDESCFORKEYDATE,Desc of Clfn Charc Val for Key Date,Desc of Clfn Charc Val for Key Date,CA-CL,,basic,10,0,,top-level
-I_CLFNCHARCVALUEDEX,Value of Clfn Characteristic DEX,Value of Clfn Characteristic DEX,CA-CL,Dimension,dimension,31,0,,top-level
-I_CLFNCHARCVALUEFORKEYDATE,Value of Clfn Charc for Key Date,Value of Clfn Charc for Key Date,CA-CL,,basic,30,0,,top-level
-I_CLFNCLASS,Classification Class,Classification Class,CA-CL,,basic,37,0,,top-level
-I_CLFNCLASSCHARACTERISTICDEX,Characteristic of Clfn Class  DEX,Characteristic of Clfn Class  DEX,CA-CL,Dimension,dimension,18,0,,top-level
-I_CLFNCLASSCHARCBASIC,Clfn Class Characteristic Basic,Clfn Class Characteristic Basic,CA-CL,,basic,18,0,,top-level
-I_CLFNCLASSCHARCFORKEYDATE,Charc of Clfn Class for Key Date,Charc of Clfn Class for Key Date,CA-CL,,basic,16,0,,top-level
-I_CLFNCLASSDESCFORKEYDATE,Description of Clfn Class for Key Date,Description of Clfn Class for Key Date,CA-CL,,basic,4,0,,top-level
-I_CLFNCLASSDESCRIPTION,Description of Classification Class,Description of Classification Class,CA-CL,,basic,6,0,,top-level
-I_CLFNCLASSDESCRIPTIONDEX,Description of Classification Class DEX,Description of Classification Class DEX,CA-CL,,basic,6,0,,top-level
-I_CLFNCLASSDEX,Classification Class DEX,Classification Class DEX,CA-CL,Dimension,dimension,36,0,,top-level
-I_CLFNCLASSFORKEYDATE,Classification Class for Key Date,Classification Class for Key Date,CA-CL,,basic,38,0,,top-level
-I_CLFNCLASSGROUP,Group of Classification Class,Group of Classification Class,CA-CL,Dimension,dimension,3,0,,top-level
-I_CLFNCLASSGROUPSTDVH,Group of Classification Class,Group of Classification Class,CA-CL,,value_help,2,0,,top-level
-I_CLFNCLASSGROUPTEXT,Group of Classification Class - Text,Group of Classification Class - Text,CA-CL,,text,5,0,,top-level
-I_CLFNCLASSKEYWORD,Keyword of Classification Class,Keyword of Classification Class,CA-CL,,basic,6,0,,top-level
-I_CLFNCLASSKEYWORDDEX,Keyword of Clfn Class DEX,Keyword of Clfn Class DEX,CA-CL,,basic,6,0,,top-level
-I_CLFNCLASSKEYWORDFORKEYDATE,Keyword of Clfn Class for Key Date,Keyword of Clfn Class for Key Date,CA-CL,,basic,6,0,,top-level
-I_CLFNCLASSSTATUS,Status of Classification Class,Status of Classification Class,CA-CL,Dimension,dimension,5,0,,top-level
-I_CLFNCLASSSTATUSSTDVH,Status of Classification Class,Status of Classification Class,CA-CL,,value_help,3,0,,top-level
-I_CLFNCLASSSTATUSTEXT,Status of Classification Class - Text,Status of Classification Class - Text,CA-CL,,text,7,0,,top-level
-I_CLFNCLASSTYPEBASIC,Class Type Basic of Classification,Class Type Basic of Classification,CA-CL,Dimension,dimension,9,0,,top-level
-I_CLFNCLASSTYPESTDVH,Class Type of Classification,Class Type of Classification,CA-CL,,value_help,2,0,,top-level
-I_CLFNCLASSTYPETEXT,Class Type of Classification - Text,Class Type of Classification - Text,CA-CL,,text,5,0,,top-level
-I_CLFNOBJECTCHARCVALFORKEYDATE,Clfn Charc Val of Obj for Key Date,Clfn Charc Val of Obj for Key Date,CA-CL,,basic,29,0,,top-level
-I_CLFNOBJECTCHARCVALUE,Clfn Characteristic Value of Object,Clfn Characteristic Value of Object,CA-CL,,basic,31,0,,top-level
-I_CLFNOBJECTCHARCVALUEDEX,Clfn Characteristic Value of Object DEX,Clfn Characteristic Value of Object DEX,CA-CL,Fact,fact,30,0,,top-level
-I_CLFNOBJECTCLASS,Classification Class of Object,Classification Class of Object,CA-CL,,basic,16,0,,top-level
-I_CLFNOBJECTCLASSDEX,Clfn Class Assignment of Object DEX,Clfn Class Assignment of Object DEX,CA-CL,Fact,fact,16,0,,top-level
-I_CLFNOBJECTCLASSFORKEYDATE,Clfn Class of Object for Key Date,Clfn Class of Object for Key Date,CA-CL,,basic,14,0,,top-level
-I_ENGMNTPROJCHANGEDOCDEX,Change Documents in Engagement Projects,Change Documents in Engagement Projects,CA-CPD-SS,Fact,fact,21,0,,top-level
-I_DOCINFORECDDOCNMBRSTDVH,Document Info Record Document Number,Document Info Record Document Number,CA-DMS,,value_help,3,0,,top-level
-I_DOCINFORECDDOCPRTSTDVH,Document Info Record Document Part,Document Info Record Document Part,CA-DMS,,value_help,7,0,,top-level
-I_DOCINFORECDDOCTYPESTDVH,Document Info Record Document Type,Document Info Record Document Type,CA-DMS,,value_help,2,0,,top-level
-I_DOCINFORECDDOCVERSSTDVH,Document Info Record Document Version,Document Info Record Document Version,CA-DMS,,value_help,5,0,,top-level
-I_DOCINFORECDOBJTYPETODOCTYPE,Document types associated to object type,Document types associated to object type,CA-DMS,,basic,5,0,,top-level
-I_DOCINFORECORDACCMSECIDASGT,Doc Info Record SecureID Assingment,Doc Info Record SecureID Assingment,CA-DMS,,basic,12,0,,top-level
-I_DOCUMENTINFORECORD,Document Info Record Details,Document Info Record Details,CA-DMS,Dimension,dimension,41,0,,top-level
-I_DOCUMENTINFORECORDACCMACTV,Document Info Record LogAccM Active,Document Info Record LogAccM Active,CA-DMS,,basic,2,0,,top-level
-I_DOCUMENTINFORECORDAUTHZNGRP,Document Info Record Authorization Group,Document Info Record Authorization Group,CA-DMS,Dimension,dimension,3,0,,top-level
-I_DOCUMENTINFORECORDAUTHZNGRPT,Document Info Record Authzn Group - Text,Document Info Record Authzn Group - Text,CA-DMS,,basic,6,0,,top-level
-I_DOCUMENTINFORECORDCADSTS,Document Info Record CAD Status,Document Info Record CAD Status,CA-DMS,Dimension,dimension,2,0,,top-level
-I_DOCUMENTINFORECORDCADSTST,Document Info Record CAD Status - Text,Document Info Record CAD Status - Text,CA-DMS,,basic,5,0,,top-level
-I_DOCUMENTINFORECORDDELTNSTS,Document Info Record Delete Status,Document Info Record Delete Status,CA-DMS,Dimension,dimension,2,0,,top-level
-I_DOCUMENTINFORECORDDELTNSTST,Delete Status Description - Text,Delete Status Description - Text,CA-DMS,,basic,5,0,,top-level
-I_DOCUMENTINFORECORDDESC,Document Info Record Description,Document Info Record Description,CA-DMS,,basic,13,0,,top-level
-I_DOCUMENTINFORECORDDOCNUMBER,Document Info Record Document Number,Document Info Record Document Number,CA-DMS,Dimension,dimension,4,0,,top-level
-I_DOCUMENTINFORECORDDOCPRT,Document Info Record Document Part,Document Info Record Document Part,CA-DMS,Dimension,dimension,10,0,,top-level
-I_DOCUMENTINFORECORDDOCSTATUS,Document Info Record Document Status,Document Info Record Document Status,CA-DMS,Dimension,dimension,6,0,,top-level
-I_DOCUMENTINFORECORDDOCSTATUST,Document Info Record Document Sts - Text,Document Info Record Document Sts - Text,CA-DMS,,basic,6,0,,top-level
-I_DOCUMENTINFORECORDDOCTYPE,Document Info Record Document Type,Document Info Record Document Type,CA-DMS,Dimension,dimension,5,0,,top-level
-I_DOCUMENTINFORECORDDOCTYPET,Document Info Record Document Type - Txt,Document Info Record Document Type - Txt,CA-DMS,,basic,5,0,,top-level
-I_DOCUMENTINFORECORDDOCVERSION,Document Info Record Document Version,Document Info Record Document Version,CA-DMS,Dimension,dimension,6,0,,top-level
-I_DOCUMENTINFORECORDINDSTS,Document Indicator Status,Document Indicator Status,CA-DMS,,basic,8,0,,top-level
-I_DOCUMENTINFORECORDINDSTST,Document Indicator Status Description - Text,Document Indicator Status Description - Text,CA-DMS,,basic,14,0,,top-level
-I_DOCUMENTINFORECORDLBTRYOFFC,Document Info Record Laboratory Office,Document Info Record Laboratory Office,CA-DMS,Dimension,dimension,2,0,,top-level
-I_DOCUMENTINFORECORDLBTRYOFFCT,Document Info Record Lbtry Office - Text,Document Info Record Lbtry Office - Text,CA-DMS,,basic,5,0,,top-level
-I_DOCUMENTINFORECORDOBJECTLINK,Document Info Record Object Link,Document Info Record Object Link,CA-DMS,,basic,26,0,,top-level
-I_DOCUMENTINFORECORDOBJLINKT,Document Info Record Object Link - Text,Document Info Record Object Link - Text,CA-DMS,,basic,5,0,,top-level
-I_DOCUMENTINFORECORDOBJLINKVH,Document Info Record ObjectLink,Document Info Record ObjectLink,CA-DMS,Dimension,value_help,6,0,,top-level
-I_DOCUMENTINFORECORDSTRUCSTS,Document Info Record Structure Status,Document Info Record Structure Status,CA-DMS,Dimension,dimension,2,0,,top-level
-I_DOCUMENTINFORECORDSTRUCSTST,Document Info Record Struc Status - Text,Document Info Record Struc Status - Text,CA-DMS,,basic,5,0,,top-level
-I_DOCUMENTINFORECORDUAUTHACCM,Document Info Record User Authorization,Document Info Record User Authorization,CA-DMS,,basic,20,0,,top-level
-I_DOCUMENTINFORECORDUSERVH,Document Info Record User,Document Info Record User,CA-DMS,Dimension,value_help,16,0,,top-level
-I_MDSUBSTNSTS,Master Data Substitution Status,Master Data Substitution Status,CA-EPT-SUB,Dimension,dimension,3,0,,top-level
-I_MDSUBSTNSTSTEXT,Master Data Substitution Status - Text,Master Data Substitution Status - Text,CA-EPT-SUB,,text,6,0,,top-level
-I_FLDLOGSSUPPLIERITEM,Field Logistics Supplier Items,Field Logistics Supplier Items,CA-FL-SRV,,basic,44,1,Business Partner; Plant; Supplier,top-level
-I_BUSPARTADDRDEPDNTTAXNMBR,BP Address Dependent Tax Numbers,BP Address Dependent Tax Numbers,CA-GTF-CSC,,basic,8,0,Address; Business Partner,top-level
-I_BUSPARTADDRDEPDNTTAXTYPEVH,BP Address Dependent Tax Category,BP Address Dependent Tax Category,CA-GTF-CSC,,value_help,2,0,,top-level
-I_CH_ELECTRONICDOCINCGINVOICE,Switzerland Incoming Invoice,Switzerland Incoming Invoice,CA-GTF-CSC-EDO-CH,,basic,19,0,,top-level
-I_CH_ELECTRONICDOCINVOICE,Switzerland Invoice,Switzerland Invoice,CA-GTF-CSC-EDO-CH,,basic,25,0,,top-level
-I_CO_ELECTRONICDOCINCGINVOICE,Colombia Incoming Invoice,Colombia Incoming Invoice,CA-GTF-CSC-EDO-CO,,basic,8,0,,top-level
-I_CO_ELECTRONICDOCINVOICE,Colombia Invoice,Colombia Invoice,CA-GTF-CSC-EDO-CO,,basic,8,0,,top-level
-I_CO_ELECTRONICDOCPAYROLL,Colombia ePayroll Transmission,Colombia ePayroll Transmission,CA-GTF-CSC-EDO-CO,,basic,11,0,,top-level
-I_GR_ELECTRONICDOCINVOICE,eDocument Greece Country/Region Specific Data,eDocument Greece Country/Region Specific Data,CA-GTF-CSC-EDO-GR,,basic,55,0,Company Code,top-level
-I_HU_ELECTRONICDOCINVOICE,Hungary Invoice,Hungary Invoice,CA-GTF-CSC-EDO-HU,,basic,10,0,Company Code,top-level
-I_IN_ELECTRONICDOCTRANSPTREGN,India eWay Bill details,India eWay Bill details,CA-GTF-CSC-EDO-IN-EW,,basic,50,0,Company Code,top-level
-I_IN_ELECTRONICDOCINVOICE,India eInvoice details,India eInvoice details,CA-GTF-CSC-EDO-IN-IV,,basic,34,0,Company Code,top-level
-I_IT_ELECTRONICDOCINCGINVOICE,Italy Incoming Invoice,Italy Incoming Invoice,CA-GTF-CSC-EDO-IT,,basic,19,0,,top-level
-I_IT_ELECTRONICDOCINVOICE,Italy Fattura,Italy Fattura,CA-GTF-CSC-EDO-IT,,basic,17,1,Company Code,top-level
-I_CALENDARDATE,Date,Date,CA-GTF-DF,Dimension,dimension,22,0,,top-level
-I_CALENDARMONTH,Calendar Month,Calendar Month,CA-GTF-DF,Dimension,dimension,3,0,,top-level
-I_CALENDARMONTHTEXT,Calendar Month Text,Calendar Month Text,CA-GTF-DF,,text,6,0,,top-level
-I_CALENDARMONTHVH,Value Help CDS for Calendar Month,Value Help CDS for Calendar Month,CA-GTF-DF,,value_help,2,0,,top-level
-I_CALENDARQUARTER,Quarter,Quarter,CA-GTF-DF,Dimension,dimension,3,0,,top-level
-I_CALENDARQUARTERTEXT,Calendar Quarter text,Calendar Quarter text,CA-GTF-DF,,text,6,0,,top-level
-I_CALENDARYEAR,Year,Year,CA-GTF-DF,Dimension,dimension,3,0,,top-level
-I_DATEFUNCTIONVALUE,Date Function values,Date Function values,CA-GTF-DF,Dimension,dimension,5,0,,top-level
-I_SGLGREGORIANCALDATEFUNCTION,Execute Single Function,Execute Single Function,CA-GTF-DF,,basic,5,0,,top-level
-I_SHIFTEDCALENDARDATE,Shifted Calendar Date,Shifted Calendar Date,CA-GTF-DF,,basic,2,0,,top-level
-I_WEEKDAY,Week Day,Week Day,CA-GTF-DF,Dimension,dimension,2,0,,top-level
-I_WEEKDAYTEXT,Week Day Text,Week Day Text,CA-GTF-DF,,text,5,0,,top-level
-I_YEARMONTH,Year Month,Year Month,CA-GTF-DF,Dimension,dimension,11,0,,top-level
-I_PAYMENTADVICE,Payment Advice Header,Payment Advice Header,CA-GTF-FXU-FI-AR,,basic,57,0,Company Code,top-level
-I_PAYMENTADVICEITEM,Payment Advice Item,Payment Advice Item,CA-GTF-FXU-FI-AR,,basic,71,0,Billing Document; Business Area; Company Code; Delivery; Fiscal Year; Tax Code,top-level
-I_COSTCENTERCHANGELOG,Cost Center Change Log,Cost Center Change Log,CA-GTF-FXU-FI-CO,,basic,33,0,Business Area; Company Code; Controlling Area; Cost Center,top-level
-I_FISCALCALENDARDATE,Fiscal Calendar Date,Fiscal Calendar Date,CA-GTF-GL-CAL,Dimension,dimension,31,0,Fiscal Year,top-level
-I_FISCALDATEFUNCTION,Fiscal Date Function,Fiscal Date Function,CA-GTF-GL-CAL,Dimension,dimension,18,0,,top-level
-I_FISCALDATEFUNCTIONTEXT,Fiscal Date Function Text,Fiscal Date Function Text,CA-GTF-GL-CAL,,text,5,0,,top-level
-I_FISCALDATEFUNCTIONVALUE,Fiscal Date Function values,Fiscal Date Function values,CA-GTF-GL-CAL,Dimension,dimension,24,0,Fiscal Year,top-level
-I_FISCALPERIODFORVARIANT,Fiscal Period For Fiscal Year Variant,Fiscal Period For Fiscal Year Variant,CA-GTF-GL-CAL,Dimension,dimension,15,0,Fiscal Year,top-level
-I_FISCALPERIODTEXT,Fiscal Period Text,Fiscal Period Text,CA-GTF-GL-CAL,,text,8,0,Fiscal Year,top-level
-I_FISCALQUARTER,Fiscal Quarter - Text,Fiscal Quarter,CA-GTF-GL-CAL,Dimension,dimension,3,0,,top-level
-I_FISCALQUARTERFORVARIANT,Fiscal Quarter with Next Fiscal Quarter,Fiscal Quarter with Next Fiscal Quarter,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level
-I_FISCALQUARTERTEXT,Fiscal Quarter - Text,Fiscal Quarter - Text,CA-GTF-GL-CAL,,text,5,0,,top-level
-I_FISCALWEEK,Fiscal Week,Fiscal Week,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level
-I_FISCALWEEKFORVARIANT,Fiscal Week with Next Fiscal Week,Fiscal Week with Next Fiscal Week,CA-GTF-GL-CAL,Dimension,dimension,16,0,Fiscal Year,top-level
-I_FISCALYEAR,Fiscal Year with Next Fiscal Year,Fiscal Year with Next Fiscal Year,CA-GTF-GL-CAL,Dimension,dimension,9,0,Fiscal Year,top-level
-I_FISCALYEARFORVARIANT,Fiscal Year For Fiscal Year Variant,Fiscal Year For Fiscal Year Variant,CA-GTF-GL-CAL,Dimension,dimension,5,0,Fiscal Year,top-level
-I_FISCALYEARPERIOD,Fiscal Year Period,Fiscal Year Period,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level
-I_FISCALYEARPERIODFORVARIANT,Fiscal Year Period For Fiscal Year Variant,Fiscal Year Period For Fiscal Year Variant,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level
-I_FISCALYEARPERIODTEXT,Fiscal Year Period Text,Fiscal Year Period Text,CA-GTF-GL-CAL,,text,8,0,Fiscal Year,top-level
-I_FISCALYEARQUARTER,Fiscal Year Quarter with Next Fiscal Year Quarter,Fiscal Year Quarter with Next Fiscal Year Quarter,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level
-I_FISCALYEARQUARTERFORVARIANT,Fiscal Year Quarter with Next Fiscal Year Quarter,Fiscal Year Quarter with Next Fiscal Year Quarter,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level
-I_FISCALYEARWEEK,Fiscal Year Week with Next Fiscal Year Week,Fiscal Year Week with Next Fiscal Year Week,CA-GTF-GL-CAL,Dimension,dimension,16,0,Fiscal Year,top-level
-I_FISCALYEARWEEKFORVARIANT,Fiscal Year Week with Next Fiscal Year Week,Fiscal Year Week with Next Fiscal Year Week,CA-GTF-GL-CAL,Dimension,dimension,16,0,Fiscal Year,top-level
-I_LISTEDDRVTVPRICEQUOTATION,Listed Derivatives Price Quotation,Listed Derivatives Price Quotation,CA-GTF-TRB,Cube,cube,18,0,,top-level
-I_STATUSOBJECTSTATUSCHANGE,Change Docs for System or User Status,Change Docs for System or User Status,CA-GTF-VDM,Fact,fact,9,0,,top-level
-I_STATUSPROFILE,Status Profile,Status Profile,CA-GTF-VDM,Dimension,dimension,4,0,,top-level
-I_STATUSPROFILETEXT,Status Profile - Text,Status Profile - Text,CA-GTF-VDM,,text,5,0,,top-level
-I_SYSTEMSTATUS,System Status,System Status,CA-GTF-VDM,Dimension,dimension,3,0,,top-level
-I_SYSTEMSTATUSTEXT,System Status - Text,System Status - Text,CA-GTF-VDM,,text,6,0,,top-level
-I_TEXTOBJECTCATEGORY,Text Object Category,Text Object Category,CA-GTF-VDM,Dimension,dimension,2,0,,top-level
-I_TEXTOBJECTCATEGORYTEXT,Text Object Category - Text,Text Object Category - Text,CA-GTF-VDM,,text,5,0,,top-level
-I_TEXTOBJECTTYPE,Text Object Type,Text Object Type,CA-GTF-VDM,Dimension,dimension,4,0,,top-level
-I_TEXTOBJECTTYPETEXT,Text Object Type - Text,Text Object Type - Text,CA-GTF-VDM,,text,7,0,,top-level
-I_USERSTATUS,User Status,User Status,CA-GTF-VDM,Dimension,dimension,8,0,,top-level
-I_USERSTATUSTEXT,User Status - Text,User Status - Text,CA-GTF-VDM,,text,8,0,,top-level
-I_JNTOPGAGRMT,Joint Operating Agreement,Joint Operating Agreement,CA-JVA,Dimension,dimension,37,0,Company Code,top-level
-I_JNTOPGAGRMTCLASS,Joint Operating Agreement Class,Joint Operating Agreement Class,CA-JVA,Dimension,dimension,5,0,Company Code,top-level
-I_JNTOPGAGRMTCLASSTEXT,Joint Operating Agreement Class - Text,Joint Operating Agreement Class - Text,CA-JVA,,text,7,0,Company Code,top-level
-I_JNTOPGAGRMTPNLTYCATRCVRYPCT,Penalty Category Recovery Percentage,Penalty Category Recovery Percentage,CA-JVA,Dimension,dimension,9,0,Company Code,top-level
-I_JNTOPGAGRMTTEXT,Joint Operating Agreement - Text,Joint Operating Agreement - Text,CA-JVA,,text,8,0,Company Code,top-level
-I_JNTVNTRBUSINESSPARTNER,Joint Venture Business Partner,Joint Venture Business Partner,CA-JVA,Dimension,dimension,29,0,Company Code; Tax Code,top-level
-I_JNTVNTREQUITYGRP,Joint Venture Equity Group,Joint Venture Equity Group,CA-JVA,,basic,19,0,Company Code,top-level
-I_JNTVNTREQUITYGRPTEXT,Equity Group - Text,Equity Group - Text,CA-JVA,,text,9,0,Company Code,top-level
-I_JNTVNTREQUITYTYPEDESC,Joint Venture Equity Type - Text,Joint Venture Equity Type - Text,CA-JVA,,basic,7,0,Company Code,top-level
-I_JNTVNTREQUITYTYPEMASTER,Joint Venture Equity Type,Joint Venture Equity Type,CA-JVA,Dimension,dimension,4,0,Company Code,top-level
-I_JNTVNTRPARTOWNREQUITYSHR,Joint Venture Owner Equity Share,Joint Venture Owner Equity Share,CA-JVA,,basic,32,0,Company Code,top-level
-I_JNTVNTRPENALTYCATEGORY,Penalty Category in JVA,Penalty Category in JVA,CA-JVA,Dimension,dimension,4,0,Company Code,top-level
-I_JNTVNTRPENALTYCATEGORYTEXT,Penalty Category in JVA - Text,Penalty Category in JVA - Text,CA-JVA,,text,7,0,Company Code,top-level
-I_JNTVNTRVALDINVMTGRP,Joint Ventures Valid Investment Groups,Joint Ventures Valid Investment Groups,CA-JVA,Dimension,dimension,16,0,Company Code,top-level
-I_JNTVNTRVALUEHELP,Joint Venture,Joint Venture,CA-JVA,Dimension,dimension,8,0,Company Code,top-level
-I_JOINTVENTUREDESC,Joint Venture - Text,Joint Venture - Text,CA-JVA,,basic,7,0,Company Code,top-level
-I_JOINTVENTUREDETAILS,Master Data for Joint Venture,Master Data for Joint Venture,CA-JVA,,basic,49,0,Company Code; Payment Terms; Tax Code,top-level
-I_JOINTVENTUREMASTERFLD,Joint Venture Master Data Fields,Joint Venture Master Data Fields,CA-JVA,Dimension,dimension,43,0,Company Code; Payment Terms; Tax Code; WBS Element,top-level
-I_JVACARRIEDINTEREST,Carried Interest,Carried Interest,CA-JVA,,basic,13,0,Company Code,top-level
-I_JVACTBCKACCTMAPPGINTER,Cutback Account Mapping Intercompany,Cutback Account Mapping Intercompany,CA-JVA,Dimension,dimension,11,0,Company Code,top-level
-I_JVACTBCKACCTMAPPGINTRA,Cutback Account Mapping Intracompany,Cutback Account Mapping Intracompany,CA-JVA,Dimension,dimension,9,0,Company Code,top-level
-I_JVACTBCKCOAACCTMAPPGINTER,Cutback Account Mapping COA Intercompany,Cutback Account Mapping COA Intercompany,CA-JVA,Dimension,dimension,11,0,Chart of Accounts,top-level
-I_JVACTBCKCOAACCTMAPPGINTRA,Cutback Account Mapping COA Intracompany,Cutback Account Mapping COA Intracompany,CA-JVA,Dimension,dimension,9,0,Chart of Accounts,top-level
-I_JVACTBCKCOSTCTRMAPPGINTER,Cutback Cost Center Mapping Intercompany,Cutback Cost Center Mapping Intercompany,CA-JVA,Dimension,dimension,17,0,Company Code; Controlling Area; WBS Element,top-level
-I_JVACTBCKCOSTCTRMAPPGINTRA,Cutback Cost Center Mapping Intracompany,Cutback Cost Center Mapping Intracompany,CA-JVA,Dimension,dimension,14,0,Company Code; Controlling Area; WBS Element,top-level
-I_JVACTBCKORDMAPPGINTER,Cutback Order Mapping Intercompany,Cutback Order Mapping Intercompany,CA-JVA,Dimension,dimension,16,0,Company Code; Controlling Area; WBS Element,top-level
-I_JVACTBCKORDMAPPGINTRA,Cutback Order Mapping Intracompany,Cutback Order Mapping Intracompany,CA-JVA,Dimension,dimension,14,0,Company Code; Controlling Area; WBS Element,top-level
-I_JVACTBCKWBSMAPPGINTER,Cutback WBS Mapping Intercompany,Cutback WBS Mapping Intercompany,CA-JVA,Dimension,dimension,16,0,Company Code; Controlling Area; WBS Element,top-level
-I_JVACTBCKWBSMAPPGINTRA,Cutback WBS Mapping Intracompany,Cutback WBS Mapping Intracompany,CA-JVA,Dimension,dimension,14,0,Company Code; Controlling Area; WBS Element,top-level
-I_JVAGLOBALCOMPANYPARAMETER,JV Global Company Parameter C1,JV Global Company Parameter C1,CA-JVA,,basic,86,0,Company Code; WBS Element,top-level
-I_JVAJNTINTERESTBILLINGDATA,JVA Joint Interest Billing Report,JVA Joint Interest Billing Report,CA-JVA,,basic,102,0,Company Code; Controlling Area; Fiscal Year; G/L Account,top-level
-I_JVAJOINTINTERESTBILLINGCLASS,JVA JIB or JIBE Subclass,JVA JIB or JIBE Subclass,CA-JVA,,basic,3,0,Company Code,top-level
-I_JVAJOINTOPERATINGAGRMTDET_2,JVA and cost object MD information,JVA and cost object MD information,CA-JVA,Cube,cube,86,0,Company Code; Payment Terms; Tax Code; WBS Element,top-level
-I_JVAVALUATIONAREA,JVA Valuation Area,JVA Valuation Area,CA-JVA,,basic,3,0,Company Code; Valuation Area,top-level
-I_JVAVALUATIONAREACOSTOBJECT,Cost Object from Valuation Area or Type,Cost Object from Valuation Area or Type,CA-JVA,,basic,9,0,Cost Center; Order (production / maintenance / internal); Valuation Area,top-level
-I_JVAVALUATIONTYPE,JVA Valuation Type,JVA Valuation Type,CA-JVA,Dimension,dimension,4,0,,top-level
-I_JVAVENTURECOSTOBJECTDETS_2,Joint Venture Cost Object Details,Joint Venture Cost Object Details,CA-JVA,Cube,cube,52,0,Company Code; Controlling Area; Cost Center; Functional Area; Order (production / maintenance / internal); Profit Center; WBS Element,top-level
-I_JVAVNTRINTCOVNTR,Venture Intercompany Venture,Venture Intercompany Venture,CA-JVA,,basic,16,0,Company Code,top-level
-I_JVAINFORECORDATTACHLINK,JVABILLING Attachment Service,JVABILLING Attachment Service,CA-JVA-JVA,,basic,15,0,Company Code,top-level
-I_TIMEOVERVIEWBYWRKAGRMTANDDTE,Availability of a Person Work Agreement,Availability of a Person Work Agreement,CA-TS-S4,Fact,fact,13,0,,top-level
-I_TIMESHEET,Time Sheet,Time Sheet,CA-TS-S4,Fact,fact,24,0,Activity Type; Personnel; WBS Element,top-level
-I_TIMESHEETOVERTIMECAT,Overtime Category for Timesheet,Overtime Category for Timesheet,CA-TS-S4,,basic,2,0,,top-level
-I_TIMESHEETOVERTIMECATTEXT,Overtime Category for Timesheet - Text,Overtime Category for Timesheet - Text,CA-TS-S4,,text,3,0,,top-level
-I_TIMESHEETRECORD,Time Recording Data,Time Recording Data,CA-TS-S4,Fact,fact,57,0,Activity Type; Company Code; Controlling Area; Personnel; WBS Element,top-level
-I_TIMESHEETRECORDLONGTEXT,Note of a Timesheet Record - Text,Note of a Timesheet Record - Text,CA-TS-S4,,text,5,0,,top-level
-I_TIMESHEETREJECTIONREASONTEXT,Rejection Reason for Timesheet - Text,Rejection Reason for Timesheet - Text,CA-TS-S4,,text,4,0,,top-level
-I_TIMESHEETSTATUSTEXT,Status for Timesheet Record - Text,Status for Timesheet Record - Text,CA-TS-S4,,text,3,0,,top-level
-I_TIMESHEETTASKTYPE,Task Type for Timesheet,Task Type for Timesheet,CA-TS-S4,,basic,4,0,,top-level
-I_TIMESHEETTASKTYPERELEVANCE,Task Type Relevance for Timesheet,Task Type Relevance for Timesheet,CA-TS-S4,Dimension,dimension,3,0,,top-level
-I_TIMESHEETTASKTYPERLVNCETEXT,Task Type Relevance for Timesheet - Text,Task Type Relevance for Timesheet - Text,CA-TS-S4,,text,6,0,,top-level
-I_TIMESHEETTASKTYPETEXT,Task Type for Timesheet - Text,Task Type for Timesheet - Text,CA-TS-S4,,text,5,0,,top-level
-I_TIMESHEETWRKLOC,Work Location for Timesheet,Work Location for Timesheet,CA-TS-S4,,basic,8,0,,top-level
-I_TIMESHEETWRKLOCTEXT,Work Location for Timesheet - Text,Work Location for Timesheet - Text,CA-TS-S4,,text,6,0,,top-level
-I_PERSONWORKAGREEMENT_1,Person Work Agreement Details,Person Work Agreement Details,CA-WFD,Dimension,dimension,16,0,Business Partner,top-level
-I_PERSONWORKAGRMTORGLDETAILS,Person Work Agreement Organization Details,Person Work Agreement Organization Details,CA-WFD,Dimension,dimension,12,0,Company Code; Cost Center,top-level
-I_PERSONWORKAGRMTPLNDWRKGTIME,Work Agreement Planned Working time,Work Agreement Planned Working time,CA-WFD,Dimension,dimension,7,0,,top-level
-I_PERSONWORKAGRMTTOEXTERNALID,Mapping between Work agrrement internal and External IDs,Mapping between Work agrrement internal and External IDs,CA-WFD,Dimension,dimension,5,0,Company Code,top-level
-I_PERSWRKAGRMTMANAGERFORKEYDTE,Retrieve manager for given date,Retrieve manager for given date,CA-WFD,Dimension,dimension,6,1,,top-level
-I_WORKASSIGNMENTADDRESS,Work Assignment Address Details,Work Assignment Address Details,CA-WFD-BL,,basic,44,0,Address; Business Partner,top-level
-I_WORKASSIGNMENTDETAIL,Work Assignment Details,Work Assignment Details,CA-WFD-BL,,basic,15,0,Company Code; Cost Center,top-level
-I_WORKASSIGNMENT_1,Work Assignments,Work Assignments,CA-WFD-BL,,basic,9,0,,top-level
-I_WORKFORCEPERSONADDRESS,Workforce Person Address Details,Workforce Person Address Details,CA-WFD-BL,,basic,40,0,Address; Business Partner,top-level
-I_WORKFORCEPERSONSKILLTAG,Workforce Person Skill Tag,Workforce Person Skill Tag,CA-WFD-BL,,basic,6,0,Business Partner,top-level
-I_WORKFORCEPERSON_1,Workforce Person,Workforce Person,CA-WFD-BL,,basic,23,0,Business Partner,top-level
-I_WRKASSGMTPAYMENTDETAIL,Work Assignment Payment Details,Work Assignment Payment Details,CA-WFD-BL,,basic,19,0,,top-level
-I_WRKASSGMTSRVCCOSTLVL_1,Workforce Person Service Cost Level,Workforce Person Service Cost Level,CA-WFD-BL,,basic,9,0,,top-level
-I_WRKASSGMTWRKORDERDETAIL,Assignment Work Order Details,Assignment Work Order Details,CA-WFD-BL,,basic,9,0,Business Partner,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_ATPCHECKINGGROUP,ATP Checking Group,ATP Checking Group,CA-ATP-2CL,,basic,3,0,,top-level,yes,ATP_CONTROL,no
+I_ATPCHECKINGGROUPTEXT,ATP Checking Group - Text,ATP Checking Group - Text,CA-ATP-2CL,,text,5,0,,top-level,yes,ATP_CONTROL,no
+I_SDSCHEDULELINEWTHOPENRQMTQTY,Schedule Line With Open Rqmt Qty for SD,Schedule Line With Open Rqmt Qty for SD,CA-ATP-2CL,,basic,36,0,Batch; Customer; Material / Product; Plant; Sales Document; Sales Document Type; Storage Location; WBS Element,top-level,yes,ATP_COMMON,yes
+I_AVAILYCHGLOG,Availability Change Log,Availability Change Log,CA-ATP-ACL-2CL,,basic,10,0,Material / Product; Plant,top-level,yes,ATP_NCF_VDM,no
+I_AVAILYCHGLOGCAT,Availability Change Log Category,Availability Change Log Category,CA-ATP-ACL-2CL,,basic,3,0,,top-level,yes,ATP_NCF_VDM,no
+I_AVAILYCHGLOGCATTEXT,Availability Change Log Cat - Text,Availability Change Log Cat - Text,CA-ATP-ACL-2CL,,text,6,0,,top-level,yes,ATP_NCF_VDM,no
+I_AVAILYCHGLOGTMESTMP,Availability Change Log Time Stamp,Availability Change Log Time Stamp,CA-ATP-ACL-2CL,,basic,3,0,,top-level,yes,ATP_NCF_VDM,no
+I_OBJVALDETNACTIVATIONSTATUS,Activation Status,Activation Status,CA-ATP-OVD-2CL,Dimension,dimension,3,0,,top-level,yes,ATP_OVD_VDM_COMMON,yes
+I_OBJVALDETNACTIVATIONSTSTEXT,Activation Status - Text,Activation Status - Text,CA-ATP-OVD-2CL,,text,6,0,,top-level,yes,ATP_OVD_VDM_COMMON,yes
+D_CHARCVALCOMBNDELACTVENTITYP,Value Combination Delete Active Entity Parameter,Value Combination Delete Active Entity Parameter,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_OBJECT,no
+D_TMESERSDELETEACTIVEENTITYP,Time Series Delete Active Entity Parameter,Time Series Delete Active Entity Parameter,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_OBJECT,no
+I_COLLECTIVEALLOCATIONTYPE,Collective Allocation Type,Collective Allocation Type,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_COLLECTIVEALLOCATIONTYPET,Collective Allocation Type - Text,Collective Allocation Type - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_HRZCONSUMPTIONDIRECTION,Horizontal Consumption Direction,Horizontal Consumption Direction,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_HRZCONSUMPTIONDIRECTIONT,Horizontal Consumption Direction - Text,Horizontal Consumption Direction - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCACTIVATIONSTATUS,Product Allocation Activation Status,Product Allocation Activation Status,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCACTIVATIONSTATUST,Product Allocation Activation Status - Text,Product Allocation Activation Status - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCATIONOBJECTTP_2,Product Allocation Object,Product Allocation Object,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_OBJECT,no
+I_PRODALLOCATIONOBJECTTXTTP_2,Product Allocation Object - Text,Product Allocation Object - Text,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_OBJECT,no
+I_PRODALLOCATIONSEQUENCETP_2,Product Allocation Sequence,Product Allocation Sequence,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_SEQUENCE,no
+I_PRODALLOCCHARCCSTRTSTATUS,Product Allocation Characteristic Constraint Status,Product Allocation Characteristic Constraint Status,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHARCCSTRTSTATUST,Product Allocation Characteristic Constraint Status - Text,Product Allocation Characteristic Constraint Status - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHARCMETADATATP_2,Product Allocation Object Meta Data,Product Allocation Object Meta Data,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_OBJECT,no
+I_PRODALLOCCHARCVALCOMBNTP_2,Product Allocation Characteristic Value Combination,Product Allocation Characteristic Value Combination,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_OBJECT,no
+I_PRODALLOCCHECKDATETIMETYPE,Product Allocation Check Date Time Type,Product Allocation Check Date Time Type,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHECKDATETIMETYPET,Product Allocation Check Date Time Type - Text,Product Allocation Check Date Time Type - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHECKMETHOD,Product Allocation Check Method,Product Allocation Check Method,CA-ATP-PAL-2CL,Dimension,dimension,3,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHECKMETHODT,Product Allocation Check Method - Text,Product Allocation Check Method - Text,CA-ATP-PAL-2CL,,basic,6,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHKDATASNPSHTTYPE,Product Allocation Check Data Snapshot Type,Product Allocation Check Data Snapshot Type,CA-ATP-PAL-2CL,Dimension,dimension,3,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHKDATASNPSHTTYPET,Product Allocation Check Data Snapshot Type - Text,Product Allocation Check Data Snapshot Type - Text,CA-ATP-PAL-2CL,,basic,6,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHKPERDCNSMPNTYPE,Product Allocation Check Period Consumption Type,Product Allocation Check Period Consumption Type,CA-ATP-PAL-2CL,Dimension,dimension,3,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHKPERDCNSMPNTYPET,Product Allocation Check Period Consumption Type - Text,Product Allocation Check Period Consumption Type - Text,CA-ATP-PAL-2CL,,basic,6,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHKRSTRCNSTATUS,Product Allocation Check Restriction Status,Product Allocation Check Restriction Status,CA-ATP-PAL-2CL,Dimension,dimension,3,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCHKRSTRCNSTATUST,Product Allocation Check Restriction Status - Text,Product Allocation Check Restriction Status - Text,CA-ATP-PAL-2CL,,basic,6,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCONSISTENCYSTATUS,Product Allocation Consistency Status,Product Allocation Consistency Status,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCCONSISTENCYSTATUST,Product Allocation Consistency Status - Text,Product Allocation Consistency Status - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCLIFECYCLESTATUS,Product Allocation Lifecycle Status,Product Allocation Lifecycle Status,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCLIFECYCLESTATUST,Product Allocation Lifecycle Status - Text,Product Allocation Lifecycle Status - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_PRODALLOCOBJTIMESERIESTP_2,Product Allocation Object Time Series,Product Allocation Object Time Series,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_OBJECT,no
+I_PRODALLOCSEQUENCETXTTP_2,Product Allocation Sequence - Text,Product Allocation Sequence - Text,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_SEQUENCE,no
+I_PRODALLOCSQNCASSGMTTP_2,Product Allocation Sequence Assignment,Product Allocation Sequence Assignment,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_SEQUENCE,no
+I_PRODALLOCSQNCCSTRTTP_2,Product Allocation Sequence Constraint,Product Allocation Sequence Constraint,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_SEQUENCE,no
+I_PRODALLOCSQNCCSTRTTXTTP_2,Product Allocation Constraint - Text,Product Allocation Constraint - Text,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_SEQUENCE,no
+I_PRODALLOCSQNCGROUPTP_2,Product Allocation Sequence Group,Product Allocation Sequence Group,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_SEQUENCE,no
+I_PRODALLOCSQNCGROUPTXTTP_2,Product Allocation Sequence Group - Text,Product Allocation Sequence Group - Text,CA-ATP-PAL-2CL,,basic,0,0,,top-level,yes,PRODUCT_ALLOCATION_SEQUENCE,no
+I_PRODUCTALLOCATIONPERIODTYPE,Product Allocation Period Type,Product Allocation Period Type,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_PRODUCTALLOCATIONPERIODTYPET,Product Allocation Period Type - Text,Product Allocation Period Type - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_VERTICALCONSUMPTIONDIRECTION,Vertical  Consumption Direction,Vertical  Consumption Direction,CA-ATP-PAL-2CL,Dimension,dimension,2,0,,top-level,yes,PAL_COMMON,yes
+I_VRTCONSUMPTIONDIRECTIONT,Vertical  Consumption Direction - Text,Vertical  Consumption Direction - Text,CA-ATP-PAL-2CL,Dimension,dimension,5,0,,top-level,yes,PAL_COMMON,yes
+I_BANKADDRESSTP,Bank Address Projection - TP,Bank Address Projection - TP,CA-BK-BNK,,basic,0,0,,top-level,yes,RAP_BF_BANK_PAAS_API,no
+I_BANKCHANGEDOCUMENT,Manage Banks Basic Change Logs,Manage Banks Basic Change Logs,CA-BK-BNK,,basic,18,0,,top-level,yes,VDM_BF_BANK,no
+I_BANKENHANCED,Bank Enhanced,Bank Enhanced,CA-BK-BNK,,basic,27,0,Address,top-level,yes,VDM_BF_BANK,no
+I_BANKSCRIPTEDADDRESSTP,Bank International Address Versions - TP,Bank International Address Versions - TP,CA-BK-BNK,,basic,0,0,,top-level,yes,RAP_BF_BANK_PAAS_API,no
+I_BANKTP,Bank Projection - TP,Bank Projection - TP,CA-BK-BNK,,basic,0,0,,top-level,yes,RAP_BF_BANK_PAAS_API,no
+I_BANKVH,Bank,Bank,CA-BK-BNK,,value_help,29,0,Address,top-level,yes,VDM_BF_BANK,no
+I_BANK_2,Bank,Bank,CA-BK-BNK,,basic,29,4,Address,top-level,yes,VDM_BF_BANK,no
+I_CLFNCHARACTERISTIC,Classification Characteristic,Classification Characteristic,CA-CL-2CL,,basic,52,0,Plant,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARACTERISTICDEX,Classification Characteristic DEX,Classification Characteristic DEX,CA-CL-2CL,Dimension,dimension,48,0,Plant,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARACTERISTICFORKEYDATE,Clfn Characteristic for Key Date,Clfn Characteristic for Key Date,CA-CL-2CL,,basic,52,0,Plant,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCAUTHOR,Author of Classification Characteristic,Author of Classification Characteristic,CA-CL-2CL,Dimension,dimension,3,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCAUTHORTEXT,Author of Clfn Characteristic - Text,Author of Clfn Characteristic - Text,CA-CL-2CL,,text,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCDATATYPE,Data Type of Clfn Characteristic,Data Type of Clfn Characteristic,CA-CL-2CL,Dimension,dimension,3,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCDATATYPETEXT,Data Type of Clfn Characteristic - Text,Data Type of Clfn Characteristic - Text,CA-CL-2CL,,text,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCDESC,Description of Clfn Characteristic,Description of Clfn Characteristic,CA-CL-2CL,,basic,9,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCDESCDEX,Description of Clfn Characteristic DEX,Description of Clfn Characteristic DEX,CA-CL-2CL,,basic,10,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCDESCFORKEYDATE,Description of Clfn Charc for Key Date,Description of Clfn Charc for Key Date,CA-CL-2CL,,basic,8,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCEXPONENTFORMAT,Exponent Format of Clfn Characteristic,Exponent Format of Clfn Characteristic,CA-CL-2CL,Dimension,dimension,3,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCEXPONENTFORMATTEXT,Exponent Format of Clfn Charc - Text,Exponent Format of Clfn Charc - Text,CA-CL-2CL,,text,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCGROUP,Group of Classification Characteristic,Group of Classification Characteristic,CA-CL-2CL,Dimension,dimension,3,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCGROUPSTDVH,Group of Classification Characteristic,Group of Classification Characteristic,CA-CL-2CL,,value_help,2,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCGROUPTEXT,Group of Clfn Characteristic - Text,Group of Clfn Characteristic - Text,CA-CL-2CL,,text,5,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCRESTRICTION,Restriction of Clfn Characteristic,Restriction of Clfn Characteristic,CA-CL-2CL,,basic,2,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCRESTRICTIONDEX,Restriction of Clfn Characteristic,Restriction of Clfn Characteristic,CA-CL-2CL,Dimension,dimension,3,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCSTATUS,Status of Classification Characteristic,Status of Classification Characteristic,CA-CL-2CL,Dimension,dimension,4,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCSTATUSSTDVH,Status of Classification Characteristic,Status of Classification Characteristic,CA-CL-2CL,,value_help,2,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCSTATUSTEXT,Status of Clfn Characteristic - Text,Status of Clfn Characteristic - Text,CA-CL-2CL,,text,5,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCVALINTERVALTYPE,Interval Type of Clfn Charc Value,Interval Type of Clfn Charc Value,CA-CL-2CL,Dimension,dimension,3,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCVALINTERVALTYPETEXT,Interval Type of Clfn Charc Value - Text,Interval Type of Clfn Charc Value - Text,CA-CL-2CL,,text,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCVALUE,Value of Classification Characteristic,Value of Classification Characteristic,CA-CL-2CL,,basic,32,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCVALUEDESC,Clfn Characteristic Value Description,Clfn Characteristic Value Description,CA-CL-2CL,,basic,10,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCVALUEDESCDEX,Clfn Charc Value Description DEX,Clfn Charc Value Description DEX,CA-CL-2CL,,basic,11,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCVALUEDESCFORKEYDATE,Desc of Clfn Charc Val for Key Date,Desc of Clfn Charc Val for Key Date,CA-CL-2CL,,basic,10,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCVALUEDEX,Value of Clfn Characteristic DEX,Value of Clfn Characteristic DEX,CA-CL-2CL,Dimension,dimension,31,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCHARCVALUEFORKEYDATE,Value of Clfn Charc for Key Date,Value of Clfn Charc for Key Date,CA-CL-2CL,,basic,30,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASS,Classification Class,Classification Class,CA-CL-2CL,,basic,37,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSCHARACTERISTICDEX,Characteristic of Clfn Class  DEX,Characteristic of Clfn Class  DEX,CA-CL-2CL,Dimension,dimension,18,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSCHARCBASIC,Clfn Class Characteristic Basic,Clfn Class Characteristic Basic,CA-CL-2CL,,basic,18,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSCHARCFORKEYDATE,Charc of Clfn Class for Key Date,Charc of Clfn Class for Key Date,CA-CL-2CL,,basic,16,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSDESCFORKEYDATE,Description of Clfn Class for Key Date,Description of Clfn Class for Key Date,CA-CL-2CL,,basic,4,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSDESCRIPTION,Description of Classification Class,Description of Classification Class,CA-CL-2CL,,basic,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSDESCRIPTIONDEX,Description of Classification Class DEX,Description of Classification Class DEX,CA-CL-2CL,,basic,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSDEX,Classification Class DEX,Classification Class DEX,CA-CL-2CL,Dimension,dimension,36,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSFORKEYDATE,Classification Class for Key Date,Classification Class for Key Date,CA-CL-2CL,,basic,38,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSGROUP,Group of Classification Class,Group of Classification Class,CA-CL-2CL,Dimension,dimension,3,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSGROUPSTDVH,Group of Classification Class,Group of Classification Class,CA-CL-2CL,,value_help,2,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSGROUPTEXT,Group of Classification Class - Text,Group of Classification Class - Text,CA-CL-2CL,,text,5,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSKEYWORD,Keyword of Classification Class,Keyword of Classification Class,CA-CL-2CL,,basic,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSKEYWORDDEX,Keyword of Clfn Class DEX,Keyword of Clfn Class DEX,CA-CL-2CL,,basic,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSKEYWORDFORKEYDATE,Keyword of Clfn Class for Key Date,Keyword of Clfn Class for Key Date,CA-CL-2CL,,basic,6,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSSTATUS,Status of Classification Class,Status of Classification Class,CA-CL-2CL,Dimension,dimension,5,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSSTATUSSTDVH,Status of Classification Class,Status of Classification Class,CA-CL-2CL,,value_help,3,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSSTATUSTEXT,Status of Classification Class - Text,Status of Classification Class - Text,CA-CL-2CL,,text,7,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSTYPEBASIC,Class Type Basic of Classification,Class Type Basic of Classification,CA-CL-2CL,Dimension,dimension,9,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSTYPESTDVH,Class Type of Classification,Class Type of Classification,CA-CL-2CL,,value_help,2,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNCLASSTYPETEXT,Class Type of Classification - Text,Class Type of Classification - Text,CA-CL-2CL,,text,5,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNOBJECTCHARCVALFORKEYDATE,Clfn Charc Val of Obj for Key Date,Clfn Charc Val of Obj for Key Date,CA-CL-2CL,,basic,29,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNOBJECTCHARCVALUE,Clfn Characteristic Value of Object,Clfn Characteristic Value of Object,CA-CL-2CL,,basic,31,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNOBJECTCHARCVALUEDEX,Clfn Characteristic Value of Object DEX,Clfn Characteristic Value of Object DEX,CA-CL-2CL,Fact,fact,30,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNOBJECTCLASS,Classification Class of Object,Classification Class of Object,CA-CL-2CL,,basic,16,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNOBJECTCLASSDEX,Clfn Class Assignment of Object DEX,Clfn Class Assignment of Object DEX,CA-CL-2CL,Fact,fact,16,0,,top-level,yes,NGC_CORE_VDM,yes
+I_CLFNOBJECTCLASSFORKEYDATE,Clfn Class of Object for Key Date,Clfn Class of Object for Key Date,CA-CL-2CL,,basic,14,0,,top-level,yes,NGC_CORE_VDM,yes
+I_ENGMNTPROJCHANGEDOCDEX,Change Documents in Engagement Projects,Change Documents in Engagement Projects,CA-CPD-SS,Fact,fact,21,0,,top-level,yes,CPD_CDS,yes
+I_DOCINFORECDDOCNMBRSTDVH,Document Info Record Document Number,Document Info Record Document Number,CA-DMS,,value_help,3,0,,top-level,yes,CV_VDM,yes
+I_DOCINFORECDDOCPRTSTDVH,Document Info Record Document Part,Document Info Record Document Part,CA-DMS,,value_help,7,0,,top-level,yes,CV_VDM,yes
+I_DOCINFORECDDOCTYPESTDVH,Document Info Record Document Type,Document Info Record Document Type,CA-DMS,,value_help,2,0,,top-level,yes,CV_VDM,yes
+I_DOCINFORECDDOCVERSSTDVH,Document Info Record Document Version,Document Info Record Document Version,CA-DMS,,value_help,5,0,,top-level,yes,CV_VDM,yes
+I_DOCINFORECDOBJTYPETODOCTYPE,Document types associated to object type,Document types associated to object type,CA-DMS,,basic,5,0,,top-level,yes,VDM_DMS,yes
+I_DOCINFORECORDACCMSECIDASGT,Doc Info Record SecureID Assingment,Doc Info Record SecureID Assingment,CA-DMS,,basic,12,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORD,Document Info Record Details,Document Info Record Details,CA-DMS,Dimension,dimension,41,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDACCMACTV,Document Info Record LogAccM Active,Document Info Record LogAccM Active,CA-DMS,,basic,2,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDAUTHZNGRP,Document Info Record Authorization Group,Document Info Record Authorization Group,CA-DMS,Dimension,dimension,3,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDAUTHZNGRPT,Document Info Record Authzn Group - Text,Document Info Record Authzn Group - Text,CA-DMS,,basic,6,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDCADSTS,Document Info Record CAD Status,Document Info Record CAD Status,CA-DMS,Dimension,dimension,2,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDCADSTST,Document Info Record CAD Status - Text,Document Info Record CAD Status - Text,CA-DMS,,basic,5,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDDELTNSTS,Document Info Record Delete Status,Document Info Record Delete Status,CA-DMS,Dimension,dimension,2,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDDELTNSTST,Delete Status Description - Text,Delete Status Description - Text,CA-DMS,,basic,5,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDDESC,Document Info Record Description,Document Info Record Description,CA-DMS,,basic,13,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDDOCNUMBER,Document Info Record Document Number,Document Info Record Document Number,CA-DMS,Dimension,dimension,4,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDDOCPRT,Document Info Record Document Part,Document Info Record Document Part,CA-DMS,Dimension,dimension,10,0,,top-level,yes,CV_VDM,yes
+I_DOCUMENTINFORECORDDOCSTATUS,Document Info Record Document Status,Document Info Record Document Status,CA-DMS,Dimension,dimension,6,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDDOCSTATUST,Document Info Record Document Sts - Text,Document Info Record Document Sts - Text,CA-DMS,,basic,6,0,,top-level,yes,CV_VDM,yes
+I_DOCUMENTINFORECORDDOCTYPE,Document Info Record Document Type,Document Info Record Document Type,CA-DMS,Dimension,dimension,5,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDDOCTYPET,Document Info Record Document Type - Txt,Document Info Record Document Type - Txt,CA-DMS,,basic,5,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDDOCVERSION,Document Info Record Document Version,Document Info Record Document Version,CA-DMS,Dimension,dimension,6,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDINDSTS,Document Indicator Status,Document Indicator Status,CA-DMS,,basic,8,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDINDSTST,Document Indicator Status Description - Text,Document Indicator Status Description - Text,CA-DMS,,basic,14,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDLBTRYOFFC,Document Info Record Laboratory Office,Document Info Record Laboratory Office,CA-DMS,Dimension,dimension,2,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDLBTRYOFFCT,Document Info Record Lbtry Office - Text,Document Info Record Lbtry Office - Text,CA-DMS,,basic,5,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDOBJECTLINK,Document Info Record Object Link,Document Info Record Object Link,CA-DMS,,basic,26,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDOBJLINKT,Document Info Record Object Link - Text,Document Info Record Object Link - Text,CA-DMS,,basic,5,0,,top-level,yes,CV_VDM,yes
+I_DOCUMENTINFORECORDOBJLINKVH,Document Info Record ObjectLink,Document Info Record ObjectLink,CA-DMS,Dimension,value_help,6,0,,top-level,yes,CV_VDM,yes
+I_DOCUMENTINFORECORDSTRUCSTS,Document Info Record Structure Status,Document Info Record Structure Status,CA-DMS,Dimension,dimension,2,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDSTRUCSTST,Document Info Record Struc Status - Text,Document Info Record Struc Status - Text,CA-DMS,,basic,5,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDUAUTHACCM,Document Info Record User Authorization,Document Info Record User Authorization,CA-DMS,,basic,20,0,,top-level,yes,VDM_DMS,yes
+I_DOCUMENTINFORECORDUSERVH,Document Info Record User,Document Info Record User,CA-DMS,Dimension,value_help,16,0,,top-level,yes,VDM_DMS,yes
+C_CDBCLASSIFICATIONQUERY,,,CA-DT,,basic,0,0,,top-level,no,,no
+C_CDBCLASSIFICTIONQRY_TST,,,CA-DT,,basic,0,0,,top-level,no,,no
+I_MDSUBSTNSTS,Master Data Substitution Status,Master Data Substitution Status,CA-EPT-SUB-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_MD_SUBSTN_COMMON,yes
+I_MDSUBSTNSTSTEXT,Master Data Substitution Status - Text,Master Data Substitution Status - Text,CA-EPT-SUB-2CL,,text,6,0,,top-level,yes,VDM_MD_SUBSTN_COMMON,yes
+DECOM01__FUND,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_ABSTRACTENTITY,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_C1DEPRECATDELEMENT2,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_C1DEPRECATEDELEMENT,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_C1LIFECYCLECONTRACT,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_C1RELEASED,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_C1RELEASEDCLOUDDEV,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_I_CODE,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_I_CODESTDVH,,,CA-EPT-TAS,,value_help,0,0,,top-level,no,,no
+VDMDEMOCDS_I_CODETEXT,,,CA-EPT-TAS,,text,0,0,,top-level,no,,no
+VDMDEMOCDS_VIEWENTITY,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMOCDS_VIEWMIGRATION,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMODM_D_SALESORDERCREATED,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VDMDEMODM_I_SALESORDERTP,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+VTST_INSTCECONFIGNWITHCHARCVAL,,,CA-EPT-TAS,,basic,0,0,,top-level,no,,no
+I_CASHFLOWCALCCATEGORYTEXT,Cash Flow Calculation Category - Text,Cash Flow Calculation Category - Text,CA-FIM-FMA,,text,5,0,,top-level,yes,FIMA,no
+I_CASHFLOWCALCCATEGORYVH,Cash Flow Calculation Category,Cash Flow Calculation Category,CA-FIM-FMA,,value_help,2,0,,top-level,yes,FIMA,no
+I_FLDLOGSPROCESSSHIPMENTITEMTP,FL Received Shipment Item Interface - TP,FL Received Shipment Item Interface - TP,CA-FL-RET,,basic,0,0,,top-level,yes,FLOG_RETURN_PROCG_BASE,no
+I_FLDLOGSRCVDCONTAINERITEMTP,FL RCVD Container Item Interface - TP,FL RCVD Container Item Interface - TP,CA-FL-RET,,basic,0,0,,top-level,yes,FLOG_RETURN_PROCG_BASE,no
+I_FLDLOGSRCVDCONTAINERLISTTP,FL RCVD Container List Interface - TP,FL RCVD Container List Interface - TP,CA-FL-RET,,basic,0,0,,top-level,yes,FLOG_RETURN_PROCG_BASE,no
+I_FLDLOGSRCVDHNDLGUNITITEMTP,FL Received Handling Unit Interface - TP,FL Received Handling Unit Interface - TP,CA-FL-RET,,basic,0,0,,top-level,yes,FLOG_RETURN_PROCG_BASE,no
+I_FLDLOGSRCVDPACKAGINGITEMTP,Field Logistics Received Packaging Items - TP,Field Logistics Received Packaging Items - TP,CA-FL-RET,,basic,0,0,,top-level,yes,FLOG_RETURN_PROCG_BASE,no
+I_FLDLOGSRCVDPACKAGINGTP,Field Logistics Rcvd Packaging - TP,Field Logistics Rcvd Packaging - TP,CA-FL-RET,,basic,0,0,,top-level,yes,FLOG_RETURN_PROCG_BASE,no
+I_FLDLOGSRCVDPACKGGINCTNTP,Fld Logs Rcvd Packgg Container - TP,Fld Logs Rcvd Packgg Container - TP,CA-FL-RET,,basic,0,0,,top-level,yes,FLOG_RETURN_PROCG_BASE,no
+I_FLDLOGSRETURNSPRODUCTTP,Field Logistics Return - TP,Field Logistics Return - TP,CA-FL-RET,,basic,0,0,,top-level,yes,FLOG_RETURN,no
+I_FLDLOGSDELIVCONTAINERUNITTP,Interface BO for FL Container Unit - TP,Interface BO for FL Container Unit - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT_PACKCTN,no
+I_FLDLOGSDELIVERYITEMTP,Interface BO for delivery item in FL - TP,Interface BO for delivery item in FL - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT_PACKCTN,no
+I_FLDLOGSDELIVITEMCTNTP,BO Intf for Cont Unit Shpt Itms - TP,BO Intf for Cont Unit Shpt Itms - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT_PACKCTN,no
+I_FLDLOGSDELIVSTGEASSGMTTP,Intf BO for FL Shpt Items Voyages - TP,Intf BO for FL Shpt Items Voyages - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT_PACKCTN,no
+I_FLDLOGSITMSTAGGEDTOCTNTP,BO Intf for Cont Unit Tagged Itms - TP,BO Intf for Cont Unit Tagged Itms - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT_PACKCTN,no
+I_FLDLOGSITMSTAGGEDTOPACKGGTP,Items Tagged to Packaging - TP,Items Tagged to Packaging - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT_PACKCTN,no
+I_FLDLOGSSHIPMENTCONTAINERTP,Field Logistics Shipment Container - TP,Field Logistics Shipment Container - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHIPMENTPACKAGINGTP,FL Shipment Packaging Interface - TP,FL Shipment Packaging Interface - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHIPMENTVOYAGESTAGETP,Field Logistics Shipment Voyage Stage - TP,Field Logistics Shipment Voyage Stage - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHIPMENTVOYAGETP,Field Logistics Shipment Voyage - TP,Field Logistics Shipment Voyage - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTCTNCERTIFICATETP,Field Logistics Container Certificate - TP,Field Logistics Container Certificate - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTPACKGGASSGMTCTNTP,FL Shipment Nested Packaging - TP,FL Shipment Nested Packaging - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTPACKGGITEMTP,FL Shipment Packaging Items - TP,FL Shipment Packaging Items - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTPACKGGUNITTP,FL Shipment Packaging Unit Interface - TP,FL Shipment Packaging Unit Interface - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTSTGEASSGMTCTNTP,BO Intf for Cont Unit Voyages - TP,BO Intf for Cont Unit Voyages - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT_PACKCTN,no
+I_FLDLOGSSHPTSTGEASSGPACKGGTP,FL Shpt Stge Assgn for Packaging - TP,FL Shpt Stge Assgn for Packaging - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTVOYCTNASSGMTTP,Fld Logs Shpt Voyage Ctn Assignment - TP,Fld Logs Shpt Voyage Ctn Assignment - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTVOYITMASSGMTTP,Fld Logs Shpt Voyage Itm Assignment - TP,Fld Logs Shpt Voyage Itm Assignment - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTVOYOUTPUTREQUEST,FldLog Shpt Voyage Output Request,FldLog Shpt Voyage Output Request,CA-FL-SG,,basic,6,0,Plant,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSHPTVOYPACKGGASSGMTTP,FL Shpt Voyage Packaging Assignment - TP,FL Shpt Voyage Packaging Assignment - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSVOYHNDLGUNITASSGMTTP,Fld Logs Shpt Voyage HU Assignment - TP,Fld Logs Shpt Voyage HU Assignment - TP,CA-FL-SG,,basic,0,0,,top-level,yes,FLOG_SHIPMENT,no
+I_FLDLOGSSUPPLIERITEM,Field Logistics Supplier Items,Field Logistics Supplier Items,CA-FL-SRV,,basic,44,1,Business Partner; Plant; Supplier,top-level,yes,FLOG_SERVICES,yes
+I_FLDLOGSSUPPLIERITEMTP,Supplier Items - TP,Supplier Items - TP,CA-FL-SRV,,basic,0,0,,top-level,yes,FLOG_SERVICES,no
+I_FLDLOGSTRANSFSUPPLIERITEMTP,Transfer supplier Item - TP,Transfer supplier Item - TP,CA-FL-SRV,,basic,0,0,,top-level,yes,FLOG_SERVICES,no
+HOME_PURCHASING_QUERY,,,CA-GTF-ANL,,basic,0,0,,top-level,no,,no
+HOME_TEST_V3_NO_SERVICE,,,CA-GTF-ANL,,basic,0,0,,top-level,no,,no
+HOME_TEST_V3_QUERY,,,CA-GTF-ANL,,basic,0,0,,top-level,no,,no
+SSB_CDS2_TEST_VIEW,,,CA-GTF-ANL,,basic,0,0,,top-level,no,,no
+TEST_CDSV3_T,,,CA-GTF-ANL,,basic,0,0,,top-level,no,,no
+TEST_CDSV3_TEST,,,CA-GTF-ANL,,basic,0,0,,top-level,no,,no
+TEST_CDSV3_TEST1,,,CA-GTF-ANL,,basic,0,0,,top-level,no,,no
+TEST_CDSV3_TEST2,,,CA-GTF-ANL,,basic,0,0,,top-level,no,,no
+I_BUEVLGBUSEVTFULLPYLDJSON,Business Event Data,Business Event Data,CA-GTF-BEL,,basic,4,0,,top-level,yes,BEL_CDS,no
+I_BUSEVTLOGBUSEVENTPAYLOAD,Business Event Payload,Business Event Payload,CA-GTF-BEL,,basic,16,0,,top-level,yes,BEL_CDS,no
+I_BUSEVTLOGBUSINESSACTIVITY,Business Event Activity,Business Event Activity,CA-GTF-BEL,,basic,31,0,,top-level,yes,BEL_CDS,no
+I_BUSEVTLOGBUSINESSEVENT,Business Event Header Data,Business Event Header Data,CA-GTF-BEL,,basic,38,0,,top-level,yes,BEL_CDS,no
+I_BUSPARTADDRDEPDNTTAXNMBR,BP Address Dependent Tax Numbers,BP Address Dependent Tax Numbers,CA-GTF-CSC,,basic,8,0,Address; Business Partner,top-level,yes,BUPA_TAX,yes
+I_BUSPARTADDRDEPDNTTAXTYPEVH,BP Address Dependent Tax Category,BP Address Dependent Tax Category,CA-GTF-CSC,,value_help,2,0,,top-level,yes,BUPA_TAX,yes
+I_CH_QUICKRESPONSEIBANCTRLDATA,QRBILL Ctrl Data Config for Switzerland,QRBILL Ctrl Data Config for Switzerland,CA-GTF-CSC-CH,,basic,21,0,Company Code; Sales Organization,top-level,yes,GLO_LOG_CH_QR,no
+I_EDCJOURNALENTRYRECORDS,EDC Relevant Journal Entry Records,EDC Relevant Journal Entry Records,CA-GTF-CSC-EDC,,basic,30,0,Company Code; Fiscal Year,top-level,yes,GLO-EDO-EDC,no
+I_EDCRELATION,eDocument Consistency Relation Record,eDocument Consistency Relation Record,CA-GTF-CSC-EDC,,basic,7,0,Company Code,top-level,yes,GLO-EDO-EDC,no
+I_TAXAUTHORITYDOCUMENT,Tax Authority Document,Tax Authority Document,CA-GTF-CSC-EDC,,basic,18,0,Company Code,top-level,yes,GLO-EDO-EDC,no
+I_TAXAUTHORITYDOCUMENTHISTORY,Tax Authority Document History,Tax Authority Document History,CA-GTF-CSC-EDC,,basic,17,0,Company Code,top-level,yes,GLO-EDO-EDC,no
+I_ELECTRONICDOCPARTNERTYPEVH,Electronic Document Partner Type,Electronic Document Partner Type,CA-GTF-CSC-EDO,,value_help,2,0,,top-level,yes,GLO-EDO,no
+I_ELECTRONICDOCPROCESSTEXT,eDocument Process - Text,eDocument Process - Text,CA-GTF-CSC-EDO,,text,3,0,,top-level,yes,GLO-EDO,no
+C_CH_ELECTRONICDOCTYPETEXTVH,Switzerland Document Type - Text,Switzerland Document Type - Text,CA-GTF-CSC-EDO-CH,,value_help,2,0,,top-level,yes,GLO-EDO-CH,no
+I_CH_ELECTRONICDOCINCGINVOICE,Switzerland Incoming Invoice,Switzerland Incoming Invoice,CA-GTF-CSC-EDO-CH,,basic,19,0,,top-level,yes,GLO-EDO-CH,yes
+I_CH_ELECTRONICDOCINVOICE,Switzerland Invoice,Switzerland Invoice,CA-GTF-CSC-EDO-CH,,basic,25,0,,top-level,yes,GLO-EDO-CH,yes
+I_CH_ELECTRONICDOCTYPE,Switzerland Documment Type - Text,Switzerland Documment Type - Text,CA-GTF-CSC-EDO-CH,,basic,2,0,,top-level,yes,GLO-EDO-CH,no
+I_CH_ELECTRONICDOCTYPETEXT,Switzerland Documment Type - Text,Switzerland Documment Type - Text,CA-GTF-CSC-EDO-CH,,text,4,0,,top-level,yes,GLO-EDO-CH,no
+I_CO_ELECTRONICDOCINCGINVOICE,Colombia Incoming Invoice,Colombia Incoming Invoice,CA-GTF-CSC-EDO-CO,,basic,8,0,,top-level,yes,GLO-EDO-CO,yes
+I_CO_ELECTRONICDOCINVOICE,Colombia Invoice,Colombia Invoice,CA-GTF-CSC-EDO-CO,,basic,8,0,,top-level,yes,GLO-EDO-CO,yes
+I_CO_ELECTRONICDOCPAYROLL,Colombia ePayroll Transmission,Colombia ePayroll Transmission,CA-GTF-CSC-EDO-CO,,basic,11,0,,top-level,yes,GLO-EDO-CO-UBL-21,yes
+I_EG_EDOCBRANCHID,eDocument Egypt Branch ID for FI,eDocument Egypt Branch ID for FI,CA-GTF-CSC-EDO-EG,,basic,2,0,Company Code,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCCANCELLATIONREASON,eDocument Egypt Reason for cancellation,eDocument Egypt Reason for cancellation,CA-GTF-CSC-EDO-EG,,basic,3,0,,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCFOREIGNTAXCATEGORY,eDocument Egypt Tax Cat for Frgn Bsns,eDocument Egypt Tax Cat for Frgn Bsns,CA-GTF-CSC-EDO-EG,,basic,4,0,,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCINTEGRATIONDATE,eDocument Egypt Effective Int Date,eDocument Egypt Effective Int Date,CA-GTF-CSC-EDO-EG,,basic,2,0,Company Code,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCITEMCODEMATERIALGROUP,eDocument Egypt ItmCode for MatGroup,eDocument Egypt ItmCode for MatGroup,CA-GTF-CSC-EDO-EG,,basic,5,0,Company Code; Material Group,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCITMCODE,eDocument Egypt Item Code for Material,eDocument Egypt Item Code for Material,CA-GTF-CSC-EDO-EG,,basic,4,0,Company Code; Material / Product,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCRECEIVERTYPE,eDocument Egypt SOrg Partner Function,eDocument Egypt SOrg Partner Function,CA-GTF-CSC-EDO-EG,,basic,2,0,Sales Organization,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCREJECTIONREASON,eDocument Egypt Rejection Reason,eDocument Egypt Rejection Reason,CA-GTF-CSC-EDO-EG,,basic,3,0,,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCTAXCATWITHHOLDINGCODE,eDocument Egypt Tax Cat for WHT Code,eDocument Egypt Tax Cat for WHT Code,CA-GTF-CSC-EDO-EG,,basic,3,0,,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCTXCATEGORYFORVATCODE,eDocument Egyp Tax Cat for VAT Code,eDocument Egyp Tax Cat for VAT Code,CA-GTF-CSC-EDO-EG,,basic,5,0,Tax Code,top-level,yes,GLO-EDO-EG,no
+I_EG_EDOCVERSIONFLAG,eDocument Egypt Active Doc Version,eDocument Egypt Active Doc Version,CA-GTF-CSC-EDO-EG,,basic,3,0,Company Code,top-level,yes,GLO-EDO-EG,no
+I_EG_ELECTRONICDOCINCGINVOICE,eDocument Egypt Incoming Documents,eDocument Egypt Incoming Documents,CA-GTF-CSC-EDO-EG,,basic,19,0,Company Code,top-level,yes,GLO-EDO-EG,no
+I_EG_ELECTRONICDOCINVOICE,eDocument Egypt Invoice Document,eDocument Egypt Invoice Document,CA-GTF-CSC-EDO-EG,,basic,18,0,Company Code,top-level,yes,GLO-EDO-EG,no
+I_ES_EDOCVERIFACTUEXT,VeriFactu Electronic documents,VeriFactu Electronic documents,CA-GTF-CSC-EDO-ES,,basic,27,0,Company Code,top-level,yes,GLO-EDO-ES-VF,no
+I_GR_ELECTRONICDOCINVOICE,eDocument Greece Country/Region Specific Data,eDocument Greece Country/Region Specific Data,CA-GTF-CSC-EDO-GR,,basic,55,0,Company Code,top-level,yes,GLO-EDO-GR,yes
+I_HU_ELECTRONICDOCINVOICE,Hungary Invoice,Hungary Invoice,CA-GTF-CSC-EDO-HU,,basic,10,0,Company Code,top-level,yes,GLO-EDO-HU-INV-30,yes
+I_IN_ELECTRONICDOCTRANSPTREGN,India eWay Bill details,India eWay Bill details,CA-GTF-CSC-EDO-IN-EW,,basic,50,0,Company Code,top-level,yes,GLO-EDO-IN-EWB-DCC,yes
+I_IN_ELECTRONICDOCINVOICE,India eInvoice details,India eInvoice details,CA-GTF-CSC-EDO-IN-IV,,basic,34,0,Company Code,top-level,yes,GLO-EDO-IN-EINV-DCC,yes
+C_IT_ELECTRONICDOCPARTSTATVH,Italy status of edocument Partner - Text,Italy status of edocument Partner - Text,CA-GTF-CSC-EDO-IT,,value_help,2,0,,top-level,yes,GLO-EDO-IT,no
+C_IT_ELECTRONICDOCREJECTCODEVH,Italy Electronic Rejection Code,Italy Electronic Rejection Code,CA-GTF-CSC-EDO-IT,,value_help,3,0,,top-level,yes,GLO-EDO-IT,no
+I_IT_ELECTRONICDOCINCGINVOICE,Italy Incoming Invoice,Italy Incoming Invoice,CA-GTF-CSC-EDO-IT,,basic,19,0,,top-level,yes,GLO-EDO-IT,yes
+I_IT_ELECTRONICDOCINVOICE,Italy Fattura,Italy Fattura,CA-GTF-CSC-EDO-IT,,basic,17,1,Company Code,top-level,yes,GLO-EDO-IT,yes
+I_IT_ELECTRONICDOCREJECTCODE,Italy Electronic Rejection Code,Italy Electronic Rejection Code,CA-GTF-CSC-EDO-IT,,basic,3,0,,top-level,yes,GLO-EDO-IT,no
+I_IT_ELECTRONICDOCSTATPART,Italy status of edocument Partner,Italy status of edocument Partner,CA-GTF-CSC-EDO-IT,,basic,2,0,,top-level,yes,GLO-EDO-IT,no
+I_IT_ELECTRONICDOCSTATPARTT,Italy Status of eDocument from Partner - Text,Italy Status of eDocument from Partner - Text,CA-GTF-CSC-EDO-IT,,basic,4,0,,top-level,yes,GLO-EDO-IT,no
+I_KR_EDOCSELFBILLINVCMAPPING,EDoc KR Self Billing eInvoice Mapping,EDoc KR Self Billing eInvoice Mapping,CA-GTF-CSC-EDO-KR,,basic,9,0,Billing Document; Company Code; Fiscal Year,top-level,yes,GLO-EDO-KR,no
+I_KR_EDOCSELFBILLPURCHASERINVC,EDoc KR Self Bill for Purchaser eInvoice,EDoc KR Self Bill for Purchaser eInvoice,CA-GTF-CSC-EDO-KR,,basic,18,0,Supplier; Tax Code,top-level,yes,GLO-EDO-KR,no
+I_KR_ELECTRONICDOCHOMETAXDATA,eDocument KR Data from Home Tax,eDocument KR Data from Home Tax,CA-GTF-CSC-EDO-KR,,basic,10,0,Company Code; Customer; Supplier,top-level,yes,GLO-EDO-KR,no
+I_KR_ELECTRONICDOCINCGINVOICE,eDocument South Korea eInvoice Incoming,eDocument South Korea eInvoice Incoming,CA-GTF-CSC-EDO-KR,,basic,37,0,Supplier,top-level,yes,GLO-EDO-KR,no
+I_KR_ELECTRONICDOCINVOICE,eDocument South Korea eInvoice,eDocument South Korea eInvoice,CA-GTF-CSC-EDO-KR,,basic,22,0,Customer; Distribution Channel; Sales Organization; Tax Code,top-level,yes,GLO-EDO-KR,no
+I_KR_ELECTRONICDOCSELFBILLINVC,eDocument KR Self Billing eInvoice,eDocument KR Self Billing eInvoice,CA-GTF-CSC-EDO-KR,,basic,22,0,Customer; Distribution Channel; Sales Organization; Tax Code,top-level,yes,GLO-EDO-KR,no
+I_KZ_ELECTRONICDOCINVOICE,Kazakhstan Electronic Invoice,Kazakhstan Electronic Invoice,CA-GTF-CSC-EDO-KZ,,basic,6,0,,top-level,yes,GLO-EDO-KZ-EINV,no
+I_MY_ELECTRONICDOCINVOICE,eDocument Malaysia eInvoice,eDocument Malaysia eInvoice,CA-GTF-CSC-EDO-MY,,basic,5,0,,top-level,yes,GLO-EDO-MY,no
+I_EUELECTRONICDOCBANKACC,Bank Accounts for Company Code,Bank Accounts for Company Code,CA-GTF-CSC-EDO-PAP,,basic,8,0,Company Code,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCCATEGORYVH,Document Category,Document Category,CA-GTF-CSC-EDO-PAP,,value_help,4,0,,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCCOMMCHANNELVH,Exchange Channel,Exchange Channel,CA-GTF-CSC-EDO-PAP,,value_help,4,0,,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCCOMP,Company Identification Type,Company Identification Type,CA-GTF-CSC-EDO-PAP,,basic,4,0,Company Code,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCDOCTYPE,Document Type,Document Type,CA-GTF-CSC-EDO-PAP,,basic,4,0,,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCDOCTYPEID,Document Type ID,Document Type ID,CA-GTF-CSC-EDO-PAP,,basic,4,0,,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCEMAILVH,Receive Document per eMail,Receive Document per eMail,CA-GTF-CSC-EDO-PAP,,value_help,4,0,,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCPARTNER,Business Partner,Business Partner,CA-GTF-CSC-EDO-PAP,,basic,7,0,,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCPARTNERIDTYPE,Non-Tax related Identifiers,Non-Tax related Identifiers,CA-GTF-CSC-EDO-PAP,,basic,2,0,,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCPARTYDOCTYPE,Document Type for Business Partner,Document Type for Business Partner,CA-GTF-CSC-EDO-PAP,,basic,6,0,,top-level,yes,GLO-EDO-EU,no
+I_EUELECTRONICDOCPAYMENTMEANVH,eDocument Peppol Payment Means,eDocument Peppol Payment Means,CA-GTF-CSC-EDO-PAP,,value_help,4,0,,top-level,yes,GLO-EDO-EU,no
+I_PT_ELECTRONICDOCINVOICE,Portugal eInvoice,Portugal eInvoice,CA-GTF-CSC-EDO-PT,,basic,7,0,,top-level,yes,GLO-EDO-PT-INV,no
+I_PT_ELECTRONICDOCPARTNER,Portugal eInvoice Partner Relevancy,Portugal eInvoice Partner Relevancy,CA-GTF-CSC-EDO-PT,,basic,3,0,,top-level,yes,GLO-EDO-PT-INV,no
+I_SA_EDOCCRYPTOGRAPHICSTMPID,eDocument KSA  CSID Information,eDocument KSA  CSID Information,CA-GTF-CSC-EDO-SA,,basic,12,0,,top-level,yes,GLO-EDO-SA,no
+I_SA_EDOCINVOICEADDLDET,eDocument KSA Ctry/Reg Specific Data,eDocument KSA Ctry/Reg Specific Data,CA-GTF-CSC-EDO-SA,,basic,9,0,,top-level,yes,GLO-EDO-SA,no
+I_SA_EDOCLGCLSOLNID,eDocument KSA for Logical Solution Unit,eDocument KSA for Logical Solution Unit,CA-GTF-CSC-EDO-SA,,basic,11,0,Company Code,top-level,yes,GLO-EDO-SA,no
+I_TR_EDOCCOMPANYDATA,eDocument Turkey Company Information,eDocument Turkey Company Information,CA-GTF-CSC-EDO-TR,,basic,9,0,Company Code,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCCOMPANYINFORMATION,eDocument Turkey Company Information,eDocument Turkey Company Information,CA-GTF-CSC-EDO-TR,,basic,9,0,Company Code,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCCUSTOMERSCENARIO,eDocument Turkey Customer Scenarios,eDocument Turkey Customer Scenarios,CA-GTF-CSC-EDO-TR,,basic,2,0,Customer,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCFREEZONECUSTOMER,eDocument Turkey Freezone Customers,eDocument Turkey Freezone Customers,CA-GTF-CSC-EDO-TR,,basic,2,0,Customer,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCINCGINVOICEIDENTIFIER,eDocument TR Incoming Invoice Identifier,eDocument TR Incoming Invoice Identifier,CA-GTF-CSC-EDO-TR,,basic,18,0,Company Code,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCINVOICEIDENTIFIER,eDocument Turkey Invoice Identifiers,eDocument Turkey Invoice Identifiers,CA-GTF-CSC-EDO-TR,,basic,15,0,Company Code,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCNUMBERCODEDESCRIPTION,eDocument TR Number Group Description,eDocument TR Number Group Description,CA-GTF-CSC-EDO-TR,,basic,6,0,Company Code,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCREGISTEREDUSERLIST,eDocument TR Registration Information,eDocument TR Registration Information,CA-GTF-CSC-EDO-TR,,basic,10,0,,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCSUPLRSCENARIO,eDocument Turkey Vendor Scenarios,eDocument Turkey Vendor Scenarios,CA-GTF-CSC-EDO-TR,,basic,2,0,Supplier,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCTAXCODEDETERMINATION,eDocument Turkey Tax Code Determination,eDocument Turkey Tax Code Determination,CA-GTF-CSC-EDO-TR,,basic,4,0,Tax Code,top-level,yes,GLO-EDO-TR,no
+I_TR_EDOCUNICODENUMBERRANGEGRP,eDocument TR Unicode Number Range Group,eDocument TR Unicode Number Range Group,CA-GTF-CSC-EDO-TR,,basic,6,0,Company Code,top-level,yes,GLO-EDO-TR,no
+I_TR_ELECTRONICDOCEXPINVOICE,eDocument Turkey Export Invoice,eDocument Turkey Export Invoice,CA-GTF-CSC-EDO-TR,,basic,18,0,Company Code; Customer,top-level,yes,GLO-EDO-TR,no
+I_VN_EDOCINVOICE,eDocument Vietnam Invoice,eDocument Vietnam Invoice,CA-GTF-CSC-EDO-VN,,basic,13,0,Company Code,top-level,yes,GLO-EDO-VN,no
+C_GREGORIANCALDATEFUNCVH,Value Help for Gregorian Calendar Date Functions,Value Help for Gregorian Calendar Date Functions,CA-GTF-DF,,value_help,5,0,,top-level,yes,VDM_CAL,no
+C_GREGORIANCALSGLDATEFUNCVH,Value Help for Single Gregorian Calendar Date Functions,Value Help for Single Gregorian Calendar Date Functions,CA-GTF-DF,,value_help,5,0,,top-level,yes,VDM_CAL,no
+I_CALENDARDATE,Date,Date,CA-GTF-DF,Dimension,dimension,22,0,,top-level,yes,VDM_CAL,yes
+I_CALENDARMONTH,Calendar Month,Calendar Month,CA-GTF-DF,Dimension,dimension,3,0,,top-level,yes,VDM_CAL,yes
+I_CALENDARMONTHTEXT,Calendar Month Text,Calendar Month Text,CA-GTF-DF,,text,6,0,,top-level,yes,VDM_CAL,yes
+I_CALENDARMONTHVH,Value Help CDS for Calendar Month,Value Help CDS for Calendar Month,CA-GTF-DF,,value_help,2,0,,top-level,yes,VDM_CAL,yes
+I_CALENDARQUARTER,Quarter,Quarter,CA-GTF-DF,Dimension,dimension,3,0,,top-level,yes,VDM_CAL,yes
+I_CALENDARQUARTERTEXT,Calendar Quarter text,Calendar Quarter text,CA-GTF-DF,,text,6,0,,top-level,yes,VDM_CAL,yes
+I_CALENDARYEAR,Year,Year,CA-GTF-DF,Dimension,dimension,3,0,,top-level,yes,VDM_CAL,yes
+I_DATEFUNCTIONVALUE,Date Function values,Date Function values,CA-GTF-DF,Dimension,dimension,5,0,,top-level,yes,VDM_CAL,yes
+I_SGLGREGORIANCALDATEFUNCTION,Execute Single Function,Execute Single Function,CA-GTF-DF,,basic,5,0,,top-level,yes,VDM_CAL,yes
+I_SHIFTEDCALENDARDATE,Shifted Calendar Date,Shifted Calendar Date,CA-GTF-DF,,basic,2,0,,top-level,yes,VDM_CAL,yes
+I_WEEKDAY,Week Day,Week Day,CA-GTF-DF,Dimension,dimension,2,0,,top-level,yes,VDM_CAL,yes
+I_WEEKDAYTEXT,Week Day Text,Week Day Text,CA-GTF-DF,,text,5,0,,top-level,yes,VDM_CAL,yes
+I_YEARMONTH,Year Month,Year Month,CA-GTF-DF,Dimension,dimension,11,0,,top-level,yes,VDM_CAL,yes
+I_PAYMENTADVICE,Payment Advice Header,Payment Advice Header,CA-GTF-FXU-FI-AR,,basic,57,0,Company Code,top-level,yes,ODATA_PAYMENTADVICES,yes
+I_PAYMENTADVICEITEM,Payment Advice Item,Payment Advice Item,CA-GTF-FXU-FI-AR,,basic,71,0,Billing Document; Business Area; Company Code; Delivery; Fiscal Year; Tax Code,top-level,yes,ODATA_PAYMENTADVICES,yes
+I_CURRENCYEXCHANGERATETP_2,Currency Exchange Rate - TP,Currency Exchange Rate - TP,CA-GTF-FXU-FI-GL,,basic,0,0,,top-level,yes,ODATA_CRCY_EXCHANGE_RATES_V2,no
+APIHUB_ANALYTICALQUERY,,,CA-GTF-GEM,,basic,0,0,,top-level,no,,no
+C_SBRSOTSNPSHTANLYS1,,,CA-GTF-GEM,,basic,0,0,,top-level,no,,no
+I_COMMSCENARIOHDR_QUERY,,,CA-GTF-GEM,,basic,0,0,,top-level,no,,no
+I_COMMSCENARIOQUERY,,,CA-GTF-GEM,,basic,0,0,,top-level,no,,no
+I_HISTORIC_DATA_QUERY,,,CA-GTF-GEM,,basic,0,0,,top-level,no,,no
+I_SBRSOTSNPSHTQUERY,,,CA-GTF-GEM,,basic,0,0,,top-level,no,,no
+I_TEAMONBD_QUERY,,,CA-GTF-GEM,,basic,0,0,,top-level,no,,no
+I_FISCALCALENDARDATE,Fiscal Calendar Date,Fiscal Calendar Date,CA-GTF-GL-CAL,Dimension,dimension,31,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALDATEFUNCTION,Fiscal Date Function,Fiscal Date Function,CA-GTF-GL-CAL,Dimension,dimension,18,0,,top-level,yes,FINS_FI_DATE,yes
+I_FISCALDATEFUNCTIONTEXT,Fiscal Date Function Text,Fiscal Date Function Text,CA-GTF-GL-CAL,,text,5,0,,top-level,yes,FINS_FI_DATE,yes
+I_FISCALDATEFUNCTIONVALUE,Fiscal Date Function values,Fiscal Date Function values,CA-GTF-GL-CAL,Dimension,dimension,24,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALPERIODFORVARIANT,Fiscal Period For Fiscal Year Variant,Fiscal Period For Fiscal Year Variant,CA-GTF-GL-CAL,Dimension,dimension,15,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALPERIODTEXT,Fiscal Period Text,Fiscal Period Text,CA-GTF-GL-CAL,,text,8,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALQUARTER,Fiscal Quarter - Text,Fiscal Quarter,CA-GTF-GL-CAL,Dimension,dimension,3,0,,top-level,yes,FINS_FI_DATE,yes
+I_FISCALQUARTERFORVARIANT,Fiscal Quarter with Next Fiscal Quarter,Fiscal Quarter with Next Fiscal Quarter,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALQUARTERTEXT,Fiscal Quarter - Text,Fiscal Quarter - Text,CA-GTF-GL-CAL,,text,5,0,,top-level,yes,FINS_FI_DATE,yes
+I_FISCALWEEK,Fiscal Week,Fiscal Week,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALWEEKFORVARIANT,Fiscal Week with Next Fiscal Week,Fiscal Week with Next Fiscal Week,CA-GTF-GL-CAL,Dimension,dimension,16,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEAR,Fiscal Year with Next Fiscal Year,Fiscal Year with Next Fiscal Year,CA-GTF-GL-CAL,Dimension,dimension,9,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEARFORVARIANT,Fiscal Year For Fiscal Year Variant,Fiscal Year For Fiscal Year Variant,CA-GTF-GL-CAL,Dimension,dimension,5,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEARPERIOD,Fiscal Year Period,Fiscal Year Period,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEARPERIODFORVARIANT,Fiscal Year Period For Fiscal Year Variant,Fiscal Year Period For Fiscal Year Variant,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEARPERIODTEXT,Fiscal Year Period Text,Fiscal Year Period Text,CA-GTF-GL-CAL,,text,8,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEARQUARTER,Fiscal Year Quarter with Next Fiscal Year Quarter,Fiscal Year Quarter with Next Fiscal Year Quarter,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEARQUARTERFORVARIANT,Fiscal Year Quarter with Next Fiscal Year Quarter,Fiscal Year Quarter with Next Fiscal Year Quarter,CA-GTF-GL-CAL,Dimension,dimension,17,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEARWEEK,Fiscal Year Week with Next Fiscal Year Week,Fiscal Year Week with Next Fiscal Year Week,CA-GTF-GL-CAL,Dimension,dimension,16,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+I_FISCALYEARWEEKFORVARIANT,Fiscal Year Week with Next Fiscal Year Week,Fiscal Year Week with Next Fiscal Year Week,CA-GTF-GL-CAL,Dimension,dimension,16,0,Fiscal Year,top-level,yes,FINS_FI_DATE,yes
+C_OUTPUTREQUESTITEMDEX,Output Request Basic Extraction Data,Output Request Basic Extraction Data,CA-GTF-OC,,basic,0,0,,top-level,yes,APOC_OUTPUT_CONTROL_BO,no
+I_LISTEDDRVTVPRICEQUOTATION,Listed Derivatives Price Quotation,Listed Derivatives Price Quotation,CA-GTF-TRB,Cube,cube,18,0,,top-level,yes,FTR_BASIS_VDM,yes
+I_STATUSOBJECTSTATUSCHANGE,Change Docs for System or User Status,Change Docs for System or User Status,CA-GTF-VDM,Fact,fact,9,0,,top-level,yes,VDM_FND,yes
+I_STATUSPROFILE,Status Profile,Status Profile,CA-GTF-VDM,Dimension,dimension,4,0,,top-level,yes,VDM_FND,yes
+I_STATUSPROFILETEXT,Status Profile - Text,Status Profile - Text,CA-GTF-VDM,,text,5,0,,top-level,yes,VDM_FND,yes
+I_SYSTEMSTATUS,System Status,System Status,CA-GTF-VDM,Dimension,dimension,3,0,,top-level,yes,VDM_FND,yes
+I_SYSTEMSTATUSTEXT,System Status - Text,System Status - Text,CA-GTF-VDM,,text,6,0,,top-level,yes,VDM_FND,yes
+I_TEXTOBJECTCATEGORY,Text Object Category,Text Object Category,CA-GTF-VDM,Dimension,dimension,2,0,,top-level,yes,VDM_FND,yes
+I_TEXTOBJECTCATEGORYTEXT,Text Object Category - Text,Text Object Category - Text,CA-GTF-VDM,,text,5,0,,top-level,yes,VDM_FND,yes
+I_TEXTOBJECTTYPE,Text Object Type,Text Object Type,CA-GTF-VDM,Dimension,dimension,4,0,,top-level,yes,VDM_FND,yes
+I_TEXTOBJECTTYPETEXT,Text Object Type - Text,Text Object Type - Text,CA-GTF-VDM,,text,7,0,,top-level,yes,VDM_FND,yes
+I_USERSTATUS,User Status,User Status,CA-GTF-VDM,Dimension,dimension,8,0,,top-level,yes,VDM_FND,yes
+I_USERSTATUSTEXT,User Status - Text,User Status - Text,CA-GTF-VDM,,text,8,0,,top-level,yes,VDM_FND,yes
+I_JNTOPGAGRMT,Joint Operating Agreement,Joint Operating Agreement,CA-JVA,Dimension,dimension,37,0,Company Code,top-level,yes,GJVA,yes
+I_JNTOPGAGRMTCLASS,Joint Operating Agreement Class,Joint Operating Agreement Class,CA-JVA,Dimension,dimension,5,0,Company Code,top-level,yes,GJVA,yes
+I_JNTOPGAGRMTCLASSTEXT,Joint Operating Agreement Class - Text,Joint Operating Agreement Class - Text,CA-JVA,,text,7,0,Company Code,top-level,yes,GJVA,yes
+I_JNTOPGAGRMTPNLTYCATRCVRYPCT,Penalty Category Recovery Percentage,Penalty Category Recovery Percentage,CA-JVA,Dimension,dimension,9,0,Company Code,top-level,yes,GJVA_UI_BACKEND,yes
+I_JNTOPGAGRMTTEXT,Joint Operating Agreement - Text,Joint Operating Agreement - Text,CA-JVA,,text,8,0,Company Code,top-level,yes,GJVA,yes
+I_JNTOPGAGRMTVH,Joint Operating Agreement,Joint Operating Agreement,CA-JVA,,value_help,5,0,Company Code,top-level,yes,GJVA_UI_BACKEND,no
+I_JNTVNTRBUSINESSPARTNER,Joint Venture Business Partner,Joint Venture Business Partner,CA-JVA,Dimension,dimension,29,0,Company Code; Tax Code,top-level,yes,GJVA,yes
+I_JNTVNTREQUITYGROUPVALUEHELP,Joint Venture Equity Group,Joint Venture Equity Group,CA-JVA,,basic,7,0,Company Code,top-level,yes,GJVA_UI_BACKEND,no
+I_JNTVNTREQUITYGRP,Joint Venture Equity Group,Joint Venture Equity Group,CA-JVA,,basic,19,0,Company Code,top-level,yes,GJVA,yes
+I_JNTVNTREQUITYGRPTEXT,Equity Group - Text,Equity Group - Text,CA-JVA,,text,9,0,Company Code,top-level,yes,GJVA_UI_BACKEND,yes
+I_JNTVNTREQUITYTYPEDESC,Joint Venture Equity Type - Text,Joint Venture Equity Type - Text,CA-JVA,,basic,7,0,Company Code,top-level,yes,GJVA,yes
+I_JNTVNTREQUITYTYPEMASTER,Joint Venture Equity Type,Joint Venture Equity Type,CA-JVA,Dimension,dimension,4,0,Company Code,top-level,yes,GJVA,yes
+I_JNTVNTREQUITYTYPEVH,Joint Venture Equity Type,Joint Venture Equity Type,CA-JVA,,value_help,5,0,Company Code,top-level,yes,GJVA,no
+I_JNTVNTRPARTOWNREQUITYSHR,Joint Venture Owner Equity Share,Joint Venture Owner Equity Share,CA-JVA,,basic,32,0,Company Code,top-level,yes,GJVA,yes
+I_JNTVNTRPENALTYCATEGORY,Penalty Category in JVA,Penalty Category in JVA,CA-JVA,Dimension,dimension,4,0,Company Code,top-level,yes,GJVA_UI_BACKEND,yes
+I_JNTVNTRPENALTYCATEGORYTEXT,Penalty Category in JVA - Text,Penalty Category in JVA - Text,CA-JVA,,text,7,0,Company Code,top-level,yes,GJVA_UI_BACKEND,yes
+I_JNTVNTRVALDINVMTGRP,Joint Ventures Valid Investment Groups,Joint Ventures Valid Investment Groups,CA-JVA,Dimension,dimension,16,0,Company Code,top-level,yes,GJVA_UI_BACKEND,yes
+I_JNTVNTRVALUEHELP,Joint Venture,Joint Venture,CA-JVA,Dimension,dimension,8,0,Company Code,top-level,yes,GJVA,yes
+I_JOINTVENTURECOMPANYCODEVH,JVA Company Code,JVA Company Code,CA-JVA,,value_help,2,0,Company Code,top-level,yes,GJVA_UI_BACKEND,no
+I_JOINTVENTUREDESC,Joint Venture - Text,Joint Venture - Text,CA-JVA,,basic,7,0,Company Code,top-level,yes,GJVA,yes
+I_JOINTVENTUREDETAILS,Master Data for Joint Venture,Master Data for Joint Venture,CA-JVA,,basic,49,0,Company Code; Payment Terms; Tax Code,top-level,yes,GJVA,yes
+I_JOINTVENTUREMASTERFLD,Joint Venture Master Data Fields,Joint Venture Master Data Fields,CA-JVA,Dimension,dimension,43,0,Company Code; Payment Terms; Tax Code; WBS Element,top-level,yes,GJVA_UI_BACKEND,yes
+I_JOINTVENTUREPARTNERVALUEHELP,Joint Venture Partner,Joint Venture Partner,CA-JVA,,basic,7,0,Company Code,top-level,yes,GJVA,no
+I_JOINTVENTURESUSPENSETEXT,Joint Venture Suspense - Text,Joint Venture Suspense - Text,CA-JVA,,text,4,0,,top-level,yes,GJVA_UI_BACKEND,no
+I_JVACARRIEDINTEREST,Carried Interest,Carried Interest,CA-JVA,,basic,13,0,Company Code,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVACTBCKACCTMAPPGINTER,Cutback Account Mapping Intercompany,Cutback Account Mapping Intercompany,CA-JVA,Dimension,dimension,11,0,Company Code,top-level,yes,GJVA,yes
+I_JVACTBCKACCTMAPPGINTRA,Cutback Account Mapping Intracompany,Cutback Account Mapping Intracompany,CA-JVA,Dimension,dimension,9,0,Company Code,top-level,yes,GJVA,yes
+I_JVACTBCKCOAACCTMAPPGINTER,Cutback Account Mapping COA Intercompany,Cutback Account Mapping COA Intercompany,CA-JVA,Dimension,dimension,11,0,Chart of Accounts,top-level,yes,GJVA,yes
+I_JVACTBCKCOAACCTMAPPGINTRA,Cutback Account Mapping COA Intracompany,Cutback Account Mapping COA Intracompany,CA-JVA,Dimension,dimension,9,0,Chart of Accounts,top-level,yes,GJVA,yes
+I_JVACTBCKCOSTCTRMAPPGINTER,Cutback Cost Center Mapping Intercompany,Cutback Cost Center Mapping Intercompany,CA-JVA,Dimension,dimension,17,0,Company Code; Controlling Area; WBS Element,top-level,yes,GJVA,yes
+I_JVACTBCKCOSTCTRMAPPGINTRA,Cutback Cost Center Mapping Intracompany,Cutback Cost Center Mapping Intracompany,CA-JVA,Dimension,dimension,14,0,Company Code; Controlling Area; WBS Element,top-level,yes,GJVA,yes
+I_JVACTBCKORDMAPPGINTER,Cutback Order Mapping Intercompany,Cutback Order Mapping Intercompany,CA-JVA,Dimension,dimension,16,0,Company Code; Controlling Area; WBS Element,top-level,yes,GJVA,yes
+I_JVACTBCKORDMAPPGINTRA,Cutback Order Mapping Intracompany,Cutback Order Mapping Intracompany,CA-JVA,Dimension,dimension,14,0,Company Code; Controlling Area; WBS Element,top-level,yes,GJVA,yes
+I_JVACTBCKWBSMAPPGINTER,Cutback WBS Mapping Intercompany,Cutback WBS Mapping Intercompany,CA-JVA,Dimension,dimension,16,0,Company Code; Controlling Area; WBS Element,top-level,yes,GJVA,yes
+I_JVACTBCKWBSMAPPGINTRA,Cutback WBS Mapping Intracompany,Cutback WBS Mapping Intracompany,CA-JVA,Dimension,dimension,14,0,Company Code; Controlling Area; WBS Element,top-level,yes,GJVA,yes
+I_JVAGLOBALCOMPANYPARAMETER,JV Global Company Parameter C1,JV Global Company Parameter C1,CA-JVA,,basic,86,0,Company Code; WBS Element,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVAJNTINTERESTBILLINGDATA,JVA Joint Interest Billing Report,JVA Joint Interest Billing Report,CA-JVA,,basic,102,0,Company Code; Controlling Area; Fiscal Year; G/L Account,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVAJOINTINTERESTBILLINGCLASS,JVA JIB or JIBE Subclass,JVA JIB or JIBE Subclass,CA-JVA,,basic,3,0,Company Code,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVAJOINTOPERATINGAGRMTDET_2,JVA and cost object MD information,JVA and cost object MD information,CA-JVA,Cube,cube,86,0,Company Code; Payment Terms; Tax Code; WBS Element,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVAVALUATIONAREA,JVA Valuation Area,JVA Valuation Area,CA-JVA,,basic,3,0,Company Code; Valuation Area,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVAVALUATIONAREACOSTOBJECT,Cost Object from Valuation Area or Type,Cost Object from Valuation Area or Type,CA-JVA,,basic,9,0,Cost Center; Order (production / maintenance / internal); Valuation Area,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVAVALUATIONTYPE,JVA Valuation Type,JVA Valuation Type,CA-JVA,Dimension,dimension,4,0,,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVAVENTURECOSTOBJECTDETS_2,Joint Venture Cost Object Details,Joint Venture Cost Object Details,CA-JVA,Cube,cube,52,0,Company Code; Controlling Area; Cost Center; Functional Area; Order (production / maintenance / internal); Profit Center; WBS Element,top-level,yes,GJVA_UI_BACKEND,yes
+I_JVAVNTRINTCOVNTR,Venture Intercompany Venture,Venture Intercompany Venture,CA-JVA,,basic,16,0,Company Code,top-level,yes,GJVA,yes
+I_JNTOPGAGRMTDRILLINGRATIOTP,JVA Drilling Statistical Ratio - TP,JVA Drilling Statistical Ratio - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTEQUITYTYPEGRPTP,Equity Group - TP,Equity Group - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTPARENTCOOVHDTP,JVA Parent Company Overhead Sets - TP,JVA Parent Company Overhead Sets - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTPARTSHRTP,Partner Share - TP,Partner Share - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTPAYROLLBURDENTP,JOA Payroll Burden - TP,JOA Payroll Burden - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTPNLTYCATRCVRYTP,Penalty Category Recovery Percentage - TP,Penalty Category Recovery Percentage - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTPRODGSTATASSGMTTP,JVA Producing Statistical Ratio - TP,JVA Producing Statistical Ratio - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTPRODGSTATTHLDTP,JVA Producing Ratio Threshold - TP,JVA Producing Ratio Threshold - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTPROJSTEPPEDRATETP,JVA General Overhead Stepped Rate - TP,JVA General Overhead Stepped Rate - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTTEXTTP,Description - TP,Description - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTOPGAGRMTTP,Joint Operating Agreement - TP,Joint Operating Agreement - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JOA,no
+I_JNTVNTRBUSINESSPARTNERTP,JVABusinessPartner - TP,JVABusinessPartner - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,ODATA_JVA_JVPARTNER_API,no
+I_JNTVNTRFUNDCRCYBYEQUITYGRPTP,Joint Venture Funding Currency - TP,Joint Venture Funding Currency - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JNTVNTROVHDBURDENRATEPCTTP,Joint Venture Payroll Burden - TP,Joint Venture Payroll Burden - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JNTVNTRPARCOMPANYOVERHEADTP,JVA Parent Company Overhead - TP,JVA Parent Company Overhead - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JNTVNTRPARTEQUITYSHRTP,Joint Venture Partner Share - TP,Joint Venture Partner Share - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JNTVNTRSUBSTITCOSTOBJECTTP,JVA Substitute Cost Object - TP,JVA Substitute Cost Object - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JOINTVENTUREDESCRIPTIONTP,Joint Venture Description - TP,Joint Venture Description - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JOINTVENTUREEQUITYGROUPTP,Joint Venture Equity Group - TP,Joint Venture Equity Group - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JOINTVENTUREEQUITYTYPETP,Joint Venture Equity Type - TP,Joint Venture Equity Type - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JOINTVENTUREINTCOVENTURETP,Joint Venture Intercompany Venture - TP,Joint Venture Intercompany Venture - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JOINTVENTURETP,Joint Venture - TP,Joint Venture - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JVACARRIEDINTERESTTP,Joint Venture Carried Interest - TP,Joint Venture Carried Interest - TP,CA-JVA-JVA,,basic,0,0,,top-level,yes,RAP_JVA_JV,no
+I_JVAINFORECORDATTACHLINK,JVABILLING Attachment Service,JVABILLING Attachment Service,CA-JVA-JVA,,basic,15,0,Company Code,top-level,yes,GJVA_BILLING,yes
+I_TIMEOVERVIEWBYWRKAGRMTANDDTE,Availability of a Person Work Agreement,Availability of a Person Work Agreement,CA-TS-S4,Fact,fact,13,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEET,Time Sheet,Time Sheet,CA-TS-S4,Fact,fact,24,0,Activity Type; Personnel; WBS Element,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEETOVERTIMECAT,Overtime Category for Timesheet,Overtime Category for Timesheet,CA-TS-S4,,basic,2,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEETOVERTIMECATTEXT,Overtime Category for Timesheet - Text,Overtime Category for Timesheet - Text,CA-TS-S4,,text,3,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEETRECORD,Time Recording Data,Time Recording Data,CA-TS-S4,Fact,fact,57,0,Activity Type; Company Code; Controlling Area; Personnel; WBS Element,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEETRECORDLONGTEXT,Note of a Timesheet Record - Text,Note of a Timesheet Record - Text,CA-TS-S4,,text,5,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEETREJECTIONREASONTEXT,Rejection Reason for Timesheet - Text,Rejection Reason for Timesheet - Text,CA-TS-S4,,text,4,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEETSTATUSTEXT,Status for Timesheet Record - Text,Status for Timesheet Record - Text,CA-TS-S4,,text,3,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEETTASKTYPE,Task Type for Timesheet,Task Type for Timesheet,CA-TS-S4,,basic,4,0,,top-level,yes,ODATA_HCM_CATS_APPROVE,yes
+I_TIMESHEETTASKTYPERELEVANCE,Task Type Relevance for Timesheet,Task Type Relevance for Timesheet,CA-TS-S4,Dimension,dimension,3,0,,top-level,yes,ODATA_HCM_CATS_APPROVE,yes
+I_TIMESHEETTASKTYPERLVNCETEXT,Task Type Relevance for Timesheet - Text,Task Type Relevance for Timesheet - Text,CA-TS-S4,,text,6,0,,top-level,yes,ODATA_HCM_CATS_APPROVE,yes
+I_TIMESHEETTASKTYPETEXT,Task Type for Timesheet - Text,Task Type for Timesheet - Text,CA-TS-S4,,text,5,0,,top-level,yes,ODATA_HCM_CATS_APPROVE,yes
+I_TIMESHEETTP,Time Sheet - TP,Time Sheet - TP,CA-TS-S4,,basic,0,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,no
+I_TIMESHEETWRKLOC,Work Location for Timesheet,Work Location for Timesheet,CA-TS-S4,,basic,8,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_TIMESHEETWRKLOCTEXT,Work Location for Timesheet - Text,Work Location for Timesheet - Text,CA-TS-S4,,text,6,0,,top-level,yes,ODATA_HCM_CATS_REPORTING,yes
+I_PERSONWORKAGREEMENT_1,Person Work Agreement Details,Person Work Agreement Details,CA-WFD,Dimension,dimension,16,0,Business Partner,top-level,yes,VDM_SHCM_EMPLOYEE_V2,yes
+I_PERSONWORKAGRMTFORKEYDATE,Person WorkAgreement Details for key date,Person WorkAgreement Details for key date,CA-WFD,,basic,0,0,,top-level,yes,VDM_SHCM_EMPLOYEE_V2,no
+I_PERSONWORKAGRMTORGLDETAILS,Person Work Agreement Organization Details,Person Work Agreement Organization Details,CA-WFD,Dimension,dimension,12,0,Company Code; Cost Center,top-level,yes,VDM_SHCM_EMPLOYEE_V2,yes
+I_PERSONWORKAGRMTPLNDWRKGTIME,Work Agreement Planned Working time,Work Agreement Planned Working time,CA-WFD,Dimension,dimension,7,0,,top-level,yes,VDM_SHCM_EMPLOYEE_V2,yes
+I_PERSONWORKAGRMTTOEXTERNALID,Mapping between Work agrrement internal and External IDs,Mapping between Work agrrement internal and External IDs,CA-WFD,Dimension,dimension,5,0,Company Code,top-level,yes,VDM_SHCM_EMPLOYEE_V2,yes
+I_PERSWRKAGRMTMANAGERFORKEYDTE,Retrieve manager for given date,Retrieve manager for given date,CA-WFD,Dimension,dimension,6,1,,top-level,yes,VDM_SHCM_EMPLOYEE_V2,yes
+I_WORKASSIGNMENTADDRESS,Work Assignment Address Details,Work Assignment Address Details,CA-WFD-BL,,basic,44,0,Address; Business Partner,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WORKASSIGNMENTDETAIL,Work Assignment Details,Work Assignment Details,CA-WFD-BL,,basic,15,0,Company Code; Cost Center,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WORKASSIGNMENT_1,Work Assignments,Work Assignments,CA-WFD-BL,,basic,9,0,,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WORKFORCEPERSONADDRESS,Workforce Person Address Details,Workforce Person Address Details,CA-WFD-BL,,basic,40,0,Address; Business Partner,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WORKFORCEPERSONSKILLTAG,Workforce Person Skill Tag,Workforce Person Skill Tag,CA-WFD-BL,,basic,6,0,Business Partner,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WORKFORCEPERSON_1,Workforce Person,Workforce Person,CA-WFD-BL,,basic,23,0,Business Partner,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WRKASSGMTPAYMENTDETAIL,Work Assignment Payment Details,Work Assignment Payment Details,CA-WFD-BL,,basic,19,0,,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WRKASSGMTSRVCCOSTLVL_1,Workforce Person Service Cost Level,Workforce Person Service Cost Level,CA-WFD-BL,,basic,9,0,,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WRKASSGMTWRKORDERDETAIL,Assignment Work Order Details,Assignment Work Order Details,CA-WFD-BL,,basic,9,0,Business Partner,top-level,yes,VDM_WFD_WORK_FORCE,yes
+I_WORKASSIGNMENTADDRESSTP,Work Assignment Address - TP,Work Assignment Address - TP,CA-WFD-INT,,basic,0,0,,top-level,yes,WFD_INT_RAP,no
+I_WORKASSIGNMENTDETAILTP_1,Projection of WorkAssignment Detail - TP,Projection of WorkAssignment Detail - TP,CA-WFD-INT,,basic,0,0,,top-level,yes,WFD_INT_RAP,no
+I_WORKASSIGNMENTTP_1,Work Assignments Projection - TP,Work Assignments Projection - TP,CA-WFD-INT,,basic,0,0,,top-level,yes,WFD_INT_RAP,no
+I_WORKFORCEPERSONSKILLTAGTP_1,Projection of Workforceperson Tags - TP,Projection of Workforceperson Tags - TP,CA-WFD-INT,,basic,0,0,,top-level,yes,WFD_INT_RAP,no
+I_WORKFORCEPERSONTP_1,Workforce Person - TP,Workforce Person - TP,CA-WFD-INT,,basic,0,0,,top-level,yes,WFD_INT_RAP,no
+I_WRKASSGMTPAYMENTTP_1,Work Assignment Payment - TP,Work Assignment Payment - TP,CA-WFD-INT,,basic,0,0,,top-level,yes,WFD_INT_RAP,no
+I_WRKASSGMTSRVCCOSTLVLTP_1,Projection of Service Cost Level - TP,Projection of Service Cost Level - TP,CA-WFD-INT,,basic,0,0,,top-level,yes,WFD_INT_RAP,no
+I_WRKASSGMTWRKORDDETTP,Projection of Workorder - TP,Projection of Workorder - TP,CA-WFD-INT,,basic,0,0,,top-level,yes,WFD_INT_RAP,no

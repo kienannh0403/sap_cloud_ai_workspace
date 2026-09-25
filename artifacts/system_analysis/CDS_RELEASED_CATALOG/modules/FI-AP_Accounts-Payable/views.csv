@@ -1,12 +1,21 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_PAYMENTBLOCKLEVEL,Payment Block Level,Payment Block Level,FI-AP-AP-B,Dimension,dimension,3,0,,component
-I_PAYMENTBLOCKLEVELTEXT,Payment Block Level - Text,Payment Block Level - Text,FI-AP-AP-B,,text,6,0,,component
-I_PAYMENTPROGRAMCONTROL,Payment Program Control,Payment Program Control,FI-AP-AP-B,,basic,18,0,,component
-I_PAYMENTPROPOSALITEM,Payment Proposal Item,Payment Proposal Item,FI-AP-AP-B,Fact,fact,93,0,Company Code; Customer; G/L Account; Supplier,component
-I_PAYMENTPROPOSALPAYMENT,Payment Proposal Payment,Payment Proposal Payment,FI-AP-AP-B,Fact,fact,153,0,Address; Customer; Personnel; Supplier,component
-I_PAYMENTREASON,Payment Reason for Purpose Codes,Payment Reason for Purpose Codes,FI-AP-AP-B,,basic,2,0,,component
-I_PAYMENTREASONTEXT,Payment Reason for Purpose Codes - Text,Payment Reason for Purpose Codes - Text,FI-AP-AP-B,,text,3,0,,component
-I_PAYTPRPSLBLKDFINACCOUNT,Payment Proposal Blocked Fin Account,Payment Proposal Blocked Fin Account,FI-AP-AP-B,,basic,11,0,Company Code,component
-I_WITHHOLDINGTAXITEM,Withholding Tax Item,Withholding Tax Item,FI-AP-AP-Q,Fact,fact,55,0,Company Code; Fiscal Year,component
-I_PAYMENTMETHOD,Payment Method for Country/Region,Payment Method for Country/Region,FI-AP-IS,Dimension,dimension,12,0,,component
-I_PAYMENTMETHODTEXT,Payment Method - Text,Payment Method - Text,FI-AP-IS,,text,6,0,,component
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_CORRESPONDENCETYPE,Correspondence Type,Correspondence Type,FI-AP-AP-2CL,,basic,7,0,,component,yes,FBAS_APAR,yes
+I_CORRESPONDENCETYPETEXT,Correspondence Type - Text,Correspondence Type - Text,FI-AP-AP-2CL,,text,6,0,,component,yes,FBAS_APAR,yes
+I_PAYMENTBLOCKLEVEL,Payment Block Level,Payment Block Level,FI-AP-AP-B-2CL,Dimension,dimension,3,0,,component,yes,FINS_AP_PP,yes
+I_PAYMENTBLOCKLEVELTEXT,Payment Block Level - Text,Payment Block Level - Text,FI-AP-AP-B-2CL,,text,6,0,,component,yes,FINS_AP_PP,yes
+I_PAYMENTPROGRAMCONTROL,Payment Program Control,Payment Program Control,FI-AP-AP-B-2CL,,basic,18,0,,component,yes,FINS_AP_PP,yes
+I_PAYMENTPROPOSALITEM,Payment Proposal Item,Payment Proposal Item,FI-AP-AP-B-2CL,Fact,fact,93,0,Company Code; Customer; G/L Account; Supplier,component,yes,FINS_AP_PP,yes
+I_PAYMENTPROPOSALPAYMENT,Payment Proposal Payment,Payment Proposal Payment,FI-AP-AP-B-2CL,Fact,fact,153,0,Address; Customer; Personnel; Supplier,component,yes,FINS_AP_PP,yes
+I_PAYMENTREASON,Payment Reason for Purpose Codes,Payment Reason for Purpose Codes,FI-AP-AP-B-2CL,,basic,2,0,,component,yes,FINS_PAYMENT_REASON,yes
+I_PAYMENTREASONTEXT,Payment Reason for Purpose Codes - Text,Payment Reason for Purpose Codes - Text,FI-AP-AP-B-2CL,,text,3,0,,component,yes,FINS_PAYMENT_REASON,yes
+I_PAYTPRPSLBLKDFINACCOUNT,Payment Proposal Blocked Fin Account,Payment Proposal Blocked Fin Account,FI-AP-AP-B-2CL,,basic,11,0,Company Code,component,yes,FINS_AP_PP,yes
+I_WITHHOLDINGTAXCODEVH,Extended Withholding Tax Code,Extended Withholding Tax Code,FI-AP-AP-Q-2CL,,value_help,16,0,,component,yes,FQST,no
+I_WITHHOLDINGTAXINCOMETYPE,Withholding Tax Income Type,Withholding Tax Income Type,FI-AP-AP-Q-2CL,,basic,4,0,,component,yes,FQST,no
+I_WITHHOLDINGTAXINCOMETYPETEXT,Withholding Tax Income Type - Txt,Withholding Tax Income Type - Txt,FI-AP-AP-Q-2CL,,text,7,0,,component,yes,FQST,no
+I_WITHHOLDINGTAXITEM,Withholding Tax Item,Withholding Tax Item,FI-AP-AP-Q-2CL,Fact,fact,55,0,Company Code; Fiscal Year,component,yes,FQST,yes
+I_APFLEXIBLEAGING,Aging Analysis Smart Business App,Aging Analysis Smart Business App,FI-AP-IS-2CL,,basic,0,0,,component,yes,FINS_FIS_AP_APPS,no
+I_APJRNLENTRITMAGINGGRID,Aging Grid of Accounts Payables,Aging Grid of Accounts Payables,FI-AP-IS-2CL,,basic,0,0,,component,yes,FINS_FIS_AP_APPS,no
+I_PARKEDOPLACCTGDOCPYBLSITEM,Parked Accounts Payable Item,Parked Accounts Payable Item,FI-AP-IS-2CL,Dimension,dimension,160,0,Chart of Accounts; Company Code; Controlling Area; Fiscal Year; G/L Account; Grant; Order (production / maintenance / internal); Segment,component,yes,FINS_FIS_AP_APPS,yes
+I_PAYMENTMETHOD,Payment Method for Country/Region,Payment Method for Country/Region,FI-AP-IS-2CL,Dimension,dimension,12,0,,component,yes,FINS_FIS_AP_MD,yes
+I_PAYMENTMETHODINCOMPANYCODE,Payment Method for Company Code,Payment Method for Company Code,FI-AP-IS-2CL,,basic,0,0,,component,yes,FINS_FIS_AP_MD,no
+I_PAYMENTMETHODTEXT,Payment Method - Text,Payment Method - Text,FI-AP-IS-2CL,,text,6,0,,component,yes,FINS_FIS_AP_MD,yes

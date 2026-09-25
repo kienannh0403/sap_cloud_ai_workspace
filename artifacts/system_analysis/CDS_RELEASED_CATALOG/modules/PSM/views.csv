@@ -1,36 +1,45 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_BUDGETDOCWORKFLOWSTATUS,Budget Document Work Flow Status,Budget Document Work Flow Status,PSM,Dimension,dimension,3,0,,top-level
-I_BUDGETDOCWORKFLOWSTATUSTEXT,Budget Document Work Flow Status - Text,Budget Document Work Flow Status - Text,PSM,,text,6,0,,top-level
-I_COMMITMENTITEMSHORTID,Commitment Item Short ID,Commitment Item Short ID,PSM,,basic,3,0,,top-level
-I_FINANCIALMANAGEMENTAREA,Financial Management Area,Financial Management Area,PSM,Dimension,dimension,8,0,,top-level
-I_FINANCIALMANAGEMENTAREATEXT,Financial Management Area - Text,Financial Management Area - Text,PSM,,text,5,0,,top-level
-I_FINMGMTAREASTDVH,Financial Management Area,Financial Management Area,PSM,,value_help,9,0,,top-level
-I_FISCALYEARFORFINMGMTAREA,Fiscal Year for Fin Management Area,Fiscal Year for Fin Management Area,PSM,Dimension,dimension,7,0,,top-level
-I_FSCLYRFORFINMGMTAREASTDVH,Fiscal Year For FM Area,Fiscal Year For FM Area,PSM,,value_help,7,0,,top-level
-I_FUNDSMGMTFUNCTIONALAREA,Funds Management Functional Area,Funds Management Functional Area,PSM,Dimension,dimension,25,0,Functional Area,top-level
-I_FUNDSTDVH,Fund,Fund,PSM,,value_help,14,0,,top-level
-I_FUNDTEXT,Fund - Text,Fund - Text,PSM,,text,8,0,,top-level
-I_FUNDTYPE,Fund Type,Fund Type,PSM,Dimension,dimension,6,0,,top-level
-I_FUNDTYPETEXT,Fund Type - Text,Fund Type - Text,PSM,,text,7,0,,top-level
-I_PUBSECBUDGETSCENARIO,Budget Scenario for Public Sector,Budget Scenario for Public Sector,PSM-FM-BU,Dimension,dimension,3,0,,top-level
-I_PUBSECBUDGETSCENARIOTEXT,Budget Scenario for Public Sector - Text,Budget Scenario for Public Sector - Text,PSM-FM-BU,,text,6,0,,top-level
-I_PUBSECBDGTLINEITEMCUBE,Budget Line Items - Cube,Budget Line Items - Cube,PSM-FM-IS,Cube,cube,227,1,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Fiscal Year; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment,top-level
-I_PUBSECCMTMTACTLITEMCUBE,Commitment and Actual Items - Cube,Commitment and Actual Items - Cube,PSM-FM-IS,Cube,cube,476,11,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Division; Fiscal Year; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment; Supplier; Valuation Area,top-level
-I_FUNDPERIODICITY,Fund Frequency,Fund Frequency,PSM-FM-MD,,basic,2,0,,top-level
-I_FUNDPERIODICITYTEXT,Fund Frequency - Text,Fund Frequency - Text,PSM-FM-MD,,text,5,0,,top-level
-I_PUBSECBUDGETACCOUNT,Budget Account,Budget Account,PSM-FM-MD,Dimension,dimension,23,0,,top-level
-I_PUBSECBUDGETACCOUNTTEXT,Budget Account - Text,Budget Account - Text,PSM-FM-MD,,text,9,0,,top-level
-I_PUBSECBDGTACCTREVNEXPNCODE,Revenue and Expense Code for Bdgt Accts,Revenue and Expense Code for Bdgt Accts,PSM-FM-UP,Dimension,dimension,3,0,,top-level
-I_PUBSECBDGTACCTREVNEXPNTEXT,Revenue and Expense Code - Text,Revenue and Expense Code - Text,PSM-FM-UP,,text,6,0,,top-level
-I_PUBSECBDGTCNSMPNAMTTYPE,Budget Consumption Amount Type,Budget Consumption Amount Type,PSM-FM-UP,Dimension,dimension,3,0,,top-level
-I_PUBSECBDGTCNSMPNAMTTYPETEXT,Budget Consumption Amount Type - Text,Budget Consumption Amount Type - Text,PSM-FM-UP,,text,6,0,,top-level
-I_PUBSECBDGTCNSMPNTYPE,Budget Consumption Type,Budget Consumption Type,PSM-FM-UP,,basic,5,0,,top-level
-I_PUBSECBDGTCNSMPNTYPETEXT,Budget Consumption Type - Text,Budget Consumption Type - Text,PSM-FM-UP,,text,4,0,,top-level
-I_PUBSECBUDGETCNSMPNTYPEGROUP,Budget Consumption Type Group,Budget Consumption Type Group,PSM-FM-UP,Dimension,dimension,3,0,,top-level
-I_PUBSECBUDGETCNSMPNTYPEGROUPT,Budget Consumption Type Group - Text,Budget Consumption Type Group - Text,PSM-FM-UP,,basic,6,0,,top-level
-I_GRANTEEMGMTFUNDTYPE,Grantee Management Fund Type,Grantee Management Fund Type,PSM-GM-GTE,Dimension,dimension,3,0,,top-level
-I_GRANTSTDVH,Grant,Grant,PSM-GM-GTE-MD,,value_help,12,0,Grant,top-level
-I_SPONSOREDCLASSCORE,Sponsored Class,Sponsored Class,PSM-GM-GTE-MD,Dimension,dimension,14,0,,top-level
-I_SPONSOREDCLASSCORETEXT,Sponsored Class - Text,Sponsored Class - Text,PSM-GM-GTE-MD,,text,6,0,,top-level
-I_SPONSOREDPROGRAMCORE,Sponsored Program,Sponsored Program,PSM-GM-GTE-MD,Dimension,dimension,10,0,,top-level
-I_SPONSOREDPROGRAMTEXTCORE,Sponsored Program - Text,Sponsored Program - Text,PSM-GM-GTE-MD,,basic,6,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+D_EMRKDFNDSCRTEDFLTEXPRTP,Actn Exprt Param wth Create Default Val,Actn Exprt Param wth Create Default Val,PSM,,basic,0,0,,top-level,yes,ODATA_PSM_S4C_EARMARKED_FUNDS,no
+D_EMRKDFNDSCRTEDFLTIMPRTP,Actn Imprt Param wth Create Default Val,Actn Imprt Param wth Create Default Val,PSM,,basic,0,0,,top-level,yes,ODATA_PSM_S4C_EARMARKED_FUNDS,no
+D_EMRKDFNDSDOCTYPESGETFORCRTER,Parameter Earmarked Funds Document Type,Parameter Earmarked Funds Document Type,PSM,,basic,0,0,,top-level,yes,ODATA_PSM_S4C_EARMARKED_FUNDS,no
+I_BUDGETDOCWORKFLOWSTATUS,Budget Document Work Flow Status,Budget Document Work Flow Status,PSM,Dimension,dimension,3,0,,top-level,yes,PSM_S4C_BUDGET_TRANSFER,yes
+I_BUDGETDOCWORKFLOWSTATUSTEXT,Budget Document Work Flow Status - Text,Budget Document Work Flow Status - Text,PSM,,text,6,0,,top-level,yes,PSM_S4C_BUDGET_TRANSFER,yes
+I_COMMITMENTITEMSHORTID,Commitment Item Short ID,Commitment Item Short ID,PSM,,basic,3,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_EARMARKEDFUNDSDOCUMENTITEMTP,EarmarkedFundsDocumentItem - TP,EarmarkedFundsDocumentItem - TP,PSM,,basic,0,0,,top-level,yes,ODATA_PSM_S4C_EARMARKED_FUNDS,no
+I_EARMARKEDFUNDSDOCUMENTTP,EarmarkedFundsDocument - TP,EarmarkedFundsDocument - TP,PSM,,basic,0,0,,top-level,yes,ODATA_PSM_S4C_EARMARKED_FUNDS,no
+I_EMRKDFNDSDOCITMMNLREDUCNTP,EarmarkedFundsDocument Mnl Reducn - TP,EarmarkedFundsDocument Mnl Reducn - TP,PSM,,basic,0,0,,top-level,yes,ODATA_PSM_S4C_EARMARKED_FUNDS,no
+I_FINANCIALMANAGEMENTAREA,Financial Management Area,Financial Management Area,PSM,Dimension,dimension,8,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_FINANCIALMANAGEMENTAREATEXT,Financial Management Area - Text,Financial Management Area - Text,PSM,,text,5,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_FINMGMTAREASTDVH,Financial Management Area,Financial Management Area,PSM,,value_help,9,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_FISCALYEARFORFINMGMTAREA,Fiscal Year for Fin Management Area,Fiscal Year for Fin Management Area,PSM,Dimension,dimension,7,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_FSCLYRFORFINMGMTAREASTDVH,Fiscal Year For FM Area,Fiscal Year For FM Area,PSM,,value_help,7,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_FUNDSMGMTFUNCTIONALAREA,Funds Management Functional Area,Funds Management Functional Area,PSM,Dimension,dimension,25,0,Functional Area,top-level,yes,PSM_S4C_BASIS,yes
+I_FUNDSTDVH,Fund,Fund,PSM,,value_help,14,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_FUNDTEXT,Fund - Text,Fund - Text,PSM,,text,8,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_FUNDTYPE,Fund Type,Fund Type,PSM,Dimension,dimension,6,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_FUNDTYPETEXT,Fund Type - Text,Fund Type - Text,PSM,,text,7,0,,top-level,yes,PSM_S4C_BASIS,yes
+I_PUBSECBUDGETSCENARIO,Budget Scenario for Public Sector,Budget Scenario for Public Sector,PSM-FM-BU,Dimension,dimension,3,0,,top-level,yes,PSM_S4C_BUDGET,yes
+I_PUBSECBUDGETSCENARIOTEXT,Budget Scenario for Public Sector - Text,Budget Scenario for Public Sector - Text,PSM-FM-BU,,text,6,0,,top-level,yes,PSM_S4C_BUDGET,yes
+I_PUBSECBDGTLINEITEMCUBE,Budget Line Items - Cube,Budget Line Items - Cube,PSM-FM-IS,Cube,cube,227,1,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Fiscal Year; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment,top-level,yes,ODATA_PSM_S4C_FM_REPORTING,yes
+I_PUBSECCMTMTACTLITEMCUBE,Commitment and Actual Items - Cube,Commitment and Actual Items - Cube,PSM-FM-IS,Cube,cube,476,11,Activity Type; Company Code; Controlling Area; Customer; Distribution Channel; Division; Fiscal Year; G/L Account; Grant; Material / Product; Personnel; Plant; Sales Document; Sales Document Type; Sales Organization; Segment; Supplier; Valuation Area,top-level,yes,ODATA_PSM_S4C_FM_REPORTING,yes
+I_PUBSECPLANNINGCATEGORY,Planning Category for PSM,Planning Category for PSM,PSM-FM-IS,,basic,4,0,,top-level,yes,ODATA_PSM_S4C_FM_REPORTING,no
+I_FISCALYEARFORCOMMITMENTITEM,Fiscal years of Commitment Item,Fiscal years of Commitment Item,PSM-FM-MD,,basic,3,0,,top-level,yes,FMMD_CORE,no
+I_FUNDPERIODICITY,Fund Frequency,Fund Frequency,PSM-FM-MD,,basic,2,0,,top-level,yes,ODATA_PSM_S4C_FM_MD,yes
+I_FUNDPERIODICITYTEXT,Fund Frequency - Text,Fund Frequency - Text,PSM-FM-MD,,text,5,0,,top-level,yes,ODATA_PSM_S4C_FM_MD,yes
+I_PUBSECBUDGETACCOUNT,Budget Account,Budget Account,PSM-FM-MD,Dimension,dimension,23,0,,top-level,yes,ODATA_PSM_S4C_FM_MD,yes
+I_PUBSECBUDGETACCOUNTTEXT,Budget Account - Text,Budget Account - Text,PSM-FM-MD,,text,9,0,,top-level,yes,ODATA_PSM_S4C_FM_MD,yes
+I_EMRKDFUNDDOCMAILPARAM,Earmarked Funds Document Email Parameter,Earmarked Funds Document Email Parameter,PSM-FM-PO-EF,,basic,7,0,Company Code,top-level,yes,PSM_S4C_EARMARKED_FUNDS,no
+I_PUBSECBDGTACCTREVNEXPNCODE,Revenue and Expense Code for Bdgt Accts,Revenue and Expense Code for Bdgt Accts,PSM-FM-UP,Dimension,dimension,3,0,,top-level,yes,PSM_S4C_POSTINGS,yes
+I_PUBSECBDGTACCTREVNEXPNTEXT,Revenue and Expense Code - Text,Revenue and Expense Code - Text,PSM-FM-UP,,text,6,0,,top-level,yes,PSM_S4C_POSTINGS,yes
+I_PUBSECBDGTCNSMPNAMTTYPE,Budget Consumption Amount Type,Budget Consumption Amount Type,PSM-FM-UP,Dimension,dimension,3,0,,top-level,yes,PSM_S4C_POSTINGS,yes
+I_PUBSECBDGTCNSMPNAMTTYPETEXT,Budget Consumption Amount Type - Text,Budget Consumption Amount Type - Text,PSM-FM-UP,,text,6,0,,top-level,yes,PSM_S4C_POSTINGS,yes
+I_PUBSECBDGTCNSMPNTYPE,Budget Consumption Type,Budget Consumption Type,PSM-FM-UP,,basic,5,0,,top-level,yes,PSM_S4C_POSTINGS,yes
+I_PUBSECBDGTCNSMPNTYPETEXT,Budget Consumption Type - Text,Budget Consumption Type - Text,PSM-FM-UP,,text,4,0,,top-level,yes,PSM_S4C_POSTINGS,yes
+I_PUBSECBUDGETCNSMPNTYPEGROUP,Budget Consumption Type Group,Budget Consumption Type Group,PSM-FM-UP,Dimension,dimension,3,0,,top-level,yes,PSM_S4C_POSTINGS,yes
+I_PUBSECBUDGETCNSMPNTYPEGROUPT,Budget Consumption Type Group - Text,Budget Consumption Type Group - Text,PSM-FM-UP,,basic,6,0,,top-level,yes,PSM_S4C_POSTINGS,yes
+I_GRANTEEMGMTFUNDTYPE,Grantee Management Fund Type,Grantee Management Fund Type,PSM-GM-GTE,Dimension,dimension,3,0,,top-level,yes,GMCORE_E,yes
+I_GRANTSTDVH,Grant,Grant,PSM-GM-GTE-MD,,value_help,12,0,Grant,top-level,yes,PSM_S4C_GM_MD,yes
+I_SPONSOREDCLASSCORE,Sponsored Class,Sponsored Class,PSM-GM-GTE-MD,Dimension,dimension,14,0,,top-level,yes,PSM_S4C_GM_MD,yes
+I_SPONSOREDCLASSCORETEXT,Sponsored Class - Text,Sponsored Class - Text,PSM-GM-GTE-MD,,text,6,0,,top-level,yes,PSM_S4C_GM_MD,yes
+I_SPONSOREDPROGRAMCORE,Sponsored Program,Sponsored Program,PSM-GM-GTE-MD,Dimension,dimension,10,0,,top-level,yes,PSM_S4C_GM_MD,yes
+I_SPONSOREDPROGRAMTEXTCORE,Sponsored Program - Text,Sponsored Program - Text,PSM-GM-GTE-MD,,basic,6,0,,top-level,yes,PSM_S4C_GM_MD,yes

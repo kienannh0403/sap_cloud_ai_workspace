@@ -1,0 +1,219 @@
+view,state,component,successors,description,in_user_file
+ARS_APIS,notToBeReleased,BC-SRV-APS-EXT-REL,,APIs,no
+C_BILLGDOCITMPRCGELMNTBSCDEX,deprecated,SD-BIL-2CL,C_BILLGDOCITMPRCGELMNTBSCDEX_1,Data Extraction for Billing Doc Item Pricing Element Basic,no
+C_BILLINGDOCUMENTITEMBASICDEX,deprecated,SD-BIL-2CL,C_BILLINGDOCITEMBASICDEX_1,Billing Document Item Basic Extraction Data,no
+C_CHANGERECORDDEX,deprecated,PLM-CR-2CL,C_CHANGERECORDDEX_2,Data Extraction for Change Record Header,no
+C_CHANGERECORDITEMDEX,deprecated,PLM-CR-2CL,C_CHANGERECORDITEMDEX_2,Extractor for Generic CR item,no
+C_CHANGERECORDITEMEXTDEX,deprecated,PLM-CR-2CL,C_CHANGERECORDITEMDEX_2,Data Extraction for Change Record Item,no
+C_CHANGERECORDLONGTEXTDEX,deprecated,PLM-CR-2CL,C_CHANGERECORDLONGTEXTDEX_2,Change Record Long Text,no
+C_CHANGERECORDPARTNERDEX,deprecated,PLM-CR-2CL,C_CHANGERECORDPARTNERDEX_2,Change Record Partner or Person Resp,no
+C_CHANGERECORDTEXTDEX,deprecated,PLM-CR-2CL,C_CHANGERECORDDESCDEX,Data Extraction for Change Record - Text,no
+C_CHGRECRESPONSIBLEDEX,deprecated,PLM-CR-2CL,C_CHANGERECORDPARTNERDEX_2,DEX for Change Record Responsible,no
+C_SALESDOCITMPRCGELMNTDEX,deprecated,SD-ANA-2CL,C_SALESDOCITMPRCGELMNTDEX_1,Data Extraction for Sales Document Item Pricing Element,no
+C_SALESDOCUMENTITEMDEX,deprecated,SD-ANA-2CL,C_SALESDOCUMENTITEMDEX_1,Data Extraction for Sales Document Item,no
+C_SALESDOCUMENTSCHEDLINEDEX,deprecated,SD-ANA-2CL,C_SALESDOCUMENTSCHEDLINEDEX_1,Data Extraction for Sales Document Schedule Lines,no
+C_SWF_SWD_C1_RELEASED_UT,deprecated,BC-BMT-WFM,,C1 Released View for Unit Tests (Deprecated),no
+D_SPNEGTTNQTNITMTOGLINCLEXCLP,deprecated,MM-PUR-SRC-NGN,,Inclsn of Qtn in Srcg Proj Negttn - Param,no
+D_SPNEGTTNQTNUPDTTARGETPRICEP,deprecated,MM-PUR-SRC-NGN,,Updt Tgt Prc for SPNegttn - Param,no
+D_SPNEGTTNQTNUPDTTARGETQTYP,deprecated,MM-PUR-SRC-NGN,,Updt Tgt Qty for SPNegttn - Param,no
+D_SRCGPROJNEGTTNCOPYPARAMETER,deprecated,MM-PUR-SRC-NGN,,Copy of Srcg Proj Negotiation - Param,no
+D_SRCGPROJNEGTTNQTNADDSPQTNP,deprecated,MM-PUR-SRC-NGN,,Add Qtn to Srcg Proj Negotiation - Param,no
+D_SSUPLISTBPPROPOSETODELETEP,deprecated,MM-PUR-SRC-SSL,,Propose to Delete SSupList BP - Param,no
+D_SUPLRLISTCREATEUSRSPCFDLISTP,deprecated,MM-PUR-SRC-SL,,Crte Usr Spcfd Suplr List - Param,no
+D_SUPLRLISTPRPSDCOCODEACCEPTP,deprecated,MM-PUR-SRC-SL,,Aprv Prpsd Co Code in Suplr List - Param,no
+D_SUPLRLISTPRPSDSUPLRAPPROVEP,deprecated,MM-PUR-SRC-SL,,Aprv Prpsd Suplr in Suplr List - Param,no
+D_SUPLSTPRPSDCCPRPOSTOADDCCP,deprecated,MM-PUR-SRC-SL,,Propose to add CC in Suplr List - Param,no
+D_SUPLSTPRPSDCCPRPOSTODELCCP,deprecated,MM-PUR-SRC-SL,,Propose to delete Company Code - Param,no
+D_SUPLSTPRPSDSUPPRPOSTOADDSUPP,deprecated,MM-PUR-SRC-SL,,Param for supplier list propose supplier,no
+D_SUPLSTPRPSDSUPPRPOSTODELSUPP,deprecated,MM-PUR-SRC-SL,,Param for PSL propose to delete supplier,no
+D_SUPPLIERLISTCOPYPARAMETER,deprecated,MM-PUR-SRC-SL,,Copy of Supplier List - Param,no
+I_APISFORSAPCLOUDPLATFORM,deprecated,BC-SRV-APS-EXT-REL,I_APISFORCLOUDDEVELOPMENT,,no
+I_BILLOFMATERIALHEADERDEX,deprecated,LO-MD-BOM-2CL,,Data Extraction BOM Header,no
+I_BILLOFMATERIALITEMDEX,deprecated,LO-MD-BOM-2CL,,Data Extraction BOM Item,no
+I_BILLOFMATERIALITEMDEX_2,deprecated,LO-MD-BOM-2CL,I_BILLOFMATERIALITEMDEX_3,Data Extraction for BOM Item,no
+I_BSORDITMSUBSCRPNPARAMETERTP,deprecated,CRM-S4-SOL-SLO,I_BSORDITMSUBSCRPNPARAMTP_2,Business Solution Order Item Subscription Parameter - TP,no
+I_BUSINESSUSER,deprecated,BC-SRV-BUM,I_BUSINESSUSERBASIC,Business User,no
+I_CADOCUMENTBPITEMLOGICAL,deprecated,FI-CA-2CL,I_CADOCUMENTBPITEM,Document Logical Business Partner Item,no
+I_CADOCUMENTBPITEMPHYSICAL,deprecated,FI-CA-2CL,I_CADOCUMENTBPITEM,Document Physical Business Partner Item,no
+I_CADOCUMENTBPREPETITIONITEM,deprecated,FI-CA-2CL,I_CADOCUMENTBPITEM,Document BP Repetition Item,no
+I_CADOCUMENTHEADER,deprecated,FI-CA-2CL,I_CADOCUMENT,Contract Accounting Document,no
+I_CAINVCGCHARGEANDDISCOUNT,deprecated,FI-CA-2CL,I_CONACCTPRTNINVCGCHRGANDDISC,Charges/Discounts,no
+I_CARELSHPOFBPTOCONTRACCT,deprecated,FI-CA-2CL,I_CONTRACCTPRTNRELSHPTYPE,Contract Account Relationship of Partner,no
+I_CARELSHPOFBPTOCONTRACCTTEXT,deprecated,FI-CA-2CL,I_CONTRACCTPRTNRELSHPTYPETXT,Text on Contract Account Relationship,no
+I_CASHFLOWACTUALITEM,deprecated,FIN-FSCM-CLM-FQM-2CL,,Actual Item for One Exposure Cash FLow,no
+I_CNSLDTNPOSTINGLEVELT,deprecated,FIN-CS-MD-2CL,I_CNSLDTNPOSTINGLEVELTEXT_2,Consolidation Posting Level - Text,no
+I_COSTELEMENT,notToBeReleased,FI-GL-IS-2CL,I_GLACCOUNT,Cost Element,no
+I_COSTELEMENTTEXT,notToBeReleased,FI-GL-IS-2CL,I_GLACCOUNTTEXT,Cost Element Text,no
+I_CTRLAREACOCODEASSGMT,deprecated,FI-GL-IS-2CL,I_COMPANYCODE,Assignment of Company Code to Controlling Area,no
+I_EWM_DELIVERYCATEGORY,deprecated,SCM-EWM-DLP-2CL,I_EWM_DELIVERYCATEGORY_2,EWM Delivery Category,no
+I_EWM_DELIVERYTYPE,deprecated,SCM-EWM-DLP-2CL,I_EWM_DELIVERYTYPE_2,Warehouse Delivery Type,no
+I_EWM_DELIVERYTYPETEXT,deprecated,SCM-EWM-DLP-2CL,I_EWM_DELIVERYTYPETEXT_2,Warehouse Delivery Type - Text,no
+I_EWM_INBOUNDDELIVERYTYPE,deprecated,SCM-EWM-DLP-2CL,I_EWM_INBOUNDDELIVERYTYPE_2,Warehouse Inbound Delivery Type,no
+I_EWM_OUTBOUNDDELIVORDERTYPE,deprecated,SCM-EWM-DLP-2CL,I_EWM_OUTBOUNDDELIVORDERTYPE_2,Warehouse Outbound Delivery Order Type,no
+I_FINANCIALSTATEMENTHIERARCHY,deprecated,FI-FIO-GL-HIE-2CL,I_GLACCOUNTHIERARCHY,Financial Statement Hierarchy,no
+I_FINANCIALSTATEMENTHIERARCHYT,deprecated,FI-FIO-GL-HIE-2CL,I_GLACCOUNTHIERARCHYTEXT,Financial Statement Hierarchy - Text,no
+I_FINTRANSFLOWPOSTGBLKGRSN,deprecated,FIN-FSCM-TRM-2CL,I_FINTRANSFLOWFIXINGBLKGRSN,Financial Transaction Flow Posting Blocking Reason,no
+I_FINTRANSFLOWPOSTGBLKGRSNTEXT,deprecated,FIN-FSCM-TRM-2CL,I_FINTRANSFLOWFIXBLKGRSNTXT,Fin Trans Flow Postg Blkg Reason - Text,no
+I_FINTRANSFLOWPOSTGSTATUS,deprecated,FIN-FSCM-TRM-2CL,I_FINTRANSFLOWFIXINGSTATUS,Financial Transaction Flow Posting Status,no
+I_FINTRANSFLOWPOSTGSTATUSTEXT,deprecated,FIN-FSCM-TRM-2CL,I_FINTRANSFLOWFIXSTATUSTEXT,Fin Trans Flow Posting Status - Text,no
+I_JVAJOINTOPERATINGAGRMTDETAIL,deprecated,CA-JVA,I_JVAJOINTOPERATINGAGRMTDET_2,JVA and cost object MD information,no
+I_JVAVENTURECOSTOBJECTDETAILS,deprecated,CA-JVA,I_JVAVENTURECOSTOBJECTDETS_2,Joint Venture Cost Object Details,no
+I_MAINTORDEROPCOMPONENTTP,deprecated,PM-WOC-MO-2CL,I_MAINTORDEROPCOMPONENTTP_2,Maint Order Component Projection - TP,no
+I_MATERIALBOMLINKDEX,deprecated,LO-MD-BOM-2CL,I_MATERIALBOMLINKDEX_2,Data Extraction MAST,yes
+I_MATERIALSTOCK,deprecated,MM-IM-VDM-SGM-2CL,I_MATERIALSTOCK_2,Material Stock Calculation,no
+I_MFGORDERACTLPLANTGTCOST,deprecated,CO-PC-OBJ-ORD-2CL,I_MFGORDERACTLPLANTGTLDGRCOST,Manufacturing Order Plan Actual - Cube,no
+I_MFGORDERWIPVARIANCE,deprecated,CO-PC-OBJ-ORD-2CL,I_MFGORDEREVTBSDWIPVARIANCE,WIP and Variance of Manufacturing Order,no
+I_ORGLCHANGEFIXEDASSETTP,deprecated,FI-GL-OC-2CL,,Organizational Change Fixed Assets - TP,no
+I_ORGLCHANGENETWORKACTIVITYTP,deprecated,FI-GL-OC-2CL,,OrglChange Networkactivity - TP,no
+I_PROCUREMENTPROJACTVTNSTSTXT,deprecated,MM-PUR-SRC-PP,,Activation Status of Procmt Proj - Text,no
+I_PROCUREMENTPROJECTACTVTNSTS,deprecated,MM-PUR-SRC-PP,,Activation Status of Procurement Project,no
+I_PROCUREMENTPROJECTPLANTTP,deprecated,MM-PUR-SRC-PP,,Plant in Procurement Project - TP,no
+I_PROCUREMENTPROJECTTP,deprecated,MM-PUR-SRC-PP,,Procurement Project - TP,no
+I_PRODAVAILABILITYCHECKGROUP,deprecated,SD-MD-MM-2CL,I_ATPCHECKINGGROUP,Product Availability Check Group,no
+I_PRODAVAILABILITYCHECKGROUPT,deprecated,SD-MD-MM-2CL,I_ATPCHECKINGGROUPTEXT,Product Availability Check Group - Text,no
+I_PRODNORDERPLANNINGCATEGORY,deprecated,CO-PC-OBJ-ORD-2CL,,Production Order Planning Category,no
+I_PRODSRCGTYPECANCLNMODEL,deprecated,MM-PUR-SRC-SP,,Cancelation Model for Product Srcg Type,no
+I_PRODSRCGTYPEITEMEXCLUDEMODEL,deprecated,MM-PUR-SRC-SP,,Item Exclude Model for Product Srcg Type,no
+I_PRODSRCGTYPEUNCONFDRSNMODEL,deprecated,MM-PUR-SRC-SP,,Unconfd Reason Model for Prod Srcg Type,no
+I_PRODSRCGTYPEUNLKSUPLRMODEL,deprecated,MM-PUR-SRC-SP,,Unlock Supplier Model for Prod Srcg Type,no
+I_PRODSRCGTYPEVERSIONMODEL,deprecated,MM-PUR-SRC-SP,,Version Model for Product Sourcing Type,no
+I_PRODUCTSOURCINGREASON,deprecated,MM-PUR-SRC-SP,,Reason used in Product Sourcing,no
+I_PRODUCTSOURCINGREASONTEXT,deprecated,MM-PUR-SRC-SP,,Reason used in Product Sourcing - Text,no
+I_PRODUCTSTORAGE,notToBeReleased,LO-MD-MM-2CL,I_PRODUCTSTORAGE_2,Product Storage,no
+I_PRODUCTUNITOFMEASURETEXT,notToBeReleased,LO-MD-MM-2CL,I_PRODUNITOFMEASURETEXTBASIC,Product Unit of Measure Text active core entity,no
+I_SALESORDERBOMLINKDEX,deprecated,LO-MD-BOM-2CL,I_SALESORDERBOMLINKDEX_2,Data extraction for SO bomlink,yes
+I_SERIALNUMBERMATERIALDOCUMENT,deprecated,LO-MD-SN-2CL,I_SERIALNUMBERMATERIALDOC_2,Serial Number Material Documents,no
+I_SERVICECOSTRATE,deprecated,CO-OM-2CL,I_SERVICECOSTRATE_2,Interface View for Service Cost Rate,no
+I_SOURCINGPROJECTCONTACTCAT,deprecated,MM-PUR-SRC-SP,,Contact Category for Srcg Project,no
+I_SOURCINGPROJECTCONTACTCATT,deprecated,MM-PUR-SRC-SP,,Contact Category for Srcg Proj - Text,no
+I_SOURCINGPROJECTCONTACTTP,deprecated,MM-PUR-SRC-SP,,Contact for Sourcing Project - TP,no
+I_SOURCINGPROJECTITEMLINKAGETP,deprecated,MM-PUR-SRC-SP,,Item Linking in Sourcing Project - TP,no
+I_SOURCINGPROJECTITEMTP,deprecated,MM-PUR-SRC-SP,,Item in Sourcing Project - TP,no
+I_SOURCINGPROJECTITEMTYPE,deprecated,MM-PUR-SRC-SP,,Type of Item in Sourcing Project,no
+I_SOURCINGPROJECTITEMTYPETEXT,deprecated,MM-PUR-SRC-SP,,Type of Item in Sourcing Project - Text,no
+I_SOURCINGPROJECTMILESTONETP,deprecated,MM-PUR-SRC-SP,,Milestone for Sourcing Project - TP,no
+I_SOURCINGPROJECTNEGOTIATIONTP,deprecated,MM-PUR-SRC-NGN,,Negotiation for Sourcing Project - TP,no
+I_SOURCINGPROJECTPHASE,deprecated,MM-PUR-SRC-SP,,Phase of Sourcing Project,no
+I_SOURCINGPROJECTPHASETEXT,deprecated,MM-PUR-SRC-SP,,Phase of Sourcing Project - Text,no
+I_SOURCINGPROJECTQUOTATIONTP,deprecated,MM-PUR-SRC-SPQ,,Quotation for Sourcing Project - TP,no
+I_SOURCINGPROJECTQUOTATIONTYPE,deprecated,MM-PUR-SRC-SPQ,,Type of Sourcing Project Quotation,no
+I_SOURCINGPROJECTTP,deprecated,MM-PUR-SRC-SP,,Sourcing Project - TP,no
+I_SOURCINGPROJECTTYPE,deprecated,MM-PUR-SRC-SP,,Type of Sourcing Project,no
+I_SOURCINGPROJECTTYPETEXT,deprecated,MM-PUR-SRC-SP,,Type of Sourcing Project - Text,no
+I_SOURCINGSUPPLIERLISTTP_2,deprecated,MM-PUR-SRC-SSL,,Supplier List for Sourcing - TP,no
+I_SPNEGTTNQTNITEMDEMANDDISTRTP,deprecated,MM-PUR-SRC-NGN,,Dmnd Distr for Srcg Proj Negttn - TP,no
+I_SPNEGTTNQTNITMDMNDDISTRDETTP,deprecated,MM-PUR-SRC-NGN,,Dmnd Distr Det for Srcg Proj Negttn - TP,no
+I_SPQTNITEMPRODFPRNTPLANTTP,deprecated,MM-PUR-SRC-SPQ,,Product Footprint Plant in Qtn Itm - TP,no
+I_SPQTNTYPECONTACTCATMODEL,deprecated,MM-PUR-SRC-SP,,Contact Category Model for SPQtn Type,no
+I_SRCGPROJALLOWEDCURRENCYTP,deprecated,MM-PUR-SRC-SP,,Allowed Currency in Srcg Project - TP,no
+I_SRCGPROJALLWDSUPLRCONTACTTP,deprecated,MM-PUR-SRC-SP,,Allwd Suplr Contact in Srcg Proj  - TP,no
+I_SRCGPROJAWARDINGSCENARIOTP,deprecated,MM-PUR-SRC-AWD,,Awarding Scenario in Srcg Project - TP,no
+I_SRCGPROJAWARDINGSCENQTNTP,deprecated,MM-PUR-SRC-AWD,,SPQtn for Awdg Scen in Srcg Proj - TP,no
+I_SRCGPROJAWDGSCENAPPRVLSTATUS,deprecated,MM-PUR-SRC-AWD,,Approval Status for Awdg Scen in SrcPrj,no
+I_SRCGPROJAWDGSCENAPPRVLSTSTXT,deprecated,MM-PUR-SRC-AWD,,Apprvl Sts for Awdg Scen in SrcPrj - Txt,no
+I_SRCGPROJAWDGSCENAWDGSTATUS,deprecated,MM-PUR-SRC-AWD,,Awdg Status for Awarding Scen in SrcPrj,no
+I_SRCGPROJAWDGSCENAWDGSTSTEXT,deprecated,MM-PUR-SRC-AWD,,Awdg Status for Awarding Scen in SrcPrj - Txt,no
+I_SRCGPROJAWDGSCENLFCYCSTATUS,deprecated,MM-PUR-SRC-AWD,,Lfcyc Status for Awarding Scen in SrcPrj,no
+I_SRCGPROJAWDGSCENLFCYCSTSTEXT,deprecated,MM-PUR-SRC-AWD,,Lfcyc Sts for Awdg Scen in SrcPrj - Txt,no
+I_SRCGPROJCANCELLATIONRSN,deprecated,MM-PUR-SRC-SP,I_PRODUCTSOURCINGREASON,Sourcing Project Cancellation Reason,no
+I_SRCGPROJCANCELLATIONRSNTEXT,deprecated,MM-PUR-SRC-SP,I_PRODUCTSOURCINGREASONTEXT,Sourcing Project Cancellation Reason - Txt,no
+I_SRCGPROJECTQUOTATIONTYPETEXT,deprecated,MM-PUR-SRC-SPQ,,Type of Sourcing Project Quotation - Text,no
+I_SRCGPROJFOLLOWONDOCCAT,deprecated,MM-PUR-SRC-SP,,Follow On Document Category in Srcg Proj,no
+I_SRCGPROJFOLLOWONDOCTYPE,deprecated,MM-PUR-SRC-SP,,Follow On Document Type in Sourcing Proj,no
+I_SRCGPROJITEMCLASSFCTNTEXT,deprecated,MM-PUR-SRC-SP,,Classification of Srcg Proj Item - Text,no
+I_SRCGPROJITEMCLASSIFICATION,deprecated,MM-PUR-SRC-SP,,Classification of Sourcing Project Item,no
+I_SRCGPROJITEMDEMANDCONFCODE,deprecated,MM-PUR-SRC-SP,,Demand Conf Code for Srcg Proj Item,no
+I_SRCGPROJITEMDMNDCONFCODETEXT,deprecated,MM-PUR-SRC-SP,,Dmnd Conf Code for Scrg Proj Item - Text,no
+I_SRCGPROJITEMINCOTERMSTP,deprecated,MM-PUR-SRC-SP,,Incoterms for Sourcing Project Item - TP,no
+I_SRCGPROJITEMPAYMENTTERMSTP,deprecated,MM-PUR-SRC-SP,,Payment Terms for Srcg Project Item - TP,no
+I_SRCGPROJITEMPRODFPRNTTYPE,deprecated,MM-PUR-SRC-SP,,Type of Product Footprint in SP Item,no
+I_SRCGPROJITMCNDNAMOUNTTP,deprecated,MM-PUR-SRC-SP,,Payment Terms for Srcg Proj Item - TP,no
+I_SRCGPROJITMCNDNSCALETP,deprecated,MM-PUR-SRC-SP,,Cndn Scale for Srcg Project Item - TP,no
+I_SRCGPROJITMCNDNVALIDITYTP,deprecated,MM-PUR-SRC-SP,,Cndn Validity of Srcg Project Item - TP,no
+I_SRCGPROJITMDEMANDDISTRTP,deprecated,MM-PUR-SRC-SP,,Demand Distr for Srcg Project Item - TP,no
+I_SRCGPROJITMDMNDDISTRDETAILTP,deprecated,MM-PUR-SRC-SP,,Dmnd Distr Dets for Srcg Proj Itm - TP,no
+I_SRCGPROJITMPRODFOOTPRINTTP,deprecated,MM-PUR-SRC-SP,,Srcg Proj Itm Product Footprint - TP,no
+I_SRCGPROJITMPRODFPRNTTYPETEXT,deprecated,MM-PUR-SRC-SP,,Type of Product Footprint - Text,no
+I_SRCGPROJITMSHIPGINSTRNTP,deprecated,MM-PUR-SRC-SP,,Shipping Instrn for Srcg Proj Item - TP,no
+I_SRCGPROJLIFECYCLESTATUS,deprecated,MM-PUR-SRC-SP,,Lifecycle Status of Sourcing Project,no
+I_SRCGPROJLIFECYCLESTATUSTEXT,deprecated,MM-PUR-SRC-SP,,Lifecycle Status of Srcg Project - Text,no
+I_SRCGPROJMILESTONESTATUS,deprecated,MM-PUR-SRC-SP,,Status of Sourcing Project Milestone,no
+I_SRCGPROJMILESTONESTATUSTEXT,deprecated,MM-PUR-SRC-SP,,Status of Srcg Project Milestone - Text,no
+I_SRCGPROJMILESTONETYPE,deprecated,MM-PUR-SRC-SP,,Type of Sourcing Project Milestone,no
+I_SRCGPROJMILESTONETYPETEXT,deprecated,MM-PUR-SRC-SP,,Type of Srcg Project Milestone - Text,no
+I_SRCGPROJNEGOTIATIONTYPE,deprecated,MM-PUR-SRC-NGN,,Type of Sourcing Project Negotiation,no
+I_SRCGPROJNEGOTIATIONTYPETEXT,deprecated,MM-PUR-SRC-NGN,,Type of Srcg Project Negotiation - Text,no
+I_SRCGPROJNEGTTNLFCYCSTATUS,deprecated,MM-PUR-SRC-NGN,,Lifecycle Status for Srcg Proj Negttn,no
+I_SRCGPROJNEGTTNLFCYCSTATUSTXT,deprecated,MM-PUR-SRC-NGN,,Lfcyc Sts for Srcg Proj Negttn - Text,no
+I_SRCGPROJNEGTTNQTANITEMTP,deprecated,MM-PUR-SRC-NGN,,Quotation Item for Srcg Proj Negttn - TP,no
+I_SRCGPROJNEGTTNQUOTATIONTP,deprecated,MM-PUR-SRC-NGN,,Quotation for Srcg Project Negttn - TP,no
+I_SRCGPROJPARTICIPATIONSTATUS,deprecated,MM-PUR-SRC-SP,,Participation Status of Sourcing Project,no
+I_SRCGPROJPARTICIPATIONSTSTEXT,deprecated,MM-PUR-SRC-SP,,Partcptn Status of Srcg Project - Text,no
+I_SRCGPROJPROCUREMENTPROJECTTP,deprecated,MM-PUR-SRC-SP,,Procurement Project in Srcg Project - TP,no
+I_SRCGPROJPUBDSUPLRLISTBPTP,deprecated,MM-PUR-SRC-SP,,Bus Part in Pubd Suplr List in SrcPrj - TP,no
+I_SRCGPROJQTNACTIVATIONSTATUS,deprecated,MM-PUR-SRC-SPQ,,Actvtn Status of Srcg Project Quotation,no
+I_SRCGPROJQTNACTIVATIONSTSTXT,deprecated,MM-PUR-SRC-SPQ,,Actvtn Status of Srcg Project Quotation - Text,no
+I_SRCGPROJQTNALLOWEDCURRENCYTP,deprecated,MM-PUR-SRC-SPQ,,Allowed Currency in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNALLOWEDPAYTTRMTP,deprecated,MM-PUR-SRC-SPQ,,Allwd Payt Terms in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNALLWDINCOTERMSTP,deprecated,MM-PUR-SRC-SPQ,,Allowed Incoterms in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNALLWDSHIPGINSTRTP,deprecated,MM-PUR-SRC-SPQ,,Allwd Shipg Instrn in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNITEMINCOTERMSTP,deprecated,MM-PUR-SRC-SPQ,,Incoterms for Item in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNITEMLINKAGETP,deprecated,MM-PUR-SRC-SPQ,,Item Linking in Srcg Proj Quotation - TP,no
+I_SRCGPROJQTNITEMOFFERCODE,deprecated,MM-PUR-SRC-SPQ,,Offering Code for Itm in Srcg Proj Qtn,no
+I_SRCGPROJQTNITEMOFFERCODETEXT,deprecated,MM-PUR-SRC-SPQ,,Offering Code for Item in SPQtn - Text,no
+I_SRCGPROJQTNITEMPRODFPRNTTP,deprecated,MM-PUR-SRC-SPQ,,Product Footprint for Qtn Item - TP,no
+I_SRCGPROJQTNITEMTP,deprecated,MM-PUR-SRC-SPQ,,Item in Sourcing Project Quotation - TP,no
+I_SRCGPROJQTNITMCNDNAMOUNTTP,deprecated,MM-PUR-SRC-SPQ,,Cndn Amt for Item in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNITMCNDNSCALETP,deprecated,MM-PUR-SRC-SPQ,,Cndn Sc for Item in Srcg Proj Qtn  - TP,no
+I_SRCGPROJQTNITMCNDNVALIDITYTP,deprecated,MM-PUR-SRC-SPQ,,Cndn Valdty of Itm in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNITMDMNDDISTRDETTP,deprecated,MM-PUR-SRC-SPQ,,Dmnd Distr Details for Itm in SPQtn - TP,no
+I_SRCGPROJQTNITMDMNDDISTRTP,deprecated,MM-PUR-SRC-SPQ,,Dmnd Distr for Itm in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNITMPAYMENTTERMSTP,deprecated,MM-PUR-SRC-SPQ,,Payt Tems for Itm in Srcg Proj Qtn - TP,no
+I_SRCGPROJQTNITMSHIPGINSTRNTP,deprecated,MM-PUR-SRC-SPQ,,Shipping Instrn for Item in SPQtn - TP,no
+I_SRCGPROJQTNLIFECYCLESTS,deprecated,MM-PUR-SRC-SPQ,,Lifecycle Status of Srcg Proj Quotation,no
+I_SRCGPROJQTNLIFECYCLESTSTEXT,deprecated,MM-PUR-SRC-SPQ,,Lifecycle Status of Srcg Proj Qtn - Text,no
+I_SRCGPROJQTNREVISIONSTATUS,deprecated,MM-PUR-SRC-SPQ,,Rvsn Stts of Srcg Proj Quotation,no
+I_SRCGPROJQTNREVISIONSTATUSTXT,deprecated,MM-PUR-SRC-SPQ,,Rvsn Stts of Srcg Proj Quotation - Text,no
+I_SRCGPROJQTNSUBMISSIONSTATUS,deprecated,MM-PUR-SRC-SPQ,,Sbmsn Stts of Srcg Proj Quotation,no
+I_SRCGPROJQTNSUBMISSIONSTSTEXT,deprecated,MM-PUR-SRC-SPQ,,Sbmsn Stts of Srcg Proj Quotation - Text,no
+I_SRCGPROJQTNSUITABILITY,deprecated,MM-PUR-SRC-SPQ,,Suitability of Srcg Project Quotation,no
+I_SRCGPROJQTNSUITABILITYTXT,deprecated,MM-PUR-SRC-SPQ,,Suitability of Srcg Project Qtn - Text,no
+I_SRCGPROJQTNSUPPLIERCONTACTTP,deprecated,MM-PUR-SRC-SPQ,,Supplier Contact in Srcg Proj Qtn - TP,no
+I_SRCGPROJSOURCINGORIGIN,deprecated,MM-PUR-SRC-SP,,Sourcing Origin in Sourcing Project,no
+I_SRCGPROJSOURCINGORIGINTEXT,deprecated,MM-PUR-SRC-SP,,Sourcing Origin in Srcg Project - Text,no
+I_SRCGPROJSOURCINGSCENARIO,deprecated,MM-PUR-SRC-SP,,Sourcing Scenario in Sourcing Project,no
+I_SRCGPROJSOURCINGSCENARIOTEXT,deprecated,MM-PUR-SRC-SP,,Sourcing Scenario in Srcg Project - Text,no
+I_SRCGPROJTYPECONTACTCATMODEL,deprecated,MM-PUR-SRC-SP,,Contact Category Model for SrcPrj Type,no
+I_SRCGPROJTYPEMILESTONEMODEL,deprecated,MM-PUR-SRC-SP,,Milestone Model for Sourcing Proj Type,no
+I_SRCGPROJTYPEPHASEMODEL,deprecated,MM-PUR-SRC-SP,,Phase Model for Sourcing Project Type,no
+I_SRCGSUPLRLISTBUSPARTNERTP_2,deprecated,MM-PUR-SRC-SSL,,Bus Partners in Srcg Supplier List - TP,no
+I_SRCGSUPLRLISTCOMPANYCODETP_2,deprecated,MM-PUR-SRC-SSL,,Company Code for Srcg Supplier List - TP,no
+I_SRCGSUPLRLISTLFCYCSTATUS,deprecated,MM-PUR-SRC-SSL,,Lifecycle Status for Srcg Suppler List,no
+I_SRCGSUPLRLISTLFCYCSTATUSTEXT,deprecated,MM-PUR-SRC-SSL,,Lfcyc Status for Srcg Suplr List - Text,no
+I_SRCGSUPLRLISTMATLGROUPTP_2,deprecated,MM-PUR-SRC-SSL,,Material Group for Srcg Suplr List - TP,no
+I_SRCGSUPLRLISTREFOBJECTTYPE,deprecated,MM-PUR-SRC-SSL,,Ref Object Type for Srcg Suplr List,no
+I_SRCGSUPLRLISTREFOBJTYPETEXT,deprecated,MM-PUR-SRC-SSL,,Ref Object type Srcg Suplr List - Text,no
+I_SRCGSUPLRLISTSUPLRSOURCETYPE,deprecated,MM-PUR-SRC-SSL,,Suplr Source Type for Srcg Suplr List,no
+I_SRCGSUPLRLISTSUPLRSRCETEXT,deprecated,MM-PUR-SRC-SSL,,Suplr Srce Type for Srcg SL - Txt,no
+I_SRVCORDFUPMAINTORDTP,deprecated,CRM-S4-SRV-SVO-2CL,,Follow-Up Maintenance Order - TP,no
+I_SRVCORDITMFUPMAINTORDTP,deprecated,CRM-S4-SRV-SVO-2CL,,Item Follow-Up Maintenance Order - TP,no
+I_STOCKTYPE,deprecated,SD-BF-MD-2CL,I_STOCKTYPE_2,Stock Type,no
+I_STOCKTYPETEXT,deprecated,SD-BF-MD-2CL,I_STOCKTYPETEXT_2,Stock Type - Text,no
+I_SUPLRLISTBUSINESSPARTNERTP_2,deprecated,MM-PUR-SRC-SL,,Business Partner for Supplier List - TP,no
+I_SUPLRLISTLIFECYCLESTATUSTEXT,deprecated,MM-PUR-SRC-SL,,Lifecycle Status - Text,no
+I_SUPLRLISTMATERIALGROUPTP_2,deprecated,MM-PUR-SRC-SL,,Material Group for Supplier List - TP,no
+I_SUPLRLISTPRPSDCOMPANYCODETP,deprecated,MM-PUR-SRC-SL,,Prpsd Company Code for Suplr List - TP,no
+I_SUPLRLISTPRPSDSUPPLIERTP_2,deprecated,MM-PUR-SRC-SL,,Proposed Supplier for Supplier List - TP,no
+I_SUPLRLISTSUPLRCNTRYGROUPTEXT,deprecated,MM-PUR-SRC-SL,,Country Group for Supplier List - Text,no
+I_SUPLRLISTSUPLRCOUNTRYGROUP,deprecated,MM-PUR-SRC-SL,,Country Group for Supplier List,no
+I_SUPPLIERLISTCOMPANYCODETP_2,deprecated,MM-PUR-SRC-SL,,Company Code for Supplier List - TP,no
+I_SUPPLIERLISTCOUNTRYGROUP,deprecated,MM-PUR-SRC-SL,,Country Group for Supplier List,no
+I_SUPPLIERLISTLIFECYCLESTATUS,deprecated,MM-PUR-SRC-SL,,Lifecycle Status for Supplier List,no
+I_SUPPLIERLISTTP_2,deprecated,MM-PUR-SRC-SL,,Supplier List - TP,no
+I_SUPPLIERLISTTYPE,deprecated,MM-PUR-SRC-SL,,Supplier List Type,no
+I_SUPPLIERLISTTYPETEXT,deprecated,MM-PUR-SRC-SL,,Supplier List Type - Text,no
+I_UNITOFMEASURECOMMERCIALNAME,deprecated,BC-SRV-ASF-UOM,I_UNITOFMEASURETEXT,Unit of Measure Assignment of commercial to internal,yes
+I_UNITOFMEASURETECHNICALNAME,deprecated,BC-SRV-ASF-UOM,I_UNITOFMEASURETEXT,Unit of Measure Assignment of technical to internal,yes
+I_VOLATILITYNAME,deprecated,FIN-FSCM-TRM-2CL,I_IMPLIEDVOLATILITYIDENTIFIER,Volatility Name Definition,no
+I_VOLATILITYNAMETEXT,deprecated,FIN-FSCM-TRM-2CL,I_IMPLIEDVOLATILITYIDENTIFIERT,Volatility Name - Text,no
+I_VOLATILITYPROFILE,deprecated,FIN-FSCM-TRM-2CL,I_VOLATILITYPROFILE_2,Volatility Profile Information,no

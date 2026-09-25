@@ -1,33 +1,33 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_GHGCATEGORY,GHG Category Codelist,GHG Category Codelist,SUS-INT,Dimension,dimension,4,0,,top-level
-I_GHGCATEGORYTEXT,GHG Category - Text,GHG Category - Text,SUS-INT,,text,4,0,,top-level
-I_GHGCATEGORYVH,GHG Category,GHG Category,SUS-INT,,value_help,4,0,,top-level
-I_GHGDTAQLTYCHARACTERISTIC,GHG Data Quality Characteristic Codelist,GHG Data Quality Characteristic Codelist,SUS-INT,Dimension,dimension,3,0,,top-level
-I_GHGDTAQLTYCHARACTERISTICVH,GHG Data Quality Characteristic,GHG Data Quality Characteristic,SUS-INT,,value_help,2,0,,top-level
-I_GHGDTAQLTYCHARCTEXT,GHG Data Quality Characteristic - Text,GHG Data Quality Characteristic - Text,SUS-INT,,text,4,0,,top-level
-I_GHGENERGYCLASSIFICATION,GHG Energy Classification Codelist,GHG Energy Classification Codelist,SUS-INT,Dimension,dimension,3,0,,top-level
-I_GHGENERGYCLASSIFICATIONVH,GHG Energy Classification,GHG Energy Classification,SUS-INT,,value_help,2,0,,top-level
-I_GHGENERGYMIX,GHG Energy Mix Codelist,GHG Energy Mix Codelist,SUS-INT,Dimension,dimension,3,0,,top-level
-I_GHGENERGYMIXTEXT,GHG Energy Mix - Text,GHG Energy Mix - Text,SUS-INT,,text,4,0,,top-level
-I_GHGENERGYMIXVH,GHG Energy Mix,GHG Energy Mix,SUS-INT,,value_help,2,0,,top-level
-I_GHGENERGYSOURCINGTYPE,GHG Energy Sourcing Type Codelist,GHG Energy Sourcing Type Codelist,SUS-INT,Dimension,dimension,3,0,,top-level
-I_GHGENERGYSOURCINGTYPETEXT,GHG Energy Sourcing Type - Text,GHG Energy Sourcing Type - Text,SUS-INT,,text,4,0,,top-level
-I_GHGENERGYSOURCINGTYPEVH,GHG Energy Sourcing Type,GHG Energy Sourcing Type,SUS-INT,,value_help,2,0,,top-level
-I_GHGENGYCLASSIFICATIONTEXT,GHG Energy Classification - Text,GHG Energy Classification - Text,SUS-INT,,text,4,0,,top-level
-I_GHGSCOPE,GHG Scope Codelist,GHG Scope Codelist,SUS-INT,Dimension,dimension,3,0,,top-level
-I_GHGSCOPETEXT,GHG Scope - Text,GHG Scope - Text,SUS-INT,,text,4,0,,top-level
-I_GHGSCOPEVH,GHG Scope,GHG Scope,SUS-INT,,value_help,2,0,,top-level
-I_GHGSCP2CALCMETHOD,GHG Scope 2 Calculation Method Codelist,GHG Scope 2 Calculation Method Codelist,SUS-INT,Dimension,dimension,4,0,,top-level
-I_GHGSCP2CALCMETHODTEXT,GHG Scope 2 Calculation Method - Text,GHG Scope 2 Calculation Method - Text,SUS-INT,,text,4,0,,top-level
-I_GHGSCP2CALCMETHODVH,GHG Scope 2 Calculation Method,GHG Scope 2 Calculation Method,SUS-INT,,value_help,2,0,,top-level
-I_GHGSCP2CNTRCTLINSTRTEXT,GHG Scope 2 Contractual Instrument - Text,GHG Scope 2 Contractual Instrument - Text,SUS-INT,,text,4,0,,top-level
-I_GHGSCP2CNTRCTLINSTRUMENT,GHG Scope 2 Contractual Instrument Codelist,GHG Scope 2 Contractual Instrument Codelist,SUS-INT,Dimension,dimension,4,0,,top-level
-I_GHGSCP2CNTRCTLINSTRUMENTVH,GHG Scope 2 Contractual Instrument,GHG Scope 2 Contractual Instrument,SUS-INT,,value_help,2,0,,top-level
-I_SUSTMODEOFTRANSPORT,Sustainability Mode of Transport Codelist,Sustainability Mode of Transport Codelist,SUS-INT,Dimension,dimension,3,0,,top-level
-I_SUSTMODEOFTRANSPORTTEXT,Sustainability Mode of Transport - Text,Sustainability Mode of Transport - Text,SUS-INT,,text,4,0,,top-level
-I_SUSTMODEOFTRANSPORTVH,Sustainability Mode of Transport,Sustainability Mode of Transport,SUS-INT,,value_help,2,0,,top-level
-I_CO2EQFPRNTAVGGHGCAT,Avg Rltv CO2eq Footprint GHG Category,Avg Rltv CO2eq Footprint GHG Category,SUS-PFM-INT,,basic,8,0,,top-level
-I_CO2EQFPRNTAVGRLTVBASEUOM_2,Avg Rltv CO2eq Footprint of Prod at Plnt,Avg Rltv CO2eq Footprint of Prod at Plnt,SUS-PFM-INT,,basic,16,0,Material / Product; Plant,top-level
-I_CO2EQSUPLRFPRNTAVGBASEUOM_2,Avg Suplr Related CO2eq Footprint,Avg Suplr Related CO2eq Footprint,SUS-PFM-INT,,basic,19,0,Material / Product; Plant; Supplier,top-level
-I_PFMTRANSDATACO2EQFPRNT,Carbon Footprint of Transaction Data,Carbon Footprint of Transaction Data,SUS-PFM-INT,,basic,8,0,,top-level
-I_PFMTRANSDATACO2EQFPRNTGHGCAT,Trans data footprint GHG Category,Trans data footprint GHG Category,SUS-PFM-INT,,basic,10,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_GHGCATEGORY,GHG Category Codelist,GHG Category Codelist,SUS-INT,Dimension,dimension,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGCATEGORYTEXT,GHG Category - Text,GHG Category - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGCATEGORYVH,GHG Category,GHG Category,SUS-INT,,value_help,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGDTAQLTYCHARACTERISTIC,GHG Data Quality Characteristic Codelist,GHG Data Quality Characteristic Codelist,SUS-INT,Dimension,dimension,3,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGDTAQLTYCHARACTERISTICVH,GHG Data Quality Characteristic,GHG Data Quality Characteristic,SUS-INT,,value_help,2,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGDTAQLTYCHARCTEXT,GHG Data Quality Characteristic - Text,GHG Data Quality Characteristic - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENERGYCLASSIFICATION,GHG Energy Classification Codelist,GHG Energy Classification Codelist,SUS-INT,Dimension,dimension,3,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENERGYCLASSIFICATIONVH,GHG Energy Classification,GHG Energy Classification,SUS-INT,,value_help,2,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENERGYMIX,GHG Energy Mix Codelist,GHG Energy Mix Codelist,SUS-INT,Dimension,dimension,3,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENERGYMIXTEXT,GHG Energy Mix - Text,GHG Energy Mix - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENERGYMIXVH,GHG Energy Mix,GHG Energy Mix,SUS-INT,,value_help,2,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENERGYSOURCINGTYPE,GHG Energy Sourcing Type Codelist,GHG Energy Sourcing Type Codelist,SUS-INT,Dimension,dimension,3,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENERGYSOURCINGTYPETEXT,GHG Energy Sourcing Type - Text,GHG Energy Sourcing Type - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENERGYSOURCINGTYPEVH,GHG Energy Sourcing Type,GHG Energy Sourcing Type,SUS-INT,,value_help,2,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGENGYCLASSIFICATIONTEXT,GHG Energy Classification - Text,GHG Energy Classification - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCOPE,GHG Scope Codelist,GHG Scope Codelist,SUS-INT,Dimension,dimension,3,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCOPETEXT,GHG Scope - Text,GHG Scope - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCOPEVH,GHG Scope,GHG Scope,SUS-INT,,value_help,2,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCP2CALCMETHOD,GHG Scope 2 Calculation Method Codelist,GHG Scope 2 Calculation Method Codelist,SUS-INT,Dimension,dimension,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCP2CALCMETHODTEXT,GHG Scope 2 Calculation Method - Text,GHG Scope 2 Calculation Method - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCP2CALCMETHODVH,GHG Scope 2 Calculation Method,GHG Scope 2 Calculation Method,SUS-INT,,value_help,2,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCP2CNTRCTLINSTRTEXT,GHG Scope 2 Contractual Instrument - Text,GHG Scope 2 Contractual Instrument - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCP2CNTRCTLINSTRUMENT,GHG Scope 2 Contractual Instrument Codelist,GHG Scope 2 Contractual Instrument Codelist,SUS-INT,Dimension,dimension,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_GHGSCP2CNTRCTLINSTRUMENTVH,GHG Scope 2 Contractual Instrument,GHG Scope 2 Contractual Instrument,SUS-INT,,value_help,2,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_SUSTMODEOFTRANSPORT,Sustainability Mode of Transport Codelist,Sustainability Mode of Transport Codelist,SUS-INT,Dimension,dimension,3,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_SUSTMODEOFTRANSPORTTEXT,Sustainability Mode of Transport - Text,Sustainability Mode of Transport - Text,SUS-INT,,text,4,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_SUSTMODEOFTRANSPORTVH,Sustainability Mode of Transport,Sustainability Mode of Transport,SUS-INT,,value_help,2,0,,top-level,yes,VDM_SUS_FND_REUSE,yes
+I_CO2EQFPRNTAVGGHGCAT,Avg Rltv CO2eq Footprint GHG Category,Avg Rltv CO2eq Footprint GHG Category,SUS-PFM-INT,,basic,8,0,,top-level,yes,VDM_SUS_PFM_MD_FOOTPRINT,yes
+I_CO2EQFPRNTAVGRLTVBASEUOM_2,Avg Rltv CO2eq Footprint of Prod at Plnt,Avg Rltv CO2eq Footprint of Prod at Plnt,SUS-PFM-INT,,basic,16,0,Material / Product; Plant,top-level,yes,VDM_SUS_PFM_MD_FOOTPRINT,yes
+I_CO2EQSUPLRFPRNTAVGBASEUOM_2,Avg Suplr Related CO2eq Footprint,Avg Suplr Related CO2eq Footprint,SUS-PFM-INT,,basic,19,0,Material / Product; Plant; Supplier,top-level,yes,VDM_SUS_PFM_MD_FOOTPRINT,yes
+I_PFMTRANSDATACO2EQFPRNT,Carbon Footprint of Transaction Data,Carbon Footprint of Transaction Data,SUS-PFM-INT,,basic,8,0,,top-level,yes,VDM_SUS_PFM_TD_FOOTPRINT,yes
+I_PFMTRANSDATACO2EQFPRNTGHGCAT,Trans data footprint GHG Category,Trans data footprint GHG Category,SUS-PFM-INT,,basic,10,0,,top-level,yes,VDM_SUS_PFM_TD_FOOTPRINT,yes

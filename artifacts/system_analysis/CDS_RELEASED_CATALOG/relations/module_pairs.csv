@@ -1,328 +1,470 @@
 module_a,module_b,n_doc,n_master,n_org,doc_entities,master_entities,org_entities
+SD-BIL_Billing,SD_other,5,11,12,Billing Document; Document Condition (pricing); Order (production / maintenance / internal); SD/LE Document (generic VBELN); Sales Document,Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location
+LE,SD_other,4,8,11,Delivery; Document Condition (pricing); Order (production / maintenance / internal); SD/LE Document (generic VBELN),Batch; Cost Center; Customer; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location
+CO_other,FI_other,4,7,12,Order (production / maintenance / internal); Purchasing Document; SD/LE Document (generic VBELN); Sales Document,Activity Type; Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Organization; Segment; Valuation Area
 LE,LO_other,4,5,8,Delivery; Document Condition (pricing); Inspection Lot; Order (production / maintenance / internal),Batch; Customer; G/L Account; Material / Product; Supplier,Controlling Area; Distribution Channel; Division; Plant; Sales Group; Sales Office; Sales Organization; Storage Location
+FI_other,SD-BIL_Billing,3,12,8,Order (production / maintenance / internal); SD/LE Document (generic VBELN); Sales Document,Address; Batch; Business Partner; Cost Center; Customer; G/L Account; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Organization
+FIN,FI_other,3,11,12,Order (production / maintenance / internal); Purchasing Document; Sales Document,Activity Type; Business Partner; Cost Center; Customer; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Supplier; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Organization; Segment; Valuation Area
+FI_other,SD_other,3,11,8,Order (production / maintenance / internal); SD/LE Document (generic VBELN); Sales Document,Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Organization
+MM-PUR_Purchasing,SD_other,3,11,6,Delivery; Document Condition (pricing); Order (production / maintenance / internal),Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Storage Location
+SD-BIL_Billing,SD-SLS_Sales,3,11,11,Document Condition (pricing); Order (production / maintenance / internal); Sales Document,Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location
+SD-SLS_Sales,SD_other,3,11,11,Document Condition (pricing); Order (production / maintenance / internal); Sales Document,Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location
+FI_other,MM_other,3,9,6,Order (production / maintenance / internal); Purchasing Document; SD/LE Document (generic VBELN),Activity Type; Cost Center; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
 LE,MM-PUR_Purchasing,3,9,6,Delivery; Document Condition (pricing); Order (production / maintenance / internal),Batch; Cost Center; Customer; G/L Account; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Functional Area; Plant; Profit Center; Storage Location
-LE,SD_other,3,8,10,Delivery; Order (production / maintenance / internal); SD/LE Document (generic VBELN),Batch; Cost Center; Customer; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Profit Center; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location
+LE,SD-BIL_Billing,3,9,11,Document Condition (pricing); Order (production / maintenance / internal); SD/LE Document (generic VBELN),Batch; Cost Center; Customer; G/L Account; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location
 LO_other,MM-PUR_Purchasing,3,8,5,Delivery; Document Condition (pricing); Order (production / maintenance / internal),Address; Batch; Business Partner; Customer; G/L Account; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Plant; Purchasing Organization; Storage Location
 MM-IM_Inventory-Management,MM-PUR_Purchasing,3,8,5,Delivery; Order (production / maintenance / internal); Purchasing Document,Batch; Cost Center; G/L Account; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Storage Location
+CO_other,PM_other,3,7,7,Order (production / maintenance / internal); Purchasing Document; Sales Document,Activity Type; Cost Center; Material / Product; Material Group; Supplier; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
+LO_other,SD_other,3,7,9,Delivery; Document Condition (pricing); Order (production / maintenance / internal),Address; Batch; Business Partner; Customer; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Distribution Channel; Division; Plant; Sales Group; Sales Office; Sales Organization; Storage Location
 MM-PUR_Purchasing,PP_other,3,7,8,Delivery; Order (production / maintenance / internal); Purchasing Document,Address; Batch; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization; Storage Location
+CO_other,FIN,3,6,12,Order (production / maintenance / internal); Purchasing Document; Sales Document,Activity Type; Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Organization; Segment; Valuation Area
+CO_other,MM_other,3,6,7,Order (production / maintenance / internal); Purchasing Document; SD/LE Document (generic VBELN),Activity Type; Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
+CO_other,SD-BIL_Billing,3,6,10,Order (production / maintenance / internal); SD/LE Document (generic VBELN); Sales Document,Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
+FI_other,PM_other,3,6,6,Order (production / maintenance / internal); Purchasing Document; Sales Document,Activity Type; Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
 LE,PP_other,3,6,6,Delivery; Inspection Lot; Order (production / maintenance / internal),Batch; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Functional Area; Plant; Profit Center; Storage Location
 LO_other,PP_other,3,6,5,Delivery; Inspection Lot; Order (production / maintenance / internal),Address; Batch; Equipment; G/L Account; Material / Product; Supplier,Company Code; Controlling Area; Plant; Purchasing Organization; Storage Location
 MM-IM_Inventory-Management,PP_other,3,6,5,Delivery; Order (production / maintenance / internal); Purchasing Document,Batch; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Storage Location
+CO_other,SD_other,3,5,10,Order (production / maintenance / internal); SD/LE Document (generic VBELN); Sales Document,Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
+FIN,PM_other,3,5,6,Order (production / maintenance / internal); Purchasing Document; Sales Document,Activity Type; Cost Center; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+FI_other,MM-PUR_Purchasing,2,15,6,Order (production / maintenance / internal); Purchasing Document,Activity Type; Address; Batch; Business Partner; Cost Center; Customer; Fixed Asset; G/L Account; Grant; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+MM-PUR_Purchasing,SD-BIL_Billing,2,12,6,Document Condition (pricing); Order (production / maintenance / internal),Address; Batch; Business Partner; Cost Center; Customer; G/L Account; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Storage Location
+FI-GL_General-Ledger,FI_other,2,11,11,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; Customer; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Sales Organization; Segment; Valuation Area
+FIN,MM-PUR_Purchasing,2,11,6,Order (production / maintenance / internal); Purchasing Document,Activity Type; Business Partner; Cost Center; Customer; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+FI_other,SD-SLS_Sales,2,11,7,Order (production / maintenance / internal); Sales Document,Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Organization
 MM-PUR_Purchasing,SD-SLS_Sales,2,11,5,Document Condition (pricing); Order (production / maintenance / internal),Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Plant; Profit Center; Storage Location
-MM-PUR_Purchasing,SD_other,2,11,4,Delivery; Order (production / maintenance / internal),Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Profit Center; Storage Location
-SD-SLS_Sales,SD_other,2,11,10,Order (production / maintenance / internal); Sales Document,Address; Batch; Business Partner; Cost Center; Customer; Material / Product; Material Group; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Profit Center; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location
-FI_other,SD-SLS_Sales,2,9,7,Order (production / maintenance / internal); Sales Document,Address; Business Partner; Cost Center; Customer; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Organization
-FI_other,SD_other,2,9,6,Order (production / maintenance / internal); Sales Document,Address; Business Partner; Cost Center; Customer; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Profit Center; Sales Organization
+FI-GL_General-Ledger,FIN,2,10,11,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; Customer; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Supplier; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Sales Organization; Segment; Valuation Area
+FIN,MM_other,2,9,6,Order (production / maintenance / internal); Purchasing Document,Activity Type; Cost Center; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+FI_other,LE,2,9,8,Order (production / maintenance / internal); SD/LE Document (generic VBELN),Batch; Cost Center; Customer; G/L Account; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Organization
 MM-PUR_Purchasing,MM_other,2,9,7,Order (production / maintenance / internal); Purchasing Document,Activity Type; Cost Center; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
-FI-GL_General-Ledger,FI_other,2,8,11,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; G/L Account; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Organization; Segment
+CA,SD-BIL_Billing,2,8,5,Billing Document; Order (production / maintenance / internal),Address; Business Partner; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization
+CA,SD_other,2,8,5,Billing Document; Order (production / maintenance / internal),Address; Business Partner; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization
+FI-GL_General-Ledger,SD-BIL_Billing,2,8,7,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; G/L Account; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Sales Organization
+FIN,SD-BIL_Billing,2,8,8,Order (production / maintenance / internal); Sales Document,Business Partner; Cost Center; Customer; G/L Account; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Organization
+FI_other,MM-IM_Inventory-Management,2,8,5,Order (production / maintenance / internal); Purchasing Document,Batch; Cost Center; G/L Account; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Valuation Area
 LE,MM-IM_Inventory-Management,2,8,4,Delivery; Order (production / maintenance / internal),Batch; Cost Center; G/L Account; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Controlling Area; Plant; Profit Center; Storage Location
 LE,SD-SLS_Sales,2,8,11,Document Condition (pricing); Order (production / maintenance / internal),Batch; Cost Center; Customer; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location
-FI-GL_General-Ledger,SD-SLS_Sales,2,7,7,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Organization
-FI-GL_General-Ledger,SD_other,2,7,6,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Profit Center; Sales Organization
+LO_other,SD-BIL_Billing,2,8,9,Document Condition (pricing); Order (production / maintenance / internal),Address; Batch; Business Partner; Customer; G/L Account; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Distribution Channel; Division; Plant; Sales Group; Sales Office; Sales Organization; Storage Location
+CO-OM_Cost-Center-Accounting,FI-GL_General-Ledger,2,7,6,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; Customer; G/L Account; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Segment
+CO-OM_Cost-Center-Accounting,FIN,2,7,7,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; Customer; G/L Account; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Segment
+CO-OM_Cost-Center-Accounting,FI_other,2,7,7,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; Customer; G/L Account; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Segment
+CO_other,MM-PUR_Purchasing,2,7,7,Order (production / maintenance / internal); Purchasing Document,Activity Type; Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
+FI-GL_General-Ledger,SD-SLS_Sales,2,7,6,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Sales Organization
+FI-GL_General-Ledger,SD_other,2,7,7,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Sales Organization
+FIN,SD-SLS_Sales,2,7,7,Order (production / maintenance / internal); Sales Document,Business Partner; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Organization
+FIN,SD_other,2,7,8,Order (production / maintenance / internal); Sales Document,Business Partner; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Organization
+FI_other,PP_other,2,7,6,Order (production / maintenance / internal); Purchasing Document,Address; Batch; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
 LO_other,SD-SLS_Sales,2,7,8,Document Condition (pricing); Order (production / maintenance / internal),Address; Batch; Business Partner; Customer; Material / Product; Personnel; Supplier,Controlling Area; Distribution Channel; Division; Plant; Sales Group; Sales Office; Sales Organization; Storage Location
-LO_other,SD_other,2,7,7,Delivery; Order (production / maintenance / internal),Address; Batch; Business Partner; Customer; Material / Product; Personnel; Supplier,Controlling Area; Distribution Channel; Division; Sales Group; Sales Office; Sales Organization; Storage Location
-MM-IM_Inventory-Management,SD_other,2,7,3,Delivery; Order (production / maintenance / internal),Batch; Cost Center; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Controlling Area; Profit Center; Storage Location
-PP_other,SD_other,2,6,4,Delivery; Order (production / maintenance / internal),Address; Batch; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Profit Center; Storage Location
+MM-IM_Inventory-Management,SD_other,2,7,5,Delivery; Order (production / maintenance / internal),Batch; Cost Center; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Storage Location
+CO-OM_Cost-Center-Accounting,SD-BIL_Billing,2,6,5,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; G/L Account; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+CO_other,FI-GL_General-Ledger,2,6,11,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Sales Organization; Segment; Valuation Area
+CO_other,LE,2,6,10,Order (production / maintenance / internal); SD/LE Document (generic VBELN),Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
+CO_other,MM-IM_Inventory-Management,2,6,5,Order (production / maintenance / internal); Purchasing Document,Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Valuation Area
+CO_other,PP_other,2,6,7,Order (production / maintenance / internal); Purchasing Document,G/L Account; Material / Product; Material Group; Supplier; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
+FI-GL_General-Ledger,PM_other,2,6,5,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; Equipment; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant
+MM-PUR_Purchasing,PM_other,2,6,7,Order (production / maintenance / internal); Purchasing Document,Activity Type; Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
+MM_other,SD-BIL_Billing,2,6,5,Order (production / maintenance / internal); SD/LE Document (generic VBELN),Cost Center; G/L Account; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+PM_other,PP_other,2,6,7,Order (production / maintenance / internal); Purchasing Document,Equipment; Material / Product; Material Group; Supplier; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
+PP_other,SD_other,2,6,6,Delivery; Order (production / maintenance / internal),Address; Batch; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Storage Location
+CO-OM_Cost-Center-Accounting,CO_other,2,5,7,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; G/L Account; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Segment
+CO-OM_Cost-Center-Accounting,SD-SLS_Sales,2,5,4,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; Personnel; Supplier; WBS Element,Business Area; Controlling Area; Plant; Profit Center
+CO-OM_Cost-Center-Accounting,SD_other,2,5,5,Order (production / maintenance / internal); Sales Document,Cost Center; Customer; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+CO_other,SD-SLS_Sales,2,5,9,Order (production / maintenance / internal); Sales Document,Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
+FIN,MM-IM_Inventory-Management,2,5,5,Order (production / maintenance / internal); Purchasing Document,Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Valuation Area
 LE,MM_other,2,5,5,Order (production / maintenance / internal); SD/LE Document (generic VBELN),Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Controlling Area; Functional Area; Plant; Profit Center
 MM-IM_Inventory-Management,MM_other,2,5,4,Order (production / maintenance / internal); Purchasing Document,Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center
-MM_other,SD_other,2,5,3,Order (production / maintenance / internal); SD/LE Document (generic VBELN),Cost Center; Material / Product; Personnel; Supplier; WBS Element,Business Area; Controlling Area; Profit Center
+MM-IM_Inventory-Management,PM_other,2,5,4,Order (production / maintenance / internal); Purchasing Document,Cost Center; Material / Product; Material Group; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+MM_other,PM_other,2,5,7,Order (production / maintenance / internal); Purchasing Document,Activity Type; Cost Center; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
+MM_other,SD_other,2,5,5,Order (production / maintenance / internal); SD/LE Document (generic VBELN),Cost Center; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+PM_other,SD-BIL_Billing,2,5,5,Order (production / maintenance / internal); Sales Document,Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+PM_other,SD-SLS_Sales,2,5,4,Order (production / maintenance / internal); Sales Document,Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Plant; Profit Center
+PM_other,SD_other,2,5,5,Order (production / maintenance / internal); Sales Document,Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+CO-OM_Cost-Center-Accounting,PM_other,2,4,6,Order (production / maintenance / internal); Sales Document,Activity Type; Cost Center; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+FIN,PP_other,2,4,6,Order (production / maintenance / internal); Purchasing Document,G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
 LO_other,MM-IM_Inventory-Management,2,4,5,Delivery; Order (production / maintenance / internal),Batch; G/L Account; Material / Product; Supplier,Company Code; Controlling Area; Plant; Storage Location; Valuation Area
 MM_other,PP_other,2,4,7,Order (production / maintenance / internal); Purchasing Document,G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center; Purchasing Organization
-FI-GL_General-Ledger,PM_other,2,3,3,Order (production / maintenance / internal); Sales Document,Equipment; Material / Product; WBS Element,Business Area; Controlling Area; Plant
-FI_other,PM_other,2,2,3,Order (production / maintenance / internal); Sales Document,Material / Product; WBS Element,Business Area; Controlling Area; Plant
-PM_other,SD-SLS_Sales,2,2,3,Order (production / maintenance / internal); Sales Document,Material / Product; WBS Element,Business Area; Controlling Area; Plant
-PM_other,SD_other,2,2,2,Order (production / maintenance / internal); Sales Document,Material / Product; WBS Element,Business Area; Controlling Area
-PS_Project-System,SD_other,2,2,1,SD/LE Document (generic VBELN); Sales Document,Material / Product; WBS Element,Profit Center
-FI-GL_General-Ledger,MM-PUR_Purchasing,1,11,6,Order (production / maintenance / internal),Activity Type; Cost Center; Customer; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
-FI_other,MM-PUR_Purchasing,1,10,6,Order (production / maintenance / internal),Address; Business Partner; Cost Center; Customer; G/L Account; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
-FI-GL_General-Ledger,MM_other,1,9,6,Order (production / maintenance / internal),Activity Type; Cost Center; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
-FI-GL_General-Ledger,LE,1,7,8,Order (production / maintenance / internal),Cost Center; Customer; G/L Account; Material / Product; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Organization
-FI_other,LE,1,7,8,Order (production / maintenance / internal),Cost Center; Customer; G/L Account; Material / Product; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Organization
-FI_other,LO_other,1,7,6,Order (production / maintenance / internal),Address; Business Partner; Customer; G/L Account; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Distribution Channel; Division; Plant; Sales Organization
+FI_other,PS_Project-System,2,3,4,SD/LE Document (generic VBELN); Sales Document,Grant; Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
+CO_other,PS_Project-System,2,2,4,SD/LE Document (generic VBELN); Sales Document,Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
+PS_Project-System,SD-BIL_Billing,2,2,3,SD/LE Document (generic VBELN); Sales Document,Material / Product; WBS Element,Company Code; Plant; Profit Center
+PS_Project-System,SD_other,2,2,3,SD/LE Document (generic VBELN); Sales Document,Material / Product; WBS Element,Company Code; Plant; Profit Center
+FI-GL_General-Ledger,MM-PUR_Purchasing,1,11,5,Order (production / maintenance / internal),Activity Type; Cost Center; Customer; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Profitability Segment; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant
+CA,FI_other,1,9,7,Order (production / maintenance / internal),Activity Type; Address; Business Partner; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Valuation Area
+CA,MM-PUR_Purchasing,1,9,3,Order (production / maintenance / internal),Activity Type; Address; Business Partner; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Company Code; Controlling Area; Plant
+FI-GL_General-Ledger,MM_other,1,9,5,Order (production / maintenance / internal),Activity Type; Cost Center; Fixed Asset; G/L Account; Grant; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant
+CA,FIN,1,8,7,Order (production / maintenance / internal),Activity Type; Business Partner; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Valuation Area
+CA,SD-SLS_Sales,1,8,4,Order (production / maintenance / internal),Address; Business Partner; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Controlling Area; Distribution Channel; Plant; Sales Organization
+FI_other,LO_other,1,8,7,Order (production / maintenance / internal),Address; Batch; Business Partner; Customer; G/L Account; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Distribution Channel; Division; Plant; Sales Organization; Valuation Area
+MM-IM_Inventory-Management,SD-BIL_Billing,1,8,5,Order (production / maintenance / internal),Batch; Cost Center; G/L Account; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Storage Location
+CA,FI-GL_General-Ledger,1,7,7,Order (production / maintenance / internal),Activity Type; Cost Center; Customer; Material / Product; Personnel; Supplier; WBS Element,Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Valuation Area
+CO-OM_Cost-Center-Accounting,MM-PUR_Purchasing,1,7,6,Order (production / maintenance / internal),Activity Type; Cost Center; Customer; G/L Account; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+FI-GL_General-Ledger,LE,1,7,7,Order (production / maintenance / internal),Cost Center; Customer; G/L Account; Material / Product; Profitability Segment; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Sales Organization
+LE,PP-SFC_Shop-Floor-Control,1,7,5,Inspection Lot,Batch; Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Functional Area; Plant; Profit Center
 MM-IM_Inventory-Management,SD-SLS_Sales,1,7,4,Order (production / maintenance / internal),Batch; Cost Center; Material / Product; Material Group; Profitability Segment; Supplier; WBS Element,Controlling Area; Plant; Profit Center; Storage Location
-CA,MM-PUR_Purchasing,1,6,4,Order (production / maintenance / internal),Activity Type; Address; Business Partner; Cost Center; Personnel; WBS Element,Business Area; Company Code; Controlling Area; Plant
+PP-SFC_Shop-Floor-Control,PP_other,1,7,6,Inspection Lot,Batch; G/L Account; Material / Product; Material Group; Supplier; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+PP_other,SD-BIL_Billing,1,7,6,Order (production / maintenance / internal),Address; Batch; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Storage Location
+CA,CO-OM_Cost-Center-Accounting,1,6,3,Order (production / maintenance / internal),Activity Type; Cost Center; Customer; Personnel; Supplier; WBS Element,Company Code; Controlling Area; Plant
+CA,LO_other,1,6,6,Order (production / maintenance / internal),Address; Business Partner; Customer; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Valuation Area
+CA,MM_other,1,6,3,Order (production / maintenance / internal),Activity Type; Cost Center; Material / Product; Personnel; Supplier; WBS Element,Company Code; Controlling Area; Plant
+CO-OM_Cost-Center-Accounting,MM_other,1,6,6,Order (production / maintenance / internal),Activity Type; Cost Center; G/L Account; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
 FI-GL_General-Ledger,LO_other,1,6,7,Order (production / maintenance / internal),Customer; Equipment; G/L Account; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Distribution Channel; Division; Plant; Sales Organization; Valuation Area
-FI-GL_General-Ledger,MM-IM_Inventory-Management,1,6,5,Order (production / maintenance / internal),Cost Center; G/L Account; Material / Product; Profitability Segment; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Valuation Area
+FI-GL_General-Ledger,MM-IM_Inventory-Management,1,6,4,Order (production / maintenance / internal),Cost Center; G/L Account; Material / Product; Profitability Segment; Supplier; WBS Element,Company Code; Controlling Area; Plant; Valuation Area
 FI-GL_General-Ledger,PSM,1,6,6,Sales Document,Activity Type; Customer; G/L Account; Grant; Material / Product; Personnel,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Segment
-FI_other,MM-IM_Inventory-Management,1,6,4,Order (production / maintenance / internal),Cost Center; G/L Account; Material / Product; Profitability Segment; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center
-FI_other,MM_other,1,6,6,Order (production / maintenance / internal),Cost Center; G/L Account; Material / Product; Personnel; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
-LE,PP-SFC_Shop-Floor-Control,1,6,5,Inspection Lot,Batch; Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Functional Area; Plant; Profit Center
-PP-SFC_Shop-Floor-Control,PP_other,1,6,6,Inspection Lot,Batch; Material / Product; Material Group; Supplier; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+FIN,LE,1,6,8,Order (production / maintenance / internal),Cost Center; Customer; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Controlling Area; Distribution Channel; Division; Functional Area; Plant; Profit Center; Sales Organization
+FIN,LO_other,1,6,7,Order (production / maintenance / internal),Business Partner; Customer; G/L Account; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Distribution Channel; Division; Plant; Sales Organization; Valuation Area
+FIN,PSM,1,6,6,Sales Document,Activity Type; Customer; G/L Account; Grant; Material / Product; Personnel,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Segment
+FI_other,PSM,1,6,6,Sales Document,Activity Type; Customer; G/L Account; Grant; Material / Product; Personnel,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Segment
+PP-SFC_Shop-Floor-Control,QM,1,6,5,Inspection Lot,Batch; Cost Center; G/L Account; Material / Product; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
 PP_other,QM,1,6,6,Inspection Lot,Batch; Equipment; G/L Account; Material / Product; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Storage Location
 PP_other,SD-SLS_Sales,1,6,5,Order (production / maintenance / internal),Address; Batch; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Plant; Profit Center; Storage Location
-CA,FI_other,1,5,5,Order (production / maintenance / internal),Address; Business Partner; Cost Center; Personnel; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Plant
-CA,SD-SLS_Sales,1,5,3,Order (production / maintenance / internal),Address; Business Partner; Cost Center; Personnel; WBS Element,Business Area; Controlling Area; Plant
-CA,SD_other,1,5,2,Order (production / maintenance / internal),Address; Business Partner; Cost Center; Personnel; WBS Element,Business Area; Controlling Area
-FI-GL_General-Ledger,PP_other,1,5,6,Order (production / maintenance / internal),Equipment; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
-FI_other,PP_other,1,5,6,Order (production / maintenance / internal),Address; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
-FI_other,SD-BIL_Billing,1,5,4,Sales Document,Address; Customer; G/L Account; Personnel; Supplier,Company Code; Distribution Channel; Division; Sales Organization
+CA,CO_other,1,5,7,Order (production / maintenance / internal),Activity Type; Cost Center; Material / Product; Supplier; WBS Element,Chart of Accounts; Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Valuation Area
+CA,LE,1,5,4,Order (production / maintenance / internal),Cost Center; Customer; Material / Product; Supplier; WBS Element,Controlling Area; Distribution Channel; Plant; Sales Organization
+CA,PM_other,1,5,3,Order (production / maintenance / internal),Activity Type; Cost Center; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant
+CO-OM_Cost-Center-Accounting,LE,1,5,5,Order (production / maintenance / internal),Cost Center; Customer; G/L Account; Supplier; WBS Element,Business Area; Controlling Area; Functional Area; Plant; Profit Center
+CRM,MM-PUR_Purchasing,1,5,4,Document Condition (pricing),Batch; Business Partner; Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+CRM,SD-BIL_Billing,1,5,7,Document Condition (pricing),Batch; Business Partner; Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
+CRM,SD-SLS_Sales,1,5,6,Document Condition (pricing),Batch; Business Partner; Cost Center; Material / Product; WBS Element,Controlling Area; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
+CRM,SD_other,1,5,7,Document Condition (pricing),Batch; Business Partner; Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
+FI-GL_General-Ledger,PP_other,1,5,5,Order (production / maintenance / internal),Equipment; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant
+LE,PM_other,1,5,5,Order (production / maintenance / internal),Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Functional Area; Plant; Profit Center
 LE,QM,1,5,6,Inspection Lot,Batch; Cost Center; G/L Account; Material / Product; WBS Element,Business Area; Controlling Area; Plant; Profit Center; Sales Organization; Storage Location
 MM_other,SD-SLS_Sales,1,5,4,Order (production / maintenance / internal),Cost Center; Material / Product; Personnel; Supplier; WBS Element,Business Area; Controlling Area; Plant; Profit Center
-PP-SFC_Shop-Floor-Control,QM,1,5,5,Inspection Lot,Batch; Cost Center; Material / Product; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
-CA,FI-GL_General-Ledger,1,4,6,Order (production / maintenance / internal),Activity Type; Cost Center; Personnel; WBS Element,Business Area; Chart of Accounts; Company Code; Controlling Area; Plant; Valuation Area
-CA,MM_other,1,4,4,Order (production / maintenance / internal),Activity Type; Cost Center; Personnel; WBS Element,Business Area; Company Code; Controlling Area; Plant
-CO_other,LE,1,4,2,SD/LE Document (generic VBELN),G/L Account; Material / Product; Supplier; WBS Element,Controlling Area; Plant
-CO_other,MM_other,1,4,3,SD/LE Document (generic VBELN),G/L Account; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant
+CA,MM-IM_Inventory-Management,1,4,4,Order (production / maintenance / internal),Cost Center; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant; Valuation Area
+CA,PP_other,1,4,3,Order (production / maintenance / internal),Address; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant
+CO-OM_Cost-Center-Accounting,LO_other,1,4,3,Order (production / maintenance / internal),Customer; G/L Account; Personnel; Supplier,Company Code; Controlling Area; Plant
+CO-OM_Cost-Center-Accounting,MM-IM_Inventory-Management,1,4,4,Order (production / maintenance / internal),Cost Center; G/L Account; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+CO-OM_Cost-Center-Accounting,PSM,1,4,4,Sales Document,Activity Type; Customer; G/L Account; Personnel,Company Code; Controlling Area; Plant; Segment
 CRM,LE,1,4,6,Document Condition (pricing),Batch; Cost Center; Material / Product; WBS Element,Controlling Area; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
-CRM,MM-PUR_Purchasing,1,4,3,Document Condition (pricing),Batch; Cost Center; Material / Product; WBS Element,Controlling Area; Plant; Profit Center
-CRM,SD-SLS_Sales,1,4,6,Document Condition (pricing),Batch; Cost Center; Material / Product; WBS Element,Controlling Area; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
-FI-GL_General-Ledger,SD-BIL_Billing,1,4,4,Sales Document,Customer; G/L Account; Personnel; Supplier,Company Code; Distribution Channel; Division; Sales Organization
-FI_other,PSM,1,4,6,Sales Document,Customer; G/L Account; Material / Product; Personnel,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Segment
+CRM,LO_other,1,4,6,Document Condition (pricing),Batch; Business Partner; Equipment; Material / Product,Company Code; Controlling Area; Plant; Sales Group; Sales Office; Sales Organization
 LO_other,MM_other,1,4,4,Order (production / maintenance / internal),G/L Account; Material / Product; Personnel; Supplier,Company Code; Controlling Area; Plant; Purchasing Organization
+LO_other,PP-SFC_Shop-Floor-Control,1,4,3,Inspection Lot,Batch; G/L Account; Material / Product; Supplier,Company Code; Controlling Area; Plant
 LO_other,QM,1,4,5,Inspection Lot,Batch; Equipment; G/L Account; Material / Product,Company Code; Controlling Area; Plant; Sales Organization; Storage Location
-PM_other,PP_other,1,4,3,Order (production / maintenance / internal),Equipment; Material / Product; Task List (routing) group; WBS Element,Business Area; Controlling Area; Plant
-SD-BIL_Billing,SD-SLS_Sales,1,4,3,Sales Document,Address; Customer; Personnel; Supplier,Distribution Channel; Division; Sales Organization
-SD-BIL_Billing,SD_other,1,4,3,Sales Document,Address; Customer; Personnel; Supplier,Distribution Channel; Division; Sales Organization
-CA,LO_other,1,3,4,Order (production / maintenance / internal),Address; Business Partner; Personnel,Company Code; Controlling Area; Plant; Valuation Area
-CO_other,SD_other,1,3,1,SD/LE Document (generic VBELN),Material / Product; Supplier; WBS Element,Controlling Area
-CRM,LO_other,1,3,5,Document Condition (pricing),Batch; Equipment; Material / Product,Controlling Area; Plant; Sales Group; Sales Office; Sales Organization
-LO_other,PP-SFC_Shop-Floor-Control,1,3,3,Inspection Lot,Batch; Material / Product; Supplier,Company Code; Controlling Area; Plant
-PSM,SD-BIL_Billing,1,3,3,Sales Document,Customer; G/L Account; Personnel,Company Code; Distribution Channel; Sales Organization
+PSM,SD-BIL_Billing,1,4,5,Sales Document,Customer; G/L Account; Material / Product; Personnel,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization
+CO-OM_Cost-Center-Accounting,PP_other,1,3,6,Order (production / maintenance / internal),G/L Account; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+CO_other,LO_other,1,3,10,Order (production / maintenance / internal),G/L Account; Material / Product; Supplier,Company Code; Controlling Area; Distribution Channel; Division; Plant; Purchasing Organization; Sales Group; Sales Office; Sales Organization; Valuation Area
+CO_other,PSM,1,3,6,Sales Document,Activity Type; G/L Account; Material / Product,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization; Segment
+FI-GL_General-Ledger,PS_Project-System,1,3,3,Sales Document,Grant; Material / Product; WBS Element,Company Code; Functional Area; Plant
+FIN,PS_Project-System,1,3,4,Sales Document,Grant; Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
+LO_other,PM_other,1,3,4,Order (production / maintenance / internal),Equipment; Material / Product; Supplier,Company Code; Controlling Area; Plant; Purchasing Organization
+MM_other,PS_Project-System,1,3,4,SD/LE Document (generic VBELN),Grant; Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
 PSM,SD-SLS_Sales,1,3,4,Sales Document,Customer; Material / Product; Personnel,Controlling Area; Distribution Channel; Plant; Sales Organization
-PSM,SD_other,1,3,3,Sales Document,Customer; Material / Product; Personnel,Controlling Area; Distribution Channel; Sales Organization
-CA,LE,1,2,3,Order (production / maintenance / internal),Cost Center; WBS Element,Business Area; Controlling Area; Plant
-CA,MM-IM_Inventory-Management,1,2,4,Order (production / maintenance / internal),Cost Center; WBS Element,Company Code; Controlling Area; Plant; Valuation Area
-CA,PP_other,1,2,4,Order (production / maintenance / internal),Address; WBS Element,Business Area; Company Code; Controlling Area; Plant
-CO_other,PS_Project-System,1,2,2,SD/LE Document (generic VBELN),Material / Product; WBS Element,Company Code; Plant
-FI-GL_General-Ledger,PS_Project-System,1,2,4,Sales Document,Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
-FI_other,PS_Project-System,1,2,4,Sales Document,Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
-LE,PM_other,1,2,3,Order (production / maintenance / internal),Material / Product; WBS Element,Business Area; Controlling Area; Plant
+PSM,SD_other,1,3,5,Sales Document,Customer; Material / Product; Personnel,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization
 LE,PS_Project-System,1,2,3,SD/LE Document (generic VBELN),Material / Product; WBS Element,Functional Area; Plant; Profit Center
-LO_other,PM_other,1,2,2,Order (production / maintenance / internal),Equipment; Material / Product,Controlling Area; Plant
-MM-IM_Inventory-Management,PM_other,1,2,2,Order (production / maintenance / internal),Material / Product; WBS Element,Controlling Area; Plant
-MM-PUR_Purchasing,PM_other,1,2,3,Order (production / maintenance / internal),Material / Product; WBS Element,Business Area; Controlling Area; Plant
-MM_other,PM_other,1,2,3,Order (production / maintenance / internal),Material / Product; WBS Element,Business Area; Controlling Area; Plant
-MM_other,PS_Project-System,1,2,4,SD/LE Document (generic VBELN),Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
-PM_other,PS_Project-System,1,2,1,Sales Document,Material / Product; WBS Element,Plant
+PM_other,PSM,1,2,3,Sales Document,Activity Type; Material / Product,Company Code; Controlling Area; Plant
+PM_other,PS_Project-System,1,2,4,Sales Document,Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
+PSM,PS_Project-System,1,2,2,Sales Document,Grant; Material / Product,Company Code; Plant
 PS_Project-System,SD-SLS_Sales,1,2,2,Sales Document,Material / Product; WBS Element,Plant; Profit Center
-CA,PM_other,1,1,3,Order (production / maintenance / internal),WBS Element,Business Area; Controlling Area; Plant
-PM_other,PSM,1,1,2,Sales Document,Material / Product,Controlling Area; Plant
-PSM,PS_Project-System,1,1,2,Sales Document,Material / Product,Company Code; Plant
-PM_other,SD-BIL_Billing,1,0,0,Sales Document,,
-PS_Project-System,SD-BIL_Billing,1,0,1,Sales Document,,Company Code
-MM-IM_Inventory-Management,PP-SFC_Shop-Floor-Control,0,6,4,,Batch; Cost Center; Material / Product; Material Group; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center
-MM-PUR_Purchasing,PP-SFC_Shop-Floor-Control,0,6,6,,Batch; Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+CO-OM_Cost-Center-Accounting,PS_Project-System,1,1,4,Sales Document,WBS Element,Company Code; Functional Area; Plant; Profit Center
+CO_other,PP-SFC_Shop-Floor-Control,0,7,6,,Cost Center; G/L Account; Material / Product; Material Group; Supplier; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+FI_other,PP-SFC_Shop-Floor-Control,0,7,6,,Batch; Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+MM-IM_Inventory-Management,PP-SFC_Shop-Floor-Control,0,7,4,,Batch; Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+MM-PUR_Purchasing,PP-SFC_Shop-Floor-Control,0,7,6,,Batch; Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+PP-SFC_Shop-Floor-Control,SD-BIL_Billing,0,7,5,,Batch; Cost Center; G/L Account; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
 MM-PUR_Purchasing,PSM,0,6,3,,Activity Type; Customer; G/L Account; Grant; Material / Product; Personnel,Company Code; Controlling Area; Plant
+PM_other,PP-SFC_Shop-Floor-Control,0,6,6,,Cost Center; Material / Product; Material Group; Supplier; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
 PP-SFC_Shop-Floor-Control,SD-SLS_Sales,0,6,4,,Batch; Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Plant; Profit Center
-PP-SFC_Shop-Floor-Control,SD_other,0,6,3,,Batch; Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Controlling Area; Profit Center
-CRM,QM,0,5,4,,Batch; Cost Center; Equipment; Material / Product; WBS Element,Controlling Area; Plant; Profit Center; Sales Organization
-FI-GL_General-Ledger,QM,0,5,6,,Cost Center; Equipment; G/L Account; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Sales Organization
-LO_other,SD-BIL_Billing,0,5,4,,Address; Customer; G/L Account; Personnel; Supplier,Company Code; Distribution Channel; Division; Sales Organization
+PP-SFC_Shop-Floor-Control,SD_other,0,6,5,,Batch; Cost Center; Material / Product; Material Group; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+CO_other,QM,0,5,6,,Cost Center; G/L Account; Material / Product; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Sales Organization
+CRM,FI_other,0,5,5,,Batch; Business Partner; Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Sales Organization
+CRM,QM,0,5,5,,Batch; Cost Center; Equipment; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Sales Organization
+FI-GL_General-Ledger,PP-SFC_Shop-Floor-Control,0,5,5,,Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant
+FI-GL_General-Ledger,QM,0,5,5,,Cost Center; Equipment; G/L Account; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Sales Organization
+FIN,PP-SFC_Shop-Floor-Control,0,5,6,,Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+FI_other,QM,0,5,6,,Batch; Cost Center; G/L Account; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Sales Organization
 MM-IM_Inventory-Management,QM,0,5,5,,Batch; Cost Center; G/L Account; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Storage Location
 MM-PUR_Purchasing,QM,0,5,6,,Batch; Cost Center; G/L Account; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Storage Location
-MM-PUR_Purchasing,SD-BIL_Billing,0,5,1,,Address; Customer; G/L Account; Personnel; Supplier,Company Code
+MM_other,PP-SFC_Shop-Floor-Control,0,5,6,,Cost Center; G/L Account; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
 MM_other,PSM,0,5,3,,Activity Type; G/L Account; Grant; Material / Product; Personnel,Company Code; Controlling Area; Plant
-CO_other,FI-GL_General-Ledger,0,4,5,,G/L Account; Material / Product; Supplier; WBS Element,Chart of Accounts; Company Code; Controlling Area; Plant; Valuation Area
-CO_other,FI_other,0,4,4,,G/L Account; Material / Product; Supplier; WBS Element,Chart of Accounts; Company Code; Controlling Area; Plant
-CO_other,MM-IM_Inventory-Management,0,4,4,,G/L Account; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant; Valuation Area
-CO_other,MM-PUR_Purchasing,0,4,3,,G/L Account; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant
-CO_other,PP_other,0,4,3,,G/L Account; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant
-CRM,FI-GL_General-Ledger,0,4,4,,Cost Center; Equipment; Material / Product; WBS Element,Controlling Area; Plant; Profit Center; Sales Organization
-CRM,MM-IM_Inventory-Management,0,4,3,,Batch; Cost Center; Material / Product; WBS Element,Controlling Area; Plant; Profit Center
-CRM,PP-SFC_Shop-Floor-Control,0,4,3,,Batch; Cost Center; Material / Product; WBS Element,Controlling Area; Plant; Profit Center
-CRM,PP_other,0,4,3,,Batch; Equipment; Material / Product; WBS Element,Controlling Area; Plant; Profit Center
-CRM,SD_other,0,4,5,,Batch; Cost Center; Material / Product; WBS Element,Controlling Area; Profit Center; Sales Group; Sales Office; Sales Organization
-FI-GL_General-Ledger,PP-SFC_Shop-Floor-Control,0,4,6,,Cost Center; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
-FIN,MM-PUR_Purchasing,0,4,5,,Business Partner; Cost Center; Grant; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Profit Center
-FI_other,PP-SFC_Shop-Floor-Control,0,4,6,,Cost Center; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
-FI_other,QM,0,4,6,,Cost Center; G/L Account; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Sales Organization
+PM_other,QM,0,5,5,,Cost Center; Equipment; Material / Product; Task List (routing) group; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+QM,SD-BIL_Billing,0,5,7,,Batch; Cost Center; G/L Account; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Sales Organization; Storage Location
+CA,CRM,0,4,4,,Business Partner; Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Sales Organization
+CA,PP-SFC_Shop-Floor-Control,0,4,3,,Cost Center; Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant
+CA,PSM,0,4,5,,Activity Type; Customer; Material / Product; Personnel,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization
+CA,RE,0,4,2,,Address; Business Partner; Cost Center; WBS Element,Company Code; Controlling Area
+CO-OM_Cost-Center-Accounting,PP-SFC_Shop-Floor-Control,0,4,6,,Cost Center; G/L Account; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
+CRM,FI-GL_General-Ledger,0,4,4,,Cost Center; Equipment; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Sales Organization
+CRM,FIN,0,4,5,,Business Partner; Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Sales Organization
+CRM,MM-IM_Inventory-Management,0,4,4,,Batch; Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+CRM,PM_other,0,4,4,,Cost Center; Equipment; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+CRM,PP-SFC_Shop-Floor-Control,0,4,4,,Batch; Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+CRM,PP_other,0,4,4,,Batch; Equipment; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+CRM,SCM,0,4,0,,Batch; Business Partner; Material / Product; WBS Element,
+FIN,QM,0,4,6,,Cost Center; G/L Account; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Sales Organization
+FI_other,RE,0,4,4,,Address; Business Partner; Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
+FI_other,SCM,0,4,0,,Batch; Business Partner; Material / Product; WBS Element,
 LO_other,PSM,0,4,5,,Customer; G/L Account; Material / Product; Personnel,Company Code; Controlling Area; Distribution Channel; Plant; Sales Organization
+MM-PUR_Purchasing,RE,0,4,4,,Address; Business Partner; Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
 MM-PUR_Purchasing,SCM,0,4,0,,Batch; Business Partner; Material / Product; WBS Element,
-MM_other,PP-SFC_Shop-Floor-Control,0,4,6,,Cost Center; Material / Product; Supplier; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Plant; Profit Center
 MM_other,QM,0,4,5,,Cost Center; G/L Account; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
-PM_other,QM,0,4,3,,Equipment; Material / Product; Task List (routing) group; WBS Element,Business Area; Controlling Area; Plant
 QM,SD-SLS_Sales,0,4,6,,Batch; Cost Center; Material / Product; WBS Element,Business Area; Controlling Area; Plant; Profit Center; Sales Organization; Storage Location
-QM,SD_other,0,4,5,,Batch; Cost Center; Material / Product; WBS Element,Business Area; Controlling Area; Profit Center; Sales Organization; Storage Location
+QM,SD_other,0,4,7,,Batch; Cost Center; Material / Product; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center; Sales Organization; Storage Location
+RE,SD-BIL_Billing,0,4,4,,Address; Business Partner; Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
+RE,SD-SLS_Sales,0,4,3,,Address; Business Partner; Cost Center; WBS Element,Business Area; Controlling Area; Profit Center
+RE,SD_other,0,4,4,,Address; Business Partner; Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
+SCM,SD-BIL_Billing,0,4,0,,Batch; Business Partner; Material / Product; WBS Element,
 SCM,SD-SLS_Sales,0,4,0,,Batch; Business Partner; Material / Product; WBS Element,
 SCM,SD_other,0,4,0,,Batch; Business Partner; Material / Product; WBS Element,
-CA,FIN,0,3,3,,Business Partner; Cost Center; WBS Element,Business Area; Company Code; Controlling Area
-CO_other,LO_other,0,3,4,,G/L Account; Material / Product; Supplier,Company Code; Controlling Area; Plant; Valuation Area
-CO_other,PP-SFC_Shop-Floor-Control,0,3,3,,Material / Product; Supplier; WBS Element,Company Code; Controlling Area; Plant
-CO_other,QM,0,3,3,,G/L Account; Material / Product; WBS Element,Company Code; Controlling Area; Plant
-CO_other,SD-SLS_Sales,0,3,2,,Material / Product; Supplier; WBS Element,Controlling Area; Plant
-CRM,FI_other,0,3,4,,Cost Center; Material / Product; WBS Element,Controlling Area; Plant; Profit Center; Sales Organization
-CRM,MM_other,0,3,3,,Cost Center; Material / Product; WBS Element,Controlling Area; Plant; Profit Center
-CRM,PM_other,0,3,2,,Equipment; Material / Product; WBS Element,Controlling Area; Plant
-CRM,SCM,0,3,0,,Batch; Material / Product; WBS Element,
-FI-GL_General-Ledger,FIN,0,3,6,,Cost Center; Grant; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Profit Center; Segment
-FIN,FI_other,0,3,6,,Business Partner; Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Profit Center; Segment
-FIN,MM_other,0,3,5,,Cost Center; Grant; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Profit Center
-FIN,SD-SLS_Sales,0,3,3,,Business Partner; Cost Center; WBS Element,Business Area; Controlling Area; Profit Center
-FIN,SD_other,0,3,3,,Business Partner; Cost Center; WBS Element,Business Area; Controlling Area; Profit Center
-FI_other,SCM,0,3,0,,Business Partner; Material / Product; WBS Element,
+CA,QM,0,3,4,,Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Sales Organization
+CA,SCM,0,3,0,,Business Partner; Material / Product; WBS Element,
+CO-OM_Cost-Center-Accounting,FI-AP_Accounts-Payable,0,3,1,,Customer; G/L Account; Supplier,Company Code
+CO-OM_Cost-Center-Accounting,QM,0,3,5,,Cost Center; G/L Account; WBS Element,Business Area; Company Code; Controlling Area; Plant; Profit Center
+CO_other,CRM,0,3,7,,Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center; Sales Group; Sales Office; Sales Organization
+CO_other,LO-MD-BOM_Bill-of-Material,0,3,2,,Material / Product; Material Group; Supplier,Plant; Purchasing Organization
+CRM,MM_other,0,3,4,,Cost Center; Material / Product; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+CRM,RE,0,3,3,,Business Partner; Cost Center; WBS Element,Company Code; Controlling Area; Profit Center
+FI-AP_Accounts-Payable,FI-GL_General-Ledger,0,3,1,,Customer; G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,FIN,0,3,1,,Customer; G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,FI_other,0,3,1,,Customer; G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,LE,0,3,0,,Customer; G/L Account; Supplier,
+FI-AP_Accounts-Payable,LO_other,0,3,1,,Customer; G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,MM-PUR_Purchasing,0,3,1,,Customer; G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,SD-BIL_Billing,0,3,1,,Customer; G/L Account; Supplier,Company Code
+FIN,RE,0,3,4,,Business Partner; Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
+FIN,SCM,0,3,0,,Business Partner; Material / Product; WBS Element,
+FI_other,LO-MD-BOM_Bill-of-Material,0,3,1,,Material / Product; Material Group; Supplier,Plant
+LE,LO-MD-BOM_Bill-of-Material,0,3,1,,Material / Product; Material Group; Supplier,Plant
 LE,PSM,0,3,4,,Customer; G/L Account; Material / Product,Controlling Area; Distribution Channel; Plant; Sales Organization
 LE,SCM,0,3,0,,Batch; Material / Product; WBS Element,
-LE,SD-BIL_Billing,0,3,3,,Customer; G/L Account; Supplier,Distribution Channel; Division; Sales Organization
+LO-MD-BOM_Bill-of-Material,MM-IM_Inventory-Management,0,3,1,,Material / Product; Material Group; Supplier,Plant
+LO-MD-BOM_Bill-of-Material,MM-PUR_Purchasing,0,3,2,,Material / Product; Material Group; Supplier,Plant; Purchasing Organization
+LO-MD-BOM_Bill-of-Material,PM_other,0,3,2,,Material / Product; Material Group; Supplier,Plant; Purchasing Organization
+LO-MD-BOM_Bill-of-Material,PP-SFC_Shop-Floor-Control,0,3,1,,Material / Product; Material Group; Supplier,Plant
+LO-MD-BOM_Bill-of-Material,PP_other,0,3,2,,Material / Product; Material Group; Supplier,Plant; Purchasing Organization
+LO-MD-BOM_Bill-of-Material,SD-BIL_Billing,0,3,1,,Material / Product; Material Group; Supplier,Plant
+LO-MD-BOM_Bill-of-Material,SD-SLS_Sales,0,3,1,,Material / Product; Material Group; Supplier,Plant
+LO-MD-BOM_Bill-of-Material,SD_other,0,3,1,,Material / Product; Material Group; Supplier,Plant
 LO_other,SCM,0,3,0,,Batch; Business Partner; Material / Product,
 MM-IM_Inventory-Management,SCM,0,3,0,,Batch; Material / Product; WBS Element,
-MM_other,SD-BIL_Billing,0,3,1,,G/L Account; Personnel; Supplier,Company Code
-PM_other,PP-SFC_Shop-Floor-Control,0,3,3,,Material / Product; Task List (routing) group; WBS Element,Business Area; Controlling Area; Plant
+MM-PUR_Purchasing,PS_Project-System,0,3,4,,Grant; Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
 PP-SFC_Shop-Floor-Control,SCM,0,3,0,,Batch; Material / Product; WBS Element,
 PP_other,SCM,0,3,0,,Batch; Material / Product; WBS Element,
-PP_other,SD-BIL_Billing,0,3,1,,Address; G/L Account; Supplier,Company Code
 QM,SCM,0,3,0,,Batch; Material / Product; WBS Element,
+AP,BC,0,2,0,,Address; Business Partner,
+AP,CA,0,2,0,,Address; Business Partner,
+AP,FI_other,0,2,0,,Address; Business Partner,
+AP,LO_other,0,2,0,,Address; Business Partner,
+AP,MM-PUR_Purchasing,0,2,0,,Address; Business Partner,
+AP,RE,0,2,0,,Address; Business Partner,
+AP,SD-BIL_Billing,0,2,0,,Address; Business Partner,
+AP,SD-SLS_Sales,0,2,0,,Address; Business Partner,
+AP,SD_other,0,2,0,,Address; Business Partner,
 BC,CA,0,2,0,,Address; Business Partner,
 BC,FI_other,0,2,0,,Address; Business Partner,
 BC,LO_other,0,2,0,,Address; Business Partner,
 BC,MM-PUR_Purchasing,0,2,0,,Address; Business Partner,
+BC,RE,0,2,0,,Address; Business Partner,
+BC,SD-BIL_Billing,0,2,0,,Address; Business Partner,
 BC,SD-SLS_Sales,0,2,0,,Address; Business Partner,
 BC,SD_other,0,2,0,,Address; Business Partner,
-CA,CRM,0,2,2,,Cost Center; WBS Element,Controlling Area; Plant
-CA,PP-SFC_Shop-Floor-Control,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Plant
-CA,PSM,0,2,3,,Activity Type; Personnel,Company Code; Controlling Area; Plant
-CA,QM,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Plant
-CA,SCM,0,2,0,,Business Partner; WBS Element,
-CA,SD-BIL_Billing,0,2,1,,Address; Personnel,Company Code
-CO_other,CRM,0,2,2,,Material / Product; WBS Element,Controlling Area; Plant
-CO_other,PM_other,0,2,2,,Material / Product; WBS Element,Controlling Area; Plant
-CO_other,PP-MRP_MRP,0,2,1,,Material / Product; WBS Element,Plant
-CO_other,PSM,0,2,3,,G/L Account; Material / Product,Company Code; Controlling Area; Plant
+CA,FI-AP_Accounts-Payable,0,2,1,,Customer; Supplier,Company Code
+CA,LO-MD-BOM_Bill-of-Material,0,2,1,,Material / Product; Supplier,Plant
+CA,PP-MRP_MRP,0,2,1,,Material / Product; WBS Element,Plant
+CA,PS_Project-System,0,2,2,,Material / Product; WBS Element,Company Code; Plant
+CA,TM,0,2,0,,Business Partner; Material / Product,
+CO-OM_Cost-Center-Accounting,CRM,0,2,4,,Cost Center; WBS Element,Company Code; Controlling Area; Plant; Profit Center
+CO-OM_Cost-Center-Accounting,RE,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
+CO_other,FI-AP_Accounts-Payable,0,2,1,,G/L Account; Supplier,Company Code
+CO_other,PP-MRP_MRP,0,2,2,,Material / Product; WBS Element,Business Area; Plant
+CO_other,RE,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
 CO_other,SCM,0,2,0,,Material / Product; WBS Element,
-CO_other,SD-BIL_Billing,0,2,1,,G/L Account; Supplier,Company Code
-CRM,EAM-OBJ_Technical-Objects,0,2,3,,Equipment; Material / Product,Sales Group; Sales Office; Sales Organization
-CRM,FIN,0,2,2,,Cost Center; WBS Element,Controlling Area; Profit Center
+CRM,EAM-OBJ_Technical-Objects,0,2,4,,Equipment; Material / Product,Company Code; Sales Group; Sales Office; Sales Organization
 CRM,PP-MRP_MRP,0,2,1,,Material / Product; WBS Element,Plant
-CRM,PS_Project-System,0,2,2,,Material / Product; WBS Element,Plant; Profit Center
-EAM-OBJ_Technical-Objects,FI-GL_General-Ledger,0,2,3,,Equipment; Material / Product,Distribution Channel; Division; Sales Organization
-EAM-OBJ_Technical-Objects,LO_other,0,2,5,,Equipment; Material / Product,Distribution Channel; Division; Sales Group; Sales Office; Sales Organization
-EAM-OBJ_Technical-Objects,PM_other,0,2,0,,Equipment; Material / Product,
-EAM-OBJ_Technical-Objects,PP_other,0,2,0,,Equipment; Material / Product,
-EAM-OBJ_Technical-Objects,QM,0,2,1,,Equipment; Material / Product,Sales Organization
-FI-AP_Accounts-Payable,FI-GL_General-Ledger,0,2,1,,Customer; Supplier,Company Code
-FI-AP_Accounts-Payable,FI_other,0,2,1,,Customer; Supplier,Company Code
-FI-AP_Accounts-Payable,LE,0,2,0,,Customer; Supplier,
-FI-AP_Accounts-Payable,LO_other,0,2,1,,Customer; Supplier,Company Code
-FI-AP_Accounts-Payable,MM-PUR_Purchasing,0,2,1,,Customer; Supplier,Company Code
-FI-AP_Accounts-Payable,SD-BIL_Billing,0,2,1,,Customer; Supplier,Company Code
+CRM,PS_Project-System,0,2,3,,Material / Product; WBS Element,Company Code; Plant; Profit Center
+CRM,TM,0,2,0,,Business Partner; Material / Product,
+EAM-OBJ_Technical-Objects,FI-GL_General-Ledger,0,2,4,,Equipment; Material / Product,Company Code; Distribution Channel; Division; Sales Organization
+EAM-OBJ_Technical-Objects,LO_other,0,2,6,,Equipment; Material / Product,Company Code; Distribution Channel; Division; Sales Group; Sales Office; Sales Organization
+EAM-OBJ_Technical-Objects,PM_other,0,2,1,,Equipment; Material / Product,Company Code
+EAM-OBJ_Technical-Objects,PP_other,0,2,1,,Equipment; Material / Product,Company Code
+EAM-OBJ_Technical-Objects,QM,0,2,2,,Equipment; Material / Product,Company Code; Sales Organization
+FI-AP_Accounts-Payable,MM-IM_Inventory-Management,0,2,1,,G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,MM_other,0,2,1,,G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,PP-SFC_Shop-Floor-Control,0,2,1,,G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,PP_other,0,2,1,,G/L Account; Supplier,Company Code
+FI-AP_Accounts-Payable,PSM,0,2,1,,Customer; G/L Account,Company Code
 FI-AP_Accounts-Payable,SD-SLS_Sales,0,2,0,,Customer; Supplier,
-FI-AP_Accounts-Payable,SD_other,0,2,0,,Customer; Supplier,
+FI-AP_Accounts-Payable,SD_other,0,2,1,,Customer; Supplier,Company Code
+FI-GL_General-Ledger,LO-MD-BOM_Bill-of-Material,0,2,1,,Material / Product; Supplier,Plant
 FI-GL_General-Ledger,PP-MRP_MRP,0,2,2,,Material / Product; WBS Element,Business Area; Plant
+FI-GL_General-Ledger,RE,0,2,3,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area
 FI-GL_General-Ledger,SCM,0,2,0,,Material / Product; WBS Element,
-FIN,LE,0,2,4,,Cost Center; WBS Element,Business Area; Controlling Area; Functional Area; Profit Center
-FIN,MM-IM_Inventory-Management,0,2,3,,Cost Center; WBS Element,Company Code; Controlling Area; Profit Center
-FIN,PP-SFC_Shop-Floor-Control,0,2,5,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Profit Center
-FIN,QM,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
-FIN,SCM,0,2,0,,Business Partner; WBS Element,
+FIN,LO-MD-BOM_Bill-of-Material,0,2,1,,Material / Product; Supplier,Plant
+FIN,PP-MRP_MRP,0,2,2,,Material / Product; WBS Element,Business Area; Plant
+FIN,TM,0,2,0,,Business Partner; Material / Product,
 FI_other,PP-MRP_MRP,0,2,2,,Material / Product; WBS Element,Business Area; Plant
+FI_other,TM,0,2,0,,Business Partner; Material / Product,
 LE,PP-MRP_MRP,0,2,2,,Material / Product; WBS Element,Business Area; Plant
+LE,RE,0,2,3,,Cost Center; WBS Element,Business Area; Controlling Area; Profit Center
+LO-MD-BOM_Bill-of-Material,LO_other,0,2,2,,Material / Product; Supplier,Plant; Purchasing Organization
+LO-MD-BOM_Bill-of-Material,MM_other,0,2,2,,Material / Product; Supplier,Plant; Purchasing Organization
+LO_other,RE,0,2,2,,Address; Business Partner,Company Code; Controlling Area
+LO_other,TM,0,2,0,,Business Partner; Material / Product,
 MM-IM_Inventory-Management,PP-MRP_MRP,0,2,1,,Material / Product; WBS Element,Plant
 MM-IM_Inventory-Management,PSM,0,2,3,,G/L Account; Material / Product,Company Code; Controlling Area; Plant
 MM-IM_Inventory-Management,PS_Project-System,0,2,3,,Material / Product; WBS Element,Company Code; Plant; Profit Center
-MM-IM_Inventory-Management,SD-BIL_Billing,0,2,1,,G/L Account; Supplier,Company Code
+MM-IM_Inventory-Management,RE,0,2,3,,Cost Center; WBS Element,Company Code; Controlling Area; Profit Center
 MM-PUR_Purchasing,PP-MRP_MRP,0,2,2,,Material / Product; WBS Element,Business Area; Plant
-MM-PUR_Purchasing,PS_Project-System,0,2,4,,Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
+MM-PUR_Purchasing,TM,0,2,0,,Business Partner; Material / Product,
 MM_other,PP-MRP_MRP,0,2,2,,Material / Product; WBS Element,Business Area; Plant
+MM_other,RE,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
 MM_other,SCM,0,2,0,,Material / Product; WBS Element,
 PM_other,PP-MRP_MRP,0,2,2,,Material / Product; WBS Element,Business Area; Plant
+PM_other,RE,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
 PM_other,SCM,0,2,0,,Material / Product; WBS Element,
 PP-MRP_MRP,PP-SFC_Shop-Floor-Control,0,2,2,,Material / Product; WBS Element,Business Area; Plant
 PP-MRP_MRP,PP_other,0,2,2,,Material / Product; WBS Element,Business Area; Plant
 PP-MRP_MRP,PS_Project-System,0,2,1,,Material / Product; WBS Element,Plant
 PP-MRP_MRP,QM,0,2,2,,Material / Product; WBS Element,Business Area; Plant
 PP-MRP_MRP,SCM,0,2,0,,Material / Product; WBS Element,
+PP-MRP_MRP,SD-BIL_Billing,0,2,2,,Material / Product; WBS Element,Business Area; Plant
 PP-MRP_MRP,SD-SLS_Sales,0,2,2,,Material / Product; WBS Element,Business Area; Plant
-PP-MRP_MRP,SD_other,0,2,1,,Material / Product; WBS Element,Business Area
+PP-MRP_MRP,SD_other,0,2,2,,Material / Product; WBS Element,Business Area; Plant
+PP-SFC_Shop-Floor-Control,PSM,0,2,3,,G/L Account; Material / Product,Company Code; Controlling Area; Plant
 PP-SFC_Shop-Floor-Control,PS_Project-System,0,2,4,,Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
+PP-SFC_Shop-Floor-Control,RE,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
 PP_other,PSM,0,2,3,,G/L Account; Material / Product,Company Code; Controlling Area; Plant
 PP_other,PS_Project-System,0,2,4,,Material / Product; WBS Element,Company Code; Functional Area; Plant; Profit Center
+PP_other,RE,0,2,4,,Address; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
 PSM,QM,0,2,4,,G/L Account; Material / Product,Company Code; Controlling Area; Plant; Sales Organization
 PS_Project-System,QM,0,2,3,,Material / Product; WBS Element,Company Code; Plant; Profit Center
 PS_Project-System,SCM,0,2,0,,Material / Product; WBS Element,
-AP,BC,0,1,0,,Business Partner,
-AP,CA,0,1,0,,Business Partner,
+QM,RE,0,2,4,,Cost Center; WBS Element,Business Area; Company Code; Controlling Area; Profit Center
+RE,SCM,0,2,0,,Business Partner; WBS Element,
+SCM,TM,0,2,0,,Business Partner; Material / Product,
+SD-BIL_Billing,TM,0,2,0,,Business Partner; Material / Product,
+SD-SLS_Sales,TM,0,2,0,,Business Partner; Material / Product,
+SD_other,TM,0,2,0,,Business Partner; Material / Product,
+AC,CA,0,1,1,,Cost Center,Company Code
+AC,CO-OM_Cost-Center-Accounting,0,1,2,,Cost Center,Company Code; Profit Center
+AC,CO_other,0,1,2,,Cost Center,Company Code; Profit Center
+AC,CRM,0,1,2,,Cost Center,Company Code; Profit Center
+AC,FI-GL_General-Ledger,0,1,1,,Cost Center,Company Code
+AC,FIN,0,1,2,,Cost Center,Company Code; Profit Center
+AC,FI_other,0,1,2,,Cost Center,Company Code; Profit Center
+AC,LE,0,1,1,,Cost Center,Profit Center
+AC,MM-IM_Inventory-Management,0,1,2,,Cost Center,Company Code; Profit Center
+AC,MM-PUR_Purchasing,0,1,2,,Cost Center,Company Code; Profit Center
+AC,MM_other,0,1,2,,Cost Center,Company Code; Profit Center
+AC,PM_other,0,1,2,,Cost Center,Company Code; Profit Center
+AC,PP-SFC_Shop-Floor-Control,0,1,2,,Cost Center,Company Code; Profit Center
+AC,QM,0,1,2,,Cost Center,Company Code; Profit Center
+AC,RE,0,1,2,,Cost Center,Company Code; Profit Center
+AC,SD-BIL_Billing,0,1,2,,Cost Center,Company Code; Profit Center
+AC,SD-SLS_Sales,0,1,1,,Cost Center,Profit Center
+AC,SD_other,0,1,2,,Cost Center,Company Code; Profit Center
+AP,CRM,0,1,0,,Business Partner,
 AP,FIN,0,1,0,,Business Partner,
-AP,FI_other,0,1,0,,Business Partner,
-AP,LO_other,0,1,0,,Business Partner,
-AP,MM-PUR_Purchasing,0,1,0,,Business Partner,
+AP,FS,0,1,0,,Business Partner,
+AP,PP_other,0,1,0,,Address,
 AP,SCM,0,1,0,,Business Partner,
-AP,SD-SLS_Sales,0,1,0,,Business Partner,
-AP,SD_other,0,1,0,,Business Partner,
 AP,SLC,0,1,0,,Business Partner,
 AP,TM,0,1,0,,Business Partner,
+BC,CRM,0,1,0,,Business Partner,
 BC,FIN,0,1,0,,Business Partner,
+BC,FS,0,1,0,,Business Partner,
 BC,PP_other,0,1,0,,Address,
 BC,SCM,0,1,0,,Business Partner,
-BC,SD-BIL_Billing,0,1,0,,Address,
 BC,SLC,0,1,0,,Business Partner,
 BC,TM,0,1,0,,Business Partner,
-CA,CO_other,0,1,5,,WBS Element,Chart of Accounts; Company Code; Controlling Area; Plant; Valuation Area
-CA,PP-MRP_MRP,0,1,2,,WBS Element,Business Area; Plant
-CA,PS_Project-System,0,1,2,,WBS Element,Company Code; Plant
+CA,EAM-OBJ_Technical-Objects,0,1,3,,Material / Product,Company Code; Distribution Channel; Sales Organization
+CA,FS,0,1,0,,Business Partner,
+CA,FT,0,1,0,,Material / Product,
+CA,LO-MD-MM_Material-Master,0,1,5,,Material / Product,Company Code; Distribution Channel; Plant; Sales Organization; Valuation Area
 CA,SLC,0,1,0,,Business Partner,
-CA,TM,0,1,0,,Business Partner,
-CO_other,EAM-OBJ_Technical-Objects,0,1,0,,Material / Product,
-CO_other,FI-AP_Accounts-Payable,0,1,1,,Supplier,Company Code
-CO_other,FIN,0,1,2,,WBS Element,Company Code; Controlling Area
-CO_other,LO-MD-BOM_Bill-of-Material,0,1,1,,Material / Product,Plant
-CO_other,LO-MD-MM_Material-Master,0,1,3,,Material / Product,Company Code; Plant; Valuation Area
+CA,SUS,0,1,1,,Material / Product,Plant
+CO-OM_Cost-Center-Accounting,LO-MD-BOM_Bill-of-Material,0,1,1,,Supplier,Plant
+CO-OM_Cost-Center-Accounting,PP-MRP_MRP,0,1,2,,WBS Element,Business Area; Plant
+CO-OM_Cost-Center-Accounting,SCM,0,1,0,,WBS Element,
+CO_other,EAM-OBJ_Technical-Objects,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Sales Group; Sales Office; Sales Organization
+CO_other,FT,0,1,0,,Material / Product,
+CO_other,LO-MD-MM_Material-Master,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Plant; Sales Organization; Valuation Area
 CO_other,SUS,0,1,1,,Material / Product,Plant
+CO_other,TM,0,1,0,,Material / Product,
+CRM,FS,0,1,0,,Business Partner,
+CRM,FT,0,1,0,,Material / Product,
 CRM,LO-MD-BOM_Bill-of-Material,0,1,1,,Material / Product,Plant
-CRM,LO-MD-MM_Material-Master,0,1,2,,Material / Product,Plant; Sales Organization
-CRM,PSM,0,1,3,,Material / Product,Controlling Area; Plant; Sales Organization
+CRM,LO-MD-MM_Material-Master,0,1,3,,Material / Product,Company Code; Plant; Sales Organization
+CRM,PSM,0,1,4,,Material / Product,Company Code; Controlling Area; Plant; Sales Organization
+CRM,SLC,0,1,0,,Business Partner,
 CRM,SUS,0,1,1,,Material / Product,Plant
-EAM-OBJ_Technical-Objects,FI_other,0,1,3,,Material / Product,Distribution Channel; Division; Sales Organization
+EAM-OBJ_Technical-Objects,FIN,0,1,4,,Material / Product,Company Code; Distribution Channel; Division; Sales Organization
+EAM-OBJ_Technical-Objects,FI_other,0,1,4,,Material / Product,Company Code; Distribution Channel; Division; Sales Organization
+EAM-OBJ_Technical-Objects,FT,0,1,0,,Material / Product,
 EAM-OBJ_Technical-Objects,LE,0,1,5,,Material / Product,Distribution Channel; Division; Sales Group; Sales Office; Sales Organization
 EAM-OBJ_Technical-Objects,LO-MD-BOM_Bill-of-Material,0,1,0,,Material / Product,
-EAM-OBJ_Technical-Objects,LO-MD-MM_Material-Master,0,1,3,,Material / Product,Distribution Channel; Division; Sales Organization
-EAM-OBJ_Technical-Objects,MM-IM_Inventory-Management,0,1,0,,Material / Product,
-EAM-OBJ_Technical-Objects,MM-PUR_Purchasing,0,1,0,,Material / Product,
-EAM-OBJ_Technical-Objects,MM_other,0,1,0,,Material / Product,
+EAM-OBJ_Technical-Objects,LO-MD-MM_Material-Master,0,1,4,,Material / Product,Company Code; Distribution Channel; Division; Sales Organization
+EAM-OBJ_Technical-Objects,MM-IM_Inventory-Management,0,1,1,,Material / Product,Company Code
+EAM-OBJ_Technical-Objects,MM-PUR_Purchasing,0,1,1,,Material / Product,Company Code
+EAM-OBJ_Technical-Objects,MM_other,0,1,1,,Material / Product,Company Code
 EAM-OBJ_Technical-Objects,PP-MRP_MRP,0,1,0,,Material / Product,
-EAM-OBJ_Technical-Objects,PP-SFC_Shop-Floor-Control,0,1,0,,Material / Product,
-EAM-OBJ_Technical-Objects,PSM,0,1,2,,Material / Product,Distribution Channel; Sales Organization
-EAM-OBJ_Technical-Objects,PS_Project-System,0,1,0,,Material / Product,
+EAM-OBJ_Technical-Objects,PP-SFC_Shop-Floor-Control,0,1,1,,Material / Product,Company Code
+EAM-OBJ_Technical-Objects,PSM,0,1,3,,Material / Product,Company Code; Distribution Channel; Sales Organization
+EAM-OBJ_Technical-Objects,PS_Project-System,0,1,1,,Material / Product,Company Code
 EAM-OBJ_Technical-Objects,SCM,0,1,0,,Material / Product,
+EAM-OBJ_Technical-Objects,SD-BIL_Billing,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Sales Group; Sales Office; Sales Organization
 EAM-OBJ_Technical-Objects,SD-SLS_Sales,0,1,5,,Material / Product,Distribution Channel; Division; Sales Group; Sales Office; Sales Organization
-EAM-OBJ_Technical-Objects,SD_other,0,1,5,,Material / Product,Distribution Channel; Division; Sales Group; Sales Office; Sales Organization
+EAM-OBJ_Technical-Objects,SD_other,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Sales Group; Sales Office; Sales Organization
 EAM-OBJ_Technical-Objects,SUS,0,1,0,,Material / Product,
-FI-AA_Asset-Accounting,FI-GL_General-Ledger,0,1,1,,Fixed Asset,Company Code
-FI-AA_Asset-Accounting,MM-PUR_Purchasing,0,1,1,,Fixed Asset,Company Code
-FI-AA_Asset-Accounting,MM_other,0,1,1,,Fixed Asset,Company Code
-FI-AP_Accounts-Payable,MM-IM_Inventory-Management,0,1,1,,Supplier,Company Code
-FI-AP_Accounts-Payable,MM_other,0,1,1,,Supplier,Company Code
-FI-AP_Accounts-Payable,PP-SFC_Shop-Floor-Control,0,1,1,,Supplier,Company Code
-FI-AP_Accounts-Payable,PP_other,0,1,1,,Supplier,Company Code
-FI-AP_Accounts-Payable,PSM,0,1,1,,Customer,Company Code
-FI-GL_General-Ledger,LO-MD-BOM_Bill-of-Material,0,1,1,,Material / Product,Plant
+EAM-OBJ_Technical-Objects,TM,0,1,0,,Material / Product,
+FI-AP_Accounts-Payable,LO-MD-BOM_Bill-of-Material,0,1,0,,Supplier,
+FI-AP_Accounts-Payable,PM_other,0,1,1,,Supplier,Company Code
+FI-AP_Accounts-Payable,QM,0,1,1,,G/L Account,Company Code
+FI-GL_General-Ledger,FT,0,1,0,,Material / Product,
 FI-GL_General-Ledger,LO-MD-MM_Material-Master,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Plant; Sales Organization; Valuation Area
 FI-GL_General-Ledger,SUS,0,1,1,,Material / Product,Plant
-FIN,LO_other,0,1,2,,Business Partner,Company Code; Controlling Area
-FIN,PM_other,0,1,2,,WBS Element,Business Area; Controlling Area
-FIN,PP-MRP_MRP,0,1,1,,WBS Element,Business Area
-FIN,PP_other,0,1,5,,WBS Element,Business Area; Company Code; Controlling Area; Functional Area; Profit Center
-FIN,PSM,0,1,3,,Grant,Company Code; Controlling Area; Segment
-FIN,PS_Project-System,0,1,3,,WBS Element,Company Code; Functional Area; Profit Center
+FI-GL_General-Ledger,TM,0,1,0,,Material / Product,
+FIN,FS,0,1,0,,Business Partner,
+FIN,FT,0,1,0,,Material / Product,
+FIN,LO-MD-MM_Material-Master,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Plant; Sales Organization; Valuation Area
 FIN,SLC,0,1,0,,Business Partner,
-FIN,TM,0,1,0,,Business Partner,
-FI_other,LO-MD-BOM_Bill-of-Material,0,1,1,,Material / Product,Plant
-FI_other,LO-MD-MM_Material-Master,0,1,5,,Material / Product,Company Code; Distribution Channel; Division; Plant; Sales Organization
+FIN,SUS,0,1,1,,Material / Product,Plant
+FI_other,FS,0,1,0,,Business Partner,
+FI_other,FT,0,1,0,,Material / Product,
+FI_other,LO-MD-MM_Material-Master,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Plant; Sales Organization; Valuation Area
 FI_other,SLC,0,1,0,,Business Partner,
 FI_other,SUS,0,1,1,,Material / Product,Plant
-FI_other,TM,0,1,0,,Business Partner,
-LE,LO-MD-BOM_Bill-of-Material,0,1,1,,Material / Product,Plant
+FS,LO_other,0,1,0,,Business Partner,
+FS,MM-PUR_Purchasing,0,1,0,,Business Partner,
+FS,RE,0,1,0,,Business Partner,
+FS,SCM,0,1,0,,Business Partner,
+FS,SD-BIL_Billing,0,1,0,,Business Partner,
+FS,SD-SLS_Sales,0,1,0,,Business Partner,
+FS,SD_other,0,1,0,,Business Partner,
+FS,SLC,0,1,0,,Business Partner,
+FS,TM,0,1,0,,Business Partner,
+FT,LE,0,1,0,,Material / Product,
+FT,LO-MD-BOM_Bill-of-Material,0,1,0,,Material / Product,
+FT,LO-MD-MM_Material-Master,0,1,0,,Material / Product,
+FT,LO_other,0,1,0,,Material / Product,
+FT,MM-IM_Inventory-Management,0,1,0,,Material / Product,
+FT,MM-PUR_Purchasing,0,1,0,,Material / Product,
+FT,MM_other,0,1,0,,Material / Product,
+FT,PM_other,0,1,0,,Material / Product,
+FT,PP-MRP_MRP,0,1,0,,Material / Product,
+FT,PP-SFC_Shop-Floor-Control,0,1,0,,Material / Product,
+FT,PP_other,0,1,0,,Material / Product,
+FT,PSM,0,1,0,,Material / Product,
+FT,PS_Project-System,0,1,0,,Material / Product,
+FT,QM,0,1,0,,Material / Product,
+FT,SCM,0,1,0,,Material / Product,
+FT,SD-BIL_Billing,0,1,0,,Material / Product,
+FT,SD-SLS_Sales,0,1,0,,Material / Product,
+FT,SD_other,0,1,0,,Material / Product,
+FT,SUS,0,1,0,,Material / Product,
+FT,TM,0,1,0,,Material / Product,
 LE,LO-MD-MM_Material-Master,0,1,5,,Material / Product,Distribution Channel; Division; Plant; Sales Organization; Storage Location
 LE,SUS,0,1,1,,Material / Product,Plant
+LE,TM,0,1,0,,Material / Product,
 LO-MD-BOM_Bill-of-Material,LO-MD-MM_Material-Master,0,1,1,,Material / Product,Plant
-LO-MD-BOM_Bill-of-Material,LO_other,0,1,1,,Material / Product,Plant
-LO-MD-BOM_Bill-of-Material,MM-IM_Inventory-Management,0,1,1,,Material / Product,Plant
-LO-MD-BOM_Bill-of-Material,MM-PUR_Purchasing,0,1,1,,Material / Product,Plant
-LO-MD-BOM_Bill-of-Material,MM_other,0,1,1,,Material / Product,Plant
-LO-MD-BOM_Bill-of-Material,PM_other,0,1,1,,Material / Product,Plant
 LO-MD-BOM_Bill-of-Material,PP-MRP_MRP,0,1,1,,Material / Product,Plant
-LO-MD-BOM_Bill-of-Material,PP-SFC_Shop-Floor-Control,0,1,1,,Material / Product,Plant
-LO-MD-BOM_Bill-of-Material,PP_other,0,1,1,,Material / Product,Plant
 LO-MD-BOM_Bill-of-Material,PSM,0,1,1,,Material / Product,Plant
 LO-MD-BOM_Bill-of-Material,PS_Project-System,0,1,1,,Material / Product,Plant
 LO-MD-BOM_Bill-of-Material,QM,0,1,1,,Material / Product,Plant
 LO-MD-BOM_Bill-of-Material,SCM,0,1,0,,Material / Product,
-LO-MD-BOM_Bill-of-Material,SD-SLS_Sales,0,1,1,,Material / Product,Plant
-LO-MD-BOM_Bill-of-Material,SD_other,0,1,0,,Material / Product,
 LO-MD-BOM_Bill-of-Material,SUS,0,1,1,,Material / Product,Plant
+LO-MD-BOM_Bill-of-Material,TM,0,1,0,,Material / Product,
 LO-MD-MM_Material-Master,LO_other,0,1,7,,Material / Product,Company Code; Distribution Channel; Division; Plant; Sales Organization; Storage Location; Valuation Area
 LO-MD-MM_Material-Master,MM-IM_Inventory-Management,0,1,4,,Material / Product,Company Code; Plant; Storage Location; Valuation Area
 LO-MD-MM_Material-Master,MM-PUR_Purchasing,0,1,3,,Material / Product,Company Code; Plant; Storage Location
 LO-MD-MM_Material-Master,MM_other,0,1,2,,Material / Product,Company Code; Plant
-LO-MD-MM_Material-Master,PM_other,0,1,1,,Material / Product,Plant
+LO-MD-MM_Material-Master,PM_other,0,1,2,,Material / Product,Company Code; Plant
 LO-MD-MM_Material-Master,PP-MRP_MRP,0,1,1,,Material / Product,Plant
 LO-MD-MM_Material-Master,PP-SFC_Shop-Floor-Control,0,1,2,,Material / Product,Company Code; Plant
 LO-MD-MM_Material-Master,PP_other,0,1,3,,Material / Product,Company Code; Plant; Storage Location
@@ -330,83 +472,82 @@ LO-MD-MM_Material-Master,PSM,0,1,4,,Material / Product,Company Code; Distributio
 LO-MD-MM_Material-Master,PS_Project-System,0,1,2,,Material / Product,Company Code; Plant
 LO-MD-MM_Material-Master,QM,0,1,4,,Material / Product,Company Code; Plant; Sales Organization; Storage Location
 LO-MD-MM_Material-Master,SCM,0,1,0,,Material / Product,
+LO-MD-MM_Material-Master,SD-BIL_Billing,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Plant; Sales Organization; Storage Location
 LO-MD-MM_Material-Master,SD-SLS_Sales,0,1,5,,Material / Product,Distribution Channel; Division; Plant; Sales Organization; Storage Location
-LO-MD-MM_Material-Master,SD_other,0,1,4,,Material / Product,Distribution Channel; Division; Sales Organization; Storage Location
+LO-MD-MM_Material-Master,SD_other,0,1,6,,Material / Product,Company Code; Distribution Channel; Division; Plant; Sales Organization; Storage Location
 LO-MD-MM_Material-Master,SUS,0,1,1,,Material / Product,Plant
+LO-MD-MM_Material-Master,TM,0,1,0,,Material / Product,
 LO_other,PP-MRP_MRP,0,1,1,,Material / Product,Plant
 LO_other,PS_Project-System,0,1,2,,Material / Product,Company Code; Plant
 LO_other,SLC,0,1,0,,Business Partner,
 LO_other,SUS,0,1,1,,Material / Product,Plant
-LO_other,TM,0,1,0,,Business Partner,
 MM-IM_Inventory-Management,SUS,0,1,1,,Material / Product,Plant
+MM-IM_Inventory-Management,TM,0,1,0,,Material / Product,
 MM-PUR_Purchasing,SLC,0,1,0,,Business Partner,
 MM-PUR_Purchasing,SUS,0,1,1,,Material / Product,Plant
-MM-PUR_Purchasing,TM,0,1,0,,Business Partner,
 MM_other,SUS,0,1,1,,Material / Product,Plant
+MM_other,TM,0,1,0,,Material / Product,
 PM_other,SUS,0,1,1,,Material / Product,Plant
+PM_other,TM,0,1,0,,Material / Product,
 PP-MRP_MRP,PSM,0,1,1,,Material / Product,Plant
+PP-MRP_MRP,RE,0,1,1,,WBS Element,Business Area
 PP-MRP_MRP,SUS,0,1,1,,Material / Product,Plant
-PP-SFC_Shop-Floor-Control,PSM,0,1,3,,Material / Product,Company Code; Controlling Area; Plant
-PP-SFC_Shop-Floor-Control,SD-BIL_Billing,0,1,1,,Supplier,Company Code
+PP-MRP_MRP,TM,0,1,0,,Material / Product,
 PP-SFC_Shop-Floor-Control,SUS,0,1,1,,Material / Product,Plant
+PP-SFC_Shop-Floor-Control,TM,0,1,0,,Material / Product,
 PP_other,SUS,0,1,1,,Material / Product,Plant
+PP_other,TM,0,1,0,,Material / Product,
 PSM,SCM,0,1,0,,Material / Product,
 PSM,SUS,0,1,1,,Material / Product,Plant
+PSM,TM,0,1,0,,Material / Product,
+PS_Project-System,RE,0,1,2,,WBS Element,Company Code; Profit Center
 PS_Project-System,SUS,0,1,1,,Material / Product,Plant
-QM,SD-BIL_Billing,0,1,2,,G/L Account,Company Code; Sales Organization
+PS_Project-System,TM,0,1,0,,Material / Product,
 QM,SUS,0,1,1,,Material / Product,Plant
+QM,TM,0,1,0,,Material / Product,
+RE,SLC,0,1,0,,Business Partner,
+RE,TM,0,1,0,,Business Partner,
 SCM,SLC,0,1,0,,Business Partner,
 SCM,SUS,0,1,0,,Material / Product,
-SCM,TM,0,1,0,,Business Partner,
+SD-BIL_Billing,SLC,0,1,0,,Business Partner,
+SD-BIL_Billing,SUS,0,1,1,,Material / Product,Plant
 SD-SLS_Sales,SLC,0,1,0,,Business Partner,
 SD-SLS_Sales,SUS,0,1,1,,Material / Product,Plant
-SD-SLS_Sales,TM,0,1,0,,Business Partner,
 SD_other,SLC,0,1,0,,Business Partner,
-SD_other,SUS,0,1,0,,Material / Product,
-SD_other,TM,0,1,0,,Business Partner,
+SD_other,SUS,0,1,1,,Material / Product,Plant
 SLC,TM,0,1,0,,Business Partner,
-CA,CO-OM_Cost-Center-Accounting,0,0,2,,,Company Code; Controlling Area
+SUS,TM,0,1,0,,Material / Product,
+AC,EAM-OBJ_Technical-Objects,0,0,1,,,Company Code
+AC,EC,0,0,1,,,Profit Center
+AC,FI-AA_Asset-Accounting,0,0,1,,,Company Code
+AC,FI-AP_Accounts-Payable,0,0,1,,,Company Code
+AC,FI-AR_Accounts-Receivable,0,0,1,,,Company Code
+AC,LO-MD-MM_Material-Master,0,0,1,,,Company Code
+AC,LO_other,0,0,1,,,Company Code
+AC,PP_other,0,0,2,,,Company Code; Profit Center
+AC,PSM,0,0,1,,,Company Code
+AC,PS_Project-System,0,0,2,,,Company Code; Profit Center
 CA,EC,0,0,1,,,Controlling Area
 CA,FI-AA_Asset-Accounting,0,0,1,,,Company Code
-CA,FI-AP_Accounts-Payable,0,0,1,,,Company Code
 CA,FI-AR_Accounts-Receivable,0,0,1,,,Company Code
-CA,LO-MD-BOM_Bill-of-Material,0,0,1,,,Plant
-CA,LO-MD-MM_Material-Master,0,0,3,,,Company Code; Plant; Valuation Area
-CA,RE,0,0,1,,,Company Code
-CA,SUS,0,0,1,,,Plant
-CO-OM_Cost-Center-Accounting,CO_other,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,CRM,0,0,1,,,Controlling Area
-CO-OM_Cost-Center-Accounting,EC,0,0,1,,,Controlling Area
+CO-OM_Cost-Center-Accounting,EAM-OBJ_Technical-Objects,0,0,1,,,Company Code
+CO-OM_Cost-Center-Accounting,EC,0,0,3,,,Controlling Area; Profit Center; Segment
 CO-OM_Cost-Center-Accounting,FI-AA_Asset-Accounting,0,0,1,,,Company Code
-CO-OM_Cost-Center-Accounting,FI-AP_Accounts-Payable,0,0,1,,,Company Code
 CO-OM_Cost-Center-Accounting,FI-AR_Accounts-Receivable,0,0,1,,,Company Code
-CO-OM_Cost-Center-Accounting,FI-GL_General-Ledger,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,FIN,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,FI_other,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,LE,0,0,1,,,Controlling Area
-CO-OM_Cost-Center-Accounting,LO-MD-MM_Material-Master,0,0,1,,,Company Code
-CO-OM_Cost-Center-Accounting,LO_other,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,MM-IM_Inventory-Management,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,MM-PUR_Purchasing,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,MM_other,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,PM_other,0,0,1,,,Controlling Area
-CO-OM_Cost-Center-Accounting,PP-SFC_Shop-Floor-Control,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,PP_other,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,PSM,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,PS_Project-System,0,0,1,,,Company Code
-CO-OM_Cost-Center-Accounting,QM,0,0,2,,,Company Code; Controlling Area
-CO-OM_Cost-Center-Accounting,RE,0,0,1,,,Company Code
-CO-OM_Cost-Center-Accounting,SD-BIL_Billing,0,0,1,,,Company Code
-CO-OM_Cost-Center-Accounting,SD-SLS_Sales,0,0,1,,,Controlling Area
-CO-OM_Cost-Center-Accounting,SD_other,0,0,1,,,Controlling Area
-CO_other,EC,0,0,1,,,Controlling Area
+CO-OM_Cost-Center-Accounting,LO-MD-MM_Material-Master,0,0,2,,,Company Code; Plant
+CO-OM_Cost-Center-Accounting,SUS,0,0,1,,,Plant
+CO_other,EC,0,0,3,,,Controlling Area; Profit Center; Segment
 CO_other,FI-AA_Asset-Accounting,0,0,1,,,Company Code
 CO_other,FI-AR_Accounts-Receivable,0,0,1,,,Company Code
-CO_other,RE,0,0,1,,,Company Code
 CRM,EC,0,0,2,,,Controlling Area; Profit Center
-CRM,SD-BIL_Billing,0,0,1,,,Sales Organization
-EAM-OBJ_Technical-Objects,SD-BIL_Billing,0,0,3,,,Distribution Channel; Division; Sales Organization
-EC,FI-GL_General-Ledger,0,0,3,,,Controlling Area; Profit Center; Segment
+CRM,FI-AA_Asset-Accounting,0,0,1,,,Company Code
+CRM,FI-AP_Accounts-Payable,0,0,1,,,Company Code
+CRM,FI-AR_Accounts-Receivable,0,0,1,,,Company Code
+EAM-OBJ_Technical-Objects,FI-AA_Asset-Accounting,0,0,1,,,Company Code
+EAM-OBJ_Technical-Objects,FI-AP_Accounts-Payable,0,0,1,,,Company Code
+EAM-OBJ_Technical-Objects,FI-AR_Accounts-Receivable,0,0,1,,,Company Code
+EAM-OBJ_Technical-Objects,RE,0,0,1,,,Company Code
+EC,FI-GL_General-Ledger,0,0,2,,,Controlling Area; Segment
 EC,FIN,0,0,3,,,Controlling Area; Profit Center; Segment
 EC,FI_other,0,0,3,,,Controlling Area; Profit Center; Segment
 EC,LE,0,0,2,,,Controlling Area; Profit Center
@@ -414,21 +555,27 @@ EC,LO_other,0,0,1,,,Controlling Area
 EC,MM-IM_Inventory-Management,0,0,2,,,Controlling Area; Profit Center
 EC,MM-PUR_Purchasing,0,0,2,,,Controlling Area; Profit Center
 EC,MM_other,0,0,2,,,Controlling Area; Profit Center
-EC,PM_other,0,0,1,,,Controlling Area
+EC,PM_other,0,0,2,,,Controlling Area; Profit Center
 EC,PP-SFC_Shop-Floor-Control,0,0,2,,,Controlling Area; Profit Center
 EC,PP_other,0,0,2,,,Controlling Area; Profit Center
 EC,PSM,0,0,2,,,Controlling Area; Segment
 EC,PS_Project-System,0,0,1,,,Profit Center
 EC,QM,0,0,2,,,Controlling Area; Profit Center
+EC,RE,0,0,2,,,Controlling Area; Profit Center
+EC,SD-BIL_Billing,0,0,2,,,Controlling Area; Profit Center
 EC,SD-SLS_Sales,0,0,2,,,Controlling Area; Profit Center
 EC,SD_other,0,0,2,,,Controlling Area; Profit Center
 FI-AA_Asset-Accounting,FI-AP_Accounts-Payable,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,FI-AR_Accounts-Receivable,0,0,1,,,Company Code
+FI-AA_Asset-Accounting,FI-GL_General-Ledger,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,FIN,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,FI_other,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,LO-MD-MM_Material-Master,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,LO_other,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,MM-IM_Inventory-Management,0,0,1,,,Company Code
+FI-AA_Asset-Accounting,MM-PUR_Purchasing,0,0,1,,,Company Code
+FI-AA_Asset-Accounting,MM_other,0,0,1,,,Company Code
+FI-AA_Asset-Accounting,PM_other,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,PP-SFC_Shop-Floor-Control,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,PP_other,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,PSM,0,0,1,,,Company Code
@@ -436,11 +583,10 @@ FI-AA_Asset-Accounting,PS_Project-System,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,QM,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,RE,0,0,1,,,Company Code
 FI-AA_Asset-Accounting,SD-BIL_Billing,0,0,1,,,Company Code
+FI-AA_Asset-Accounting,SD_other,0,0,1,,,Company Code
 FI-AP_Accounts-Payable,FI-AR_Accounts-Receivable,0,0,1,,,Company Code
-FI-AP_Accounts-Payable,FIN,0,0,1,,,Company Code
 FI-AP_Accounts-Payable,LO-MD-MM_Material-Master,0,0,1,,,Company Code
 FI-AP_Accounts-Payable,PS_Project-System,0,0,1,,,Company Code
-FI-AP_Accounts-Payable,QM,0,0,1,,,Company Code
 FI-AP_Accounts-Payable,RE,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,FI-GL_General-Ledger,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,FIN,0,0,1,,,Company Code
@@ -450,6 +596,7 @@ FI-AR_Accounts-Receivable,LO_other,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,MM-IM_Inventory-Management,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,MM-PUR_Purchasing,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,MM_other,0,0,1,,,Company Code
+FI-AR_Accounts-Receivable,PM_other,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,PP-SFC_Shop-Floor-Control,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,PP_other,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,PSM,0,0,1,,,Company Code
@@ -457,20 +604,6 @@ FI-AR_Accounts-Receivable,PS_Project-System,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,QM,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,RE,0,0,1,,,Company Code
 FI-AR_Accounts-Receivable,SD-BIL_Billing,0,0,1,,,Company Code
-FI-GL_General-Ledger,RE,0,0,1,,,Company Code
-FIN,LO-MD-MM_Material-Master,0,0,1,,,Company Code
-FIN,RE,0,0,1,,,Company Code
-FIN,SD-BIL_Billing,0,0,1,,,Company Code
-FI_other,RE,0,0,1,,,Company Code
+FI-AR_Accounts-Receivable,SD_other,0,0,1,,,Company Code
 LO-MD-MM_Material-Master,RE,0,0,1,,,Company Code
-LO-MD-MM_Material-Master,SD-BIL_Billing,0,0,4,,,Company Code; Distribution Channel; Division; Sales Organization
-LO_other,RE,0,0,1,,,Company Code
-MM-IM_Inventory-Management,RE,0,0,1,,,Company Code
-MM-PUR_Purchasing,RE,0,0,1,,,Company Code
-MM_other,RE,0,0,1,,,Company Code
-PP-SFC_Shop-Floor-Control,RE,0,0,1,,,Company Code
-PP_other,RE,0,0,1,,,Company Code
-PSM,RE,0,0,1,,,Company Code
-PS_Project-System,RE,0,0,1,,,Company Code
-QM,RE,0,0,1,,,Company Code
-RE,SD-BIL_Billing,0,0,1,,,Company Code
+PSM,RE,0,0,2,,,Company Code; Controlling Area

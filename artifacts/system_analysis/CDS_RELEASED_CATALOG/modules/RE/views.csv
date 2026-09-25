@@ -1,52 +1,173 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_REAUTOMATICRENEWALTYPE,Automatic Renewal Type,Automatic Renewal Type,RE-FX,Dimension,dimension,3,0,,top-level
-I_REAUTOMATICRENEWALTYPETEXT,Automatic Renewal Type - Text,Automatic Renewal Type - Text,RE-FX,,text,6,0,,top-level
-I_RENOTICEGIVINGPARTY,Notice Giving Party,Notice Giving Party,RE-FX,Dimension,dimension,3,0,,top-level
-I_RENOTICEGIVINGPARTYTEXT,Notice Giving Party - Text,Notice Giving Party - Text,RE-FX,,text,6,0,,top-level
-I_RENOTICEPROCEDURE,Contract Notice Procedure,Contract Notice Procedure,RE-FX,Dimension,dimension,3,0,,top-level
-I_RENOTICEPROCEDURETEXT,Contract Notice Procedure - Text,Contract Notice Procedure - Text,RE-FX,,text,5,0,,top-level
-I_RENOTICERULE,Notice Rules,Notice Rules,RE-FX,Dimension,dimension,5,0,,top-level
-I_RENOTICERULETEXT,Notice Rules - Text,Notice Rules - Text,RE-FX,,text,5,0,,top-level
-I_RENOTICERULETYPE,Notice Rule Types,Notice Rule Types,RE-FX,Dimension,dimension,3,0,,top-level
-I_RENOTICERULETYPETEXT,Notice Rule Types - Text,Notice Rule Types - Text,RE-FX,,text,6,0,,top-level
-I_RENOTICETYPE,Notice Types,Notice Types,RE-FX,Dimension,dimension,3,0,,top-level
-I_RENOTICETYPETEXT,Notice Types - Text,Notice Types - Text,RE-FX,,text,6,0,,top-level
-I_REOBJECTTYPE,Real Estate Object Type,Real Estate Object Type,RE-FX,,basic,3,0,,top-level
-I_REOBJECTTYPETEXT,Real Estate Object Type - Text,Real Estate Object Type - Text,RE-FX,,text,7,0,,top-level
-I_RERENEWALRULE,Renewal Rules,Renewal Rules,RE-FX,Dimension,dimension,5,0,,top-level
-I_RERENEWALRULETEXT,Renewal Rules - Text,Renewal Rules - Text,RE-FX,,text,5,0,,top-level
-I_RERENEWALRULETYPE,Renewal Rule Type,Renewal Rule Type,RE-FX,Dimension,dimension,3,0,,top-level
-I_RERENEWALRULETYPETEXT,Renewal Rule Types - Text,Renewal Rule Types - Text,RE-FX,,text,6,0,,top-level
-I_RERENEWALTYPE,Renewal Types,Renewal Types,RE-FX,Dimension,dimension,3,0,,top-level
-I_RERENEWALTYPETEXT,Renewal Types - Text,Renewal Types - Text,RE-FX,,text,6,0,,top-level
-I_REARCHITECTUREOBJECTTYPE,Real Estate Architecture Object Type,Real Estate Architecture Object Type,RE-FX-BD,,basic,4,0,,top-level
-I_REARCHITECTUREOBJECTTYPETEXT,Real Estate Architecture Object Type - Text,Real Estate Architecture Object Type - Text,RE-FX-BD,,text,5,0,,top-level
-I_REGNRCRENTALOBJOWNERSHIP,Real Estate Rental Object Ownership,Real Estate Rental Object Ownership,RE-FX-BD,,basic,2,0,,top-level
-I_REGNRCRENTALOBJOWNERSHIPTEXT,Real Estate Rental Obj Ownership - Text,Real Estate Rental Obj Ownership - Text,RE-FX-BD,,text,5,0,,top-level
-I_REGNRCRENTALOBJPORTFOLIO,Real Estate Rental Object Portfolio,Real Estate Rental Object Portfolio,RE-FX-BD,,basic,2,0,,top-level
-I_REGNRCRENTALOBJPORTFOLIOTEXT,Real Estate Rental Obj Portfolio - Text,Real Estate Rental Obj Portfolio - Text,RE-FX-BD,,text,5,0,,top-level
-I_REGNRCRENTALOBJUSAGECATEGORY,RE Generic Rental Object Usage Category,RE Generic Rental Object Usage Category,RE-FX-BD,,basic,4,0,,top-level
-I_REGNRCRENTALOBJUSAGECATTEXT,Real Estate Int Obj Spacegrp Type - Text,Real Estate Int Obj Spacegrp Type - Text,RE-FX-BD,,text,5,0,,top-level
-I_REGNRCRENTALOBJUSAGETYPE,Real Estate Rental Object Usage Type,Real Estate Rental Object Usage Type,RE-FX-BD,,basic,3,0,,top-level
-I_REGNRCRENTALOBJUSAGETYPETEXT,Generic Rental Object Usage Type - Text,Generic Rental Object Usage Type - Text,RE-FX-BD,,text,5,0,,top-level
-I_RERENTABLEOBJECTCATEGORY,Real Estate Rentable Object Category,Real Estate Rentable Object Category,RE-FX-BD,Dimension,dimension,3,0,,top-level
-I_RERENTABLEOBJECTCATEGORYTEXT,Real Estate Rentable Object Category - Text,Real Estate Rentable Object Category - Text,RE-FX-BD,,text,6,0,,top-level
-I_RECASHFLOWORIGIN,Cash Flow Origin,Cash Flow Origin,RE-FX-CN,Dimension,dimension,3,0,,top-level
-I_RECASHFLOWORIGINTEXT,Cash Flow Origin - Text,Cash Flow Origin - Text,RE-FX-CN,,text,6,0,,top-level
-I_RECASHFLOWPOSTINGSTATUS,Cash Flow Posting Status,Cash Flow Posting Status,RE-FX-CN,Dimension,dimension,3,0,,top-level
-I_RECASHFLOWPOSTINGSTATUSTEXT,Cash Flow Posting Status - Text,Cash Flow Posting Status - Text,RE-FX-CN,,text,6,0,,top-level
-I_RECONDITIONGROUP,Condition Group,Condition Group,RE-FX-CN,Dimension,dimension,2,0,,top-level
-I_RECONDITIONGROUPTEXT,Condition Group - Text,Condition Group - Text,RE-FX-CN,,text,5,0,,top-level
-I_RECONDITIONTYPE,Condition Type,Condition Type,RE-FX-CN,Dimension,dimension,16,0,,top-level
-I_RECONDITIONTYPEBYCNDNGROUP,Condition Type per Condition Group,Condition Type per Condition Group,RE-FX-CN,Dimension,dimension,12,0,,top-level
-I_RECONDITIONTYPETEXT,Condition Type - Text,Condition Type - Text,RE-FX-CN,,text,5,0,,top-level
-I_RECONTRACTDATA,Real Estate Contract,Real Estate Contract,RE-FX-CN,,basic,82,0,Company Code,top-level
-I_RECONTRACTNOTICEPARTY,Contract Notice given by,Contract Notice given by,RE-FX-CN,Dimension,dimension,3,0,,top-level
-I_RECONTRACTNOTICEPARTYTEXT,Contract Notice given by - Text,Contract Notice given by - Text,RE-FX-CN,,text,6,0,,top-level
-I_RECONTRACTNOTICEREASON,Contract Notice Reason,Contract Notice Reason,RE-FX-CN,Dimension,dimension,8,0,,top-level
-I_RECONTRACTNOTICEREASONTEXT,Contract Notice Reason - Text,Contract Notice Reason - Text,RE-FX-CN,,text,4,0,,top-level
-I_REFLOWTYPE,Flow Type,Flow Type,RE-FX-CN,Dimension,dimension,9,0,,top-level
-I_REFLOWTYPETEXT,Flow Type - Text,Flow Type - Text,RE-FX-CN,,text,5,0,,top-level
-I_REINTEGOBJECTINTCONTRSETUP,Integration Object Internal Contr Setup,Integration Object Internal Contr Setup,RE-FX-IP,Dimension,dimension,2,0,,top-level
-I_REINVOICEDATA,Real Estate Invoice Header,Real Estate Invoice Header,RE-FX-RA,,basic,26,0,Business Partner; Company Code; Fiscal Year,top-level
-I_REINVOICEITEMDATA,Real Estate Invoice Item,Real Estate Invoice Item,RE-FX-RA,,basic,14,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_REALESTATEVALUATIONRULETEXT,RE Valuation Rule - Text,RE Valuation Rule - Text,RE-FX-2CL,,text,4,0,,top-level,yes,VDM_RE_CE,no
+I_REAUTHORIZATIONGROUP,Real Estate Authorization Group,Real Estate Authorization Group,RE-FX-2CL,,basic,4,0,,top-level,yes,VDM_RE_CA,no
+I_REAUTHORIZATIONGROUPTEXT,Real Estate Authorization Group - Text,Real Estate Authorization Group - Text,RE-FX-2CL,,text,7,0,,top-level,yes,VDM_RE_CA,no
+I_REAUTOMATICRENEWALTYPE,Automatic Renewal Type,Automatic Renewal Type,RE-FX-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_TM,yes
+I_REAUTOMATICRENEWALTYPETEXT,Automatic Renewal Type - Text,Automatic Renewal Type - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,yes
+I_RECONDITIONAMTREF,Real Estate Condition Amount Reference,Real Estate Condition Amount Reference,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_TM,no
+I_RECONDITIONAMTREFTEXT,RE Condition Amount Reference - Text,RE Condition Amount Reference - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,no
+I_RECONTRORGLASSGMTTERM,Real Estate Organizational Assgmt Term,Real Estate Organizational Assgmt Term,RE-FX-2CL,,basic,37,0,Business Area; Company Code; Controlling Area; Profit Center,top-level,yes,VDM_RE_TM,no
+I_RECONTRPOSTGTRMNOSENSTVDTA,Real Estate Posting Rule Term,Real Estate Posting Rule Term,RE-FX-2CL,,basic,53,0,Business Partner; Company Code,top-level,yes,VDM_RE_TM,no
+I_RECONTRRHYTHMTERM,Real Estate Rhythm Term,Real Estate Rhythm Term,RE-FX-2CL,,basic,43,0,,top-level,yes,VDM_RE_TM,no
+I_REFIXEDPERIOD,Real Estate Fixed Period,Real Estate Fixed Period,RE-FX-2CL,,basic,4,0,,top-level,yes,VDM_RE_TM,no
+I_REFIXEDPERIODTEXT,Real Estate Fixed Period - Text,Real Estate Fixed Period - Text,RE-FX-2CL,,text,5,0,,top-level,yes,VDM_RE_TM,no
+I_REFREQUENCYSTART,Real Estate Frequency Start,Real Estate Frequency Start,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_TM,no
+I_REFREQUENCYSTARTTEXT,Real Estate Frequency Start - Text,Real Estate Frequency Start - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,no
+I_REFREQUENCYUNIT,Real Estate Frequency Unit,Real Estate Frequency Unit,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_TM,no
+I_REFREQUENCYUNITTEXT,Real Estate Frequency Unit - Text,Real Estate Frequency Unit - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,no
+I_REKEYASSGMT,Real Estate Key Assgmt,Real Estate Key Assgmt,RE-FX-2CL,,basic,16,0,Company Code,top-level,yes,VDM_RE_CA,no
+I_RENOTICEGIVINGPARTY,Notice Giving Party,Notice Giving Party,RE-FX-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICEGIVINGPARTYTEXT,Notice Giving Party - Text,Notice Giving Party - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICEPROCEDURE,Contract Notice Procedure,Contract Notice Procedure,RE-FX-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICEPROCEDURETEXT,Contract Notice Procedure - Text,Contract Notice Procedure - Text,RE-FX-2CL,,text,5,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICERULE,Notice Rules,Notice Rules,RE-FX-2CL,Dimension,dimension,5,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICERULETEXT,Notice Rules - Text,Notice Rules - Text,RE-FX-2CL,,text,5,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICERULETYPE,Notice Rule Types,Notice Rule Types,RE-FX-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICERULETYPETEXT,Notice Rule Types - Text,Notice Rule Types - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICETYPE,Notice Types,Notice Types,RE-FX-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_TM,yes
+I_RENOTICETYPETEXT,Notice Types - Text,Notice Types - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,yes
+I_REOBJECTTYPE,Real Estate Object Type,Real Estate Object Type,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CA,yes
+I_REOBJECTTYPEDETAILS,Real Estate Object Type Details,Real Estate Object Type Details,RE-FX-2CL,,basic,18,0,,top-level,yes,VDM_RE_CA,no
+I_REOBJECTTYPETEXT,Real Estate Object Type - Text,Real Estate Object Type - Text,RE-FX-2CL,,text,7,0,,top-level,yes,VDM_RE_CA,yes
+I_REPAYMENTFORM,Real Estate Payment Form,Real Estate Payment Form,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_TM,no
+I_REPAYMENTFORMTEXT,Real Estate Payment Form - Text,Real Estate Payment Form - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,no
+I_REPROCESS,Real Estate Process,Real Estate Process,RE-FX-2CL,,basic,12,0,,top-level,yes,VDM_RE_CA,no
+I_REPRORATAMETHOD,Real Estate Pro Rata Method,Real Estate Pro Rata Method,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_TM,no
+I_REPRORATAMETHODCALC,Real Estate Pro Rata Method Calculation,Real Estate Pro Rata Method Calculation,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_TM,no
+I_REPRORATAMETHODCALCTEXT,RE Pro Rata Method Calculation - Text,RE Pro Rata Method Calculation - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,no
+I_REPRORATAMETHODTEXT,Real Estate Pro Rata Method - Text,Real Estate Pro Rata Method - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,no
+I_RERELEVANTVALNPROCESSSTEP,Valuation Process Step,Valuation Process Step,RE-FX-2CL,,basic,29,0,,top-level,yes,VDM_RE_CE,no
+I_REREMINDERDATE,Real Estate Reminder Date,Real Estate Reminder Date,RE-FX-2CL,,basic,28,0,,top-level,yes,VDM_RE_CA,no
+I_RERENEWALRULE,Renewal Rules,Renewal Rules,RE-FX-2CL,Dimension,dimension,5,0,,top-level,yes,VDM_RE_TM,yes
+I_RERENEWALRULETEXT,Renewal Rules - Text,Renewal Rules - Text,RE-FX-2CL,,text,5,0,,top-level,yes,VDM_RE_TM,yes
+I_RERENEWALRULETYPE,Renewal Rule Type,Renewal Rule Type,RE-FX-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_TM,yes
+I_RERENEWALRULETYPETEXT,Renewal Rule Types - Text,Renewal Rule Types - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,yes
+I_RERENEWALTYPE,Renewal Types,Renewal Types,RE-FX-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_TM,yes
+I_RERENEWALTYPETEXT,Renewal Types - Text,Renewal Types - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,yes
+I_RESTARTFREQUENCYWEEK,Real Estate Start Frequency Week,Real Estate Start Frequency Week,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_TM,no
+I_RESTARTFREQUENCYWEEKTEXT,Real Estate Start Frequency Week - Text,Real Estate Start Frequency Week - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_TM,no
+I_RETAXGROUP,Real Estate Tax Group,Real Estate Tax Group,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_TM,no
+I_RETAXGROUPTEXT,Real Estate Tax Group - Text,Real Estate Tax Group - Text,RE-FX-2CL,,text,5,0,,top-level,yes,VDM_RE_TM,no
+I_RETAXTYPE,Real Estate Tax Type,Real Estate Tax Type,RE-FX-2CL,,basic,4,0,,top-level,yes,VDM_RE_TM,no
+I_RETAXTYPETEXT,Real Estate Tax Type - Text,Real Estate Tax Type - Text,RE-FX-2CL,,text,7,0,,top-level,yes,VDM_RE_TM,no
+I_RETERMTYPE,Real Estate Term Type,Real Estate Term Type,RE-FX-2CL,,basic,5,0,,top-level,yes,VDM_RE_TM,no
+I_RETERMTYPETEXT,Real Estate Term Type - Text,Real Estate Term Type - Text,RE-FX-2CL,,text,7,0,,top-level,yes,VDM_RE_TM,no
+I_REVALNASSETCASHFLOW,Real Estate Valuation Asset Cash Flow,Real Estate Valuation Asset Cash Flow,RE-FX-2CL,,basic,97,0,,top-level,yes,VDM_RE_CE,no
+I_REVALNLIABILITYCASHFLOW,Real Estate Valn Liability Cash Flow,Real Estate Valn Liability Cash Flow,RE-FX-2CL,,basic,97,0,,top-level,yes,VDM_RE_CE,no
+I_REVALNSTRAIGHTLINECASHFLOW,RE Valuation Straightline Cash Flow,RE Valuation Straightline Cash Flow,RE-FX-2CL,,basic,97,0,,top-level,yes,VDM_RE_CE,no
+I_REVALNTRANSFERCASHFLOW,Real Estate Valuation Cash Flow,Real Estate Valuation Cash Flow,RE-FX-2CL,,basic,97,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONBEHAVIOR,Real Estate Valuation Behavior,Real Estate Valuation Behavior,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONBEHAVIORTEXT,Real Estate Valuation Behavior - Text,Real Estate Valuation Behavior - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONCLASSIFICATION,Real Estate Valuation Classification,Real Estate Valuation Classification,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONCLASSIFICATIONTXT,RE Valuation Classification - Text,RE Valuation Classification - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONCONDITIONGRP,Real Estate Valuation Condition Group,Real Estate Valuation Condition Group,RE-FX-2CL,,basic,2,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONCONDITIONGRPTEXT,RE Valuation Condition Group - Text,RE Valuation Condition Group - Text,RE-FX-2CL,,text,5,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONINTEGTYPE,Real Estate Valuation Integration Type,Real Estate Valuation Integration Type,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONINTEGTYPETEXT,RE Valuation Integration Type - Text,RE Valuation Integration Type - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONLINEARTYPE,Real Estate Valuation Linearization Type,Real Estate Valuation Linearization Type,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONLINEARTYPETEXT,RE Valuation Linearization Type - Text,RE Valuation Linearization Type - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONRULE,RE Valuation Rule,RE Valuation Rule,RE-FX-2CL,,basic,34,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONRULECONDITION,Real Estate Valuation Rule Condition,Real Estate Valuation Rule Condition,RE-FX-2CL,,basic,20,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONRULESTATUS,Real Estate Valuation Rule Status,Real Estate Valuation Rule Status,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONRULESTATUSTEXT,Status of a RE Contract Valuation - Text,Status of a RE Contract Valuation - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONSTATUS,Real Estate Valuation Status,Real Estate Valuation Status,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONSTATUSREASON,Real Estate Valuation Status Reason,Real Estate Valuation Status Reason,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONSTATUSREASONTEXT,RE Valuation Status Reason - Text,RE Valuation Status Reason - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONSTATUSTEXT,Real Estate Valuation Status - Text,Real Estate Valuation Status - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONTERM,Real Estate Valuation Term,Real Estate Valuation Term,RE-FX-2CL,,basic,51,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONTYPE,Real Estate Valuation Type,Real Estate Valuation Type,RE-FX-2CL,,basic,3,0,,top-level,yes,VDM_RE_CE,no
+I_REVALUATIONTYPETEXT,Real Estate Valuation Type - Text,Real Estate Valuation Type - Text,RE-FX-2CL,,text,6,0,,top-level,yes,VDM_RE_CE,no
+C_REARCHITECTUREOBJECTDEX,Extraction RE Architecture Object,Extraction RE Architecture Object,RE-FX-BD-2CL,,basic,15,0,,top-level,yes,ODATA_RE_OB,no
+C_REARCHTROBJADDRESSDEX,Extraction RE Arch Obj Adress Object,Extraction RE Arch Obj Adress Object,RE-FX-BD-2CL,,basic,23,0,Address,top-level,yes,ODATA_RE_OB,no
+C_REARCHTROBJHIERNDERLTNDEX,Extraction for Architect Obj Hierarchy,Extraction for Architect Obj Hierarchy,RE-FX-BD-2CL,,basic,12,0,,top-level,yes,ODATA_RE_OB,no
+C_REARCHTROBJTIMELINEDEX,Extraction for Architect Obj Timeline,Extraction for Architect Obj Timeline,RE-FX-BD-2CL,,basic,6,0,,top-level,yes,ODATA_RE_OB,no
+C_REARCHTROBJUSAGEDEX,Extraction for Architecture Object Usage,Extraction for Architecture Object Usage,RE-FX-BD-2CL,,basic,15,0,,top-level,yes,ODATA_RE_OB,no
+C_REARCHTROBJUSGEMSMTDEX,Extraction Arch Object Meas Based Usage,Extraction Arch Object Meas Based Usage,RE-FX-BD-2CL,,basic,10,0,,top-level,yes,ODATA_RE_OB,no
+C_REGENERICRENTALOBJECTDEX,Extraction RE Generic Rental Object,Extraction RE Generic Rental Object,RE-FX-BD-2CL,,basic,22,0,Company Code,top-level,yes,ODATA_RE_GO,no
+C_RERENTABLEOBJECTDEX,Extraction RE Rentable Object,Extraction RE Rentable Object,RE-FX-BD-2CL,,basic,21,0,Company Code,top-level,yes,ODATA_RE_GO,no
+C_RERNTBLOBJARCHTRUSAGEDEX,Extractor for RE Rntbl Obj Archtr Usge,Extractor for RE Rntbl Obj Archtr Usge,RE-FX-BD-2CL,,basic,12,0,,top-level,yes,ODATA_RE_GO,no
+C_RERNTBLOBJECTMEASUREMENTDEX,Extractor for RE Rntbl Obj Measurement,Extractor for RE Rntbl Obj Measurement,RE-FX-BD-2CL,,basic,12,0,,top-level,yes,ODATA_RE_GO,no
+C_RERNTBLOBJECTSTATUSOBJECTDEX,Extractor for RE Rentable Obj Status Obj,Extractor for RE Rentable Obj Status Obj,RE-FX-BD-2CL,,basic,10,0,,top-level,yes,ODATA_RE_GO,no
+C_RERNTBLOBJTOCONTRASSGMTDEX,Extractor for RE Rntbl Obj Contr Assgmt,Extractor for RE Rntbl Obj Contr Assgmt,RE-FX-BD-2CL,,basic,17,0,Company Code,top-level,yes,ODATA_RE_GO,no
+C_RERNTBLOBJTOUSBLOBJASSGMTDEX,Extractor for RE Rentable to Usable Obj,Extractor for RE Rentable to Usable Obj,RE-FX-BD-2CL,,basic,8,0,,top-level,yes,ODATA_RE_GO,no
+C_REUSABLEOBJECTDEX,Extraction RE Usable Object,Extraction RE Usable Object,RE-FX-BD-2CL,,basic,21,0,Company Code,top-level,yes,ODATA_RE_GO,no
+C_REUSABLEOBJECTMEASUREMENTDEX,Extractor for RE Usable Obj Measurement,Extractor for RE Usable Obj Measurement,RE-FX-BD-2CL,,basic,12,0,,top-level,yes,ODATA_RE_GO,no
+C_REUSBLOBJADDLACCTASSGMTDEX,Extractor RE Usbl Obj Addl Acct Assign,Extractor RE Usbl Obj Addl Acct Assign,RE-FX-BD-2CL,,basic,30,0,Controlling Area; Cost Center; WBS Element,top-level,yes,ODATA_RE_GO,no
+C_REUSBLOBJARCHTRUSAGEDEX,Extractor for RE Usbl Obj Archtr Usage,Extractor for RE Usbl Obj Archtr Usage,RE-FX-BD-2CL,,basic,11,0,,top-level,yes,ODATA_RE_GO,no
+C_REUSBLOBJECTSTATUSOBJECTDEX,Extractor for RE Usable Obj Status Obj,Extractor for RE Usable Obj Status Obj,RE-FX-BD-2CL,,basic,10,0,,top-level,yes,ODATA_RE_GO,no
+C_REUSBLOBJLDNGACCTASSGMTDEX,Extractor RE Usbl Obj Ldng Acct Assign,Extractor RE Usbl Obj Ldng Acct Assign,RE-FX-BD-2CL,,basic,25,0,,top-level,yes,ODATA_RE_GO,no
+C_REUSBLOBJTOCONTRACTASSGMTDEX,Extractor for RE Usbl Obj Contr Assgmt,Extractor for RE Usbl Obj Contr Assgmt,RE-FX-BD-2CL,,basic,17,0,Company Code,top-level,yes,ODATA_RE_GO,no
+C_REUSBLOBJTORNTBLOBJASSGMTDEX,Extractor for RE Usbl to Rentable Object,Extractor for RE Usbl to Rentable Object,RE-FX-BD-2CL,,basic,9,0,,top-level,yes,ODATA_RE_GO,no
+I_REARCHITECTUREOBJADDRESS,Real Estate Architecture Object Address,Real Estate Architecture Object Address,RE-FX-BD-2CL,,basic,21,0,Address,top-level,yes,VDM_RE_OB,no
+I_REARCHITECTUREOBJECT,Real Estate Architecture Object,Real Estate Architecture Object,RE-FX-BD-2CL,,basic,29,0,,top-level,yes,VDM_RE_OB,no
+I_REARCHITECTUREOBJECTNODE,RE Architecture Object Hierarchy Node,RE Architecture Object Hierarchy Node,RE-FX-BD-2CL,,basic,6,0,,top-level,yes,VDM_RE_OB,no
+I_REARCHITECTUREOBJECTTYPE,Real Estate Architecture Object Type,Real Estate Architecture Object Type,RE-FX-BD-2CL,,basic,4,0,,top-level,yes,VDM_RE_OB,yes
+I_REARCHITECTUREOBJECTTYPETEXT,Real Estate Architecture Object Type - Text,Real Estate Architecture Object Type - Text,RE-FX-BD-2CL,,text,5,0,,top-level,yes,VDM_RE_OB,yes
+I_RECONTRACTSUBJECT,Real Estate Contract Subject,Real Estate Contract Subject,RE-FX-BD-2CL,,basic,16,0,,top-level,yes,VDM_RE_BD,no
+I_REGENERICRENTALOBJECTTYPE,Real Estate Generic Rental Object Type,Real Estate Generic Rental Object Type,RE-FX-BD-2CL,,basic,3,0,,top-level,yes,VDM_RE_GO,no
+I_REGENERICRENTALOBJECTTYPETXT,RE Generic Rental Object Type - Text,RE Generic Rental Object Type - Text,RE-FX-BD-2CL,,text,6,0,,top-level,yes,VDM_RE_GO,no
+I_REGNRCRENTALOBJOWNERSHIP,Real Estate Rental Object Ownership,Real Estate Rental Object Ownership,RE-FX-BD-2CL,,basic,2,0,,top-level,yes,VDM_RE_GO,yes
+I_REGNRCRENTALOBJOWNERSHIPTEXT,Real Estate Rental Obj Ownership - Text,Real Estate Rental Obj Ownership - Text,RE-FX-BD-2CL,,text,5,0,,top-level,yes,VDM_RE_GO,yes
+I_REGNRCRENTALOBJPORTFOLIO,Real Estate Rental Object Portfolio,Real Estate Rental Object Portfolio,RE-FX-BD-2CL,,basic,2,0,,top-level,yes,VDM_RE_GO,yes
+I_REGNRCRENTALOBJPORTFOLIOTEXT,Real Estate Rental Obj Portfolio - Text,Real Estate Rental Obj Portfolio - Text,RE-FX-BD-2CL,,text,5,0,,top-level,yes,VDM_RE_GO,yes
+I_REGNRCRENTALOBJUSAGECATEGORY,RE Generic Rental Object Usage Category,RE Generic Rental Object Usage Category,RE-FX-BD-2CL,,basic,4,0,,top-level,yes,VDM_RE_GO,yes
+I_REGNRCRENTALOBJUSAGECATTEXT,Real Estate Int Obj Spacegrp Type - Text,Real Estate Int Obj Spacegrp Type - Text,RE-FX-BD-2CL,,text,5,0,,top-level,yes,VDM_RE_GO,yes
+I_REGNRCRENTALOBJUSAGETYPE,Real Estate Rental Object Usage Type,Real Estate Rental Object Usage Type,RE-FX-BD-2CL,,basic,3,0,,top-level,yes,VDM_RE_GO,yes
+I_REGNRCRENTALOBJUSAGETYPETEXT,Generic Rental Object Usage Type - Text,Generic Rental Object Usage Type - Text,RE-FX-BD-2CL,,text,5,0,,top-level,yes,VDM_RE_GO,yes
+I_REMEASUREMENTTYPE,Real Estate Measurement Type,Real Estate Measurement Type,RE-FX-BD-2CL,,basic,38,0,,top-level,yes,VDM_RE_BD,no
+I_REMEASUREMENTTYPETEXT,Measurement Type - Text,Measurement Type - Text,RE-FX-BD-2CL,,text,5,0,,top-level,yes,VDM_RE_BD,no
+I_REOBJECTASSIGNMENTTYPE,Real Estate Object Assignment Type,Real Estate Object Assignment Type,RE-FX-BD-2CL,,basic,2,0,,top-level,yes,VDM_RE_BD,no
+I_REOBJECTASSIGNMENTTYPETEXT,Real Estate Object Assignment Type - Txt,Real Estate Object Assignment Type - Txt,RE-FX-BD-2CL,,text,5,0,,top-level,yes,VDM_RE_BD,no
+I_RERENTABLEOBJECT,Real Estate Rentable Object,Real Estate Rentable Object,RE-FX-BD-2CL,,basic,37,0,Company Code,top-level,yes,VDM_RE_GO,no
+I_RERENTABLEOBJECTCATEGORY,Real Estate Rentable Object Category,Real Estate Rentable Object Category,RE-FX-BD-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_GO,yes
+I_RERENTABLEOBJECTCATEGORYTEXT,Real Estate Rentable Object Category - Text,Real Estate Rentable Object Category - Text,RE-FX-BD-2CL,,text,6,0,,top-level,yes,VDM_RE_GO,yes
+I_RERNTBLARCHTROBJUSAGEMSMT,RE Arch Object Measurement Based Usage,RE Arch Object Measurement Based Usage,RE-FX-BD-2CL,,basic,15,0,,top-level,yes,VDM_RE_GO,no
+I_RERNTBLOBJARCHTRUSAGE,RE Rentable Object Architecture Usage,RE Rentable Object Architecture Usage,RE-FX-BD-2CL,,basic,12,0,,top-level,yes,VDM_RE_GO,no
+I_RERNTBLOBJECTMEASUREMENT,Real Estate Rentable Object Measurement,Real Estate Rentable Object Measurement,RE-FX-BD-2CL,,basic,12,0,,top-level,yes,VDM_RE_GO,no
+I_RERNTBLOBJECTSTATUSOBJECT,RE Rentable Object Status Object,RE Rentable Object Status Object,RE-FX-BD-2CL,,basic,10,0,,top-level,yes,VDM_RE_GO,no
+I_RERNTBLOBJTOCONTRACTASSGMT,RE Rentable Object Contract Assignment,RE Rentable Object Contract Assignment,RE-FX-BD-2CL,,basic,23,0,Company Code,top-level,yes,VDM_RE_GO,no
+I_RERNTBLOBJTOUSBLOBJASSGMT,RE Rentable to Usable Object Assignment,RE Rentable to Usable Object Assignment,RE-FX-BD-2CL,,basic,7,0,,top-level,yes,VDM_RE_GO,no
+I_REUSABLEOBJECT,Real Estate Usable Object,Real Estate Usable Object,RE-FX-BD-2CL,,basic,39,0,Company Code,top-level,yes,VDM_RE_GO,no
+I_REUSABLEOBJECTMEASUREMENT,Real Estate Usable Object Measurement,Real Estate Usable Object Measurement,RE-FX-BD-2CL,,basic,12,0,,top-level,yes,VDM_RE_GO,no
+I_REUSABLEOBJECTSTATUSOBJECT,Real Estate Usable Object Status Object,Real Estate Usable Object Status Object,RE-FX-BD-2CL,,basic,10,0,,top-level,yes,VDM_RE_GO,no
+I_REUSBLOBJADDLACCTASSGMTOBJ,RE Usable Object Addl Account Assign,RE Usable Object Addl Account Assign,RE-FX-BD-2CL,,basic,31,0,Controlling Area; Cost Center; WBS Element,top-level,yes,VDM_RE_GO,no
+I_REUSBLOBJARCHTRUSAGE,RE Usable Object Architecture Usage,RE Usable Object Architecture Usage,RE-FX-BD-2CL,,basic,11,0,,top-level,yes,VDM_RE_GO,no
+I_REUSBLOBJECTTOCONTRACTASSGMT,RE Usable Object Contract Assignment,RE Usable Object Contract Assignment,RE-FX-BD-2CL,,basic,22,0,Company Code,top-level,yes,VDM_RE_GO,no
+I_REUSBLOBJLDNGACCTASSGMTOBJ,RE Usable Object Leading Account Assign,RE Usable Object Leading Account Assign,RE-FX-BD-2CL,,basic,31,0,Controlling Area; Cost Center; WBS Element,top-level,yes,VDM_RE_GO,no
+I_REUSBLOBJTORNTBLOBJASSGMT,RE Usable to Rentable Object Assignment,RE Usable to Rentable Object Assignment,RE-FX-BD-2CL,,basic,8,0,,top-level,yes,VDM_RE_GO,no
+I_RECONTRPARTNERASSGMT,Real Estate Partner Assignments,Real Estate Partner Assignments,RE-FX-BP-2CL,,basic,20,0,Business Partner,top-level,yes,VDM_RE_BP,no
+I_RECASHFLOWORIGIN,Cash Flow Origin,Cash Flow Origin,RE-FX-CN-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_CD,yes
+I_RECASHFLOWORIGINTEXT,Cash Flow Origin - Text,Cash Flow Origin - Text,RE-FX-CN-2CL,,text,6,0,,top-level,yes,VDM_RE_CD,yes
+I_RECASHFLOWPOSTINGSTATUS,Cash Flow Posting Status,Cash Flow Posting Status,RE-FX-CN-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_CD,yes
+I_RECASHFLOWPOSTINGSTATUSTEXT,Cash Flow Posting Status - Text,Cash Flow Posting Status - Text,RE-FX-CN-2CL,,text,6,0,,top-level,yes,VDM_RE_CD,yes
+I_RECNDNCALCRULEEXTTEXT,RE External Calculation Formula - Text,RE External Calculation Formula - Text,RE-FX-CN-2CL,,text,5,0,,top-level,yes,VDM_RE_CD,no
+I_RECNDNCALCULATIONRULEEXT,Real Estate External Calculation Formula,Real Estate External Calculation Formula,RE-FX-CN-2CL,,basic,30,0,,top-level,yes,VDM_RE_CD,no
+I_RECNDNPURPOSEEXTTEXT,RE External Condition Purpose - Text,RE External Condition Purpose - Text,RE-FX-CN-2CL,,text,5,0,,top-level,yes,VDM_RE_CD,no
+I_RECONDITIONGROUP,Condition Group,Condition Group,RE-FX-CN-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_RE_CD,yes
+I_RECONDITIONGROUPTEXT,Condition Group - Text,Condition Group - Text,RE-FX-CN-2CL,,text,5,0,,top-level,yes,VDM_RE_CD,yes
+I_RECONDITIONPURPOSEEXT,Real Estate External Condition Purpose,Real Estate External Condition Purpose,RE-FX-CN-2CL,,basic,9,0,,top-level,yes,VDM_RE_CD,no
+I_RECONDITIONTYPE,Condition Type,Condition Type,RE-FX-CN-2CL,Dimension,dimension,16,0,,top-level,yes,VDM_RE_CD,yes
+I_RECONDITIONTYPEBYCNDNGROUP,Condition Type per Condition Group,Condition Type per Condition Group,RE-FX-CN-2CL,Dimension,dimension,12,0,,top-level,yes,VDM_RE_CD,yes
+I_RECONDITIONTYPETEXT,Condition Type - Text,Condition Type - Text,RE-FX-CN-2CL,,text,5,0,,top-level,yes,VDM_RE_CD,yes
+I_RECONTRACT,Real Estate Contract,Real Estate Contract,RE-FX-CN-2CL,,basic,89,0,Company Code,top-level,yes,VDM_RE_CN,no
+I_RECONTRACTDATA,Real Estate Contract,Real Estate Contract,RE-FX-CN-2CL,,basic,82,0,Company Code,top-level,yes,VDM_RE_CN,yes
+I_RECONTRACTNOTICEPARTY,Contract Notice given by,Contract Notice given by,RE-FX-CN-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_RE_CN,yes
+I_RECONTRACTNOTICEPARTYTEXT,Contract Notice given by - Text,Contract Notice given by - Text,RE-FX-CN-2CL,,text,6,0,,top-level,yes,VDM_RE_CN,yes
+I_RECONTRACTNOTICEREASON,Contract Notice Reason,Contract Notice Reason,RE-FX-CN-2CL,Dimension,dimension,8,0,,top-level,yes,VDM_RE_CN,yes
+I_RECONTRACTNOTICEREASONTEXT,Contract Notice Reason - Text,Contract Notice Reason - Text,RE-FX-CN-2CL,,text,4,0,,top-level,yes,VDM_RE_CN,yes
+I_RECONTRACTOBJECTASSGMT,Real Estate Object Assignments,Real Estate Object Assignments,RE-FX-CN-2CL,,basic,24,0,,top-level,yes,VDM_RE_CN,no
+I_RECONTRACTSUBJECTTYPE,Real Estate Contract Subject,Real Estate Contract Subject,RE-FX-CN-2CL,,basic,2,0,,top-level,yes,VDM_RE_CN,no
+I_RECONTRACTSUBJECTTYPETEXT,Real Estate Contract Subject - Text,Real Estate Contract Subject - Text,RE-FX-CN-2CL,,text,5,0,,top-level,yes,VDM_RE_CN,no
+I_RECONTRACTTYPETEXT_2,Real Estate Contract Type - Text,Real Estate Contract Type - Text,RE-FX-CN-2CL,,basic,5,0,,top-level,yes,VDM_RE_CN,no
+I_RECONTRACTTYPE_2,Real Estate Contract Type,Real Estate Contract Type,RE-FX-CN-2CL,,basic,28,0,,top-level,yes,VDM_RE_CN,no
+I_RECONTRCONDITION,Real Estate Conditions,Real Estate Conditions,RE-FX-CN-2CL,,basic,84,0,,top-level,yes,VDM_RE_CD,no
+I_RECONTRCONDITIONCALCULATION,RE Condition Calculation Factors,RE Condition Calculation Factors,RE-FX-CN-2CL,,basic,21,0,,top-level,yes,VDM_RE_CD,no
+I_RECONTROBJECTCASHFLOW,Real Estate Contract Object Cashflow,Real Estate Contract Object Cashflow,RE-FX-CN-2CL,,basic,104,0,,top-level,yes,VDM_RE_CD,no
+I_RECONTRPAYMENTCASHFLOW,Real Estate Contract Payment Cash Flow,Real Estate Contract Payment Cash Flow,RE-FX-CN-2CL,,basic,118,0,Business Partner; Company Code,top-level,yes,VDM_RE_CD,no
+I_REFLOWTYPE,Flow Type,Flow Type,RE-FX-CN-2CL,Dimension,dimension,9,0,,top-level,yes,VDM_RE_CD,yes
+I_REFLOWTYPETEXT,Flow Type - Text,Flow Type - Text,RE-FX-CN-2CL,,text,5,0,,top-level,yes,VDM_RE_CD,yes
+I_REINTEGOBJECTINTCONTRSETUP,Integration Object Internal Contr Setup,Integration Object Internal Contr Setup,RE-FX-IP-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_RE_IP,yes
+I_REDOCUMENTHEADER,Real Estate Document Header,Real Estate Document Header,RE-FX-RA-2CL,,basic,32,0,Fiscal Year,top-level,yes,VDM_RE_RA,no
+I_REDOCUMENTITEM,Real Estate Document Item,Real Estate Document Item,RE-FX-RA-2CL,,basic,33,0,Business Area; Company Code; Controlling Area; Profit Center,top-level,yes,VDM_RE_RA,no
+I_REINVOICEDATA,Real Estate Invoice Header,Real Estate Invoice Header,RE-FX-RA-2CL,,basic,26,0,Business Partner; Company Code; Fiscal Year,top-level,yes,VDM_RE_RA,yes
+I_REINVOICEITEMDATA,Real Estate Invoice Item,Real Estate Invoice Item,RE-FX-RA-2CL,,basic,14,0,,top-level,yes,VDM_RE_RA,yes

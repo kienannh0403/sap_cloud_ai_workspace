@@ -38,7 +38,7 @@ Lưu ý: `PP-MRP` và `PP-SFC` trong file được gán **theo từ khoá tên v
 
 ## Bẫy đã thấy khi lập catalog (từ dữ liệu file)
 
-- Component trong file **không luôn trùng trực giác**: `I_CostCenter`, `I_CompanyCode`, `I_GLAccount` nằm ở `FI-GL-*` (không phải `CO-OM`);
+- Component trong file **không luôn trùng trực giác**: `I_CompanyCode`, `I_GLAccount` nằm ở `FI-GL-*` (`I_CostCenter` ở `CO-OM` theo danh sách SAP 2026-09-25);
   `I_Customer`, `I_Supplier`, `I_Plant` nằm ở `LO-MD-*` (folder `LO_other`), `I_BusinessPartner` ở `AP-MD-BP` (folder `AP`).
 - Tên view có hậu tố API/phiên bản: `I_PurchaseOrderAPI01`, `I_PurchaseRequisitionAPI01`, `I_MaterialDocumentHeader_2`.
   Đừng tìm bằng tên "gọn" (`I_PurchaseOrder`) — grep theo phần thân tên.

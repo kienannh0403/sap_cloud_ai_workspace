@@ -1,0 +1,28 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+D_GLADJMTITEMPOSTJOURNALENTRYP,G/L Adjustment Item Post Parameter,G/L Adjustment Item Post Parameter,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_GLADJMTPOSTJOURNALENTRYP,G/L Adjustment Post Parameter,G/L Adjustment Post Parameter,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_GLADJMTREVERSEJOURNALENTRYP,G/L Adjustment Reverse Parameter,G/L Adjustment Reverse Parameter,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYCHANGEAPARITEMP,Journal Entry APAR Item,Journal Entry APAR Item,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYCHANGEGLITEMP,Journal Entry GL Item,Journal Entry GL Item,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYCHANGEPARAMETER,Journal Entry Change,Journal Entry Change,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYCREATED,Journal Entry Created,Journal Entry Created,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTAPITEMP,Journal Entry AP Item,Journal Entry AP Item,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTARITEMP,Journal Entry AR Item,Journal Entry AR Item,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTCOPAP,Journal Entry Profitability Supplement,Journal Entry Profitability Supplement,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTCPDP,Journal Entry One Time Customer/Supplier,Journal Entry One Time Customer/Supplier,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTCURRENCYAMTP,Journal Entry Currency Amount,Journal Entry Currency Amount,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTGLITEMP,Journal Entry GL Item,Journal Entry GL Item,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTPARAMETER,Journal Entry Abstract View Parameter,Journal Entry Abstract View Parameter,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTTAXITEMP,Journal Entry Tax Item,Journal Entry Tax Item,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYPOSTWHGDITEMP,Journal Entry Withholding Tax,Journal Entry Withholding Tax,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+D_JOURNALENTRYREVERSEPARAMETER,Journal Entry Reverse Parameter,Journal Entry Reverse Parameter,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+I_GLADJMTACCTGNOTIFTP,G/L Adjustment Accounting Notif - TP,G/L Adjustment Accounting Notif - TP,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+I_JOURNALENTRYTP,Journal Entry Projection - TP,Journal Entry Projection - TP,AC-INT-2CL,,basic,0,0,,top-level,yes,FINS_FI_POSTING_INTERFACE,no
+I_FINSGLCOMPNDERRCATVH,Compound Error Category,Compound Error Category,AC-INT-ECS-2CL,,value_help,2,0,,top-level,yes,ODATA_PROCESS_ERROR_ITEMS,no
+I_FINSGLERRITMPROCSTSVH,Serach Help for Error Item Status,Serach Help for Error Item Status,AC-INT-ECS-2CL,,value_help,2,0,,top-level,yes,ODATA_PROCESS_ERROR_ITEMS,no
+I_FINSGLERRORITEMDETAIL,Financial Services GL Error Item Detail,Financial Services GL Error Item Detail,AC-INT-ECS-2CL,,basic,45,0,,top-level,yes,ODATA_PROCESS_ERROR_ITEMS,no
+I_FINSGLERRORITEMSEVERITYVH,Error Item Severity,Error Item Severity,AC-INT-ECS-2CL,,value_help,2,0,,top-level,yes,ODATA_PROCESS_ERROR_ITEMS,no
+I_FINSGLERRORMESSAGE,Financial Services GL Error Message,Financial Services GL Error Message,AC-INT-ECS-2CL,,basic,9,0,,top-level,yes,ODATA_PROCESS_ERROR_ITEMS,no
+I_FINSGLMODIFIEDITEM,Financial Services GL Modified Item,Financial Services GL Modified Item,AC-INT-ECS-2CL,,basic,19,0,Company Code; Cost Center; Fiscal Year; Profit Center,top-level,yes,ODATA_PROCESS_ERROR_ITEMS,no
+I_FINSGLORIGINALITEM,Financial Services GL Original Item,Financial Services GL Original Item,AC-INT-ECS-2CL,,basic,19,0,Company Code; Cost Center; Fiscal Year; Profit Center,top-level,yes,ODATA_PROCESS_ERROR_ITEMS,no
+I_FINSGLPOSTEDITEM,Financial Services GL Posted Item,Financial Services GL Posted Item,AC-INT-ECS-2CL,,basic,29,0,Company Code; Fiscal Year; G/L Account,top-level,yes,ODATA_PROCESS_ERROR_ITEMS,no

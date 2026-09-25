@@ -1,70 +1,165 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_MAINTENANCETASKLIST,Maintenance Task List,Maintenance Task List,PM,,basic,63,0,Controlling Area; Equipment; Plant; Task List (routing) group,top-level
-I_MAINTENANCETASKLISTGROUP,Maintenance Task List Group,Maintenance Task List Group,PM,,basic,3,0,,top-level
-I_MAINTENANCETASKLISTTYPE,Maintenance Task List Type,Maintenance Task List Type,PM,,basic,2,0,,top-level
-I_MAINTENANCETASKLISTTYPETXT,Maintenance Task List Type - Text,Maintenance Task List Type - Text,PM,,text,3,0,,top-level
-I_MAINTTASKLISTGROUPCOUNTER,Maintenance Task List Group Counter,Maintenance Task List Group Counter,PM,,basic,21,1,Task List (routing) group,top-level
-I_MAINTTASKLISTOPMATERIAL,Maintenance Task List Operation Material,Maintenance Task List Operation Material,PM,,basic,38,0,Equipment; Task List (routing) group,top-level
-I_RECIPIENTLOCATIONPLANTVH,Recipient Location plant data,Recipient Location plant data,PM,,value_help,5,0,Plant,top-level
-I_MEASUREMENTDOCUMENT,Measurement Document,Measurement Document,PM-EQM-SF-MPC,,basic,60,0,Inspection Lot,top-level
-I_MEASURINGPOINT,Measuring Point,Measuring Point,PM-EQM-SF-MPC,,basic,61,0,,top-level
-I_MEASURINGPOINTCATEGORY,Measuring Point Category,Measuring Point Category,PM-EQM-SF-MPC,,basic,10,0,,top-level
-I_MEASURINGPOINTCATTEXT,Measuring Point Category - Text,Measuring Point Category - Text,PM-EQM-SF-MPC,,text,5,0,,top-level
-I_MSRGPTLASTMSMTDOCUMENT,Latest Measurement Document,Latest Measurement Document,PM-EQM-SF-MPC,,basic,13,0,,top-level
-I_MASTERWRNTYOBJECTASSGMT,Master Warranty Object Assignment,Master Warranty Object Assignment,PM-EQM-SF-WA,,basic,11,0,,top-level
-I_WARRANTYTYPE,Warranty Type,Warranty Type,PM-EQM-SF-WA,Dimension,dimension,4,0,,top-level
-I_WARRANTYTYPETEXT,Warranty Type - Text,Warranty Type - Text,PM-EQM-SF-WA,,text,5,0,,top-level
-I_MAINTENANCEITEM,Maintenance Item,Maintenance Item,PM-PRM-MP,,basic,102,3,Business Area; Equipment; Material / Product; Sales Document; Task List (routing) group,top-level
-I_MAINTENANCEPACKAGE,Maintenance Package,Maintenance Package,PM-PRM-MP,,basic,13,0,,top-level
-I_MAINTENANCEPACKAGETEXT,Maintenance Package - Text,Maintenance Package - Text,PM-PRM-MP,,text,10,0,,top-level
-I_MAINTENANCEPLANBASIC,Maintenance Plan,Maintenance Plan,PM-PRM-MP,,basic,64,0,Equipment,top-level
-I_MAINTENANCEPLANCATPARAM,Maintenance Plan Category Parameter,Maintenance Plan Category Parameter,PM-PRM-MP,,basic,13,0,,top-level
-I_MAINTENANCEPLANCATPARAMT,Maintenance Plan Category - Text,Maintenance Plan Category - Text,PM-PRM-MP,,basic,5,0,,top-level
-I_MAINTENANCEPLANSCHEDULE,Scheduled calls for Maintenance Plan,Scheduled calls for Maintenance Plan,PM-PRM-MP,,basic,31,0,,top-level
-I_MAINTENANCEPLANSORTFIELD,Maintenance Plan Sort Field,Maintenance Plan Sort Field,PM-PRM-MP,,basic,2,0,,top-level
-I_MAINTENANCESTRATEGY,Maintenance Strategy,Maintenance Strategy,PM-PRM-MP,,basic,21,0,,top-level
-I_MAINTENANCESTRATEGYT,Maintenance Strategy - Text,Maintenance Strategy - Text,PM-PRM-MP,,basic,5,0,,top-level
-I_MAINTITEMOBJLISTTECHOBJ,Maintenance Item Object List with Technical Object,Maintenance Item Object List with Technical Object,PM-PRM-MP,,basic,24,0,Material / Product,top-level
-I_MAINTPLANSORTFIELDTEXT,Maintenance Plan Sort Field - Text,Maintenance Plan Sort Field - Text,PM-PRM-MP,,text,5,0,,top-level
-I_GENERICPRIORITY,Generic Priority,Generic Priority,PM-WOC-MN,,basic,14,0,,top-level
-I_GENERICPRIORITYTEXT,Generic Priority - Text,Generic Priority - Text,PM-WOC-MN,,text,7,0,,top-level
-I_GENERICPRIORITYTYPE,Generic Priority Type,Generic Priority Type,PM-WOC-MN,,basic,2,0,,top-level
-I_MAINTENANCENOTIFICATION,Maintenance Notification,Maintenance Notification,PM-WOC-MN,,basic,72,1,Material / Product; Order (production / maintenance / internal),top-level
-I_MAINTNOTIFDETECTCODEGROUPTXT,Maint Notif Detection Code Grp - Text,Maint Notif Detection Code Grp - Text,PM-WOC-MN,,text,3,0,,top-level
-I_MAINTNOTIFDETECTIONCATALOG,Maintenance Notification Detection Ctlg,Maintenance Notification Detection Ctlg,PM-WOC-MN,Dimension,dimension,2,0,,top-level
-I_MAINTNOTIFDETECTIONCATGROUP,Maintenance Notif Detection CatGrp,Maintenance Notif Detection CatGrp,PM-WOC-MN,Dimension,dimension,8,0,,top-level
-I_MAINTNOTIFDETECTIONCODE,Maintenance Notification Detection Code,Maintenance Notification Detection Code,PM-WOC-MN,Dimension,dimension,3,0,,top-level
-I_MAINTNOTIFDETECTIONCODEGROUP,Maint Notification Detection Code Group,Maint Notification Detection Code Group,PM-WOC-MN,Dimension,dimension,3,0,,top-level
-I_MAINTNOTIFDETECTIONCODETEXT,Maintenance Notif Detection Code - Text,Maintenance Notif Detection Code - Text,PM-WOC-MN,,text,3,0,,top-level
-I_MAINTNOTIFDETECTIONCTLGTEXT,Maint Notif Detection Catalog - Text,Maint Notif Detection Catalog - Text,PM-WOC-MN,,text,3,0,,top-level
-I_MAINTNOTIFDETECTIONGROUPCODE,Maintenance Notification Dtctn Grp Code,Maintenance Notification Dtctn Grp Code,PM-WOC-MN,Dimension,dimension,8,0,,top-level
-I_MAINTNOTIFTYPEDETECTIONCTLG,Maint Notif Type Detection Ctlg,Maint Notif Type Detection Ctlg,PM-WOC-MN,Dimension,dimension,2,0,,top-level
-I_PMNOTIFICATIONPRIORITY,Notification Priority,Notification Priority,PM-WOC-MN,Dimension,dimension,5,0,,top-level
-I_PMNOTIFICATIONPRIORITYTEXT,Notification Priority - Text,Notification Priority - Text,PM-WOC-MN,,text,7,0,,top-level
-I_PMNOTIFICATIONPRIORITYTYPE,Notification PriorityType,Notification PriorityType,PM-WOC-MN,Dimension,dimension,2,0,,top-level
-I_PMNOTIFICATIONTYPE,Maintenance Notification Types,Maintenance Notification Types,PM-WOC-MN,,basic,22,0,,top-level
-I_PMNOTIFICATIONTYPETEXT,Notification Type - Text,Notification Type - Text,PM-WOC-MN,,text,5,0,,top-level
-I_PMNOTIFMAINTENANCEDATA,Notification Maintenance Data,Notification Maintenance Data,PM-WOC-MN,,basic,64,0,Equipment; Sales Document; Task List (routing) group,top-level
-I_PMNOTIFPRIORITYTYPETEXT,Notification PriorityType - Text,Notification PriorityType - Text,PM-WOC-MN,,text,5,0,,top-level
-I_TECHNICALREPORT,Technical Report,Technical Report,PM-WOC-MN,Dimension,dimension,3,0,,top-level
-I_TECHNICALREPORTTEXT,Technical Report - Text,Technical Report - Text,PM-WOC-MN,,text,5,0,,top-level
-I_MAINTCOMPITEMCATEGORYTXT,Maint Component Item Category - Text,Maint Component Item Category - Text,PM-WOC-MO,,text,5,0,,top-level
-I_MAINTCOMPONENTITEMCATEGORY,Maintenance Component Item Category,Maintenance Component Item Category,PM-WOC-MO,Dimension,dimension,9,0,,top-level
-I_MAINTENANCEORDERDEX,Maintenance Order Data,Maintenance Order Data,PM-WOC-MO,Fact,fact,92,0,Business Area; Company Code; Controlling Area; Cost Center; Equipment; Functional Area; Material / Product; Order (production / maintenance / internal); Profit Center; WBS Element,top-level
-I_MAINTORDCHANGEDOCUMENTDEX,Maintenance Order Change Document,Maintenance Order Change Document,PM-WOC-MO,Fact,fact,20,0,Order (production / maintenance / internal),top-level
-I_MAINTORDCONFIRMATIONCUBE,Maintenance Order Confirmation - Cube,Maintenance Order Confirmation - Cube,PM-WOC-MO,Cube,cube,71,0,Order (production / maintenance / internal); Plant,top-level
-I_MAINTORDERCOMPONENTDEX,Maintenance Order Component Data,Maintenance Order Component Data,PM-WOC-MO,Fact,fact,109,0,Batch; Controlling Area; Equipment; G/L Account; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Purchasing Document; Purchasing Organization; Storage Location; Supplier; WBS Element,top-level
-I_MAINTORDERPROCESSINGCONTEXT,Maintenance Order Processing Context,Maintenance Order Processing Context,PM-WOC-MO,,text,2,0,,top-level
-I_MAINTORDOPCOMPCOSTRELEVANCY,Maint Order Component Costing Relevancy,Maint Order Component Costing Relevancy,PM-WOC-MO,,basic,2,0,,top-level
-I_MAINTORDOPCOMPCOSTRELEVANCYT,Maint Order Comp Costing Relevancy - Txt,Maint Order Comp Costing Relevancy - Txt,PM-WOC-MO,,basic,5,0,,top-level
-I_MAINTORDOPCOMPSPCLSTKTYPETXT,Maint Ord Comp Special Stock Type - Txt,Maint Ord Comp Special Stock Type - Txt,PM-WOC-MO,,text,5,0,,top-level
-I_MAINTORDOPCOMPSPCLSTOCKTYPE,Maint Ord Component Special Stock Type,Maint Ord Component Special Stock Type,PM-WOC-MO,,basic,2,0,,top-level
-I_MAINTORDPLNGDEGREECODE,Maintenance Order Planning Code,Maintenance Order Planning Code,PM-WOC-MO,,basic,2,0,,top-level
-I_MAINTORDPLNGDEGREECODETEXT,Maintenance Order Planning Code - Text,Maintenance Order Planning Code - Text,PM-WOC-MO,,text,4,0,,top-level
-I_MAINTORDPROCESSINGCONTEXTT,Maint Order Processing Context Text,Maint Order Processing Context Text,PM-WOC-MO,,basic,5,0,,top-level
-I_OPBSCENDDATECONSTRAINTTYPE,Operation Basic End Date Constraint Type,Operation Basic End Date Constraint Type,PM-WOC-MO,Dimension,dimension,3,0,,top-level
-I_OPBSCENDDATECONSTRAINTTYPET,Op Basic End Date Constraint Type - Txt,Op Basic End Date Constraint Type - Txt,PM-WOC-MO,,basic,6,0,,top-level
-I_OPBSCSTARTDATECONSTRAINTTYPE,Op Basic Start Date Constraint Type,Op Basic Start Date Constraint Type,PM-WOC-MO,Dimension,dimension,3,0,,top-level
-I_OPBSCSTRTDATECONSTRAINTTYPET,OP start date constraint type - Text,OP start date constraint type - Text,PM-WOC-MO,,basic,6,0,,top-level
-I_PURREQNORRESVNGENERATION,Purchase Req or Reservation Generation,Purchase Req or Reservation Generation,PM-WOC-MO,,basic,2,0,,top-level
-I_PURREQNORRESVNGENERATIONTEXT,Pur Reqn or Reservation Generation - Txt,Pur Reqn or Reservation Generation - Txt,PM-WOC-MO,,text,5,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_MAINTENANCETASKLIST,Maintenance Task List,Maintenance Task List,PM-2CL,,basic,63,0,Controlling Area; Equipment; Plant; Task List (routing) group,top-level,yes,ODATA_EAM_TASKLIST_MAN,yes
+I_MAINTENANCETASKLISTGROUP,Maintenance Task List Group,Maintenance Task List Group,PM-2CL,,basic,3,0,,top-level,yes,ODATA_EAM_TASKLIST_MAN,yes
+I_MAINTENANCETASKLISTTYPE,Maintenance Task List Type,Maintenance Task List Type,PM-2CL,,basic,2,0,,top-level,yes,ODATA_EAM_TASKLIST_MAN,yes
+I_MAINTENANCETASKLISTTYPETXT,Maintenance Task List Type - Text,Maintenance Task List Type - Text,PM-2CL,,text,3,0,,top-level,yes,ODATA_EAM_TASKLIST_MAN,yes
+I_MAINTORDERSTATUSCUBE,,,PM-2CL,,basic,0,0,,top-level,no,,no
+I_MAINTORDERSTATUSQUERY,,,PM-2CL,,basic,0,0,,top-level,no,,no
+I_MAINTTASKLISTGROUPCOUNTER,Maintenance Task List Group Counter,Maintenance Task List Group Counter,PM-2CL,,basic,21,1,Task List (routing) group,top-level,yes,ODATA_EAM_TASKLIST_MAN,yes
+I_MAINTTASKLISTOPMATERIAL,Maintenance Task List Operation Material,Maintenance Task List Operation Material,PM-2CL,,basic,38,0,Equipment; Task List (routing) group,top-level,yes,ODATA_EAM_TASKLIST_MAN,yes
+I_MO_OP_STATUS,,,PM-2CL,,basic,0,0,,top-level,no,,no
+I_MO_STATUS,,,PM-2CL,,basic,0,0,,top-level,no,,no
+I_RECIPIENTLOCATIONPLANTVH,Recipient Location plant data,Recipient Location plant data,PM-2CL,,value_help,5,0,Plant,top-level,yes,VDM_EAM_RECIPIENTLOCATION,yes
+I_TECHNICALOBJECTWRNTY,,,PM-2CL,,basic,0,0,,top-level,no,,no
+I_TECHOBJWRNTYASSGMT,,,PM-2CL,,basic,0,0,,top-level,no,,no
+I_TECHOBJWRNTYASSGMTCUBE,,,PM-2CL,,basic,0,0,,top-level,no,,no
+I_TECHOBJWRNTYASSGMTQUERY,,,PM-2CL,,basic,0,0,,top-level,no,,no
+D_MP_STR_FUNCIMPORTP,Update Msrgpt Structure,Update Msrgpt Structure,PM-EQM-SF-MPC-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MEASURINGPOINT,no
+D_MSRGPTCANCELMSMTRDNGP,Stop Measurement Reading Transfer,Stop Measurement Reading Transfer,PM-EQM-SF-MPC-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MEASURINGPOINT,no
+D_MSRGPTTRANSFERMSMTRDNGP,Transfer Measurement Reading,Transfer Measurement Reading,PM-EQM-SF-MPC-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MEASURINGPOINT,no
+I_FAILEDMEASUREMENTREADINGTP,Failed Measurement Reading - TP,Failed Measurement Reading - TP,PM-EQM-SF-MPC-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MEASUREMENTDOCUMENT,no
+I_MEASUREMENTDOCUMENT,Measurement Document,Measurement Document,PM-EQM-SF-MPC-2CL,,basic,60,0,Inspection Lot,top-level,yes,IMRC,yes
+I_MEASUREMENTDOCUMENTTP_2,Measurement Document - TP,Measurement Document - TP,PM-EQM-SF-MPC-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MEASUREMENTDOCUMENT,no
+I_MEASURINGPOINT,Measuring Point,Measuring Point,PM-EQM-SF-MPC-2CL,,basic,61,0,,top-level,yes,IMRC,yes
+I_MEASURINGPOINTCATEGORY,Measuring Point Category,Measuring Point Category,PM-EQM-SF-MPC-2CL,,basic,10,0,,top-level,yes,IMRC,yes
+I_MEASURINGPOINTCATTEXT,Measuring Point Category - Text,Measuring Point Category - Text,PM-EQM-SF-MPC-2CL,,text,5,0,,top-level,yes,IMRC,yes
+I_MEASURINGPOINTLONGTEXTTP,Measuring Point Long Text - TP,Measuring Point Long Text - TP,PM-EQM-SF-MPC-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MEASURINGPOINT,no
+I_MEASURINGPOINTTP_2,Measuring Point,Measuring Point,PM-EQM-SF-MPC-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MEASURINGPOINT,no
+I_MSMTDOCUMENTLONGTEXTTP,Measurement Document Long Text - TP,Measurement Document Long Text - TP,PM-EQM-SF-MPC-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MEASUREMENTDOCUMENT,no
+I_MSRGPTLASTMSMTDOCUMENT,Latest Measurement Document,Latest Measurement Document,PM-EQM-SF-MPC-2CL,,basic,13,0,,top-level,yes,VDM_EAM_MEASUREMENTDOCUMENT,yes
+I_MASTERWARRANTYCOUNTERTP,Master Warranty Counter - TP,Master Warranty Counter - TP,PM-EQM-SF-WA-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MASTERWARRANTY,no
+I_MASTERWARRANTYITEMTEXTTP,Master Warranty Item - Text TP,Master Warranty Item - Text TP,PM-EQM-SF-WA-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MASTERWARRANTY,no
+I_MASTERWARRANTYITEMTP,Master Warranty Item - TP,Master Warranty Item - TP,PM-EQM-SF-WA-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MASTERWARRANTY,no
+I_MASTERWARRANTYTEXTTP,Master Warranty - Text TP,Master Warranty - Text TP,PM-EQM-SF-WA-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MASTERWARRANTY,no
+I_MASTERWARRANTYTP,Master Warranty Header - TP,Master Warranty Header - TP,PM-EQM-SF-WA-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MASTERWARRANTY,no
+I_MASTERWRNTYOBJECTASSGMT,Master Warranty Object Assignment,Master Warranty Object Assignment,PM-EQM-SF-WA-2CL,,basic,11,0,,top-level,yes,DWA,yes
+I_WARRANTYTYPE,Warranty Type,Warranty Type,PM-EQM-SF-WA-2CL,Dimension,dimension,4,0,,top-level,yes,DWA,yes
+I_WARRANTYTYPETEXT,Warranty Type - Text,Warranty Type - Text,PM-EQM-SF-WA-2CL,,text,5,0,,top-level,yes,DWA,yes
+D_MAINTPLANRESTARTSCHEDULEP,Restart Maint Plan Schedule Parameter,Restart Maint Plan Schedule Parameter,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEPLAN,no
+D_MAINTPLANSTARTSCHEDULEP,Start Maint Plan Schedule Parameter,Start Maint Plan Schedule Parameter,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEPLAN,no
+I_MAINTENANCECALL,Maintenance Call,Maintenance Call,PM-PRM-MP-2CL,,basic,18,0,Order (production / maintenance / internal),top-level,yes,IPRM,no
+I_MAINTENANCEITEM,Maintenance Item,Maintenance Item,PM-PRM-MP-2CL,,basic,102,3,Business Area; Equipment; Material / Product; Sales Document; Task List (routing) group,top-level,yes,IPRM,yes
+I_MAINTENANCEITEMCAUSETEXTTP,Maintenance Item Cause Long Text - TP,Maintenance Item Cause Long Text - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEITEM,no
+I_MAINTENANCEITEMCAUSETP,Maintenance Item Reason - TP,Maintenance Item Reason - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEITEM,no
+I_MAINTENANCEITEMREASONTEXTTP,Maintenance Item Reason Long Text - TP,Maintenance Item Reason Long Text - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEITEM,no
+I_MAINTENANCEITEMREASONTP,Maintenance Item Reason - TP,Maintenance Item Reason - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEITEM,no
+I_MAINTENANCEITEMTEXTTP,Maintenance Item Long Text - TP,Maintenance Item Long Text - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEITEM,no
+I_MAINTENANCEITEMTP_2,Maintenance Item,Maintenance Item,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEITEM,no
+I_MAINTENANCEPACKAGE,Maintenance Package,Maintenance Package,PM-PRM-MP-2CL,,basic,13,0,,top-level,yes,IPRM,yes
+I_MAINTENANCEPACKAGETEXT,Maintenance Package - Text,Maintenance Package - Text,PM-PRM-MP-2CL,,text,10,0,,top-level,yes,IPRM,yes
+I_MAINTENANCEPLANBASIC,Maintenance Plan,Maintenance Plan,PM-PRM-MP-2CL,,basic,64,0,Equipment,top-level,yes,IPRM,yes
+I_MAINTENANCEPLANCATPARAM,Maintenance Plan Category Parameter,Maintenance Plan Category Parameter,PM-PRM-MP-2CL,,basic,13,0,,top-level,yes,IPRM,yes
+I_MAINTENANCEPLANCATPARAMT,Maintenance Plan Category - Text,Maintenance Plan Category - Text,PM-PRM-MP-2CL,,basic,5,0,,top-level,yes,IPRM,yes
+I_MAINTENANCEPLANCYCLETP,Maintenance Plan Cycle - TP,Maintenance Plan Cycle - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEPLAN,no
+I_MAINTENANCEPLANSCHEDULE,Scheduled calls for Maintenance Plan,Scheduled calls for Maintenance Plan,PM-PRM-MP-2CL,,basic,31,0,,top-level,yes,VDM_EAM_MAINTENANCEPLAN,yes
+I_MAINTENANCEPLANSORTFIELD,Maintenance Plan Sort Field,Maintenance Plan Sort Field,PM-PRM-MP-2CL,,basic,2,0,,top-level,yes,IPRM,yes
+I_MAINTENANCEPLANTEXTTP,Maintenance Plan Long Text - TP,Maintenance Plan Long Text - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEPLAN,no
+I_MAINTENANCEPLANTP_2,Interface for Maintenance Plan - TP,Interface for Maintenance Plan - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEPLAN,no
+I_MAINTENANCESTRATEGY,Maintenance Strategy,Maintenance Strategy,PM-PRM-MP-2CL,,basic,21,0,,top-level,yes,IPRM,yes
+I_MAINTENANCESTRATEGYT,Maintenance Strategy - Text,Maintenance Strategy - Text,PM-PRM-MP-2CL,,basic,5,0,,top-level,yes,IPRM,yes
+I_MAINTITEMOBJECTLISTITEMTP,Maintenance Item Object List Item - TP,Maintenance Item Object List Item - TP,PM-PRM-MP-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTENANCEITEM,no
+I_MAINTITEMOBJLISTTECHOBJ,Maintenance Item Object List with Technical Object,Maintenance Item Object List with Technical Object,PM-PRM-MP-2CL,,basic,24,0,Material / Product,top-level,yes,IPRM,yes
+I_MAINTPLANSORTFIELDTEXT,Maintenance Plan Sort Field - Text,Maintenance Plan Sort Field - Text,PM-PRM-MP-2CL,,text,5,0,,top-level,yes,IPRM,yes
+C_MAINTENANCETASKLISTDEX,Maintenance Task List Data for DEX,Maintenance Task List Data for DEX,PM-PRM-TL-2CL,,basic,47,0,Controlling Area; Equipment; Plant; Task List (routing) group,top-level,yes,VDM_EAM_TASKLIST,no
+C_MAINTTASKLISTOPERATIONDEX,Maintenance Task List Operation,Maintenance Task List Operation,PM-PRM-TL-2CL,,basic,66,0,Activity Type; Company Code; Equipment; Material Group; Plant; Purchasing Document; Purchasing Organization; Supplier; Task List (routing) group,top-level,yes,VDM_EAM_TASKLIST,no
+D_MAINTTASKLISTCREATEWITHREFP,Copy Reference TL,Copy Reference TL,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTENANCETASKLISTBASICTP,Header - TP,Header - TP,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTENANCETASKLISTTP_2,Maintenance Tasklist,Maintenance Tasklist,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTTASKLISTOPBASICTP,Operations - TP,Operations - TP,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTTASKLISTOPERATIONTP_2,Maintenance Tasklist Operation,Maintenance Tasklist Operation,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTTASKLISTOPLONGTEXTTP,Operation Long Text - TP,Operation Long Text - TP,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTTASKLISTOPMATERIALTP,Operation Materials - TP,Operation Materials - TP,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTTASKLISTOPRELSHPTP,Operation Relationships - TP,Operation Relationships - TP,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTTASKLISTSUBOPTP,SubOperations - TP,SubOperations - TP,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTTSKLISTSTRGYPACKAGETP,Tasklist Maintenance Strtgy Package - TP,Tasklist Maintenance Strtgy Package - TP,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_TASKLISTLONGTEXTTP,Maintenance TaskList Long Text - TP,Maintenance TaskList Long Text - TP,PM-PRM-TL-2CL,,basic,0,0,,top-level,yes,VDM_EAM_TASKLIST,no
+I_MAINTORDCANCELLATIONACTION,Status selection for Do not Execute,Status selection for Do not Execute,PM-WOC-2CL,,basic,2,0,,top-level,yes,ODATA_EAM_WORKORDER,no
+I_MAINTORDCANCELLATIONACTIONT,Status sel for do not execute - Text,Status sel for do not execute - Text,PM-WOC-2CL,,basic,5,0,,top-level,yes,ODATA_EAM_WORKORDER,no
+D_MAINTORDCONFIRMATIONCANCELP,Maintenance Order Cancel Confirmation,Maintenance Order Cancel Confirmation,PM-WOC-JC-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTORDERCONFIRMATION,no
+I_GENERICPRIORITY,Generic Priority,Generic Priority,PM-WOC-MN-2CL,,basic,14,0,,top-level,yes,IWOC,yes
+I_GENERICPRIORITYTEXT,Generic Priority - Text,Generic Priority - Text,PM-WOC-MN-2CL,,text,7,0,,top-level,yes,IWOC,yes
+I_GENERICPRIORITYTYPE,Generic Priority Type,Generic Priority Type,PM-WOC-MN-2CL,,basic,2,0,,top-level,yes,IWOC,yes
+I_MAINTENANCENOTIFICATION,Maintenance Notification,Maintenance Notification,PM-WOC-MN-2CL,,basic,72,1,Material / Product; Order (production / maintenance / internal),top-level,yes,IWOC,yes
+I_MAINTENANCENOTIFICATIONTP_2,Maintenance Notification TP,Maintenance Notification TP,PM-WOC-MN-2CL,,basic,0,0,,top-level,yes,RAP_EAM_NTF,no
+I_MAINTNOTIFDETECTCODEGROUPTXT,Maint Notif Detection Code Grp - Text,Maint Notif Detection Code Grp - Text,PM-WOC-MN-2CL,,text,3,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTNOTIFDETECTIONCATALOG,Maintenance Notification Detection Ctlg,Maintenance Notification Detection Ctlg,PM-WOC-MN-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTNOTIFDETECTIONCATGROUP,Maintenance Notif Detection CatGrp,Maintenance Notif Detection CatGrp,PM-WOC-MN-2CL,Dimension,dimension,8,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTNOTIFDETECTIONCODE,Maintenance Notification Detection Code,Maintenance Notification Detection Code,PM-WOC-MN-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTNOTIFDETECTIONCODEGROUP,Maint Notification Detection Code Group,Maint Notification Detection Code Group,PM-WOC-MN-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTNOTIFDETECTIONCODETEXT,Maintenance Notif Detection Code - Text,Maintenance Notif Detection Code - Text,PM-WOC-MN-2CL,,text,3,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTNOTIFDETECTIONCTLGTEXT,Maint Notif Detection Catalog - Text,Maint Notif Detection Catalog - Text,PM-WOC-MN-2CL,,text,3,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTNOTIFDETECTIONGROUPCODE,Maintenance Notification Dtctn Grp Code,Maintenance Notification Dtctn Grp Code,PM-WOC-MN-2CL,Dimension,dimension,8,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTNOTIFICATIONITEMCAUSETP,Maintenance Notification Item Cause - TP,Maintenance Notification Item Cause - TP,PM-WOC-MN-2CL,,basic,0,0,,top-level,yes,RAP_EAM_NTF,no
+I_MAINTNOTIFICATIONITEMTP_2,Maintenance Notification Item TP,Maintenance Notification Item TP,PM-WOC-MN-2CL,,basic,0,0,,top-level,yes,RAP_EAM_NTF,no
+I_MAINTNOTIFICATIONPARTNERTP,Maintenance Notification Partner - TP,Maintenance Notification Partner - TP,PM-WOC-MN-2CL,,basic,0,0,,top-level,yes,RAP_EAM_NTF,no
+I_MAINTNOTIFITEMACTIVITYTP,Maintenance Notification Item Activity - TP,Maintenance Notification Item Activity - TP,PM-WOC-MN-2CL,,basic,0,0,,top-level,yes,RAP_EAM_NTF,no
+I_MAINTNOTIFTYPEDETECTIONCTLG,Maint Notif Type Detection Ctlg,Maint Notif Type Detection Ctlg,PM-WOC-MN-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_EAM_NTF,yes
+I_MAINTOPERATIONSYSTCONDITION,Maintenance Operation System Condition,Maintenance Operation System Condition,PM-WOC-MN-2CL,,basic,3,0,,top-level,yes,IWOC,no
+I_MAINTOPERATIONSYSTCONDITIONT,Maint Operation System Condition - Text,Maint Operation System Condition - Text,PM-WOC-MN-2CL,,basic,4,0,,top-level,yes,IWOC,no
+I_PMNOTIFICATIONPRIORITY,Notification Priority,Notification Priority,PM-WOC-MN-2CL,Dimension,dimension,5,0,,top-level,yes,IWOC,yes
+I_PMNOTIFICATIONPRIORITYTEXT,Notification Priority - Text,Notification Priority - Text,PM-WOC-MN-2CL,,text,7,0,,top-level,yes,IWOC,yes
+I_PMNOTIFICATIONPRIORITYTYPE,Notification PriorityType,Notification PriorityType,PM-WOC-MN-2CL,Dimension,dimension,2,0,,top-level,yes,IWOC,yes
+I_PMNOTIFICATIONTYPE,Maintenance Notification Types,Maintenance Notification Types,PM-WOC-MN-2CL,,basic,22,0,,top-level,yes,IWOC,yes
+I_PMNOTIFICATIONTYPETEXT,Notification Type - Text,Notification Type - Text,PM-WOC-MN-2CL,,text,5,0,,top-level,yes,IWOC,yes
+I_PMNOTIFMAINTENANCEDATA,Notification Maintenance Data,Notification Maintenance Data,PM-WOC-MN-2CL,,basic,64,0,Equipment; Sales Document; Task List (routing) group,top-level,yes,IWOC,yes
+I_PMNOTIFPRIORITYTYPETEXT,Notification PriorityType - Text,Notification PriorityType - Text,PM-WOC-MN-2CL,,text,5,0,,top-level,yes,IWOC,yes
+I_TECHNICALREPORT,Technical Report,Technical Report,PM-WOC-MN-2CL,Dimension,dimension,3,0,,top-level,yes,IWOC,yes
+I_TECHNICALREPORTTEXT,Technical Report - Text,Technical Report - Text,PM-WOC-MN-2CL,,text,5,0,,top-level,yes,IWOC,yes
+D_MAINTORDASSIGNNOTIFICATIONP,Assign Notification to Order,Assign Notification to Order,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+D_MAINTORDERSTATUSCLOSEDP,Maintenance Order Closed Parameters,Maintenance Order Closed Parameters,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+D_MAINTORDERSTSDONOTEXECUTEP,Maintenance Order SetDoNotExe Parameters,Maintenance Order SetDoNotExe Parameters,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+D_MAINTORDMAINWORKCOMPLETEP,MaintOrder MainWorkCompleted Parameters,MaintOrder MainWorkCompleted Parameters,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+D_MAINTORDMRKDFORDELTNRESETP,Maintenance Order RestDelFlag Parameters,Maintenance Order RestDelFlag Parameters,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+D_MAINTORDRESETTECHCOMPLETEP,MaintOrder ResetTechCompl Parameters,MaintOrder ResetTechCompl Parameters,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+D_MAINTORDSTSMARKFORDELETIONP,Maintenance Order SetDelFlag Parameters,Maintenance Order SetDelFlag Parameters,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+D_MAINTORDTECHNICALCOMPLETEP,MaintOrder TechCompleted Parameters,MaintOrder TechCompleted Parameters,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+I_MAINTCOMPITEMCATEGORYTXT,Maint Component Item Category - Text,Maint Component Item Category - Text,PM-WOC-MO-2CL,,text,5,0,,top-level,yes,IWO1,yes
+I_MAINTCOMPONENTITEMCATEGORY,Maintenance Component Item Category,Maintenance Component Item Category,PM-WOC-MO-2CL,Dimension,dimension,9,0,,top-level,yes,IWO1,yes
+I_MAINTENANCEORDERBASIC,Maintenance Order,Maintenance Order,PM-WOC-MO-2CL,,basic,123,0,Business Area; Company Code; Controlling Area; Equipment; Functional Area; Material / Product; Order (production / maintenance / internal); Personnel; Profit Center,top-level,yes,VDM_EAM_MAINTENANCEORDER,no
+I_MAINTENANCEORDERDEX,Maintenance Order Data,Maintenance Order Data,PM-WOC-MO-2CL,Fact,fact,92,0,Business Area; Company Code; Controlling Area; Cost Center; Equipment; Functional Area; Material / Product; Order (production / maintenance / internal); Profit Center; WBS Element,top-level,yes,IWO1,yes
+I_MAINTENANCEORDERLONGTEXTTP,Maintenance Order Long Text - TP,Maintenance Order Long Text - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTENANCEORDEROPERATIONTP,Maint Order Operation Projection - TP,Maint Order Operation Projection - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTENANCEORDERPARTNERTP,Maintenance Order Partners - TP,Maintenance Order Partners - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTENANCEORDERPHASE,Maintenance Order Phase,Maintenance Order Phase,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+I_MAINTENANCEORDERPHASECONTROL,Maintenance Order Phase Controls,Maintenance Order Phase Controls,PM-WOC-MO-2CL,,basic,29,0,Order (production / maintenance / internal),top-level,yes,IWO1,no
+I_MAINTENANCEORDERPHASETEXT,Maintenance Order Phase - Text,Maintenance Order Phase - Text,PM-WOC-MO-2CL,,text,0,0,,top-level,yes,IWO1,no
+I_MAINTENANCEORDERPROCESSPHASE,Maintenance Order Processing Phase,Maintenance Order Processing Phase,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+I_MAINTENANCEORDERSITUATION,Maintenance Order Situation handling,Maintenance Order Situation handling,PM-WOC-MO-2CL,,basic,22,0,Equipment; Order (production / maintenance / internal),top-level,yes,IWO1,no
+I_MAINTENANCEORDERSTATUS,Maintenance Order Status,Maintenance Order Status,PM-WOC-MO-2CL,,basic,7,0,Order (production / maintenance / internal),top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTENANCEORDERTP,Maintenance Order Projection - TP,Maintenance Order Projection - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDCHANGEDOCUMENTDEX,Maintenance Order Change Document,Maintenance Order Change Document,PM-WOC-MO-2CL,Fact,fact,20,0,Order (production / maintenance / internal),top-level,yes,IWO1,yes
+I_MAINTORDCONFIRMATIONCUBE,Maintenance Order Confirmation - Cube,Maintenance Order Confirmation - Cube,PM-WOC-MO-2CL,Cube,cube,71,0,Order (production / maintenance / internal); Plant,top-level,yes,VDM_EAM_MAINTORDERCONFIRMATION,yes
+I_MAINTORDCONFLONGTEXTTP,Maint Order Confirmation Long Text - TP,Maint Order Confirmation Long Text - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTORDERCONFIRMATION,no
+I_MAINTORDERCOMPONENTDEX,Maintenance Order Component Data,Maintenance Order Component Data,PM-WOC-MO-2CL,Fact,fact,109,0,Batch; Controlling Area; Equipment; G/L Account; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Purchasing Document; Purchasing Organization; Storage Location; Supplier; WBS Element,top-level,yes,IWO1,yes
+I_MAINTORDERCONFIRMATIONTP,Maintenance Order Confirmation - TP,Maintenance Order Confirmation - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,VDM_EAM_MAINTORDERCONFIRMATION,no
+I_MAINTORDEROBJECTLISTITEMTP,Maint Ord Obj List Item Projection - TP,Maint Ord Obj List Item Projection - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDEROPCOMPLONGTEXTTP,Maintenance Order Op Comp Long Text - TP,Maintenance Order Op Comp Long Text - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDEROPCOMPONENTTP_2,Maint Order Component Projection - TP,Maint Order Component Projection - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDEROPERANDSUBOPER,Maintenance Order Operation and SubOper,Maintenance Order Operation and SubOper,PM-WOC-MO-2CL,,basic,144,0,Activity Type; Business Area; Controlling Area; Equipment; Functional Area; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Purchasing Organization; Supplier; Task List (routing) group; WBS Element,top-level,yes,IWO1,no
+I_MAINTORDEROPERATIONBASIC,Maintenance Order Operation,Maintenance Order Operation,PM-WOC-MO-2CL,,basic,70,0,Activity Type; Business Area; Controlling Area; Equipment; Functional Area; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Purchasing Organization; Supplier,top-level,yes,VDM_EAM_MAINTENANCEORDER,no
+I_MAINTORDEROPERATION_DEX,Maintenance Order Operation Data,Maintenance Order Operation Data,PM-WOC-MO-2CL,,basic,125,0,Activity Type; Business Area; Controlling Area; Equipment; Functional Area; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Purchasing Organization; Supplier; Task List (routing) group; WBS Element,top-level,yes,IWO1,no
+I_MAINTORDEROPLONGTEXTTP,Maintenance Order Oper Long Text - TP,Maintenance Order Oper Long Text - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDEROPPHASECONTROL,Maintenance Order Op Phase Controls,Maintenance Order Op Phase Controls,PM-WOC-MO-2CL,,basic,32,0,Order (production / maintenance / internal),top-level,yes,IWO1,no
+I_MAINTORDEROPPHASECONTROLTP,Maintenance Order Op Phase Control - TP,Maintenance Order Op Phase Control - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDEROPPRODNRSCETOOLTP,Maintenance Order Operation PRT - TP,Maintenance Order Operation PRT - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDEROPRELATIONSHIPTP,Maintenance Order Relationship - TP,Maintenance Order Relationship - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDERPHASECONTROLTP,Maintenance Order Phase Control - TP,Maintenance Order Phase Control - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDERPROCESSINGCONTEXT,Maintenance Order Processing Context,Maintenance Order Processing Context,PM-WOC-MO-2CL,,text,2,0,,top-level,yes,IWO1,yes
+I_MAINTORDERPROCESSPHASETEXT,Maintenance Order Process Phase - Text,Maintenance Order Process Phase - Text,PM-WOC-MO-2CL,,text,0,0,,top-level,yes,IWO1,no
+I_MAINTORDERSETTLMTDISTRRULETP,Maintenance Order Settlement Rule - TP,Maintenance Order Settlement Rule - TP,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,RAP_EAM_MAINTENANCEORDER,no
+I_MAINTORDERTECHOBJCUBE,Maintenance Order With Tech Object - Cube,Maintenance Order With Tech Object - Cube,PM-WOC-MO-2CL,,basic,127,0,Business Area; Company Code; Controlling Area; Cost Center; Equipment; Fixed Asset; Material / Product; Order (production / maintenance / internal); Plant; WBS Element,top-level,yes,IWO1,no
+I_MAINTORDOPCOMPCOSTRELEVANCY,Maint Order Component Costing Relevancy,Maint Order Component Costing Relevancy,PM-WOC-MO-2CL,,basic,2,0,,top-level,yes,IWO1,yes
+I_MAINTORDOPCOMPCOSTRELEVANCYT,Maint Order Comp Costing Relevancy - Txt,Maint Order Comp Costing Relevancy - Txt,PM-WOC-MO-2CL,,basic,5,0,,top-level,yes,IWO1,yes
+I_MAINTORDOPCOMPSPCLSTKTYPETXT,Maint Ord Comp Special Stock Type - Txt,Maint Ord Comp Special Stock Type - Txt,PM-WOC-MO-2CL,,text,5,0,,top-level,yes,IWO1,yes
+I_MAINTORDOPCOMPSPCLSTOCKTYPE,Maint Ord Component Special Stock Type,Maint Ord Component Special Stock Type,PM-WOC-MO-2CL,,basic,2,0,,top-level,yes,IWO1,yes
+I_MAINTORDPLNGDEGREECODE,Maintenance Order Planning Code,Maintenance Order Planning Code,PM-WOC-MO-2CL,,basic,2,0,,top-level,yes,IWO1,yes
+I_MAINTORDPLNGDEGREECODETEXT,Maintenance Order Planning Code - Text,Maintenance Order Planning Code - Text,PM-WOC-MO-2CL,,text,4,0,,top-level,yes,IWO1,yes
+I_MAINTORDPROCESSINGCONTEXTT,Maint Order Processing Context Text,Maint Order Processing Context Text,PM-WOC-MO-2CL,,basic,5,0,,top-level,yes,IWO1,yes
+I_MAINTORDPROCSUBORDDPHASE,Maintenance Order Processing Sub Phase,Maintenance Order Processing Sub Phase,PM-WOC-MO-2CL,,basic,0,0,,top-level,yes,IWO1,no
+I_MAINTORDPROCSUBORDDPHASETXT,Maint Order Process Sub Phase - Txt,Maint Order Process Sub Phase - Txt,PM-WOC-MO-2CL,,text,0,0,,top-level,yes,IWO1,no
+I_OPBSCENDDATECONSTRAINTTYPE,Operation Basic End Date Constraint Type,Operation Basic End Date Constraint Type,PM-WOC-MO-2CL,Dimension,dimension,3,0,,top-level,yes,IWO1,yes
+I_OPBSCENDDATECONSTRAINTTYPET,Op Basic End Date Constraint Type - Txt,Op Basic End Date Constraint Type - Txt,PM-WOC-MO-2CL,,basic,6,0,,top-level,yes,IWO1,yes
+I_OPBSCSTARTDATECONSTRAINTTYPE,Op Basic Start Date Constraint Type,Op Basic Start Date Constraint Type,PM-WOC-MO-2CL,Dimension,dimension,3,0,,top-level,yes,IWO1,yes
+I_OPBSCSTRTDATECONSTRAINTTYPET,OP start date constraint type - Text,OP start date constraint type - Text,PM-WOC-MO-2CL,,basic,6,0,,top-level,yes,IWO1,yes
+I_PURREQNORRESVNGENERATION,Purchase Req or Reservation Generation,Purchase Req or Reservation Generation,PM-WOC-MO-2CL,,basic,2,0,,top-level,yes,IWO1,yes
+I_PURREQNORRESVNGENERATIONTEXT,Pur Reqn or Reservation Generation - Txt,Pur Reqn or Reservation Generation - Txt,PM-WOC-MO-2CL,,text,5,0,,top-level,yes,IWO1,yes

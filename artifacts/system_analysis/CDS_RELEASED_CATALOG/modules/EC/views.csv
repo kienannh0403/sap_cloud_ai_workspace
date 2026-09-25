@@ -1,9 +1,14 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_PROFITCENTER,Profit Center,Profit Center,EC-PCA-MD,Dimension,dimension,49,0,Company Code; Controlling Area; Profit Center; Segment,top-level
-I_PROFITCENTERHIERARCHY,Profit Center Hierarchy,Profit Center Hierarchy,EC-PCA-MD,Dimension,dimension,11,1,Controlling Area,top-level
-I_PROFITCENTERHIERARCHYNODE,Profit Center Hierarchy Node,Profit Center Hierarchy Node,EC-PCA-MD,,basic,18,0,Controlling Area,top-level
-I_PROFITCENTERHIERARCHYNODET,Profit Center Hierarchy Node - Text,Profit Center Hierarchy Node - Text,EC-PCA-MD,,basic,12,0,Controlling Area,top-level
-I_PROFITCENTERHIERARCHYTEXT,Profit Center Hierarchy - Text,Profit Center Hierarchy - Text,EC-PCA-MD,,text,9,0,,top-level
-I_PROFITCENTERSTDVH,Profit Center,Profit Center,EC-PCA-MD,,value_help,6,0,Controlling Area; Profit Center,top-level
-I_PROFITCENTERTEXT,Profit Center - Text,Profit Center - Text,EC-PCA-MD,,text,10,0,Controlling Area; Profit Center,top-level
-I_PROFITCENTERVH,Profit Center,Profit Center,EC-PCA-MD,,value_help,13,0,Controlling Area; Profit Center; Segment,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+D_PRFTCTRCHANGEVALIDITYPERIODP,Change Validity Period Parameter,Change Validity Period Parameter,EC-PCA-MD-2CL,,basic,0,0,,top-level,yes,RAP_FIN_GL_PROFIT_CENTER,no
+I_PRFTCTRCOMPANYCODEASSIGNMENT,Company code assignment to profit center,Company code assignment to profit center,EC-PCA-MD-2CL,Fact,fact,11,0,Controlling Area; Profit Center,top-level,yes,FINS_PROFIT_CENTER_VDM,yes
+I_PRFTCTRCOMPCODEASSGMTTP_2,Prft Center Company Code Assignment - TP,Prft Center Company Code Assignment - TP,EC-PCA-MD-2CL,,basic,0,0,,top-level,yes,RAP_FIN_GL_PROFIT_CENTER,no
+I_PROFITCENTER,Profit Center,Profit Center,EC-PCA-MD-2CL,Dimension,dimension,49,0,Company Code; Controlling Area; Profit Center; Segment,top-level,yes,FINS_PROFIT_CENTER_VDM,yes
+I_PROFITCENTERHIERARCHY,Profit Center Hierarchy,Profit Center Hierarchy,EC-PCA-MD-2CL,Dimension,dimension,11,1,Controlling Area,top-level,yes,FINS_PROFIT_CENTER_HIER,yes
+I_PROFITCENTERHIERARCHYNODE,Profit Center Hierarchy Node,Profit Center Hierarchy Node,EC-PCA-MD-2CL,,basic,18,0,Controlling Area,top-level,yes,FINS_PROFIT_CENTER_HIER,yes
+I_PROFITCENTERHIERARCHYNODET,Profit Center Hierarchy Node - Text,Profit Center Hierarchy Node - Text,EC-PCA-MD-2CL,,basic,12,0,Controlling Area,top-level,yes,FINS_PROFIT_CENTER_HIER,yes
+I_PROFITCENTERHIERARCHYTEXT,Profit Center Hierarchy - Text,Profit Center Hierarchy - Text,EC-PCA-MD-2CL,,text,9,0,,top-level,yes,FINS_PROFIT_CENTER_HIER,yes
+I_PROFITCENTERSTDVH,Profit Center,Profit Center,EC-PCA-MD-2CL,,value_help,6,0,Controlling Area; Profit Center,top-level,yes,FINS_PROFIT_CENTER_VDM,yes
+I_PROFITCENTERTEXT,Profit Center - Text,Profit Center - Text,EC-PCA-MD-2CL,,text,10,0,Controlling Area; Profit Center,top-level,yes,FINS_PROFIT_CENTER_VDM,yes
+I_PROFITCENTERTEXTTP_2,Profit Center - Text TP,Profit Center - Text TP,EC-PCA-MD-2CL,,basic,0,0,,top-level,yes,RAP_FIN_GL_PROFIT_CENTER,no
+I_PROFITCENTERTP_2,Profit Center - TP,Profit Center - TP,EC-PCA-MD-2CL,,basic,0,0,,top-level,yes,RAP_FIN_GL_PROFIT_CENTER,no
+I_PROFITCENTERVH,Profit Center,Profit Center,EC-PCA-MD-2CL,,value_help,13,0,Controlling Area; Profit Center; Segment,top-level,yes,FINS_PROFIT_CENTER_VDM,yes

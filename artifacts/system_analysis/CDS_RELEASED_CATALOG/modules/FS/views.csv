@@ -1,4 +1,79 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_INSURANCECLAIMDAMAGECATEGORY,Insur Claim Damage Category,Insur Claim Damage Category,FS-CM,Dimension,dimension,3,0,,top-level
-I_INSURANCECLAIMSCOPEOFLOSS,Insurance Claim Scope Of Loss,Insurance Claim Scope Of Loss,FS-CM,Dimension,dimension,4,0,,top-level
-I_INSURANCECLAIMSCOPEOFLOSSTXT,Insur Clm Scope Of Loss - Txt,Insur Clm Scope Of Loss - Txt,FS-CM,,text,7,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_AT_BPOENBIDNTNRASSGMTSTATUS,Ident Number Assignment Status,Ident Number Assignment Status,FS-BP,,basic,0,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_AT_BPOENBTARGETGROUP,Target Group According to OeNB,Target Group According to OeNB,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_AT_BPOENBTARGETGROUPTEXT,Target Group According to OeNB - Text,Target Group According to OeNB - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPBALANCESHEETDISPLAYTYPE,Balance Sheet Display for BP,Balance Sheet Display for BP,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPBALSHEETDISPLAYTYPETEXT,Balance Sheet Display for BP - Text,Balance Sheet Display for BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPBUSINESSPURPOSE,Category of Business Purpose,Category of Business Purpose,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPBUSINESSPURPOSETEXT,Category of Business Purpose - Text,Category of Business Purpose - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPCNTRLBANKCOUNTRYREGION,Central Bank Country Region,Central Bank Country Region,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPCNTRLBANKCOUNTRYREGIONTEXT,Central Bank Country Region - Text,Central Bank Country Region - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPCOMPANYRELATIONSHIP,Company Relationship of BP,Company Relationship of BP,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPCOMPANYRELATIONSHIPTEXT,Company Relationship of BP - Text,Company Relationship of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPCOMPANYRELATIONSHIPVH,Company Relationship of BP,Company Relationship of BP,FS-BP,,value_help,3,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPCRDTSTANDINGSTATUSTEXT,Credit Standing Status of BP - Text,Credit Standing Status of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPCRDTWRTHNSSRATINGTEXT,Credit Worthiness Rating of BP - Text,Credit Worthiness Rating of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPCREDITRATINGAGENCY,Rating Agency of Business Partner,Rating Agency of Business Partner,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPCREDITRATINGAGENCYTEXT,Rating Agency of BP - Text,Rating Agency of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPCREDITSTANDING,Credit Standing of Business Partner,Credit Standing of Business Partner,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPCREDITSTANDINGREVIEW,Credit Standing Review,Credit Standing Review,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPCREDITSTANDINGREVIEWTEXT,Credit Standing Review - Text,Credit Standing Review - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPCREDITSTANDINGSTATUS,Credit Standing Status of BP,Credit Standing Status of BP,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPCREDITSTANDINGTEXT,Credit Standing of BP - Text,Credit Standing of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPCREDITWORTHINESS,Credit Worthiness of Business Partner,Credit Worthiness of Business Partner,FS-BP,,basic,23,4,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPCREDITWORTHINESSRATING,Credit Worthiness Rating of BP,Credit Worthiness Rating of BP,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPDEBTORGROUP,Debtor Group,Debtor Group,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPDEBTORGROUPTEXT,Debtor Group - Text,Debtor Group - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPEMPLOYEEGROUPTEXT,BP: Employee Group - Text,BP: Employee Group - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPEMPLOYMENT,Employment of Business Partner,Employment of Business Partner,FS-BP,,basic,12,0,,top-level,yes,FS_BP_CDS_BP011,no
+I_BPEMPLOYMENTINDUSTRY,Employment Industry of Business Partner,Employment Industry of Business Partner,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP011,no
+I_BPEMPLOYMENTINDUSTRYTEXT,Employment Industry of BP - Text,Employment Industry of BP - Text,FS-BP,,text,6,0,,top-level,yes,FS_BP_CDS_BP011,no
+I_BPEMPLOYMENTSTATUS,Employment Status of Business Partner,Employment Status of Business Partner,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP011,no
+I_BPEMPLOYMENTSTATUSTEXT,Employment Status of BP - Text,Employment Status of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP011,no
+I_BPFINANCIALSERVICESEXTN,Financial Services Attributes for BP,Financial Services Attributes for BP,FS-BP,,basic,35,0,Business Partner,top-level,yes,FS_BP_CDS_BP001,no
+I_BPFINANCIALSERVICESREPORTING,Business Partner Reporting Data,Business Partner Reporting Data,FS-BP,,basic,54,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPFISCALYEARINFORMATION,Fiscal year information of BP,Fiscal year information of BP,FS-BP,,basic,35,0,,top-level,yes,FS_BP_CDS_BP021,no
+I_BPGERASTRGLNRSTRCDASTQTA,BP Asset Regulation,BP Asset Regulation,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPGERASTRGLNRSTRCDASTQTATEXT,BP Asset Regulation - Text,BP Asset Regulation - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPGRPASSIGNMENTCATEGORY,Group Assignment Category,Group Assignment Category,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPGRPASSIGNMENTCATEGORYTEXT,Group Assignment Category - Text,Group Assignment Category - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPLEGALENTITY,BP Legal Entity,BP Legal Entity,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPLEGALENTITYTEXT,BP Legal Entity - Text,BP Legal Entity - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPLEGALPROCEEDINGSTATUS,Legal Proceedings Status of BP,Legal Proceedings Status of BP,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPLEGALPROCEEDINGSTSTEXT,Legal Proceedings Status of BP - Text,Legal Proceedings Status of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1010,no
+I_BPLETTERSALUTATION,Letter Salutation of Business Partner,Letter Salutation of Business Partner,FS-BP,,basic,4,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPLETTERSALUTATIONTEXT,Letter Salutation of BP - Text,Letter Salutation of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPLOANTOMANAGER,Loan to Manager,Loan to Manager,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPLOANTOMANAGERTEXT,Loan to Manager - Text,Loan to Manager - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPMARITALPROPERTYREGIME,BP: Marital Property Regime,BP: Marital Property Regime,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPMARITALPROPERTYREGIMETEXT,Target Group for Business Partner - Text,Target Group for Business Partner - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPMINIMUMRESERVE,Subject to min reserve indicator,Subject to min reserve indicator,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BUT0BANK,no
+I_BPMINIMUMRESERVETEXT,Subject to min reserve indicator - Text,Subject to min reserve indicator - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BUT0BANK,no
+I_BPOCCUPATIONGROUP,Occupation Group of Business Partner,Occupation Group of Business Partner,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BP011,no
+I_BPOCCUPATIONGROUPTEXT,Occupation Group of BP - Text,Occupation Group of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP011,no
+I_BPRATGPROCEDUREGRADETEXT,Rating Procedure Grade of BP - Text,Rating Procedure Grade of BP - Text,FS-BP,,text,7,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRATINGPROCEDURE,Rating Procedure of Business Partner,Rating Procedure of Business Partner,FS-BP,,basic,7,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRATINGPROCEDUREGRADE,Rating Procedure Grade of BP,Rating Procedure Grade of BP,FS-BP,,basic,6,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRATINGPROCEDUREGRADEVH,Rating Procedure Grade of BP,Rating Procedure Grade of BP,FS-BP,,value_help,6,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRATINGPROCEDURETEXT,Rating Procedure of BP - Text,Rating Procedure of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRATINGPROCEDUREVH,Rating Procedure of Business Partner,Rating Procedure of Business Partner,FS-BP,,value_help,6,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRATINGTREND,Rating Trend of Business Partner,Rating Trend of Business Partner,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRATINGTRENDTEXT,Rating Trend of BP - Text,Rating Trend of BP - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRATINGTRENDVH,Rating Trend of Business Partner,Rating Trend of Business Partner,FS-BP,,value_help,3,0,,top-level,yes,FS_BP_CDS_BP1012,no
+I_BPRISKGROUP,Risk Group,Risk Group,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPRISKGROUPTEXT,Risk Group - Text,Risk Group - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP1030,no
+I_BPTARGETGROUPTEXT,Target Group for Business Partner - Text,Target Group for Business Partner - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPTRADINGPARTNER,Trading Partner of Business Partner,Trading Partner of Business Partner,FS-BP,,basic,1,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPTXCMPLNCAGREEMENTSTATUS,Tax Compliance: Agreement Status,Tax Compliance: Agreement Status,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BPTAXC,no
+I_BPTXCMPLNCAGRMTSTATUSTEXT,Tax Compliance: Agreement Status - Text,Tax Compliance: Agreement Status - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BPTAXC,no
+I_BPTXCMPLNCTYPECNTRYRGNASSGMT,Tx Cmplnc Type Assgmt Cntry/Rgn,Tx Cmplnc Type Assgmt Cntry/Rgn,FS-BP,,basic,3,0,,top-level,yes,FS_BP_CDS_BPTAXC,no
+I_BPUNDESIRABILITYREASON,BP: Reason Undesirable Client,BP: Reason Undesirable Client,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BPUNDESIRABILITYREASONTEXT,BP: Reason Undesirable Client - Text,BP: Reason Undesirable Client - Text,FS-BP,,text,5,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BUSINESSPARTNERALIAS,Business Partner Alias,Business Partner Alias,FS-BP,,basic,5,0,Business Partner,top-level,yes,FS_BP_CDS_BKK21,no
+I_BUSINESSPARTNEREMPLOYEEGROUP,BP: Employee Group,BP: Employee Group,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_BUSINESSPARTNERISBANK,Business Partner Identification as bank,Business Partner Identification as bank,FS-BP,,basic,8,0,Business Partner,top-level,yes,FS_BP_CDS_BUT0BANK,no
+I_BUSINESSPARTNERRATING,Rating of Business Partner,Rating of Business Partner,FS-BP,,basic,18,0,Business Partner,top-level,yes,FS_BP_CDS_BP1012,no
+I_BUSINESSPARTNERTARGETGROUP,Target Group for Business Partner,Target Group for Business Partner,FS-BP,,basic,2,0,,top-level,yes,FS_BP_CDS_BP001,no
+I_INSURANCECLAIMDAMAGECATEGORY,Insur Claim Damage Category,Insur Claim Damage Category,FS-CM,Dimension,dimension,3,0,,top-level,yes,ICL_VDM_CLAIM_AUXILIARY,yes
+I_INSURANCECLAIMSCOPEOFLOSS,Insurance Claim Scope Of Loss,Insurance Claim Scope Of Loss,FS-CM,Dimension,dimension,4,0,,top-level,yes,ICL_VDM_CLAIM_AUXILIARY,yes
+I_INSURANCECLAIMSCOPEOFLOSSTXT,Insur Clm Scope Of Loss - Txt,Insur Clm Scope Of Loss - Txt,FS-CM,,text,7,0,,top-level,yes,ICL_VDM_CLAIM_AUXILIARY,yes

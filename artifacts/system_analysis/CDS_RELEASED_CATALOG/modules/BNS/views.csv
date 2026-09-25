@@ -1,0 +1,2 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+C_CONCURACCTGDOCITMRLTNDEX,Concur Accounting Document Item Relation,Concur Accounting Document Item Relation,BNS-CON-SE-S4-FIN,,basic,9,0,Company Code; Fiscal Year,top-level,yes,CTE_FIN_POST_VDM,no

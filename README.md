@@ -107,7 +107,8 @@ WORK_SPACE/
     │   ├── fs/ 🔒 ts/ build/ forms/ #   FS khách hàng · TS · ledger/nháp/verify · form (.xdp/.xlsx lên git; spec, data mẫu, logo 🔒)
     │   └── ddlx/ test/ notes/ walkthrough*.md
     ├── documents/ 🔒                #   UM tool, naming convention, tài liệu SAP CDS
-    ├── system_analysis/CDS_RELEASED_CATALOG/  # Catalog 4.025 CDS view released theo module
+    ├── system_analysis/CDS_RELEASED_CATALOG/  # 7.893 CDS view released (danh sách SAP) chia theo module
+    ├── system_analysis/SAP_RELEASE_WATCH/     # Theo dõi SAP phát hành gì: object released, API, event, BAdI
     ├── scratchpads/_session/        #   Snapshot của hook pre-compact
     └── handbook/ 🔒                 #   Sổ tay HTML cá nhân (mở index.html bằng double-click)
 ```
@@ -153,10 +154,33 @@ Rule trong prompt có thể bị bỏ qua, hook thì không.
 | `block-forbidden-tables.sh` | Trước MCP `query` và Bash `datapreview` | So SQL với `exceptions/`: nhóm cấm → chặn, nhóm nhạy cảm → hỏi người dùng |
 | `workspace-write-guard.sh` | Trước Write/Edit/Bash | Khoá `.claude/` (chỉ mở khi **người dùng** tự tạo `.claude/.unlock`); file mới phải nằm trong `artifacts/` |
 | `activation-verify.sh` | Sau khi ghi object trên 080 | Nhắc chạy đủ 4 gate của activation-guard |
-| `session-start.sh` | Mở / resume / sau compact | Tóm tắt cấu hình, cảnh báo nếu `.unlock` còn, chỉ ledger/handoff gần nhất |
+| `session-start.sh` | Mở / resume / sau compact | Tóm tắt cấu hình, cảnh báo nếu `.unlock` còn, chỉ ledger/handoff gần nhất; lúc mở phiên thì kiểm tra SAP có phát hành gì mới không (xem mục dưới) |
 | `pre-compact.sh` | Trước compact | Ghi snapshot trạng thái vào `artifacts/scratchpads/_session/`, nhắc chạy handoff |
 
 Hook đảm bảo "việc đó có xảy ra hay không". Còn "làm có tốt không" vẫn do rule quyết định.
+
+---
+
+## 🔄 Theo dõi SAP phát hành gì mới
+
+Khi chọn object để dùng (CDS view, class, BDEF, API, event, BAdI), Claude tra danh sách chính thức của SAP chứ không đoán, và danh sách đó được tự cập nhật.
+
+| Nguồn | Nội dung | Lưu ở |
+|---|---|---|
+| Cloudification Repository của SAP (`SAP/abap-atc-cr-cv-s4hc`, `objectReleaseInfoLatest.json`), cũng là danh sách ATC dùng | ~37.000 object dùng được trong ABAP Cloud: CDS, class, interface, BDEF, BAdI, table, data element, authorization object… kèm trạng thái released / deprecated và object thay thế | `SAP_RELEASE_WATCH/released_objects/` |
+| SAP Business Accelerator Hub (api.sap.com), các gói chính thức của Public Edition | API OData V2/V4, SOAP, REST · business event · BAdI · BO interface · CDS view, kèm mô tả và trạng thái | `SAP_RELEASE_WATCH/api_hub/` |
+| Danh sách CDS ở trên, chia theo module | 7.893 CDS view released, mô tả đọc từ tenant 080, view deprecated kèm view thay thế | `CDS_RELEASED_CATALOG/` (đọc `INDEX.md` trước) |
+| SAP Help — What's New | Tính năng mới, app bị gỡ theo từng release | `SAP_RELEASE_WATCH/whats_new/<release>.md` (Claude tự tra qua MCP `sap-docs-upstream` khi có release mới) |
+
+**Cách chạy:** mỗi lần mở phiên, `session-start.sh` chạy `refresh_sap_release_watch.py --check` (~2 giây; không có gì mới thì không báo gì). Nếu có thay đổi, Claude chạy refresh, dựng lại catalog CDS và ghi vào `SAP_RELEASE_WATCH/changelog.md` những gì mới released, bị deprecate, API/event mới hoặc bị bỏ (chi tiết từng dòng ở `changes/`), rồi báo lại. Chạy tay:
+
+```bash
+python -X utf8 artifacts/system_analysis/SAP_RELEASE_WATCH/refresh_sap_release_watch.py --check   # chỉ so ngày
+python -X utf8 artifacts/system_analysis/SAP_RELEASE_WATCH/refresh_sap_release_watch.py           # cập nhật nếu có mới
+python -X utf8 artifacts/system_analysis/SAP_RELEASE_WATCH/refresh_sap_release_watch.py --force   # quét lại hết
+```
+
+Mô tả của class / interface / BDEF / CDS mới được đọc trên tenant 080, nên cần cookie `tools/vsp/cookies_dev.txt` còn sống. Cookie hết hạn thì refresh vẫn chạy, chỉ thiếu mô tả; refresh cookie xong chạy lại `--force`.
 
 ---
 

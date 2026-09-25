@@ -1,2 +1,13 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_TRDCLASSFCTNNMBRTEXT,Number - Text,Number - Text,FT-ITR-CLS,,text,13,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+C_COMMODITYCODEFORKEYDATE,Commodity Code for Key Date,Commodity Code for Key Date,FT-ITR-CLS,,basic,21,0,,top-level,yes,VDM_SLL_CLS,no
+C_CONTROLCLASSFORKEYDATE,Control Class for Key Date,Control Class for Key Date,FT-ITR-CLS,,basic,13,0,,top-level,yes,VDM_SLL_CLS,no
+C_CSTMSTRIFNMBRFORKEYDATE,Customs Tariff Number for Key Date,Customs Tariff Number for Key Date,FT-ITR-CLS,,basic,21,0,,top-level,yes,VDM_SLL_CLS,no
+C_PRODCOMMODITYCODEFORKEYDATE,Product Commodity Code Classification for Key Date,Product Commodity Code Classification for Key Date,FT-ITR-CLS,,basic,20,0,Material / Product,top-level,yes,VDM_SLL_CLS,no
+C_PRODCSTMSTRIFNMBRFORKEYDATE,Product Tariff Number Classification for Key Date,Product Tariff Number Classification for Key Date,FT-ITR-CLS,,basic,17,0,Material / Product,top-level,yes,VDM_SLL_CLS,no
+C_PRODLGLCTRLCLFNFORKEYDATE,Product Legal Control Classification for Key Date,Product Legal Control Classification for Key Date,FT-ITR-CLS,,basic,10,0,Material / Product,top-level,yes,VDM_SLL_CLS,no
+I_TRDCLASSFCTNNMBRTEXT,Number - Text,Number - Text,FT-ITR-CLS,,text,13,0,,top-level,yes,VDM_SLL_CLS,yes
+C_TRDCMPLNCDOCITMLICASSGMT,Trade Compliance Document Item License Assignment,Trade Compliance Document Item License Assignment,FT-ITR-TRC,,basic,18,0,,top-level,yes,VDM_SLL_DOC,no
+I_CUSTOMSPREFERENCE,Trade Preference Indicator,Trade Preference Indicator,FT-ITR-TRC,,basic,2,0,,top-level,yes,VDM_SLL_DOC,no
+I_CUSTOMSPREFERENCETEXT,Preference Indicator - Text,Preference Indicator - Text,FT-ITR-TRC,,text,5,0,,top-level,yes,VDM_SLL_DOC,no
+I_TRDPREFSTMNTINTORIGINCODE,Preference Internal Origin Code,Preference Internal Origin Code,FT-ITR-TRC,,basic,2,0,,top-level,yes,VDM_SLL_DOC,no
+I_TRDPREFSTMNTINTORIGINCODETXT,Preference Internal Origin Code - Text,Preference Internal Origin Code - Text,FT-ITR-TRC,,text,5,0,,top-level,yes,VDM_SLL_DOC,no

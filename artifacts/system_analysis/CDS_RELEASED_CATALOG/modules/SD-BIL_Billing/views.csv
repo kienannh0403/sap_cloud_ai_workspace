@@ -1,35 +1,135 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_CUSTOMERACCOUNTASSGMTGROUP,Customer Account Assignment Group,Customer Account Assignment Group,SD-BIL-GF,Dimension,dimension,2,0,,component
-I_CUSTOMERACCOUNTASSGMTGROUPT,Account Assignment Group of Customer - Text,Account Assignment Group of Customer - Text,SD-BIL-GF,,basic,5,0,,component
-I_INCOTERMSCLASSIFICATION,Incoterms Classification,Incoterms Classification,SD-BIL-GF,Dimension,dimension,3,0,Incoterms,component
-I_INCOTERMSCLASSIFICATIONTEXT,Incoterms Classification - Text,Incoterms Classification - Text,SD-BIL-GF,,text,5,0,Incoterms,component
-I_INVOICELISTSTATUS,Invoice List Status,Invoice List Status,SD-BIL-GF,Dimension,dimension,2,0,,component
-I_INVOICELISTSTATUSTEXT,Invoice List Status - Text,Invoice List Status - Text,SD-BIL-GF,,text,5,0,,component
-I_OVERALLBILLINGBLOCKSTATUS,Overall Billing Block Status,Overall Billing Block Status,SD-BIL-GF,Dimension,dimension,3,0,,component
-I_OVERALLBILLINGBLOCKSTATUST,Overall Billing Block Status - Text,Overall Billing Block Status - Text,SD-BIL-GF,,basic,5,0,,component
-I_OVERALLBILLINGSTATUS,Overall Billing Status,Overall Billing Status,SD-BIL-GF,Dimension,dimension,3,0,,component
-I_OVERALLBILLINGSTATUSTEXT,Overall Billing Status - Text,Overall Billing Status - Text,SD-BIL-GF,,text,5,0,,component
-I_OVRLBILLINGDOCREQSTATUS,Overall Billing Document Request Status,Overall Billing Document Request Status,SD-BIL-GF,Dimension,dimension,3,0,,component
-I_OVRLBILLINGDOCREQSTATUSTEXT,Overall Billing Document Request Status - Text,Overall Billing Document Request Status - Text,SD-BIL-GF,,text,5,0,,component
-I_PRELIMBILLGDOCSTATUS,Preliminary Billing Document Status,Preliminary Billing Document Status,SD-BIL-GF,Dimension,dimension,3,0,,component
-I_PRELIMBILLGDOCSTATUSTEXT,Preliminary Billing Document Status - Text,Preliminary Billing Document Status - Text,SD-BIL-GF,,text,5,0,,component
-I_VATREGISTRATIONORIGIN,VAT Registration Origin,VAT Registration Origin,SD-BIL-GF,Dimension,dimension,3,0,,component
-I_VATREGISTRATIONORIGINTEXT,VAT Registration Origin - Text,VAT Registration Origin - Text,SD-BIL-GF,,text,6,0,,component
-I_INVOICELISTTYPE,Invoice List Type,Invoice List Type,SD-BIL-IL,Dimension,dimension,7,0,,component
-I_INVOICELISTTYPESTDVH,Invoice List Type,Invoice List Type,SD-BIL-IL,,value_help,2,0,,component
-I_INVOICELISTTYPETEXT,Invoice List Type - Text,Invoice List Type - Text,SD-BIL-IL,,text,5,0,,component
-I_CUSTPROJSLSORDITMBILLGPLN,Billing Plan of Sales Order Item for Customer Project,Billing Plan of Sales Order Item for Customer Project,SD-BIL-IV-BP,,basic,14,0,Distribution Channel; Division; Sales Document; Sales Organization,component
-I_CUSTPROJSLSORDITMBILLGPLNITM,Billing Plan Item of Sales Order Item for Customer Project,Billing Plan Item of Sales Order Item for Customer Project,SD-BIL-IV-BP,,basic,32,2,Distribution Channel; Division; Sales Document; Sales Organization,component
-I_SDBILLINGPLAN,Billing Plan for SD Documents,Billing Plan for SD Documents,SD-BIL-IV-BP,Dimension,dimension,17,0,SD/LE Document (generic VBELN),component
-I_SDBILLINGPLANITEM,Billing Plan Item for SD Documents,Billing Plan Item for SD Documents,SD-BIL-IV-BP,Dimension,dimension,43,2,Payment Terms,component
-I_SDDOCUMENTPAYMENTCARDTYPE,SD Document Payment Card Type,SD Document Payment Card Type,SD-BIL-IV-PC,Dimension,dimension,3,0,,component
-I_SDDOCUMENTPAYMENTCARDTYPET,SD Document Payment Card Type - Text,SD Document Payment Card Type - Text,SD-BIL-IV-PC,,basic,5,0,,component
-I_SLSDOCPAYMENTPLANITEMDETAILS,Sales Document Payment Plan Item Details,Sales Document Payment Plan Item Details,SD-BIL-IV-PC,,basic,55,0,Distribution Channel; Division; Sales Document; Sales Document Type; Sales Organization,component
-I_PRELIMBILLGDOCITEMPRCGELMNT,Prelim Billg Doc Item Pricing Element,Prelim Billg Doc Item Pricing Element,SD-BIL-PBD,,basic,75,0,G/L Account; Tax Code,component
-I_PRELIMBILLINGDOCITEMPARTNER,Preliminary Billing Document Item Partner,Preliminary Billing Document Item Partner,SD-BIL-PBD,,basic,14,0,Address; Customer; Personnel; Supplier,component
-I_PRELIMBILLINGDOCITEMSTDVH,Preliminary Billing Document Item,Preliminary Billing Document Item,SD-BIL-PBD,,value_help,6,0,Sales Organization,component
-I_PRELIMBILLINGDOCPARTNER,Preliminary Billing Document Partner,Preliminary Billing Document Partner,SD-BIL-PBD,,basic,18,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_PRELIMBILLINGDOCPRCGELMNT,Prelim Billing Document Pricing Element,Prelim Billing Document Pricing Element,SD-BIL-PBD,,basic,69,0,G/L Account; Tax Code,component
-I_PRELIMBILLINGDOCUMENT,Preliminary Billing Document,Preliminary Billing Document,SD-BIL-PBD,Dimension,dimension,135,3,Company Code; Customer; Distribution Channel; Division; Document Condition (pricing); Incoterms; Payment Terms; Sales Organization,component
-I_PRELIMBILLINGDOCUMENTITEM,Preliminary Billing Document Item,Preliminary Billing Document Item,SD-BIL-PBD,Dimension,dimension,291,8,Batch; Business Area; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Material / Product; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; Tax Code; WBS Element,component
-I_PRELIMBILLINGDOCUMENTSTDVH,Preliminary Billing Document,Preliminary Billing Document,SD-BIL-PBD,,value_help,3,0,Sales Organization,component
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+C_BILLGDOCITMPRCGELMNTBSCDEX_1,Data Extraction for Billing Doc Item Pricing Element Basic,Data Extraction for Billing Doc Item Pricing Element Basic,SD-BIL-2CL,,basic,86,0,Billing Document; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Material / Product; Material Group; Sales Document; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_DEX_BIL,no
+C_BILLINGDOCITEMBASICDEX_1,Data Extraction for Billing Doc Item Basic,Data Extraction for Billing Doc Item Basic,SD-BIL-2CL,,basic,162,1,Batch; Billing Document; Business Area; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Plant; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component,yes,VDM_SD_DEX_BIL,no
+I_BILLGDOCITMBSCSTDVH,Item in Billing Process Document,Item in Billing Process Document,SD-BIL-2CL,,value_help,6,0,Billing Document; Sales Organization,component,yes,VDM_SD_BIL,no
+I_BILLINGDOCITEMPARTNERBASIC,Item Partner in Billing Process Document,Item Partner in Billing Process Document,SD-BIL-2CL,,basic,22,0,Address; Billing Document; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL,no
+I_BILLINGDOCITEMPRCGELMNTBASIC,Item Pricing Element in Billing Process Document,Item Pricing Element in Billing Process Document,SD-BIL-2CL,,basic,77,1,Billing Document; G/L Account; Tax Code,component,yes,VDM_SD_BIL,no
+I_BILLINGDOCPRCGELMNTBASIC,Pricing Element in Billing Process Document,Pricing Element in Billing Process Document,SD-BIL-2CL,,basic,71,1,Billing Document; G/L Account; Tax Code,component,yes,VDM_SD_BIL,no
+I_BILLINGDOCUMENTBASIC,Billing Process Document,Billing Process Document,SD-BIL-2CL,,basic,179,3,Billing Document; Company Code; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Payment Terms; Sales Organization,component,yes,VDM_SD_BIL,no
+I_BILLINGDOCUMENTBASICSTDVH,Billing Process Document,Billing Process Document,SD-BIL-2CL,,value_help,3,0,Billing Document; Sales Organization,component,yes,VDM_SD_BIL,no
+I_BILLINGDOCUMENTITEMBASIC,Item in Billing Process Document,Item in Billing Process Document,SD-BIL-2CL,,basic,333,13,Batch; Billing Document; Business Area; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Material / Product; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; Tax Code; WBS Element,component,yes,VDM_SD_BIL,no
+I_BILLINGDOCUMENTPARTNERBASIC,Partner in Billing Process Document,Partner in Billing Process Document,SD-BIL-2CL,,basic,20,0,Address; Billing Document; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL,no
+I_BILLINGDUELISTITEM,Billing Due List Item,Billing Due List Item,SD-BIL-2CL,,basic,53,0,Customer; Distribution Channel; Division; SD/LE Document (generic VBELN); Sales Organization; Shipping Point,component,yes,VDM_SD_BIL,no
+D_BILLGDOCCRTECANCLNDOCP,Create Cancellation Billing Document Parameter,Create Cancellation Billing Document Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BILLGDOCCRTEFRMBILLGDOCIP,Billing Document Create from Billing Document - Parameter,Billing Document Create from Billing Document - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BILLGDOCCRTEFRMBILLGDOCREFIP,Bill Doc Create from Bill Doc Ref Parameter,Bill Doc Create from Bill Doc Ref Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BILLGDOCCRTEFRMEXTDATAIP,Billing Document Create From External - Parameter,Billing Document Create From External - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BILLGDOCCRTEFRMEXTPARTNERIP,Bill Doc Create From Ext Data Partner - Parameter,Bill Doc Create From Ext Data Partner - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BILLGDOCCRTEFRMEXTPAYTCARDIP,Bill Doc Create From Ext Data Payment Card - Parameter,Bill Doc Create From Ext Data Payment Card - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BILLGDOCCRTEFRMEXTPRGELMIP,Bill Doc Create From Ext Data Pricing Element - Parameter,Bill Doc Create From Ext Data Pricing Element - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BILLGDOCCRTEFRMEXTTXTIP,Bill Doc Create From Ext Data Text - Parameter,Bill Doc Create From Ext Data Text - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BILLGDOCGETLATESTPDFIR,Billing Document Fetch Latest PDF Result,Billing Document Fetch Latest PDF Result,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BLGDCCRTEFRMBILLGDOCCTRLIP,Bill Doc Create from Bill Doc Control - Parameter,Bill Doc Create from Bill Doc Control - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BLGDCCRTEFRMBILLGDOCREFITMIP,Bill Doc Create from Bill Doc Ref Item - Parameter,Bill Doc Create from Bill Doc Ref Item - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BLGDCCRTEFRMEXTBLBLDOCITMIP,Billing Document Create From External Data Item - Parameter,Billing Document Create From External Data Item - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+D_BLGDCCRTEFRMEXTBLLBLEDOCIP,Bill Doc Create From Ext Data Billable Document - Parameter,Bill Doc Create From Ext Data Billable Document - Parameter,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+I_BILLINGDOCITEMPARTNER,Billing Document Item Partner,Billing Document Item Partner,SD-BIL-BD-2CL,,basic,19,0,Address; Billing Document; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENT,Billing Document,Billing Document,SD-BIL-BD-2CL,,basic,162,3,Billing Document; Company Code; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Payment Terms; Sales Organization,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTITEM,Billing Document Item,Billing Document Item,SD-BIL-BD-2CL,,basic,321,13,Batch; Billing Document; Business Area; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Material / Product; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; Tax Code; WBS Element,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTITEMPARTNERTP,Billing Document Item Partner - TP,Billing Document Item Partner - TP,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+I_BILLINGDOCUMENTITEMPRCGELMNT,Billing Document Item Pricing Element,Billing Document Item Pricing Element,SD-BIL-BD-2CL,,basic,77,1,Billing Document; G/L Account; Tax Code,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTITEMSTDVH,Billing Document Item,Billing Document Item,SD-BIL-BD-2CL,,value_help,6,0,Billing Document; Sales Organization,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTITEMTEXTTP,Billing Document Item - Text TP,Billing Document Item - Text TP,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+I_BILLINGDOCUMENTITEMTP,Billing Document Item - TP,Billing Document Item - TP,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+I_BILLINGDOCUMENTPARTNER,Billing Document Partner,Billing Document Partner,SD-BIL-BD-2CL,,basic,20,0,Address; Billing Document; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTPARTNERTP,Billing Document Partner - TP,Billing Document Partner - TP,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+I_BILLINGDOCUMENTPRCGELMNT,Billing Document Pricing Element,Billing Document Pricing Element,SD-BIL-BD-2CL,,basic,71,1,Billing Document; G/L Account; Tax Code,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTSTDVH,Billing Document,Billing Document,SD-BIL-BD-2CL,,value_help,3,0,Billing Document; Sales Organization,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTTEXTTP,Billing Document - Text TP,Billing Document - Text TP,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+I_BILLINGDOCUMENTTP,Billing Document - TP,Billing Document - TP,SD-BIL-BD-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BD_API,no
+I_BILLINGDOCUMENTTYPESTDVH,Billing Document Type,Billing Document Type,SD-BIL-BD-2CL,,value_help,2,0,,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTTYPETEXT_2,Billing Document Type - Text,Billing Document Type - Text,SD-BIL-BD-2CL,,basic,5,0,,component,yes,VDM_SD_BIL_BD,no
+I_BILLINGDOCUMENTTYPE_2,Billing Document Type,Billing Document Type,SD-BIL-BD-2CL,,basic,11,0,,component,yes,VDM_SD_BIL_BD,no
+D_BDRCRTEFRMEXTBLLBLEDOCITEMP,Create BDR from Ext Data - Item Param,Create BDR from Ext Data - Item Param,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+D_BDRCRTEFRMEXTBLLBLEDOCP,Create BDR from Ext Data - Bllble Doc,Create BDR from Ext Data - Bllble Doc,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+D_BDRCRTEFRMEXTDATACONTROLP,Create BDR from Ext Data - Control Param,Create BDR from Ext Data - Control Param,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+D_BDRCRTEFRMEXTDATAP,Create BDR from External Data - Param,Create BDR from External Data - Param,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR,no
+D_BDRCRTEFRMEXTPARTNERP,Create BDR from Ext Data - Partner Param,Create BDR from Ext Data - Partner Param,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+D_BDRCRTEFRMEXTPAYTCARDP,Crte BDR from Ext Data - PaytCard Param,Crte BDR from Ext Data - PaytCard Param,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+D_BDRCRTEFRMEXTPRCGELMNTP,Create BDR from Ext Data - Pricing Param,Create BDR from Ext Data - Pricing Param,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+D_BDRCRTEFRMEXTTEXTP,Create BDR from Ext Data - Text Param,Create BDR from Ext Data - Text Param,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+I_BILLGDOCREQBILLGSTS,Billing Document Request Billing Status,Billing Document Request Billing Status,SD-BIL-BDR-2CL,,basic,3,0,,component,yes,VDM_SD_BIL_BDR,no
+I_BILLGDOCREQBILLGSTSTEXT,Billing Document Request Billing Status - Text,Billing Document Request Billing Status - Text,SD-BIL-BDR-2CL,,text,5,0,,component,yes,VDM_SD_BIL_BDR,no
+I_BILLGDOCREQUESTITEMPARTNERTP,Billing Document Request Item Partner - TP,Billing Document Request Item Partner - TP,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+I_BILLGDOCREQUESTITEMTEXTTP,Billing Document Request Item - Text TP,Billing Document Request Item - Text TP,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+I_BILLGDOCREQUESTPARTNERTP,Billing Document Request Partner - TP,Billing Document Request Partner - TP,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+I_BILLGDOCREQUESTTYPESTDVH,Billing Document Request Type,Billing Document Request Type,SD-BIL-BDR-2CL,,value_help,2,0,,component,yes,VDM_SD_BIL_BDR,no
+I_BILLGDOCREQUESTTYPETEXT,Billing Document Request Type - Text,Billing Document Request Type - Text,SD-BIL-BDR-2CL,,text,5,0,,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCREQITEMPARTNER,Billing Document Request Item Partner,Billing Document Request Item Partner,SD-BIL-BDR-2CL,,basic,19,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCREQITEMPRCGELMNT,Billing Doc Req Item Pricing Element,Billing Doc Req Item Pricing Element,SD-BIL-BDR-2CL,,basic,76,0,G/L Account; Tax Code,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCREQITEMSTDVH,Billing Document Request Item,Billing Document Request Item,SD-BIL-BDR-2CL,,value_help,6,0,Sales Organization,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCREQPARTNER,Billing Document Request Partner,Billing Document Request Partner,SD-BIL-BDR-2CL,,basic,17,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCREQPRCGELMNT,Billing Document Request Pricing Element,Billing Document Request Pricing Element,SD-BIL-BDR-2CL,,basic,70,0,G/L Account; Tax Code,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCUMENTREQUEST,Billing Document Request,Billing Document Request,SD-BIL-BDR-2CL,,basic,114,1,Company Code; Customer; Distribution Channel; Division; Document Condition (pricing); Incoterms; Payment Terms; Sales Organization,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCUMENTREQUESTITEM,Billing Document Request Item,Billing Document Request Item,SD-BIL-BDR-2CL,,basic,201,7,Batch; Business Area; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Material / Product; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Storage Location; WBS Element,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCUMENTREQUESTITEMTP,Billing Document Request Item - TP,Billing Document Request Item - TP,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+I_BILLINGDOCUMENTREQUESTSTDVH,Billing Document Request,Billing Document Request,SD-BIL-BDR-2CL,,value_help,3,0,Sales Organization,component,yes,VDM_SD_BIL_BDR,no
+I_BILLINGDOCUMENTREQUESTTEXTTP,Billing Document Request - Text TP,Billing Document Request - Text TP,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+I_BILLINGDOCUMENTREQUESTTP,Billing Document Request - TP,Billing Document Request - TP,SD-BIL-BDR-2CL,,basic,0,0,,component,yes,RAP_SD_BIL_BDR_API,no
+I_BILLINGDOCUMENTREQUESTTYPE,Billing Document Request Type,Billing Document Request Type,SD-BIL-BDR-2CL,,basic,11,0,,component,yes,VDM_SD_BIL_BDR,no
+I_OVRLBILLINGDOCREQSTATUS,Overall Billing Document Request Status,Overall Billing Document Request Status,SD-BIL-BDR-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_BIL_BDR,yes
+I_OVRLBILLINGDOCREQSTATUSTEXT,Overall Billing Document Request Status - Text,Overall Billing Document Request Status - Text,SD-BIL-BDR-2CL,,text,5,0,,component,yes,VDM_SD_BIL_BDR,yes
+I_ACCOUNTINGPOSTINGSTATUS,Accounting Posting Status,Accounting Posting Status,SD-BIL-GF-2CL,,basic,2,0,,component,yes,VDM_SD_BIL_GF,no
+I_ACCOUNTINGPOSTINGSTATUSTEXT,Accounting Posting Status - Text,Accounting Posting Status - Text,SD-BIL-GF-2CL,,text,5,0,,component,yes,VDM_SD_BIL_GF,no
+I_ACCOUNTINGTRANSFERSTATUS,Accounting Transfer Status,Accounting Transfer Status,SD-BIL-GF-2CL,,basic,3,0,,component,yes,VDM_SD_BIL_GF,no
+I_ACCOUNTINGTRANSFERSTATUSTEXT,Accounting Transfer Status - Text,Accounting Transfer Status - Text,SD-BIL-GF-2CL,,text,5,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGBLOCKREASON,Billing Block Reason,Billing Block Reason,SD-BIL-GF-2CL,,basic,2,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGBLOCKREASONTEXT,Billing Block Reason - Text,Billing Block Reason - Text,SD-BIL-GF-2CL,,text,5,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGDOCCLEARINGSTATUS,Billing Document Clearing Status,Billing Document Clearing Status,SD-BIL-GF-2CL,,basic,3,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGDOCCLEARINGSTATUSTEXT,Billing Document Clearing Status - Text,Billing Document Clearing Status - Text,SD-BIL-GF-2CL,,text,6,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGDOCUMENTCATEGORY,Billing Document Category,Billing Document Category,SD-BIL-GF-2CL,,basic,3,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGDOCUMENTCATEGORYTEXT,Billing Document Category - Text,Billing Document Category - Text,SD-BIL-GF-2CL,,text,6,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGDOCUMENTTYPE,Billing Document Type,Billing Document Type,SD-BIL-GF-2CL,,basic,12,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGDOCUMENTTYPETEXT,Billing Document Type - Text,Billing Document Type - Text,SD-BIL-GF-2CL,,text,5,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGISSUETYPE,Billing Issue Type,Billing Issue Type,SD-BIL-GF-2CL,,basic,3,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGISSUETYPETEXT,Billing Issue Type - Text,Billing Issue Type - Text,SD-BIL-GF-2CL,,text,5,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGPROCESSDOCTYPESTDVH,Billing Process Document Type,Billing Process Document Type,SD-BIL-GF-2CL,,value_help,2,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGPROCESSDOCTYPETEXT,Billing Process Document Type - Text,Billing Process Document Type - Text,SD-BIL-GF-2CL,,text,5,0,,component,yes,VDM_SD_BIL_GF,no
+I_BILLINGPROCESSDOCUMENTTYPE,Billing Process Document Type,Billing Process Document Type,SD-BIL-GF-2CL,,basic,11,0,,component,yes,VDM_SD_BIL_GF,no
+I_INCOTERMSCLASSIFICATION,Incoterms Classification,Incoterms Classification,SD-BIL-GF-2CL,Dimension,dimension,3,0,Incoterms,component,yes,VDM_SD_BIL_GF,yes
+I_INCOTERMSCLASSIFICATIONTEXT,Incoterms Classification - Text,Incoterms Classification - Text,SD-BIL-GF-2CL,,text,5,0,Incoterms,component,yes,VDM_SD_BIL_GF,yes
+I_OVERALLBILLINGBLOCKSTATUS,Overall Billing Block Status,Overall Billing Block Status,SD-BIL-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_BIL_GF,yes
+I_OVERALLBILLINGBLOCKSTATUST,Overall Billing Block Status - Text,Overall Billing Block Status - Text,SD-BIL-GF-2CL,,basic,5,0,,component,yes,VDM_SD_BIL_GF,yes
+I_OVERALLBILLINGSTATUS,Overall Billing Status,Overall Billing Status,SD-BIL-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_BIL_GF,yes
+I_OVERALLBILLINGSTATUSTEXT,Overall Billing Status - Text,Overall Billing Status - Text,SD-BIL-GF-2CL,,text,5,0,,component,yes,VDM_SD_BIL_GF,yes
+I_VATREGISTRATIONORIGIN,VAT Registration Origin,VAT Registration Origin,SD-BIL-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_BIL_GF,yes
+I_VATREGISTRATIONORIGINTEXT,VAT Registration Origin - Text,VAT Registration Origin - Text,SD-BIL-GF-2CL,,text,6,0,,component,yes,VDM_SD_BIL_GF,yes
+I_INVOICELIST,Invoice List,Invoice List,SD-BIL-IL-2CL,,basic,131,0,Company Code; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Payment Terms; Sales Organization,component,yes,VDM_SD_BIL_IL,no
+I_INVOICELISTENHANCEDFIELDS,Invoice List Enhanced Fields,Invoice List Enhanced Fields,SD-BIL-IL-2CL,,basic,6,0,,component,yes,VDM_SD_BIL_IL,no
+I_INVOICELISTITEM,Invoice List Item,Invoice List Item,SD-BIL-IL-2CL,,basic,17,0,Billing Document; Customer,component,yes,VDM_SD_BIL_IL,no
+I_INVOICELISTPARTNER,Invoice List Partner,Invoice List Partner,SD-BIL-IL-2CL,,basic,17,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL_IL,no
+I_INVOICELISTPRCGELMNT,Invoice List Pricing Element,Invoice List Pricing Element,SD-BIL-IL-2CL,,basic,62,0,Tax Code,component,yes,VDM_SD_BIL_IL,no
+I_INVOICELISTREMUNERATION,Invoice List Remuneration,Invoice List Remuneration,SD-BIL-IL-2CL,,basic,6,0,,component,yes,VDM_SD_BIL_IL,no
+I_INVOICELISTSTATUS,Invoice List Status,Invoice List Status,SD-BIL-IL-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_BIL_IL,yes
+I_INVOICELISTSTATUSTEXT,Invoice List Status - Text,Invoice List Status - Text,SD-BIL-IL-2CL,,text,5,0,,component,yes,VDM_SD_BIL_IL,yes
+I_INVOICELISTSTDVH,Invoice List,Invoice List,SD-BIL-IL-2CL,,value_help,3,0,Sales Organization,component,yes,VDM_SD_BIL_IL,no
+I_INVOICELISTTYPE,Invoice List Type,Invoice List Type,SD-BIL-IL-2CL,Dimension,dimension,7,0,,component,yes,VDM_SD_BIL_IL,yes
+I_INVOICELISTTYPESTDVH,Invoice List Type,Invoice List Type,SD-BIL-IL-2CL,,value_help,2,0,,component,yes,VDM_SD_BIL_IL,yes
+I_INVOICELISTTYPETEXT,Invoice List Type - Text,Invoice List Type - Text,SD-BIL-IL-2CL,,text,5,0,,component,yes,VDM_SD_BIL_IL,yes
+I_BILLGPLNDTEDESCCODE,Billing Plan Date Description,Billing Plan Date Description,SD-BIL-IV-BP-2CL,,basic,2,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLGPLNDTEDESCTXT,Billing Plan Date Description - Text,Billing Plan Date Description - Text,SD-BIL-IV-BP-2CL,,text,5,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLINGPLANCATEGORY,Billing Plan Category,Billing Plan Category,SD-BIL-IV-BP-2CL,,basic,2,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLINGPLANCATEGORYTEXT,Billing Plan Category - Text,Billing Plan Category - Text,SD-BIL-IV-BP-2CL,,text,5,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLINGPLANRELATEDBILLGSTS,Billing Status for Billing Plan Date,Billing Status for Billing Plan Date,SD-BIL-IV-BP-2CL,,basic,2,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLINGPLANRELATEDBILLGSTST,Billg Sts for Billing Plan Date - Text,Billg Sts for Billing Plan Date - Text,SD-BIL-IV-BP-2CL,,basic,5,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLINGPLANRULE,Billing Plan Rule,Billing Plan Rule,SD-BIL-IV-BP-2CL,,basic,2,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLINGPLANRULETEXT,Billing Plan Rule - Text,Billing Plan Rule - Text,SD-BIL-IV-BP-2CL,,text,5,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLINGPLANUSAGECATEGORY,Billing Plan Usage Category,Billing Plan Usage Category,SD-BIL-IV-BP-2CL,,basic,2,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_BILLINGPLANUSAGECATEGORYTEXT,Billing Plan Usage Category - Text,Billing Plan Usage Category - Text,SD-BIL-IV-BP-2CL,,text,5,0,,component,yes,VDM_SD_BIL_IV_BP,no
+I_CUSTPROJSLSORDITMBILLGPLN,Billing Plan of Sales Order Item for Customer Project,Billing Plan of Sales Order Item for Customer Project,SD-BIL-IV-BP-2CL,,basic,14,0,Distribution Channel; Division; Sales Document; Sales Organization,component,yes,VDM_SD_BIL_IV_BP,yes
+I_CUSTPROJSLSORDITMBILLGPLNITM,Billing Plan Item of Sales Order Item for Customer Project,Billing Plan Item of Sales Order Item for Customer Project,SD-BIL-IV-BP-2CL,,basic,32,2,Distribution Channel; Division; Sales Document; Sales Organization,component,yes,VDM_SD_BIL_IV_BP,yes
+I_SDBILLINGPLAN,Billing Plan for SD Documents,Billing Plan for SD Documents,SD-BIL-IV-BP-2CL,Dimension,dimension,17,0,SD/LE Document (generic VBELN),component,yes,VDM_SD_BIL_IV_BP,yes
+I_SDBILLINGPLANITEM,Billing Plan Item for SD Documents,Billing Plan Item for SD Documents,SD-BIL-IV-BP-2CL,Dimension,dimension,43,2,Payment Terms,component,yes,VDM_SD_BIL_IV_BP,yes
+I_SDDOCUMENTPAYMENTCARDTYPE,SD Document Payment Card Type,SD Document Payment Card Type,SD-BIL-IV-PC-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_BIL_IV_PC,yes
+I_SDDOCUMENTPAYMENTCARDTYPET,SD Document Payment Card Type - Text,SD Document Payment Card Type - Text,SD-BIL-IV-PC-2CL,,basic,5,0,,component,yes,VDM_SD_BIL_IV_PC,yes
+I_SLSDOCPAYMENTPLANITEMDETAILS,Sales Document Payment Plan Item Details,Sales Document Payment Plan Item Details,SD-BIL-IV-PC-2CL,,basic,55,0,Distribution Channel; Division; Sales Document; Sales Document Type; Sales Organization,component,yes,VDM_SD_BIL_IV_PC,yes
+I_PRELIMBILLGDOCITEMPRCGELMNT,Prelim Billg Doc Item Pricing Element,Prelim Billg Doc Item Pricing Element,SD-BIL-PBD-2CL,,basic,75,0,G/L Account; Tax Code,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLGDOCSTATUS,Preliminary Billing Document Status,Preliminary Billing Document Status,SD-BIL-PBD-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLGDOCSTATUSTEXT,Preliminary Billing Document Status - Text,Preliminary Billing Document Status - Text,SD-BIL-PBD-2CL,,text,5,0,,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLINGDOCITEMPARTNER,Preliminary Billing Document Item Partner,Preliminary Billing Document Item Partner,SD-BIL-PBD-2CL,,basic,14,0,Address; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLINGDOCITEMSTDVH,Preliminary Billing Document Item,Preliminary Billing Document Item,SD-BIL-PBD-2CL,,value_help,6,0,Sales Organization,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLINGDOCPARTNER,Preliminary Billing Document Partner,Preliminary Billing Document Partner,SD-BIL-PBD-2CL,,basic,18,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLINGDOCPRCGELMNT,Prelim Billing Document Pricing Element,Prelim Billing Document Pricing Element,SD-BIL-PBD-2CL,,basic,69,0,G/L Account; Tax Code,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLINGDOCUMENT,Preliminary Billing Document,Preliminary Billing Document,SD-BIL-PBD-2CL,Dimension,dimension,135,3,Company Code; Customer; Distribution Channel; Division; Document Condition (pricing); Incoterms; Payment Terms; Sales Organization,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLINGDOCUMENTITEM,Preliminary Billing Document Item,Preliminary Billing Document Item,SD-BIL-PBD-2CL,Dimension,dimension,291,8,Batch; Business Area; Company Code; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Material / Product; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; Tax Code; WBS Element,component,yes,VDM_SD_BIL_PBD,yes
+I_PRELIMBILLINGDOCUMENTSTDVH,Preliminary Billing Document,Preliminary Billing Document,SD-BIL-PBD-2CL,,value_help,3,0,Sales Organization,component,yes,VDM_SD_BIL_PBD,yes

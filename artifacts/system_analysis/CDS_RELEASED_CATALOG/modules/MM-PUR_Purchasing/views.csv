@@ -1,116 +1,336 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_SUPLREVALCRITERIONWEIGHT,Criterion Weight for Supplier Evaluation,Criterion Weight for Supplier Evaluation,MM-PUR,,basic,14,0,,component
-I_SUPLREVALCRITRNVARCSCORE,Score Variance for Suplr Eval Criterion,Score Variance for Suplr Eval Criterion,MM-PUR,,basic,8,0,,component
-I_CNTRLPURCONTRCHGREQSTATUS,Central Contract Change Request Status,Central Contract Change Request Status,MM-PUR-ANA,Dimension,dimension,3,0,,component
-I_CNTRLPURCONTRCHGREQSTATUSTXT,Change Request Status - Text,Change Request Status - Text,MM-PUR-ANA,,text,6,0,,component
-I_INVOICEINBOUNDENTRYTYPE,Invoice Inbound Entry Type,Invoice Inbound Entry Type,MM-PUR-ANA,Dimension,dimension,3,0,,component
-I_INVOICEINBOUNDENTRYTYPETXT,Invoice Inbound Entry Type - Text,Invoice Inbound Entry Type - Text,MM-PUR-ANA,,text,6,0,,component
-I_POCHANNELOUTPUTTYPE,PO of Output Type Automatic or Manual,PO of Output Type Automatic or Manual,MM-PUR-ANA,Dimension,dimension,3,0,,component
-I_POCHANNELOUTPUTTYPETXT,PO of Output Type Manual - Text,PO of Output Type Manual - Text,MM-PUR-ANA,,text,5,0,,component
-I_PURORDSCHEDLINEENHCDAPI01,Purchase Order Schedule Line Details,Purchase Order Schedule Line Details,MM-PUR-ANA,,basic,110,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Supplier,component
-I_SCHDAGRSCHDLNENHCDAPI01,Sched Agreement with Schedule Line Details,Sched Agreement with Schedule Line Details,MM-PUR-ANA,,basic,98,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location; Supplier,component
-I_SUPLREVALCLASSFCTNCODE,Supplier Evaluation Classification Code,Supplier Evaluation Classification Code,MM-PUR-ANA,Dimension,dimension,3,0,,component
-I_SUPLREVALCLASSFCTNCODETXT,Supplier Eval Classification Code - Text,Supplier Eval Classification Code - Text,MM-PUR-ANA,,text,6,0,,component
-I_SUPLREVALCLASSIFICATION,Supplier Evaluation Classification,Supplier Evaluation Classification,MM-PUR-ANA,Dimension,dimension,4,0,,component
-I_SUPLREVALCLASSIFICATIONTEXT,Supplier Eval Classification - Text,Supplier Eval Classification - Text,MM-PUR-ANA,,text,5,0,,component
-I_SUPLREVALDELIVCMPLTDCONFIGN,Supplier Evaluation Delivery Completed Configuration,Supplier Evaluation Delivery Completed Configuration,MM-PUR-ANA,Dimension,dimension,3,0,,component
-I_SUPLREVALDELIVCMPLTDCONFIGNT,Supplier Evaluation Delivery Completed Configuration - Text,Supplier Evaluation Delivery Completed Configuration - Text,MM-PUR-ANA,,basic,5,0,,component
-I_SUPLREVALDOCCATCONFIGN,Supplier Eval Doc Catergory Config Value,Supplier Eval Doc Catergory Config Value,MM-PUR-ANA,Dimension,dimension,3,0,,component
-I_SUPLREVALDOCCATCONFIGNT,Supplier Eval Doc Catergory Config - Txt,Supplier Eval Doc Catergory Config - Txt,MM-PUR-ANA,,basic,6,0,,component
-I_SUPLREVALOUTPUTSCORETYPE,Supplier Evaluation Output Score Type,Supplier Evaluation Output Score Type,MM-PUR-ANA,Dimension,dimension,3,0,,component
-I_SUPLREVALOUTPUTSCORETYPETEXT,Supplier Evaluation Output Score Type - Text,Supplier Evaluation Output Score Type - Text,MM-PUR-ANA,,text,5,0,,component
-I_SUPLREVALSCOREOUTPSTATUSTEXT,SE Score Output Status - Text,SE Score Output Status - Text,MM-PUR-ANA,,text,5,0,,component
-I_SUPLREVALSCOREOUTPUTSTATUS,SE Score Output Status,SE Score Output Status,MM-PUR-ANA,Dimension,dimension,3,0,,component
-I_SUPLREVALUATIONSCORESOUTPUT,Supplier Evaluation Scores Output,Supplier Evaluation Scores Output,MM-PUR-ANA,,basic,11,0,Supplier,component
-I_SUPLREVALUSERDEFINEDCRITERIA,Supplier Evaluation Usr Defined Criteria,Supplier Evaluation Usr Defined Criteria,MM-PUR-ANA,,basic,7,0,,component
-I_SUPLREVALUSERDFNDCRITERIACT,User Defined Criteria Count,User Defined Criteria Count,MM-PUR-ANA,,basic,20,0,Material Group; Supplier,component
-I_SUPLREVALUSRDFNDCRITERIATEXT,Supplier Evaluation User Defined Criteria - Text,Supplier Evaluation User Defined Criteria - Text,MM-PUR-ANA,,text,5,0,,component
-I_VARBLPURORDUNITACTVSTATUS,Variable PO Unit Active Status,Variable PO Unit Active Status,MM-PUR-GF-MAS,Dimension,dimension,3,0,,component
-I_VARBLPURORDUNITACTVSTATUSTXT,Variable PO Unit Active Status - Text,Variable PO Unit Active Status - Text,MM-PUR-GF-MAS,,text,6,0,,component
-I_CENTRALPURCHASECONTRACTAPI01,Central Purchase Contract,Central Purchase Contract,MM-PUR-HUB-CTR,,basic,48,1,Company Code; Incoterms; Purchasing Organization; Supplier,component
-I_CENTRALPURCHASECONTRACTBASIC,Central Purchase Contract,Central Purchase Contract,MM-PUR-HUB-CTR,,basic,33,0,Company Code; Incoterms; Purchasing Organization; Supplier,component
-I_CNTRLPURCONTRACTITEMAPI01,Item in Central Purchase Contract,Item in Central Purchase Contract,MM-PUR-HUB-CTR,,basic,46,0,Material Group; Tax Code,component
-I_CNTRLPURCONTRACTITEMBASIC,Item in Central Purchase Contract,Item in Central Purchase Contract,MM-PUR-HUB-CTR,,basic,23,0,Material Group; Tax Code,component
-I_PURGINFORECORDUPDATECODE,Update Code for Purchasing Info Record,Update Code for Purchasing Info Record,MM-PUR-HUB-CTR,Dimension,dimension,3,0,,component
-I_PROCMTHUBCOMPANYCODE,Co Code in Conncd Syst for Cntrl Procmt,Co Code in Conncd Syst for Cntrl Procmt,MM-PUR-HUB-FND,,basic,6,0,,component
-I_PROCMTHUBPLANT,Plant in Connected Syst for Cntrl Procmt,Plant in Connected Syst for Cntrl Procmt,MM-PUR-HUB-FND,,basic,8,0,,component
-I_PROCMTHUBPURGGROUPAPI01,Purchasing Group in Connected System,Purchasing Group in Connected System,MM-PUR-HUB-FND,Dimension,dimension,8,0,,component
-I_PROCMTHUBPURGORGAPI01,Purchasing Org in Connected System,Purchasing Org in Connected System,MM-PUR-HUB-FND,Dimension,dimension,6,0,,component
-I_CNTRLSUPLRCONFWRKFLWCARD,ToDo Workflow Card info Cntrl Suplr Conf,ToDo Workflow Card info Cntrl Suplr Conf,MM-PUR-HUB-PO,,basic,8,0,Purchasing Organization,component
-I_PRMTHBPURORDITMSCHDLNAPI01,Schedule Line of Purchase Order in Procurement Hub,Schedule Line of Purchase Order in Procurement Hub,MM-PUR-HUB-PO,,basic,44,0,Batch; Purchasing Document,component
-I_PRMTHBRPLDPOWRKFLWCARD,ToDo Workflow Card info of MPOC,ToDo Workflow Card info of MPOC,MM-PUR-HUB-PO,,basic,12,0,Company Code; Purchasing Document; Supplier,component
-I_PROCMTHUBPURORDHDRAPI01,Centrally Managed Purchase Order Header,Centrally Managed Purchase Order Header,MM-PUR-HUB-PO,,basic,63,0,Address; Company Code; Customer; Document Condition (pricing); Incoterms; Purchasing Document; Purchasing Organization; Supplier,component
-I_PROCMTHUBPURORDITMAPI01,Centrally Managed Purchase Order Item,Centrally Managed Purchase Order Item,MM-PUR-HUB-PO,,basic,125,0,Company Code; Incoterms; Material / Product; Material Group; Profit Center; Purchasing Document; Tax Code,component
-I_PROCMTHUBRPLDPURCHASEORDER,Extensibility of Purchase Order in Procurement Hub,Extensibility of Purchase Order in Procurement Hub,MM-PUR-HUB-PO,,basic,72,0,Address; Company Code; Document Condition (pricing); Incoterms; Purchasing Document; Purchasing Organization; Supplier,component
-I_PRMTHBRPLDPURCHASEREQNAPI01,Replicated Purchase Requisition,Replicated Purchase Requisition,MM-PUR-HUB-PR,,basic,4,0,,component
-I_PRMTHBRPLDPURREQNEMAILPARAM,Email tmpl Rpld for PRs in Pcmt Hub,Email tmpl Rpld for PRs in Pcmt Hub,MM-PUR-HUB-PR,,basic,7,0,,component
-I_PRMTHBRPLDPURREQNITEMAPI01,Replicated Purchase Requisition Item,Replicated Purchase Requisition Item,MM-PUR-HUB-PR,,basic,77,1,Batch; Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location,component
-I_CENTRALREQFORQUOTATIONITEM,Central Request For Quotation Item,Central Request For Quotation Item,MM-PUR-HUB-RFQ,,basic,47,0,Incoterms; Material Group; Purchasing Document,component
-I_CENTRALREQUESTFORQUOTATION,Central Request For Quotation Header,Central Request For Quotation Header,MM-PUR-HUB-RFQ,,basic,55,0,Company Code; Incoterms,component
-I_CENTRALRFQITEMDISTRIBUTION,Central RFQ Item Distribution,Central RFQ Item Distribution,MM-PUR-HUB-RFQ,,basic,43,0,Address; Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location,component
-I_CENTRALSUPPLIERQUOTATION,Central Supplier Quotation Header,Central Supplier Quotation Header,MM-PUR-HUB-RFQ,,basic,59,0,Company Code; Document Condition (pricing); Incoterms; Supplier,component
-I_CNTRLREQFORQTANSCHEDULELINE,Central RFQ Item Schedule Line,Central RFQ Item Schedule Line,MM-PUR-HUB-RFQ,,basic,14,0,,component
-I_CNTRLREQFORQUOTATIONBIDDER,Central Request For Quotation Bidder,Central Request For Quotation Bidder,MM-PUR-HUB-RFQ,,basic,7,0,Purchasing Document; Supplier,component
-I_CNTRLSUPLRQTANSCHEDULELINE,Central Supplier Quotation Item Schedule Line,Central Supplier Quotation Item Schedule Line,MM-PUR-HUB-RFQ,,basic,15,0,Purchasing Document,component
-I_CNTRLSUPLRQUOTATIONITEMDISTR,Central Supplier Quotation Item Distribution,Central Supplier Quotation Item Distribution,MM-PUR-HUB-RFQ,,basic,31,0,Company Code; Purchasing Document; Purchasing Organization; Storage Location,component
-I_CNTRLSUPPLIERQTANITEMPRICING,Central Supplier Quotation Pricing,Central Supplier Quotation Pricing,MM-PUR-HUB-RFQ,,basic,93,0,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component
-I_CNTRLSUPPLIERQUOTATIONITEM,Central Supplier Quotation Item,Central Supplier Quotation Item,MM-PUR-HUB-RFQ,,basic,58,0,Incoterms; Material / Product; Material Group; Purchasing Document,component
-I_PURCHASECONTRACTAPI01,Purchase Contract,Purchase Contract,MM-PUR-OA-CON,,basic,45,0,Address; Company Code; Incoterms; Purchasing Organization; Supplier,component
-I_PURCHASECONTRACTHISTORYAPI01,Purchase Contract History,Purchase Contract History,MM-PUR-OA-CON,,basic,17,0,Company Code; Purchasing Document; Purchasing Organization,component
-I_PURCHASECONTRACTITEMAPI01,Purchase Contract Item,Purchase Contract Item,MM-PUR-OA-CON,,basic,92,4,Company Code; Incoterms; Material / Product; Material Group; Tax Code,component
-I_PURCHASECONTRACTTYPE,Purchase Contract Type,Purchase Contract Type,MM-PUR-OA-CON,Dimension,dimension,2,0,,component
-I_PURCONTRACCOUNTASSGMTAPI01,Account Assgmt in Purchase Contract,Account Assgmt in Purchase Contract,MM-PUR-OA-CON,,basic,47,3,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Purchasing Document; Tax Code; WBS Element,component
-I_SCHEDGAGRMTHDRAPI01,Purchase Scheduling Agreement,Purchase Scheduling Agreement,MM-PUR-OA-SCH,,basic,42,0,Address; Company Code; Incoterms; Purchasing Document; Purchasing Organization; Supplier,component
-I_SCHEDGAGRMTITMAPI01,Item of Purchase Scheduling Agreement,Item of Purchase Scheduling Agreement,MM-PUR-OA-SCH,,basic,74,0,Company Code; Incoterms; Material / Product; Material Group; Purchasing Document; Tax Code,component
-I_SCHEDGAGRMTRELDOCSCLIAPI01,SchedLine in Rel Doc of Pur Schedg Agrmt,SchedLine in Rel Doc of Pur Schedg Agrmt,MM-PUR-OA-SCH,,basic,18,0,Purchasing Document,component
-I_SCHEDGAGRMTRELEASEDOCAPI01,Release Document of Pur Schedg Agrmt,Release Document of Pur Schedg Agrmt,MM-PUR-OA-SCH,,basic,24,1,Purchasing Document,component
-I_SCHEDGLINEAPI01,Schedule Line in Pur Schedg Agrmt,Schedule Line in Pur Schedg Agrmt,MM-PUR-OA-SCH,,basic,18,0,Purchasing Document,component
-I_POSUBCONTRACTINGCOMPAPI01,Subcontracting Component in PurOrd,Subcontracting Component in PurOrd,MM-PUR-PO,,basic,69,4,Batch; Material / Product; Plant; WBS Element,component
-I_POSUPPLIERCONFIRMATIONAPI01,Supplier Confirmation Data in PurOrd,Supplier Confirmation Data in PurOrd,MM-PUR-PO,,basic,32,0,Batch; Delivery,component
-I_PURCHASEORDERAPI01,Purchase Order,Purchase Order,MM-PUR-PO,,basic,82,0,Address; Company Code; Customer; Document Condition (pricing); Incoterms; Purchasing Organization; Supplier,component
-I_PURCHASEORDERHISTORYAPI01,Purchase Order History,Purchase Order History,MM-PUR-PO,,basic,67,0,Batch; Delivery; Document Condition (pricing); Material / Product; Movement Type; Plant; Purchasing Document; Tax Code,component
-I_PURCHASEORDERITEMAPI01,Purchase Order Item,Purchase Order Item,MM-PUR-PO,,basic,184,2,Company Code; Incoterms; Material / Product; Material Group; Profit Center; Tax Code,component
-I_PURCHASEORDERPARTNERAPI01,Purchase Order Partner,Purchase Order Partner,MM-PUR-PO,,basic,14,0,Personnel; Plant; Purchasing Document; Purchasing Organization; Supplier,component
-I_PURCHASEORDERSTATUS,Status of a purchase order,Status of a purchase order,MM-PUR-PO,,basic,5,0,Purchasing Organization,component
-I_PURCHASINGDOCUMENTITEMSTDVH,Purchasing Document Item,Purchasing Document Item,MM-PUR-PO,,value_help,6,0,Purchasing Document,component
-I_PURCHASINGDOCUMENTSTDVH,Purchasing Document,Purchasing Document,MM-PUR-PO,,value_help,7,0,Purchasing Document; Purchasing Organization,component
-I_PURORDACCOUNTASSIGNMENTAPI01,Account Assignment in Purchase Order,Account Assignment in Purchase Order,MM-PUR-PO,,basic,68,5,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Document; Tax Code; WBS Element,component
-I_PURORDHISTDELIVERYCOSTAPI01,Purchase Order History Delivery Cost,Purchase Order History Delivery Cost,MM-PUR-PO,,basic,37,0,Fiscal Year; Purchasing Document; Supplier,component
-I_PURORDITMPRICINGELEMENTAPI01,Pricing Element in Purchase Order Item,Pricing Element in Purchase Order Item,MM-PUR-PO,,basic,78,1,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component
-I_PURORDPRICINGELEMENTAPI01,Pricing Element in Purchase Order,Pricing Element in Purchase Order,MM-PUR-PO,,basic,70,1,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component
-I_PURORDSCHEDULELINEAPI01,Schedule Line in Purchase Order,Schedule Line in Purchase Order,MM-PUR-PO,,basic,38,0,Batch; Purchasing Document,component
-I_PROCMTHUBBACKENDSOURCESYSTEM,Connected System in Central Procurement,Connected System in Central Procurement,MM-PUR-REQ,Dimension,dimension,4,0,,component
-I_PROCMTUSERDFLTCATALOGSAPI01,Default Catalogs for Users in Procmt,Default Catalogs for Users in Procmt,MM-PUR-REQ,,basic,21,1,Business Partner,component
-I_PROCMTUSRDFLTREQNGGRPSAPI01,Default Reqng Grps for Users in Procmt,Default Reqng Grps for Users in Procmt,MM-PUR-REQ,,basic,21,1,Business Partner,component
-I_PROCMTUSRDFLTSETTINGSAPI01,Default Settings for Users in Procmt,Default Settings for Users in Procmt,MM-PUR-REQ,,basic,46,2,Business Partner; Company Code; Cost Center; Fixed Asset; G/L Account; Material Group; Order (production / maintenance / internal); Plant; Purchasing Organization; Storage Location; WBS Element,component
-I_PURCHASEREQNCHGDOCAPI01,Change Document for Purchase Requisition,Change Document for Purchase Requisition,MM-PUR-REQ,,basic,10,0,,component
-I_PURCHASEREQNCHGDOCITMAPI01,Change Doc Item for Purchase Requisition,Change Doc Item for Purchase Requisition,MM-PUR-REQ,,basic,14,0,,component
-I_PURCHASEREQUISITIONAPI01,Purchase Requisition Header,Purchase Requisition Header,MM-PUR-REQ,,basic,5,0,,component
-I_PURCHASEREQUISITIONITEMAPI01,Purchase Requisition Item,Purchase Requisition Item,MM-PUR-REQ,,basic,110,1,Batch; Company Code; Material / Product; Material Group; Purchasing Organization; Storage Location; Tax Code,component
-I_PURCHASEREQUISITIONTYPE,Purchase Requisition Document Type,Purchase Requisition Document Type,MM-PUR-REQ,Dimension,dimension,5,0,,component
-I_PURREQNACCTASSGMTAPI01,Account Assgmt in Purchase Requisition,Account Assgmt in Purchase Requisition,MM-PUR-REQ,,basic,68,6,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Organization; SD/LE Document (generic VBELN); Sales Document; WBS Element,component
-I_PURREQNRELEASESTATUS,Release Status of Purchase Requisition,Release Status of Purchase Requisition,MM-PUR-REQ,Dimension,dimension,2,0,,component
-I_PURREQNRELEASESTATUSTEXT,Release Status of PurReqn - Text,Release Status of PurReqn - Text,MM-PUR-REQ,,text,5,0,,component
-I_QTNLIFECYCLESTATUS,Quotation Lifecycle Status,Quotation Lifecycle Status,MM-PUR-RFQ,Dimension,dimension,2,0,,component
-I_QTNLIFECYCLESTATUSTEXT,Quotation Lifecycle Status – Text,Quotation Lifecycle Status – Text,MM-PUR-RFQ,,text,4,0,,component
-I_REQUESTFORQUOTATIONTYPE,RFQ Type,RFQ Type,MM-PUR-RFQ,,basic,2,0,,component
-I_REQUESTFORQUOTATION_API01,Request for Quotation,Request for Quotation,MM-PUR-RFQ,,basic,36,0,Company Code; Incoterms,component
-I_RFQBIDDER_API01,Bidder in Request for Quotation,Bidder in Request for Quotation,MM-PUR-RFQ,,basic,5,0,Purchasing Document; Supplier,component
-I_RFQITEM_API01,Item in Request for Quotation,Item in Request for Quotation,MM-PUR-RFQ,,basic,23,0,Incoterms; Material / Product; Material Group; Purchasing Document,component
-I_RFQLIFECYCLESTATUS,RFQ Lifecycle Status,RFQ Lifecycle Status,MM-PUR-RFQ,Dimension,dimension,2,0,,component
-I_RFQLIFECYCLESTATUSTEXT,RFQ Lifecycle Status - Text,RFQ Lifecycle Status - Text,MM-PUR-RFQ,,text,4,0,,component
-I_RFQSCHEDULELINE_API01,Schedule Line in Request for Quotation,Schedule Line in Request for Quotation,MM-PUR-RFQ,,basic,12,0,,component
-I_SUPLRQTNFOLLOWONDOCUMENT,Supplier Quotation Follow On Document,Supplier Quotation Follow On Document,MM-PUR-RFQ,Dimension,dimension,6,0,,component
-I_SUPLRQTNSCHEDULELINE_API01,Schedule Line in Supplier Quotation Item,Schedule Line in Supplier Quotation Item,MM-PUR-RFQ,,basic,13,0,Purchasing Document,component
-I_SUPPLIERQUOTATIONITEM_API01,Item in Supplier Quotation,Item in Supplier Quotation,MM-PUR-RFQ,,basic,33,0,Incoterms; Material / Product; Material Group; Purchasing Document,component
-I_SUPPLIERQUOTATIONTYPE,Supplier Quotation Type,Supplier Quotation Type,MM-PUR-RFQ,,basic,2,0,,component
-I_SUPPLIERQUOTATION_API01,Supplier Quotation,Supplier Quotation,MM-PUR-RFQ,,basic,37,0,Company Code; Document Condition (pricing); Incoterms; Supplier,component
-I_MPPURCHASINGSOURCEITEM,Source List Item,Source List Item,MM-PUR-SQ-QTA,,basic,39,0,Material / Product; Purchasing Organization,component
-I_PURCHASINGINFORECORDAPI01,Purchasing Info Record,Purchasing Info Record,MM-PUR-SQ-QTA,Dimension,dimension,34,0,Material / Product; Material Group,component
-I_PURGINFORECDORGPLNTDATAAPI01,Org Plant Data for Purch Info Record,Org Plant Data for Purch Info Record,MM-PUR-SQ-QTA,,basic,51,0,Incoterms; Purchasing Document; Purchasing Organization; Tax Code,component
-I_PURGQUOTAARRGMTAPI01,Purchasing Quota Arrangement,Purchasing Quota Arrangement,MM-PUR-SQ-QTA,,basic,12,0,Material / Product; Plant,component
-I_PURGQUOTAARRGMTITEMAPI01,Purchasing Quota Arrangement Item,Purchasing Quota Arrangement Item,MM-PUR-SQ-QTA,,basic,36,0,Plant,component
-I_SERVICEENTRYSHEETAPI01,Service Entry Sheet,Service Entry Sheet,MM-PUR-SVC-SES,,basic,23,0,Personnel; Purchasing Organization; Supplier,component
-I_SERVICEENTRYSHEETITEMAPI01,Service Entry Sheet Item,Service Entry Sheet Item,MM-PUR-SVC-SES,,basic,30,0,Purchasing Organization,component
-I_SESACCOUNTASSIGNMENTAPI01,Service Entry Sheet Account Assignment,Service Entry Sheet Account Assignment,MM-PUR-SVC-SES,,basic,58,0,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Organization; WBS Element,component
-I_SESWORKFLOWEMAILDEADLINE,Email Template for Service Entry Sheet Workflow Deadline,Email Template for Service Entry Sheet Workflow Deadline,MM-PUR-SVC-SES,,basic,17,0,Purchasing Organization,component
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_SUPLREVALCRITERIONWEIGHT,Criterion Weight for Supplier Evaluation,Criterion Weight for Supplier Evaluation,MM-PUR-2CL,,basic,14,0,,component,yes,VDM_MM_PUR,yes
+I_SUPLREVALCRITRNVARCSCORE,Score Variance for Suplr Eval Criterion,Score Variance for Suplr Eval Criterion,MM-PUR-2CL,,basic,8,0,,component,yes,VDM_MM_PUR,yes
+C_ANALYZESUPLRUTILZNCUBE,Cube View of Suppliers Utilization,Cube View of Suppliers Utilization,MM-PUR-ANA-2CL,,basic,10,0,Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_CNTRLCONTRACTCNSMPN,Central contract consumption cube view,Central contract consumption cube view,MM-PUR-ANA-2CL,,basic,49,1,Company Code; Material / Product; Material Group; Purchasing Organization; Supplier,component,yes,ODATA_MM_PUR_CCTR_ANALYTICS,no
+C_MM_SUPLREVALOUTPSCORETYPEVH,Value Help for SE Output Score Type,Value Help for SE Output Score Type,MM-PUR-ANA-2CL,,value_help,2,0,,component,yes,ODATA_MM_ANALYTICS,no
+C_MM_SUPLREVALSCOREOUTPSTATUS,Value Help for SE Score Output Status,Value Help for SE Score Output Status,MM-PUR-ANA-2CL,,basic,2,0,,component,yes,ODATA_MM_ANALYTICS,no
+C_OPERATIONALSUPLREVALCUBE,Operational Suplr Eval Score cube view,Operational Suplr Eval Score cube view,MM-PUR-ANA-2CL,,basic,54,0,Company Code; Material / Product; Material Group; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_OVERDUEPO,Overdue Purchase Order,Overdue Purchase Order,MM-PUR-ANA-2CL,,basic,48,0,Company Code; Material / Product; Material Group; Purchasing Document; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PARTSPERMILLIONCUBE,Parts Per Million Cube View,Parts Per Million Cube View,MM-PUR-ANA-2CL,,basic,38,0,Material / Product; Material Group; Movement Type; Plant; Purchasing Document; Purchasing Organization,component,yes,ODATA_MM_ANALYTICS,no
+C_POITEMCOUNTFORSUPLRCUBE,PO and Item Count for Total Supplier - Cube,PO and Item Count for Total Supplier - Cube,MM-PUR-ANA-2CL,,basic,12,0,Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_POSUPPLIERCONFIRMATIONDEX,Purchase Order Supplier Confirmation DEX,Purchase Order Supplier Confirmation DEX,MM-PUR-ANA-2CL,,basic,46,0,Batch; Delivery; Purchasing Organization,component,yes,ODATA_MM_ANALYTICS,no
+C_POWTHNONCMPLNCPAYTTRM,PO having Non compliant Payment Terms,PO having Non compliant Payment Terms,MM-PUR-ANA-2CL,,basic,31,0,Company Code; Incoterms; Material Group; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PRICEVARIANCECUBE,Cube view for Sup Eval by Price,Cube view for Sup Eval by Price,MM-PUR-ANA-2CL,,basic,45,0,Company Code; Material / Product; Material Group; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASECONTRACTDEX,Data Extraction for Purchase Contract,Data Extraction for Purchase Contract,MM-PUR-ANA-2CL,,basic,53,0,Address; Company Code; Incoterms; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASECONTRACTEXPIRY,Purchase Contract Expiry,Purchase Contract Expiry,MM-PUR-ANA-2CL,,basic,21,0,Company Code; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASECONTRACTHISTORYDEX,Purchase Contract History Data Extractor,Purchase Contract History Data Extractor,MM-PUR-ANA-2CL,,basic,26,0,Company Code; Purchasing Document; Purchasing Organization,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASECONTRACTITEMDEX,Data Extraction for Purchase Contract Item,Data Extraction for Purchase Contract Item,MM-PUR-ANA-2CL,,basic,98,0,Material / Product; Material Group; Purchasing Organization; Supplier; Tax Code,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASEORDERDEX,Data Extraction for Purchase Order,Data Extraction for Purchase Order,MM-PUR-ANA-2CL,,basic,68,0,Address; Company Code; Customer; Document Condition (pricing); Incoterms; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASEORDERHISTORYDEX,Data Extraction for Purchase Order History,Data Extraction for Purchase Order History,MM-PUR-ANA-2CL,,basic,109,0,Company Code; Delivery; Document Condition (pricing); Material / Product; Material Group; Movement Type; Plant; Purchasing Document; Purchasing Organization; Supplier; Tax Code,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASEORDERITEMDEX,Data Extraction View for PO Item,Data Extraction View for PO Item,MM-PUR-ANA-2CL,,basic,101,0,Company Code; Material / Product; Material Group; Purchasing Organization; Supplier; Tax Code,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASEREQUISITIONITEMDEX,Data Extraction for Purchase Requisition Item,Data Extraction for Purchase Requisition Item,MM-PUR-ANA-2CL,,basic,122,0,Batch; Company Code; Material / Product; Material Group; Purchasing Organization; Storage Location; Tax Code,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASINGGROUPANALYSIS,Purchasing Group Analysis Query,Purchasing Group Analysis Query,MM-PUR-ANA-2CL,,basic,32,0,Company Code; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASINGINFORECORDDEX,Data Extraction for Purchasing Info Record,Data Extraction for Purchasing Info Record,MM-PUR-ANA-2CL,,basic,44,0,Material / Product; Material Group,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASINGORGANIZATIONDEX,Purchasing Organization Data Extraction,Purchasing Organization Data Extraction,MM-PUR-ANA-2CL,,basic,3,0,Company Code,component,yes,ODATA_MM_ANALYTICS,no
+C_PURCHASINGSOURCEITEMDEX,Data Extraction for Source List Item,Data Extraction for Source List Item,MM-PUR-ANA-2CL,,basic,37,0,Material / Product; Purchasing Organization,component,yes,ODATA_MM_ANALYTICS,no
+C_PURGINFORECDPRICECNDNDEX,Purchasing Info Record Pricing Condition,Purchasing Info Record Pricing Condition,MM-PUR-ANA-2CL,,basic,23,0,Material / Product; Material Group; Plant; Purchasing Organization,component,yes,ODATA_MM_ANALYTICS,no
+C_PURINFORECORDDOCUMENTCHANGES,Purchase Info Record Document Changes,Purchase Info Record Document Changes,MM-PUR-ANA-2CL,,basic,18,0,,component,yes,ODATA_MM_ANALYTICS,no
+C_PURORDACCOUNTASSIGNMENTDEX,Data Extraction for Purchase Order Account Assignments,Data Extraction for Purchase Order Account Assignments,MM-PUR-ANA-2CL,,basic,106,1,Activity Type; Business Area; Company Code; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Material / Product; Material Group; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Document; Purchasing Organization; Tax Code; WBS Element,component,yes,ODATA_MM_ANALYTICS,no
+C_PURORDERITEMDOCUMENTCHANGES,Consumption view for PO Item Document Changes,Consumption view for PO Item Document Changes,MM-PUR-ANA-2CL,,basic,18,0,,component,yes,ODATA_MM_ANALYTICS,no
+C_PURORDOUTPUTAUTOMNCUBE,Header details of Output Messages,Header details of Output Messages,MM-PUR-ANA-2CL,,basic,26,0,Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PURORDSCHEDLINEENHCDDEX,Data Extraction for Purchase Orders Enhanced,Data Extraction for Purchase Orders Enhanced,MM-PUR-ANA-2CL,,basic,110,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PURORDSCHEDULELINEDEX,Data Extraction for Purchase Order Schedule Lines,Data Extraction for Purchase Order Schedule Lines,MM-PUR-ANA-2CL,,basic,99,0,Batch; Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_PURREQNITEMDOCUMENTCHANGES,Consumption view for PR Item Document Changes,Consumption view for PR Item Document Changes,MM-PUR-ANA-2CL,,basic,18,0,,component,yes,ODATA_MM_ANALYTICS,no
+C_REQUESTFORQUOTATIONDEX,Data Extraction for Request For Quotation,Data Extraction for Request For Quotation,MM-PUR-ANA-2CL,,basic,48,0,Company Code; Incoterms,component,yes,ODATA_MM_ANALYTICS,no
+C_REQUISITIONTYPEANALYSIS,Purchase Requisition Type Analysis,Purchase Requisition Type Analysis,MM-PUR-ANA-2CL,,basic,40,0,Company Code; Material / Product; Material Group; Purchasing Organization,component,yes,ODATA_MM_ANALYTICS,no
+C_SCHDAGRSCHDLNENHCDDEX,Data Extraction for Scheduling Agreemnet Enhanced,Data Extraction for Scheduling Agreemnet Enhanced,MM-PUR-ANA-2CL,,basic,98,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_SCHEDAGRMTSCHEDLINEDEX,Data Extraction for Scheduling Agreement Releases,Data Extraction for Scheduling Agreement Releases,MM-PUR-ANA-2CL,,basic,37,0,Material / Product; Purchasing Document; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_SCHEDULEAGREEMENTHDRDEX,Data Extraction for Purchase Scheduling Agreement Header,Data Extraction for Purchase Scheduling Agreement Header,MM-PUR-ANA-2CL,,basic,57,0,Address; Company Code; Incoterms; Purchasing Document; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_SCHEDULEAGREEMENTITEMDEX,Data Extraction for Purchase Scheduling Agreement Items,Data Extraction for Purchase Scheduling Agreement Items,MM-PUR-ANA-2CL,,basic,102,0,Company Code; Incoterms; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Supplier; Tax Code,component,yes,ODATA_MM_ANALYTICS,no
+C_SERVICEENTRYSHEETDEX,Data Extraction for ServiceEntrySheet,Data Extraction for ServiceEntrySheet,MM-PUR-ANA-2CL,,basic,28,0,Personnel; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_SERVICEENTRYSHEETITEMDEX,Data Extraction for ServiceEntrySheetItem,Data Extraction for ServiceEntrySheetItem,MM-PUR-ANA-2CL,,basic,41,0,Purchasing Organization,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPCSGNMTPPLINEINVCHISTDEX,Consignment and Pipeline History of Supplier Invoice,Consignment and Pipeline History of Supplier Invoice,MM-PUR-ANA-2CL,,basic,13,0,Company Code; Fiscal Year; Plant,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPLRCSGNMTPPLINEWTHDRWLDEX,Consignment and Pipeline Withdrawal of Supplier,Consignment and Pipeline Withdrawal of Supplier,MM-PUR-ANA-2CL,,basic,34,0,Business Area; Company Code; Material / Product; Plant; Profit Center; Tax Code,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPLREVALBYQLTYNOTIFCUBE,Cube view for Sup Eval by Quality Notif,Cube view for Sup Eval by Quality Notif,MM-PUR-ANA-2CL,,basic,43,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPLREVALBYQNAIRECUBE,Supplier Evaluation by Questionnaire Cube,Supplier Evaluation by Questionnaire Cube,MM-PUR-ANA-2CL,,basic,21,0,,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPLREVALBYQUALITYCUBE,Supplier Evaluation by Quality,Supplier Evaluation by Quality,MM-PUR-ANA-2CL,,basic,38,0,Company Code; Inspection Lot; Material / Product; Material Group; Plant; Purchasing Organization,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPLREVALBYQUANTITYCUBE,Supplier Evaluation by Quantity Cube,Supplier Evaluation by Quantity Cube,MM-PUR-ANA-2CL,,basic,46,0,Company Code; Material / Product; Material Group; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPLREVALSCORESOUTPUT,Supplier Evaluation Score Output,Supplier Evaluation Score Output,MM-PUR-ANA-2CL,,basic,16,0,Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPLRINVCSUPLRTOLSTTGDEX,Supplier Invoice Tolerance Setting,Supplier Invoice Tolerance Setting,MM-PUR-ANA-2CL,,basic,4,0,Company Code,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPPLIEREVALOVERALL,Supplier Evaluation Overall,Supplier Evaluation Overall,MM-PUR-ANA-2CL,,basic,52,0,Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPPLIERINVOICEDEX,Data Extraction for Supplier Invoice,Data Extraction for Supplier Invoice,MM-PUR-ANA-2CL,,basic,24,0,Company Code; Fiscal Year,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPPLIERINVOICEITEMDEX,Data Extraction for Supplier Invoice Item,Data Extraction for Supplier Invoice Item,MM-PUR-ANA-2CL,,basic,49,0,Company Code; Fiscal Year; Material / Product; Plant; Purchasing Document,component,yes,ODATA_MM_ANALYTICS,no
+C_SUPPLIERQUOTATIONDEX,Data Extraction for Supplier Quotation,Data Extraction for Supplier Quotation,MM-PUR-ANA-2CL,,basic,51,0,Company Code; Document Condition (pricing); Incoterms; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+C_TIMEVARIANCECUBE,Time Variance,Time Variance,MM-PUR-ANA-2CL,,basic,53,0,Company Code; Material / Product; Material Group; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,no
+F_SUPLREVALCRITERIAGENCONFIGN,Supplier Evaluation Criteria Configuration,Supplier Evaluation Criteria Configuration,MM-PUR-ANA-2CL,,basic,1,0,,component,yes,ODATA_MM_ANALYTICS,no
+I_CNTRLPURCONTRCHGREQSTATUS,Central Contract Change Request Status,Central Contract Change Request Status,MM-PUR-ANA-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_PUR_CCTR_ANALYTICS,yes
+I_CNTRLPURCONTRCHGREQSTATUSTXT,Change Request Status - Text,Change Request Status - Text,MM-PUR-ANA-2CL,,text,6,0,,component,yes,ODATA_MM_PUR_CCTR_ANALYTICS,yes
+I_INVOICEINBOUNDENTRYTYPE,Invoice Inbound Entry Type,Invoice Inbound Entry Type,MM-PUR-ANA-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_INVOICEINBOUNDENTRYTYPETXT,Invoice Inbound Entry Type - Text,Invoice Inbound Entry Type - Text,MM-PUR-ANA-2CL,,text,6,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_POCHANNELOUTPUTTYPE,PO of Output Type Automatic or Manual,PO of Output Type Automatic or Manual,MM-PUR-ANA-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_POCHANNELOUTPUTTYPETXT,PO of Output Type Manual - Text,PO of Output Type Manual - Text,MM-PUR-ANA-2CL,,text,5,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_PURORDSCHEDLINEENHCDAPI01,Purchase Order Schedule Line Details,Purchase Order Schedule Line Details,MM-PUR-ANA-2CL,,basic,110,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Supplier,component,yes,ODATA_MM_ANALYTICS,yes
+I_SCHDAGRSCHDLNENHCDAPI01,Sched Agreement with Schedule Line Details,Sched Agreement with Schedule Line Details,MM-PUR-ANA-2CL,,basic,98,0,Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location; Supplier,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALCLASSFCTNCODE,Supplier Evaluation Classification Code,Supplier Evaluation Classification Code,MM-PUR-ANA-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALCLASSFCTNCODETXT,Supplier Eval Classification Code - Text,Supplier Eval Classification Code - Text,MM-PUR-ANA-2CL,,text,6,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALCLASSIFICATION,Supplier Evaluation Classification,Supplier Evaluation Classification,MM-PUR-ANA-2CL,Dimension,dimension,4,0,,component,yes,VDM_MM_PUR_SEV,yes
+I_SUPLREVALCLASSIFICATIONTEXT,Supplier Eval Classification - Text,Supplier Eval Classification - Text,MM-PUR-ANA-2CL,,text,5,0,,component,yes,VDM_MM_PUR_SEV,yes
+I_SUPLREVALDELIVCMPLTDCONFIGN,Supplier Evaluation Delivery Completed Configuration,Supplier Evaluation Delivery Completed Configuration,MM-PUR-ANA-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALDELIVCMPLTDCONFIGNT,Supplier Evaluation Delivery Completed Configuration - Text,Supplier Evaluation Delivery Completed Configuration - Text,MM-PUR-ANA-2CL,,basic,5,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALDOCCATCONFIGN,Supplier Eval Doc Catergory Config Value,Supplier Eval Doc Catergory Config Value,MM-PUR-ANA-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALDOCCATCONFIGNT,Supplier Eval Doc Catergory Config - Txt,Supplier Eval Doc Catergory Config - Txt,MM-PUR-ANA-2CL,,basic,6,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALOUTPUTSCORETYPE,Supplier Evaluation Output Score Type,Supplier Evaluation Output Score Type,MM-PUR-ANA-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALOUTPUTSCORETYPETEXT,Supplier Evaluation Output Score Type - Text,Supplier Evaluation Output Score Type - Text,MM-PUR-ANA-2CL,,text,5,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALSCOREOUTPSTATUSTEXT,SE Score Output Status - Text,SE Score Output Status - Text,MM-PUR-ANA-2CL,,text,5,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALSCOREOUTPUTSTATUS,SE Score Output Status,SE Score Output Status,MM-PUR-ANA-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALUATIONSCORESOUTPUT,Supplier Evaluation Scores Output,Supplier Evaluation Scores Output,MM-PUR-ANA-2CL,,basic,11,0,Supplier,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALUSERDEFINEDCRITERIA,Supplier Evaluation Usr Defined Criteria,Supplier Evaluation Usr Defined Criteria,MM-PUR-ANA-2CL,,basic,7,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALUSERDFNDCRITERIACT,User Defined Criteria Count,User Defined Criteria Count,MM-PUR-ANA-2CL,,basic,20,0,Material Group; Supplier,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALUSRDFNDCRITERIATEXT,Supplier Evaluation User Defined Criteria - Text,Supplier Evaluation User Defined Criteria - Text,MM-PUR-ANA-2CL,,text,5,0,,component,yes,ODATA_MM_ANALYTICS,yes
+I_SUPLREVALUSRDFNDCRITERIATP_2,Manage User Defined Criteria,Manage User Defined Criteria,MM-PUR-ANA-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_SUPL_EVAL,no
+C_SUPLRCONFWORKFLOWDEADLINEEDP,Suppl Conf Details for Deadline Email,Suppl Conf Details for Deadline Email,MM-PUR-CNF-WFL-2CL,,basic,16,0,,component,yes,APPL_MM_PUR_WFL_SUPLCONF,no
+C_SUPLRCONFWRKFLWAPPROVALEMAIL,Supplier Confirmation Details for Workflow Approval Email,Supplier Confirmation Details for Workflow Approval Email,MM-PUR-CNF-WFL-2CL,,basic,16,0,,component,yes,APPL_MM_PUR_WFL_SUPLCONF,no
+I_ACCTASSGMTDISTRINDICATOR,Distribution Indicator,Distribution Indicator,MM-PUR-GF-MAS-2CL,,basic,2,0,,component,yes,ODATA_MM_PUR_POMASS_UPDATE,no
+I_ACCTASSGMTDISTRINDICATORTXT,Distribution Indicator - Text,Distribution Indicator - Text,MM-PUR-GF-MAS-2CL,,text,5,0,,component,yes,ODATA_MM_PUR_POMASS_UPDATE,no
+I_VARBLPURORDUNITACTVSTATUS,Variable PO Unit Active Status,Variable PO Unit Active Status,MM-PUR-GF-MAS-2CL,Dimension,dimension,3,0,,component,yes,ODATA_MM_PUR_INFRECMASS_UPDATE,yes
+I_VARBLPURORDUNITACTVSTATUSTXT,Variable PO Unit Active Status - Text,Variable PO Unit Active Status - Text,MM-PUR-GF-MAS-2CL,,text,6,0,,component,yes,ODATA_MM_PUR_INFRECMASS_UPDATE,yes
+I_PURCHASEORDERITEMMONITOR,Purchase Order Item Monitor,Purchase Order Item Monitor,MM-PUR-GF-MON-2CL,,basic,18,0,Purchasing Document,component,yes,ODATA_MM_PUR_POITEMS_MONI,no
+C_CNTRLSUPLRCONFWRKFLWAPRVEML,Central Supplier Conf WF Approval Email,Central Supplier Conf WF Approval Email,MM-PUR-HUB-CSC-2CL,,basic,18,0,Purchasing Document,component,yes,APPL_PROC_HUB_CNTRLSUPLRCONF,no
+C_CNTRLSUPLRCONFWRKFLWDDLNEML,Deadline Notif of Cntrl Confirmation,Deadline Notif of Cntrl Confirmation,MM-PUR-HUB-CSC-2CL,,basic,8,0,Purchasing Document,component,yes,APPL_PROC_HUB_CNTRLSUPLRCONF,no
+C_CNTRLPURCONTRAPPROVALEMAIL,Cntrl Purchase Contract Details for Workflow Approval Email,Cntrl Purchase Contract Details for Workflow Approval Email,MM-PUR-HUB-CTR-2CL,,basic,13,0,Purchasing Document; Supplier,component,yes,VDM_MM_PUR_CCTR,no
+C_CNTRLPURCONTRWORKFLOWEMAIL,Cntrl Purchase Contract Details for Workflow Deadline Email,Cntrl Purchase Contract Details for Workflow Deadline Email,MM-PUR-HUB-CTR-2CL,,basic,13,0,Purchasing Document; Supplier,component,yes,VDM_MM_PUR_CCTR,no
+D_CEPUCOASLIOBJTOLGLTRNEXTP,Cntrl Pur Contr Assg Lgl Trans Parameter,Cntrl Pur Contr Assg Lgl Trans Parameter,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CENTRALPURCHASECONTRACTAPI01,Central Purchase Contract,Central Purchase Contract,MM-PUR-HUB-CTR-2CL,,basic,48,1,Company Code; Incoterms; Purchasing Organization; Supplier,component,yes,ODATA_MM_PUR_CCTR_API,yes
+I_CENTRALPURCHASECONTRACTBASIC,Central Purchase Contract,Central Purchase Contract,MM-PUR-HUB-CTR-2CL,,basic,33,0,Company Code; Incoterms; Purchasing Organization; Supplier,component,yes,ODATA_MM_PUR_CCTR_API,yes
+I_CEPUCOHDRCNDNSCALESTP_2,CCTR Header Condition Scales - TP,CCTR Header Condition Scales - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CEPUCOHDRCNDNVALDTYTP_2,CCTR Header Condition Validity - TP,CCTR Header Condition Validity - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CEPUCOHDRDISTRBASIC,CePuCo Header Distribution,CePuCo Header Distribution,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_CCTR_API,no
+I_CEPUCOHDRDISTRPARTNERBASIC,CePuCo Header Distribution Partner,CePuCo Header Distribution Partner,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_CCTR_API,no
+I_CEPUCOITEMDISTRBASIC,CePuCo Item Distribution,CePuCo Item Distribution,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_CCTR_API,no
+I_CEPUCOITMCMMDTYQTYTP_2,CCTR Item Commodity Quantity - TP,CCTR Item Commodity Quantity - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CEPUCOITMCNDNSCALESTP_2,CCTR Item Condition Scales- TP,CCTR Item Condition Scales- TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CEPUCOITMCNDNVALIDITYTP_2,CCTR Item Condition Validity - TP,CCTR Item Condition Validity - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CEPUCOITMDISTRPARTNERBASIC,CePuCo Item Distribution Partner,CePuCo Item Distribution Partner,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_CCTR_API,no
+I_CNTRLPURCHASECONTRACTITMTP_2,CCTR Item - TP,CCTR Item - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCHASECONTRACTTP_2,Central Purchase Contract Header - TP,Central Purchase Contract Header - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRACTITEMAPI01,Item in Central Purchase Contract,Item in Central Purchase Contract,MM-PUR-HUB-CTR-2CL,,basic,46,0,Material Group; Tax Code,component,yes,ODATA_MM_PUR_CCTR_API,yes
+I_CNTRLPURCONTRACTITEMBASIC,Item in Central Purchase Contract,Item in Central Purchase Contract,MM-PUR-HUB-CTR-2CL,,basic,23,0,Material Group; Tax Code,component,yes,ODATA_MM_PUR_CCTR_API,yes
+I_CNTRLPURCONTRDISTRMESSAGES,CCTR Header Distribution Message,CCTR Header Distribution Message,MM-PUR-HUB-CTR-2CL,,basic,19,0,Purchasing Document; Purchasing Organization,component,yes,VDM_MM_PUR_CCTR,no
+I_CNTRLPURCONTRHDRCNDNAMTTP_2,CCTR Header Condition Amount - TP,CCTR Header Condition Amount - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRHDRDISTPARTTP_2,CCTR Header Distribution Partner - TP,CCTR Header Distribution Partner - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRHDRDISTRTP_2,CCTR Header Distribution - TP,CCTR Header Distribution - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRHDRNOTESTP_2,CCTR Header Notes - TP,CCTR Header Notes - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRITEMDISTRTP_2,CCTR Item Distribution - TP,CCTR Item Distribution - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRITEMNOTESTP_2,CCTR Item Notes - TP,CCTR Item Notes - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRITMCNDNAMTTP_2,CCTR Item Condition Amount - TP,CCTR Item Condition Amount - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRITMDISTPARTTP_2,CCTR Item Distribution Partner - TP,CCTR Item Distribution Partner - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_CNTRLPURCONTRVERSHISTORYTP_2,CCTR Version History - TP,CCTR Version History - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_PURGINFORECORDUPDATECODE,Update Code for Purchasing Info Record,Update Code for Purchasing Info Record,MM-PUR-HUB-CTR-2CL,Dimension,dimension,3,0,,component,yes,APPL_MM_PUR_OA_CCTR,yes
+I_SUBORDINATECNTRLCONTRACTTP_2,Subordinate Cntrl Contract - TP,Subordinate Cntrl Contract - TP,MM-PUR-HUB-CTR-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_CNTRL_PUR_CONTR_TR,no
+I_PROCMTHUBCOMPANYCODE,Co Code in Conncd Syst for Cntrl Procmt,Co Code in Conncd Syst for Cntrl Procmt,MM-PUR-HUB-FND-2CL,,basic,6,0,,component,yes,APPL_PROC_HUB_GF,yes
+I_PROCMTHUBPLANT,Plant in Connected Syst for Cntrl Procmt,Plant in Connected Syst for Cntrl Procmt,MM-PUR-HUB-FND-2CL,,basic,8,0,,component,yes,APPL_PROC_HUB_GF,yes
+I_PROCMTHUBPURGGROUPAPI01,Purchasing Group in Connected System,Purchasing Group in Connected System,MM-PUR-HUB-FND-2CL,Dimension,dimension,8,0,,component,yes,APPL_PROC_HUB_GF,yes
+I_PROCMTHUBPURGORGAPI01,Purchasing Org in Connected System,Purchasing Org in Connected System,MM-PUR-HUB-FND-2CL,Dimension,dimension,6,0,,component,yes,APPL_PROC_HUB_GF,yes
+C_PRMTHBRPLDPURORDAPPRVLEML,PrmtHb Rpld PO Details for Workflow Approval Email,PrmtHb Rpld PO Details for Workflow Approval Email,MM-PUR-HUB-PO-2CL,,basic,9,0,Purchasing Document,component,yes,VDM_MM_PUR_EXT_PO,no
+C_PRMTHBRPLDPURORDWRKFLWEML,PrmtHb Rpld PO Details for Workflow Deadline Email,PrmtHb Rpld PO Details for Workflow Deadline Email,MM-PUR-HUB-PO-2CL,,basic,16,0,Company Code; Purchasing Document; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_EXT_PO,no
+I_CNTRLSUPLRCONFWRKFLWCARD,ToDo Workflow Card info Cntrl Suplr Conf,ToDo Workflow Card info Cntrl Suplr Conf,MM-PUR-HUB-PO-2CL,,basic,8,0,Purchasing Organization,component,yes,VDM_MM_PUR_EXT_PO,yes
+I_PRMTHBPURORDITMSCHDLNAPI01,Schedule Line of Purchase Order in Procurement Hub,Schedule Line of Purchase Order in Procurement Hub,MM-PUR-HUB-PO-2CL,,basic,44,0,Batch; Purchasing Document,component,yes,VDM_MM_PUR_EXT_PO,yes
+I_PRMTHBRPLDPOWRKFLWCARD,ToDo Workflow Card info of MPOC,ToDo Workflow Card info of MPOC,MM-PUR-HUB-PO-2CL,,basic,12,0,Company Code; Purchasing Document; Supplier,component,yes,VDM_MM_PUR_EXT_PO,yes
+I_PROCMTHUBPURORDHDRAPI01,Centrally Managed Purchase Order Header,Centrally Managed Purchase Order Header,MM-PUR-HUB-PO-2CL,,basic,63,0,Address; Company Code; Customer; Document Condition (pricing); Incoterms; Purchasing Document; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_EXT_PO,yes
+I_PROCMTHUBPURORDITMAPI01,Centrally Managed Purchase Order Item,Centrally Managed Purchase Order Item,MM-PUR-HUB-PO-2CL,,basic,125,0,Company Code; Incoterms; Material / Product; Material Group; Profit Center; Purchasing Document; Tax Code,component,yes,VDM_MM_PUR_EXT_PO,yes
+I_PROCMTHUBRPLDPURCHASEORDER,Extensibility of Purchase Order in Procurement Hub,Extensibility of Purchase Order in Procurement Hub,MM-PUR-HUB-PO-2CL,,basic,72,0,Address; Company Code; Document Condition (pricing); Incoterms; Purchasing Document; Purchasing Organization; Supplier,component,yes,APPL_MM_PUR_EXT_PO,yes
+C_PRMTHBRPLDPURREQNAPPRVLEML,Purchase Requisition Details for Workflow Approval Email,Purchase Requisition Details for Workflow Approval Email,MM-PUR-HUB-PR-2CL,,basic,10,0,,component,yes,VDM_MM_PUR_EXT_PR,no
+C_PRMTHBRPLDPURREQNITMAPRVEML,Purchase Requisition Itm Details for WF Approval Email,Purchase Requisition Itm Details for WF Approval Email,MM-PUR-HUB-PR-2CL,,basic,14,0,,component,yes,VDM_MM_PUR_EXT_PR,no
+C_PRMTHBRPLDPURREQNITMWFLEML,Purchase Requisition Itm Details for WF Deadline Email,Purchase Requisition Itm Details for WF Deadline Email,MM-PUR-HUB-PR-2CL,,basic,12,0,,component,yes,VDM_MM_PUR_EXT_PR,no
+C_PRMTHBRPLDPURREQNWRKFLWEML,Purchase Requisition Details for Workflow Deadline Email,Purchase Requisition Details for Workflow Deadline Email,MM-PUR-HUB-PR-2CL,,basic,8,0,,component,yes,VDM_MM_PUR_EXT_PR,no
+I_PRMTHBRPLDPURCHASEREQNAPI01,Replicated Purchase Requisition,Replicated Purchase Requisition,MM-PUR-HUB-PR-2CL,,basic,4,0,,component,yes,VDM_MM_PUR_EXT_PR,yes
+I_PRMTHBRPLDPURREQNEMAILPARAM,Email tmpl Rpld for PRs in Pcmt Hub,Email tmpl Rpld for PRs in Pcmt Hub,MM-PUR-HUB-PR-2CL,,basic,7,0,,component,yes,ODATA_MM_PUR_EXT_PR,yes
+I_PRMTHBRPLDPURREQNITEMAPI01,Replicated Purchase Requisition Item,Replicated Purchase Requisition Item,MM-PUR-HUB-PR-2CL,,basic,77,1,Batch; Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location,component,yes,VDM_MM_PUR_EXT_PR,yes
+I_PROCMTHUBBACKENDSOURCESYSTEM,Connected System in Central Procurement,Connected System in Central Procurement,MM-PUR-HUB-REQ-2CL,Dimension,dimension,4,0,,component,yes,APPL_MM_PUR_REQ_HUB_TR,yes
+I_CENTRALREQFORQUOTATIONITEM,Central Request For Quotation Item,Central Request For Quotation Item,MM-PUR-HUB-RFQ-2CL,,basic,47,0,Incoterms; Material Group; Purchasing Document,component,yes,VDM_MM_PUR_CRFQ,yes
+I_CENTRALREQUESTFORQUOTATION,Central Request For Quotation Header,Central Request For Quotation Header,MM-PUR-HUB-RFQ-2CL,,basic,55,0,Company Code; Incoterms,component,yes,VDM_MM_PUR_CRFQ,yes
+I_CENTRALRFQITEMDISTRIBUTION,Central RFQ Item Distribution,Central RFQ Item Distribution,MM-PUR-HUB-RFQ-2CL,,basic,43,0,Address; Company Code; Material / Product; Material Group; Purchasing Document; Purchasing Organization; Storage Location,component,yes,VDM_MM_PUR_CRFQ,yes
+I_CENTRALSUPPLIERQUOTATION,Central Supplier Quotation Header,Central Supplier Quotation Header,MM-PUR-HUB-RFQ-2CL,,basic,59,0,Company Code; Document Condition (pricing); Incoterms; Supplier,component,yes,VDM_MM_PUR_CQTN,yes
+I_CENTRALSUPPLIERQUOTATIONTP_2,Central Supplier Quotation,Central Supplier Quotation,MM-PUR-HUB-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_CQTN,no
+I_CNTRLREQFORQTANSCHEDULELINE,Central RFQ Item Schedule Line,Central RFQ Item Schedule Line,MM-PUR-HUB-RFQ-2CL,,basic,14,0,,component,yes,VDM_MM_PUR_CRFQ,yes
+I_CNTRLREQFORQUOTATIONBIDDER,Central Request For Quotation Bidder,Central Request For Quotation Bidder,MM-PUR-HUB-RFQ-2CL,,basic,7,0,Purchasing Document; Supplier,component,yes,VDM_MM_PUR_CRFQ,yes
+I_CNTRLREQFORQUOTATIONITEMTP_2,Cntrl Req for Quotation Item,Cntrl Req for Quotation Item,MM-PUR-HUB-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_CRFQ,no
+I_CNTRLREQUESTFORQTNBIDDERTP_2,Cntrl Req for Quotation Bidder,Cntrl Req for Quotation Bidder,MM-PUR-HUB-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_CRFQ,no
+I_CNTRLREQUESTFORQUOTATIONTP_2,Cntrl req for Quotation header,Cntrl req for Quotation header,MM-PUR-HUB-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_CRFQ,no
+I_CNTRLRFQITEMDISTRIBUTIONTP_2,Cntrl Req for Quotatn Itm Distr,Cntrl Req for Quotatn Itm Distr,MM-PUR-HUB-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_CRFQ,no
+I_CNTRLSUPLRQTANSCHEDULELINE,Central Supplier Quotation Item Schedule Line,Central Supplier Quotation Item Schedule Line,MM-PUR-HUB-RFQ-2CL,,basic,15,0,Purchasing Document,component,yes,VDM_MM_PUR_CQTN,yes
+I_CNTRLSUPLRQTNITEMDISTRTP_2,Central Supplier Qtn Itm Distr,Central Supplier Qtn Itm Distr,MM-PUR-HUB-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_CQTN,no
+I_CNTRLSUPLRQTNITEMPRICINGTP_2,Cntrl Supplier Qtn Item Pricing,Cntrl Supplier Qtn Item Pricing,MM-PUR-HUB-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_CQTN,no
+I_CNTRLSUPLRQUOTATIONITEMDISTR,Central Supplier Quotation Item Distribution,Central Supplier Quotation Item Distribution,MM-PUR-HUB-RFQ-2CL,,basic,31,0,Company Code; Purchasing Document; Purchasing Organization; Storage Location,component,yes,VDM_MM_PUR_CQTN,yes
+I_CNTRLSUPLRQUOTATIONITEMTP_2,Central Supplier Quotation Item,Central Supplier Quotation Item,MM-PUR-HUB-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_CQTN,no
+I_CNTRLSUPPLIERQTANITEMPRICING,Central Supplier Quotation Pricing,Central Supplier Quotation Pricing,MM-PUR-HUB-RFQ-2CL,,basic,93,0,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component,yes,VDM_MM_PUR_CQTN,yes
+I_CNTRLSUPPLIERQUOTATIONITEM,Central Supplier Quotation Item,Central Supplier Quotation Item,MM-PUR-HUB-RFQ-2CL,,basic,58,0,Incoterms; Material / Product; Material Group; Purchasing Document,component,yes,VDM_MM_PUR_CQTN,yes
+D_MODPRODSPECADDITEMP,Model Product Specification Item Type for Add Item Parameter,Model Product Specification Item Type for Add Item Parameter,MM-PUR-MPS-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_MPS,no
+I_MODELPRODUCTSPECIFICATIONTP,Model Product Specification Header - TP,Model Product Specification Header - TP,MM-PUR-MPS-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_MPS,no
+I_MODPRODSPECITEMTP,Model Product Specification Item - TP,Model Product Specification Item - TP,MM-PUR-MPS-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_MPS,no
+I_PURCHASECONTRACTITEMTP,Purchase Contract Item - TP,Purchase Contract Item - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCHASECONTRACTTP,Purchase Contract Header - TP,Purchase Contract Header - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCONTRACCOUNTTP,Purchase Contract Account - TP,Purchase Contract Account - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCONTRADDRESSTP,Purchase Contract Address - TP,Purchase Contract Address - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCONTRHEADERNOTESTP,Purchase Contract Header Notes - TP,Purchase Contract Header Notes - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCONTRITEMCNDNAMOUNTTP,Purchase Contract Item Cnd Amt - TP,Purchase Contract Item Cnd Amt - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCONTRITEMCNDNSCALETP,Purchase Contract Item Cnd Scale - TP,Purchase Contract Item Cnd Scale - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCONTRITEMCNDNVALDTYTP,Purchase Contract Itm Cndn Val - TP,Purchase Contract Itm Cndn Val - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCONTRITEMNOTESTP,Purchase Contract Item Notes - TP,Purchase Contract Item Notes - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+I_PURCONTRPARTNERSTP,Purchase Contract Partners - TP,Purchase Contract Partners - TP,MM-PUR-OA,,basic,0,0,,component,yes,APPL_MM_PUR_OA_TR,no
+C_PURCONTRAPPROVALEMAIL,Purchase Contract Details for Workflow Approval Email,Purchase Contract Details for Workflow Approval Email,MM-PUR-OA-CON,,basic,18,0,Purchasing Document; Supplier,component,yes,VDM_MM_PUR_CON,no
+C_PURCONTRWORKFLOWEMAIL,Purchase Contract Details for Workflow Deadline Email,Purchase Contract Details for Workflow Deadline Email,MM-PUR-OA-CON,,basic,13,0,Purchasing Document; Supplier,component,yes,VDM_MM_PUR_CON,no
+D_PURCONTRITMTGTQTYCHANGED,Pur Contract Itm Target Quant chgd,Pur Contract Itm Target Quant chgd,MM-PUR-OA-CON,,basic,0,0,,component,yes,VDM_MM_PUR_CON,no
+D_PURCONTRTARGETVALUECHANGED,Purchase Contract Target Value Changed,Purchase Contract Target Value Changed,MM-PUR-OA-CON,,basic,0,0,,component,yes,VDM_MM_PUR_CON,no
+D_PURCONTRVALDTYPERDCHANGED,Purchase Contract Validity Changed,Purchase Contract Validity Changed,MM-PUR-OA-CON,,basic,0,0,,component,yes,VDM_MM_PUR_CON,no
+I_PURCHASECONTRACTAPI01,Purchase Contract,Purchase Contract,MM-PUR-OA-CON,,basic,45,0,Address; Company Code; Incoterms; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_CON,yes
+I_PURCHASECONTRACTHISTORYAPI01,Purchase Contract History,Purchase Contract History,MM-PUR-OA-CON,,basic,17,0,Company Code; Purchasing Document; Purchasing Organization,component,yes,VDM_MM_PUR_CON,yes
+I_PURCHASECONTRACTITEMAPI01,Purchase Contract Item,Purchase Contract Item,MM-PUR-OA-CON,,basic,92,4,Company Code; Incoterms; Material / Product; Material Group; Tax Code,component,yes,VDM_MM_PUR_CON,yes
+I_PURCHASECONTRACTPARTNER,Purchase Contract Partner,Purchase Contract Partner,MM-PUR-OA-CON,,basic,19,0,Personnel; Plant; Purchasing Document; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_CON,no
+I_PURCHASECONTRACTTYPE,Purchase Contract Type,Purchase Contract Type,MM-PUR-OA-CON,Dimension,dimension,2,0,,component,yes,VDM_MM_PUR_CON,yes
+I_PURCONTRACCOUNTASSGMTAPI01,Account Assgmt in Purchase Contract,Account Assgmt in Purchase Contract,MM-PUR-OA-CON,,basic,47,3,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Purchasing Document; Tax Code; WBS Element,component,yes,VDM_MM_PUR_CON,yes
+D_PURSCHEDGAGRMTCHANGED,Event for Purchase Scheduling Agreement Change,Event for Purchase Scheduling Agreement Change,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_OA_SCHD,no
+D_PURSCHEDGAGRMTCREATED,Event for Purchase Scheduling Agreement Create,Event for Purchase Scheduling Agreement Create,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_OA_SCHD,no
+D_PURSCHEDGAGRMTRELEASED,Event for Purchase Scheduling Agreement Release,Event for Purchase Scheduling Agreement Release,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_OA_SCHD,no
+I_PURSCHEDGAGRMTHISTORYAPI01,Follow on documents for Scheduling Agreement,Follow on documents for Scheduling Agreement,MM-PUR-OA-SCH-2CL,,basic,59,0,Batch; Delivery; Document Condition (pricing); Material / Product; Movement Type; Plant; Purchasing Document; Tax Code,component,yes,VDM_MM_PUR_SCHD,no
+I_SCHEDGAGRMTACCTTP_2,Scheduling Agreement Account Assignment,Scheduling Agreement Account Assignment,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTDELIVERYADDRTP_2,Scheduling Agreement Delivery Address,Scheduling Agreement Delivery Address,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTHDRAPI01,Purchase Scheduling Agreement,Purchase Scheduling Agreement,MM-PUR-OA-SCH-2CL,,basic,42,0,Address; Company Code; Incoterms; Purchasing Document; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_SCHD,yes
+I_SCHEDGAGRMTHDRCNDNAPI01,Scheduling Agreement Header Conditions,Scheduling Agreement Header Conditions,MM-PUR-OA-SCH-2CL,,basic,12,0,Purchasing Document,component,yes,VDM_MM_PUR_SCHD,no
+I_SCHEDGAGRMTHDRTP_2,Scheduling Agreement Header,Scheduling Agreement Header,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTHEADERNOTESAPI01,Scheduling Agreement Header Notes,Scheduling Agreement Header Notes,MM-PUR-OA-SCH-2CL,,basic,13,0,Purchasing Document; Purchasing Organization,component,yes,VDM_MM_PUR_SCHD,no
+I_SCHEDGAGRMTHEADERNOTESTP_2,Scheduling Agreement Header Notes,Scheduling Agreement Header Notes,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTITEMNOTESAPI01,Scheduling Agreement Item Notes,Scheduling Agreement Item Notes,MM-PUR-OA-SCH-2CL,,basic,15,0,Purchasing Document; Purchasing Organization,component,yes,VDM_MM_PUR_SCHD,no
+I_SCHEDGAGRMTITEMNOTESTP_2,Scheduling Agreement Item Notes,Scheduling Agreement Item Notes,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTITMAPI01,Item of Purchase Scheduling Agreement,Item of Purchase Scheduling Agreement,MM-PUR-OA-SCH-2CL,,basic,74,0,Company Code; Incoterms; Material / Product; Material Group; Purchasing Document; Tax Code,component,yes,VDM_MM_PUR_SCHD,yes
+I_SCHEDGAGRMTITMCNDNAMOUNTTP_2,Scheduling Agrmt Item Condition Amount,Scheduling Agrmt Item Condition Amount,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTITMCNDNAPI01,Scheduling Agreement Item Conditions,Scheduling Agreement Item Conditions,MM-PUR-OA-SCH-2CL,,basic,18,0,Purchasing Document,component,yes,VDM_MM_PUR_SCHD,no
+I_SCHEDGAGRMTITMCNDNVALDTYTP_2,Scheduling Agrmt Item Condition Validity,Scheduling Agrmt Item Condition Validity,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTITMTP_2,Scheduling Agreement Item,Scheduling Agreement Item,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTPARTNERAPI01,Scheduling Agreement Partners,Scheduling Agreement Partners,MM-PUR-OA-SCH-2CL,,basic,31,0,Personnel; Plant; Purchasing Document; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_SCHD,no
+I_SCHEDGAGRMTPARTNERTP_2,Scheduling Agreement Partner,Scheduling Agreement Partner,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGAGRMTRELDOCSCLIAPI01,SchedLine in Rel Doc of Pur Schedg Agrmt,SchedLine in Rel Doc of Pur Schedg Agrmt,MM-PUR-OA-SCH-2CL,,basic,18,0,Purchasing Document,component,yes,VDM_MM_PUR_SCHD,yes
+I_SCHEDGAGRMTRELEASEDOCAPI01,Release Document of Pur Schedg Agrmt,Release Document of Pur Schedg Agrmt,MM-PUR-OA-SCH-2CL,,basic,24,1,Purchasing Document,component,yes,VDM_MM_PUR_SCHD,yes
+I_SCHEDGAGRMTSUBCONTRGCOMPTP_2,Schedg Agrmt Subcontracting Component,Schedg Agrmt Subcontracting Component,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+I_SCHEDGLINEAPI01,Schedule Line in Pur Schedg Agrmt,Schedule Line in Pur Schedg Agrmt,MM-PUR-OA-SCH-2CL,,basic,18,0,Purchasing Document,component,yes,VDM_MM_PUR_SCHD,yes
+I_SCHEDGLINETP_2,Scheduling Agreement Schedule Line,Scheduling Agreement Schedule Line,MM-PUR-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_MM_PUR_SCHD_API,no
+D_PURCHASEORDERAPPROVED,Purchase Order Approved,Purchase Order Approved,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO_PUBLIC,no
+D_PURCHASEORDERCHANGED,Purchase Order Changed,Purchase Order Changed,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO,no
+D_PURCHASEORDERCREATED,Purchase Order Created,Purchase Order Created,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO,no
+D_PURCHASEORDERITEMBLOCKED,Purchase Order Item Blocked,Purchase Order Item Blocked,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO,no
+D_PURCHASEORDERITEMCHANGED,Purchase Order Item Changed,Purchase Order Item Changed,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO,no
+D_PURCHASEORDERITEMCREATED,Purchase Order Item Created,Purchase Order Item Created,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO,no
+D_PURCHASEORDERITEMDELETED,Purchase Order Item Deleted,Purchase Order Item Deleted,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO,no
+D_PURCHASEORDERITEMUNBLOCKED,Purchase Order Item Block Removed,Purchase Order Item Block Removed,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO,no
+D_PURORDERAPPROVALREJECTED,Purchase Order Rejected,Purchase Order Rejected,MM-PUR-PO-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PO_PUBLIC,no
+D_STOGETDELIVERYADDRESSR,Get Delivery Address details for STO,Get Delivery Address details for STO,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO,no
+D_STOGETORDERINGADDRESSR,Get Ordering Address details for STO,Get Ordering Address details for STO,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO,no
+I_POINVOICINGPLANITEMTP_2,Purchase Order Invoicing Plan Item,Purchase Order Invoicing Plan Item,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_POSUBCONTRACTINGCOMPAPI01,Subcontracting Component in PurOrd,Subcontracting Component in PurOrd,MM-PUR-PO-2CL,,basic,69,4,Batch; Material / Product; Plant; WBS Element,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_POSUBCONTRACTINGCOMPTP_2,PO Subcontracting Components Projection,PO Subcontracting Components Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_POSUPPLIERCONFIRMATIONAPI01,Supplier Confirmation Data in PurOrd,Supplier Confirmation Data in PurOrd,MM-PUR-PO-2CL,,basic,32,0,Batch; Delivery,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURCHASEORDERAPI01,Purchase Order,Purchase Order,MM-PUR-PO-2CL,,basic,82,0,Address; Company Code; Customer; Document Condition (pricing); Incoterms; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURCHASEORDERHISTORYAPI01,Purchase Order History,Purchase Order History,MM-PUR-PO-2CL,,basic,67,0,Batch; Delivery; Document Condition (pricing); Material / Product; Movement Type; Plant; Purchasing Document; Tax Code,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURCHASEORDERITEMAPI01,Purchase Order Item,Purchase Order Item,MM-PUR-PO-2CL,,basic,184,2,Company Code; Incoterms; Material / Product; Material Group; Profit Center; Tax Code,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURCHASEORDERITEMNOTETP_2,Purchase Order Item Notes Projection,Purchase Order Item Notes Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURCHASEORDERITEMTP_2,Purchase Order Item Projection,Purchase Order Item Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURCHASEORDERNOTETP_2,Purchase Order Header Note Interface,Purchase Order Header Note Interface,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURCHASEORDERPARTNERAPI01,Purchase Order Partner,Purchase Order Partner,MM-PUR-PO-2CL,,basic,14,0,Personnel; Plant; Purchasing Document; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURCHASEORDERPARTNERTP_2,Purchase Order Partner Projection,Purchase Order Partner Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURCHASEORDERSTATUS,Status of a purchase order,Status of a purchase order,MM-PUR-PO-2CL,,basic,5,0,Purchasing Organization,component,yes,VDM_MM_PUR_PO,yes
+I_PURCHASEORDERTP_2,Purchase Order Projection,Purchase Order Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURCHASEORDSCHEDULELINETP_2,PO Schedule Line Projection,PO Schedule Line Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURCHASEORDSUPPLIERADDRTP_2,PO Supplier Address Projection,PO Supplier Address Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURCHASINGDOCUMENTITEMSTDVH,Purchasing Document Item,Purchasing Document Item,MM-PUR-PO-2CL,,value_help,6,0,Purchasing Document,component,yes,VDM_MM_PUR_PD,yes
+I_PURCHASINGDOCUMENTSTDVH,Purchasing Document,Purchasing Document,MM-PUR-PO-2CL,,value_help,7,0,Purchasing Document; Purchasing Organization,component,yes,VDM_MM_PUR_PD,yes
+I_PURORDACCOUNTASSIGNMENTAPI01,Account Assignment in Purchase Order,Account Assignment in Purchase Order,MM-PUR-PO-2CL,,basic,68,5,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Document; Tax Code; WBS Element,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURORDACCOUNTASSIGNMENTTP_2,PO Account Assignment Projection,PO Account Assignment Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURORDERINVOICINGPLANTP_2,Purchase Order Invoicing Plan,Purchase Order Invoicing Plan,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURORDHISTDELIVERYCOSTAPI01,Purchase Order History Delivery Cost,Purchase Order History Delivery Cost,MM-PUR-PO-2CL,,basic,37,0,Fiscal Year; Purchasing Document; Supplier,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURORDITMDELIVERYADDRESSTP_2,PO Item Delivery Address Projection,PO Item Delivery Address Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURORDITMPRICINGELEMENTAPI01,Pricing Element in Purchase Order Item,Pricing Element in Purchase Order Item,MM-PUR-PO-2CL,,basic,78,1,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURORDPRICINGELEMENTAPI01,Pricing Element in Purchase Order,Pricing Element in Purchase Order,MM-PUR-PO-2CL,,basic,70,1,Document Condition (pricing); G/L Account; Purchasing Document; Supplier; Tax Code,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_PURORDPRICINGELEMENTTP_2,PO Pricing Element Projection,PO Pricing Element Projection,MM-PUR-PO-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_PO_API,no
+I_PURORDSCHEDULELINEAPI01,Schedule Line in Purchase Order,Schedule Line in Purchase Order,MM-PUR-PO-2CL,,basic,38,0,Batch; Purchasing Document,component,yes,VDM_MM_PUR_PO_PUBLIC,yes
+I_STOACCOUNTASSIGNMENTTP,Account Assignment for STO - TP,Account Assignment for STO - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOCKTRANSPORTORDERITEMTP,Item in Stock Transport Order - TP,Item in Stock Transport Order - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOCKTRANSPORTORDERNOTETP,Note for Stock Transport Order - TP,Note for Stock Transport Order - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOCKTRANSPORTORDERPARTNERTP,Partner for Stock Transport Order - TP,Partner for Stock Transport Order - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOCKTRANSPORTORDERTP,Stock Transport Order - TP,Stock Transport Order - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOITEMNOTETP,Item Note for Stock Transport Order - TP,Item Note for Stock Transport Order - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOITEMPRICINGELEMENTTP,Pricing Element for STO Item - TP,Pricing Element for STO Item - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOSCHEDULELINETP,Schedule Line for STO - TP,Schedule Line for STO - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOSHIPPINGTP,Shipping Data for STO - TP,Shipping Data for STO - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+I_STOSUBCONTRACTINGCOMPONENTTP,Subcontracting Component for STO - TP,Subcontracting Component for STO - TP,MM-PUR-PO-2CL,,basic,0,0,,component,yes,RAP_MM_STO_API,no
+C_PURCHASEORDERWORKFLOWEMAIL,Purchase Order Details for Workflow Deadline Email,Purchase Order Details for Workflow Deadline Email,MM-PUR-PO-WFL-2CL,,basic,14,0,Purchasing Document; Supplier,component,yes,APPL_MM_PUR_WFL_PO,no
+C_PURORDWORKFLOWAPPROVALEMAIL,Purchase Order Details for Workflow Approval Email,Purchase Order Details for Workflow Approval Email,MM-PUR-PO-WFL-2CL,,basic,19,0,Purchasing Document; Supplier,component,yes,APPL_MM_PUR_WFL_PO,no
+D_PURCHASEREQNITEMCHANGED,Purchase Requisition Item Changed,Purchase Requisition Item Changed,MM-PUR-REQ-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PR,no
+D_PURCHASEREQNITEMCREATED,Purchase Requisition Item Created,Purchase Requisition Item Created,MM-PUR-REQ-2CL,,basic,0,0,,component,yes,VDM_MM_PUR_PR,no
+I_PROCMTUSERDFLTCATALOGSAPI01,Default Catalogs for Users in Procmt,Default Catalogs for Users in Procmt,MM-PUR-REQ-2CL,,basic,21,1,Business Partner,component,yes,APPL_MM_COMP_EMPL_SETTINGS_TR,yes
+I_PROCMTUSRDFLTREQNGGRPSAPI01,Default Reqng Grps for Users in Procmt,Default Reqng Grps for Users in Procmt,MM-PUR-REQ-2CL,,basic,21,1,Business Partner,component,yes,APPL_MM_COMP_EMPL_SETTINGS_TR,yes
+I_PROCMTUSRDFLTSETTINGSAPI01,Default Settings for Users in Procmt,Default Settings for Users in Procmt,MM-PUR-REQ-2CL,,basic,46,2,Business Partner; Company Code; Cost Center; Fixed Asset; G/L Account; Material Group; Order (production / maintenance / internal); Plant; Purchasing Organization; Storage Location; WBS Element,component,yes,APPL_MM_COMP_EMPL_SETTINGS_TR,yes
+I_PURCHASEREQNACCTASSGMTTP,Purchase Reqn Account Assignment - TP,Purchase Reqn Account Assignment - TP,MM-PUR-REQ-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_PR_TR,no
+I_PURCHASEREQNCHGDOCAPI01,Change Document for Purchase Requisition,Change Document for Purchase Requisition,MM-PUR-REQ-2CL,,basic,10,0,,component,yes,VDM_MM_PUR_PR,yes
+I_PURCHASEREQNCHGDOCITMAPI01,Change Doc Item for Purchase Requisition,Change Doc Item for Purchase Requisition,MM-PUR-REQ-2CL,,basic,14,0,,component,yes,VDM_MM_PUR_PR,yes
+I_PURCHASEREQNDELIVADDRTP,Purchase Reqn Delivery Address - TP,Purchase Reqn Delivery Address - TP,MM-PUR-REQ-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_PR_TR,no
+I_PURCHASEREQNITEMTEXTTP,Purchase Requisition Item Notes - TP,Purchase Requisition Item Notes - TP,MM-PUR-REQ-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_PR_TR,no
+I_PURCHASEREQNITEMTP,Purchase Requisition Item - TP,Purchase Requisition Item - TP,MM-PUR-REQ-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_PR_TR,no
+I_PURCHASEREQUISITIONAPI01,Purchase Requisition Header,Purchase Requisition Header,MM-PUR-REQ-2CL,,basic,5,0,,component,yes,VDM_MM_PUR_PR,yes
+I_PURCHASEREQUISITIONITEMAPI01,Purchase Requisition Item,Purchase Requisition Item,MM-PUR-REQ-2CL,,basic,110,1,Batch; Company Code; Material / Product; Material Group; Purchasing Organization; Storage Location; Tax Code,component,yes,VDM_MM_PUR_PR,yes
+I_PURCHASEREQUISITIONTP,Purchase Requisition - TP,Purchase Requisition - TP,MM-PUR-REQ-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_PR_TR,no
+I_PURCHASEREQUISITIONTYPE,Purchase Requisition Document Type,Purchase Requisition Document Type,MM-PUR-REQ-2CL,Dimension,dimension,5,0,,component,yes,VDM_MM_PUR_PR,yes
+I_PURREQNACCTASSGMTAPI01,Account Assgmt in Purchase Requisition,Account Assgmt in Purchase Requisition,MM-PUR-REQ-2CL,,basic,68,6,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Organization; SD/LE Document (generic VBELN); Sales Document; WBS Element,component,yes,VDM_MM_PUR_PR,yes
+I_PURREQNRELEASESTATUS,Release Status of Purchase Requisition,Release Status of Purchase Requisition,MM-PUR-REQ-2CL,Dimension,dimension,2,0,,component,yes,VDM_MM_PUR_PR,yes
+I_PURREQNRELEASESTATUSTEXT,Release Status of PurReqn - Text,Release Status of PurReqn - Text,MM-PUR-REQ-2CL,,text,5,0,,component,yes,VDM_MM_PUR_PR,yes
+D_RFQCREATEFROMPURREQNITEMP,RFQ Create from Pur Reqn Item Parameter,RFQ Create from Pur Reqn Item Parameter,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_RFQ,no
+D_RFQCREATEFROMPURREQNP,RFQ from Purchase Requisition Parameter,RFQ from Purchase Requisition Parameter,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_RFQ,no
+D_SUPLRQTANCRTEFRMRFQALLITMSP,Supplr Qtn Crte from All RFQ Items Param,Supplr Qtn Crte from All RFQ Items Param,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_RFQ,no
+D_SUPLRQTANCRTEFRMRFQITEMP,Supplr Qtn Crte from RFQ Item Param,Supplr Qtn Crte from RFQ Item Param,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_QTN,no
+D_SUPLRQTANCRTEFRMRFQP,Supplr Qtn Crte from RFQ Item Param,Supplr Qtn Crte from RFQ Item Param,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_QTN,no
+D_SUPLRQTANCRTEFRMRFQPRCGITMP,Supplr Qtn Cre From RFQ Prcng Param,Supplr Qtn Cre From RFQ Prcng Param,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_QTN,no
+I_QTNLIFECYCLESTATUS,Quotation Lifecycle Status,Quotation Lifecycle Status,MM-PUR-RFQ-2CL,Dimension,dimension,2,0,,component,yes,VDM_MM_PUR_QTN,yes
+I_QTNLIFECYCLESTATUSTEXT,Quotation Lifecycle Status – Text,Quotation Lifecycle Status – Text,MM-PUR-RFQ-2CL,,text,4,0,,component,yes,VDM_MM_PUR_QTN,yes
+I_REQUESTFORQUOTATIONBIDDERTP,Request For Quotation Bidder - TP,Request For Quotation Bidder - TP,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_RFQ,no
+I_REQUESTFORQUOTATIONITEMTP,Request For Quotation Item - TP,Request For Quotation Item - TP,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_RFQ,no
+I_REQUESTFORQUOTATIONTP,Request For Quotation - TP,Request For Quotation - TP,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_RFQ,no
+I_REQUESTFORQUOTATIONTYPE,RFQ Type,RFQ Type,MM-PUR-RFQ-2CL,,basic,2,0,,component,yes,VDM_MM_PUR_RFQ,yes
+I_REQUESTFORQUOTATION_API01,Request for Quotation,Request for Quotation,MM-PUR-RFQ-2CL,,basic,36,0,Company Code; Incoterms,component,yes,VDM_MM_PUR_RFQ,yes
+I_RFQBIDDER_API01,Bidder in Request for Quotation,Bidder in Request for Quotation,MM-PUR-RFQ-2CL,,basic,5,0,Purchasing Document; Supplier,component,yes,VDM_MM_PUR_RFQ,yes
+I_RFQITEM_API01,Item in Request for Quotation,Item in Request for Quotation,MM-PUR-RFQ-2CL,,basic,23,0,Incoterms; Material / Product; Material Group; Purchasing Document,component,yes,VDM_MM_PUR_RFQ,yes
+I_RFQLIFECYCLESTATUS,RFQ Lifecycle Status,RFQ Lifecycle Status,MM-PUR-RFQ-2CL,Dimension,dimension,2,0,,component,yes,VDM_MM_PUR_RFQ,yes
+I_RFQLIFECYCLESTATUSTEXT,RFQ Lifecycle Status - Text,RFQ Lifecycle Status - Text,MM-PUR-RFQ-2CL,,text,4,0,,component,yes,VDM_MM_PUR_RFQ,yes
+I_RFQSCHEDULELINE_API01,Schedule Line in Request for Quotation,Schedule Line in Request for Quotation,MM-PUR-RFQ-2CL,,basic,12,0,,component,yes,VDM_MM_PUR_RFQ,yes
+I_SUPLRQTNFOLLOWONDOCUMENT,Supplier Quotation Follow On Document,Supplier Quotation Follow On Document,MM-PUR-RFQ-2CL,Dimension,dimension,6,0,,component,yes,VDM_MM_PUR_QTN,yes
+I_SUPLRQTNSCHEDULELINE_API01,Schedule Line in Supplier Quotation Item,Schedule Line in Supplier Quotation Item,MM-PUR-RFQ-2CL,,basic,13,0,Purchasing Document,component,yes,VDM_MM_PUR_QTN,yes
+I_SUPPLIERQUOTATIONITEMTP,Supplier Quotation Item - TP,Supplier Quotation Item - TP,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_QTN,no
+I_SUPPLIERQUOTATIONITEM_API01,Item in Supplier Quotation,Item in Supplier Quotation,MM-PUR-RFQ-2CL,,basic,33,0,Incoterms; Material / Product; Material Group; Purchasing Document,component,yes,VDM_MM_PUR_QTN,yes
+I_SUPPLIERQUOTATIONPRCELMNTTP,Supplier QTN Item Pricing - TP,Supplier QTN Item Pricing - TP,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_QTN,no
+I_SUPPLIERQUOTATIONTP,Supplier Quotation - TP,Supplier Quotation - TP,MM-PUR-RFQ-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_QTN,no
+I_SUPPLIERQUOTATIONTYPE,Supplier Quotation Type,Supplier Quotation Type,MM-PUR-RFQ-2CL,,basic,2,0,,component,yes,VDM_MM_PUR_QTN,yes
+I_SUPPLIERQUOTATION_API01,Supplier Quotation,Supplier Quotation,MM-PUR-RFQ-2CL,,basic,37,0,Company Code; Document Condition (pricing); Incoterms; Supplier,component,yes,VDM_MM_PUR_QTN,yes
+I_PURCHASINGINFORECORDAPI01,Purchasing Info Record,Purchasing Info Record,MM-PUR-SQ,Dimension,dimension,34,0,Material / Product; Material Group,component,yes,VDM_MM_PUR_SOS,yes
+I_PURGINFORECDORGPLNTDATAAPI01,Org Plant Data for Purch Info Record,Org Plant Data for Purch Info Record,MM-PUR-SQ,,basic,51,0,Incoterms; Purchasing Document; Purchasing Organization; Tax Code,component,yes,VDM_MM_PUR_SOS,yes
+I_PURGQUOTAARRGMTAPI01,Purchasing Quota Arrangement,Purchasing Quota Arrangement,MM-PUR-SQ-QTA,,basic,12,0,Material / Product; Plant,component,yes,VDM_MM_PUR_SOS_QTA,yes
+I_PURGQUOTAARRGMTITEMAPI01,Purchasing Quota Arrangement Item,Purchasing Quota Arrangement Item,MM-PUR-SQ-QTA,,basic,36,0,Plant,component,yes,VDM_MM_PUR_SOS_QTA,yes
+I_PURGQUOTAARRGMTITEMTP_2,Quota Arrangement Item - TP,Quota Arrangement Item - TP,MM-PUR-SQ-QTA-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SOS_QTA_TR,no
+I_PURGQUOTAARRGMTTP_2,Quota Arrangement Header - TP,Quota Arrangement Header - TP,MM-PUR-SQ-QTA-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SOS_QTA_TR,no
+D_PURGSOURCELISTCHANGED_2,Purchasing Source list Changed,Purchasing Source list Changed,MM-PUR-SQ-SLI,,basic,0,0,,component,yes,APPL_MM_PUR_SOS_SL,no
+D_PURGSOURCELISTCREATED_2,Purchasing Source list Created,Purchasing Source list Created,MM-PUR-SQ-SLI,,basic,0,0,,component,yes,APPL_MM_PUR_SOS_SL,no
+D_PURGSOURCELISTDELETED_2,Purchasing Source list Deleted,Purchasing Source list Deleted,MM-PUR-SQ-SLI,,basic,0,0,,component,yes,APPL_MM_PUR_SOS_SL,no
+I_PURCHASINGSOURCELISTITEMTP,Source List Item - TP,Source List Item - TP,MM-PUR-SQ-SLI,,basic,0,0,,component,yes,RAP_MM_PUR_SOURCELIST,no
+I_PURCHASINGSOURCELISTTP,Source List - TP,Source List - TP,MM-PUR-SQ-SLI,,basic,0,0,,component,yes,RAP_MM_PUR_SOURCELIST,no
+I_MPPURCHASINGSOURCEITEM,Source List Item,Source List Item,MM-PUR-SQ-SLI-2CL,,basic,39,0,Material / Product; Purchasing Organization,component,yes,VDM_MM_PUR_SOS_SL,yes
+C_SESWORKFLOWEMAIL,Email for SES Wfl Approval or Rejection,Email for SES Wfl Approval or Rejection,MM-PUR-SVC-SES-2CL,,basic,14,0,Purchasing Organization; Supplier,component,yes,APPL_MM_PUR_WFL_SES,no
+D_SESCANCELPARAMETER,SES Cancel Paramters,SES Cancel Paramters,MM-PUR-SVC-SES-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SES,no
+I_SERVICEENTRYSHEETAPI01,Service Entry Sheet,Service Entry Sheet,MM-PUR-SVC-SES-2CL,,basic,23,0,Personnel; Purchasing Organization; Supplier,component,yes,VDM_MM_PUR_SES_PUBLIC,yes
+I_SERVICEENTRYSHEETITEMAPI01,Service Entry Sheet Item,Service Entry Sheet Item,MM-PUR-SVC-SES-2CL,,basic,30,0,Purchasing Organization,component,yes,VDM_MM_PUR_SES_PUBLIC,yes
+I_SERVICEENTRYSHEETITEMNOTETP,Service Entry Sheet Item Note - TP,Service Entry Sheet Item Note - TP,MM-PUR-SVC-SES-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SES,no
+I_SERVICEENTRYSHEETITEMTP_2,Service Entry Sheet Item,Service Entry Sheet Item,MM-PUR-SVC-SES-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SES,no
+I_SERVICEENTRYSHEETNOTETP,Service Entry Sheet Note - TP,Service Entry Sheet Note - TP,MM-PUR-SVC-SES-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SES,no
+I_SERVICEENTRYSHEETTP_2,Service Entry Sheet Header,Service Entry Sheet Header,MM-PUR-SVC-SES-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SES,no
+I_SESACCOUNTASSIGNMENTAPI01,Service Entry Sheet Account Assignment,Service Entry Sheet Account Assignment,MM-PUR-SVC-SES-2CL,,basic,58,0,Activity Type; Business Area; Controlling Area; Cost Center; Fixed Asset; Functional Area; G/L Account; Grant; Order (production / maintenance / internal); Profit Center; Profitability Segment; Purchasing Organization; WBS Element,component,yes,VDM_MM_PUR_SES_PUBLIC,yes
+I_SESACCOUNTASSIGNMENTTP_2,SES Account Assignment,SES Account Assignment,MM-PUR-SVC-SES-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SES,no
+I_SESPRICINGELEMENTTP_2,SES Pricing Element,SES Pricing Element,MM-PUR-SVC-SES-2CL,,basic,0,0,,component,yes,RAP_MM_PUR_SES,no
+I_SESWORKFLOWEMAILDEADLINE,Email Template for Service Entry Sheet Workflow Deadline,Email Template for Service Entry Sheet Workflow Deadline,MM-PUR-SVC-SES-2CL,,basic,17,0,Purchasing Organization,component,yes,APPL_MM_PUR_WFL_SES,yes
+D_PURCHASINGINFORECORDCHANGED,Purchasing Info Record Changed,Purchasing Info Record Changed,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD,no
+D_PURCHASINGINFORECORDCREATED,Purchasing Info Record Created,Purchasing Info Record Created,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD,no
+D_PURGINFORECDORGPLNTDATACHGD,Purchasing Info Record Organization Plant Data Changed,Purchasing Info Record Organization Plant Data Changed,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD,no
+D_PURGINFORECDORGPLNTDATACRTD,Purchasing Info Record Organization Plant Data Created,Purchasing Info Record Organization Plant Data Created,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD,no
+I_PURCHASINGINFORECORDTP,Purchasing Information Record - TP,Purchasing Information Record - TP,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD_TR,no
+I_PURGINFORECDCNDNRECORDTP,Purchase Info Recd Pricing Cndn - TP,Purchase Info Recd Pricing Cndn - TP,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD_TR,no
+I_PURGINFORECDCNDNSCALEAPI01,Purchasing Info Record Condition Scale,Purchasing Info Record Condition Scale,MM-PUR-VM-REC-2CL,,basic,19,0,Plant; Purchasing Organization,component,yes,APPL_MM_PUR_INFORECORD,no
+I_PURGINFORECDCNDNSUPLMNTTP,Purchase Info Rec Cndn Suplmnt - TP,Purchase Info Rec Cndn Suplmnt - TP,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD_TR,no
+I_PURGINFORECDORGPLNTDATATP,Purchase Info Record Org Plnt Data - TP,Purchase Info Record Org Plnt Data - TP,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD_TR,no
+I_PURGINFORECDPRCGCNDNVALDTYTP,Pur Info Recd Pricing Cndn Valdty - TP,Pur Info Recd Pricing Cndn Valdty - TP,MM-PUR-VM-REC-2CL,,basic,0,0,,component,yes,APPL_MM_PUR_INFORECORD_TR,no
+I_PURGINFORECDPRICECNDNAPI01,Purchasing Info Record Pricing Condition,Purchasing Info Record Pricing Condition,MM-PUR-VM-REC-2CL,,basic,24,0,Material / Product; Material Group; Plant; Purchasing Organization,component,yes,APPL_MM_PUR_INFORECORD,no

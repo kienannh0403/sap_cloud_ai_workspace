@@ -1,24 +1,73 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_CONFIRMATIONAPPLORIGIN,Confirmation Application Origin,Confirmation Application Origin,PP-VDM,Dimension,dimension,3,0,,keyword
-I_CONFIRMATIONAPPLORIGINTEXT,Confirmation Application Origin - Text,Confirmation Application Origin - Text,PP-VDM,,text,6,0,,keyword
-I_CONFIRMATIONGROUP,Confirmation Group,Confirmation Group,PP-VDM,Dimension,dimension,1,0,,keyword
-I_CONFIRMATIONRECORDTYPE,Confirmation Record Type,Confirmation Record Type,PP-VDM,Dimension,dimension,3,0,,keyword
-I_CONFIRMATIONRECORDTYPETEXT,Confirmation Record Type - Text,Confirmation Record Type - Text,PP-VDM,,text,6,0,,keyword
-I_FINALCONFIRMATIONTYPE,Final Confirmation Type,Final Confirmation Type,PP-VDM,Dimension,dimension,3,0,,keyword
-I_FINALCONFIRMATIONTYPETEXT,Final Confirmation Type - Text,Final Confirmation Type - Text,PP-VDM,,text,6,0,,keyword
-I_MANUFACTURINGORDER,Manufacturing Order,Manufacturing Order,PP-VDM,Dimension,dimension,267,14,Batch; Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Material / Product; Profit Center; WBS Element,keyword
-I_MANUFACTURINGORDERIMPORTANCE,Manufacturing Order Importance Code,Manufacturing Order Importance Code,PP-VDM,Dimension,dimension,3,0,,keyword
-I_MANUFACTURINGORDERITEM,Manufacturing Order Item,Manufacturing Order Item,PP-VDM,Dimension,dimension,174,4,Batch; Business Area; Company Code; Material / Product; WBS Element,keyword
-I_MANUFACTURINGORDERLONGTEXT,Manufacturing Order - Text,Manufacturing Order - Text,PP-VDM,,text,6,0,,keyword
-I_MANUFACTURINGORDEROPERATION,Manufacturing Order Operation,Manufacturing Order Operation,PP-VDM,Dimension,dimension,408,19,Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Material Group; Plant; Profit Center; Supplier; Task List (routing) group,keyword
-I_MFGORDERCONFIRMATION,Manufacturing Order Confirmation,Manufacturing Order Confirmation,PP-VDM,Dimension,dimension,184,5,Business Area; Company Code; Controlling Area; Plant; Profit Center,keyword
-I_MFGORDERFAILEDCONFIRMATION,Manufacturing Order Failed Confirmation,Manufacturing Order Failed Confirmation,PP-VDM,Dimension,dimension,126,0,Business Area; Company Code; Controlling Area; Cost Center; Order (production / maintenance / internal); Plant,keyword
-I_MFGORDEROPERATIONCOMPONENT,Manufacturing Order Operation Component,Manufacturing Order Operation Component,PP-VDM,Dimension,dimension,258,11,Batch; Business Area; Company Code; Controlling Area; Functional Area; G/L Account; Material / Product; Material Group; Movement Type; Plant; Supplier; WBS Element,keyword
-I_MFGORDEROPERATIONLONGTEXT,Manufacturing Order Operation - Text,Manufacturing Order Operation - Text,PP-VDM,,text,11,0,,keyword
-I_MFGORDEROPERATIONPRT,Mfg Order Operation Production Resource Tool,Mfg Order Operation Production Resource Tool,PP-VDM,Dimension,dimension,100,3,Task List (routing) group,keyword
-I_MFGORDEROPERATIONTRGGRPOINT,Manufacturing Order Operation Trigger Point,Manufacturing Order Operation Trigger Point,PP-VDM,Dimension,dimension,49,3,Plant,keyword
-I_MFGORDEROPERATIONVH,Manufacturing Order Operation,Manufacturing Order Operation,PP-VDM,,value_help,10,0,Plant,keyword
-I_MFGORDEROPERATIONWITHSTATUS,Manufacturing Order Operation with Status,Manufacturing Order Operation with Status,PP-VDM,,basic,402,18,Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Plant; Profit Center; Supplier; Task List (routing) group,keyword
-I_ORDERCONFIRMATIONTYPE,Order Confirmation Type,Order Confirmation Type,PP-VDM,Dimension,dimension,3,0,,keyword
-I_ORDERCONFIRMATIONTYPETEXT,Order Confirmation Type - Text,Order Confirmation Type - Text,PP-VDM,,text,6,0,,keyword
-I_REPETITIVEMFGCONFIRMATION,Repetitive Manufacturing Confirmation,Repetitive Manufacturing Confirmation,PP-VDM,Dimension,dimension,79,6,Cost Center; Material / Product; Plant,keyword
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_PROCESSORDEROPERATIONTP,Process Order Operation - TP,Process Order Operation - TP,PP-PI-POR-2CL,,basic,0,0,,keyword,yes,PP_PROCESSORDER_RAP,no
+D_RPTVMFGCONFIRMATIONCANCELP,Input for Rptv Mfg Conf RAP BO Cancel Action,Input for Rptv Mfg Conf RAP BO Cancel Action,PP-REM-ADE-2CL,,basic,0,0,,keyword,yes,PP_REM_RAP,no
+I_REPETITIVEMFGCONFIRMATIONTP,Repetitive Mfg Confirmation - TP,Repetitive Mfg Confirmation - TP,PP-REM-ADE-2CL,,basic,0,0,,keyword,yes,PP_REM_RAP,no
+D_PRODNORDERGETMISSINGPARTSR,Get Production Order Missing Parts Result,Get Production Order Missing Parts Result,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODNORDEROPERATIONSETDATESP,SetDates Prodn Order Operation Parameter,SetDates Prodn Order Operation Parameter,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODNORDOPDISPATCHORDEROPP,DispatchOrderOperation Prodn Order Param,DispatchOrderOperation Prodn Order Param,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODNORDOPDISPATCHORDEROPP_2,DispatchOrderOperation Prodn Order Param,DispatchOrderOperation Prodn Order Param,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODNORDOPERATIONSETDATESP_2,SetDates Prodn Order Operation Parameter,SetDates Prodn Order Operation Parameter,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODNORDREEXPLODEMASTERDATAP,ReexplodeMasterData Prodn Order Param,ReexplodeMasterData Prodn Order Param,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODNORDREXPLDMASTERDATAP_2,ReexplodeMasterData Prodn Order Param,ReexplodeMasterData Prodn Order Param,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODUCTIONORDERCHANGED,Production Order Changed,Production Order Changed,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODUCTIONORDERCREATED,Production Order Created,Production Order Created,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODUCTIONORDERRELEASEP,Release Production Order Parameter,Release Production Order Parameter,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PRODUCTIONORDERRELEASEP_2,Release Production Order Parameter,Release Production Order Parameter,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+I_PRODNORDERITEMSERIALNUMBERTP,Production Order Item Serial Number - TP,Production Order Item Serial Number - TP,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+I_PRODNORDOPERATIONCAPACITYTP,Individual Capacity of Production Order Operation - TP,Individual Capacity of Production Order Operation - TP,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+I_PRODUCTIONORDERITEMTP,Production Order Item - TP,Production Order Item - TP,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+I_PRODUCTIONORDEROPCOMPONENTTP,Production Order Component - TP,Production Order Component - TP,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+I_PRODUCTIONORDEROPERATIONTP,Production Order Operation - TP,Production Order Operation - TP,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+I_PRODUCTIONORDERSEQUENCETP,Production Order Sequence - TP,Production Order Sequence - TP,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+I_PRODUCTIONORDERTP,Production Order Header - TP,Production Order Header - TP,PP-SFC-2CL,,basic,0,0,,component,yes,PP_PRODUCTIONORDER_RAP,no
+D_PROCORDCONFGETCONFPROPOSALR,Get Proposal for Process Order Conf,Get Proposal for Process Order Conf,PP-SFC-EXE-CON-2CL,,basic,0,0,,component,yes,PP_PROCORDCONF_RAP,no
+D_PROCORDCONFGETGDSMVTPRPSLR,Goods Movements Proposal for Process Order Confirmation,Goods Movements Proposal for Process Order Confirmation,PP-SFC-EXE-CON-2CL,,basic,0,0,,component,yes,PP_PROCORDCONF_RAP,no
+D_PRODNORDCONFGETCONFPROPOSALR,Get Proposal for Production Order Confirmation,Get Proposal for Production Order Confirmation,PP-SFC-EXE-CON-2CL,,basic,0,0,,component,yes,PP_PRODORDCONF_RAP,no
+D_PRODNORDCONFGETGDSMVTPRPSLR,Goods Movements Proposal for Production Order Confirmation,Goods Movements Proposal for Production Order Confirmation,PP-SFC-EXE-CON-2CL,,basic,0,0,,component,yes,PP_PRODORDCONF_RAP,no
+I_PROCESSORDERCONFIRMATIONTP,Process Order Confirmation - TP,Process Order Confirmation - TP,PP-SFC-EXE-CON-2CL,,basic,0,0,,component,yes,PP_PROCORDCONF_RAP,no
+I_PROCORDCONFMATLDOCITEMTP,Process Order Conf Material Doc - TP,Process Order Conf Material Doc - TP,PP-SFC-EXE-CON-2CL,,basic,0,0,,component,yes,PP_PROCORDCONF_RAP,no
+I_PRODNORDCONFMATLDOCITEMTP,Prodn Order Conf Material Document - TP,Prodn Order Conf Material Document - TP,PP-SFC-EXE-CON-2CL,,basic,0,0,,component,yes,PP_PRODORDCONF_RAP,no
+I_PRODUCTIONORDCONFIRMATIONTP,Production Order Confirmation - TP,Production Order Confirmation - TP,PP-SFC-EXE-CON-2CL,,basic,0,0,,component,yes,PP_PRODORDCONF_RAP,no
+I_CONFIRMATIONAPPLORIGIN,Confirmation Application Origin,Confirmation Application Origin,PP-VDM-2CL,Dimension,dimension,3,0,,keyword,yes,VDM_PP_CNF,yes
+I_CONFIRMATIONAPPLORIGINTEXT,Confirmation Application Origin - Text,Confirmation Application Origin - Text,PP-VDM-2CL,,text,6,0,,keyword,yes,VDM_PP_CNF,yes
+I_CONFIRMATIONGROUP,Confirmation Group,Confirmation Group,PP-VDM-2CL,Dimension,dimension,1,0,,keyword,yes,VDM_PP_CNF,yes
+I_CONFIRMATIONRECORDTYPE,Confirmation Record Type,Confirmation Record Type,PP-VDM-2CL,Dimension,dimension,3,0,,keyword,yes,VDM_PP_CNF,yes
+I_CONFIRMATIONRECORDTYPETEXT,Confirmation Record Type - Text,Confirmation Record Type - Text,PP-VDM-2CL,,text,6,0,,keyword,yes,VDM_PP_CNF,yes
+I_FINALCONFIRMATIONTYPE,Final Confirmation Type,Final Confirmation Type,PP-VDM-2CL,Dimension,dimension,3,0,,keyword,yes,VDM_PP_CNF,yes
+I_FINALCONFIRMATIONTYPETEXT,Final Confirmation Type - Text,Final Confirmation Type - Text,PP-VDM-2CL,,text,6,0,,keyword,yes,VDM_PP_CNF,yes
+I_MANUFACTURINGORDER,Manufacturing Order,Manufacturing Order,PP-VDM-2CL,Dimension,dimension,267,14,Batch; Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Material / Product; Profit Center; WBS Element,keyword,yes,VDM_PP_SFC,yes
+I_MANUFACTURINGORDERIMPORTANCE,Manufacturing Order Importance Code,Manufacturing Order Importance Code,PP-VDM-2CL,Dimension,dimension,3,0,,keyword,yes,VDM_PP_SFC,yes
+I_MANUFACTURINGORDERITEM,Manufacturing Order Item,Manufacturing Order Item,PP-VDM-2CL,Dimension,dimension,174,4,Batch; Business Area; Company Code; Material / Product; WBS Element,keyword,yes,VDM_PP_SFC,yes
+I_MANUFACTURINGORDERLONGTEXT,Manufacturing Order - Text,Manufacturing Order - Text,PP-VDM-2CL,,text,6,0,,keyword,yes,VDM_PP_SFC,yes
+I_MANUFACTURINGORDEROPERATION,Manufacturing Order Operation,Manufacturing Order Operation,PP-VDM-2CL,Dimension,dimension,408,19,Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Material Group; Plant; Profit Center; Supplier; Task List (routing) group,keyword,yes,VDM_PP_SFC,yes
+I_MANUFACTURINGORDERSTATUS,Manufacturing Order Status,Manufacturing Order Status,PP-VDM-2CL,,basic,14,0,,keyword,yes,VDM_PP_SFC,no
+I_MANUFACTURINGORDERSTATUSTEXT,Manufacturing Order Status - Text,Manufacturing Order Status - Text,PP-VDM-2CL,,text,9,0,,keyword,yes,VDM_PP_SFC,no
+I_MFGORDERCONFIRMATION,Manufacturing Order Confirmation,Manufacturing Order Confirmation,PP-VDM-2CL,Dimension,dimension,184,5,Business Area; Company Code; Controlling Area; Plant; Profit Center,keyword,yes,VDM_PP_CNF,yes
+I_MFGORDERFAILEDCONFIRMATION,Manufacturing Order Failed Confirmation,Manufacturing Order Failed Confirmation,PP-VDM-2CL,Dimension,dimension,126,0,Business Area; Company Code; Controlling Area; Cost Center; Order (production / maintenance / internal); Plant,keyword,yes,VDM_PP_CNF,yes
+I_MFGORDEROPERATIONCOMPONENT,Manufacturing Order Operation Component,Manufacturing Order Operation Component,PP-VDM-2CL,Dimension,dimension,258,11,Batch; Business Area; Company Code; Controlling Area; Functional Area; G/L Account; Material / Product; Material Group; Movement Type; Plant; Supplier; WBS Element,keyword,yes,VDM_PP_SFC,yes
+I_MFGORDEROPERATIONLONGTEXT,Manufacturing Order Operation - Text,Manufacturing Order Operation - Text,PP-VDM-2CL,,text,11,0,,keyword,yes,VDM_PP_SFC,yes
+I_MFGORDEROPERATIONPRT,Mfg Order Operation Production Resource Tool,Mfg Order Operation Production Resource Tool,PP-VDM-2CL,Dimension,dimension,100,3,Task List (routing) group,keyword,yes,VDM_PP_SFC,yes
+I_MFGORDEROPERATIONTRGGRPOINT,Manufacturing Order Operation Trigger Point,Manufacturing Order Operation Trigger Point,PP-VDM-2CL,Dimension,dimension,49,3,Plant,keyword,yes,VDM_PP_SFC,yes
+I_MFGORDEROPERATIONVH,Manufacturing Order Operation,Manufacturing Order Operation,PP-VDM-2CL,,value_help,10,0,Plant,keyword,yes,VDM_PP_SFC,yes
+I_MFGORDEROPERATIONWITHSTATUS,Manufacturing Order Operation with Status,Manufacturing Order Operation with Status,PP-VDM-2CL,,basic,402,18,Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Plant; Profit Center; Supplier; Task List (routing) group,keyword,yes,VDM_PP_SFC,yes
+I_ORDERCONFIRMATIONTYPE,Order Confirmation Type,Order Confirmation Type,PP-VDM-2CL,Dimension,dimension,3,0,,keyword,yes,VDM_PP_CNF,yes
+I_ORDERCONFIRMATIONTYPETEXT,Order Confirmation Type - Text,Order Confirmation Type - Text,PP-VDM-2CL,,text,6,0,,keyword,yes,VDM_PP_CNF,yes
+I_PROCORDEROPERATIONCAPACITY,Individual Capacity of Process Order Operation,Individual Capacity of Process Order Operation,PP-VDM-2CL,,basic,52,0,Plant,keyword,yes,VDM_PP_PI,no
+I_PRODNORDEROPERATIONCAPACITY,Individual Capacity of Production Order Operation,Individual Capacity of Production Order Operation,PP-VDM-2CL,,basic,60,0,Plant,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDER,Production Order Header,Production Order Header,PP-VDM-2CL,,basic,178,0,Business Area; Company Code; Controlling Area; Functional Area; Inspection Lot; Profit Center,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERCOMPONENT,Production Order Component,Production Order Component,PP-VDM-2CL,,basic,205,0,Batch; Business Area; Company Code; Controlling Area; Functional Area; G/L Account; Material / Product; Material Group; Movement Type; Plant; Supplier; WBS Element,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERCONFIRMATION,Production Order Confirmation,Production Order Confirmation,PP-VDM-2CL,,basic,152,0,Business Area; Company Code; Controlling Area; Plant; Profit Center,keyword,yes,VDM_PP_CNF,no
+I_PRODUCTIONORDERDOCUMENTLINK,Production Order Document Link,Production Order Document Link,PP-VDM-2CL,,basic,30,0,,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERINTERNALID,Production Order by Internal ID,Production Order by Internal ID,PP-VDM-2CL,,basic,5,0,,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERITEM,Production Order Item,Production Order Item,PP-VDM-2CL,,basic,121,0,Batch; Business Area; Company Code; Material / Product; WBS Element,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDEROPERATIONVH,Production Order Operation,Production Order Operation,PP-VDM-2CL,,value_help,9,0,Plant,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDEROPERATION_2,Production Order Operation,Production Order Operation,PP-VDM-2CL,,basic,325,0,Business Area; Company Code; Controlling Area; Functional Area; Material Group; Plant; Profit Center; Supplier; Task List (routing) group,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERPRT,PRT of a Production Order,PRT of a Production Order,PP-VDM-2CL,,basic,88,0,Task List (routing) group,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERSEQUENCE,Production Order Sequence,Production Order Sequence,PP-VDM-2CL,,basic,40,0,,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERSEQUENCEVH,Production Order Sequence,Production Order Sequence,PP-VDM-2CL,,value_help,10,0,,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERSTDVH,Production Order,Production Order,PP-VDM-2CL,,value_help,5,0,,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERTRIGGERPOINT,Production Order Trigger Point,Production Order Trigger Point,PP-VDM-2CL,,basic,45,0,Plant,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERTYPE,Production Order Type,Production Order Type,PP-VDM-2CL,,basic,15,0,,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERTYPESTDVH,Production Order Type,Production Order Type,PP-VDM-2CL,,value_help,2,0,,keyword,yes,VDM_PP_SFC,no
+I_PRODUCTIONORDERTYPETEXT,Production Order Type - Text,Production Order Type - Text,PP-VDM-2CL,,text,5,0,,keyword,yes,VDM_PP_SFC,no
+I_REPETITIVEMFGCONFIRMATION,Repetitive Manufacturing Confirmation,Repetitive Manufacturing Confirmation,PP-VDM-2CL,Dimension,dimension,79,6,Cost Center; Material / Product; Plant,keyword,yes,VDM_PP_REM,yes

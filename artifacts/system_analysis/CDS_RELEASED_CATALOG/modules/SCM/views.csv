@@ -1,42 +1,131 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_EWM_DELIVERYCATEGORY_2,Delivery Category,Delivery Category,SCM-EWM-DLP,Dimension,dimension,1,0,,top-level
-I_EWM_DELIVERYTYPETEXT_2,Warehouse Delivery Type - Text,Warehouse Delivery Type - Text,SCM-EWM-DLP,,basic,5,0,,top-level
-I_EWM_DELIVERYTYPE_2,Warehouse Delivery Type,Warehouse Delivery Type,SCM-EWM-DLP,Dimension,dimension,4,0,,top-level
-I_EWM_INBDELIVERYHEADER,Warehouse Inbound Delivery Header,Warehouse Inbound Delivery Header,SCM-EWM-DLP,,basic,21,0,Business Partner,top-level
-I_EWM_INBDELIVERYITEM,Warehouse Inbound Delivery Item,Warehouse Inbound Delivery Item,SCM-EWM-DLP,,basic,86,0,Batch; WBS Element,top-level
-I_EWM_INBDELIVERYITEMSRLNMBR,Warehouse Inb Deliv Item Serial Number,Warehouse Inb Deliv Item Serial Number,SCM-EWM-DLP,,basic,5,0,,top-level
-I_EWM_INBOUNDDELIVERYTYPE_2,Warehouse Inbound Delivery Type,Warehouse Inbound Delivery Type,SCM-EWM-DLP,Dimension,dimension,4,0,,top-level
-I_EWM_OUTBDELIVORDHDR,Warehouse Outbound Delivery Order Header,Warehouse Outbound Delivery Order Header,SCM-EWM-DLP,,basic,33,0,Business Partner; Sales Organization,top-level
-I_EWM_OUTBDELIVORDITEM,Warehouse Outbound Delivery Order Item,Warehouse Outbound Delivery Order Item,SCM-EWM-DLP,,basic,78,0,Batch; Sales Document; WBS Element,top-level
-I_EWM_OUTBDELIVORDITEMSRLNMBR,Warehouse Outb Dlv Ord Itm Serial Number,Warehouse Outb Dlv Ord Itm Serial Number,SCM-EWM-DLP,,basic,5,0,,top-level
-I_EWM_OUTBOUNDDELIVORDERTYPE_2,Warehouse Outbound Delivery Order Type,Warehouse Outbound Delivery Order Type,SCM-EWM-DLP,Dimension,dimension,4,0,,top-level
-I_EWM_AVAILABLESTOCK,Available Stock,Available Stock,SCM-EWM-WOP,,basic,37,0,,top-level
-I_EWM_FIXEDBINASSIGNMENT,Warehouse Fixed Bin Assignment,Warehouse Fixed Bin Assignment,SCM-EWM-WOP,,basic,12,0,,top-level
-I_EWM_HNDLGUNITID,Warehouse Handling Unit Identification,Warehouse Handling Unit Identification,SCM-EWM-WOP,,basic,3,0,,top-level
-I_EWM_PHYSICALINVENTORYITEM,Warehouse Physical Inventory Item,Warehouse Physical Inventory Item,SCM-EWM-WOP,,basic,60,0,Batch; Material / Product; WBS Element,top-level
-I_EWM_PHYSINVTRYITEMROW,Row of PInv Item with Quantity in Whse,Row of PInv Item with Quantity in Whse,SCM-EWM-WOP,,basic,65,0,Batch; Material / Product; WBS Element,top-level
-I_EWM_PHYSSTOCKPROD,Physical Stock for Products,Physical Stock for Products,SCM-EWM-WOP,,basic,91,0,Batch; Material / Product,top-level
-I_EWM_PINVITEMFLATTENEDROW,Flattened Row of PInv Item in Warehouse,Flattened Row of PInv Item in Warehouse,SCM-EWM-WOP,,basic,59,0,Batch; Material / Product; WBS Element,top-level
-I_EWM_PINVITEMROWSRLNMBR,Serial Number of Whse PInv Item Row,Serial Number of Whse PInv Item Row,SCM-EWM-WOP,,basic,11,0,,top-level
-I_EWM_PLANTSTORLOCMAPTOWHSE,Mapping plant and stor loc to warehouse,Mapping plant and stor loc to warehouse,SCM-EWM-WOP,,basic,6,0,Plant; Storage Location,top-level
-I_EWM_PRODUCTSTORAGETYPE,Product Storage Type,Product Storage Type,SCM-EWM-WOP,,basic,57,9,Business Partner; Material / Product,top-level
-I_EWM_PRODUCTWAREHOUSE,Product Warehouse Data,Product Warehouse Data,SCM-EWM-WOP,,basic,83,6,Business Partner; Material / Product,top-level
-I_EWM_QLTYINSPDOCUUID,Whse Quality Insp UUID to Quality Insp,Whse Quality Insp UUID to Quality Insp,SCM-EWM-WOP,,basic,3,0,,top-level
-I_EWM_STORAGEBINACCESSTYPE,Storage Bin Access Type,Storage Bin Access Type,SCM-EWM-WOP,Dimension,dimension,4,0,,top-level
-I_EWM_STORAGEBINACCTYPETEXT,Storage Bin Access Type - Text,Storage Bin Access Type - Text,SCM-EWM-WOP,,text,5,0,,top-level
-I_EWM_STORAGEBINISEMPTYTEXT,Empty Storage Bin Indicator - Text,Empty Storage Bin Indicator - Text,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORAGEBINISFULLTEXT,Full Storage Bin Indicator - Text,Full Storage Bin Indicator - Text,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINISAVAILABLETEXT,Storage Bin Is Available Indicator - Txt,Storage Bin Is Available Indicator - Txt,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINISBLOCKEDTEXT,Storage Bin Is Blocked Indicator - Txt,Storage Bin Is Blocked Indicator - Txt,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINISUTILIZEDTEXT,Storage Bin Is Utilized Indicator - Txt,Storage Bin Is Utilized Indicator - Txt,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINMAXVOLISMNTNDTEXT,Storage Bin Max Volume Is Mntnd - Text,Storage Bin Max Volume Is Mntnd - Text,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINMAXWGTISMNTNDTEXT,Storage Bin Max Weight Is Mntnd - Text,Storage Bin Max Weight Is Mntnd - Text,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINPINVBLOCKTEXT,Block Indicator for Inventory - Text,Block Indicator for Inventory - Text,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINPUTAWAYBLOCKTEXT,Block Indicator for Putaway - Text,Block Indicator for Putaway - Text,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINREMOVALBLOCKTEXT,Block Indicator for Removal - Text,Block Indicator for Removal - Text,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_STORBINTOTCAPISMNTNDTEXT,Storage Bin Max Cap Is Maintained - Txt,Storage Bin Max Cap Is Maintained - Txt,SCM-EWM-WOP,,text,4,0,,top-level
-I_EWM_WAREHOUSEORDER_2,Warehouse Order,Warehouse Order,SCM-EWM-WOP,,basic,42,1,,top-level
-I_EWM_WAREHOUSETASK_2,Open and Confirmed Warehouse Tasks,Open and Confirmed Warehouse Tasks,SCM-EWM-WOP,,basic,142,2,Material / Product,top-level
-I_EWM_WHSEORDERHNDLGUNIT_2,Handling Unit for Warehouse Order,Handling Unit for Warehouse Order,SCM-EWM-WOP,,basic,17,0,Material / Product,top-level
-I_EWM_WHSETASKEXCEPTIONCODE_2,Exception Code for Warehouse Task,Exception Code for Warehouse Task,SCM-EWM-WOP,,basic,6,0,,top-level
-I_EWM_WHSETASKSERIALNUMBER,Serial Number for Warehouse Task,Serial Number for Warehouse Task,SCM-EWM-WOP,,basic,4,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_EWM_DELIVERYCATEGORY_2,Delivery Category,Delivery Category,SCM-EWM-DLP-2CL,Dimension,dimension,1,0,,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_DELIVERYITEMCATEGORY_2,Warehouse Delivery Item Category,Warehouse Delivery Item Category,SCM-EWM-DLP-2CL,,basic,2,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_DELIVERYITEMCATTEXT_2,Warehouse Delivery Item Category - Text,Warehouse Delivery Item Category - Text,SCM-EWM-DLP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_DELIVERYITEMTYPETEXT_2,Warehouse Delivery Item Type - Text,Warehouse Delivery Item Type - Text,SCM-EWM-DLP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_DELIVERYITEMTYPE_2,Warehouse Delivery Item Type,Warehouse Delivery Item Type,SCM-EWM-DLP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_DELIVERYTYPETEXT_2,Warehouse Delivery Type - Text,Warehouse Delivery Type - Text,SCM-EWM-DLP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_DELIVERYTYPE_2,Warehouse Delivery Type,Warehouse Delivery Type,SCM-EWM-DLP-2CL,Dimension,dimension,4,0,,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_DELIVSTSHELPERTEXT,Warehouse Delivery Status Helper - Text,Warehouse Delivery Status Helper - Text,SCM-EWM-DLP-2CL,,text,4,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_INBDELIVERYHEADER,Warehouse Inbound Delivery Header,Warehouse Inbound Delivery Header,SCM-EWM-DLP-2CL,,basic,21,0,Business Partner,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_INBDELIVERYHEADERTP,Inbound Delivery Header Interface - TP,Inbound Delivery Header Interface - TP,SCM-EWM-DLP-2CL,,basic,0,0,,top-level,yes,VDM_EWM_DLV_RAP,no
+I_EWM_INBDELIVERYITEM,Warehouse Inbound Delivery Item,Warehouse Inbound Delivery Item,SCM-EWM-DLP-2CL,,basic,86,0,Batch; WBS Element,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_INBDELIVERYITEMC_2,Inbound Delivery Item - Cube,Inbound Delivery Item - Cube,SCM-EWM-DLP-2CL,,basic,222,1,Batch; Business Partner,top-level,yes,VDM_EWM_DLV,no
+I_EWM_INBDELIVERYITEMSRLNMBR,Warehouse Inb Deliv Item Serial Number,Warehouse Inb Deliv Item Serial Number,SCM-EWM-DLP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_INBDELIVERYITEMTP,Inbound Delivery Item Interface - TP,Inbound Delivery Item Interface - TP,SCM-EWM-DLP-2CL,,basic,0,0,,top-level,yes,VDM_EWM_DLV_RAP,no
+I_EWM_INBOUNDDELIVERYTYPE_2,Warehouse Inbound Delivery Type,Warehouse Inbound Delivery Type,SCM-EWM-DLP-2CL,Dimension,dimension,4,0,,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_ODONOPARAMC_2,ODO Without Mandatory Parameters - Cube,ODO Without Mandatory Parameters - Cube,SCM-EWM-DLP-2CL,,basic,166,1,Batch; Business Partner,top-level,yes,VDM_EWM_DLV,no
+I_EWM_OUTBDELIVORDC_2,Warehouse Outbound Delivery Order - Cube,Warehouse Outbound Delivery Order - Cube,SCM-EWM-DLP-2CL,,basic,141,1,Batch; Business Partner,top-level,yes,VDM_EWM_DLV,no
+I_EWM_OUTBDELIVORDERHEADERTP,Outbound Delivery Order Header - TP,Outbound Delivery Order Header - TP,SCM-EWM-DLP-2CL,,basic,0,0,,top-level,yes,VDM_EWM_DLV_RAP,no
+I_EWM_OUTBDELIVORDERITEMTP,Outbound Delivery Order Item - TP,Outbound Delivery Order Item - TP,SCM-EWM-DLP-2CL,,basic,0,0,,top-level,yes,VDM_EWM_DLV_RAP,no
+I_EWM_OUTBDELIVORDHDR,Warehouse Outbound Delivery Order Header,Warehouse Outbound Delivery Order Header,SCM-EWM-DLP-2CL,,basic,33,0,Business Partner; Sales Organization,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_OUTBDELIVORDITEM,Warehouse Outbound Delivery Order Item,Warehouse Outbound Delivery Order Item,SCM-EWM-DLP-2CL,,basic,78,0,Batch; Sales Document; WBS Element,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_OUTBDELIVORDITEMSRLNMBR,Warehouse Outb Dlv Ord Itm Serial Number,Warehouse Outb Dlv Ord Itm Serial Number,SCM-EWM-DLP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_OUTBOUNDDELIVORDERTYPE_2,Warehouse Outbound Delivery Order Type,Warehouse Outbound Delivery Order Type,SCM-EWM-DLP-2CL,Dimension,dimension,4,0,,top-level,yes,VDM_EWM_DLV,yes
+I_EWM_PRODNMATLREQHEADER,Production Material Request Header,Production Material Request Header,SCM-EWM-DLP-2CL,,basic,21,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_PRODNMATLREQITEM,Production Material Request Item,Production Material Request Item,SCM-EWM-DLP-2CL,,basic,76,0,Batch; WBS Element,top-level,yes,VDM_EWM_DLV,no
+I_EWM_WHSEREQSTATUSTYPE,Warehouse Request Status Type,Warehouse Request Status Type,SCM-EWM-DLP-2CL,,basic,2,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_WHSEREQSTATUSTYPETEXT,Warehouse Request Status Type - Text,Warehouse Request Status Type - Text,SCM-EWM-DLP-2CL,,text,5,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_WHSEREQSTATUSVALUE,Warehouse Request Status Value,Warehouse Request Status Value,SCM-EWM-DLP-2CL,,basic,7,0,,top-level,yes,VDM_EWM_DLV,no
+I_EWM_WHSEREQSTATUSVALUETEXT,Warehouse Request Status Value - Text,Warehouse Request Status Value - Text,SCM-EWM-DLP-2CL,,text,7,0,,top-level,yes,VDM_EWM_DLV,no
+C_EWM_WHSEORDERPARAMDET,Outp Param Determination for Whse Order,Outp Param Determination for Whse Order,SCM-EWM-PRN-2CL,,basic,19,0,,top-level,yes,EWM_ADAPTER_S4_ERP_OM,no
+D_WAREHOUSEORDERTASKACTIVATED,Warehouse Task Activated,Warehouse Task Activated,SCM-EWM-WOP-2CL,,basic,0,0,,top-level,yes,VDM_EWM_CORE_RAP,no
+D_WAREHOUSEORDERTASKCANCELED,Warehouse Task Canceled,Warehouse Task Canceled,SCM-EWM-WOP-2CL,,basic,0,0,,top-level,yes,VDM_EWM_CORE_RAP,no
+D_WAREHOUSEORDERTASKCONFIRMED,Warehouse Task Confirmed,Warehouse Task Confirmed,SCM-EWM-WOP-2CL,,basic,0,0,,top-level,yes,VDM_EWM_CORE_RAP,no
+D_WAREHOUSEORDERTASKCREATED,Warehouse Task Created,Warehouse Task Created,SCM-EWM-WOP-2CL,,basic,0,0,,top-level,yes,VDM_EWM_CORE_RAP,no
+I_EWM_ACTIVITYAREATEXT_2,Warehouse Activity Area - Text,Warehouse Activity Area - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_ACTIVITYAREA_2,Warehouse Activity Area,Warehouse Activity Area,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_AVAILABLESTOCK,Available Stock,Available Stock,SCM-EWM-WOP-2CL,,basic,37,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_BINASSIGNMENTTOPSAREA,Bin Assignment to Production Supply Area,Bin Assignment to Production Supply Area,SCM-EWM-WOP-2CL,,basic,19,0,Material / Product,top-level,yes,VDM_EWM_CORE,no
+I_EWM_BUSCNTXTEXECSTEPTEXT,Business Context Execution Step - Text,Business Context Execution Step - Text,SCM-EWM-WOP-2CL,,text,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_BUSINESSCONTEXT,Business Identification,Business Identification,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_BUSINESSCONTEXTEXECSTEP,Execution Step in Business Context,Execution Step in Business Context,SCM-EWM-WOP-2CL,,basic,2,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_BUSINESSCONTEXTTEXT,Business Context - Text,Business Context - Text,SCM-EWM-WOP-2CL,,text,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_BUSINESSPARTNER,EWM Business Partner,EWM Business Partner,SCM-EWM-WOP-2CL,,basic,16,0,Business Partner,top-level,yes,VDM_EWM_CORE,no
+I_EWM_CONFWHSETASKSERIALNUMBER,Srl Number of Confirmed Warehouse Task,Srl Number of Confirmed Warehouse Task,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_EXCEPTIONCODETEXT_2,Exception Code - Text,Exception Code - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_EXCEPTIONCODE_2,Exception Code,Exception Code,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_EXECUTIONRESOURCE_2,Execution Resource,Execution Resource,SCM-EWM-WOP-2CL,,basic,10,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_FIRECONTAINMENTSCTNTEXT,Fire Containment Section - Text,Fire Containment Section - Text,SCM-EWM-WOP-2CL,,text,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_FIRECONTAINMENTSECTION,Fire Containment Section,Fire Containment Section,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_FIXEDBINASSIGNMENT,Warehouse Fixed Bin Assignment,Warehouse Fixed Bin Assignment,SCM-EWM-WOP-2CL,,basic,12,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_HANDLINGUNITHDR_2,Warehouse Handling Unit Header,Warehouse Handling Unit Header,SCM-EWM-WOP-2CL,,basic,72,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_HNDLGUNITID,Warehouse Handling Unit Identification,Warehouse Handling Unit Identification,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_MNSOFTRANSPTTYPETEXT_2,Means of Transport Type - Text,Means of Transport Type - Text,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_MNSOFTRANSPTYPE_2,Means of Transport Type,Means of Transport Type,SCM-EWM-WOP-2CL,,basic,2,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PHYSICALINVENTORYDOCTYPE,Warehouse Physical Inventory Procedure,Warehouse Physical Inventory Procedure,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PHYSICALINVENTORYITEM,Warehouse Physical Inventory Item,Warehouse Physical Inventory Item,SCM-EWM-WOP-2CL,,basic,60,0,Batch; Material / Product; WBS Element,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_PHYSINVTRYCYCLECOUNTING,Physical Inventory Cycle Counting,Physical Inventory Cycle Counting,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PHYSINVTRYITEMC,Warehouse Physical Inventory Item - Cube,Warehouse Physical Inventory Item - Cube,SCM-EWM-WOP-2CL,,basic,76,0,Batch; Material / Product; WBS Element,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PHYSINVTRYITEMROW,Row of PInv Item with Quantity in Whse,Row of PInv Item with Quantity in Whse,SCM-EWM-WOP-2CL,,basic,65,0,Batch; Material / Product; WBS Element,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_PHYSINVTRYPRIORITY,Warehouse Physical Inventory Priority,Warehouse Physical Inventory Priority,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PHYSINVTRYREASON,Warehouse Physical Inventory Reason,Warehouse Physical Inventory Reason,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PHYSSTOCKPROD,Physical Stock for Products,Physical Stock for Products,SCM-EWM-WOP-2CL,,basic,91,0,Batch; Material / Product,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_PINVITEMFLATTENEDROW,Flattened Row of PInv Item in Warehouse,Flattened Row of PInv Item in Warehouse,SCM-EWM-WOP-2CL,,basic,59,0,Batch; Material / Product; WBS Element,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_PINVITEMROWSRLNMBR,Serial Number of Whse PInv Item Row,Serial Number of Whse PInv Item Row,SCM-EWM-WOP-2CL,,basic,11,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_PINVPRIORITYTEXT,Whse Phys Inventory Priority - Text,Whse Phys Inventory Priority - Text,SCM-EWM-WOP-2CL,,text,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PINVPROCEDURETEXT,Whse Phys Inventory Procedure - Text,Whse Phys Inventory Procedure - Text,SCM-EWM-WOP-2CL,,text,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PINVREASONTEXT_2,Whse Phys Inventory Reason - Text,Whse Phys Inventory Reason - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PLANTSTORLOCMAPTOWHSE,Mapping plant and stor loc to warehouse,Mapping plant and stor loc to warehouse,SCM-EWM-WOP-2CL,,basic,6,0,Plant; Storage Location,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_PRODUCTIONSUPPLYAREA,Warehouse Production Supply Area,Warehouse Production Supply Area,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PRODUCTIONSUPPLYAREATEXT,Warehouse Production Supply Area - Text,Warehouse Production Supply Area - Text,SCM-EWM-WOP-2CL,,text,7,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_PRODUCTSTORAGETYPE,Product Storage Type,Product Storage Type,SCM-EWM-WOP-2CL,,basic,57,9,Business Partner; Material / Product,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_PRODUCTWAREHOUSE,Product Warehouse Data,Product Warehouse Data,SCM-EWM-WOP-2CL,,basic,83,6,Business Partner; Material / Product,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_QLTYINSPDOCUUID,Whse Quality Insp UUID to Quality Insp,Whse Quality Insp UUID to Quality Insp,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_RESOURCEGROUPTEXT_2,Resource Group - Text,Resource Group - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_RESOURCEGROUP_2,Resource Group,Resource Group,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STOCKTYPETEXT_2,Warehouse Stock Type - Text,Warehouse Stock Type - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STOCKTYPE_2,Warehouse Stock Type,Warehouse Stock Type,SCM-EWM-WOP-2CL,,basic,7,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STOCKUSAGE,Stock Usage,Stock Usage,SCM-EWM-WOP-2CL,,basic,2,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STOCKUSAGETEXT_2,Warehouse Stock Usage - Text,Warehouse Stock Usage - Text,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGEBINACCESSTYPE,Storage Bin Access Type,Storage Bin Access Type,SCM-EWM-WOP-2CL,Dimension,dimension,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORAGEBINACCTYPETEXT,Storage Bin Access Type - Text,Storage Bin Access Type - Text,SCM-EWM-WOP-2CL,,text,5,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORAGEBINACTYAREACUBE,Storage Bin Activity Area - Cube,Storage Bin Activity Area - Cube,SCM-EWM-WOP-2CL,,basic,81,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGEBINCUBE,Storage Bin - Cube,Storage Bin - Cube,SCM-EWM-WOP-2CL,,basic,79,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGEBINISEMPTYTEXT,Empty Storage Bin Indicator - Text,Empty Storage Bin Indicator - Text,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORAGEBINISFULLTEXT,Full Storage Bin Indicator - Text,Full Storage Bin Indicator - Text,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORAGEBINSORTING,Storage Bin Sorting,Storage Bin Sorting,SCM-EWM-WOP-2CL,,basic,8,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGEBINTYPETEXT_2,Storage Bin Type - Text,Storage Bin Type - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGEBINTYPE_2,Storage Bin Type,Storage Bin Type,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGEBIN_2,Warehouse Storage Bin,Warehouse Storage Bin,SCM-EWM-WOP-2CL,,basic,49,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGESECTIONTEXT_2,Warehouse Storage Section - Text,Warehouse Storage Section - Text,SCM-EWM-WOP-2CL,,basic,7,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGESECTION_2,Warehouse Storage Section,Warehouse Storage Section,SCM-EWM-WOP-2CL,,basic,6,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGETYPETEXT_2,Storage Type - Text,Storage Type - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORAGETYPE_2,Storage Type,Storage Type,SCM-EWM-WOP-2CL,,basic,6,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_STORBINISAVAILABLETEXT,Storage Bin Is Available Indicator - Txt,Storage Bin Is Available Indicator - Txt,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORBINISBLOCKEDTEXT,Storage Bin Is Blocked Indicator - Txt,Storage Bin Is Blocked Indicator - Txt,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORBINISUTILIZEDTEXT,Storage Bin Is Utilized Indicator - Txt,Storage Bin Is Utilized Indicator - Txt,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORBINMAXVOLISMNTNDTEXT,Storage Bin Max Volume Is Mntnd - Text,Storage Bin Max Volume Is Mntnd - Text,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORBINMAXWGTISMNTNDTEXT,Storage Bin Max Weight Is Mntnd - Text,Storage Bin Max Weight Is Mntnd - Text,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORBINPINVBLOCKTEXT,Block Indicator for Inventory - Text,Block Indicator for Inventory - Text,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORBINPUTAWAYBLOCKTEXT,Block Indicator for Putaway - Text,Block Indicator for Putaway - Text,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORBINREMOVALBLOCKTEXT,Block Indicator for Removal - Text,Block Indicator for Removal - Text,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_STORBINTOTCAPISMNTNDTEXT,Storage Bin Max Cap Is Maintained - Txt,Storage Bin Max Cap Is Maintained - Txt,SCM-EWM-WOP-2CL,,text,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_WAREHOUSEACTIVITYTEXT_2,Warehouse Activity - Text,Warehouse Activity - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAREHOUSEACTIVITY_2,Warehouse Activity,Warehouse Activity,SCM-EWM-WOP-2CL,,basic,6,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAREHOUSENUMBERTEXT_2,Warehouse Number - Text,Warehouse Number - Text,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAREHOUSENUMBER_2,Warehouse Number,Warehouse Number,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAREHOUSEORDERQUEUE_2,Warehouse Order Queue,Warehouse Order Queue,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAREHOUSEORDER_2,Warehouse Order,Warehouse Order,SCM-EWM-WOP-2CL,,basic,42,1,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_WAREHOUSEPROCESSCATEGORY,Warehouse Process Categories,Warehouse Process Categories,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAREHOUSETASK_2,Open and Confirmed Warehouse Tasks,Open and Confirmed Warehouse Tasks,SCM-EWM-WOP-2CL,,basic,142,2,Material / Product,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_WAREHOUSEWAVEC_2,Warehouse Wave - Cube,Warehouse Wave - Cube,SCM-EWM-WOP-2CL,,basic,132,1,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVECATEGORY_2,Warehouse Wave Category,Warehouse Wave Category,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVEHEADER_3,Warehouse Wave Header,Warehouse Wave Header,SCM-EWM-WOP-2CL,,basic,35,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVEITEM_3,Warehouse Wave Item,Warehouse Wave Item,SCM-EWM-WOP-2CL,,basic,27,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVERELEASEMETHODT_2,Warehouse Wave Release Method - Text,Warehouse Wave Release Method - Text,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVESTATUSTEXT_2,Warehouse Wave Status - Text,Warehouse Wave Status - Text,SCM-EWM-WOP-2CL,,basic,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVETEMPLATETEXT_3,Warehouse Wave Template - Text,Warehouse Wave Template - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVETEMPLATE_3,Warehouse Wave Template,Warehouse Wave Template,SCM-EWM-WOP-2CL,,basic,8,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVETYPETEXT_3,Warehouse Wave Type - Text,Warehouse Wave Type - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WAVETYPE_3,Warehouse Wave Type,Warehouse Wave Type,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WHSEDOCUMENTITEM,Warehouse Document Item,Warehouse Document Item,SCM-EWM-WOP-2CL,,basic,104,0,Material / Product,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WHSEORDERCUBE_2,Warehouse Order - Cube,Warehouse Order - Cube,SCM-EWM-WOP-2CL,,basic,86,2,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WHSEORDERHNDLGUNIT_2,Handling Unit for Warehouse Order,Handling Unit for Warehouse Order,SCM-EWM-WOP-2CL,,basic,17,0,Material / Product,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_WHSEORDERQUEUETEXT_2,Warehouse Order Queue - Text,Warehouse Order Queue - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WHSEPROCESSCATEGORYTEXT,Warehouse Process Category - Text,Warehouse Process Category - Text,SCM-EWM-WOP-2CL,,text,3,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WHSETASKEXCEPTIONCODE_2,Exception Code for Warehouse Task,Exception Code for Warehouse Task,SCM-EWM-WOP-2CL,,basic,6,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_WHSETASKITEMCUBE_2,Warehouse Task Item - Cube,Warehouse Task Item - Cube,SCM-EWM-WOP-2CL,,basic,231,2,Material / Product,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WHSETASKSERIALNUMBER,Serial Number for Warehouse Task,Serial Number for Warehouse Task,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,yes
+I_EWM_WRHSPROCTYPETEXT_2,Warehouse Process Type - Text,Warehouse Process Type - Text,SCM-EWM-WOP-2CL,,basic,5,0,,top-level,yes,VDM_EWM_CORE,no
+I_EWM_WRHSPROCTYPE_2,Warehouse Process Type,Warehouse Process Type,SCM-EWM-WOP-2CL,,basic,4,0,,top-level,yes,VDM_EWM_CORE,no

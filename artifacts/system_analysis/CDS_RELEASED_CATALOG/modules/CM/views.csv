@@ -1,54 +1,98 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_LEGALCATEGORYAPI01,Legal Category,Legal Category,CM-CAT,,basic,21,0,,top-level
-I_LGLCNTNTMCATTYPETEXTAPI01,Category Type - Text,Category Type - Text,CM-CAT,,basic,2,0,,top-level
-I_LEGALCONTEXTAPI01,Legal Context,Legal Context,CM-CTX,,basic,22,0,,top-level
-I_LEGALDOCUMENTAPI01,Legal Document,Legal Document,CM-DOC,,basic,18,1,,top-level
-I_LGLCNTNTMCNTNTTYPEAPI01,Document Content Type,Document Content Type,CM-DOC,,basic,2,0,,top-level
-I_LGLCNTNTMCNTNTTYPETXTAPI01,Document Content Type - Text,Document Content Type - Text,CM-DOC,,basic,3,0,,top-level
-I_LGLCNTNTMDOCSTAMPAPI01,Document Stamp Name,Document Stamp Name,CM-DOC,,basic,2,0,,top-level
-I_LGLCNTNTMDOCSTAMPTEXTAPI01,Document Stamp Name - Text,Document Stamp Name - Text,CM-DOC,,basic,3,0,,top-level
-I_LGLCNTNTMDOCSTATUSAPI01,Document Status,Document Status,CM-DOC,,basic,2,0,,top-level
-I_LGLCNTNTMDOCSTATUSTEXTAPI01,Document Status - Text,Document Status - Text,CM-DOC,,basic,3,0,,top-level
-I_LGLCNTNTMDOCTYPETEXTAPI01,Legal Document Type - Text,Legal Document Type - Text,CM-DOC,,basic,3,0,,top-level
-I_LGLCNTNTMLGLDOCSRCETXTAPI01,Legal Document Source - Text,Legal Document Source - Text,CM-DOC,,basic,3,0,,top-level
-I_LGLCNTNTMACCESSLVLAPI01,Access Level,Access Level,CM-GF,,basic,2,0,,top-level
-I_LGLCNTNTMACCESSLVLTEXTAPI01,Access Level - Text,Access Level - Text,CM-GF,,basic,3,0,,top-level
-I_LGLCNTNTMCNTXTSTATUSTXTAPI01,Context Status - Text,Context Status - Text,CM-GF,,basic,3,0,,top-level
-I_LGLCNTNTMGOVLAWAPI01,Governing Law,Governing Law,CM-GF,,basic,2,0,,top-level
-I_LGLCNTNTMGOVLAWTEXTAPI01,Governing Law - Text,Governing Law - Text,CM-GF,,basic,3,0,,top-level
-I_LGLCNTNTMMAINORGTYPETXTAPI01,Main Organisation Type - Text,Main Organisation Type - Text,CM-GF,,basic,3,0,,top-level
-I_LGLCNTNTMPROFILEAPI01,Profile,Profile,CM-GF,,basic,2,0,,top-level
-I_LGLCNTNTMPROFILETEXTAPI01,Profile - Text,Profile - Text,CM-GF,,basic,3,0,,top-level
-I_LGLCNTNTMRNWLTERMNCLAUSET,Renewal Termination Clause - Text,Renewal Termination Clause - Text,CM-GF,,basic,3,0,,top-level
-I_LEGALTRANSACTIONAPI01,Legal Transaction,Legal Transaction,CM-LT,,basic,27,0,,top-level
-I_LEGALTRANSACTIONBASE,Basic Data of Legal Transaction,Basic Data of Legal Transaction,CM-LT,,basic,17,0,,top-level
-I_LEGALTRANSACTIONHLTHTXTAPI01,Legal Transaction Status - Text,Legal Transaction Status - Text,CM-LT,,basic,3,0,,top-level
-I_LGLCNTNTMDATETYPE,Date Type,Date Type,CM-LT,,basic,3,0,,top-level
-I_LGLCNTNTMDATETYPETEXT,Date Type - Text,Date Type - Text,CM-LT,,text,3,0,,top-level
-I_LGLCNTNTMENTITYTYPE,Entity Type,Entity Type,CM-LT,,basic,2,0,,top-level
-I_LGLCNTNTMENTITYTYPETEXT,Entity Type - Text,Entity Type - Text,CM-LT,,text,3,0,,top-level
-I_LGLCNTNTMEXTCNTCTTYPE,External Contact Type,External Contact Type,CM-LT,,basic,2,0,,top-level
-I_LGLCNTNTMEXTCNTCTTYPETEXT,External Contact Type - Text,External Contact Type - Text,CM-LT,,text,3,0,,top-level
-I_LGLCNTNTMINTCNTCTTYPE,Internal Contact Type,Internal Contact Type,CM-LT,,basic,2,0,,top-level
-I_LGLCNTNTMINTCNTCTTYPETEXT,Internal Contact Type - Text,Internal Contact Type - Text,CM-LT,,text,3,0,,top-level
-I_LGLCNTNTMLINKDOBJTYPE,Linked Object Type,Linked Object Type,CM-LT,,basic,2,0,,top-level
-I_LGLCNTNTMLINKDOBJTYPETEXT,Linked Object Type - Text,Linked Object Type - Text,CM-LT,,text,3,0,,top-level
-I_LGLCNTNTMRELSHPTYPE,Relationship Type,Relationship Type,CM-LT,,basic,2,0,,top-level
-I_LGLCNTNTMRELSHPTYPETEXT,Relationship Type - Text,Relationship Type - Text,CM-LT,,text,3,0,,top-level
-I_LGLTRANSCATEGORYAPI01,Categories of Legal Transaction,Categories of Legal Transaction,CM-LT,,basic,8,0,,top-level
-I_LGLTRANSCATEGORYGROUPAPI01,Category Groups of Legal Transaction,Category Groups of Legal Transaction,CM-LT,,basic,6,0,,top-level
-I_LGLTRANSDATESAPI01,Dates of Legal Transaction,Dates of Legal Transaction,CM-LT,,basic,9,0,,top-level
-I_LGLTRANSDOCLINKAPI01,Linked Documents of Legal Transaction,Linked Documents of Legal Transaction,CM-LT,,basic,5,0,,top-level
-I_LGLTRANSENTITYAPI01,Entities of Legal Transaction,Entities of Legal Transaction,CM-LT,,basic,11,0,,top-level
-I_LGLTRANSEXTCONTACTAPI01,External Contacts of Legal Transaction,External Contacts of Legal Transaction,CM-LT,,basic,9,0,Business Partner,top-level
-I_LGLTRANSINTCONTACTAPI01,Internal Contacts of Legal Transaction,Internal Contacts of Legal Transaction,CM-LT,,basic,11,0,,top-level
-I_LGLTRANSLINKEDOBJECTAPI01,Linked Objects of Legal Transaction,Linked Objects of Legal Transaction,CM-LT,,basic,9,0,,top-level
-I_LGLTRANSMANDFLAGTXTAPI01,Mandatory Flag - Text,Mandatory Flag - Text,CM-LT,,basic,3,0,,top-level
-I_LGLTRANSPARENTCATEGORYAPI01,Parent Categories of Legal Transaction,Parent Categories of Legal Transaction,CM-LT,,basic,10,0,,top-level
-I_LGLTRANSRELATIONSHIPAPI01,Relationships of Legal Transaction,Relationships of Legal Transaction,CM-LT,,basic,9,0,,top-level
-I_LGLTRANSRNWLTERMNAPI01,Lifecycle of Legal Transaction,Lifecycle of Legal Transaction,CM-LT,,basic,14,0,,top-level
-I_LGLTRANSSRCETXTAPI01,Legal Transaction Source - Text,Legal Transaction Source - Text,CM-LT,,basic,3,0,,top-level
-I_LGLTRANSWRKFLWEMLDEADLINE,Email Template for Workflow Deadline,Email Template for Workflow Deadline,CM-LT,,basic,23,0,,top-level
-I_LGLTRANSWRKFLWINSTCE,Data for Workflow Instance,Data for Workflow Instance,CM-LT,,basic,21,0,,top-level
-I_LGLTRANSWRKFLWSTARTEDTASKDET,Legal Transaction Workflow Task Details,Legal Transaction Workflow Task Details,CM-LT,,basic,14,0,,top-level
-I_LGLCNTNTMGMTWRKFLWLGLTRANS,Leading Object for Legal Tasks,Leading Object for Legal Tasks,CM-TSK,,basic,10,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_LEGALCATEGORYAPI01,Legal Category,Legal Category,CM-CAT-2CL,,basic,21,0,,top-level,yes,VDM_LCM_CAT,yes
+I_LGLCNTNTMCATTYPETEXTAPI01,Category Type - Text,Category Type - Text,CM-CAT-2CL,,basic,2,0,,top-level,yes,VDM_LCM_CAT,yes
+I_LEGALCONTEXTAPI01,Legal Context,Legal Context,CM-CTX-2CL,,basic,22,0,,top-level,yes,VDM_LCM_CTX,yes
+I_LEGALCONTEXTCATEGORYGROUPTP,Legal Context Category group - TP,Legal Context Category group - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTCATEGORYTP,Legal Context Categories - TP,Legal Context Categories - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTDATETP,Legal Context Dates - TP,Legal Context Dates - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTENTITYTP,Legal Context Entity - TP,Legal Context Entity - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTEXTCONTACTTP,Legal Context External Contacts - TP,Legal Context External Contacts - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTINTCONTACTTP,Legal Context Internal Contacts - TP,Legal Context Internal Contacts - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTLINKEDOBJECTTP,Legal Context Linked Objects - TP,Legal Context Linked Objects - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTPARENTCATEGORYTP,Legal Context Parent Category - TP,Legal Context Parent Category - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTRELATIONSHIPTP,Legal Context Relationships - TP,Legal Context Relationships - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+I_LEGALCONTEXTTP,Legal Contexts - TP,Legal Contexts - TP,CM-CTX-2CL,,basic,0,0,,top-level,yes,RAP_LCM_CTX,no
+D_LEGALDOCUPDATEPAPERTYPEP,Legal document Paper Type,Legal document Paper Type,CM-DOC-2CL,,basic,0,0,,top-level,yes,APPL_LCM_DOC,no
+D_LGLDOCCREATEFILEFROMVRTLDOCP,Legal Doc Create File From Virtual Doc,Legal Doc Create File From Virtual Doc,CM-DOC-2CL,,basic,0,0,,top-level,yes,APPL_LCM_DOC,no
+D_LGLDOCCREATEVRTLDOCP,Legal Doc Create Virtual Docu Act Param,Legal Doc Create Virtual Docu Act Param,CM-DOC-2CL,,basic,0,0,,top-level,yes,APPL_LCM_DOC,no
+D_LGLDOCCRTELGLDOCWITHFILEP,Create Legal Doc With File Action Param,Create Legal Doc With File Action Param,CM-DOC-2CL,,basic,0,0,,top-level,yes,APPL_LCM_DOC,no
+D_LGLDOCUPLDFILEONVRTLDOCP,Legal Doc Upload File On Virtual Doc,Legal Doc Upload File On Virtual Doc,CM-DOC-2CL,,basic,0,0,,top-level,yes,APPL_LCM_DOC,no
+I_LEGALDOCAGREEMENTTP,Legal Document Agreement - TP,Legal Document Agreement - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCCATEGORYTP,Legal Document Category - TP,Legal Document Category - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCOBLGNENTITYTP,Legal Document Obligation Entities - TP,Legal Document Obligation Entities - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCOBLGNRCPNTTP,Legal Document Obligation Recipient - TP,Legal Document Obligation Recipient - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCOBLGNREMTP,Legal Document Obligation Reminders - TP,Legal Document Obligation Reminders - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCOBLIGATIONTP,Legal Document Obligations - TP,Legal Document Obligations - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCPARCATEGORYTP,Legal Document Parent Category - TP,Legal Document Parent Category - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCSTAMPTP,Legal Document Stamp - TP,Legal Document Stamp - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCTMPLINFOTP,Legal Document Template Info - TP,Legal Document Template Info - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LEGALDOCUMENTAPI01,Legal Document,Legal Document,CM-DOC-2CL,,basic,18,1,,top-level,yes,VDM_LCM_DOC,yes
+I_LEGALDOCUMENTTP,Legal Document - TP,Legal Document - TP,CM-DOC-2CL,,basic,0,0,,top-level,yes,RAP_LCM_DOC,no
+I_LGLCNTNTMCNTNTTYPEAPI01,Document Content Type,Document Content Type,CM-DOC-2CL,,basic,2,0,,top-level,yes,VDM_LCM_DOC,yes
+I_LGLCNTNTMCNTNTTYPETXTAPI01,Document Content Type - Text,Document Content Type - Text,CM-DOC-2CL,,basic,3,0,,top-level,yes,VDM_LCM_DOC,yes
+I_LGLCNTNTMDOCSTAMPAPI01,Document Stamp Name,Document Stamp Name,CM-DOC-2CL,,basic,2,0,,top-level,yes,VDM_LCM_DOC,yes
+I_LGLCNTNTMDOCSTAMPTEXTAPI01,Document Stamp Name - Text,Document Stamp Name - Text,CM-DOC-2CL,,basic,3,0,,top-level,yes,VDM_LCM_DOC,yes
+I_LGLCNTNTMDOCSTATUSAPI01,Document Status,Document Status,CM-DOC-2CL,,basic,2,0,,top-level,yes,VDM_LCM_DOC,yes
+I_LGLCNTNTMDOCSTATUSTEXTAPI01,Document Status - Text,Document Status - Text,CM-DOC-2CL,,basic,3,0,,top-level,yes,VDM_LCM_DOC,yes
+I_LGLCNTNTMDOCTYPETEXTAPI01,Legal Document Type - Text,Legal Document Type - Text,CM-DOC-2CL,,basic,3,0,,top-level,yes,VDM_LCM_DOC,yes
+I_LGLCNTNTMLGLDOCSRCETXTAPI01,Legal Document Source - Text,Legal Document Source - Text,CM-DOC-2CL,,basic,3,0,,top-level,yes,VDM_LCM_DOC,yes
+I_LGLCNTNTMACCESSLVLAPI01,Access Level,Access Level,CM-GF-2CL,,basic,2,0,,top-level,yes,VDM_LCM_COMMON,yes
+I_LGLCNTNTMACCESSLVLTEXTAPI01,Access Level - Text,Access Level - Text,CM-GF-2CL,,basic,3,0,,top-level,yes,VDM_LCM_COMMON,yes
+I_LGLCNTNTMCNTXTSTATUSTXTAPI01,Context Status - Text,Context Status - Text,CM-GF-2CL,,basic,3,0,,top-level,yes,VDM_LCM_COMMON,yes
+I_LGLCNTNTMGOVLAWAPI01,Governing Law,Governing Law,CM-GF-2CL,,basic,2,0,,top-level,yes,VDM_LCM_COMMON,yes
+I_LGLCNTNTMGOVLAWTEXTAPI01,Governing Law - Text,Governing Law - Text,CM-GF-2CL,,basic,3,0,,top-level,yes,VDM_LCM_COMMON,yes
+I_LGLCNTNTMMAINORGTYPETXTAPI01,Main Organisation Type - Text,Main Organisation Type - Text,CM-GF-2CL,,basic,3,0,,top-level,yes,VDM_LCM_COMMON,yes
+I_LGLCNTNTMPROFILEAPI01,Profile,Profile,CM-GF-2CL,,basic,2,0,,top-level,yes,VDM_LCM_COMMON,yes
+I_LGLCNTNTMPROFILETEXTAPI01,Profile - Text,Profile - Text,CM-GF-2CL,,basic,3,0,,top-level,yes,VDM_LCM_COMMON,yes
+I_LGLCNTNTMRNWLTERMNCLAUSET,Renewal Termination Clause - Text,Renewal Termination Clause - Text,CM-GF-2CL,,basic,3,0,,top-level,yes,VDM_LCM_COMMON,yes
+D_LGLCNTNTMDOCLINKOBJKEYCRTEP,Generate linked object key,Generate linked object key,CM-INT-2CL,,basic,0,0,,top-level,yes,APPL_LCM_ICRTS,no
+D_LGLCNTNTMDOCLINKOBJKEYCRTER,Generate linked object key result,Generate linked object key result,CM-INT-2CL,,basic,0,0,,top-level,yes,APPL_LCM_ICRTS,no
+D_LGLTRANSCANCELTSKGRPP,LegalTrans Cancel TaskGroup Action Param,LegalTrans Cancel TaskGroup Action Param,CM-LT-2CL,,basic,0,0,,top-level,yes,APPL_LCM_LT,no
+D_LGLTRANSRESTARTLGLTRANSPHSEP,Legal Trans Restart Phase Action Param,Legal Trans Restart Phase Action Param,CM-LT-2CL,,basic,0,0,,top-level,yes,APPL_LCM_LT,no
+D_LGLTRANSSTRTLGLTRANSPHSEP,Legal Trans Start Phase Action Parameter,Legal Trans Start Phase Action Parameter,CM-LT-2CL,,basic,0,0,,top-level,yes,APPL_LCM_LT,no
+D_LGLTRANSTRGGRLGLTRANSTSKGRPP,Trigger LegalTrans TaskGroup Actn Param,Trigger LegalTrans TaskGroup Actn Param,CM-LT-2CL,,basic,0,0,,top-level,yes,APPL_LCM_LT,no
+I_LEGALTRANSACTIONAPI01,Legal Transaction,Legal Transaction,CM-LT-2CL,,basic,27,0,,top-level,yes,VDM_LCM_LT,yes
+I_LEGALTRANSACTIONBASE,Basic Data of Legal Transaction,Basic Data of Legal Transaction,CM-LT-2CL,,basic,17,0,,top-level,yes,VDM_LCM_LT,yes
+I_LEGALTRANSACTIONHLTHTXTAPI01,Legal Transaction Status - Text,Legal Transaction Status - Text,CM-LT-2CL,,basic,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LEGALTRANSACTIONREMINDERTP_2,Legal Transaction Reminder - TP,Legal Transaction Reminder - TP,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSACTIONTP_2,Legal Transactions - TP,Legal Transactions - TP,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSCATEGORYGROUPTP_2,Legal Transaction Category Groups,Legal Transaction Category Groups,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSCATEGORYTP_2,Legal Transaction Categories,Legal Transaction Categories,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSDATETP_2,Legal Transaction Dates,Legal Transaction Dates,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSDOCLINKTP_2,Legal Transaction Linked Documents,Legal Transaction Linked Documents,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSENTITYTP_2,Legal Transaction Entities,Legal Transaction Entities,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSEXTCONTACTTP_2,Legal Transaction External Contacts,Legal Transaction External Contacts,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSINTCONTACTTP_2,Legal Transaction Internal Contacts,Legal Transaction Internal Contacts,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSLINKEDOBJECTSTP_2,Legal Transaction Linked Objects,Legal Transaction Linked Objects,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSPARENTCATTP_2,Legal Transaction Parent Categories,Legal Transaction Parent Categories,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSRELATIONSHIPTP_2,Legal Transaction Relationships,Legal Transaction Relationships,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LEGALTRANSRNWLANDTERMNTP_2,Legal Transaction Rnwl and Terminations,Legal Transaction Rnwl and Terminations,CM-LT-2CL,,basic,0,0,,top-level,yes,RAP_LCM_LT,no
+I_LGLCNTNTMDATETYPE,Date Type,Date Type,CM-LT-2CL,,basic,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMDATETYPETEXT,Date Type - Text,Date Type - Text,CM-LT-2CL,,text,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMENTITYTYPE,Entity Type,Entity Type,CM-LT-2CL,,basic,2,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMENTITYTYPETEXT,Entity Type - Text,Entity Type - Text,CM-LT-2CL,,text,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMEXTCNTCTTYPE,External Contact Type,External Contact Type,CM-LT-2CL,,basic,2,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMEXTCNTCTTYPETEXT,External Contact Type - Text,External Contact Type - Text,CM-LT-2CL,,text,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMINTCNTCTTYPE,Internal Contact Type,Internal Contact Type,CM-LT-2CL,,basic,2,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMINTCNTCTTYPETEXT,Internal Contact Type - Text,Internal Contact Type - Text,CM-LT-2CL,,text,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMLINKDOBJTYPE,Linked Object Type,Linked Object Type,CM-LT-2CL,,basic,2,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMLINKDOBJTYPETEXT,Linked Object Type - Text,Linked Object Type - Text,CM-LT-2CL,,text,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMRELSHPTYPE,Relationship Type,Relationship Type,CM-LT-2CL,,basic,2,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMRELSHPTYPETEXT,Relationship Type - Text,Relationship Type - Text,CM-LT-2CL,,text,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSCATEGORYAPI01,Categories of Legal Transaction,Categories of Legal Transaction,CM-LT-2CL,,basic,8,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSCATEGORYGROUPAPI01,Category Groups of Legal Transaction,Category Groups of Legal Transaction,CM-LT-2CL,,basic,6,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSDATESAPI01,Dates of Legal Transaction,Dates of Legal Transaction,CM-LT-2CL,,basic,9,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSDOCLINKAPI01,Linked Documents of Legal Transaction,Linked Documents of Legal Transaction,CM-LT-2CL,,basic,5,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSENTITYAPI01,Entities of Legal Transaction,Entities of Legal Transaction,CM-LT-2CL,,basic,11,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSEXTCONTACTAPI01,External Contacts of Legal Transaction,External Contacts of Legal Transaction,CM-LT-2CL,,basic,9,0,Business Partner,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSINTCONTACTAPI01,Internal Contacts of Legal Transaction,Internal Contacts of Legal Transaction,CM-LT-2CL,,basic,11,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSLINKEDOBJECTAPI01,Linked Objects of Legal Transaction,Linked Objects of Legal Transaction,CM-LT-2CL,,basic,9,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSMANDFLAGTXTAPI01,Mandatory Flag - Text,Mandatory Flag - Text,CM-LT-2CL,,basic,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSPARENTCATEGORYAPI01,Parent Categories of Legal Transaction,Parent Categories of Legal Transaction,CM-LT-2CL,,basic,10,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSRELATIONSHIPAPI01,Relationships of Legal Transaction,Relationships of Legal Transaction,CM-LT-2CL,,basic,9,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSRNWLTERMNAPI01,Lifecycle of Legal Transaction,Lifecycle of Legal Transaction,CM-LT-2CL,,basic,14,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSSRCETXTAPI01,Legal Transaction Source - Text,Legal Transaction Source - Text,CM-LT-2CL,,basic,3,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSWRKFLWEMLDEADLINE,Email Template for Workflow Deadline,Email Template for Workflow Deadline,CM-LT-2CL,,basic,23,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSWRKFLWINSTCE,Data for Workflow Instance,Data for Workflow Instance,CM-LT-2CL,,basic,21,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLTRANSWRKFLWSTARTEDTASKDET,Legal Transaction Workflow Task Details,Legal Transaction Workflow Task Details,CM-LT-2CL,,basic,14,0,,top-level,yes,VDM_LCM_LT,yes
+I_LGLCNTNTMGMTWRKFLWLGLTRANS,Leading Object for Legal Tasks,Leading Object for Legal Tasks,CM-TSK-2CL,,basic,10,0,,top-level,yes,VDM_LCM_TSK,yes

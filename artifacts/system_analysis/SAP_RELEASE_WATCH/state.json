@@ -1,0 +1,38 @@
+{
+ "checked": "2026-09-25",
+ "hub": {
+  "downloaded": "2026-09-25",
+  "main_modified": "2026-09-10",
+  "main_version": "2608.1",
+  "packages": {
+   "S4HANACloudABAPPlatform": "2608.1",
+   "S4HANACloudBADI": "2608.1",
+   "S4HANACloudBOInterface": "2608.1",
+   "SAPS4HANACloud": "2608.1",
+   "SAPS4HANACloudBusinessEvents": "2608.1",
+   "SAPS4HANACloudCDSViewsforCrossApplications": "2608.1",
+   "SAPS4HANACloudCDSViewsforDatabaseDataManagement": "2608.1",
+   "SAPS4HANACloudCDSViewsforHumanResources": "2608.1",
+   "SAPS4HANACloudCDSViewsforManufacturing": "2608.1",
+   "SAPS4HANACloudCDSViewsforRDEngineering": "2608.1",
+   "SAPS4HANACloudCDSViewsforSales": "2608.1",
+   "SAPS4HANACloudCDSViewsforSourcingProcurement": "2608.1",
+   "SAPS4HANACloudIntegrationwithSAPFieldServiceManagement": "2608",
+   "SAPS4HANACloudforAccountingandFinancialClose": "2608.1",
+   "SAPS4HANACloudforContractAccounting": "2608.1",
+   "SAPS4HANACloudforCountryRegionSpecificFunctionsforFinance": "2608.1",
+   "SAPS4HANACloudforFinancialOperations": "2608.1",
+   "SAPS4HANACloudforFinancialServices": "2608.1",
+   "SAPS4HANACloudforGroupReporting": "2608.1",
+   "SAPS4HANACloudforInternationalTrade": "2608.1",
+   "SAPS4HANACloudforProductLifecycleManagement": "2608.1",
+   "SAPS4HANACloudforSupplyChain": "2608.1",
+   "SAPS4HANACloudforWarrantyManagement": "2608.1"
+  }
+ },
+ "objects": {
+  "downloaded": "2026-09-25",
+  "message": "PUC update with latest info (#188)",
+  "sap_last_update": "2026-09-04"
+ }
+}

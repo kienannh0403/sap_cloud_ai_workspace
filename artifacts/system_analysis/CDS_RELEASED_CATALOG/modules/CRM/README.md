@@ -1,19 +1,29 @@
 # CRM
 
-Generated 2026-09-21 from `.claude/Documents/CDSView_Released_updated (1).xlsx` by `build_catalog.py`. Do not hand-edit; re-run the script.
+Generated 2026-09-25 by `build_catalog.py` from SAP's official release list (`sap_official/`, SAP update 2026-09-04) + descriptions read on tenant 080 + the user's xlsx. Do not hand-edit; re-run the script.
 
 Nhóm còn lại của module `CRM` (không thuộc phân hệ ưu tiên nào trong Sheet1).
 
-**107 view** · data category: (none) 55, Dimension 37, Fact 9, Cube 6 · loại: dimension 37, text 37, basic 17, fact 9, cube 6, value_help 1 · 14 view có field DEPRECATED/DECOMMISSIONED.
+**315 view** · data category: (none) 263, Dimension 37, Fact 9, Cube 6 · loại: basic 219, text 39, dimension 37, fact 9, cube 6, value_help 5 · 18 view có field DEPRECATED/DECOMMISSIONED · 208 view mới so với file xlsx của user · 0 view chưa có trên tenant 080.
+
+> Cột `n_fields`/`key_entities` chỉ có cho view nằm trong sheet Fields của xlsx; view mới = 0/rỗng (không phải view không có field). Đọc DDLS để biết field.
 
 ## Component trong nhóm
 
 | Component | Số view | Cách gán |
 |---|---:|---|
-| CRM-S4-ANA-CDS | 10 | top-level |
-| CRM-S4-BF-CM | 4 | top-level |
-| CRM-S4-REP-RFW | 90 | top-level |
-| CRM-S4-SRV-SVO-FIO | 3 | top-level |
+| CRM-S4-ANA-BI-2CL | 6 | top-level |
+| CRM-S4-ANA-CDS-2CL | 10 | top-level |
+| CRM-S4-BF-CM-2CL | 4 | top-level |
+| CRM-S4-BTX-2CL | 18 | top-level |
+| CRM-S4-REP-RFW | 103 | top-level |
+| CRM-S4-SOL-SLO | 46 | top-level |
+| CRM-S4-SRV-CTR-2CL | 32 | top-level |
+| CRM-S4-SRV-MC-2CL | 2 | top-level |
+| CRM-S4-SRV-SCO-2CL | 22 | top-level |
+| CRM-S4-SRV-SVO-2CL | 34 | top-level |
+| CRM-S4-SRV-SVQ-2CL | 24 | top-level |
+| CRM-S4-SRV-SVT-2CL | 14 | top-level |
 
 ## View chính (heuristic: bỏ TEXT/value help, xếp theo số field)
 
@@ -21,58 +31,60 @@ Nhóm còn lại của module `CRM` (không thuộc phân hệ ưu tiên nào tr
 |---|---|---|---|---:|
 | I_SERVICEDOCUMENTITEMENHCD | Service Transaction Item Enhanced | CRM-S4-REP-RFW | Dimension | 409 |
 | I_SERVICEDOCUMENTITEM | Service Transaction Item | CRM-S4-REP-RFW | Dimension | 386 |
+| I_SERVICEDOCUMENTITEM_2 | Service Transaction Item v2 | CRM-S4-REP-RFW |  | 263 |
 | I_SERVICEDOCUMENTENHCD | Service Transaction Enhanced | CRM-S4-REP-RFW | Dimension | 197 |
 | I_SERVICEDOCUMENT | Service Transaction | CRM-S4-REP-RFW | Dimension | 183 |
+| I_BUSSOLUTIONORDERITEMENHCD | Solution Order Item Enhanced | CRM-S4-REP-RFW |  | 171 |
+| I_BUSINESSSOLUTIONORDERITEM | Solution Order Item | CRM-S4-REP-RFW |  | 160 |
+| C_SERVICEORDERITEMDEX | Data Extraction for Service Order | CRM-S4-ANA-BI-2CL |  | 147 |
+| C_SERVICECONTRACTITEMDEX | Data Extraction for Service Contract | CRM-S4-ANA-BI-2CL |  | 142 |
 | I_SERVICECONTRACTITEMENHCD | Service Contract Item Enhanced | CRM-S4-REP-RFW |  | 137 |
+| I_SERVICEDOCUMENT_2 | Service Transaction v2 | CRM-S4-REP-RFW |  | 134 |
 | I_SRVCDOCITEMBYDOCUMENTTYPE | Srvc Transaction Item by Transac Type | CRM-S4-REP-RFW | Dimension | 127 |
+| C_BUSINESSSOLUTIONORDERITEMDEX | Data Extraction for Bussiness Solution Order | CRM-S4-ANA-BI-2CL |  | 125 |
 | I_SERVICECONTRACTITEM | Service Contract Item | CRM-S4-REP-RFW |  | 123 |
+| C_SERVICECONFIRMATIONITEMDEX | Data Extraction for Service Confirmation | CRM-S4-ANA-BI-2CL |  | 118 |
 | I_SRVCDOCBYDOCUMENTTYPE | Service Transaction by Transaction Type | CRM-S4-REP-RFW | Dimension | 109 |
 | I_SERVICECONTRACTENHCD | Service Contract Enhanced | CRM-S4-REP-RFW |  | 93 |
 | I_SERVICECONTRACT | Service Contract | CRM-S4-REP-RFW |  | 84 |
-| I_SERVICEORDERCUBE_2 | Service Order - Cube | CRM-S4-ANA-CDS | Cube | 70 |
-| I_UPCGSRVCCONTRITEMCUBE | Upcoming Service Contract Item - Cube | CRM-S4-ANA-CDS | Cube | 70 |
-| I_BUSSOLNORDITMBASICFINANCIAL | Solution Order Item for Fin Reporting | CRM-S4-ANA-CDS | Dimension | 69 |
-| I_SERVICECONTRACTCUBE_2 | Service Contract - Cube | CRM-S4-ANA-CDS | Cube | 68 |
-| I_SRVCDOCITEMPRICEELEMENT | Service Transaction Item Pricing Element | CRM-S4-REP-RFW |  | 68 |
-| I_SRVCCONTRITEMPRICEELEMENT | Service Contract Item Pricing Element | CRM-S4-REP-RFW |  | 66 |
-| I_BSORDGLACCTLINEITEMCUBE | GL Account Item for Soln Order - Cube | CRM-S4-ANA-CDS | Cube | 61 |
-| I_BUSSOLNORDITMFINANCIALCUBE | Solution Order Item Financials - Cube | CRM-S4-ANA-CDS | Cube | 61 |
-| I_BUSSOLNORDBASICFINANCIAL | Solution Order for Financial Reporting | CRM-S4-ANA-CDS | Dimension | 49 |
-| I_BUSINESSSOLUTIONORDERCUBE | Solution Order - Cube | CRM-S4-ANA-CDS | Cube | 39 |
+| I_SERVICEORDERCUBE_2 | Service Order - Cube | CRM-S4-ANA-CDS-2CL | Cube | 70 |
+| I_UPCGSRVCCONTRITEMCUBE | Upcoming Service Contract Item - Cube | CRM-S4-ANA-CDS-2CL | Cube | 70 |
 
 ## Entity nghiệp vụ xuất hiện (từ data element, ngưỡng >= 2 view)
 
 | Tier | Entity | Số view |
 |---|---|---:|
-| ORG | Sales Organization | 20 |
-| ORG | Sales Group | 19 |
-| ORG | Sales Office | 19 |
-| MASTER | Material / Product | 8 |
-| MASTER | WBS Element | 8 |
-| ORG | Controlling Area | 6 |
-| ORG | Profit Center | 6 |
-| DOC | Document Condition (pricing) | 5 |
-| MASTER | Equipment | 2 |
+| ORG | Sales Organization | 32 |
+| ORG | Sales Group | 31 |
+| ORG | Sales Office | 31 |
+| MASTER | Material / Product | 17 |
+| ORG | Controlling Area | 13 |
+| ORG | Profit Center | 13 |
+| MASTER | WBS Element | 12 |
+| MASTER | Equipment | 8 |
+| MASTER | Cost Center | 6 |
+| ORG | Plant | 6 |
+| DOC | Document Condition (pricing) | 6 |
+| CONFIG | Tax Code | 3 |
+| MASTER | Business Partner | 2 |
+| ORG | Company Code | 2 |
 | MASTER | Batch | 2 |
-| MASTER | Cost Center | 2 |
-| ORG | Plant | 2 |
-| CONFIG | Tax Code | 2 |
 
 ## Phân hệ liên quan (chung entity)
 
 | Phân hệ | DOC | MASTER | ORG | Entity chung (DOC / MASTER) |
 |---|---:|---:|---:|---|
+| SD-BIL_Billing | 1 | 5 | 7 | Document Condition (pricing), Batch, Business Partner, Cost Center, Material / Product, WBS Element |
+| SD_other | 1 | 5 | 7 | Document Condition (pricing), Batch, Business Partner, Cost Center, Material / Product, WBS Element |
+| SD-SLS_Sales | 1 | 5 | 6 | Document Condition (pricing), Batch, Business Partner, Cost Center, Material / Product, WBS Element |
+| MM-PUR_Purchasing | 1 | 5 | 4 | Document Condition (pricing), Batch, Business Partner, Cost Center, Material / Product, WBS Element |
 | LE | 1 | 4 | 6 | Document Condition (pricing), Batch, Cost Center, Material / Product, WBS Element |
-| SD-SLS_Sales | 1 | 4 | 6 | Document Condition (pricing), Batch, Cost Center, Material / Product, WBS Element |
-| MM-PUR_Purchasing | 1 | 4 | 3 | Document Condition (pricing), Batch, Cost Center, Material / Product, WBS Element |
-| LO_other | 1 | 3 | 5 | Document Condition (pricing), Batch, Equipment, Material / Product |
-| QM | 0 | 5 | 4 | Batch, Cost Center, Equipment, Material / Product, WBS Element |
-| SD_other | 0 | 4 | 5 | Batch, Cost Center, Material / Product, WBS Element |
-| FI-GL_General-Ledger | 0 | 4 | 4 | Cost Center, Equipment, Material / Product, WBS Element |
-| MM-IM_Inventory-Management | 0 | 4 | 3 | Batch, Cost Center, Material / Product, WBS Element |
+| LO_other | 1 | 4 | 6 | Document Condition (pricing), Batch, Business Partner, Equipment, Material / Product |
+| FI_other | 0 | 5 | 5 | Batch, Business Partner, Cost Center, Material / Product, WBS Element |
+| QM | 0 | 5 | 5 | Batch, Cost Center, Equipment, Material / Product, WBS Element |
 
 ## Cách dùng
 
 1. Tìm view trong `views.csv` (cột `key_entities` cho biết view chứa Customer / Material / Company Code...).
-2. View nằm trong file = nguồn user cung cấp là *released*; lần đầu dùng vẫn verify trên hệ thống (`SAP(action=read, target=DDLS <tên>)`) trước khi đưa vào TS.
+2. Mọi view ở đây là *released* theo danh sách chính thức của SAP. Cột `in_080 = no` → tenant 080 chưa có view đó (release mới hơn tenant), đừng dùng. Lần đầu dùng vẫn đọc `SAP(action=read, target=DDLS <tên>)` trước khi đưa vào TS.
 3. Không tìm thấy ở đây thì mới ra các folder liên quan (bảng trên), rồi mới tra ngoài.

@@ -1,10 +1,64 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_DOCUMENTBOMLINK,Document Link for Bill of Material,Document Link for Bill of Material,LO-MD-BOM,,basic,7,0,,component
-I_EQUIPMENTBOMLINK,Equipment to BOM Link,Equipment to BOM Link,LO-MD-BOM,,basic,7,0,Equipment; Plant,component
-I_FUNCTIONALLOCBOMLINK,Link Between Functional Location and BOM,Link Between Functional Location and BOM,LO-MD-BOM,,basic,7,0,Plant,component
-I_MATERIALBOMLINK,Material Link for Bill of Material,Material Link for Bill of Material,LO-MD-BOM,Fact,fact,13,0,Material / Product; Plant,component
-I_MATERIALBOMLINKDEX,Data Extraction MAST,Data Extraction MAST,LO-MD-BOM,Fact,fact,0,0,,component
-I_PROJECTBOMLINK,Work Breakdown Structure Link for BOM,Work Breakdown Structure Link for BOM,LO-MD-BOM,,basic,8,0,Material / Product; Plant,component
-I_SALESORDERBOMLINK,Sales Order Link for BOM,Sales Order Link for BOM,LO-MD-BOM,,basic,9,0,Material / Product; Plant,component
-I_SALESORDERBOMLINKDEX,Data extraction for SO bomlink,Data extraction for SO bomlink,LO-MD-BOM,Fact,fact,0,0,,component
-I_STANDARDBOMLINK,Standard Link for BOM,Standard Link for BOM,LO-MD-BOM,,basic,7,0,Plant,component
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+C_BOMMATERIALVH,Material,Material,LO-MD-BOM-2CL,,value_help,9,0,Material / Product,component,yes,CS_MODEL,no
+D_BILLOFMATERIALCOMPAREBOMP,Parameters for BOM Comparison,Parameters for BOM Comparison,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BILLOFMATERIALCOMPAREBOMR,Result of a Bill of Material Comparison,Result of a Bill of Material Comparison,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BILLOFMATERIALEXPLODEBOMP,Parameters for BOM Explosion,Parameters for BOM Explosion,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+D_BILLOFMATERIALEXPLODEBOMR,Result of a Bill of Material Explosion,Result of a Bill of Material Explosion,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+D_BILLOFMATERIALGETCOMPAREFLDR,Bill of Material Comparison fields,Bill of Material Comparison fields,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BILLOFMATERIALORDEXPLODEBOMP,Parameters for a Sales Order Bill of Material Explosion,Parameters for a Sales Order Bill of Material Explosion,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+D_BILLOFMATERIALORDEXPLODEBOMR,Result for a Sales Order Bill of Material Explosion,Result for a Sales Order Bill of Material Explosion,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+D_BILLOFMATERIALUNASSIGNPLANTR,BOM unassign plant result,BOM unassign plant result,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+D_BOMASSIGNPLANTP,Parameters for Assign Plant,Parameters for Assign Plant,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+D_BOMCOMPAREBOM1VERSUSBOM2P,Parameters for BOM1 VS BOM2,Parameters for BOM1 VS BOM2,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BOMCOMPAREBOM1VERSUSBOM2R,Result of a BOM1 VS BOM2,Result of a BOM1 VS BOM2,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BOMCOMPAREBOMCOMPONENTSP,Parameters for BOM Comparison details,Parameters for BOM Comparison details,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BOMCOMPAREBOMCOMPONENTSR,Result for BOM Comparison details,Result for BOM Comparison details,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BOMDELCHANGENOOUTPARAMETER,BOM deletion with change number result,BOM deletion with change number result,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+D_BOMGETWHEREUSEDMATERIALP,Parameters for material where-used list,Parameters for material where-used list,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BOMGETWHEREUSEDMATERIALR,Result for material where-used list,Result for material where-used list,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL,no
+D_BOMITMDELEWITHCHANGENUMBERP,Delete BOM Item with Change Number Parameter Entity,Delete BOM Item with Change Number Parameter Entity,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+I_BILLOFMATERIALHEADERDEX_2,Data Extraction for BOM Header,Data Extraction for BOM Header,LO-MD-BOM-2CL,,basic,40,0,,component,yes,CS_MODEL,no
+I_BILLOFMATERIALITEMBASIC,Bill of Material Item Details,Bill of Material Item Details,LO-MD-BOM-2CL,,basic,97,0,Material Group; Purchasing Organization; Supplier,component,yes,CS_MODEL,no
+I_BILLOFMATERIALITEMCATEGORY,Bill of Material Item Category,Bill of Material Item Category,LO-MD-BOM-2CL,,basic,5,0,,component,yes,CS_MODEL,no
+I_BILLOFMATERIALITEMDEX_3,Data Extraction for BOM Item,Data Extraction for BOM Item,LO-MD-BOM-2CL,,basic,98,0,Material Group; Purchasing Organization,component,yes,CS_MODEL,no
+I_BILLOFMATERIALITEMTP_2,Bill Of Material Item - TP,Bill Of Material Item - TP,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+I_BILLOFMATERIALITEMTP_3,Bill Of Material Item - TP,Bill Of Material Item - TP,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_RAP,no
+I_BILLOFMATERIALSTATUS,Bill Of Material Status,Bill Of Material Status,LO-MD-BOM-2CL,,basic,2,0,,component,yes,CS_MODEL,no
+I_BILLOFMATERIALSTATUSTEXT,Bill Of Material Status - Text,Bill Of Material Status - Text,LO-MD-BOM-2CL,,text,4,0,,component,yes,CS_MODEL,no
+I_BILLOFMATERIALSUBITEMSBASIC,Bill of Material Sub items Details,Bill of Material Sub items Details,LO-MD-BOM-2CL,,basic,9,0,,component,yes,CS_MODEL,no
+I_BILLOFMATERIALSUBITEMTP_2,Bill of Material Sub Item,Bill of Material Sub Item,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+I_BILLOFMATERIALSUBITEMTP_3,Bill of Material Sub Item - TP,Bill of Material Sub Item - TP,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_RAP,no
+I_BILLOFMATERIALTP_2,Bill of Material - TP,Bill of Material - TP,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+I_BILLOFMATERIALTP_3,Bill of Material - TP,Bill of Material - TP,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_RAP,no
+I_BILLOFMATERIALUSAGESTDVH,Bill Of Material Usage,Bill Of Material Usage,LO-MD-BOM-2CL,,value_help,3,0,,component,yes,CS_MODEL,no
+I_BILLOFMATERIALUSAGETEXT,Bill of Material Usage - Text,Bill of Material Usage - Text,LO-MD-BOM-2CL,,text,4,0,,component,yes,CS_MODEL,no
+I_BILLOFMATERIALWITHKEYDATE,Bill of Material Header Details,Bill of Material Header Details,LO-MD-BOM-2CL,,basic,49,0,,component,yes,CS_MODEL,no
+I_BOMCOMPONENTWITHKEYDATE,Bill of Material Component Details,Bill of Material Component Details,LO-MD-BOM-2CL,,basic,107,0,Material Group; Purchasing Organization; Supplier,component,yes,CS_MODEL,no
+I_BOMGROUPDEX,Data extaction for Bom Groups,Data extaction for Bom Groups,LO-MD-BOM-2CL,,basic,8,0,,component,yes,CS_MODEL,no
+I_BOMGROUPLINKSDEX,Data extaction for Bom Group links,Data extaction for Bom Group links,LO-MD-BOM-2CL,,basic,7,0,,component,yes,CS_MODEL,no
+I_BOMITEMCATEGORYTEXT,Bill Of Material Item Category - Text,Bill Of Material Item Category - Text,LO-MD-BOM-2CL,,text,4,0,,component,yes,CS_MODEL,no
+I_BOMVARIANTUSAGE,Bill Of Material Usage,Bill Of Material Usage,LO-MD-BOM-2CL,,basic,9,0,,component,yes,CS_MODEL,no
+I_DOCUMENTBOMLINK,Document Link for Bill of Material,Document Link for Bill of Material,LO-MD-BOM-2CL,,basic,7,0,,component,yes,CS_MODEL,yes
+I_EQUIPMENTBOMLINK,Equipment to BOM Link,Equipment to BOM Link,LO-MD-BOM-2CL,,basic,7,0,Equipment; Plant,component,yes,CS_MODEL,yes
+I_FUNCTIONALLOCBOMLINK,Link Between Functional Location and BOM,Link Between Functional Location and BOM,LO-MD-BOM-2CL,,basic,7,0,Plant,component,yes,CS_MODEL,yes
+I_MATBILLOFMATERIALHEADERDEX,Data Extraction for BOM Header,Data Extraction for BOM Header,LO-MD-BOM-2CL,,basic,40,0,,component,yes,CS_MODEL,no
+I_MATERIALBOMLINK,Material Link for Bill of Material,Material Link for Bill of Material,LO-MD-BOM-2CL,Fact,fact,13,0,Material / Product; Plant,component,yes,CS_MODEL,yes
+I_MATERIALBOMLINKDEX_2,Bill of Material Link Data Extraction,Bill of Material Link Data Extraction,LO-MD-BOM-2CL,,basic,13,0,Material / Product; Plant,component,yes,CS_MODEL,no
+I_MATERIALBOMSUBITEMDEX,Data Extraction For BOM Subitem,Data Extraction For BOM Subitem,LO-MD-BOM-2CL,,basic,9,0,,component,yes,CS_MODEL,no
+I_MATLBILLOFMATERIALCHANGEHIST,BOM Change document retrieval,BOM Change document retrieval,LO-MD-BOM-2CL,,basic,28,0,Material / Product; Plant,component,yes,CS_RAP,no
+I_MATLBILLOFMATERIALITEMDEX,Bill of Material Item Extraction,Bill of Material Item Extraction,LO-MD-BOM-2CL,,basic,98,0,Material / Product; Material Group; Purchasing Organization,component,yes,CS_MODEL,no
+I_PROJECTBOMLINK,Work Breakdown Structure Link for BOM,Work Breakdown Structure Link for BOM,LO-MD-BOM-2CL,,basic,8,0,Material / Product; Plant,component,yes,CS_MODEL,yes
+I_PROJECTBOMSUBITEMDEX,WBS BOM Subitem Extraction,WBS BOM Subitem Extraction,LO-MD-BOM-2CL,,basic,9,0,,component,yes,CS_MODEL,no
+I_SALESORDERBILLOFMATERIALTP_2,Sales Order Bill of Material,Sales Order Bill of Material,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+I_SALESORDERBILLOFMATERIALTP_3,Sales Order Bill of Material - TP,Sales Order Bill of Material - TP,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_RAP,no
+I_SALESORDERBOMHEADERDEX,Sales Order BOM Header Extraction,Sales Order BOM Header Extraction,LO-MD-BOM-2CL,,basic,40,0,,component,yes,CS_MODEL,no
+I_SALESORDERBOMITEMDEX,Sales Order BOM Item Extraction,Sales Order BOM Item Extraction,LO-MD-BOM-2CL,,basic,98,0,Material / Product; Material Group; Purchasing Organization,component,yes,CS_MODEL,no
+I_SALESORDERBOMLINK,Sales Order Link for BOM,Sales Order Link for BOM,LO-MD-BOM-2CL,,basic,9,0,Material / Product; Plant,component,yes,CS_MODEL,yes
+I_SALESORDERBOMLINKDEX_2,Sales Order BOM Link extraction,Sales Order BOM Link extraction,LO-MD-BOM-2CL,,basic,12,0,Material / Product; Plant,component,yes,CS_MODEL,no
+I_SALESORDERBOMSUBITEMDEX,Extraction For Sales Order BOM Subitem,Extraction For Sales Order BOM Subitem,LO-MD-BOM-2CL,,basic,9,0,,component,yes,CS_MODEL,no
+I_SLSORDBILLOFMATERIALITEMTP_2,Sales Order Bill of Material Item,Sales Order Bill of Material Item,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_MODEL_API,no
+I_SLSORDBILLOFMATERIALITEMTP_3,Sales Order Bill of Material Item - TP,Sales Order Bill of Material Item - TP,LO-MD-BOM-2CL,,basic,0,0,,component,yes,CS_RAP,no
+I_STANDARDBOMLINK,Standard Link for BOM,Standard Link for BOM,LO-MD-BOM-2CL,,basic,7,0,Plant,component,yes,CS_MODEL,yes
+I_WBSBILLOFMATERIALHEADERDEX,WBS BOM Header Extraction,WBS BOM Header Extraction,LO-MD-BOM-2CL,,basic,40,0,,component,yes,CS_MODEL,no
+I_WBSBILLOFMATERIALITEMDEX,WBS BOM Item Extraction,WBS BOM Item Extraction,LO-MD-BOM-2CL,,basic,98,0,Material / Product; Material Group; Purchasing Organization,component,yes,CS_MODEL,no
+I_WBSBILLOFMATERIALLINKDEX,WBS BOM Link Data Extraction,WBS BOM Link Data Extraction,LO-MD-BOM-2CL,,basic,11,0,Material / Product; Plant; WBS Element,component,yes,CS_MODEL,no

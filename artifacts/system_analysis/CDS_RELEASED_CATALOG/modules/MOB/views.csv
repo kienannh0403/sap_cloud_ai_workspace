@@ -1,0 +1,2 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+/MERP/SDF_CDS_FORMREG,Dynamic Forms CDS view for form registry,Dynamic Forms CDS view for form registry,MOB-APP-MAO-ERP,,basic,34,0,,top-level,yes,/MERP/SDF,no

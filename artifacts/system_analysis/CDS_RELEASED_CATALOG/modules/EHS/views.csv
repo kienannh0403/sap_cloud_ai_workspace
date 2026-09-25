@@ -1,0 +1,51 @@
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_ACTIVECOMPLIANCERQMTVERSION,Active Compliance Requirement Version,Active Compliance Requirement Version,EHS-SUS-CI,,basic,8,0,,top-level,yes,EHFND_BO_COMPLIANCE_REQ,no
+D_CALCTDANGEROUSGOODSPOINTSR,Calculate Dngrs Goods Points Result,Calculate Dngrs Goods Points Result,EHS-SUS-DG,,basic,0,0,,top-level,yes,EHDGM_RAP_DG_CLASSIFICATION,no
+D_CALCTDNGRSGDSPTSCATEGORYR,Calculate Dngrs Gds Pts Category Result,Calculate Dngrs Gds Pts Category Result,EHS-SUS-DG,,basic,0,0,,top-level,yes,EHDGM_RAP_DG_CLASSIFICATION,no
+D_CALCTDNGRSGDSPTSITMRGLNR,Calculate Dngrs Gds Pts Itm Regulation R,Calculate Dngrs Gds Pts Itm Regulation R,EHS-SUS-DG,,basic,0,0,,top-level,yes,EHDGM_RAP_DG_CLASSIFICATION,no
+D_CALCTDNGRSGOODSPOINTSITEMR,Calculate Dngrs Goods Points Item R,Calculate Dngrs Goods Points Item R,EHS-SUS-DG,,basic,0,0,,top-level,yes,EHDGM_RAP_DG_CLASSIFICATION,no
+D_DAGDSCLFNCLCTDAGDSPTSPAINSNR,Calculate Dangerous Goods Points Packing Instruction R,Calculate Dangerous Goods Points Packing Instruction R,EHS-SUS-DG,,basic,0,0,,top-level,yes,EHDGM_RAP_DG_CLASSIFICATION,no
+D_DNGRSGDSCLASSFCTNGETDESCSR,DG Classfctn Get Description Result,DG Classfctn Get Description Result,EHS-SUS-DG,,basic,0,0,,top-level,yes,EHDGM_RAP_DG_CLASSIFICATION,no
+I_COUNTRYTRANSPORTSTATUS,Country/Region Transport Status,Country/Region Transport Status,EHS-SUS-DG,,basic,2,0,,top-level,yes,EHDGM_BO_UOR,no
+I_COUNTRYTRANSPORTSTATUSTEXT,Country/Region Transport Status - Text,Country/Region Transport Status - Text,EHS-SUS-DG,,text,4,0,,top-level,yes,EHDGM_BO_UOR,no
+I_DNGRSGDSRGLNLANGUAGETYPETEXT,Dangerous Goods Language Type - Text,Dangerous Goods Language Type - Text,EHS-SUS-DG,,text,4,0,,top-level,yes,EHDGM_BO_UOR,no
+I_TRANSPORTCHECKRULETEXT,Transport Check Rule - Text,Transport Check Rule - Text,EHS-SUS-DG,,text,4,0,,top-level,yes,EHDGM_BO_UOR,no
+D_PCLGSDCGETDAGDSDOCINFOGROUPR,Grouping Information R,Grouping Information R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDAGDSDOCINFOITEMP,Get DG Document Info Items Parameter,Get DG Document Info Items Parameter,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDAGDSDOCINFOITEMR,Item Description R,Item Description R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDAGDSDOCINFOPOINTR,1.1.3.6 information R,1.1.3.6 information R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDAGDSEDIINFOITEMP,Get PCLD DG EDI Items Parameter,Get PCLD DG EDI Items Parameter,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDAGDSEDIINFOITEMR,Item EDI R,Item EDI R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDNGRSGDSDOCINFOP,DG Document Info Parameter,DG Document Info Parameter,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDNGRSGDSDOCINFOR,DG Document Info R,DG Document Info R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDNGRSGOODSEDIINFOP,PCLD DG Get EDI Informtion Parameter,PCLD DG Get EDI Informtion Parameter,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETDNGRSGOODSEDIINFOR,DG Document EDI R,DG Document EDI R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETEUADRFORPRODSPRODP,Row GetEUADRPTSFORPRODS P,Row GetEUADRPTSFORPRODS P,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETEUADRFORPRODSPRODR,Product GETEUADRPOINTSFORPRODUCTS R,Product GETEUADRPOINTSFORPRODUCTS R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETEUADRFORPRODUCTSP,DG EU ADR Info for Products P,DG EU ADR Info for Products P,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETEUADRFORPRODUCTSR,EU ADR POINTS FOR PRODUCTS R,EU ADR POINTS FOR PRODUCTS R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETMXDLDGICMTSCNTRYP,Get Mxd Loading Icmts Country Parameter,Get Mxd Loading Icmts Country Parameter,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETMXDLDGICMTSP,Get Mixed Loading Incompatibilities P,Get Mixed Loading Incompatibilities P,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETMXDLDGICMTSPRODP,Get Mxd Loading Icmts Product Parameter,Get Mxd Loading Icmts Product Parameter,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCGETMXDLDGICMTSR,Get Mixed Loading Incompatibilities R,Get Mixed Loading Incompatibilities R,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCITEMUPDTMKTBLTYSTSP,Product Marketability Status Parameters,Product Marketability Status Parameters,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+D_PCLGSDCITMGETDNGRSGDSDESCSP,DG Classfctn Get Description Parameters,DG Classfctn Get Description Parameters,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_RAP_LOGISTICS_DOCUMENT,no
+I_CHMLCMPLNCIDFR,Chemical Compliance Identifier,Chemical Compliance Identifier,EHS-SUS-FND-PC,,basic,19,0,,top-level,yes,EHFND_RAP_CCIDFR,no
+I_PCLGSDCITMPACKGINSTRUCTIONTP,PCLgsDc Item Packing Instruction - TP,PCLgsDc Item Packing Instruction - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PCLGSDCMNLLYOVRWRTNADDRTP,PCLgsDc Mnlly Overwritten Address - TP,PCLgsDc Mnlly Overwritten Address - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PRODCMPLNCLOGSDOCEUADRTP,Prod Cmplnc Logs Doc EU ADR Point - TP,Prod Cmplnc Logs Doc EU ADR Point - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PRODCMPLNCLOGSDOCSTAGEITEMTP,Prod Cmplnc Logs Doc Stage Item - TP,Prod Cmplnc Logs Doc Stage Item - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PRODCMPLNCLOGSDOCSTAGETP,Prod Compliance Logs Document Stage - TP,Prod Compliance Logs Document Stage - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PRODCMPLNCLOGSDOCSTATUSMSGTP,Prod Cmplnc Logs Doc Status Message - TP,Prod Cmplnc Logs Doc Status Message - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PRODCMPLNCLOGSDOCTRNSTCTRYTP,Prod Cmplnc Logs Doc Trnst Country - TP,Prod Cmplnc Logs Doc Trnst Country - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PRODCMPLNCLOGSDOCUMENTITEMTP,Prod Compliance Logs Document Item - TP,Prod Compliance Logs Document Item - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PRODCMPLNCLOGSDOCUMENTTP,Prod Compliance Logistics Document - TP,Prod Compliance Logistics Document - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_LOGISTICS_DOCUMENT,no
+I_PRODCMPLNCRECMDDUSETP,Recommended Use - TP,Recommended Use - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_USE,no
+I_PRODCMPLNCRSTRCDUSETP,Restrictions on Use - TP,Restrictions on Use - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_USE,no
+I_PRODCMPLNCUSETP,Product Compliance Use - TP,Product Compliance Use - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_USE,no
+I_PRODCMPLNCWAYOFAPPLTP,Way of Application - TP,Way of Application - TP,EHS-SUS-FND-PC,,basic,0,0,,top-level,yes,EHFND_API_USE,no
+D_PCLBLFLDVERSREGLBLFLDCALCTRP,Par struct for lbl fld calc registration,Par struct for lbl fld calc registration,EHS-SUS-SDS,,basic,0,0,,top-level,yes,EHLBL_RAP_LFC,no
+I_PRODCMPLNCLABELFLDGROUPTP_2,Label Field Group TP,Label Field Group TP,EHS-SUS-SDS,,basic,0,0,,top-level,yes,EHLBL_LFC_INTERFACE,no
+I_PRODCMPLNCLBLFLDGROUPTXTTP_2,Label Field Group - Text,Label Field Group - Text,EHS-SUS-SDS,,basic,0,0,,top-level,yes,EHLBL_LFC_INTERFACE,no
+I_PRODCMPLNCLBLFLDVERSIONTP_2,Label Field Version TP,Label Field Version TP,EHS-SUS-SDS,,basic,0,0,,top-level,yes,EHLBL_LFC_INTERFACE,no
+I_PRODCMPLNCLBLFLDVERSTXTTP_2,Label Field Version - Text,Label Field Version - Text,EHS-SUS-SDS,,basic,0,0,,top-level,yes,EHLBL_LFC_INTERFACE,no

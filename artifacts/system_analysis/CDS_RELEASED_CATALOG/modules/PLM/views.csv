@@ -1,4 +1,34 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_CHANGEMASTERSTATUSSTDVH,Change Number Status,Change Number Status,PLM-WUI-OBJ-ECN,,value_help,2,0,,top-level
-I_CHANGEMASTERSTATUSTEXT,Change Number Status - Text,Change Number Status - Text,PLM-WUI-OBJ-ECN,,text,4,0,,top-level
-I_CHANGEMASTERSTDVH,Change Number,Change Number,PLM-WUI-OBJ-ECN,,value_help,14,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+C_CHANGERECDMAILTMPLFORAPPRVL,Email Template for Approval,Email Template for Approval,PLM-CR-2CL,,basic,20,0,,top-level,yes,VDM_PLMB_CR,no
+C_CHANGERECORDBOMITEMDEX,Extraction BOM as Item for Change Record,Extraction BOM as Item for Change Record,PLM-CR-2CL,,basic,1,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDCHARCDEX,Change Record Characteristics Extraction,Change Record Characteristics Extraction,PLM-CR-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDCLASSDEX,Change Record Class Extraction,Change Record Class Extraction,PLM-CR-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDDESCDEX,Extraction for change record description,Extraction for change record description,PLM-CR-2CL,,basic,3,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDDEX_2,Change Record Header Extraction,Change Record Header Extraction,PLM-CR-2CL,,basic,1,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDDOCITEMDEX,Change Record Document as Item,Change Record Document as Item,PLM-CR-2CL,,basic,1,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDEMAILTEMPLATE,Change record email template helper,Change record email template helper,PLM-CR-2CL,,basic,18,0,,top-level,yes,VDM_PLMB_CR,no
+C_CHANGERECORDFLEXIBLEWORKFLOW,Change Record Flexible Workflow,Change Record Flexible Workflow,PLM-CR-2CL,,basic,10,0,,top-level,yes,VDM_PLMB_CR,no
+C_CHANGERECORDHIERARCHYDEX,Change Record Hierarchy,Change Record Hierarchy,PLM-CR-2CL,,basic,2,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDITEMDEX_2,Change Record General Item Details,Change Record General Item Details,PLM-CR-2CL,,basic,2,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDLONGTEXTDEX_2,Change Record Long Text,Change Record Long Text,PLM-CR-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDORDERBOMDEX,Change Record Sales Order BOM Extraction,Change Record Sales Order BOM Extraction,PLM-CR-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDPARTNERDEX_2,Change Record Partner or Person Resp,Change Record Partner or Person Resp,PLM-CR-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDPRODNRTGDEX,Change Record Prodn Routing Extraction,Change Record Prodn Routing Extraction,PLM-CR-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHANGERECORDPRODUCTITEMDEX,Change Record Product as Item,Change Record Product as Item,PLM-CR-2CL,,basic,1,0,,top-level,yes,VDM_PLMB_CR_ANALYTICS,no
+C_CHGRECHDREXTENSIONDEX,Change Record Header Ext for DEX,Change Record Header Ext for DEX,PLM-CR-2CL,,basic,12,0,,top-level,yes,VDM_PLMB_CR_O,no
+C_CHANGEMASTERDEX_2,Engineering Change Master,Engineering Change Master,PLM-WUI-OBJ-ECN-2CL,,basic,34,0,,top-level,yes,VDM_PLMB_ECN,no
+C_CHANGEMASTERSTATUSDEX,Change Master Status,Change Master Status,PLM-WUI-OBJ-ECN-2CL,,basic,5,0,,top-level,yes,VDM_PLMB_ECN,no
+C_CHANGEMASTERSTATUSTEXTDEX,Change Master Status - Text,Change Master Status - Text,PLM-WUI-OBJ-ECN-2CL,,basic,4,0,,top-level,yes,VDM_PLMB_ECN,no
+C_CHANGEMSTROBJMGMTRECORDDEX,Object Management Rec of Change Master,Object Management Rec of Change Master,PLM-WUI-OBJ-ECN-2CL,,basic,16,0,,top-level,yes,VDM_PLMB_ECN,no
+D_CHANGEMASTERADJUSTVALIDITYP,Change Master Adjust Validity Date,Change Master Adjust Validity Date,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no
+D_CHGMSTRASSIGNALTVDATEIDP,Change Master Alternative Date ID,Change Master Alternative Date ID,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no
+I_CHANGEMASTERALTDATETP_2,Change Number Alternative Data Transactional Processing,Change Number Alternative Data Transactional Processing,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no
+I_CHANGEMASTERSTATUSSTDVH,Change Number Status,Change Number Status,PLM-WUI-OBJ-ECN-2CL,,value_help,2,0,,top-level,yes,VDM_PLMB_ECN,yes
+I_CHANGEMASTERSTATUSTEXT,Change Number Status - Text,Change Number Status - Text,PLM-WUI-OBJ-ECN-2CL,,text,4,0,,top-level,yes,VDM_PLMB_ECN,yes
+I_CHANGEMASTERSTDVH,Change Number,Change Number,PLM-WUI-OBJ-ECN-2CL,,value_help,14,0,,top-level,yes,VDM_PLMB_ECN,yes
+I_CHANGEMASTERTP_2,Change Number Transactional Processing,Change Number Transactional Processing,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no
+I_CHGMSTROBJECTMGMTRECORDTP_2,Change Number Object Management Record TP,Change Number Object Management Record TP,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no
+I_CHGMSTROBJTYPEASSGMTTP_2,Change Number Object Type Assignment TP,Change Number Object Type Assignment TP,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no
+I_CHGMSTROBMGREDOCINFORECDTP_2,Change Number Object Management Record DIR TP,Change Number Object Management Record DIR TP,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no
+I_CHGMSTROBMGREMATERIALTP_2,Change Number Object Management Record Mat TP,Change Number Object Management Record Mat TP,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no
+I_CHGMSTROBMGREMATLBOMTP_2,Change Number Object Management Record Material BOM TP,Change Number Object Management Record Material BOM TP,PLM-WUI-OBJ-ECN-2CL,,basic,0,0,,top-level,yes,VDM_PLMB_ECN,no

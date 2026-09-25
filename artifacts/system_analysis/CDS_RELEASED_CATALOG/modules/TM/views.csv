@@ -1,80 +1,306 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_BUSTRANSDOCITEMTYPECODE,BTD Item Type Code,BTD Item Type Code,TM,Dimension,dimension,2,0,,top-level
-I_BUSTRANSDOCITMTYPECODETEXT,BTD Item Type Code - Text,BTD Item Type Code - Text,TM,,text,5,0,,top-level
-I_BUSTRANSDOCTYPECODE,Business Transaction Document Type Code,Business Transaction Document Type Code,TM,Dimension,dimension,2,0,,top-level
-I_BUSTRANSDOCTYPECODETEXT,Business Trans Doc Type Code - Text,Business Trans Doc Type Code - Text,TM,,text,5,0,,top-level
-I_TRANSPMEANSOFTRANSPORT,Transportation Means of Transport,Transportation Means of Transport,TM,Dimension,dimension,5,0,,top-level
-I_TRANSPMEANSOFTRANSPORTT,Transportation Means of Transport - Text,Transportation Means of Transport - Text,TM,,basic,5,0,,top-level
-I_TRANSPMOVEMENTTYPE,Transportation Order Movement Type,Transportation Order Movement Type,TM,Dimension,dimension,2,0,,top-level
-I_TRANSPMOVEMENTTYPETEXT,TranspOrd Movement Type - Text,TranspOrd Movement Type - Text,TM,,text,5,0,,top-level
-I_TRANSPNUMBERINGSCHEME,Transportation Numbering Scheme,Transportation Numbering Scheme,TM,,basic,2,0,,top-level
-I_TRANSPORDCONFIRMATIONSTATUS,Confirmation Status,Confirmation Status,TM,Dimension,dimension,2,0,,top-level
-I_TRANSPORDCONFIRMATIONSTSTEXT,Confirmation Status - Text,Confirmation Status - Text,TM,,text,5,0,,top-level
-I_TRANSPORDCREATIONTYPE,Transportation Order Creation Type,Transportation Order Creation Type,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDCREATIONTYPETEXT,Transp Order Creation Type - Text,Transp Order Creation Type - Text,TM,,text,6,0,,top-level
-I_TRANSPORDERCATEGORYT_2,Transportation Order Category - Text,Transportation Order Category - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDERCATEGORY_2,Transportation Order Category,Transportation Order Category,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDEVENTCODETEXT_2,Transportation Order Event Code - Text,Transportation Order Event Code - Text,TM,,basic,5,0,,top-level
-I_TRANSPORDEVENTCODE_2,Transportation Order Event Code,Transportation Order Event Code,TM,Dimension,dimension,4,0,,top-level
-I_TRANSPORDEXECSTATUSTEXT_2,Transp Order Execution Status - Text,Transp Order Execution Status - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDEXECSTATUS_2,Transportation Order Execution Status,Transportation Order Execution Status,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDGOODSMVTSTATUS,Transp Order Goods Movement Status,Transp Order Goods Movement Status,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDGOODSMVTSTSTEXT,Transp Ord Goods Movement Status - Text,Transp Ord Goods Movement Status - Text,TM,,text,6,0,,top-level
-I_TRANSPORDINVCGCARRIERLEVEL,Transp Order Invoicing Carrier Level,Transp Order Invoicing Carrier Level,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDINVCGCARRIERLVLT,Transp Ord Invoicing Carrier Lvl - Text,Transp Ord Invoicing Carrier Lvl - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDITEMCATEGORYT_2,Transp Order Item Category - Text,Transp Order Item Category - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDITEMCATEGORY_2,Transportation Order Item Category,Transportation Order Item Category,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDITEMTYPETEXT_2,Transportation Order Item Type - Text,Transportation Order Item Type - Text,TM,,basic,5,0,,top-level
-I_TRANSPORDITEMTYPE_2,Transportation Order Item Type,Transportation Order Item Type,TM,Dimension,dimension,4,0,,top-level
-I_TRANSPORDLIFECYCLESTATUS_2,Transportation Order Lifecycle Status,Transportation Order Lifecycle Status,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDLIFECYCSTATUST_2,Transp Order Lifecycle Status - Text,Transp Order Lifecycle Status - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDPLANNINGSTATUST_2,Transp Order Planning Status - Text,Transp Order Planning Status - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDPLANNINGSTATUS_2,Transportation Order Planning Status,Transportation Order Planning Status,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDSHIPPINGTYPET_2,Transp Order Shipping Type - Text,Transp Order Shipping Type - Text,TM,,basic,5,0,,top-level
-I_TRANSPORDSHIPPINGTYPE_2,Transportation Order Shipping Type,Transportation Order Shipping Type,TM,Dimension,dimension,2,0,,top-level
-I_TRANSPORDSTAGECATEGORYT_2,Transp Order Stage Category - Text,Transp Order Stage Category - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDSTAGECATEGORY_2,Transportation Order Stage Category,Transportation Order Stage Category,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDSTAGETYPETEXT_2,Transportation Order Stage Type - Text,Transportation Order Stage Type - Text,TM,,basic,5,0,,top-level
-I_TRANSPORDSTAGETYPE_2,Transportation Order Stage Type,Transportation Order Stage Type,TM,Dimension,dimension,4,0,,top-level
-I_TRANSPORDSTGEINVCGCARRLVL,Transp Order Stage Invcg Carrier Level,Transp Order Stage Invcg Carrier Level,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDSTGEINVCGCARRLVLT,Transp Ord Stg Invcg Carrier Lvl - Text,Transp Ord Stg Invcg Carrier Lvl - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDSTOPCATEGORYT_2,Transp Order Stop Category - Text,Transp Order Stop Category - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDSTOPCATEGORY_2,Transportation Order Stop Category,Transportation Order Stop Category,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDSTOPROLET_2,Transportation Order Stop Role - Text,Transportation Order Stop Role - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDSTOPROLE_2,Transportation Order Stop Role,Transportation Order Stop Role,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDSUBCONTRGSTATUS_2,Transp Order Subcontracting Status,Transp Order Subcontracting Status,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDSUBCONTRGSTST_2,Transp Order Subcontracting Sts - Text,Transp Order Subcontracting Sts - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDWHSEPROCGSTATUS,Transp Ord Warehouse Processing Status,Transp Ord Warehouse Processing Status,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORDWHSEPROCGSTSTEXT,Transp Ord Warehs Procg Status - Text,Transp Ord Warehs Procg Status - Text,TM,,text,6,0,,top-level
-I_TRANSPORTATIONMODECATEGORY,Transportation Mode Category,Transportation Mode Category,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPORTATIONMODECATEGORYT,Transportation Mode Category - Text,Transportation Mode Category - Text,TM,,basic,6,0,,top-level
-I_TRANSPORTATIONMODETEXT_2,Transportation Mode - Text,Transportation Mode - Text,TM,,basic,5,0,,top-level
-I_TRANSPORTATIONMODE_2,Transportation Mode,Transportation Mode,TM,Dimension,dimension,4,0,,top-level
-I_TRANSPORTATIONORDERTYPET_2,Transportation Order Type - Text,Transportation Order Type - Text,TM,,basic,5,0,,top-level
-I_TRANSPORTATIONORDERTYPE_2,Transportation Order Type,Transportation Order Type,TM,Dimension,dimension,4,0,,top-level
-I_TRANSPSCACCODE,Transportation SCAC Code,Transportation SCAC Code,TM,Dimension,dimension,2,0,,top-level
-I_TRANSPSCACCODETEXT,Transportation SCAC Code - Text,Transportation SCAC Code - Text,TM,,text,5,0,,top-level
-I_TRANSPSTOPHNDLGEXECSTATUS,Transp Ord Stop Hndlg Exec Status,Transp Ord Stop Hndlg Exec Status,TM,Dimension,dimension,3,0,,top-level
-I_TRANSPSTOPHNDLGEXECSTATUST,Transp Ord Stop Hndlg Exec Status - Text,Transp Ord Stop Hndlg Exec Status - Text,TM,,basic,6,0,,top-level
-I_TRANSPORDDNGRSGDSSTATUS,Transp Order Dangerous Goods Status,Transp Order Dangerous Goods Status,TM-FRM,Dimension,dimension,2,0,,top-level
-I_TRANSPORDDNGRSGDSSTATUSTEXT,Transp Ord Dangerous Goods Status - Text,Transp Ord Dangerous Goods Status - Text,TM-FRM,,text,5,0,,top-level
-I_TRANSPORDDOCREF_2,Transp Order Document Reference,Transp Order Document Reference,TM-FRM,,basic,13,0,,top-level
-I_TRANSPORDEVENTISRECALLED,Transportation Order Event is Recalled,Transportation Order Event is Recalled,TM-FRM,Dimension,dimension,2,0,,top-level
-I_TRANSPORDEVENTISRECALLEDTEXT,Transp Order Event is Recalled - Text,Transp Order Event is Recalled - Text,TM-FRM,,text,5,0,,top-level
-I_TRANSPORDEXECUTIONBLOCKTEXT,Ind Transp Ord Exe Block - Text,Ind Transp Ord Exe Block - Text,TM-FRM,,text,5,0,,top-level
-I_TRANSPORDEXECUTIONISBLOCKED,Transportation Order Execution Block,Transportation Order Execution Block,TM-FRM,Dimension,dimension,2,0,,top-level
-I_TRANSPORDITEMCOMMODITYCODE,Transp Order Item Commodity Code,Transp Order Item Commodity Code,TM-FRM,,basic,8,0,,top-level
-I_TRANSPORDITEMDOCREF,Transp Order Item Document Reference,Transp Order Item Document Reference,TM-FRM,,basic,13,0,,top-level
-I_TRANSPORDITEMSEAL,Transportation Order Item Seal,Transportation Order Item Seal,TM-FRM,,basic,7,0,,top-level
-I_TRANSPORDPLANNINGBLOCK,Transportation Order Planning Block,Transportation Order Planning Block,TM-FRM,Dimension,dimension,2,0,,top-level
-I_TRANSPORDPLANNINGBLOCKTEXT,Transp Ord Planning Block - Text,Transp Ord Planning Block - Text,TM-FRM,,text,5,0,,top-level
-I_TRANSPORTATIONORDERBP_2,Transportation Order Business Partner,Transportation Order Business Partner,TM-FRM,,basic,9,0,Business Partner,top-level
-I_TRANSPORTATIONORDEREVENT,Transportation Order Event,Transportation Order Event,TM-FRM,,basic,23,0,,top-level
-I_TRANSPORTATIONORDERITEM_2,Transportation Order Item,Transportation Order Item,TM-FRM,,basic,100,0,Material / Product,top-level
-I_TRANSPORTATIONORDERSTAGE_2,Transportation Order Stage,Transportation Order Stage,TM-FRM,,basic,37,0,,top-level
-I_TRANSPORTATIONORDERSTOP_2,Transportation Order Stop,Transportation Order Stop,TM-FRM,,basic,36,0,,top-level
-I_TRANSPORTATIONORDER_2,Transportation Order,Transportation Order,TM-FRM,,basic,91,0,Company Code,top-level
-I_PURCHASEORDITMTRANSPSETTLMT,Purchase order Item Transportation sett,Purchase order Item Transportation sett,TM-FRS,,basic,12,0,Purchasing Document,top-level
-I_TRANSPCOCODEBPASSGMT,Company Code and Business Partner Assgmt,Company Code and Business Partner Assgmt,TM-MD-ORG,,basic,10,0,Business Partner,top-level
-I_TRANSPPURGGROUP,Purchasing Group,Purchasing Group,TM-MD-ORG,,basic,2,0,,top-level
-I_TRANSPPURGORG,Purchasing Organization,Purchasing Organization,TM-MD-ORG,,basic,5,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_BUSTRANSDOCITEMTYPECODE,BTD Item Type Code,BTD Item Type Code,TM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BASIC,yes
+I_BUSTRANSDOCITMTYPECODETEXT,BTD Item Type Code - Text,BTD Item Type Code - Text,TM-2CL,,text,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_BUSTRANSDOCTYPECODE,Business Transaction Document Type Code,Business Transaction Document Type Code,TM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BASIC,yes
+I_BUSTRANSDOCTYPECODETEXT,Business Trans Doc Type Code - Text,Business Trans Doc Type Code - Text,TM-2CL,,text,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPMEANSOFTRANSPORT,Transportation Means of Transport,Transportation Means of Transport,TM-2CL,Dimension,dimension,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPMEANSOFTRANSPORTT,Transportation Means of Transport - Text,Transportation Means of Transport - Text,TM-2CL,,basic,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPMOVEMENTTYPE,Transportation Order Movement Type,Transportation Order Movement Type,TM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPMOVEMENTTYPETEXT,TranspOrd Movement Type - Text,TranspOrd Movement Type - Text,TM-2CL,,text,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPNUMBERINGSCHEME,Transportation Numbering Scheme,Transportation Numbering Scheme,TM-2CL,,basic,2,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDCONFIRMATIONSTATUS,Confirmation Status,Confirmation Status,TM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDCONFIRMATIONSTSTEXT,Confirmation Status - Text,Confirmation Status - Text,TM-2CL,,text,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDCREATIONTYPE,Transportation Order Creation Type,Transportation Order Creation Type,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDCREATIONTYPETEXT,Transp Order Creation Type - Text,Transp Order Creation Type - Text,TM-2CL,,text,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDERCATEGORYT_2,Transportation Order Category - Text,Transportation Order Category - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDERCATEGORY_2,Transportation Order Category,Transportation Order Category,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDEVENTCODETEXT_2,Transportation Order Event Code - Text,Transportation Order Event Code - Text,TM-2CL,,basic,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDEVENTCODE_2,Transportation Order Event Code,Transportation Order Event Code,TM-2CL,Dimension,dimension,4,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDEXECSTATUSTEXT_2,Transp Order Execution Status - Text,Transp Order Execution Status - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDEXECSTATUS_2,Transportation Order Execution Status,Transportation Order Execution Status,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDGOODSMVTSTATUS,Transp Order Goods Movement Status,Transp Order Goods Movement Status,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDGOODSMVTSTSTEXT,Transp Ord Goods Movement Status - Text,Transp Ord Goods Movement Status - Text,TM-2CL,,text,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDINVCGCARRIERLEVEL,Transp Order Invoicing Carrier Level,Transp Order Invoicing Carrier Level,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDINVCGCARRIERLVLT,Transp Ord Invoicing Carrier Lvl - Text,Transp Ord Invoicing Carrier Lvl - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDITEMCATEGORYT_2,Transp Order Item Category - Text,Transp Order Item Category - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDITEMCATEGORY_2,Transportation Order Item Category,Transportation Order Item Category,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDITEMTYPETEXT_2,Transportation Order Item Type - Text,Transportation Order Item Type - Text,TM-2CL,,basic,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDITEMTYPE_2,Transportation Order Item Type,Transportation Order Item Type,TM-2CL,Dimension,dimension,4,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDLIFECYCLESTATUS_2,Transportation Order Lifecycle Status,Transportation Order Lifecycle Status,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDLIFECYCSTATUST_2,Transp Order Lifecycle Status - Text,Transp Order Lifecycle Status - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDPLANNINGSTATUST_2,Transp Order Planning Status - Text,Transp Order Planning Status - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDPLANNINGSTATUS_2,Transportation Order Planning Status,Transportation Order Planning Status,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSHIPPINGTYPET_2,Transp Order Shipping Type - Text,Transp Order Shipping Type - Text,TM-2CL,,basic,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSHIPPINGTYPE_2,Transportation Order Shipping Type,Transportation Order Shipping Type,TM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTAGECATEGORYT_2,Transp Order Stage Category - Text,Transp Order Stage Category - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTAGECATEGORY_2,Transportation Order Stage Category,Transportation Order Stage Category,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTAGETYPETEXT_2,Transportation Order Stage Type - Text,Transportation Order Stage Type - Text,TM-2CL,,basic,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTAGETYPE_2,Transportation Order Stage Type,Transportation Order Stage Type,TM-2CL,Dimension,dimension,4,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTGEINVCGCARRLVL,Transp Order Stage Invcg Carrier Level,Transp Order Stage Invcg Carrier Level,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTGEINVCGCARRLVLT,Transp Ord Stg Invcg Carrier Lvl - Text,Transp Ord Stg Invcg Carrier Lvl - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTOPCATEGORYT_2,Transp Order Stop Category - Text,Transp Order Stop Category - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTOPCATEGORY_2,Transportation Order Stop Category,Transportation Order Stop Category,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTOPROLET_2,Transportation Order Stop Role - Text,Transportation Order Stop Role - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSTOPROLE_2,Transportation Order Stop Role,Transportation Order Stop Role,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSUBCONTRGSTATUS_2,Transp Order Subcontracting Status,Transp Order Subcontracting Status,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDSUBCONTRGSTST_2,Transp Order Subcontracting Sts - Text,Transp Order Subcontracting Sts - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDWHSEPROCGSTATUS,Transp Ord Warehouse Processing Status,Transp Ord Warehouse Processing Status,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORDWHSEPROCGSTSTEXT,Transp Ord Warehs Procg Status - Text,Transp Ord Warehs Procg Status - Text,TM-2CL,,text,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORTATIONORDERTYPET_2,Transportation Order Type - Text,Transportation Order Type - Text,TM-2CL,,basic,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPORTATIONORDERTYPE_2,Transportation Order Type,Transportation Order Type,TM-2CL,Dimension,dimension,4,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPSCACCODE,Transportation SCAC Code,Transportation SCAC Code,TM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPSCACCODETEXT,Transportation SCAC Code - Text,Transportation SCAC Code - Text,TM-2CL,,text,5,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPSTOPHNDLGEXECSTATUS,Transp Ord Stop Hndlg Exec Status,Transp Ord Stop Hndlg Exec Status,TM-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPSTOPHNDLGEXECSTATUST,Transp Ord Stop Hndlg Exec Status - Text,Transp Ord Stop Hndlg Exec Status - Text,TM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BASIC,yes
+I_TRANSPCHARGECALCBASE,Transportation Charge Calculation Base,Transportation Charge Calculation Base,TM-CF-CC-2CL,,basic,26,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHARGECALCLEVEL,Transportation Charges Calculation Level,Transportation Charges Calculation Level,TM-CF-CC-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHARGECALCLEVELTEXT,Transportation Charges Calc Level - Text,Transportation Charges Calc Level - Text,TM-CF-CC-2CL,,text,6,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHARGECALCRULE,Transportation Charge Calculation Rule,Transportation Charge Calculation Rule,TM-CF-CC-2CL,,basic,11,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHARGECALCSTATUS,Transportation Charge Calculation Status,Transportation Charge Calculation Status,TM-CF-CC-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHARGECALCSTATUSTEXT,Transp Charges Calculation Status - Text,Transp Charges Calculation Status - Text,TM-CF-CC-2CL,,text,6,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHARGEITEM,Transportation Charge Item,Transportation Charge Item,TM-CF-CC-2CL,,basic,42,0,Payment Terms,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHARGEPOSTINGSTATUS,Transporation Charge Posting Status,Transporation Charge Posting Status,TM-CF-CC-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHRGELMNTEXCHANGERATE,Transp Charge Element Exchange Rate,Transp Charge Element Exchange Rate,TM-CF-CC-2CL,,basic,15,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHRGITEMEXCHANGERATE,Transportation Charge Item Exchange Rate,Transportation Charge Item Exchange Rate,TM-CF-CC-2CL,,basic,16,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPCHRGPOSTGSTATUSTEXT,Transp Charge Posting Status - Text,Transp Charge Posting Status - Text,TM-CF-CC-2CL,,text,6,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPORTATIONCHARGE,Transportation Charge,Transportation Charge,TM-CF-CC-2CL,,basic,18,0,,top-level,yes,VDM_TM_TCC,no
+I_TRANSPORTATIONCHARGEELEMENT,Transportation Charge Element,Transportation Charge Element,TM-CF-CC-2CL,,basic,56,0,,top-level,yes,VDM_TM_TCC,no
+I_FREIGHTAGREEMENTITEMTP,Freight Agreement Item - TP,Freight Agreement Item - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FREIGHTAGREEMENTPARTYTP,Freight Agreement Party - TP,Freight Agreement Party - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FREIGHTAGREEMENTRATETABLETP,Freight Agreement Rate Table - TP,Freight Agreement Rate Table - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FREIGHTAGREEMENTTP,Freight Agreement - TP,Freight Agreement - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FREIGHTAGRMTCALCSHEETTP,Freight Agreement Calculation Sheet - TP,Freight Agreement Calculation Sheet - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FRTAGRMTCALCSHEETITEMTP,Freight Agrmt Calc Sheet Item - TP,Freight Agrmt Calc Sheet Item - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FRTAGRMTCALCSHTITMCALCRULETP,Frt Agrmt Calc Sheet Item Calc Rule - TP,Frt Agrmt Calc Sheet Item Calc Rule - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FRTAGRMTITEMPAYMENTTERMTP,Freight Agreement Payment Terms - TP,Freight Agreement Payment Terms - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FRTAGRMTORGANIZATIONTP,Freight Agreement Organization - TP,Freight Agreement Organization - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FRTAGRMTRATETABLECALCRULETP,Freight Agrmt Rate Table Calc Rule - TP,Freight Agrmt Rate Table Calc Rule - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FRTAGRMTRATETABLERATETP,Freight Agreement Rate Table Rate - TP,Freight Agreement Rate Table Rate - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FRTAGRMTRATETABLESCALEREFTP,Freight Agrmt Rate Table Scale Ref - TP,Freight Agrmt Rate Table Scale Ref - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_FRTAGRMTRATETABLEVALIDITYTP,Freight Agrmt Rate Table Validity - TP,Freight Agrmt Rate Table Validity - TP,TM-FRA-2CL,,basic,0,0,,top-level,yes,RAP_TM_FAG_API,no
+I_TRANSPAGREEMENTDESCRIPTION_2,Transportation Agreement Description,Transportation Agreement Description,TM-FRA-2CL,,basic,4,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGREEMENTITEM_2,Transportation Agreement Item,Transportation Agreement Item,TM-FRA-2CL,,basic,12,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGREEMENTPARTY_2,Transportation Agreement Party,Transportation Agreement Party,TM-FRA-2CL,,basic,5,0,Business Partner,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGREEMENTSTATUS,Agreement Status,Agreement Status,TM-FRA-2CL,,basic,3,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGREEMENTSTATUSTEXT_2,Transportation Agreement Status - Text,Transportation Agreement Status - Text,TM-FRA-2CL,,basic,6,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGREEMENTTYPE,Transportation Agreement Type,Transportation Agreement Type,TM-FRA-2CL,,basic,2,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGREEMENTTYPETEXT,Transportation Agreement Type - Text,Transportation Agreement Type - Text,TM-FRA-2CL,,text,5,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGRMTITEMDESCRIPTION_2,Transp Agreement Item Description,Transp Agreement Item Description,TM-FRA-2CL,,basic,5,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGRMTORGANIZATION_2,Transportation Agreement Organization,Transportation Agreement Organization,TM-FRA-2CL,,basic,5,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPAGRMTPAYMENTTERM,Transportation Agreement Payment Term,Transportation Agreement Payment Term,TM-FRA-2CL,,basic,7,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPCHRGCALCSHEETITEM,Transp Charge Calculation Sheet Item,Transp Charge Calculation Sheet Item,TM-FRA-2CL,,basic,32,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPCHRGCALCULATIONSHEET_2,Transportation Charge Calculation Sheet,Transportation Charge Calculation Sheet,TM-FRA-2CL,,basic,7,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPORTATIONAGREEMENT,Transportation Agreement,Transportation Agreement,TM-FRA-2CL,,basic,28,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPORTATIONRATE,Transportation Rate Table,Transportation Rate Table,TM-FRA-2CL,,basic,23,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPORTATIONRATEVALIDITY_2,Transportation Rate Validity,Transportation Rate Validity,TM-FRA-2CL,,basic,26,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPORTATIONSCALE,Transportation Scale,Transportation Scale,TM-FRA-2CL,,basic,21,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPORTATIONSCALEITEM,Transportation Scale Item,Transportation Scale Item,TM-FRA-2CL,,basic,16,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATECALCRULE,Transportation Rate Calculation Rule,Transportation Rate Calculation Rule,TM-FRA-2CL,,basic,10,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION01,Rate Table 1 Dimensional Rates,Rate Table 1 Dimensional Rates,TM-FRA-2CL,,basic,9,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION02,Rate Table 2 Dimensional Rates,Rate Table 2 Dimensional Rates,TM-FRA-2CL,,basic,10,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION03,Rate Table 3 Dimensional Rates,Rate Table 3 Dimensional Rates,TM-FRA-2CL,,basic,11,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION04,Rate Table 4 Dimensional Rates,Rate Table 4 Dimensional Rates,TM-FRA-2CL,,basic,12,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION05,Rate Table 5 Dimensional Rates,Rate Table 5 Dimensional Rates,TM-FRA-2CL,,basic,13,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION06,Rate Table 6 Dimensional Rates,Rate Table 6 Dimensional Rates,TM-FRA-2CL,,basic,14,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION07,Rate Table 7 Dimensional Rates,Rate Table 7 Dimensional Rates,TM-FRA-2CL,,basic,15,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION08,Rate Table 8 Dimensional Rates,Rate Table 8 Dimensional Rates,TM-FRA-2CL,,basic,16,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION09,Rate Table 9 Dimensional Rates,Rate Table 9 Dimensional Rates,TM-FRA-2CL,,basic,17,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION10,Rate Table 10 Dimensional Rates,Rate Table 10 Dimensional Rates,TM-FRA-2CL,,basic,18,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION11,Rate Table 11 Dimensional Rates,Rate Table 11 Dimensional Rates,TM-FRA-2CL,,basic,19,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION12,Rate Table 12 Dimensional Rates,Rate Table 12 Dimensional Rates,TM-FRA-2CL,,basic,20,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION13,Rate Table 13 Dimensional Rates,Rate Table 13 Dimensional Rates,TM-FRA-2CL,,basic,21,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATEDIMENSION14,Rate Table 14 Dimensional Rates,Rate Table 14 Dimensional Rates,TM-FRA-2CL,,basic,22,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATESCALEREFERENCE,Transportation Rate Scale Reference,Transportation Rate Scale Reference,TM-FRA-2CL,,basic,21,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATETABLEDESCRIPTION_2,Transportation Rate Table Description,Transportation Rate Table Description,TM-FRA-2CL,,basic,4,0,,top-level,yes,VDM_TM_AGR,no
+I_TRANSPRATETABLEORGANIZATION,Transportation Rate Table Organization,Transportation Rate Table Organization,TM-FRA-2CL,,basic,5,0,,top-level,yes,VDM_TM_AGR,no
+D_FREIGHTBOOKINGCANCELED,FreightBookingCanceled Event Signature,FreightBookingCanceled Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTBOOKINGCHANGED,FreightBookingChanged Event Signature,FreightBookingChanged Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTBOOKINGCREATED,FreightBookingCreated Event Signature,FreightBookingCreated Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTBOOKINGCREATEP,CreateFreightBooking Action Parameter,CreateFreightBooking Action Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTORDCRTEFORDELIVITMP,FreightOrdCrteForDelivItmP Act Param,FreightOrdCrteForDelivItmP Act Param,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTORDERCANCELED,FreightOrderCanceled Event Signature,FreightOrderCanceled Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTORDERCHANGED,FreightOrderChanged Event Signature,FreightOrderChanged Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTORDERCREATED,FreightOrderCreated Event Signature,FreightOrderCreated Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTORDERCREATEFORDELIVP,FreightOrderCreateForDeliv Act Param,FreightOrderCreateForDeliv Act Param,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTORDERCREATEFORPICKUPP,FreightOrderCreateForPickup Action Param,FreightOrderCreateForPickup Action Param,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTORDERCREATEP,CreateFreightOrder Action Parameter,CreateFreightOrder Action Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTORDERCRTEFORPKUPITMP,FreightOrderCrteForPkup Item Parameter,FreightOrderCrteForPkup Item Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTUNITASSIGNPARAMETER,Freight Unit Assign Parameter,Freight Unit Assign Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTUNITCANCELED,FreightUnitCanceled Event Signature,FreightUnitCanceled Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTUNITCHANGED,FreightUnitChanged Event Signature,FreightUnitChanged Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTUNITCREATED,FreightUnitCreated Event Signature,FreightUnitCreated Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTUNITDELETED,FreightUnitDeleted Event Signature,FreightUnitDeleted Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_FREIGHTUNITUNASSIGNPARAMETER,Freight Unit Assign Parameter,Freight Unit Assign Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDASSIGNFRTUNITP,AssignFreightUnit Action Parameter,AssignFreightUnit Action Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDBLOCKSTSBFR,TOR Block Status Before,TOR Block Status Before,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDBLOCKSTSCHGD,BlockStatusChanged Event Signature,BlockStatusChanged Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDCHGLOCSEQUENCEP,ChangeLocationSequence Action Parameter,ChangeLocationSequence Action Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDCHGLOCSEQUENCER,ChangeLocationSequence Action Result,ChangeLocationSequence Action Result,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDCHGLOCSQNCLOCSQNCP,Location Sequence Parameter Component,Location Sequence Parameter Component,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDCHGLOCSQNCLOCSQNCR,Location Sequence Result Component,Location Sequence Result Component,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDCONFIRMATIONSTSBFR,TOR Confirmation Status Before,TOR Confirmation Status Before,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDCONFIRMATIONSTSCHGD,ConfStatusChanged Event Signature,ConfStatusChanged Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDEXECUTIONSTSBFR,TOR Execution Status Before,TOR Execution Status Before,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDEXECUTIONSTSCHGD,ExecStatusChanged Event Signature,ExecStatusChanged Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDGETLOCSEQUENCER,GetLocationSequence Function Result,GetLocationSequence Function Result,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDGETLOCSQNCLOCSQNCR,Location Sequence Result Component,Location Sequence Result Component,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDGOODSMVTSTSBFR,TOR Goods Movement Status Before,TOR Goods Movement Status Before,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDGOODSMVTSTSCHGD,GdsMvtStsChanged Event Signature,GdsMvtStsChanged Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDLIFECYCLESTSBFR,TOR Lifecycle Status Before,TOR Lifecycle Status Before,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDLIFECYCLESTSCHGD,LfcycStatusChanged Event Signature,LfcycStatusChanged Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDREPORTEVENTITEMP,Report Event Action Item Parameter,Report Event Action Item Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDREPORTEVENTP,ReportEvent Action Parameter,ReportEvent Action Parameter,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDSUBCONTRGSTSBFR,TOR Subcontracting Status Before,TOR Subcontracting Status Before,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDSUBCONTRGSTSCHGD,SubcontrgStsChgd Event Signature,SubcontrgStsChgd Event Signature,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+D_TRANSPORDUNASSIGNFRTUNITP,UnassignFreightUnit Action Par,UnassignFreightUnit Action Par,TM-FRM-2CL,,basic,0,0,,top-level,yes,RAP_TM_TOR,no
+I_TRANSPORDDNGRSGDSSTATUS,Transp Order Dangerous Goods Status,Transp Order Dangerous Goods Status,TM-FRM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDDNGRSGDSSTATUSTEXT,Transp Ord Dangerous Goods Status - Text,Transp Ord Dangerous Goods Status - Text,TM-FRM-2CL,,text,5,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDDOCREF_2,Transp Order Document Reference,Transp Order Document Reference,TM-FRM-2CL,,basic,13,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDEVENTISRECALLED,Transportation Order Event is Recalled,Transportation Order Event is Recalled,TM-FRM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDEVENTISRECALLEDTEXT,Transp Order Event is Recalled - Text,Transp Order Event is Recalled - Text,TM-FRM-2CL,,text,5,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDEXECUTIONBLOCKTEXT,Ind Transp Ord Exe Block - Text,Ind Transp Ord Exe Block - Text,TM-FRM-2CL,,text,5,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDEXECUTIONISBLOCKED,Transportation Order Execution Block,Transportation Order Execution Block,TM-FRM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDITEMBATCH,Transportation Order Item Batch,Transportation Order Item Batch,TM-FRM-2CL,,basic,12,0,Batch; Material / Product,top-level,yes,VDM_TM_BO_TOR,no
+I_TRANSPORDITEMCOMMODITYCODE,Transp Order Item Commodity Code,Transp Order Item Commodity Code,TM-FRM-2CL,,basic,8,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDITEMDOCREF,Transp Order Item Document Reference,Transp Order Item Document Reference,TM-FRM-2CL,,basic,13,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDITEMSEAL,Transportation Order Item Seal,Transportation Order Item Seal,TM-FRM-2CL,,basic,7,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDITEMSERIALNUMBER,Transportation Order Item Serial Number,Transportation Order Item Serial Number,TM-FRM-2CL,,basic,6,0,,top-level,yes,VDM_TM_BO_TOR,no
+I_TRANSPORDPLANNINGBLOCK,Transportation Order Planning Block,Transportation Order Planning Block,TM-FRM-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORDPLANNINGBLOCKTEXT,Transp Ord Planning Block - Text,Transp Ord Planning Block - Text,TM-FRM-2CL,,text,5,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORTATIONORDERBP_2,Transportation Order Business Partner,Transportation Order Business Partner,TM-FRM-2CL,,basic,9,0,Business Partner,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORTATIONORDEREVENT,Transportation Order Event,Transportation Order Event,TM-FRM-2CL,,basic,23,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORTATIONORDERITEM_2,Transportation Order Item,Transportation Order Item,TM-FRM-2CL,,basic,100,0,Material / Product,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORTATIONORDERSTAGE_2,Transportation Order Stage,Transportation Order Stage,TM-FRM-2CL,,basic,37,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORTATIONORDERSTOP_2,Transportation Order Stop,Transportation Order Stop,TM-FRM-2CL,,basic,36,0,,top-level,yes,VDM_TM_BO_TOR,yes
+I_TRANSPORTATIONORDER_2,Transportation Order,Transportation Order,TM-FRM-2CL,,basic,91,0,Company Code,top-level,yes,VDM_TM_BO_TOR,yes
+I_FREIGHTBOOKINGBPTP,Freight Booking Business Partner - TP,Freight Booking Business Partner - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGCHARGEITEMTP,Freight Booking Charge Item - TP,Freight Booking Charge Item - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGCHARGETP,Freight Booking Charge - TP,Freight Booking Charge - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGDOCREFTP,Freight Booking Document Reference - TP,Freight Booking Document Reference - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGEVENTTP,Freight Booking Event - TP,Freight Booking Event - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGITEMBATCHTP,Freight Booking Item Batch - TP,Freight Booking Item Batch - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGITEMDOCREFTP,Freight Booking Item Doc Ref - TP,Freight Booking Item Doc Ref - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGITEMSEALTP,Freight Booking Item Seal - TP,Freight Booking Item Seal - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGITEMTP,Freight Booking Item - TP,Freight Booking Item - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGSTAGETP,Freight Booking Stage - TP,Freight Booking Stage - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGSTOPTP,Freight Booking Stop - TP,Freight Booking Stop - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTBOOKINGTP,Freight Booking - TP,Freight Booking - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGBPADDRADDLRPRSTNTP,Frt Bkg BP Addr Addl Rprstn - TP,Frt Bkg BP Addr Addl Rprstn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGBPADDRDFLTRPRSTNTP,Frt Bkg BP Addr Dflt Rprstn - TP,Frt Bkg BP Addr Dflt Rprstn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGCHRGCALCBASETP,Freight Booking Charge Calc Base - TP,Freight Booking Charge Calc Base - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGCHRGCALCRULETP,Freight Booking Charge Calc Rule - TP,Freight Booking Charge Calc Rule - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGCHRGELEMENTTP,Freight Booking Charge Element - TP,Freight Booking Charge Element - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGCHRGELMNTEXCHRATETP,Freight Booking Chrg Elmnt Exch Rate - TP,Freight Booking Chrg Elmnt Exch Rate - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGCHRGITMEXCHRATETP,Freight Booking Chrg Item Exch Rate - TP,Freight Booking Chrg Item Exch Rate - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGITEMCOMMODITYCODETP,Freight Booking Item Commodity Code - TP,Freight Booking Item Commodity Code - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGITMMAINBPADADRPNTP,Frt Bkg Itm Main BP Addr Ad Rpn - TP,Frt Bkg Itm Main BP Addr Ad Rpn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGITMMAINBPADDFRPNTP,Frt Bkg Itm Main BP Addr Df Rpn - TP,Frt Bkg Itm Main BP Addr Df Rpn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGMAINBPADDRADDLRPRSTNTP,Frt Bkg Main BP Addr Addl Rprstn - TP,Frt Bkg Main BP Addr Addl Rprstn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGMAINBPADDRDFLTRPRSTNTP,Frt Bkg Main BP Addr Dflt Rprstn - TP,Frt Bkg Main BP Addr Dflt Rprstn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGSTGEBPADDRADDLRPRSTNTP,Frt Bkg Stage BP Addr Addl Rpn - TP,Frt Bkg Stage BP Addr Addl Rpn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGSTGEBPADDRDFLTRPRSTNTP,Frt Bkg Stage BP Addr Dflt Rpn - TP,Frt Bkg Stage BP Addr Dflt Rpn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGSTOPLOCADADRPNTP,Frt Bkg Stop Loc Addr Addl Rpn - TP,Frt Bkg Stop Loc Addr Addl Rpn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBKGSTOPLOCADDFRPNTP,Frt Bkg Stop Loc Addr Dflt Rpn - TP,Frt Bkg Stop Loc Addr Dflt Rpn - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FRTBOOKINGITEMSERIALNUMBERTP,Freight Booking Item Serial Number - TP,Freight Booking Item Serial Number - TP,TM-FRM-FRB-2CL,,basic,0,0,,top-level,yes,RAP_TM_FB_API,no
+I_FREIGHTORDERBPTP,Freight Order Business Partner - TP,Freight Order Business Partner - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERCHARGEITEMTP,Freight Order Charge Item - TP,Freight Order Charge Item - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERCHARGETP,Freight Order Charge - TP,Freight Order Charge - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERDOCREFTP,Freight Order Document Reference - TP,Freight Order Document Reference - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDEREVENTTP,Freight Order Event - TP,Freight Order Event - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERITEMBATCHTP,Freight Order Item Batch - TP,Freight Order Item Batch - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERITEMDOCREFTP,Freight Order Item Doc Ref - TP,Freight Order Item Doc Ref - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERITEMSEALTP,Freight Order Item Seal - TP,Freight Order Item Seal - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERITEMTP,Freight Order Item - TP,Freight Order Item - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERSTAGETP,Freight Order Stage - TP,Freight Order Stage - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERSTOPTP,Freight Order Stop - TP,Freight Order Stop - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FREIGHTORDERTP,Freight Order - TP,Freight Order - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDBPADDRADDLRPRSTNTP,Frt Ord BP Addr Addl Rprstn - TP,Frt Ord BP Addr Addl Rprstn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDBPADDRDFLTRPRSTNTP,Frt Ord BP Addr Dflt Rprstn - TP,Frt Ord BP Addr Dflt Rprstn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDCHRGCALCBASETP,Freight Order Charge Calculation Base - TP,Freight Order Charge Calculation Base - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDCHRGCALCRULETP,Freight Order Charge Calculation Rule - TP,Freight Order Charge Calculation Rule - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDCHRGELEMENTTP,Freight Order Charge Element - TP,Freight Order Charge Element - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDCHRGELMNTEXCHRATETP,Freight Order Chrg Elmnt Exch Rate - TP,Freight Order Chrg Elmnt Exch Rate - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDCHRGITMEXCHRATETP,Freight Order Charge Item Exch Rate - TP,Freight Order Charge Item Exch Rate - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDERITEMCOMMODITYCODETP,Freight Order Item Commodity Code - TP,Freight Order Item Commodity Code - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDERITEMSERIALNUMBERTP,Freight Order Item Serial Number - TP,Freight Order Item Serial Number - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDITMMAINBPADADRPNTP,Frt Ord Itm Main BP Addr Ad Rpn - TP,Frt Ord Itm Main BP Addr Ad Rpn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDITMMAINBPADDFRPNTP,Frt Ord Itm Main BP Addr Df Rpn - TP,Frt Ord Itm Main BP Addr Df Rpn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDMAINBPADDRADDLRPRSTNTP,Frt Ord Main BP Addr Addl Rprstn - TP,Frt Ord Main BP Addr Addl Rprstn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDMAINBPADDRDFLTRPRSTNTP,Frt Ord Main BP Addr Dflt Rprstn - TP,Frt Ord Main BP Addr Dflt Rprstn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDSTGEBPADDRADDLRPRSTNTP,Frt Ord Stage BP Addr Addl Rpn - TP,Frt Ord Stage BP Addr Addl Rpn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDSTGEBPADDRDFLTRPRSTNTP,Frt Ord Stage BP Addr Dflt Rpn - TP,Frt Ord Stage BP Addr Dflt Rpn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDSTOPLOCADADRPNTP,Frt Ord Stop Loc Addr Addl Rpn - TP,Frt Ord Stop Loc Addr Addl Rpn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_FRTORDSTOPLOCADDFRPNTP,Frt Ord Stop Loc Addr Dflt Rpn - TP,Frt Ord Stop Loc Addr Dflt Rpn - TP,TM-FRM-FRO-2CL,,basic,0,0,,top-level,yes,RAP_TM_FO_API,no
+I_PURCHASEORDITMTRANSPSETTLMT,Purchase order Item Transportation sett,Purchase order Item Transportation sett,TM-FRS-2CL,,basic,12,0,Purchasing Document,top-level,yes,VDM_TM_SETTLEMENT,yes
+D_FREIGHTAGREEMENTCHANGED,Event parameter for FAG Create/Update,Event parameter for FAG Create/Update,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_FREIGHTAGREEMENTCREATED,Event parameter for FAG create,Event parameter for FAG create,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_FREIGHTAGREEMENTDELETED,Event parameter for FAG delete,Event parameter for FAG delete,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_FREIGHTAGRMTLIFECYCLESTSBFR,FAG Lifecycle Status Before,FAG Lifecycle Status Before,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_FREIGHTAGRMTLIFECYCLESTSCHGD,LfcycStatusChanged Event Signature,LfcycStatusChanged Event Signature,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_TRANSPRATETABLECHANGED,Rate Table Changed Business Event,Rate Table Changed Business Event,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_TRANSPRATETABLECREATED,Event parameter for rate table create,Event parameter for rate table create,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_TRANSPRATETABLEDELETED,Event parameter for rate table delete,Event parameter for rate table delete,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_TRANSPRATETABLEVALIDITYCOPYP,Action Parameter for Copy Rates Validity,Action Parameter for Copy Rates Validity,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+D_TRANSPRATETBLVALIDITYUPDATEP,Action Parameter for Update Rates,Action Parameter for Update Rates,TM-MD-CM-2CL,,basic,0,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCALCMETHODTYPE,Transportation Calculation Method Type,Transportation Calculation Method Type,TM-MD-CM-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCALCMETHODTYPETEXT,Transp Calculation Method Type - Text,Transp Calculation Method Type - Text,TM-MD-CM-2CL,,text,6,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCALCULATIONBASE,Transportation Calculation Base,Transportation Calculation Base,TM-MD-CM-2CL,,basic,4,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCALCULATIONBASETXT,Transportation Calculation Base - Text,Transportation Calculation Base - Text,TM-MD-CM-2CL,,text,5,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCALCULATIONDATETYPE,Transportation Calculation Date Type,Transportation Calculation Date Type,TM-MD-CM-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCALCULATIONDATETYPETXT,Transp Calculation Date Type - Text,Transp Calculation Date Type - Text,TM-MD-CM-2CL,,text,6,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCHARGECALCRESLNBASE,Charge Calculation Resolution Base,Charge Calculation Resolution Base,TM-MD-CM-2CL,,basic,2,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCHARGECALCRESLNBASET,Chrg Calculation Resolution Base - Text,Chrg Calculation Resolution Base - Text,TM-MD-CM-2CL,,basic,5,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCHARGEINSTRNTYPE,Transportation Charges Instruction Type,Transportation Charges Instruction Type,TM-MD-CM-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPCHARGEINSTRNTYPETEXT,Transp Charges Instruction Type - Text,Transp Charges Instruction Type - Text,TM-MD-CM-2CL,,text,6,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPORTATIONRATESIGNTYPE_2,Transportation Rate Sign Type,Transportation Rate Sign Type,TM-MD-CM-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPORTATIONSCALEBASE_2,Transportation Scale Base,Transportation Scale Base,TM-MD-CM-2CL,,basic,9,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPORTATIONSCALETYPE_2,Transportation Scale Type,Transportation Scale Type,TM-MD-CM-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPRATESIGNTYPETEXT,Transportation Rate Sign Type - Text,Transportation Rate Sign Type - Text,TM-MD-CM-2CL,,text,6,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPRATETABLEVALDTYSTS,Transp Rate Table Validity Status,Transp Rate Table Validity Status,TM-MD-CM-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPRATETABLEVALDTYSTSTXT,Rate Table Validity Status - Text,Rate Table Validity Status - Text,TM-MD-CM-2CL,,text,6,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPRATEVALUETYPETEXT,Transportation Rate Value Type - Text,Transportation Rate Value Type - Text,TM-MD-CM-2CL,,text,6,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPRATEVALUETYPE_2,Transportation Rate Value Type,Transportation Rate Value Type,TM-MD-CM-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPSCALEBASETEXT_2,Transportation Scale Base - Text,Transportation Scale Base - Text,TM-MD-CM-2CL,,basic,5,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPSCALECALCTYPE,Transportation Calculation Type,Transportation Calculation Type,TM-MD-CM-2CL,,basic,3,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPSCALECALCTYPETEXT,Transportation Calculation Type - Text,Transportation Calculation Type - Text,TM-MD-CM-2CL,,text,6,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPSCALETYPETEXT_2,Transportation Scale Type - Text,Transportation Scale Type - Text,TM-MD-CM-2CL,,basic,6,0,,top-level,yes,VDM_TM_TCM_COMMON,no
+I_TRANSPORTATIONRATETABLETP,Rate Table - TP,Rate Table - TP,TM-MD-CM-RA-2CL,,basic,0,0,,top-level,yes,RAP_TM_RATE_TABLE_API,no
+I_TRANSPRATETABLECALCRULETP,Rate Table Calculation Rule - TP,Rate Table Calculation Rule - TP,TM-MD-CM-RA-2CL,,basic,0,0,,top-level,yes,RAP_TM_RATE_TABLE_API,no
+I_TRANSPRATETABLEORGTP,Rate Table Organization - TP,Rate Table Organization - TP,TM-MD-CM-RA-2CL,,basic,0,0,,top-level,yes,RAP_TM_RATE_TABLE_API,no
+I_TRANSPRATETABLERATETP,Rate Table Rate - TP,Rate Table Rate - TP,TM-MD-CM-RA-2CL,,basic,0,0,,top-level,yes,RAP_TM_RATE_TABLE_API,no
+I_TRANSPRATETABLESCALEREFTP,Rate Table Scale Reference - TP,Rate Table Scale Reference - TP,TM-MD-CM-RA-2CL,,basic,0,0,,top-level,yes,RAP_TM_RATE_TABLE_API,no
+I_TRANSPRATETABLEVALIDITYTP,Rate Table Validity Period - TP,Rate Table Validity Period - TP,TM-MD-CM-RA-2CL,,basic,0,0,,top-level,yes,RAP_TM_RATE_TABLE_API,no
+I_TRANSPCOCODEBPASSGMT,Company Code and Business Partner Assgmt,Company Code and Business Partner Assgmt,TM-MD-ORG-2CL,,basic,10,0,Business Partner,top-level,yes,VDM_TM_ORG_UNIT,yes
+I_TRANSPPURGGROUP,Purchasing Group,Purchasing Group,TM-MD-ORG-2CL,,basic,2,0,,top-level,yes,VDM_TM_ORG_UNIT,yes
+I_TRANSPPURGORG,Purchasing Organization,Purchasing Organization,TM-MD-ORG-2CL,,basic,5,0,,top-level,yes,VDM_TM_ORG_UNIT,yes
+I_MATERIALFREIGHTGROUP,Material Freight Group,Material Freight Group,TM-MD-PR-2CL,,basic,2,0,,top-level,yes,CLTM_MAT_FREIGHT_GROUP,no
+I_MATERIALFREIGHTGROUPSTDVH,Material Freight Group,Material Freight Group,TM-MD-PR-2CL,,value_help,2,0,,top-level,yes,CLTM_MAT_FREIGHT_GROUP,no
+I_MATERIALFREIGHTGROUPTEXT,Material Freight Group - Text,Material Freight Group - Text,TM-MD-PR-2CL,,text,5,0,,top-level,yes,CLTM_MAT_FREIGHT_GROUP,no
+I_MATERIALFREIGHTGROUPVH,Material Freight Group,Material Freight Group,TM-MD-PR-2CL,,value_help,2,0,,top-level,yes,CLTM_MAT_FREIGHT_GROUP,no
+I_TRANSPORTATIONGROUP,Transportation Group,Transportation Group,TM-MD-PR-2CL,,basic,2,0,,top-level,yes,CLTM_PRODUCT_TRGRP,yes
+I_TRANSPORTATIONGROUPTEXT,Transportation Group - Text,Transportation Group - Text,TM-MD-PR-2CL,,text,5,0,,top-level,yes,CLTM_PRODUCT_TRGRP,no
+I_TRANSPORTATIONMODECATEGORY,Transportation Mode Category,Transportation Mode Category,TM-MD-TN-2CL,Dimension,dimension,3,0,,top-level,yes,CLTM_TN_TRANSP_MODE,yes
+I_TRANSPORTATIONMODECATEGORYT,Transportation Mode Category - Text,Transportation Mode Category - Text,TM-MD-TN-2CL,,basic,6,0,,top-level,yes,CLTM_TN_TRANSP_MODE,yes
+I_TRANSPORTATIONMODETEXT_2,Transportation Mode - Text,Transportation Mode - Text,TM-MD-TN-2CL,,basic,5,0,,top-level,yes,CLTM_TN_TRANSP_MODE,yes
+I_TRANSPORTATIONMODE_2,Transportation Mode,Transportation Mode,TM-MD-TN-2CL,Dimension,dimension,4,0,,top-level,yes,CLTM_TN_TRANSP_MODE,yes
+I_LOCATIONADDRESSDATATEXT,Location Address Data - Text,Location Address Data - Text,TM-MD-TN-LOC-2CL,,text,7,0,,top-level,yes,VDM_LOCATION,no
+I_LOCATIONBASICTEXT_2,Location - Text,Location - Text,TM-MD-TN-LOC-2CL,,basic,5,0,,top-level,yes,VDM_LOCATION,no
+I_LOCATIONBASIC_2,Location,Location,TM-MD-TN-LOC-2CL,,basic,30,0,Address,top-level,yes,VDM_LOCATION,no
+I_LOCATIONTYPETEXT_2,Location Type - Text,Location Type - Text,TM-MD-TN-LOC-2CL,,basic,6,0,,top-level,yes,VDM_LOCATION,no
+I_LOCATIONTYPE_2,Location Types,Location Types,TM-MD-TN-LOC-2CL,,basic,3,0,,top-level,yes,VDM_LOCATION,no
+I_FREIGHTUNITBUSINESSPARTNERTP,Freight Unit Business Partner - TP,Freight Unit Business Partner - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FREIGHTUNITDOCREFTP,Freight Unit Document Reference - TP,Freight Unit Document Reference - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FREIGHTUNITITEMBATCHTP,Freight Unit Item Batch - TP,Freight Unit Item Batch - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FREIGHTUNITITEMDOCREFTP,Freight Unit Item Doc Ref - TP,Freight Unit Item Doc Ref - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FREIGHTUNITITEMTP,Freight Unit Item - TP,Freight Unit Item - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FREIGHTUNITSTAGETP,Freight Unit Stage - TP,Freight Unit Stage - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FREIGHTUNITSTOPTP,Freight Unit Stop - TP,Freight Unit Stop - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FREIGHTUNITTP,Freight Unit - TP,Freight Unit - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FRTUNITBPADDRADDLRPRSTNTP,Frt Unit BP Addr Addl Rprstn - TP,Frt Unit BP Addr Addl Rprstn - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FRTUNITBPADDRDFLTRPRSTNTP,Frt Unit BP Addr Dflt Rprstn - TP,Frt Unit BP Addr Dflt Rprstn - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FRTUNITITEMCOMMODITYCODETP,Freight Unit Item Commodity Code - TP,Freight Unit Item Commodity Code - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FRTUNITITEMSERIALNUMBERTP,Freight Unit Item Serial Number - TP,Freight Unit Item Serial Number - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FRTUNITSTOPLOCADADRPNTP,Frt Unit Stop Loc Addr Addl Rpn - TP,Frt Unit Stop Loc Addr Addl Rpn - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FRTUNITSTOPLOCADDFRPNTP,Frt Unit Stop Loc Addr Dflt Rpn - TP,Frt Unit Stop Loc Addr Dflt Rpn - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FRTUNTMAINBPADDRADDLRPRSTNTP,Frt Unit Main BP Addr Addl Rprstn - TP,Frt Unit Main BP Addr Addl Rprstn - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no
+I_FRTUNTMAINBPADDRDFLTRPRSTNTP,Frt Unit Main BP Addr Dflt Rprstn - TP,Frt Unit Main BP Addr Dflt Rprstn - TP,TM-PLN-FU-2CL,,basic,0,0,,top-level,yes,RAP_TM_FU_API,no

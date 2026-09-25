@@ -1,91 +1,231 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_LANGUAGE,Language,Language,BC-DOC-TTL,Dimension,dimension,3,0,,top-level
-I_LANGUAGETEXT,Language Text,Language Text,BC-DOC-TTL,,text,5,0,,top-level
-I_CONFIGNDEPRECATIONCODE,Configuration Deprecation Code,Configuration Deprecation Code,BC-DWB-DIC,Dimension,dimension,3,0,,top-level
-I_CONFIGNDEPRECATIONCODETEXT,Configuration Deprecation Code Text,Configuration Deprecation Code Text,BC-DWB-DIC,,text,5,0,,top-level
-I_SYSTEMUSER,System User,System User,BC-SEC-USR-ADM,,basic,2,0,,top-level
-I_USER,User,User,BC-SEC-USR-ADM,,basic,9,0,Address,top-level
-I_COUNTRY,Country/Region,Country/Region,BC-SRV-ADR,Dimension,dimension,20,0,,top-level
-I_COUNTRYTEXT,Country/Region - Text,Country/Region - Text,BC-SRV-ADR,,text,8,0,,top-level
-I_COUNTRYVH,Country/Region,Country/Region,BC-SRV-ADR,Dimension,value_help,5,0,,top-level
-I_FAMILYNAMEPREFIX,Family Name Prefix,Family Name Prefix,BC-SRV-ADR,,basic,2,0,,top-level
-I_FAMILYNAMEPREFIXVH,Family Name Prefix,Family Name Prefix,BC-SRV-ADR,,value_help,2,0,,top-level
-I_FORMOFADDRESS,Form of Address,Form of Address,BC-SRV-ADR,Dimension,dimension,2,0,,top-level
-I_FORMOFADDRESSTEXT,Form Of Address - Text,Form Of Address - Text,BC-SRV-ADR,,text,5,0,,top-level
-I_NAMESUPPLEMENT,Name Supplement,Name Supplement,BC-SRV-ADR,,basic,3,0,,top-level
-I_NAMESUPPLEMENTTEXT,Name Supplement - Text,Name Supplement - Text,BC-SRV-ADR,,text,3,0,,top-level
-I_NAMESUPPLEMENTVH,Name Supplement,Name Supplement,BC-SRV-ADR,,value_help,3,0,,top-level
-I_ORGADDRESSDEFAULTRPRSTN,Default Representation of an Org Address,Default Representation of an Org Address,BC-SRV-ADR,Dimension,dimension,87,0,Address,top-level
-I_ORGANIZATIONADDRESS,Address of an Organization,Address of an Organization,BC-SRV-ADR,Dimension,dimension,94,0,Address,top-level
-I_ORGNAMEPOSTLADDRDFLTRPRSTN,Dflt Addr Rprstn for Postal and Org,Dflt Addr Rprstn for Org and Postal,BC-SRV-ADR,Dimension,dimension,58,0,Address,top-level
-I_PERSONADDRESS,Address of a Person,Address of a Person,BC-SRV-ADR,Dimension,dimension,110,0,Address,top-level
-I_PERSONADDRESSDEFAULTRPRSTN,Deafult Represention for Address of a Person,Dflt Represention of a Person Address,BC-SRV-ADR,Dimension,dimension,100,0,Address,top-level
-I_PERSONWORKPLACEADDRESS,Corporate Workplace Address of a Person,Corporate Workplace Address of a Person,BC-SRV-ADR,Fact,fact,41,0,Address,top-level
-I_PHONENUMBERTYPE,Phone Number Type,Phone Number Type,BC-SRV-ADR,,basic,2,0,,top-level
-I_PHONENUMBERTYPETEXT,Text for Phone Number Type,Text for Phone Number Type,BC-SRV-ADR,,text,3,0,,top-level
-I_POSTALCITY,Postal City,Postal City,BC-SRV-ADR,,basic,6,0,,top-level
-I_POSTALCITYTEXT,Description of Postal City,Description of Postal City,BC-SRV-ADR,,text,6,0,,top-level
-I_REGION,Region,Region,BC-SRV-ADR,Dimension,dimension,5,0,,top-level
-I_REGIONALSTRUCCHECKSTATUSTEXT,Regional Structure Check Status - Text,Regional Structure Check Status - Text,BC-SRV-ADR,,text,3,0,,top-level
-I_REGIONALSTRUCTURECHECKSTATUS,Regional Structure Check Status,Regional Structure Check Status,BC-SRV-ADR,,basic,2,0,,top-level
-I_REGIONTEXT,Region - Text,Region - Text,BC-SRV-ADR,,text,7,0,,top-level
-I_REGIONVH,Region,Region,BC-SRV-ADR,,value_help,4,0,,top-level
-I_SECONDARYREGION,Secondary Region,Secondary Region,BC-SRV-ADR,,basic,6,0,,top-level
-I_SECONDARYREGIONTEXT,Description of Secondary Text,Description of Secondary Text,BC-SRV-ADR,,text,8,0,,top-level
-I_STREET,Street,Street,BC-SRV-ADR,,basic,6,0,,top-level
-I_STREETTEXT,Street - Text,Street - Text,BC-SRV-ADR,,text,8,0,,top-level
-I_TAXINGCOUNTY,Taxing County,Taxing County,BC-SRV-ADR,,basic,6,0,,top-level
-I_TAXINGCOUNTYTEXT,Description of Taxing County,Description of Taxing County,BC-SRV-ADR,,text,8,0,,top-level
-I_TERTIARYREGION,Tertiary Region,Tertiary Region,BC-SRV-ADR,,basic,8,0,,top-level
-I_TERTIARYREGIONTEXT,Description of Tertiary Region,Description of Tertiary Region,BC-SRV-ADR,,text,10,0,,top-level
-I_TRANSPORTATIONZONE,Transportation Zone,Transportation Zone,BC-SRV-ADR,,basic,4,0,,top-level
-I_TRANSPORTATIONZONETEXT,Transportation Zone - Text,Transportation Zone - Text,BC-SRV-ADR,,text,4,0,,top-level
-I_TRANSPORTATIONZONEVH,Transport Zone,Transport Zone,BC-SRV-ADR,,value_help,4,0,,top-level
-I_CUSTOMFIELDCODELISTTEXT,Custom Field Code List Value Description,Custom Field Code List Value Description,BC-SRV-APS-EXT-FLD,,text,6,0,,top-level
-I_CUSTOMFIELDCODELISTVALUE,Custom Field Code List Value,Custom Field Code List Value,BC-SRV-APS-EXT-FLD,,basic,4,0,,top-level
-I_CUSTOMFIELDCODELISTVALUEHELP,Valuehelp View for Custom Field Codes,Valuehelp View for Custom Field Codes,BC-SRV-APS-EXT-FLD,,basic,3,0,,top-level
-I_IAMBUSINESSROLE,Business Role,Business Role,BC-SRV-APS-IAM,,basic,10,0,,top-level
-I_IAMBUSINESSROLEPRICECATEGORY,Business Role Price category,Business Role Price Category,BC-SRV-APS-IAM,,basic,4,0,,top-level
-I_IAMBUSINESSROLEPRICECATTEXT,Business Role Price Category Text,Business Role Price Category Text,BC-SRV-APS-IAM,,text,8,0,,top-level
-I_IAMBUSINESSROLETEXT,Business Role Text,Business Role Text,BC-SRV-APS-IAM,,text,7,0,,top-level
-I_IAMBUSINESSUSERBUSINESSROLE,Business User - Business Role assignment,Business User - Business Role assignment,BC-SRV-APS-IAM,,basic,6,0,,top-level
-I_IAMBUSINESSUSERLOGONDETAILS,Business User Logon Details,Business User Logon Details,BC-SRV-APS-IAM,,basic,22,0,,top-level
-I_IAMBUSINESSUSERPRICECATEGORY,Business User Price Category,Business User Price Category,BC-SRV-APS-IAM,,basic,5,0,,top-level
-I_IAMBUSINESSUSERPRICECATTEXT,Business User Price Category Text,Business User Price Category Text,BC-SRV-APS-IAM,,text,6,0,,top-level
-I_IAMSUPPORTUSERREQUESTLOG,Support User Request Log,Support User Request Log,BC-SRV-APS-IAM,,basic,17,0,,top-level
-I_FISCALPERIODRAWDATA,Fiscal Periods Raw Data,Fiscal Periods Raw Data,BC-SRV-ASF-FYV,,basic,7,0,,top-level
-I_FISCALPERIODTEXTRAWDATA,Fiscal Period Texts Raw Data,Fiscal Period Texts Raw Data,BC-SRV-ASF-FYV,,basic,8,0,Fiscal Year,top-level
-I_FISCALYEARVARIANT,Fiscal Year Variant,Fiscal Year Variant,BC-SRV-ASF-FYV,Dimension,dimension,8,0,,top-level
-I_FISCALYEARVARIANTTEXT,Fiscal Year Variant Text,Fiscal Year Variant Text,BC-SRV-ASF-FYV,,text,4,0,,top-level
-I_SHORTENEDFISCALYEAR,Shortened fiscal years in FI-AA,Shortened fiscal years in FI-AA,BC-SRV-ASF-FYV,,basic,7,0,Fiscal Year,top-level
-I_UNITOFMEASURE,Unit of Measure,Unit of Measure,BC-SRV-ASF-UOM,Dimension,dimension,23,0,,top-level
-I_UNITOFMEASURECOMMERCIALNAME,Unit of Measure Assignment of commercial to internal,Unit of Measure Commercial Name,BC-SRV-ASF-UOM,,basic,0,0,,top-level
-I_UNITOFMEASUREDIMENSION,Unit of Measure Dimension,Unit of Measure Dimension,BC-SRV-ASF-UOM,Dimension,dimension,12,0,,top-level
-I_UNITOFMEASUREDIMENSIONTEXT,Unit of Measure Dimension Text,Unit of Measure Dimension Text,BC-SRV-ASF-UOM,,text,5,0,,top-level
-I_UNITOFMEASUREISOCODE,Unit of Measure Iso Code,Unit of Measure ISO Code,BC-SRV-ASF-UOM,,basic,2,0,,top-level
-I_UNITOFMEASUREISOCODETEXT,Unit of Measure Iso Code Text,Unit of Measure ISO Code Text,BC-SRV-ASF-UOM,,text,5,0,,top-level
-I_UNITOFMEASURESTDVH,Value Help for Unit of Measure,Unit of Measure,BC-SRV-ASF-UOM,,value_help,5,0,,top-level
-I_UNITOFMEASURETECHNICALNAME,Unit of Measure Assignment of technical to internal,Unit of Measure Technical Name,BC-SRV-ASF-UOM,,basic,0,0,,top-level
-I_UNITOFMEASURETEXT,Unit of Measure Text,Unit of Measure Text,BC-SRV-ASF-UOM,,text,9,0,,top-level
-I_BUPAIDENTIFICATIONTYPE,CDS View for BP Identification Types,CDS View for BP Identification Types,BC-SRV-BP,,basic,5,0,,top-level
-I_WORKPLACEADDRESS,Employee Workplace Address,Employee Workplace Address,BC-SRV-BP,Dimension,dimension,30,1,Address; Business Partner,top-level
-I_CURRENCY,Currency,Currency,BC-SRV-BSF-CUR,Dimension,dimension,6,0,,top-level
-I_CURRENCYSTDVH,Search help view for Currency Codes,Currency,BC-SRV-BSF-CUR,,value_help,2,0,,top-level
-I_CURRENCYTEXT,Currency Text,Currency Text,BC-SRV-BSF-CUR,,text,6,0,,top-level
-I_EXCHANGERATEFACTORSRAWDATA,Exchange Rate Factors Raw Data,Exchange Rate Factors Raw Data,BC-SRV-BSF-CUR,,basic,11,0,,top-level
-I_EXCHANGERATERAWDATA,Exchange Rate Raw Data,Exchange Rate Raw Data,BC-SRV-BSF-CUR,,basic,10,0,,top-level
-I_EXCHANGERATESPREADRAWDATA,Exchange Rates Spread Raw Data,Exchange Rates Spread Raw Data,BC-SRV-BSF-CUR,,basic,8,0,,top-level
-I_EXCHANGERATETYPE,Exchange Rate Type,Exchange Rate Type,BC-SRV-BSF-CUR,Dimension,dimension,9,0,,top-level
-I_EXCHANGERATETYPESTDVH,Exchange Rate Type,,BC-SRV-BSF-CUR,,value_help,2,0,,top-level
-I_EXCHANGERATETYPETEXT,Exchange Rate Type Text,Exchange Rate Type Text,BC-SRV-BSF-CUR,,text,4,0,,top-level
-I_EXCHRATEQTANTYPERAWDATA,Exchange Rate Quotation Type,Exchange Rate Quotation Type,BC-SRV-BSF-CUR,,basic,6,0,,top-level
-I_BUSINESSUSERBASIC,Business User Basic View,Business User Basic,BC-SRV-BUM,,basic,43,0,Business Partner,top-level
-I_BUSINESSUSERVH,Business User - Value Help,Business User - Value Help,BC-SRV-BUM,,value_help,23,0,Business Partner,top-level
-I_DAYLIGHTSAVINGRULE,Daylight Saving Rule,Daylight Saving Rule,BC-SRV-TIM-TZ,Dimension,dimension,4,0,,top-level
-I_DAYLIGHTSAVINGRULETEXT,Daylight Saving Rule Text,Daylight Saving Rule Text,BC-SRV-TIM-TZ,,text,5,0,,top-level
-I_TIMEZONE,Time Zone,Time Zone,BC-SRV-TIM-TZ,Dimension,dimension,7,0,,top-level
-I_TIMEZONEIANACODEMAP,Time Zone Code According to IANA Time Zone Database,Time Zone Code According to IANA Time Zone Database,BC-SRV-TIM-TZ,Dimension,dimension,5,0,,top-level
-I_TIMEZONEIANACODESTDVH,Time Zone Code According to IANA Time Zone Database,Time Zone Code According to IANA Time Zone Database,BC-SRV-TIM-TZ,,value_help,3,0,,top-level
-I_TIMEZONERULE,Time Zone Rule,Time Zone Rule,BC-SRV-TIM-TZ,Dimension,dimension,5,0,,top-level
-I_TIMEZONERULETEXT,Time Zone Rule Text,Time Zone Rule Text,BC-SRV-TIM-TZ,,text,5,0,,top-level
-I_TIMEZONETEXT,Time Zone Text,Time Zone Text,BC-SRV-TIM-TZ,,text,5,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+ABP_BEHV_DRAFT_USER_ACCESS,Draft user access,Draft user access,BC-ABA-LA,,basic,0,0,,top-level,yes,SABP_BEHV,no
+ABP_BEHV_PAR_SHARE,"Parameter for draft action ""Share""","Parameter for draft action ""Share""",BC-ABA-LA,,basic,0,0,,top-level,yes,SABP_BEHV,no
+I_SAPGUIICON,SAP GUI Icon,SAP GUI Icon,BC-ABA-SC,,basic,3,0,,top-level,yes,SDYN,no
+I_SAPGUIICONTEXT,SAP GUI Icon Text,SAP GUI Icon Text,BC-ABA-SC,,text,5,0,,top-level,yes,SDYN,no
+I_USERSUBSTITUTE,User Substitutes (HRUS_D2),User Substitutes (HRUS_D2),BC-BMT-OM,,basic,8,0,,top-level,yes,SP00,no
+I_WORKFLOWAGENTRULE,Workflow Definition Agent Rule,Workflow Definition Agent Rule,BC-BMT-WFM,,basic,4,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWAGENTRULETEXT,Workflow Definition Agent Rule Text,Workflow Definition Agent Rule Text,BC-BMT-WFM,,text,6,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWEXTERNALSTATUS,Workflow Status,Workflow Status,BC-BMT-WFM,,basic,2,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWEXTERNALSTATUSTEXT,Workflow Status Text,Workflow Status Text,BC-BMT-WFM,,text,4,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWRECIPIENTS_V2,Workflow Task Recipient,Workflow Task Recipient,BC-BMT-WFM,,basic,7,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSCENARIODEFINITION,Workflow Scenario Definition,Workflow Scenario Definition,BC-BMT-WFM,,basic,2,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSCENARIODEFTEXT,Workflow Scenario Definition Text,Workflow Scenario Definition Text,BC-BMT-WFM,,text,4,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSCENARIORESULT,Workflow Scenario Result,Workflow Scenario Result,BC-BMT-WFM,,basic,5,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSCENARIORESULTTEXT,Workflow Scenario Result Text,Workflow Scenario Result Text,BC-BMT-WFM,,text,6,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSTATUSDETAILS,Workflow Task,Workflow Task,BC-BMT-WFM,,basic,20,2,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSTATUSOVERVIEW,Workflow,Workflow,BC-BMT-WFM,,basic,19,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSTEPRESULT,Workflow Step Result,Workflow Step Result,BC-BMT-WFM,,basic,6,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSTEPRESULTTEXT,Workflow Step Result Text,Workflow Step Result Text,BC-BMT-WFM,,text,7,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSTEPTYPE,Workflow Step Type,Workflow Step Type,BC-BMT-WFM,,basic,8,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWSTEPTYPETEXT,Workflow Step Type Text,Workflow Step Type Text,BC-BMT-WFM,,text,6,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWTASKEXTERNALSTATTEXT,Workflow Task Status Text,Workflow Task Status Text,BC-BMT-WFM,,text,4,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+I_WORKFLOWTASKEXTERNALSTATUS,Workflow Task Status,Workflow Task Status,BC-BMT-WFM,,basic,2,0,,top-level,yes,SWF_FLEX_IFS_DEV_PUBLISHED,no
+D_CPWF_CONTEXT_PARAMETER,Parameter field for workflow context,Parameter field for workflow context,BC-BMT-WFP,,basic,0,0,,top-level,yes,SWF_CPWF_API,no
+D_CPWF_START_PARAMETER,Parameter field for workflow start,Parameter field for workflow start,BC-BMT-WFP,,basic,0,0,,top-level,yes,SWF_CPWF_API,no
+I_CPWF_INST,Cloud Platform Workflow Instances,Cloud Platform Workflow Instances,BC-BMT-WFP,,basic,0,0,,top-level,yes,SWF_CPWF_API,no
+I_ABAPTRANSPORTREQUESTTEXT,ABAP Transport Request Text Description,ABAP Transport Request Text Description,BC-CTS-ORG,,text,4,0,,top-level,yes,SCTS_REQ,no
+I_CUSTABAPOBJDIRECTORYENTRY,Customer ABAP Object Directory Entry,Customer ABAP Object Directory Entry,BC-CTS-ORG,,basic,8,0,,top-level,yes,SCTS_CAT,no
+I_CUSTABAPPACKAGE,Customer ABAP Package,Customer ABAP Package,BC-CTS-ORG,,basic,8,0,,top-level,yes,SCTS_CAT,no
+D_SELECTCUSTOMIZINGTRANSPTREQP,Select Customizing Transport Request,Select Customizing Transport Request,BC-CUS-TOL-MBC,,basic,0,0,,top-level,yes,S_MBC_CP_API_TRANSLATED,no
+I_CSTMBIZCONFIGNLASTCHGD,Custom Business Configuration Last Changed Date Time,Custom Business Configuration Last Changed Date Time,BC-CUS-TOL-MBC,,basic,2,0,,top-level,yes,S_MBC_CLOUD_PLATFORM_API,no
+I_LANGUAGE,Language,Language,BC-DOC-TTL,Dimension,dimension,3,0,,top-level,yes,STRO,yes
+I_LANGUAGETEXT,Language Text,Language Text,BC-DOC-TTL,,text,5,0,,top-level,yes,STRO,yes
+I_LANGUAGEVH,Language,Language,BC-DOC-TTL,,value_help,3,0,,top-level,yes,STRO,no
+SYCM_APS_ATC_FINDINGS,Custom Code Analysis - ATC Findings,Custom Code Analysis - ATC Findings,BC-DWB-CEX-CCM,,basic,18,0,,top-level,yes,SYCM_APS,no
+SYCM_APS_PROJECT,Custom Code Analysis - Projects,Custom Code Analysis - Projects,BC-DWB-CEX-CCM,,basic,5,0,,top-level,yes,SYCM_APS,no
+SYCM_APS_SCOPE_BY_EP_ITEM,Scope for entry point items,Scope for entry point items,BC-DWB-CEX-CCM,,basic,10,0,,top-level,yes,SYCM_APS,no
+DDCDS_CUSTOMER_DOMAIN_VALUE,Fixed Value of Customer Domain,Fixed Value of Customer Domain,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_CUSTOMER_DOMAIN_VALUE_T,Fixed Value Text of Customer Domain,Fixed Value Text of Customer Domain,BC-DWB-DIC,,basic,5,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR1_SCP,CDS Simple Type: Enum Values CHAR1,CDS Simple Type: Enum Values CHAR1,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR1_T_SCP,CDS Simple Type: Enum Values CHAR1 Texts,CDS Simple Type: Enum Values CHAR1 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR2_SCP,CDS Simple Type: Enum Values CHAR2,CDS Simple Type: Enum Values CHAR2,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR2_T_SCP,CDS Simple Type: Enum Values CHAR2 Texts,CDS Simple Type: Enum Values CHAR2 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR3_SCP,CDS Simple Type: Enum Values CHAR3,CDS Simple Type: Enum Values CHAR3,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR3_T_SCP,CDS Simple Type: Enum Values CHAR3 Texts,CDS Simple Type: Enum Values CHAR3 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR4_SCP,CDS Simple Type: Enum Values CHAR4,CDS Simple Type: Enum Values CHAR4,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR4_T_SCP,CDS Simple Type: Enum Values CHAR4 Texts,CDS Simple Type: Enum Values CHAR4 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR5_SCP,CDS Simple Type: Enum Values CHAR5,CDS Simple Type: Enum Values CHAR5,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR5_T_SCP,CDS Simple Type: Enum Values CHAR5 Texts,CDS Simple Type: Enum Values CHAR5 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR6_SCP,CDS Simple Type: Enum Values CHAR6,CDS Simple Type: Enum Values CHAR6,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR6_T_SCP,CDS Simple Type: Enum Values CHAR6 Texts,CDS Simple Type: Enum Values CHAR6 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR7_SCP,CDS Simple Type: Enum Values CHAR7,CDS Simple Type: Enum Values CHAR7,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR7_T_SCP,CDS Simple Type: Enum Values CHAR7 Texts,CDS Simple Type: Enum Values CHAR7 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR8_SCP,CDS Simple Type: Enum Values CHAR8,CDS Simple Type: Enum Values CHAR8,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_CHAR8_T_SCP,CDS Simple Type: Enum Values CHAR8 Texts,CDS Simple Type: Enum Values CHAR8 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_INT1_SCP,CDS Simple Type: Enum Values INT1,CDS Simple Type: Enum Values INT1,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_INT1_T_SCP,CDS Simple Type: Enum Values INT1 Texts,CDS Simple Type: Enum Values INT1 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_INT2_SCP,CDS Simple Type: Enum Values INT2,CDS Simple Type: Enum Values INT2,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_INT2_T_SCP,CDS Simple Type: Enum Values INT2 Texts,CDS Simple Type: Enum Values INT2 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_INT4_SCP,CDS Simple Type: Enum Values INT4,CDS Simple Type: Enum Values INT4,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_INT4_T_SCP,CDS Simple Type: Enum Values INT4 Texts,CDS Simple Type: Enum Values INT4 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC1_SCP,CDS Simple Type: Enum Values NUMC1,CDS Simple Type: Enum Values NUMC1,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC1_T_SCP,CDS Simple Type: Enum Values NUMC1 Texts,CDS Simple Type: Enum Values NUMC1 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC2_SCP,CDS Simple Type: Enum Values NUMC2,CDS Simple Type: Enum Values NUMC2,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC2_T_SCP,CDS Simple Type: Enum Values NUMC2 Texts,CDS Simple Type: Enum Values NUMC2 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC3_SCP,CDS Simple Type: Enum Values NUMC3,CDS Simple Type: Enum Values NUMC3,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC3_T_SCP,CDS Simple Type: Enum Values NUMC3 Texts,CDS Simple Type: Enum Values NUMC3 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC4_SCP,CDS Simple Type: Enum Values NUMC4,CDS Simple Type: Enum Values NUMC4,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC4_T_SCP,CDS Simple Type: Enum Values NUMC4 Texts,CDS Simple Type: Enum Values NUMC4 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC5_SCP,CDS Simple Type: Enum Values NUMC5,CDS Simple Type: Enum Values NUMC5,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC5_T_SCP,CDS Simple Type: Enum Values NUMC5 Texts,CDS Simple Type: Enum Values NUMC5 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC6_SCP,CDS Simple Type: Enum Values NUMC6,CDS Simple Type: Enum Values NUMC6,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC6_T_SCP,CDS Simple Type: Enum Values NUMC6 Texts,CDS Simple Type: Enum Values NUMC6 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC7_SCP,CDS Simple Type: Enum Values NUMC7,CDS Simple Type: Enum Values NUMC7,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC7_T_SCP,CDS Simple Type: Enum Values NUMC7 Texts,CDS Simple Type: Enum Values NUMC7 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC8_SCP,CDS Simple Type: Enum Values NUMC8,CDS Simple Type: Enum Values NUMC8,BC-DWB-DIC,,basic,4,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+DDCDS_TYPE_ENUMVAL_NUMC8_T_SCP,CDS Simple Type: Enum Values NUMC8 Texts,CDS Simple Type: Enum Values NUMC8 Texts,BC-DWB-DIC,,basic,8,0,,top-level,yes,SD_CDS_INFO_PROVIDER,no
+I_CONFIGNDEPRECATIONCODE,Configuration Deprecation Code,Configuration Deprecation Code,BC-DWB-DIC,Dimension,dimension,3,0,,top-level,yes,SD_CDS_INFO_PROVIDER,yes
+I_CONFIGNDEPRECATIONCODETEXT,Configuration Deprecation Code Text,Configuration Deprecation Code Text,BC-DWB-DIC,,text,5,0,,top-level,yes,SD_CDS_INFO_PROVIDER,yes
+SATC_API_FINDINGS,ATC: Findings,ATC: Findings,BC-DWB-TOO-ATF,,basic,41,0,,top-level,yes,SATC_CI_API,no
+SATC_API_RESULT_HEADERS,ATC: Result Headers,ATC: Result Headers,BC-DWB-TOO-ATF,,basic,32,0,,top-level,yes,SATC_CI_API,no
+SATC_EXEMPTIONS_DDLV_EC1,View for ATC Exemptions (Cat. 1 - CI Exemptions),View for ATC Exemptions (Cat. 1 - CI Exemptions),BC-DWB-TOO-ATF,,basic,28,0,,top-level,yes,SATC_CI_API,no
+SATC_EXEMPTIONS_DDLV_EC2,View for ATC Exemptions (Cat.  2 - transportable Exemptions),View for ATC Exemptions (Cat.  2 - transportable Exemptions),BC-DWB-TOO-ATF,,basic,29,0,,top-level,yes,SATC_CI_API,no
+I_SYSTEMUSER,System User,System User,BC-SEC-USR-ADM,,basic,2,0,,top-level,yes,SUSR,yes
+I_USER,User,User,BC-SEC-USR-ADM,,basic,9,0,Address,top-level,yes,SUSR,yes
+I_ACADEMICTITLE,Academic Titles,Academic Titles,BC-SRV-ADR,,basic,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ACADEMICTITLETEXT,Text for Academic Title,Text for Academic Title,BC-SRV-ADR,,text,4,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ACADEMICTITLEVH,Academic Title,Academic Title,BC-SRV-ADR,,value_help,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ACTIVEADDRESSREPRESENTATION,Representation of names of language scripts,Representation of names of language scripts,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRCOMMUNICATIONMETHODTEXT,Description of Communication Method,Description of Communication Method,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRCURDEFAULTEMAILADDRESS,Current Default Email Address,Current Default Email Address,BC-SRV-ADR,,basic,8,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRCURDEFAULTFAXNUMBER,Current Default Fax Number,Current Default Fax Number,BC-SRV-ADR,,basic,10,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRCURDFLTLANDLINEPHONENMBR,Current Default Landline Phone Number,Current Default Landline Phone Number,BC-SRV-ADR,,basic,11,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRCURDFLTMOBILEPHONENUMBER,Current Default Mobile PhoneNumber,Current Default Mobile PhoneNumber,BC-SRV-ADR,,basic,10,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRDELIVERYSERVICETYPETEXT,Description of Delivery Service Types,Description of Delivery Service Types,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRDELIVERYSERVICETYPEVH,Delivery Service Types,Delivery Service Types,BC-SRV-ADR,,value_help,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSCOMMUNICATIONMETHOD,Communication Method,Communication Method,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSCOMMUNICATIONMETHODVH,Communication Method,Communication Method,BC-SRV-ADR,,value_help,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSCOMMUNICATIONREMARK_2,Remark for Communication Data,Remark for Communication Data,BC-SRV-ADR,,basic,6,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSCOMMUNICATIONUSAGE,Usage of Communication Data,Usage of Communication Data,BC-SRV-ADR,,basic,7,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSDEFAULTREPRESENTATION,Dflt Addr Rprstn of an Org or a Person,Dflt Addr Rprstn of an Org or a Person,BC-SRV-ADR,,basic,91,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSDELIVERYSERVICETYPE,Delivery Service Types,Delivery Service Types,BC-SRV-ADR,,basic,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSEMAILADDRESS_2,Email Address,Email Address,BC-SRV-ADR,,basic,12,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSFAXNUMBER_2,Fax Number,Fax Number,BC-SRV-ADR,,basic,14,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSGROUP,Address Group,Address Group,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSGROUPTEXT,Description of Address Group,Description of Address Group,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSGROUPVH,Address Group,Address Group,BC-SRV-ADR,,value_help,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSMAINWEBSITEURL,Website,Website,BC-SRV-ADR,,basic,6,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSMANAGEMENTURITYPE,Address Management URI Type,Address Management URI Type,BC-SRV-ADR,,basic,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSMANAGEMENTURITYPETEXT,Address Management URI Type - Text,Address Management URI Type - Text,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSMANAGEMENTURITYPEVH,Address Management URI Type,Address Management URI Type,BC-SRV-ADR,,value_help,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSNONDELIVERABLEREASON,View for undeliverable address reasons,View for undeliverable address reasons,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSNONDELIVERABLEREASONT,Address Non-Deliverable Reason - Text,Address Non-Deliverable Reason - Text,BC-SRV-ADR,,basic,4,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSOBJECTTYPE,Address Object Type,Address Object Type,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSOBJECTTYPETEXT,Address Object Type - Text,Address Object Type - Text,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSPERSONNAME,Person Name,Person Name,BC-SRV-ADR,,basic,33,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSPHONENUMBER_2,Phone Number,Phone Number,BC-SRV-ADR,,basic,17,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSREMARK_2,Basic View for Remark,Basic View for Remark,BC-SRV-ADR,,basic,4,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSREPRESENTATION,Represented names of language scripts,Represented names of language scripts,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSREPRESENTATIONCODEVH,names of language scripts,names of language scripts,BC-SRV-ADR,,value_help,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSREPRESENTATIONTEXT,Description of language scripts,Description of language scripts,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSURI,URI Address,URI Address,BC-SRV-ADR,,basic,9,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESSWORKPLACEDETAILS,Person Workplace Address Details,Person Workplace Address Details,BC-SRV-ADR,,basic,13,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRESS_2,Address of an Organization or a Person,Address of an Organization or a Person,BC-SRV-ADR,,basic,98,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRNONDELIVERABLEREASONVH,Address Non Deliverable Reason,Address Non Deliverable Reason,BC-SRV-ADR,,value_help,2,0,,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRORGNAMEPOSTALADDRESS,Postal Address and Organization Name,Postal Address and Organization Name,BC-SRV-ADR,,basic,65,0,Address,top-level,yes,S_ADDRESS_VDM,no
+I_ADDRPERSNNAMEDFLTRPRSTN,Default Representation for Person Name,Default Representation for Person Name,BC-SRV-ADR,,basic,27,0,,top-level,yes,S_ADDRESS_VDM,no
+I_COUNTRY,Country/Region,Country/Region,BC-SRV-ADR,Dimension,dimension,20,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_COUNTRYTEXT,Country/Region - Text,Country/Region - Text,BC-SRV-ADR,,text,8,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_COUNTRYVH,Country/Region,Country/Region,BC-SRV-ADR,Dimension,value_help,5,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_FAMILYNAMEPREFIX,Family Name Prefix,Family Name Prefix,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_FAMILYNAMEPREFIXVH,Family Name Prefix,Family Name Prefix,BC-SRV-ADR,,value_help,2,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_FORMOFADDRESS,Form of Address,Form of Address,BC-SRV-ADR,Dimension,dimension,2,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_FORMOFADDRESSTEXT,Form Of Address - Text,Form Of Address - Text,BC-SRV-ADR,,text,5,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_NAMESUPPLEMENT,Name Supplement,Name Supplement,BC-SRV-ADR,,basic,3,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_NAMESUPPLEMENTTEXT,Name Supplement - Text,Name Supplement - Text,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_NAMESUPPLEMENTVH,Name Supplement,Name Supplement,BC-SRV-ADR,,value_help,3,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_ORGADDRESSDEFAULTRPRSTN,Default Representation of an Org Address,Default Representation of an Org Address,BC-SRV-ADR,Dimension,dimension,87,0,Address,top-level,yes,S_ADDRESS_VDM,yes
+I_ORGANIZATIONADDRESS,Address of an Organization,Address of an Organization,BC-SRV-ADR,Dimension,dimension,94,0,Address,top-level,yes,S_ADDRESS_VDM,yes
+I_ORGNAMEPOSTLADDRDFLTRPRSTN,Dflt Addr Rprstn for Postal and Org,Dflt Addr Rprstn for Org and Postal,BC-SRV-ADR,Dimension,dimension,58,0,Address,top-level,yes,S_ADDRESS_VDM,yes
+I_PERSONADDRESS,Address of a Person,Address of a Person,BC-SRV-ADR,Dimension,dimension,110,0,Address,top-level,yes,S_ADDRESS_VDM,yes
+I_PERSONADDRESSDEFAULTRPRSTN,Deafult Represention for Address of a Person,Dflt Represention of a Person Address,BC-SRV-ADR,Dimension,dimension,100,0,Address,top-level,yes,S_ADDRESS_VDM,yes
+I_PERSONWORKPLACEADDRESS,Corporate Workplace Address of a Person,Corporate Workplace Address of a Person,BC-SRV-ADR,Fact,fact,41,0,Address,top-level,yes,S_ADDRESS_VDM,yes
+I_PHONENUMBERTYPE,Phone Number Type,Phone Number Type,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_PHONENUMBERTYPETEXT,Text for Phone Number Type,Text for Phone Number Type,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_POSTALCITY,Postal City,Postal City,BC-SRV-ADR,,basic,6,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_POSTALCITYTEXT,Description of Postal City,Description of Postal City,BC-SRV-ADR,,text,6,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_REGION,Region,Region,BC-SRV-ADR,Dimension,dimension,5,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_REGIONALSTRUCCHECKSTATUSTEXT,Regional Structure Check Status - Text,Regional Structure Check Status - Text,BC-SRV-ADR,,text,3,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_REGIONALSTRUCTURECHECKSTATUS,Regional Structure Check Status,Regional Structure Check Status,BC-SRV-ADR,,basic,2,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_REGIONTEXT,Region - Text,Region - Text,BC-SRV-ADR,,text,7,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_REGIONVH,Region,Region,BC-SRV-ADR,,value_help,4,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_SECONDARYREGION,Secondary Region,Secondary Region,BC-SRV-ADR,,basic,6,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_SECONDARYREGIONTEXT,Description of Secondary Text,Description of Secondary Text,BC-SRV-ADR,,text,8,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_STREET,Street,Street,BC-SRV-ADR,,basic,6,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_STREETTEXT,Street - Text,Street - Text,BC-SRV-ADR,,text,8,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_TAXINGCOUNTY,Taxing County,Taxing County,BC-SRV-ADR,,basic,6,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_TAXINGCOUNTYTEXT,Description of Taxing County,Description of Taxing County,BC-SRV-ADR,,text,8,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_TERTIARYREGION,Tertiary Region,Tertiary Region,BC-SRV-ADR,,basic,8,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_TERTIARYREGIONTEXT,Description of Tertiary Region,Description of Tertiary Region,BC-SRV-ADR,,text,10,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_TRANSPORTATIONZONE,Transportation Zone,Transportation Zone,BC-SRV-ADR,,basic,4,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_TRANSPORTATIONZONETEXT,Transportation Zone - Text,Transportation Zone - Text,BC-SRV-ADR,,text,4,0,,top-level,yes,S_ADDRESS_VDM,yes
+I_TRANSPORTATIONZONEVH,Transport Zone,Transport Zone,BC-SRV-ADR,,value_help,4,0,,top-level,yes,S_ADDRESS_VDM,yes
+C_PCF_CODEVALUEHELP,Predefined Fields: Value Help,Predefined Fields: Value Help,BC-SRV-APS-EXT-FLD,,basic,4,0,,top-level,yes,S_PCF_PUBLIC,no
+I_CUSTOMFIELDCODELISTTEXT,Custom Field Code List Value Description,Custom Field Code List Value Description,BC-SRV-APS-EXT-FLD,,text,6,0,,top-level,yes,S_CFD_REPOSITORY_DB,yes
+I_CUSTOMFIELDCODELISTVALUE,Custom Field Code List Value,Custom Field Code List Value,BC-SRV-APS-EXT-FLD,,basic,4,0,,top-level,yes,S_CFD_REPOSITORY_DB,yes
+I_CUSTOMFIELDCODELISTVALUEHELP,Valuehelp View for Custom Field Codes,Valuehelp View for Custom Field Codes,BC-SRV-APS-EXT-FLD,,basic,3,0,,top-level,yes,S_CFD_REPOSITORY_DB,yes
+I_PCF_CODEVALUEHELP,Predefined Fields: Value Help,Predefined Fields: Value Help,BC-SRV-APS-EXT-FLD,,basic,4,0,,top-level,yes,S_PCF_RUNTIME,no
+I_PCF_CODEVALUEHELPTEXT,Predefined Fields: Value Help Texts,Predefined Fields: Value Help Texts,BC-SRV-APS-EXT-FLD,,text,5,0,,top-level,yes,S_PCF_RUNTIME,no
+I_PCF_FIELD_TEXT_API,Predefined Fields: Texts and Labals for Predefined Fields,Predefined Fields: Texts and Labals for Predefined Fields,BC-SRV-APS-EXT-FLD,,basic,5,0,,top-level,yes,S_PCF_PUBLIC,no
+I_ABAPCLOUDCUSTOMOBJECTS,ABAP Cloud Custom Objects,ABAP Cloud Custom Objects,BC-SRV-APS-EXT-REL,,basic,3,0,,top-level,yes,S_ARS_PUBLIC,no
+I_APISFORCLOUDDEVELOPMENT,APIs for Use in Cloud Development,APIs for Use in Cloud Development,BC-SRV-APS-EXT-REL,,basic,7,0,,top-level,yes,S_ARS_PUBLIC,no
+I_APISWITHCLOUDDEVSUCCESSOR,APIs with Successors for Cloud Development,APIs with Successors for Cloud Development,BC-SRV-APS-EXT-REL,,basic,12,0,,top-level,yes,S_ARS_PUBLIC,no
+I_CUSTABAPSOFTWARECOMPONENT,Custom ABAP Software Components,Custom ABAP Software Components,BC-SRV-APS-EXT-REL,,basic,4,0,,top-level,yes,S_ARS_PUBLIC,no
+I_CUSTABAPSOFTWARECOMPONENTTXT,Custom ABAP Software Component Texts,Custom ABAP Software Component Texts,BC-SRV-APS-EXT-REL,,text,5,0,,top-level,yes,S_ARS_PUBLIC,no
+I_IAMBUSINESSROLE,Business Role,Business Role,BC-SRV-APS-IAM,,basic,10,0,,top-level,yes,SR_APS_IAM_VDM_BROLE,yes
+I_IAMBUSINESSROLEPRICECATEGORY,Business Role Price category,Business Role Price Category,BC-SRV-APS-IAM,,basic,4,0,,top-level,yes,SR_APS_IAM_VDM_BROLE,yes
+I_IAMBUSINESSROLEPRICECATTEXT,Business Role Price Category Text,Business Role Price Category Text,BC-SRV-APS-IAM,,text,8,0,,top-level,yes,SR_APS_IAM_VDM_BROLE,yes
+I_IAMBUSINESSROLETEXT,Business Role Text,Business Role Text,BC-SRV-APS-IAM,,text,7,0,,top-level,yes,SR_APS_IAM_VDM_BROLE,yes
+I_IAMBUSINESSUSERBUSINESSROLE,Business User - Business Role assignment,Business User - Business Role assignment,BC-SRV-APS-IAM,,basic,6,0,,top-level,yes,SR_APS_IAM_VDM_BROLE,yes
+I_IAMBUSINESSUSERLOGONDETAILS,Business User Logon Details,Business User Logon Details,BC-SRV-APS-IAM,,basic,22,0,,top-level,yes,SR_APS_IAM_VDM_BUSER,yes
+I_IAMBUSINESSUSERPRICECATEGORY,Business User Price Category,Business User Price Category,BC-SRV-APS-IAM,,basic,5,0,,top-level,yes,SR_APS_IAM_USRPRC,yes
+I_IAMBUSINESSUSERPRICECATTEXT,Business User Price Category Text,Business User Price Category Text,BC-SRV-APS-IAM,,text,6,0,,top-level,yes,SR_APS_IAM_USRPRC,yes
+I_IAMSUPPORTUSERREQUESTLOG,Support User Request Log,Support User Request Log,BC-SRV-APS-IAM,,basic,17,0,,top-level,yes,SR_APS_IAM_SUSR,yes
+I_FACTORYCALENDARBASIC,CDS View for Factory Calendars,CDS View for Factory Calendars,BC-SRV-ASF-CAL,,basic,15,0,,top-level,yes,S_FHC_MAINTENANCE,no
+I_FACTORYCALENDARBASICTEXT,CDS View for Factory Calendar Texts,CDS View for Factory Calendar Texts,BC-SRV-ASF-CAL,,text,3,0,,top-level,yes,S_FHC_MAINTENANCE,no
+I_FACTORYCALENDARVALUEHELP,CDS View for Factory Calendar Value Help,CDS View for Factory Calendar Value Help,BC-SRV-ASF-CAL,,basic,5,0,,top-level,yes,S_FHC_MAINTENANCE,no
+I_PUBLHOLIDAYCALENDARBASICTEXT,CDS View for Holiday Calendar Texts,CDS View for Holiday Calendar Texts,BC-SRV-ASF-CAL,,text,3,0,,top-level,yes,S_FHC_MAINTENANCE,no
+I_PUBLICHOLIDAYCALENDARBASIC,CDS View for Holiday Calendars,CDS View for Holiday Calendars,BC-SRV-ASF-CAL,,basic,6,0,,top-level,yes,S_FHC_MAINTENANCE,no
+I_PUBLICHOLIDAYCALENDARVH,CDS View for Holiday Calendar Value Help,CDS View for Holiday Calendar Value Help,BC-SRV-ASF-CAL,,value_help,5,0,,top-level,yes,S_FHC_MAINTENANCE,no
+I_CHANGEDOCUMENTFORCHGDOCOBJ,Change Documents Parameter View,Change Documents Parameter View,BC-SRV-ASF-CHD,,basic,0,0,,top-level,yes,SZD,no
+I_FISCALPERIODRAWDATA,Fiscal Periods Raw Data,Fiscal Periods Raw Data,BC-SRV-ASF-FYV,,basic,7,0,,top-level,yes,SFBX,yes
+I_FISCALPERIODTEXTRAWDATA,Fiscal Period Texts Raw Data,Fiscal Period Texts Raw Data,BC-SRV-ASF-FYV,,basic,8,0,Fiscal Year,top-level,yes,SFBX,yes
+I_FISCALYEARVARIANT,Fiscal Year Variant,Fiscal Year Variant,BC-SRV-ASF-FYV,Dimension,dimension,8,0,,top-level,yes,SFBX,yes
+I_FISCALYEARVARIANTTEXT,Fiscal Year Variant Text,Fiscal Year Variant Text,BC-SRV-ASF-FYV,,text,4,0,,top-level,yes,SFBX,yes
+I_SHORTENEDFISCALYEAR,Shortened fiscal years in FI-AA,Shortened fiscal years in FI-AA,BC-SRV-ASF-FYV,,basic,7,0,Fiscal Year,top-level,yes,SFBX,yes
+I_UNITOFMEASURE,Unit of Measure,Unit of Measure,BC-SRV-ASF-UOM,Dimension,dimension,23,0,,top-level,yes,SZME,yes
+I_UNITOFMEASUREDIMENSION,Unit of Measure Dimension,Unit of Measure Dimension,BC-SRV-ASF-UOM,Dimension,dimension,12,0,,top-level,yes,SZME,yes
+I_UNITOFMEASUREDIMENSIONTEXT,Unit of Measure Dimension Text,Unit of Measure Dimension Text,BC-SRV-ASF-UOM,,text,5,0,,top-level,yes,SZME,yes
+I_UNITOFMEASUREISOCODE,Unit of Measure Iso Code,Unit of Measure ISO Code,BC-SRV-ASF-UOM,,basic,2,0,,top-level,yes,SZME,yes
+I_UNITOFMEASUREISOCODETEXT,Unit of Measure Iso Code Text,Unit of Measure ISO Code Text,BC-SRV-ASF-UOM,,text,5,0,,top-level,yes,SZME,yes
+I_UNITOFMEASURESTDVH,Value Help for Unit of Measure,Unit of Measure,BC-SRV-ASF-UOM,,value_help,5,0,,top-level,yes,SZME,yes
+I_UNITOFMEASURETEXT,Unit of Measure Text,Unit of Measure Text,BC-SRV-ASF-UOM,,text,9,0,,top-level,yes,SZME,yes
+I_BPDATACONTROLLERUSAGE,BP Data Controller Usage,BP Data Controller Usage,BC-SRV-BP,,basic,8,0,Business Partner,top-level,yes,S_BUPA_GENERAL,no
+I_BUPAIDENTIFICATIONTYPE,CDS View for BP Identification Types,CDS View for BP Identification Types,BC-SRV-BP,,basic,5,0,,top-level,yes,S_BUPA_GENERAL,yes
+I_WORKPLACEADDRESS,Employee Workplace Address,Employee Workplace Address,BC-SRV-BP,Dimension,dimension,30,1,Address; Business Partner,top-level,yes,S_BUPA_EEWA_API,yes
+I_CURRENCY,Currency,Currency,BC-SRV-BSF-CUR-2CL,Dimension,dimension,6,0,,top-level,yes,SFIB,yes
+I_CURRENCYSTDVH,Search help view for Currency Codes,Currency,BC-SRV-BSF-CUR-2CL,,value_help,2,0,,top-level,yes,SFIB,yes
+I_CURRENCYTEXT,Currency Text,Currency Text,BC-SRV-BSF-CUR-2CL,,text,6,0,,top-level,yes,SFIB,yes
+I_EXCHANGERATEFACTORSRAWDATA,Exchange Rate Factors Raw Data,Exchange Rate Factors Raw Data,BC-SRV-BSF-CUR-2CL,,basic,11,0,,top-level,yes,SFIB,yes
+I_EXCHANGERATERAWDATA,Exchange Rate Raw Data,Exchange Rate Raw Data,BC-SRV-BSF-CUR-2CL,,basic,10,0,,top-level,yes,SFIB,yes
+I_EXCHANGERATESPREADRAWDATA,Exchange Rates Spread Raw Data,Exchange Rates Spread Raw Data,BC-SRV-BSF-CUR-2CL,,basic,8,0,,top-level,yes,SFIB,yes
+I_EXCHANGERATETYPE,Exchange Rate Type,Exchange Rate Type,BC-SRV-BSF-CUR-2CL,Dimension,dimension,9,0,,top-level,yes,SFIB,yes
+I_EXCHANGERATETYPESTDVH,Exchange Rate Type,Exchange Rate Type,BC-SRV-BSF-CUR-2CL,,value_help,2,0,,top-level,yes,SFIB,yes
+I_EXCHANGERATETYPETEXT,Exchange Rate Type Text,Exchange Rate Type Text,BC-SRV-BSF-CUR-2CL,,text,4,0,,top-level,yes,SFIB,yes
+I_EXCHRATEQTANTYPERAWDATA,Exchange Rate Quotation Type,Exchange Rate Quotation Type,BC-SRV-BSF-CUR-2CL,,basic,6,0,,top-level,yes,SFIB,yes
+D_BUSINESSUSERCREATED,Business User Event - Created,Business User Event - Created,BC-SRV-BUM,,basic,0,0,,top-level,yes,S_BUPA_BPU,no
+D_BUSINESSUSERDELETED,Business User Event - Created,Business User Event - Created,BC-SRV-BUM,,basic,0,0,,top-level,yes,S_BUPA_BPU,no
+I_BPUSREXTERNALID,Business Partner External ID (BUM),Business Partner External ID (BUM),BC-SRV-BUM,,basic,6,0,Business Partner,top-level,yes,S_BUPA_BPU,no
+I_BPUSRROLE,Business Partner Role (BUM),Business Partner Role (BUM),BC-SRV-BUM,,basic,7,1,Business Partner,top-level,yes,S_BUPA_BPU,no
+I_BUSINESSUSERBASIC,Business User Basic View,Business User Basic,BC-SRV-BUM,,basic,43,0,Business Partner,top-level,yes,S_BUPA_BPU,yes
+I_BUSINESSUSEREVENT,Interface View of C_BusinessUserEvent,Interface View of C_BusinessUserEvent,BC-SRV-BUM,,basic,0,0,,top-level,yes,S_BUPA_BPU,no
+I_BUSINESSUSERVH,Business User - Value Help,Business User - Value Help,BC-SRV-BUM,,value_help,23,0,Business Partner,top-level,yes,S_BUPA_BPU,yes
+I_DAYLIGHTSAVINGRULE,Daylight Saving Rule,Daylight Saving Rule,BC-SRV-TIM-TZ,Dimension,dimension,4,0,,top-level,yes,SZTZ,yes
+I_DAYLIGHTSAVINGRULETEXT,Daylight Saving Rule Text,Daylight Saving Rule Text,BC-SRV-TIM-TZ,,text,5,0,,top-level,yes,SZTZ,yes
+I_TIMEZONE,Time Zone,Time Zone,BC-SRV-TIM-TZ,Dimension,dimension,7,0,,top-level,yes,SZTZ,yes
+I_TIMEZONEIANACODEMAP,Time Zone Code According to IANA Time Zone Database,Time Zone Code According to IANA Time Zone Database,BC-SRV-TIM-TZ,Dimension,dimension,5,0,,top-level,yes,SZTZ,yes
+I_TIMEZONEIANACODESTDVH,Time Zone Code According to IANA Time Zone Database,Time Zone Code According to IANA Time Zone Database,BC-SRV-TIM-TZ,,value_help,3,0,,top-level,yes,SZTZ,yes
+I_TIMEZONERULE,Time Zone Rule,Time Zone Rule,BC-SRV-TIM-TZ,Dimension,dimension,5,0,,top-level,yes,SZTZ,yes
+I_TIMEZONERULETEXT,Time Zone Rule Text,Time Zone Rule Text,BC-SRV-TIM-TZ,,text,5,0,,top-level,yes,SZTZ,yes
+I_TIMEZONETEXT,Time Zone Text,Time Zone Text,BC-SRV-TIM-TZ,,text,5,0,,top-level,yes,SZTZ,yes

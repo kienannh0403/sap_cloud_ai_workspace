@@ -1,192 +1,364 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_SALESDOCITEMPRICINGELEMENT,Sales Document Item Pricing Element,Sales Document Item Pricing Element,SD-SLS,,basic,70,0,Sales Document; Tax Code,component
-I_SALESDOCITMPRECDGPROCFLOW,Preceding Process Flow of Sales Doc Item,Preceding Process Flow of Sales Doc Item,SD-SLS,,basic,17,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component
-I_SALESDOCITMSUBSQNTPROCFLOW,Subsequent Process Flow of Sls Doc Item,Subsequent Process Flow of Sls Doc Item,SD-SLS,,basic,20,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component
-I_SALESDOCREPRICINGPRICINGTYPE,Pricing Type for Repricing of Sales Doc,Pricing Type for Repricing of Sales Doc,SD-SLS,,basic,2,0,,component
-I_SALESDOCUMENT,Sales Document,Sales Document,SD-SLS,Dimension,dimension,297,4,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Plant; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization,component
-I_SALESDOCUMENTITEM,Sales Document Item,Sales Document Item,SD-SLS,Dimension,dimension,442,8,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component
-I_SALESDOCUMENTITEMPARTNER,Sales Document Item Partner,Sales Document Item Partner,SD-SLS,,basic,42,0,Address; Business Partner; Customer; Personnel; Sales Document; Supplier,component
-I_SALESDOCUMENTITEMSTDVH,Sales Document Item,Sales Document Item,SD-SLS,,value_help,8,0,Distribution Channel; Division; Sales Document; Sales Document Type; Sales Organization,component
-I_SALESDOCUMENTPARTNER,Sales Document Partner,Sales Document Partner,SD-SLS,,basic,39,0,Address; Business Partner; Customer; Personnel; Sales Document; Supplier,component
-I_SALESDOCUMENTPRECDGPROCFLOW,Preceding Process Flow of Sales Document,Preceding Process Flow of Sales Document,SD-SLS,,basic,14,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component
-I_SALESDOCUMENTPRICINGELEMENT,Sales Document Pricing Element,Sales Document Pricing Element,SD-SLS,,basic,68,0,Sales Document; Tax Code,component
-I_SALESDOCUMENTSCHEDULELINE,Sales Document Schedule Line,Sales Document Schedule Line,SD-SLS,Dimension,dimension,73,0,Movement Type; Order (production / maintenance / internal); Sales Document,component
-I_SALESDOCUMENTSTDVH,Sales Document,Sales Document,SD-SLS,,value_help,5,0,Distribution Channel; Division; Sales Document; Sales Document Type; Sales Organization,component
-I_SALESDOCUMENTSUBSQNTPROCFLOW,Subsequent Process Flow of Sales Doc,Subsequent Process Flow of Sales Doc,SD-SLS,,basic,14,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component
-I_SALESITEMPROPOSALTYPE,Sales Item Proposal Types,Sales Item Proposal Types,SD-SLS,Dimension,dimension,3,0,,component
-I_SDDOCUMENTMULTILEVELPROCFLOW,SD Document Multi Level Process Flow,SD Document Multi Level Process Flow,SD-SLS,Dimension,dimension,29,0,Movement Type,component
-I_CREDITMEMOREQAPPROVALREASON,Approval Reason for Credit Memo Request,Approval Reason for Credit Memo Request,SD-SLS-CMR,Dimension,dimension,3,0,,component
-I_CREDITMEMOREQITEMPARTNER,Credit Memo Request Item Partner,Credit Memo Request Item Partner,SD-SLS-CMR,,basic,21,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_CREDITMEMOREQITEMPRCGELMNT,Credit Memo Request Item Pricing Element,Credit Memo Request Item Pricing Element,SD-SLS-CMR,,basic,67,0,Tax Code,component
-I_CREDITMEMOREQPARTNER,Credit Memo Request Partner,Credit Memo Request Partner,SD-SLS-CMR,,basic,35,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_CREDITMEMOREQPRCGELMNT,Credit Memo Request Pricing Element,Credit Memo Request Pricing Element,SD-SLS-CMR,,basic,65,0,Tax Code,component
-I_CREDITMEMOREQUEST,Credit Memo Request,Credit Memo Request,SD-SLS-CMR,Dimension,dimension,171,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Document Type; Sales Group; Sales Office; Sales Organization,component
-I_CREDITMEMOREQUESTITEM,Credit Memo Request Item,Credit Memo Request Item,SD-SLS-CMR,Dimension,dimension,236,2,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document Type; Sales Group; Sales Office; Sales Organization; WBS Element,component
-I_CREDITMEMOREQUESTTYPE,Credit Memo Request Types,Credit Memo Request Types,SD-SLS-CMR,Dimension,dimension,3,0,,component
-I_DEBITMEMOREQAPPROVALREASON,Approval Reason for Debit Memo Request,Approval Reason for Debit Memo Request,SD-SLS-CMR,Dimension,dimension,3,0,,component
-I_DEBITMEMOREQITEMPARTNER,Debit Memo Request Item Partner,Debit Memo Request Item Partner,SD-SLS-CMR,,basic,21,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_DEBITMEMOREQITEMPRCGELMNT,Debit Memo Request Item Pricing Element,Debit Memo Request Item Pricing Element,SD-SLS-CMR,,basic,67,0,Tax Code,component
-I_DEBITMEMOREQPARTNER,Debit Memo Request Partner,Debit Memo Request Partner,SD-SLS-CMR,,basic,35,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_DEBITMEMOREQPRCGELMNT,Debit Memo Request Pricing Element,Debit Memo Request Pricing Element,SD-SLS-CMR,,basic,65,0,Tax Code,component
-I_DEBITMEMOREQUEST,Debit Memo Request,Debit Memo Request,SD-SLS-CMR,Dimension,dimension,170,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component
-I_DEBITMEMOREQUESTITEM,Debit Memo Request Item,Debit Memo Request Item,SD-SLS-CMR,Dimension,dimension,234,2,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document Type; Sales Group; Sales Office; Sales Organization; WBS Element,component
-I_DEBITMEMOREQUESTTYPE,Debit Memo Request Types,Debit Memo Request Types,SD-SLS-CMR,Dimension,dimension,3,0,,component
-I_CUSTOMERPURCHASEORDERTYPE,Customer Purchase Order Type,Customer Purchase Order Type,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_CUSTOMERPURCHASEORDERTYPETXT,Customer Purchase Order Type - Text,Customer Purchase Order Type - Text,SD-SLS-GF,,text,5,0,,component
-I_DELIVERYBLOCKSTATUS,Delivery Block Status,Delivery Block Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_DELIVERYBLOCKSTATUSTEXT,Delivery Block Status - Text,Delivery Block Status - Text,SD-SLS-GF,,text,5,0,,component
-I_DELIVERYCONFIRMATIONSTATUS,Delivery Confirmation Status,Delivery Confirmation Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_DELIVERYCONFIRMATIONSTATUST,Delivery Confirmation Status - Text,Delivery Confirmation Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_DELIVERYSTATUS,Delivery Status,Delivery Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_DELIVERYSTATUSTEXT,Delivery Status - Text,Delivery Status - Text,SD-SLS-GF,,text,5,0,,component
-I_HDRBILLGINCOMPLETIONSTATUS,Header Billing Incompletion Status,Header Billing Incompletion Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_HDRBILLGINCOMPLETIONSTATUST,Billing Incompletion Status of Header - Text,Billing Incompletion Status of Header - Text,SD-SLS-GF,,basic,5,0,,component
-I_HDRDELIVINCOMPLETIONSTATUS,Header Delivery Incompletion Status,Header Delivery Incompletion Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_HDRDELIVINCOMPLETIONSTATUST,Header Delivery Incompletion Status - Text,Header Delivery Incompletion Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_HDRGENINCOMPLETIONSTATUS,Header General Incompletion Status,Header General Incompletion Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_HDRGENINCOMPLETIONSTATUST,Hdr General Incompletion Status - Text,Hdr General Incompletion Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_ITEMBILLINGINCOMPLETIONSTS,Item Billing Incompletion Status,Item Billing Incompletion Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_ITEMBILLINGINCOMPLETIONSTST,Item Billing Incompletion Status - Text,Item Billing Incompletion Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_ITEMDELIVINCOMPLETIONSTS,Item Delivery Incompletion Status,Item Delivery Incompletion Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_ITEMDELIVINCOMPLETIONSTST,Delivery Incompletion Status of Item - Text,Delivery Incompletion Status of Item - Text,SD-SLS-GF,,basic,5,0,,component
-I_ITEMGENINCOMPLETIONSTATUS,Item General Incompletion Status,Item General Incompletion Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_ITEMGENINCOMPLETIONSTATUST,General Incompletion Status of Item - Text,General Incompletion Status of Item - Text,SD-SLS-GF,,basic,5,0,,component
-I_MAINTAINEDORDTYPEPERSLSORG,Maintained Order Types per Sales Org,Maintained Order Types per Sales Org,SD-SLS-GF,,basic,8,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component
-I_MATERIALSUBSTITUTIONREASON,Material Substitution Reason,Material Substitution Reason,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_MATERIALSUBSTITUTIONREASONT,Material Substitution Reason - Text,Material Substitution Reason - Text,SD-SLS-GF,,basic,5,0,,component
-I_ORDERRELATEDBILLINGSTATUS,Order Related Billing Status,Order Related Billing Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_ORDERRELATEDBILLINGSTATUST,Order Related Billing Status - Text,Order Related Billing Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVERALLDELIVCONFSTATUS,Overall Delivery Confirmation Status,Overall Delivery Confirmation Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_OVERALLDELIVCONFSTATUSTEXT,Overall Delivery Confirmation Status - Text,Overall Delivery Confirmation Status - Text,SD-SLS-GF,,text,5,0,,component
-I_OVERALLDELIVERYBLOCKSTATUS,Overall Delivery Block Status,Overall Delivery Block Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_OVERALLDELIVERYBLOCKSTATUST,Overall Delivery Block Status - Text,Overall Delivery Block Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVERALLDELIVERYSTATUS,Overall Delivery Status,Overall Delivery Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_OVERALLDELIVERYSTATUSTEXT,Overall Delivery Status - Text,Overall Delivery Status - Text,SD-SLS-GF,,text,5,0,,component
-I_OVERALLORDRELTDBILLGSTATUS,Overall Order Related Billing Status,Overall Order Related Billing Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_OVERALLORDRELTDBILLGSTATUST,Overall Order-Related Billing Status - Text,Overall Order-Related Billing Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVERALLPURCHASECONFSTATUS,Overall Purchase Confirmation Status,Overall Purchase Confirmation Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_OVERALLPURCHASECONFSTATUST,Overall Purchase Confirmation Status - Text,Overall Purchase Confirmation Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVERALLSDDOCREFERENCESTATUS,Overall SD Document Reference Status,Overall SD Document Reference Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_OVERALLSDDOCREFERENCESTATUST,Overall Reference Status of SD Document - Text,Overall Reference Status of SD Document - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVERALLSDDOCUMENTRJCNSTATUS,Overall SD Document Rejection Status,Overall SD Document Rejection Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_OVERALLSDDOCUMENTRJCNSTATUST,Overall Rejection Status of SD Document - Text,Overall Rejection Status of SD Document - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVERALLSDPROCESSSTATUS,Overall SD Process Status,Overall SD Process Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_OVERALLSDPROCESSSTATUSTEXT,Overall SD Process Status - Text,Overall SD Process Status - Text,SD-SLS-GF,,text,5,0,,component
-I_OVERALLTOTALDELIVERYSTATUS,Overall Total Delivery Status,Overall Total Delivery Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_OVERALLTOTALDELIVERYSTATUST,Overall Total Delivery Status - Text,Overall Total Delivery Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVERALLTOTALSDDOCREFSTATUS,Overall Total SD Document Reference Status,Overall Total SD Document Reference Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_OVERALLTOTALSDDOCREFSTATUST,Overall Total Reference Status of SD Document - Text,Overall Total Reference Status of SD Document - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVRLITMDELIVINCOMPLETIONSTS,Overall Item Delivery Incompletion Status,Overall Item Delivery Incompletion Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_OVRLITMDELIVINCOMPLETIONSTST,Overall Delivery Incompletion Status of Items - Text,Overall Delivery Incompletion Status of Items - Text,SD-SLS-GF,,basic,5,0,,component
-I_OVRLITMGENINCOMPLETIONSTS,Overall Item General Incompletion Status,Overall Item General Incompletion Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_OVRLITMGENINCOMPLETIONSTST,Ovrl Itm General Incompletion Sts - Text,Ovrl Itm General Incompletion Sts - Text,SD-SLS-GF,,basic,5,0,,component
-I_PARTNERFUNCTIONLANGDEPDNT,Language-Dependent Code of Partner Function,Language-Dependent Code of Partner Function,SD-SLS-GF,Dimension,dimension,5,0,,component
-I_PRICINGINCOMPLETIONSTATUS,Pricing Incompletion Status,Pricing Incompletion Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_PRICINGINCOMPLETIONSTATUST,Pricing Incompletion Status - Text,Pricing Incompletion Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_PROPAGATEPRFTBLTYSGMT2BOM,Propagate Prftblty Segment to BOM,Propagate Prftblty Segment to BOM,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_PROPAGATEPRFTBLTYSGMT2BOMTXT,Propagate Prftblty Segment to BOM - Text,Propagate Prftblty Segment to BOM - Text,SD-SLS-GF,,text,5,0,,component
-I_PURCHASECONFIRMATIONSTATUS,Purchase Confirmation Status,Purchase Confirmation Status,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_PURCHASECONFIRMATIONSTATUST,Purchase Confirmation Status - Text,Purchase Confirmation Status - Text,SD-SLS-GF,,basic,5,0,,component
-I_SALESDOCAPPROVALREASON,Approval Reason for Sales Document,Approval Reason for Sales Document,SD-SLS-GF,,basic,5,0,,component
-I_SALESDOCAPPROVALSTATUS,Approval Sts for Sales Document,Approval Sts for Sales Document,SD-SLS-GF,Dimension,dimension,3,0,,component
-I_SALESDOCAPPROVALSTATUST,Approval Sts for Sales Document - Text,Approval Sts for Sales Document - Text,SD-SLS-GF,,basic,5,0,,component
-I_SALESDOCUMENTCOPYCONTROL,Sales Document Copying Control,Sales Document Copying Control,SD-SLS-GF,,basic,10,0,,component
-I_SALESDOCUMENTITEMCATEGORY,Sales Document Item Category,Sales Document Item Category,SD-SLS-GF,Dimension,dimension,18,0,,component
-I_SALESDOCUMENTITEMCATEGORYT,Category of Sales Document Item - Text,Category of Sales Document Item - Text,SD-SLS-GF,,basic,5,0,,component
-I_SALESDOCUMENTITEMTYPE,Sales Document Item Type,Sales Document Item Type,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_SALESDOCUMENTITEMTYPETEXT,Type of Sales Document Item - Text,Type of Sales Document Item - Text,SD-SLS-GF,,text,5,0,,component
-I_SALESDOCUMENTRJCNREASON,Sales Document Rejection Reason,Sales Document Rejection Reason,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_SALESDOCUMENTRJCNREASONTEXT,Rejection Reason of Sales Document - Text,Rejection Reason of Sales Document - Text,SD-SLS-GF,,text,5,0,,component
-I_SALESDOCUMENTTYPE,Sales Document Type,Sales Document Type,SD-SLS-GF,Dimension,dimension,21,0,Sales Document Type,component
-I_SALESDOCUMENTTYPELANGDEPDNT,Sales Document Item Language Dependent,Sales Document Item Language Dependent,SD-SLS-GF,Dimension,dimension,5,0,,component
-I_SALESDOCUMENTTYPETEXT,Sales Document Type - Text,Sales Document Type - Text,SD-SLS-GF,,text,5,0,Sales Document Type,component
-I_SCHEDULELINECATEGORY,Schedule Line Category,Schedule Line Category,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_SCHEDULELINECATEGORYTEXT,Schedule Line Category - Text,Schedule Line Category - Text,SD-SLS-GF,,text,5,0,,component
-I_SCHEDULELINECONFSTATUS,Schedule Line Confirmation Status,Schedule Line Confirmation Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_SCHEDULELINECONFSTATUSTEXT,Confirmation Status of Schedule Line - Text,Confirmation Status of Schedule Line - Text,SD-SLS-GF,,text,5,0,,component
-I_SDDOCREFERENCESTATUS,SD Document Reference Status,SD Document Reference Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_SDDOCREFERENCESTATUSTEXT,SD Document Reference Status - Text,SD Document Reference Status - Text,SD-SLS-GF,,text,5,0,,component
-I_SDDOCUMENTREASON,Order Reason,Order Reason,SD-SLS-GF,Dimension,dimension,4,0,,component
-I_SDDOCUMENTREASONTEXT,SD Document Reason - Text,SD Document Reason - Text,SD-SLS-GF,,text,5,0,,component
-I_SDDOCUMENTREJECTIONSTATUS,SD Document Rejection Status,SD Document Rejection Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_SDDOCUMENTREJECTIONSTATUST,Rejection Status of SD Document - Text,Rejection Status of SD Document - Text,SD-SLS-GF,,basic,5,0,,component
-I_SDINCOMPLETIONSTATUSGROUP,Incompletion Status Group,Incompletion Status Group,SD-SLS-GF,,basic,8,0,,component
-I_SDPROCESSSTATUS,SD Process Status,SD Process Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_SDPROCESSSTATUSTEXT,SD Process Status - Text,SD Process Status - Text,SD-SLS-GF,,text,5,0,,component
-I_TOTALDELIVERYSTATUS,Total Delivery Status,Total Delivery Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_TOTALDELIVERYSTATUSTEXT,Total Delivery Status - Text,Total Delivery Status - Text,SD-SLS-GF,,text,5,0,,component
-I_TOTALSDDOCREFERENCESTATUS,Total SD Document Reference Status,Total SD Document Reference Status,SD-SLS-GF,Dimension,dimension,2,0,,component
-I_TOTALSDDOCREFERENCESTATUST,Total Reference Status of SD Document - Text,Total Reference Status of SD Document - Text,SD-SLS-GF,,basic,5,0,,component
-I_SALESCONTRACT,Sales Contract,Sales Contract,SD-SLS-OA-CCO,Dimension,dimension,208,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component
-I_SALESCONTRACTAPPROVALREASON,Sales Contract Approval Reason,Sales Contract Approval Reason,SD-SLS-OA-CCO,Dimension,dimension,3,0,,component
-I_SALESCONTRACTCANCLNPARTY,Sales Contract Cancellation Party,Sales Contract Cancellation Party,SD-SLS-OA-CCO,Dimension,dimension,2,0,,component
-I_SALESCONTRACTCANCLNPARTYT,Cancellation Party of Sales Contract - Text,Cancellation Party of Sales Contract - Text,SD-SLS-OA-CCO,,basic,5,0,,component
-I_SALESCONTRACTCANCLNREASON,Sales Contract Cancellation Reason,Sales Contract Cancellation Reason,SD-SLS-OA-CCO,Dimension,dimension,2,0,,component
-I_SALESCONTRACTCANCLNREASONT,Cancellation Reason of Sales Contract - Text,Cancellation Reason of Sales Contract - Text,SD-SLS-OA-CCO,,basic,5,0,,component
-I_SALESCONTRACTFOLLOWUPACTION,Sales Contract Follow Up Action,Sales Contract Follow Up Action,SD-SLS-OA-CCO,Dimension,dimension,2,0,,component
-I_SALESCONTRACTFOLLOWUPACTIONT,Follow-Up Action of Sales Contract - Text,Follow-Up Action of Sales Contract - Text,SD-SLS-OA-CCO,,basic,5,0,,component
-I_SALESCONTRACTITEM,Sales Contract Item,Sales Contract Item,SD-SLS-OA-CCO,Dimension,dimension,291,2,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component
-I_SALESCONTRACTPARTNER,Sales Contract Partner,Sales Contract Partner,SD-SLS-OA-CCO,,basic,35,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_SALESCONTRACTSTDVH,Sales Contract,Sales Contract,SD-SLS-OA-CCO,,value_help,5,0,Distribution Channel; Division; Sales Organization,component
-I_SALESCONTRACTTYPE,Sales Contract Types,Sales Contract Types,SD-SLS-OA-CCO,Dimension,dimension,3,0,,component
-I_SALESCONTRVALDTYPERDUNIT,Sales Contract Validity Period Unit,Sales Contract Validity Period Unit,SD-SLS-OA-CCO,Dimension,dimension,2,0,,component
-I_SALESCONTRVALDTYPERDUNITTEXT,Unit of Sales Contract Validity Period - Text,Unit of Sales Contract Validity Period - Text,SD-SLS-OA-CCO,,text,5,0,,component
-I_SLSCONTRACTVALIDITYPERDCAT,Sales Contract Validity Period Category,Sales Contract Validity Period Category,SD-SLS-OA-CCO,Dimension,dimension,5,0,,component
-I_SLSCONTRACTVALIDITYPERDCATT,Validity Period Category of Sales Contract - Text,Validity Period Category of Sales Contract - Text,SD-SLS-OA-CCO,,basic,5,0,,component
-I_SLSCONTRITEMPRICINGELEMENT,Sales Contract Item Pricing Element,Sales Contract Item Pricing Element,SD-SLS-OA-CCO,,basic,66,0,Tax Code,component
-I_SALESDELIVDATECATEGORY,Delivery Date Category,Delivery Date Category,SD-SLS-OA-SCH,Dimension,dimension,2,0,,component
-I_SALESDELIVDATECATEGORYTEXT,Delivery Date Category - Text,Delivery Date Category - Text,SD-SLS-OA-SCH,,text,5,0,,component
-I_SALESSCHEDGAGRMT,Sales Scheduling Agreement,Sales Scheduling Agreement,SD-SLS-OA-SCH,Dimension,dimension,140,0,Controlling Area; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Payment Terms; Sales Group; Sales Office; Sales Organization,component
-I_SALESSCHEDGAGRMTDELIVSCHED,Delivery Schedule of Sales Scheduling Agreement,Delivery Schedule of Sales Scheduling Agreement,SD-SLS-OA-SCH,Dimension,dimension,58,0,Sales Document,component
-I_SALESSCHEDGAGRMTITEM,Sales Scheduling Agreement Item,Sales Scheduling Agreement Item,SD-SLS-OA-SCH,Dimension,dimension,228,2,Batch; Business Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component
-I_SALESSCHEDGAGRMTRELTYPE,Sales Scheduling Agreement Release Type,Sales Scheduling Agreement Release Type,SD-SLS-OA-SCH,Dimension,dimension,3,0,,component
-I_SALESSCHEDGAGRMTRELTYPETEXT,Sales Scheduling Agreement Release Type - Text,Sales Scheduling Agreement Release Type - Text,SD-SLS-OA-SCH,,text,6,0,,component
-I_SALESSCHEDGAGRMTSCHDLNHIST,Schedule Line History of Sales Scheduling Agreement,Schedule Line History of Sales Scheduling Agreement,SD-SLS-OA-SCH,,basic,15,0,Sales Document,component
-I_SALESSCHEDGAGRMTSCHEDLINE,Schedule Line of Sales Scheduling Agreement,Schedule Line of Sales Scheduling Agreement,SD-SLS-OA-SCH,Dimension,dimension,60,0,Movement Type; Order (production / maintenance / internal),component
-I_CUSTPROJSLSORD,Sales Order for Customer Project,Sales Order for Customer Project,SD-SLS-PBS,,basic,31,0,Customer; Distribution Channel; Division; Payment Terms; Sales Document; Sales Group; Sales Office; Sales Organization,component
-I_CUSTPROJSLSORDITEM,Sales Order Item for Customer Project,Sales Order Item for Customer Project,SD-SLS-PBS,,basic,41,1,Distribution Channel; Division; Material / Product; Payment Terms; Profit Center; Sales Document; Sales Organization; WBS Element,component
-I_CUSTPROJSLSORDITEMPARTNER,Sales Order Item Partner for Cust Proj,Sales Order Item Partner for Cust Proj,SD-SLS-PBS,,basic,26,0,Address; Business Partner; Customer; Distribution Channel; Division; Sales Document; Sales Organization,component
-I_CUSTPROJSLSORDITEMWORKPCKG,SO Item Wrk Pckgs for Customer Project,SO Item Wrk Pckgs for Customer Project,SD-SLS-PBS,,basic,16,0,Distribution Channel; Division; Sales Document; Sales Organization,component
-I_CUSTPROJSLSORDPARTNER,Sales Order Partner for Customer Project,Sales Order Partner for Customer Project,SD-SLS-PBS,,basic,24,0,Address; Business Partner; Customer; Distribution Channel; Division; Sales Document; Sales Organization,component
-I_SALESINQUIRY,Sales Inquiry,Sales Inquiry,SD-SLS-QUT,Dimension,dimension,137,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Document Type; Sales Group; Sales Office; Sales Organization,component
-I_SALESINQUIRYITEM,Sales Inquiry Item,Sales Inquiry Item,SD-SLS-QUT,Dimension,dimension,207,3,Batch; Business Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; WBS Element,component
-I_SALESINQUIRYTYPE,Sales Inquiry Types,Sales Inquiry Types,SD-SLS-QUT,Dimension,dimension,2,0,Sales Document Type,component
-I_SALESQUOTATION,Sales Quotation,Sales Quotation,SD-SLS-QUT,Dimension,dimension,183,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Document Type; Sales Group; Sales Office; Sales Organization,component
-I_SALESQUOTATIONITEM,Sales Quotation Item,Sales Quotation Item,SD-SLS-QUT,Dimension,dimension,259,2,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component
-I_SALESQUOTATIONITEMPARTNER,Sales Quotation Item Partner,Sales Quotation Item Partner,SD-SLS-QUT,,basic,18,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_SALESQUOTATIONITEMPRCGELMNT,Sales Quotation Item Pricing Element,Sales Quotation Item Pricing Element,SD-SLS-QUT,,basic,66,0,Tax Code,component
-I_SALESQUOTATIONPARTNER,Sales Quotation Partner,Sales Quotation Partner,SD-SLS-QUT,,basic,34,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_SALESQUOTATIONPRCGELMNT,Sales Quotation Pricing Element,Sales Quotation Pricing Element,SD-SLS-QUT,,basic,64,0,Tax Code,component
-I_SALESQUOTATIONSTDVH,Sales Quotation,Sales Quotation,SD-SLS-QUT,,value_help,5,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component
-I_SALESQUOTATIONTYPE,Sales Quotation Types,Sales Quotation Types,SD-SLS-QUT,Dimension,dimension,2,0,,component
-I_CUSTOMERRETURN,Returns Order,Returns Order,SD-SLS-RE,Dimension,dimension,187,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component
-I_CUSTOMERRETURNAPPROVALREASON,Approval Reason for Returns Order,Approval Reason for Returns Order,SD-SLS-RE,Dimension,dimension,3,0,,component
-I_CUSTOMERRETURNENHANCED,Returns Order Enhanced,Returns Order Enhanced,SD-SLS-RE,Dimension,dimension,195,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component
-I_CUSTOMERRETURNITEM,Returns Order Item,Returns Order Item,SD-SLS-RE,Dimension,dimension,275,5,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component
-I_CUSTOMERRETURNITEMENHANCED,Returns Order Item Enhanced,Returns Order Item Enhanced,SD-SLS-RE,Dimension,dimension,292,5,Address; Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Plant; Profit Center; Profitability Segment; Sales Organization; Shipping Point; Storage Location; Supplier; WBS Element,component
-I_CUSTOMERRETURNTYPE,Returns Order Types,Returns Order Types,SD-SLS-RE,Dimension,dimension,4,0,Sales Document Type,component
-I_SALESORDER,Sales Order,Sales Order,SD-SLS-SO,Dimension,dimension,247,3,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Plant; Sales Document; Sales Group; Sales Office; Sales Organization,component
-I_SALESORDERAPPROVALREASON,Approval Reason for Sales Order,Approval Reason for Sales Order,SD-SLS-SO,Dimension,dimension,3,0,,component
-I_SALESORDERBILLINGPLAN,Billing Plan of Sales Order,Billing Plan of Sales Order,SD-SLS-SO,,basic,22,0,Distribution Channel; Division; Sales Document; Sales Organization,component
-I_SALESORDERBILLINGPLANITEM,Billing Plan Item of Sales Order,Billing Plan Item of Sales Order,SD-SLS-SO,,basic,43,2,Distribution Channel; Division; Payment Terms; Sales Document; Sales Organization,component
-I_SALESORDERITEM,Sales Order Item,Sales Order Item,SD-SLS-SO,Dimension,dimension,353,7,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component
-I_SALESORDERITEMBILLINGPLAN,Billing Plan of Sales Order Item,Billing Plan of Sales Order Item,SD-SLS-SO,,basic,25,0,Distribution Channel; Division; Sales Document; Sales Organization,component
-I_SALESORDERITEMPARTNER,Sales Order Item Partner,Sales Order Item Partner,SD-SLS-SO,,basic,27,0,Address; Business Partner; Customer; Personnel; Sales Document; Supplier,component
-I_SALESORDERITEMPRICINGELEMENT,Sales Order Item Pricing Element,Sales Order Item Pricing Element,SD-SLS-SO,,basic,68,0,Sales Document; Tax Code,component
-I_SALESORDERITEMSTDVH,Sales Order Item,Sales Order Item,SD-SLS-SO,,value_help,4,0,Sales Document,component
-I_SALESORDERITMPRECDGPROCFLOW,Preceding Process Flow of Sls Order Item,Preceding Process Flow of Sls Order Item,SD-SLS-SO,,basic,16,0,Distribution Channel; Division; Sales Organization,component
-I_SALESORDERITMSUBSQNTPROCFLOW,Subsequent Process Flow of Sls Ordr Item,Subsequent Process Flow of Sls Ordr Item,SD-SLS-SO,,basic,19,0,Distribution Channel; Division; Sales Organization,component
-I_SALESORDERPARTNER,Sales Order Partner,Sales Order Partner,SD-SLS-SO,,basic,37,0,Address; Business Partner; Customer; Personnel; Sales Document; Supplier,component
-I_SALESORDERPRECDGPROCFLOW,Preceding Process Flow of Sales Order,Preceding Process Flow of Sales Order,SD-SLS-SO,,basic,13,0,Distribution Channel; Division; Sales Organization,component
-I_SALESORDERPRICINGELEMENT,Sales Order Pricing Element,Sales Order Pricing Element,SD-SLS-SO,,basic,66,0,Sales Document; Tax Code,component
-I_SALESORDERSCHEDULELINE,Sales Order Schedule Line,Sales Order Schedule Line,SD-SLS-SO,Dimension,dimension,66,0,Movement Type; Order (production / maintenance / internal); Sales Document,component
-I_SALESORDERSTDVH,Sales Order,Sales Order,SD-SLS-SO,,value_help,5,0,Distribution Channel; Division; Sales Document; Sales Organization,component
-I_SALESORDERSUBSQNTPROCFLOW,Subsequent Process Flow of Sales Order,Subsequent Process Flow of Sales Order,SD-SLS-SO,,basic,13,0,Distribution Channel; Division; Sales Organization,component
-I_SALESORDERTYPE,Sales Order Types,Sales Order Types,SD-SLS-SO,Dimension,dimension,6,0,,component
-I_SALESORDERWITHOUTCHARGE,Sales Order Without Charge,Sales Order Without Charge,SD-SLS-SO,Dimension,dimension,200,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component
-I_SALESORDERWITHOUTCHARGEITEM,Item for Sales Order Without Charge,Item for Sales Order Without Charge,SD-SLS-SO,Dimension,dimension,297,4,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component
-I_SALESORDERWITHOUTCHARGETYPE,Sales Order Without Charge Types,Sales Order Without Charge Types,SD-SLS-SO,Dimension,dimension,3,0,,component
-I_SLSORDERITEMBILLINGPLANITEM,Billing Plan Item of Sales Order Item,Billing Plan Item of Sales Order Item,SD-SLS-SO,,basic,52,2,Distribution Channel; Division; Payment Terms; Sales Document; Sales Organization,component
-I_SLSORDWTHOUTCHRGITMPARTNER,Item Partner for Sales Order Without Charge,Item Partner for Sales Order Without Charge,SD-SLS-SO,,basic,26,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_SLSORDWTHOUTCHRGPARTNER,Partner for Sales Order Without Charge,Partner for Sales Order Without Charge,SD-SLS-SO,,basic,33,0,Address; Business Partner; Customer; Personnel; Supplier,component
-I_SLSORDWTHOUTCHRGSCHEDLINE,Schedule Line for Sales Order Without Charge,Schedule Line for Sales Order Without Charge,SD-SLS-SO,Dimension,dimension,60,0,Movement Type; Order (production / maintenance / internal); Sales Document,component
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+D_SALESQUOTATIONCHANGED,Sales Quotation Changed,Sales Quotation Changed,SD-SLS-2CL,,basic,0,0,,component,yes,VDM_SD_SLS,no
+D_SALESQUOTATIONCREATED,Sales Quotation Created,Sales Quotation Created,SD-SLS-2CL,,basic,0,0,,component,yes,VDM_SD_SLS,no
+D_SALESQUOTATIONDELETED,Sales Quotation Deleted,Sales Quotation Deleted,SD-SLS-2CL,,basic,0,0,,component,yes,VDM_SD_SLS,no
+I_SALESDOCITEMPRICINGELEMENT,Sales Document Item Pricing Element,Sales Document Item Pricing Element,SD-SLS-2CL,,basic,70,0,Sales Document; Tax Code,component,yes,VDM_SD_SLS,yes
+I_SALESDOCITMPRECDGPROCFLOW,Preceding Process Flow of Sales Doc Item,Preceding Process Flow of Sales Doc Item,SD-SLS-2CL,,basic,17,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS,yes
+I_SALESDOCITMSUBSQNTPROCFLOW,Subsequent Process Flow of Sls Doc Item,Subsequent Process Flow of Sls Doc Item,SD-SLS-2CL,,basic,20,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS,yes
+I_SALESDOCREPRICINGPRICINGTYPE,Pricing Type for Repricing of Sales Doc,Pricing Type for Repricing of Sales Doc,SD-SLS-2CL,,basic,2,0,,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENT,Sales Document,Sales Document,SD-SLS-2CL,Dimension,dimension,297,4,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Plant; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTITEM,Sales Document Item,Sales Document Item,SD-SLS-2CL,Dimension,dimension,442,8,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document; Sales Document Type; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTITEMPARTNER,Sales Document Item Partner,Sales Document Item Partner,SD-SLS-2CL,,basic,42,0,Address; Business Partner; Customer; Personnel; Sales Document; Supplier,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTITEMSTDVH,Sales Document Item,Sales Document Item,SD-SLS-2CL,,value_help,8,0,Distribution Channel; Division; Sales Document; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTPARTNER,Sales Document Partner,Sales Document Partner,SD-SLS-2CL,,basic,39,0,Address; Business Partner; Customer; Personnel; Sales Document; Supplier,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTPRECDGPROCFLOW,Preceding Process Flow of Sales Document,Preceding Process Flow of Sales Document,SD-SLS-2CL,,basic,14,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTPRICINGELEMENT,Sales Document Pricing Element,Sales Document Pricing Element,SD-SLS-2CL,,basic,68,0,Sales Document; Tax Code,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTSCHEDULELINE,Sales Document Schedule Line,Sales Document Schedule Line,SD-SLS-2CL,Dimension,dimension,73,0,Movement Type; Order (production / maintenance / internal); Sales Document,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTSTDVH,Sales Document,Sales Document,SD-SLS-2CL,,value_help,5,0,Distribution Channel; Division; Sales Document; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS,yes
+I_SALESDOCUMENTSUBSQNTPROCFLOW,Subsequent Process Flow of Sales Doc,Subsequent Process Flow of Sales Doc,SD-SLS-2CL,,basic,14,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS,yes
+I_SALESITEMPROPOSALTYPE,Sales Item Proposal Types,Sales Item Proposal Types,SD-SLS-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_SIP,yes
+I_SDDOCUMENTMULTILEVELPROCFLOW,SD Document Multi Level Process Flow,SD Document Multi Level Process Flow,SD-SLS-2CL,Dimension,dimension,29,0,Movement Type,component,yes,VDM_SD_SLS,yes
+I_SALESORDERITEMPARTNERTP,Sales Order Item Partner - TP,Sales Order Item Partner - TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+I_SALESORDERITEMPRCGELMNTTP,Sales Order Item Pricing Element - TP,Sales Order Item Pricing Element - TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+I_SALESORDERITEMTEXTTP,Sales Order Item - Text TP,Sales Order Item - Text TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+I_SALESORDERITEMTP,Sales Order Item - TP,Sales Order Item - TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+I_SALESORDERPARTNERTP,Sales Order Partner - TP,Sales Order Partner - TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+I_SALESORDERPRICINGELEMENTTP,Sales Order Pricing Element - TP,Sales Order Pricing Element - TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+I_SALESORDERSCHEDULELINETP,Sales Order Schedule Line - TP,Sales Order Schedule Line - TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+I_SALESORDERTEXTTP,Sales Order - Text TP,Sales Order - Text TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+I_SALESORDERTP,Sales Order - TP,Sales Order - TP,SD-SLS-API-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_API,no
+D_CRDMMREQITMORDBILLGSTSCHGD,Crd Mm Req Itm Ord-Reltd Billg Sts Chgd,Crd Mm Req Itm Ord-Reltd Billg Sts Chgd,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CRDMMREQITMSDPROCSTSCHGD,Crd Mm Req Itm SD Proc Sts Chgd,Crd Mm Req Itm SD Proc Sts Chgd,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CRDMMREQOVRLSDPROCSTSCHGD,Crd Mm Req Ovrl SD Proc Sts Chgd,Crd Mm Req Ovrl SD Proc Sts Chgd,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CRDMMREQTOTBLKSTSCHANGED,Crd Mm Req Tot Blk Sts Chgd,Crd Mm Req Tot Blk Sts Chgd,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CREDITMEMOREQORDBILLGSTSCHGD,Crd Mm Req Ovrl Ord-Reltd Billg Sts Chgd,Crd Mm Req Ovrl Ord-Reltd Billg Sts Chgd,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CREDITMEMOREQOVRLRJCNSTSCHGD,Crd Mm Req Ovrl Rjcn Sts Chgd,Crd Mm Req Ovrl Rjcn Sts Chgd,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CREDITMEMOREQUESTCHANGED,Credit Memo Request Changed,Credit Memo Request Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CREDITMEMOREQUESTCREATED,Credit Memo Request Created,Credit Memo Request Created,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CREDITMEMOREQUESTDELETED,Credit Memo Request Deleted,Credit Memo Request Deleted,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CREDITMEMOREQUESTITEMCHANGED,Credit Memo Request Item Changed,Credit Memo Request Item Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CREDITMEMOREQUESTITEMCREATED,Credit Memo Request Item Created,Credit Memo Request Item Created,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_CREDITMEMOREQUESTITEMDELETED,Credit Memo Request Item Deleted,Credit Memo Request Item Deleted,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CMR,no
+D_DBTMMREQITMORDBILLGSTSCHGD,Item Ord-Reltd Billing Status Changed,Item Ord-Reltd Billing Status Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DBTMMREQOVRLSDPROCSTSCHGD,Overall SD Process Status Changed,Overall SD Process Status Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DBTMMREQTOTCRDTCHKSTSCHGD,Total Credit Check Status Changed,Total Credit Check Status Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQITMSDPROCSTSCHGD,Item SD Process Status Changed,Item SD Process Status Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQORDBILLGSTSCHGD,Overall Ord-Reltd Billing Status Changed,Overall Ord-Reltd Billing Status Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQOVRLRJCNSTSCHGD,Overall Rejection Status Changed,Overall Rejection Status Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQTOTBLKSTSCHANGED,Total Block Status Changed,Total Block Status Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQUESTCHANGED,Debit Memo Request Changed,Debit Memo Request Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQUESTCREATED,Debit Memo Request Created,Debit Memo Request Created,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQUESTDELETED,Debit Memo Request Deleted,Debit Memo Request Deleted,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQUESTITEMCHANGED,Debit Memo Request Item Changed,Debit Memo Request Item Changed,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQUESTITEMCREATED,Debit Memo Request Item Created,Debit Memo Request Item Created,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+D_DEBITMEMOREQUESTITEMDELETED,Debit Memo Request Item Deleted,Debit Memo Request Item Deleted,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_DMR,no
+I_CRDTMEMOREQITMPRCGELMNTTP,Crdt Memo Req Item Pricing Element - TP,Crdt Memo Req Item Pricing Element - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_CREDITMEMOREQUEST,no
+I_CRDTMEMOREQPRCGELMNTTP,Credit Memo Request Pricing Element - TP,Credit Memo Request Pricing Element - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_CREDITMEMOREQUEST,no
+I_CREDITMEMOREQAPPROVALREASON,Approval Reason for Credit Memo Request,Approval Reason for Credit Memo Request,SD-SLS-CMR-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_CMR,yes
+I_CREDITMEMOREQAPPRVLRSNTXT,Apprvl Reason for Credit Memo Req - Text,Apprvl Reason for Credit Memo Req - Text,SD-SLS-CMR-2CL,,text,5,0,,component,yes,VDM_SD_SLS_CMR,no
+I_CREDITMEMOREQITEMPARTNER,Credit Memo Request Item Partner,Credit Memo Request Item Partner,SD-SLS-CMR-2CL,,basic,21,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_CMR,yes
+I_CREDITMEMOREQITEMPARTNERTP,Credit Memo Request Item Partner - TP,Credit Memo Request Item Partner - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_CREDITMEMOREQUEST,no
+I_CREDITMEMOREQITEMPRCGELMNT,Credit Memo Request Item Pricing Element,Credit Memo Request Item Pricing Element,SD-SLS-CMR-2CL,,basic,67,0,Tax Code,component,yes,VDM_SD_SLS_CMR,yes
+I_CREDITMEMOREQPARTNER,Credit Memo Request Partner,Credit Memo Request Partner,SD-SLS-CMR-2CL,,basic,35,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_CMR,yes
+I_CREDITMEMOREQPRCGELMNT,Credit Memo Request Pricing Element,Credit Memo Request Pricing Element,SD-SLS-CMR-2CL,,basic,65,0,Tax Code,component,yes,VDM_SD_SLS_CMR,yes
+I_CREDITMEMOREQUEST,Credit Memo Request,Credit Memo Request,SD-SLS-CMR-2CL,Dimension,dimension,171,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Document Type; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_CMR,yes
+I_CREDITMEMOREQUESTITEM,Credit Memo Request Item,Credit Memo Request Item,SD-SLS-CMR-2CL,Dimension,dimension,236,2,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document Type; Sales Group; Sales Office; Sales Organization; WBS Element,component,yes,VDM_SD_SLS_CMR,yes
+I_CREDITMEMOREQUESTITEMTEXTTP,Credit Memo Request Item - Text TP,Credit Memo Request Item - Text TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_CREDITMEMOREQUEST,no
+I_CREDITMEMOREQUESTITEMTP,Credit Memo Request Item - TP,Credit Memo Request Item - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_CREDITMEMOREQUEST,no
+I_CREDITMEMOREQUESTPARTNERTP,Credit Memo Request Partner - TP,Credit Memo Request Partner - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_CREDITMEMOREQUEST,no
+I_CREDITMEMOREQUESTTEXTTP,Credit Memo Request - Text TP,Credit Memo Request - Text TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_CREDITMEMOREQUEST,no
+I_CREDITMEMOREQUESTTP,Credit Memo Request - TP,Credit Memo Request - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_CREDITMEMOREQUEST,no
+I_CREDITMEMOREQUESTTYPE,Credit Memo Request Types,Credit Memo Request Types,SD-SLS-CMR-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_CMR,yes
+I_CREDITMEMOREQUESTTYPETEXT,Credit Memo Request Type - Text,Credit Memo Request Type - Text,SD-SLS-CMR-2CL,,text,5,0,,component,yes,VDM_SD_SLS_CMR,no
+I_DEBITMEMOREQAPPROVALREASON,Approval Reason for Debit Memo Request,Approval Reason for Debit Memo Request,SD-SLS-CMR-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_DMR,yes
+I_DEBITMEMOREQAPPRVLRSNTXT,Apprvl Reason for Debit Memo Req - Text,Apprvl Reason for Debit Memo Req - Text,SD-SLS-CMR-2CL,,text,5,0,,component,yes,VDM_SD_SLS_DMR,no
+I_DEBITMEMOREQITEMPARTNER,Debit Memo Request Item Partner,Debit Memo Request Item Partner,SD-SLS-CMR-2CL,,basic,21,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_DMR,yes
+I_DEBITMEMOREQITEMPARTNERTP,Debit Memo Request Item Partner - TP,Debit Memo Request Item Partner - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_DEBITMEMOREQUEST,no
+I_DEBITMEMOREQITEMPRCGELMNT,Debit Memo Request Item Pricing Element,Debit Memo Request Item Pricing Element,SD-SLS-CMR-2CL,,basic,67,0,Tax Code,component,yes,VDM_SD_SLS_DMR,yes
+I_DEBITMEMOREQITMPRGELMTP,Debit Memo Req Item Pricing Element - TP,Debit Memo Req Item Pricing Element - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_DEBITMEMOREQUEST,no
+I_DEBITMEMOREQPARTNER,Debit Memo Request Partner,Debit Memo Request Partner,SD-SLS-CMR-2CL,,basic,35,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_DMR,yes
+I_DEBITMEMOREQPRCGELMNT,Debit Memo Request Pricing Element,Debit Memo Request Pricing Element,SD-SLS-CMR-2CL,,basic,65,0,Tax Code,component,yes,VDM_SD_SLS_DMR,yes
+I_DEBITMEMOREQPRGELMTP,Debit Memo Request Pricing Element - TP,Debit Memo Request Pricing Element - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_DEBITMEMOREQUEST,no
+I_DEBITMEMOREQUEST,Debit Memo Request,Debit Memo Request,SD-SLS-CMR-2CL,Dimension,dimension,170,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_DMR,yes
+I_DEBITMEMOREQUESTITEM,Debit Memo Request Item,Debit Memo Request Item,SD-SLS-CMR-2CL,Dimension,dimension,234,2,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document Type; Sales Group; Sales Office; Sales Organization; WBS Element,component,yes,VDM_SD_SLS_DMR,yes
+I_DEBITMEMOREQUESTITEMTEXTTP,Debit Memo Request Item - Text TP,Debit Memo Request Item - Text TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_DEBITMEMOREQUEST,no
+I_DEBITMEMOREQUESTITEMTP,Debit Memo Request Item - TP,Debit Memo Request Item - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_DEBITMEMOREQUEST,no
+I_DEBITMEMOREQUESTPARTNERTP,Debit Memo Request Partner - TP,Debit Memo Request Partner - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_DEBITMEMOREQUEST,no
+I_DEBITMEMOREQUESTTEXTTP,Debit Memo Request - Text TP,Debit Memo Request - Text TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_DEBITMEMOREQUEST,no
+I_DEBITMEMOREQUESTTP,Debit Memo Request - TP,Debit Memo Request - TP,SD-SLS-CMR-2CL,,basic,0,0,,component,yes,ODATA_SD_DEBITMEMOREQUEST,no
+I_DEBITMEMOREQUESTTYPE,Debit Memo Request Types,Debit Memo Request Types,SD-SLS-CMR-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_DMR,yes
+I_DEBITMEMOREQUESTTYPETEXT,Debit Memo Request Type - Text,Debit Memo Request Type - Text,SD-SLS-CMR-2CL,,text,5,0,,component,yes,VDM_SD_SLS_DMR,no
+I_ALLWDORDTYPPERSLSORG,Allowed Order Types per Sales Org,Allowed Order Types per Sales Org,SD-SLS-GF-2CL,,basic,8,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS_GF,no
+I_BILLINGBLOCKSTATUS,Billing Block Status,Billing Block Status,SD-SLS-GF-2CL,,basic,3,0,,component,yes,VDM_SD_SLS_GF,no
+I_BILLINGBLOCKSTATUSTEXT,Billing Block Status - Text,Billing Block Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,no
+I_CUSTOMERPURCHASEORDERTYPE,Customer Purchase Order Type,Customer Purchase Order Type,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_CUSTOMERPURCHASEORDERTYPETXT,Customer Purchase Order Type - Text,Customer Purchase Order Type - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_DELIVERYBLOCKSTATUS,Delivery Block Status,Delivery Block Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_DELIVERYBLOCKSTATUSTEXT,Delivery Block Status - Text,Delivery Block Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_DELIVERYCONFIRMATIONSTATUS,Delivery Confirmation Status,Delivery Confirmation Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_DELIVERYCONFIRMATIONSTATUST,Delivery Confirmation Status - Text,Delivery Confirmation Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_DELIVERYDATETYPERULE,Delivery Date Type Rule,Delivery Date Type Rule,SD-SLS-GF-2CL,,basic,3,0,,component,yes,VDM_SD_SLS_GF,no
+I_DELIVERYDATETYPERULETEXT,Delivery Date Type Rule - Text,Delivery Date Type Rule - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,no
+I_DELIVERYSTATUS,Delivery Status,Delivery Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_DELIVERYSTATUSTEXT,Delivery Status - Text,Delivery Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_HDRBILLGINCOMPLETIONSTATUS,Header Billing Incompletion Status,Header Billing Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_HDRBILLGINCOMPLETIONSTATUST,Billing Incompletion Status of Header - Text,Billing Incompletion Status of Header - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_HDRDELIVINCOMPLETIONSTATUS,Header Delivery Incompletion Status,Header Delivery Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_HDRDELIVINCOMPLETIONSTATUST,Header Delivery Incompletion Status - Text,Header Delivery Incompletion Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_HDRGENINCOMPLETIONSTATUS,Header General Incompletion Status,Header General Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_HDRGENINCOMPLETIONSTATUST,Hdr General Incompletion Status - Text,Hdr General Incompletion Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_ITEMBILLINGINCOMPLETIONSTS,Item Billing Incompletion Status,Item Billing Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_ITEMBILLINGINCOMPLETIONSTST,Item Billing Incompletion Status - Text,Item Billing Incompletion Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_ITEMDELIVINCOMPLETIONSTS,Item Delivery Incompletion Status,Item Delivery Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_ITEMDELIVINCOMPLETIONSTST,Delivery Incompletion Status of Item - Text,Delivery Incompletion Status of Item - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_ITEMGENINCOMPLETIONSTATUS,Item General Incompletion Status,Item General Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_ITEMGENINCOMPLETIONSTATUST,General Incompletion Status of Item - Text,General Incompletion Status of Item - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_MAINTAINEDORDTYPEPERSLSORG,Maintained Order Types per Sales Org,Maintained Order Types per Sales Org,SD-SLS-GF-2CL,,basic,8,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS_GF,yes
+I_MATERIALSUBSTITUTIONREASON,Material Substitution Reason,Material Substitution Reason,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_MATERIALSUBSTITUTIONREASONT,Material Substitution Reason - Text,Material Substitution Reason - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_ORDERRELATEDBILLINGSTATUS,Order Related Billing Status,Order Related Billing Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_ORDERRELATEDBILLINGSTATUST,Order Related Billing Status - Text,Order Related Billing Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLDELIVCONFSTATUS,Overall Delivery Confirmation Status,Overall Delivery Confirmation Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLDELIVCONFSTATUSTEXT,Overall Delivery Confirmation Status - Text,Overall Delivery Confirmation Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLDELIVERYBLOCKSTATUS,Overall Delivery Block Status,Overall Delivery Block Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLDELIVERYBLOCKSTATUST,Overall Delivery Block Status - Text,Overall Delivery Block Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLDELIVERYSTATUS,Overall Delivery Status,Overall Delivery Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLDELIVERYSTATUSTEXT,Overall Delivery Status - Text,Overall Delivery Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLORDRELTDBILLGSTATUS,Overall Order Related Billing Status,Overall Order Related Billing Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLORDRELTDBILLGSTATUST,Overall Order-Related Billing Status - Text,Overall Order-Related Billing Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLPURCHASECONFSTATUS,Overall Purchase Confirmation Status,Overall Purchase Confirmation Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLPURCHASECONFSTATUST,Overall Purchase Confirmation Status - Text,Overall Purchase Confirmation Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLSDDOCREFERENCESTATUS,Overall SD Document Reference Status,Overall SD Document Reference Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLSDDOCREFERENCESTATUST,Overall Reference Status of SD Document - Text,Overall Reference Status of SD Document - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLSDDOCUMENTRJCNSTATUS,Overall SD Document Rejection Status,Overall SD Document Rejection Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLSDDOCUMENTRJCNSTATUST,Overall Rejection Status of SD Document - Text,Overall Rejection Status of SD Document - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLSDPROCESSSTATUS,Overall SD Process Status,Overall SD Process Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLSDPROCESSSTATUSTEXT,Overall SD Process Status - Text,Overall SD Process Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLTOTALDELIVERYSTATUS,Overall Total Delivery Status,Overall Total Delivery Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLTOTALDELIVERYSTATUST,Overall Total Delivery Status - Text,Overall Total Delivery Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLTOTALSDDOCREFSTATUS,Overall Total SD Document Reference Status,Overall Total SD Document Reference Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVERALLTOTALSDDOCREFSTATUST,Overall Total Reference Status of SD Document - Text,Overall Total Reference Status of SD Document - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVRLITMDELIVINCOMPLETIONSTS,Overall Item Delivery Incompletion Status,Overall Item Delivery Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVRLITMDELIVINCOMPLETIONSTST,Overall Delivery Incompletion Status of Items - Text,Overall Delivery Incompletion Status of Items - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVRLITMGENINCOMPLETIONSTS,Overall Item General Incompletion Status,Overall Item General Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVRLITMGENINCOMPLETIONSTST,Ovrl Itm General Incompletion Sts - Text,Ovrl Itm General Incompletion Sts - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_OVRLTRADECMPLNCEMBARGOSTATUS,Embargo Status for Trade Compliance,Embargo Status for Trade Compliance,SD-SLS-GF-2CL,,basic,3,0,,component,yes,VDM_SD_SLS_GF,no
+I_OVRLTRADECMPLNCEMBARGOSTSTXT,Embargo Status f Trade Compliance - Txt,Embargo Status f Trade Compliance - Txt,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,no
+I_OVRLTRDCMPLNCLEGALCTRLCHKSTS,Legal Control Status f Trade Compliance,Legal Control Status f Trade Compliance,SD-SLS-GF-2CL,,basic,3,0,,component,yes,VDM_SD_SLS_GF,no
+I_OVTRDCMPLNCSNCTNDLISTCHKSTS,Screening Status for Trade Compliance,Screening Status for Trade Compliance,SD-SLS-GF-2CL,,basic,3,0,,component,yes,VDM_SD_SLS_GF,no
+I_OVTRDCOMPLLEGALCTRLCHKSTSTXT,Legal Control Sts f Trade Cmplnc - Txt,Legal Control Sts f Trade Cmplnc - Txt,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,no
+I_OVTRDCOMPLSANCTLISTCHKSTSTXT,Screening Sts for Trade Compliance - Txt,Screening Sts for Trade Compliance - Txt,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,no
+I_PARTNERFUNCTIONLANGDEPDNT,Language-Dependent Code of Partner Function,Language-Dependent Code of Partner Function,SD-SLS-GF-2CL,Dimension,dimension,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_PRICINGINCOMPLETIONSTATUS,Pricing Incompletion Status,Pricing Incompletion Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_PRICINGINCOMPLETIONSTATUST,Pricing Incompletion Status - Text,Pricing Incompletion Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_PROPAGATEPRFTBLTYSGMT2BOM,Propagate Prftblty Segment to BOM,Propagate Prftblty Segment to BOM,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_PROPAGATEPRFTBLTYSGMT2BOMTXT,Propagate Prftblty Segment to BOM - Text,Propagate Prftblty Segment to BOM - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_PURCHASECONFIRMATIONSTATUS,Purchase Confirmation Status,Purchase Confirmation Status,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_PURCHASECONFIRMATIONSTATUST,Purchase Confirmation Status - Text,Purchase Confirmation Status - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCAPPROVALREASON,Approval Reason for Sales Document,Approval Reason for Sales Document,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCAPPROVALREASONTEXT,Approval Reason for Sales Document - Txt,Approval Reason for Sales Document - Txt,SD-SLS-GF-2CL,,text,7,0,,component,yes,VDM_SD_SLS_GF,no
+I_SALESDOCAPPROVALSTATUS,Approval Sts for Sales Document,Approval Sts for Sales Document,SD-SLS-GF-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCAPPROVALSTATUST,Approval Sts for Sales Document - Text,Approval Sts for Sales Document - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCBLOCKINGREASON,Blocking Reason for Sales Document,Blocking Reason for Sales Document,SD-SLS-GF-2CL,,basic,2,0,,component,yes,VDM_SD_SLS_GF,no
+I_SALESDOCBLOCKINGREASONT,Blocking Reason for Sales Doc - Text,Blocking Reason for Sales Doc - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,no
+I_SALESDOCUMENTCOPYCONTROL,Sales Document Copying Control,Sales Document Copying Control,SD-SLS-GF-2CL,,basic,10,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTITEMCATEGORY,Sales Document Item Category,Sales Document Item Category,SD-SLS-GF-2CL,Dimension,dimension,18,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTITEMCATEGORYT,Category of Sales Document Item - Text,Category of Sales Document Item - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTITEMTYPE,Sales Document Item Type,Sales Document Item Type,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTITEMTYPETEXT,Type of Sales Document Item - Text,Type of Sales Document Item - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTRJCNREASON,Sales Document Rejection Reason,Sales Document Rejection Reason,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTRJCNREASONTEXT,Rejection Reason of Sales Document - Text,Rejection Reason of Sales Document - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTTYPE,Sales Document Type,Sales Document Type,SD-SLS-GF-2CL,Dimension,dimension,21,0,Sales Document Type,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTTYPELANGDEPDNT,Sales Document Item Language Dependent,Sales Document Item Language Dependent,SD-SLS-GF-2CL,Dimension,dimension,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SALESDOCUMENTTYPETEXT,Sales Document Type - Text,Sales Document Type - Text,SD-SLS-GF-2CL,,text,5,0,Sales Document Type,component,yes,VDM_SD_SLS_GF,yes
+I_SCHEDULELINECATEGORY,Schedule Line Category,Schedule Line Category,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SCHEDULELINECATEGORYTEXT,Schedule Line Category - Text,Schedule Line Category - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SCHEDULELINECONFSTATUS,Schedule Line Confirmation Status,Schedule Line Confirmation Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SCHEDULELINECONFSTATUSTEXT,Confirmation Status of Schedule Line - Text,Confirmation Status of Schedule Line - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDDOCREFERENCESTATUS,SD Document Reference Status,SD Document Reference Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDDOCREFERENCESTATUSTEXT,SD Document Reference Status - Text,SD Document Reference Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDDOCUMENTREASON,Order Reason,Order Reason,SD-SLS-GF-2CL,Dimension,dimension,4,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDDOCUMENTREASONTEXT,SD Document Reason - Text,SD Document Reason - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDDOCUMENTREJECTIONSTATUS,SD Document Rejection Status,SD Document Rejection Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDDOCUMENTREJECTIONSTATUST,Rejection Status of SD Document - Text,Rejection Status of SD Document - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDINCOMPLETIONSTATUSGROUP,Incompletion Status Group,Incompletion Status Group,SD-SLS-GF-2CL,,basic,8,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDPROCESSSTATUS,SD Process Status,SD Process Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_SDPROCESSSTATUSTEXT,SD Process Status - Text,SD Process Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_TOTALDELIVERYSTATUS,Total Delivery Status,Total Delivery Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_TOTALDELIVERYSTATUSTEXT,Total Delivery Status - Text,Total Delivery Status - Text,SD-SLS-GF-2CL,,text,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_TOTALSDDOCREFERENCESTATUS,Total SD Document Reference Status,Total SD Document Reference Status,SD-SLS-GF-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_GF,yes
+I_TOTALSDDOCREFERENCESTATUST,Total Reference Status of SD Document - Text,Total Reference Status of SD Document - Text,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,yes
+I_TRADECMPLNCLEGALCTRLCHKSTS,Sched Line Legal Ctrl Sts f Trade Cmplnc,Sched Line Legal Ctrl Sts f Trade Cmplnc,SD-SLS-GF-2CL,,basic,3,0,,component,yes,VDM_SD_SLS_GF,no
+I_TRADECMPLNCLEGALCTRLCHKSTST,Sched Ln Lgl Ctrl Sts f Trd Cmplnc - Txt,Sched Ln Lgl Ctrl Sts f Trd Cmplnc - Txt,SD-SLS-GF-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_GF,no
+D_SALESORDERCHANGED,Sales Order Changed,Sales Order Changed,SD-SLS-GF-BET-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_BU_EVT,no
+D_SALESORDERCREATED,Sales Order Created,Sales Order Created,SD-SLS-GF-BET-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_BU_EVT,no
+D_SALESORDERDELETED,Sales Order Deleted,Sales Order Deleted,SD-SLS-GF-BET-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_BU_EVT,no
+D_SALESORDERITEMCHANGED,Sales Order Item Changed,Sales Order Item Changed,SD-SLS-GF-BET-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_BU_EVT,no
+D_SALESORDERITEMCREATED,Sales Order Item Created,Sales Order Item Created,SD-SLS-GF-BET-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_BU_EVT,no
+D_SALESORDERITEMDELETED,Sales Order Item Deleted,Sales Order Item Deleted,SD-SLS-GF-BET-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SO_BU_EVT,no
+I_SALESCONTRACTITEMTEXTTP,Sales Contract Item - Text TP,Sales Contract Item - Text TP,SD-SLS-OA-2CL,,basic,0,0,,component,yes,ODATA_SD_CONTRACT,no
+I_SALESCONTRACTITEMTP,Sales Contract Item - TP,Sales Contract Item - TP,SD-SLS-OA-2CL,,basic,0,0,,component,yes,ODATA_SD_CONTRACT,no
+I_SALESCONTRACTTEXTTP,Sales Contract - Text TP,Sales Contract - Text TP,SD-SLS-OA-2CL,,basic,0,0,,component,yes,ODATA_SD_CONTRACT,no
+I_SALESCONTRACTTP,Sales Contract - TP,Sales Contract - TP,SD-SLS-OA-2CL,,basic,0,0,,component,yes,ODATA_SD_CONTRACT,no
+I_SLSCONTRACTITEMBILLINGPLANTP,Billing Plan for Sales Contract Item - TP,Billing Plan for Sales Contract Item - TP,SD-SLS-OA-2CL,,basic,0,0,,component,yes,ODATA_SD_CONTRACT,no
+I_SLSCONTRITEMPRICINGELEMENTTP,Sales Contract Item Pricing Element - TP,Sales Contract Item Pricing Element - TP,SD-SLS-OA-2CL,,basic,0,0,,component,yes,ODATA_SD_CONTRACT,no
+I_SLSCONTRITMBILLINGPLANITEMTP,Billing Plan Item for Sls Contr Item - TP,Billing Plan Item for Sls Contr Item - TP,SD-SLS-OA-2CL,,basic,0,0,,component,yes,ODATA_SD_CONTRACT,no
+I_SLSCONTRPRICINGELEMENTTP,Sales Contract Pricing Element - TP,Sales Contract Pricing Element - TP,SD-SLS-OA-2CL,,basic,0,0,,component,yes,ODATA_SD_CONTRACT,no
+D_SALESCONTRACTCHANGED,Sales Contract Changed,Sales Contract Changed,SD-SLS-OA-CCO-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_CONTR_BU_EVT,no
+D_SALESCONTRACTCREATED,Sales Contract Created,Sales Contract Created,SD-SLS-OA-CCO-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_CONTR_BU_EVT,no
+D_SALESCONTRACTDELETED,Sales Contract Deleted,Sales Contract Deleted,SD-SLS-OA-CCO-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_CONTR_BU_EVT,no
+D_SALESCONTRACTITEMCHANGED,Sales Contract Item Changed,Sales Contract Item Changed,SD-SLS-OA-CCO-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_CONTR_BU_EVT,no
+D_SALESCONTRACTITEMCREATED,Sales Contract Item Created,Sales Contract Item Created,SD-SLS-OA-CCO-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_CONTR_BU_EVT,no
+D_SALESCONTRACTITEMDELETED,Sales Contract Item Deleted,Sales Contract Item Deleted,SD-SLS-OA-CCO-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_CONTR_BU_EVT,no
+I_SALESCONTRACT,Sales Contract,Sales Contract,SD-SLS-OA-CCO-2CL,Dimension,dimension,208,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTAPPROVALREASON,Sales Contract Approval Reason,Sales Contract Approval Reason,SD-SLS-OA-CCO-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTCANCLNPARTY,Sales Contract Cancellation Party,Sales Contract Cancellation Party,SD-SLS-OA-CCO-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTCANCLNPARTYT,Cancellation Party of Sales Contract - Text,Cancellation Party of Sales Contract - Text,SD-SLS-OA-CCO-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTCANCLNREASON,Sales Contract Cancellation Reason,Sales Contract Cancellation Reason,SD-SLS-OA-CCO-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTCANCLNREASONT,Cancellation Reason of Sales Contract - Text,Cancellation Reason of Sales Contract - Text,SD-SLS-OA-CCO-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTFOLLOWUPACTION,Sales Contract Follow Up Action,Sales Contract Follow Up Action,SD-SLS-OA-CCO-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTFOLLOWUPACTIONT,Follow-Up Action of Sales Contract - Text,Follow-Up Action of Sales Contract - Text,SD-SLS-OA-CCO-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTITEM,Sales Contract Item,Sales Contract Item,SD-SLS-OA-CCO-2CL,Dimension,dimension,291,2,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTPARTNER,Sales Contract Partner,Sales Contract Partner,SD-SLS-OA-CCO-2CL,,basic,35,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTSTDVH,Sales Contract,Sales Contract,SD-SLS-OA-CCO-2CL,,value_help,5,0,Distribution Channel; Division; Sales Organization,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTTYPE,Sales Contract Types,Sales Contract Types,SD-SLS-OA-CCO-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRACTTYPETEXT,Sales Contract Type - Text,Sales Contract Type - Text,SD-SLS-OA-CCO-2CL,,text,5,0,,component,yes,VDM_SD_SLS_OA_CCO,no
+I_SALESCONTRVALDTYPERDUNIT,Sales Contract Validity Period Unit,Sales Contract Validity Period Unit,SD-SLS-OA-CCO-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SALESCONTRVALDTYPERDUNITTEXT,Unit of Sales Contract Validity Period - Text,Unit of Sales Contract Validity Period - Text,SD-SLS-OA-CCO-2CL,,text,5,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SLSCONTRACTVALIDITYPERDCAT,Sales Contract Validity Period Category,Sales Contract Validity Period Category,SD-SLS-OA-CCO-2CL,Dimension,dimension,5,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SLSCONTRACTVALIDITYPERDCATT,Validity Period Category of Sales Contract - Text,Validity Period Category of Sales Contract - Text,SD-SLS-OA-CCO-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_OA_CCO,yes
+I_SLSCONTRAPPROVALREASONTXT,Approval Reason for Sls Contract - Text,Approval Reason for Sls Contract - Text,SD-SLS-OA-CCO-2CL,,text,5,0,,component,yes,VDM_SD_SLS_OA_CCO,no
+I_SLSCONTRITEMPRICINGELEMENT,Sales Contract Item Pricing Element,Sales Contract Item Pricing Element,SD-SLS-OA-CCO-2CL,,basic,66,0,Tax Code,component,yes,VDM_SD_SLS_OA_CCO,yes
+D_SLSSCHEDGAGREEMENTCHANGED,Sales Scheduling Agreement Changed,Sales Scheduling Agreement Changed,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SSA_BU_EVT,no
+D_SLSSCHEDGAGREEMENTCREATED,Sales Scheduling Agreement Created,Sales Scheduling Agreement Created,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SSA_BU_EVT,no
+D_SLSSCHEDGAGREEMENTDELETED,Sales Scheduling Agreement Deleted,Sales Scheduling Agreement Deleted,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SSA_BU_EVT,no
+D_SLSSCHEDGAGRMTITEMCHANGED,Sales Scheduling Agreement Item Changed,Sales Scheduling Agreement Item Changed,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SSA_BU_EVT,no
+D_SLSSCHEDGAGRMTITEMCREATED,Sales Scheduling Agreement Item Created,Sales Scheduling Agreement Item Created,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SSA_BU_EVT,no
+D_SLSSCHEDGAGRMTITEMDELETED,Sales Scheduling Agreement Item Deleted,Sales Scheduling Agreement Item Deleted,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SSA_BU_EVT,no
+I_DELIVSCHEDTYPEMRPRLVNCECODE,MRP Relevance Code for Deliv Sched Types,MRP Relevance Code for Deliv Sched Types,SD-SLS-OA-SCH-2CL,,basic,2,0,,component,yes,VDM_SD_SLS_OA_SCH,no
+I_DELIVSCHEDTYPEMRPRLVNCECODET,MRP Rlvnce Code for Deliv Sched Tp - Txt,MRP Rlvnce Code for Deliv Sched Tp - Txt,SD-SLS-OA-SCH-2CL,,basic,5,0,,component,yes,VDM_SD_SLS_OA_SCH,no
+I_SALESDELIVDATECATEGORY,Delivery Date Category,Delivery Date Category,SD-SLS-OA-SCH-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESDELIVDATECATEGORYTEXT,Delivery Date Category - Text,Delivery Date Category - Text,SD-SLS-OA-SCH-2CL,,text,5,0,,component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESSCHEDGAGRMT,Sales Scheduling Agreement,Sales Scheduling Agreement,SD-SLS-OA-SCH-2CL,Dimension,dimension,140,0,Controlling Area; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Payment Terms; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESSCHEDGAGRMTDELIVSCHED,Delivery Schedule of Sales Scheduling Agreement,Delivery Schedule of Sales Scheduling Agreement,SD-SLS-OA-SCH-2CL,Dimension,dimension,58,0,Sales Document,component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESSCHEDGAGRMTDVTNPRFL,Deviation Profile,Deviation Profile,SD-SLS-OA-SCH-2CL,,basic,10,0,,component,yes,VDM_SD_SLS_OA_SCH,no
+I_SALESSCHEDGAGRMTITEM,Sales Scheduling Agreement Item,Sales Scheduling Agreement Item,SD-SLS-OA-SCH-2CL,Dimension,dimension,228,2,Batch; Business Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESSCHEDGAGRMTRELTYPE,Sales Scheduling Agreement Release Type,Sales Scheduling Agreement Release Type,SD-SLS-OA-SCH-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESSCHEDGAGRMTRELTYPETEXT,Sales Scheduling Agreement Release Type - Text,Sales Scheduling Agreement Release Type - Text,SD-SLS-OA-SCH-2CL,,text,6,0,,component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESSCHEDGAGRMTSCHDLNHIST,Schedule Line History of Sales Scheduling Agreement,Schedule Line History of Sales Scheduling Agreement,SD-SLS-OA-SCH-2CL,,basic,15,0,Sales Document,component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESSCHEDGAGRMTSCHEDLINE,Schedule Line of Sales Scheduling Agreement,Schedule Line of Sales Scheduling Agreement,SD-SLS-OA-SCH-2CL,Dimension,dimension,60,0,Movement Type; Order (production / maintenance / internal),component,yes,VDM_SD_SLS_OA_SCH,yes
+I_SALESSCHEDGAGRMTTYPE,Sales Scheduling Agreement Types,Sales Scheduling Agreement Types,SD-SLS-OA-SCH-2CL,,basic,5,0,Sales Document Type,component,yes,VDM_SD_SLS_OA_SCH,no
+I_SALESSCHEDGAGRMTTYPETEXT,Sales Scheduling Agreement Type - Text,Sales Scheduling Agreement Type - Text,SD-SLS-OA-SCH-2CL,,text,5,0,Sales Document Type,component,yes,VDM_SD_SLS_OA_SCH,no
+I_SALESSCHEDULINGAGREEMENTTP,Sales Scheduling Agreement - TP,Sales Scheduling Agreement - TP,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_SD_SCHEDULINGAGREEMENT,no
+I_SCHEDULELINEDATEKEY,Date Key of Schedule Line,Date Key of Schedule Line,SD-SLS-OA-SCH-2CL,,basic,2,0,,component,yes,VDM_SD_SLS_OA_SCH,no
+I_SCHEDULELINEDATEKEYTEXT,Date Key of Schedule Line - Text,Date Key of Schedule Line - Text,SD-SLS-OA-SCH-2CL,,text,5,0,,component,yes,VDM_SD_SLS_OA_SCH,no
+I_SLSSCHEDGAGRMTITEMPARTNERTP,Sales Scheduling Agreement Item Partner - TP,Sales Scheduling Agreement Item Partner - TP,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_SD_SCHEDULINGAGREEMENT,no
+I_SLSSCHEDGAGRMTITEMTEXTTP,Sales Scheduling Agreement Item - Text TP,Sales Scheduling Agreement Item - Text TP,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_SD_SCHEDULINGAGREEMENT,no
+I_SLSSCHEDGAGRMTITMPRCGELMNTTP,Sales Scheduling Agreement Item Pricing Element - TP,Sales Scheduling Agreement Item Pricing Element - TP,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_SD_SCHEDULINGAGREEMENT,no
+I_SLSSCHEDGAGRMTPARTNERTP,Sales Scheduling Agreement Partner - TP,Sales Scheduling Agreement Partner - TP,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_SD_SCHEDULINGAGREEMENT,no
+I_SLSSCHEDGAGRMTPRCGELMNTTP,Sales Scheduling Agreement Pricing Element - TP,Sales Scheduling Agreement Pricing Element - TP,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_SD_SCHEDULINGAGREEMENT,no
+I_SLSSCHEDGAGRMTTEXTTP,Sales Scheduling Agreement - Text TP,Sales Scheduling Agreement - Text TP,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_SD_SCHEDULINGAGREEMENT,no
+I_SLSSCHEDULINGAGREEMENTITEMTP,Sales Scheduling Agreement Item - TP,Sales Scheduling Agreement Item - TP,SD-SLS-OA-SCH-2CL,,basic,0,0,,component,yes,ODATA_SD_SCHEDULINGAGREEMENT,no
+I_CUSTPROJSLSORD,Sales Order for Customer Project,Sales Order for Customer Project,SD-SLS-PBS,,basic,31,0,Customer; Distribution Channel; Division; Payment Terms; Sales Document; Sales Group; Sales Office; Sales Organization,component,yes,SD_SLS_PBS,yes
+I_CUSTPROJSLSORDITEM,Sales Order Item for Customer Project,Sales Order Item for Customer Project,SD-SLS-PBS,,basic,41,1,Distribution Channel; Division; Material / Product; Payment Terms; Profit Center; Sales Document; Sales Organization; WBS Element,component,yes,SD_SLS_PBS,yes
+I_CUSTPROJSLSORDITEMPARTNER,Sales Order Item Partner for Cust Proj,Sales Order Item Partner for Cust Proj,SD-SLS-PBS,,basic,26,0,Address; Business Partner; Customer; Distribution Channel; Division; Sales Document; Sales Organization,component,yes,SD_SLS_PBS,yes
+I_CUSTPROJSLSORDITEMWORKPCKG,SO Item Wrk Pckgs for Customer Project,SO Item Wrk Pckgs for Customer Project,SD-SLS-PBS,,basic,16,0,Distribution Channel; Division; Sales Document; Sales Organization,component,yes,SD_SLS_PBS,yes
+I_CUSTPROJSLSORDPARTNER,Sales Order Partner for Customer Project,Sales Order Partner for Customer Project,SD-SLS-PBS,,basic,24,0,Address; Business Partner; Customer; Distribution Channel; Division; Sales Document; Sales Organization,component,yes,SD_SLS_PBS,yes
+I_PRODHIERTODISTRCHNASSGMT,Product Hierarchy Assignment in Sales,Product Hierarchy Assignment in Sales,SD-SLS-PH-2CL,,basic,10,0,Distribution Channel; Sales Organization,component,yes,SD_PRODUCT_HIER,no
+I_SALESPRODUCTHIERARCHYPRPSTXT,Product Hier Purpose in Sales - Text,Product Hier Purpose in Sales - Text,SD-SLS-PH-2CL,,text,5,0,,component,yes,SD_PRODUCT_HIER,no
+I_SALESPRODUCTHIERARCHYPURPOSE,Product Hierarchy Purpose in Sales,Product Hierarchy Purpose in Sales,SD-SLS-PH-2CL,,basic,3,0,,component,yes,SD_PRODUCT_HIER,no
+D_SALESQUOTATIONITEMCHANGED,Sales Quotation Item Changed,Sales Quotation Item Changed,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_QUT,no
+D_SALESQUOTATIONITEMCREATED,Sales Quotation Item Created,Sales Quotation Item Created,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_QUT,no
+D_SALESQUOTATIONITEMDELETED,Sales Quotation Item Deleted,Sales Quotation Item Deleted,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_QUT,no
+D_SLSQTANAPPROVALSTSCHANGED,Sales Quotation Approval Status Changed,Sales Quotation Approval Status Changed,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_QUT,no
+D_SLSQTANITMGENINCPLSTSCHGD,Sales Quotation Item Incp Status Changed,Sales Quotation Item Incp Status Changed,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_QUT,no
+D_SLSQTANITMRJCNSTSCHGD,Sales Quotation Item Rejection Sts Chgd,Sales Quotation Item Rejection Sts Chgd,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_QUT,no
+D_SLSQTANITMSDPROCSTSCHGD,Sales Qtan Item SD Proc Status Changed,Sales Qtan Item SD Proc Status Changed,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_QUT,no
+D_SLSQTANOVRLRJCNSTSCHGD,Sales Qtan Overall Rejection Sts Changed,Sales Qtan Overall Rejection Sts Changed,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_QUT,no
+D_SLSQTANOVRLSDPROCSTSCHANGED,Sales Qtan Overall SD Proc Sts Changed,Sales Qtan Overall SD Proc Sts Changed,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_QUT,no
+I_SALESINQUIRY,Sales Inquiry,Sales Inquiry,SD-SLS-QUT-2CL,Dimension,dimension,137,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Document Type; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_SI,yes
+I_SALESINQUIRYITEM,Sales Inquiry Item,Sales Inquiry Item,SD-SLS-QUT-2CL,Dimension,dimension,207,3,Batch; Business Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; WBS Element,component,yes,VDM_SD_SLS_SI,yes
+I_SALESINQUIRYTYPE,Sales Inquiry Types,Sales Inquiry Types,SD-SLS-QUT-2CL,Dimension,dimension,2,0,Sales Document Type,component,yes,VDM_SD_SLS_SI,yes
+I_SALESINQUIRYTYPETEXT,Sales Inquiry Type - Text,Sales Inquiry Type - Text,SD-SLS-QUT-2CL,,text,5,0,Sales Document Type,component,yes,VDM_SD_SLS_SI,no
+I_SALESQUOTATION,Sales Quotation,Sales Quotation,SD-SLS-QUT-2CL,Dimension,dimension,183,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Document Type; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_QUT,yes
+I_SALESQUOTATIONITEM,Sales Quotation Item,Sales Quotation Item,SD-SLS-QUT-2CL,Dimension,dimension,259,2,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component,yes,VDM_SD_SLS_QUT,yes
+I_SALESQUOTATIONITEMPARTNER,Sales Quotation Item Partner,Sales Quotation Item Partner,SD-SLS-QUT-2CL,,basic,18,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_QUT,yes
+I_SALESQUOTATIONITEMPARTNERTP,Sales Quotation Item Partner - TP,Sales Quotation Item Partner - TP,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,ODATA_SD_QUOTATION,no
+I_SALESQUOTATIONITEMPRCGELMNT,Sales Quotation Item Pricing Element,Sales Quotation Item Pricing Element,SD-SLS-QUT-2CL,,basic,66,0,Tax Code,component,yes,VDM_SD_SLS_QUT,yes
+I_SALESQUOTATIONITEMTEXTTP,Sales Quotation Item - Text TP,Sales Quotation Item - Text TP,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,ODATA_SD_QUOTATION,no
+I_SALESQUOTATIONITEMTP,Sales Quotation Item - TP,Sales Quotation Item - TP,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,ODATA_SD_QUOTATION,no
+I_SALESQUOTATIONPARTNER,Sales Quotation Partner,Sales Quotation Partner,SD-SLS-QUT-2CL,,basic,34,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_QUT,yes
+I_SALESQUOTATIONPARTNERTP,Sales Quotation Partner - TP,Sales Quotation Partner - TP,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,ODATA_SD_QUOTATION,no
+I_SALESQUOTATIONPRCGELMNT,Sales Quotation Pricing Element,Sales Quotation Pricing Element,SD-SLS-QUT-2CL,,basic,64,0,Tax Code,component,yes,VDM_SD_SLS_QUT,yes
+I_SALESQUOTATIONSTDVH,Sales Quotation,Sales Quotation,SD-SLS-QUT-2CL,,value_help,5,0,Distribution Channel; Division; Sales Document Type; Sales Organization,component,yes,VDM_SD_SLS_QUT,yes
+I_SALESQUOTATIONTEXTTP,Sales Quotation - Text TP,Sales Quotation - Text TP,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,ODATA_SD_QUOTATION,no
+I_SALESQUOTATIONTP,Sales Quotation - TP,Sales Quotation - TP,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,ODATA_SD_QUOTATION,no
+I_SALESQUOTATIONTYPE,Sales Quotation Types,Sales Quotation Types,SD-SLS-QUT-2CL,Dimension,dimension,2,0,,component,yes,VDM_SD_SLS_QUT,yes
+I_SALESQUOTATIONTYPETEXT,Sales Quotation Type - Text,Sales Quotation Type - Text,SD-SLS-QUT-2CL,,text,5,0,,component,yes,VDM_SD_SLS_QUT,no
+I_SLSQTANITEMPRICINGELEMENTTP,Sales Quotation Item Pricing Element - TP,Sales Quotation Item Pricing Element - TP,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,ODATA_SD_QUOTATION,no
+I_SLSQUOTATIONPRICINGELEMENTTP,Sales Quotation Pricing Element - TP,Sales Quotation Pricing Element - TP,SD-SLS-QUT-2CL,,basic,0,0,,component,yes,ODATA_SD_QUOTATION,no
+D_CUSTOMERRETURNCHANGED,Returns Order Changed,Returns Order Changed,SD-SLS-RE-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CR,no
+D_CUSTOMERRETURNCREATED,Returns Order Created,Returns Order Created,SD-SLS-RE-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CR,no
+D_CUSTOMERRETURNDELETED,Returns Order Deleted,Returns Order Deleted,SD-SLS-RE-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CR,no
+D_CUSTOMERRETURNITEMCHANGED,Returns Order Item Changed,Returns Order Item Changed,SD-SLS-RE-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CR,no
+D_CUSTOMERRETURNITEMCREATED,Returns Order Item Created,Returns Order Item Created,SD-SLS-RE-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CR,no
+D_CUSTOMERRETURNITEMDELETED,Returns Order Item Deleted,Returns Order Item Deleted,SD-SLS-RE-2CL,,basic,0,0,,component,yes,VDM_SD_SLS_CR,no
+D_CUSTRETCRTEWTHREFDOCP,Action Parameter: Create with Ref Header,Action Parameter: Create with Ref Header,SD-SLS-RE-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_RE,no
+D_CUSTRETITMCRTEWTHREFDOCP,Action Parameter: Create with Ref Item,Action Parameter: Create with Ref Item,SD-SLS-RE-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_RE,no
+I_CUSTOMERRETURN,Returns Order,Returns Order,SD-SLS-RE-2CL,Dimension,dimension,187,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_CR,yes
+I_CUSTOMERRETURNAPPROVALREASON,Approval Reason for Returns Order,Approval Reason for Returns Order,SD-SLS-RE-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_CR,yes
+I_CUSTOMERRETURNENHANCED,Returns Order Enhanced,Returns Order Enhanced,SD-SLS-RE-2CL,Dimension,dimension,195,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_CR,yes
+I_CUSTOMERRETURNITEM,Returns Order Item,Returns Order Item,SD-SLS-RE-2CL,Dimension,dimension,275,5,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component,yes,VDM_SD_SLS_CR,yes
+I_CUSTOMERRETURNITEMENHANCED,Returns Order Item Enhanced,Returns Order Item Enhanced,SD-SLS-RE-2CL,Dimension,dimension,292,5,Address; Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Plant; Profit Center; Profitability Segment; Sales Organization; Shipping Point; Storage Location; Supplier; WBS Element,component,yes,VDM_SD_SLS_CR,yes
+I_CUSTOMERRETURNITEMPARTNERTP,Returns Order Item Partner - TP,Returns Order Item Partner - TP,SD-SLS-RE-2CL,,basic,0,0,,component,yes,ODATA_SD_RETURN_V2,no
+I_CUSTOMERRETURNITEMTEXTTP,Returns Order Item - Text TP,Returns Order Item - Text TP,SD-SLS-RE-2CL,,basic,0,0,,component,yes,ODATA_SD_RETURN_V2,no
+I_CUSTOMERRETURNITEMTP,Returns Order Item - TP,Returns Order Item - TP,SD-SLS-RE-2CL,,basic,0,0,,component,yes,ODATA_SD_RETURN_V2,no
+I_CUSTOMERRETURNPARTNERTP,Returns Order Partner - TP,Returns Order Partner - TP,SD-SLS-RE-2CL,,basic,0,0,,component,yes,ODATA_SD_RETURN_V2,no
+I_CUSTOMERRETURNTEXTTP,Returns Order - Text TP,Returns Order - Text TP,SD-SLS-RE-2CL,,basic,0,0,,component,yes,ODATA_SD_RETURN_V2,no
+I_CUSTOMERRETURNTP,Returns Order - TP,Returns Order - TP,SD-SLS-RE-2CL,,basic,0,0,,component,yes,ODATA_SD_RETURN_V2,no
+I_CUSTOMERRETURNTYPE,Returns Order Types,Returns Order Types,SD-SLS-RE-2CL,Dimension,dimension,4,0,Sales Document Type,component,yes,VDM_SD_SLS_CR,yes
+I_CUSTOMERRETURNTYPETEXT,Returns Order Type - Text,Returns Order Type - Text,SD-SLS-RE-2CL,,text,5,0,Sales Document Type,component,yes,VDM_SD_SLS_CR,no
+I_CUSTRETAPPROVALREASONTXT,Approval Reason for Returns Order - Text,Approval Reason for Returns Order - Text,SD-SLS-RE-2CL,,text,5,0,,component,yes,VDM_SD_SLS_CR,no
+I_CUSTRETITEMPRICINGELEMENTTP,Returns Order Item Pricing Element - TP,Returns Order Item Pricing Element - TP,SD-SLS-RE-2CL,,basic,0,0,,component,yes,ODATA_SD_RETURN_V2,no
+I_CUSTRETPRICINGELEMENTTP,Returns Order Pricing Element - TP,Returns Order Pricing Element - TP,SD-SLS-RE-2CL,,basic,0,0,,component,yes,ODATA_SD_RETURN_V2,no
+I_SALESORDAPPROVALREASONTXT,Approval Reason for Sales Order - Text,Approval Reason for Sales Order - Text,SD-SLS-SO-2CL,,text,5,0,,component,yes,VDM_SD_SLS_SO,no
+I_SALESORDER,Sales Order,Sales Order,SD-SLS-SO-2CL,Dimension,dimension,247,3,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Plant; Sales Document; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERAPPROVALREASON,Approval Reason for Sales Order,Approval Reason for Sales Order,SD-SLS-SO-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERBILLINGPLAN,Billing Plan of Sales Order,Billing Plan of Sales Order,SD-SLS-SO-2CL,,basic,22,0,Distribution Channel; Division; Sales Document; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERBILLINGPLANITEM,Billing Plan Item of Sales Order,Billing Plan Item of Sales Order,SD-SLS-SO-2CL,,basic,43,2,Distribution Channel; Division; Payment Terms; Sales Document; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERITEM,Sales Order Item,Sales Order Item,SD-SLS-SO-2CL,Dimension,dimension,353,7,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Document; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERITEMBILLINGPLAN,Billing Plan of Sales Order Item,Billing Plan of Sales Order Item,SD-SLS-SO-2CL,,basic,25,0,Distribution Channel; Division; Sales Document; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERITEMPARTNER,Sales Order Item Partner,Sales Order Item Partner,SD-SLS-SO-2CL,,basic,27,0,Address; Business Partner; Customer; Personnel; Sales Document; Supplier,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERITEMPRICINGELEMENT,Sales Order Item Pricing Element,Sales Order Item Pricing Element,SD-SLS-SO-2CL,,basic,68,0,Sales Document; Tax Code,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERITEMSTDVH,Sales Order Item,Sales Order Item,SD-SLS-SO-2CL,,value_help,4,0,Sales Document,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERITMPRECDGPROCFLOW,Preceding Process Flow of Sls Order Item,Preceding Process Flow of Sls Order Item,SD-SLS-SO-2CL,,basic,16,0,Distribution Channel; Division; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERITMSUBSQNTPROCFLOW,Subsequent Process Flow of Sls Ordr Item,Subsequent Process Flow of Sls Ordr Item,SD-SLS-SO-2CL,,basic,19,0,Distribution Channel; Division; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERPARTNER,Sales Order Partner,Sales Order Partner,SD-SLS-SO-2CL,,basic,37,0,Address; Business Partner; Customer; Personnel; Sales Document; Supplier,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERPRECDGPROCFLOW,Preceding Process Flow of Sales Order,Preceding Process Flow of Sales Order,SD-SLS-SO-2CL,,basic,13,0,Distribution Channel; Division; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERPRICINGELEMENT,Sales Order Pricing Element,Sales Order Pricing Element,SD-SLS-SO-2CL,,basic,66,0,Sales Document; Tax Code,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERSCHEDULELINE,Sales Order Schedule Line,Sales Order Schedule Line,SD-SLS-SO-2CL,Dimension,dimension,66,0,Movement Type; Order (production / maintenance / internal); Sales Document,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERSTDVH,Sales Order,Sales Order,SD-SLS-SO-2CL,,value_help,5,0,Distribution Channel; Division; Sales Document; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERSUBSQNTPROCFLOW,Subsequent Process Flow of Sales Order,Subsequent Process Flow of Sales Order,SD-SLS-SO-2CL,,basic,13,0,Distribution Channel; Division; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERTYPE,Sales Order Types,Sales Order Types,SD-SLS-SO-2CL,Dimension,dimension,6,0,,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERTYPETEXT,Sales Order Type - Text,Sales Order Type - Text,SD-SLS-SO-2CL,,text,5,0,,component,yes,VDM_SD_SLS_SO,no
+I_SALESORDERWITHOUTCHARGE,Sales Order Without Charge,Sales Order Without Charge,SD-SLS-SO-2CL,Dimension,dimension,200,0,Business Area; Controlling Area; Cost Center; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Order (production / maintenance / internal); Payment Terms; Sales Group; Sales Office; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERWITHOUTCHARGEITEM,Item for Sales Order Without Charge,Item for Sales Order Without Charge,SD-SLS-SO-2CL,Dimension,dimension,297,4,Batch; Business Area; Controlling Area; Customer; Distribution Channel; Division; Document Condition (pricing); Fiscal Year; Incoterms; Material / Product; Material Group; Order (production / maintenance / internal); Payment Terms; Profit Center; Profitability Segment; Sales Group; Sales Office; Sales Organization; Shipping Point; Storage Location; WBS Element,component,yes,VDM_SD_SLS_SO,yes
+I_SALESORDERWITHOUTCHARGETYPE,Sales Order Without Charge Types,Sales Order Without Charge Types,SD-SLS-SO-2CL,Dimension,dimension,3,0,,component,yes,VDM_SD_SLS_SO,yes
+I_SLSORDERITEMBILLINGPLANITEM,Billing Plan Item of Sales Order Item,Billing Plan Item of Sales Order Item,SD-SLS-SO-2CL,,basic,52,2,Distribution Channel; Division; Payment Terms; Sales Document; Sales Organization,component,yes,VDM_SD_SLS_SO,yes
+I_SLSORDWITHOUTCHARGETYPETXT,Sales Order Without Charge Type - Text,Sales Order Without Charge Type - Text,SD-SLS-SO-2CL,,text,5,0,,component,yes,VDM_SD_SLS_SO,no
+I_SLSORDWTHOUTCHRGITMPARTNER,Item Partner for Sales Order Without Charge,Item Partner for Sales Order Without Charge,SD-SLS-SO-2CL,,basic,26,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_SO,yes
+I_SLSORDWTHOUTCHRGITMPRCGELMNT,Sls Ord Without Charge Item Prcg Element,Sls Ord Without Charge Item Prcg Element,SD-SLS-SO-2CL,,basic,66,0,Tax Code,component,yes,VDM_SD_SLS_SO,no
+I_SLSORDWTHOUTCHRGPARTNER,Partner for Sales Order Without Charge,Partner for Sales Order Without Charge,SD-SLS-SO-2CL,,basic,33,0,Address; Business Partner; Customer; Personnel; Supplier,component,yes,VDM_SD_SLS_SO,yes
+I_SLSORDWTHOUTCHRGPRCGELMNT,Sls Order Without Charge Pricing Element,Sls Order Without Charge Pricing Element,SD-SLS-SO-2CL,,basic,64,0,Tax Code,component,yes,VDM_SD_SLS_SO,no
+I_SLSORDWTHOUTCHRGSCHEDLINE,Schedule Line for Sales Order Without Charge,Schedule Line for Sales Order Without Charge,SD-SLS-SO-2CL,Dimension,dimension,60,0,Movement Type; Order (production / maintenance / internal); Sales Document,component,yes,VDM_SD_SLS_SO,yes
+D_SALESDOCCREATEWITHREFDOCP,Sls Doc Create with Ref action param,Sls Doc Create with Ref action param,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_COMMON,no
+D_SALESDOCCREATEWITHREFITEMP,Actn Param Cr with Ref Item in Sls Doc,Actn Param Cr with Ref Item in Sls Doc,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_COMMON,no
+D_SALESDOCITEMCRTEWITHREFITEMP,Sls Doc Item Create with Ref actn param,Sls Doc Item Create with Ref actn param,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_COMMON,no
+D_SALESDOCUPDATEPRICESP,Update Prices in Sales Doc.(Item)-Param,Update Prices in Sales Doc.(Item)-Param,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_COMMON,no
+I_SALESORDERWITHOUTCHARGETP,Sales Order Without Charge - TP,Sales Order Without Charge - TP,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SOWC_API,no
+I_SALESORDERWITHOUTCHRGTEXTTP,Sales Order Without Charge - Text TP,Sales Order Without Charge - Text TP,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SOWC_API,no
+I_SLSORDERWITHOUTCHARGEITEMTP,Sales Order Without Charge Item - TP,Sales Order Without Charge Item - TP,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SOWC_API,no
+I_SLSORDERWITHOUTCHRGITMTEXTTP,Sls Ord Without Charge Item - Text TP,Sls Ord Without Charge Item - Text TP,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SOWC_API,no
+I_SLSORDWITHOUTCHARGEPARTNERTP,Sales Order Without Charge Partner - TP,Sales Order Without Charge Partner - TP,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SOWC_API,no
+I_SLSORDWITHOUTCHRGSCHEDLINETP,Sales Order Without Charge Sline - TP,Sales Order Without Charge Sline - TP,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SOWC_API,no
+I_SLSORDWTHOUTCHRGITMPARTNERTP,Sls Ord Without Charge Item Partner - TP,Sls Ord Without Charge Item Partner - TP,SD-SLS-SO-RAP-2CL,,basic,0,0,,component,yes,RAP_SD_SLS_SOWC_API,no

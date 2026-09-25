@@ -1,117 +1,200 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_DSD_CURRENTTOURSTATUS,Current Tour Status,Current Tour Status,LE-DSD,,basic,26,0,,top-level
-I_DSD_SETTLEMENTDOCUMENTFLOW,Settlement Document Flow,Settlement Document Flow,LE-DSD,,basic,11,0,Plant,top-level
-I_DSD_SETTLEMENTDOCUMENTHEADER,Settlement Document Header,Settlement Document Header,LE-DSD,,basic,56,0,Plant,top-level
-I_DSD_SETTLEMENTDOCUMENTITEM,Settlement Document Item,Settlement Document Item,LE-DSD,,basic,6,0,Plant,top-level
-I_DSD_SETTLEMENTDOCUMENTS,Merging of Backend Documents,Merging of Backend Documents,LE-DSD,,basic,9,0,Plant; SD/LE Document (generic VBELN),top-level
-I_DSD_SETTLEMENTPAYMENTDIFF,Settlement Payment Differences,Settlement Payment Differences,LE-DSD,,basic,18,0,Plant,top-level
-I_DSD_SETTLEMENTQUANTITYDIFF,Settlement Quantity Differences,Settlement Quantity Differences,LE-DSD,,basic,44,0,Batch; Material / Product; Plant,top-level
-I_DSD_SETTLMTQTYDETERMINATION,Settlement Quantity Determination,Settlement Quantity Determination,LE-DSD,,basic,39,0,Batch; Material / Product; Plant,top-level
-I_DSD_STKVISIBILITYTRUCKSTOCK,Stock Visibility Truck Stock,Stock Visibility Truck Stock,LE-DSD,,basic,18,0,Batch; Material / Product; Plant,top-level
-I_DSD_TOURSTATUSHISTORY,Tour Status History,Tour Status History,LE-DSD,,basic,9,0,,top-level
-I_SHPDASPLNDDELIVITEMSCUBE,Delivery Items Shipped as Planned - Cube,Delivery Items Shipped as Planned - Cube,LE-SHP-FIO-ANA,Cube,cube,65,0,Customer; Material / Product; Plant; Shipping Point; Supplier,top-level
-I_CUSTOMERRETURNDELIVERY,Customer Returns Delivery Document,Customer Returns Delivery Document,LE-SHP-GF,Dimension,dimension,165,1,Customer; Delivery; Incoterms; Order (production / maintenance / internal); Sales Office; Sales Organization; Shipping Point; Supplier,top-level
-I_CUSTOMERRETURNDELIVERYITEM,Customer Returns Delivery Document Item,Customer Returns Delivery Document Item,LE-SHP-GF,Dimension,dimension,200,2,Batch; Business Area; Controlling Area; Cost Center; Distribution Channel; Division; G/L Account; Inspection Lot; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Group; Sales Office; Storage Location,top-level
-I_DELIVDOCSUPLRIDNTYPE,Deliv Doc Supplier Identification Type,Deliv Doc Supplier Identification Type,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_DELIVDOCSUPLRIDNTYPETEXT,Deliv Doc Suplr Idn Type - Text,Deliv Doc Suplr Idn Type - Text,LE-SHP-GF,,text,6,0,,top-level
-I_DELIVERYBLOCKREASON,Delivery Block Reason,Delivery Block Reason,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_DELIVERYBLOCKREASONTEXT,Delivery Block Reason - Text,Delivery Block Reason - Text,LE-SHP-GF,,text,5,0,,top-level
-I_DELIVERYCATEGORY,Delivery Category,Delivery Category,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_DELIVERYCATEGORYTEXT,Delivery Category - Text,Delivery Category - Text,LE-SHP-GF,,text,5,0,,top-level
-I_DELIVERYDOCUMENT,Delivery Document,Delivery Document,LE-SHP-GF,Dimension,dimension,259,1,Customer; Delivery; Document Condition (pricing); Incoterms; Order (production / maintenance / internal); Sales Office; Sales Organization; Shipping Point; Supplier,top-level
-I_DELIVERYDOCUMENTITEM,Delivery Document Item,Delivery Document Item,LE-SHP-GF,Dimension,dimension,312,4,Batch; Business Area; Controlling Area; Cost Center; Delivery; Distribution Channel; Division; Functional Area; G/L Account; Inspection Lot; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Group; Sales Office; Storage Location; WBS Element,top-level
-I_DELIVERYDOCUMENTSTDVH,Delivery Document,Delivery Document,LE-SHP-GF,,value_help,2,0,Delivery; Shipping Point,top-level
-I_DELIVERYDOCUMENTTYPE,Delivery Document Type,Delivery Document Type,LE-SHP-GF,Dimension,dimension,29,0,,top-level
-I_DELIVERYDOCUMENTTYPETEXT,Delivery Document Type - Text,Delivery Document Type - Text,LE-SHP-GF,,text,5,0,,top-level
-I_DELIVERYDUEINDEX,Delivery Due Index,Delivery Due Index,LE-SHP-GF,,basic,39,0,Customer; Distribution Channel; Division; SD/LE Document (generic VBELN); Sales Document Type; Sales Group; Sales Office; Sales Organization; Shipping Point,top-level
-I_DELIVERYPICKVIEWHEADER,Delivery Pick List Header,Delivery Pick List Header,LE-SHP-GF,,basic,31,0,Customer; Delivery; Shipping Point; Supplier,top-level
-I_DELIVERYPICKVIEWITEM,Delivery Pick List Item,Delivery Pick List Item,LE-SHP-GF,,basic,62,0,Batch; Delivery; Inspection Lot; Material / Product; Movement Type; Order (production / maintenance / internal); Plant; Storage Location,top-level
-I_DELIVERYPRIORITY,Delivery Priority,Delivery Priority,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_DELIVERYPRIORITYTEXT,Delivery Priority - Text,Delivery Priority - Text,LE-SHP-GF,,text,5,0,,top-level
-I_DELIVERYRELATEDBILLGSTATUS,Delivery Related Billing Status,Delivery Related Billing Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_DELIVERYRELATEDBILLGSTATUST,Delivery Related Billing Status - Text,Delivery Related Billing Status - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_DISTRSTATUSBYDECTRLZDWRHS,Distribution Sts by Decentralized Wrhs,Distribution Sts by Decentralized Wrhs,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_DISTRSTATUSBYDECTRLZDWRHST,Distr Sts by Decentralized Wrhs - Text,Distr Sts by Decentralized Wrhs - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_GOODSMOVEMENTSTATUS,Goods Movement Status,Goods Movement Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_GOODSMOVEMENTSTATUSTEXT,Goods Movement Status - Text,Goods Movement Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_HDRGOODSMVTINCOMPLTNSTATUS,Header Goods Movement Incompletion Sts,Header Goods Movement Incompletion Sts,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_HDRGOODSMVTINCOMPLTNSTATUST,Header Goods Mvt Incompletion Sts - Text,Header Goods Mvt Incompletion Sts - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_HDRPACKINGINCOMPLTNSTATUS,Header Packing Incompletion Status,Header Packing Incompletion Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_HDRPACKINGINCOMPLTNSTATUST,Header Packing Incompletion Sts - Text,Header Packing Incompletion Sts - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_HDRPICKGINCOMPLTNSTATUS,Header Picking Incompletion Status,Header Picking Incompletion Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_HDRPICKGINCOMPLTNSTATUST,Header Picking Incompletion Sts - Text,Header Picking Incompletion Sts - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_INBOUNDDELIVERY,Inbound Delivery,Inbound Delivery,LE-SHP-GF,Dimension,dimension,179,1,Customer; Delivery; Document Condition (pricing); Incoterms; Order (production / maintenance / internal); Sales Office; Sales Organization; Shipping Point; Supplier,top-level
-I_INBOUNDDELIVERYITEM,Inbound Delivery Item,Inbound Delivery Item,LE-SHP-GF,Dimension,dimension,237,3,Batch; Business Area; Controlling Area; Cost Center; Delivery; Distribution Channel; Division; Functional Area; G/L Account; Inspection Lot; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Group; Sales Office; Storage Location,top-level
-I_ITEMGDSMVTINCOMPLETIONSTS,Item Goods Movement Incompletion Status,Item Goods Movement Incompletion Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_ITEMGDSMVTINCOMPLETIONSTST,Item Goods Mvt Incompletion Sts - Text,Item Goods Mvt Incompletion Sts - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_ITEMPACKINGINCOMPLETIONSTS,Item Packing Incompletion Status,Item Packing Incompletion Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_ITEMPACKINGINCOMPLETIONSTST,Item Packing Incompletion Status - Text,Item Packing Incompletion Status - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_ITEMPICKINGINCOMPLETIONSTS,Item Picking Incompletion Status,Item Picking Incompletion Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_ITEMPICKINGINCOMPLETIONSTST,Item Picking Incompletion Status - Text,Item Picking Incompletion Status - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_LOADINGGROUP,Loading Group,Loading Group,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_LOADINGGROUPTEXT,Loading Group - Text,Loading Group - Text,LE-SHP-GF,,text,5,0,,top-level
-I_LOADINGPOINT,Loading Point,Loading Point,LE-SHP-GF,Dimension,dimension,4,0,Shipping Point,top-level
-I_LOADINGPOINTTEXT,Loading Point - Text,Loading Point - Text,LE-SHP-GF,,text,7,0,Shipping Point,top-level
-I_LOGISTICSEXECUTIONSCENARIO,Logistics Execution Scenario,Logistics Execution Scenario,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_LOGISTICSEXECUTIONSCENARIOT,LE Scenario - Text,LE Scenario - Text,LE-SHP-GF,,basic,6,0,,top-level
-I_MEANSOFTRANSPORTTYPE,Packaging Material Type,Packaging Material Type,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_MEANSOFTRANSPORTTYPETEXT,Packaging Material Type - Text,Packaging Material Type - Text,LE-SHP-GF,,text,5,0,,top-level
-I_OUTBOUNDDELIVERY,Outbound Delivery Document,Outbound Delivery Document,LE-SHP-GF,Dimension,dimension,199,0,Customer; Delivery; Document Condition (pricing); Incoterms; Order (production / maintenance / internal); Sales Office; Sales Organization; Shipping Point; Supplier,top-level
-I_OUTBOUNDDELIVERYITEM,Outbound Delivery Document Item,Outbound Delivery Document Item,LE-SHP-GF,Dimension,dimension,264,4,Batch; Business Area; Controlling Area; Cost Center; Distribution Channel; Division; Functional Area; G/L Account; Inspection Lot; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Group; Sales Office; Storage Location; WBS Element,top-level
-I_OVERALLDELIVRELTDBILLGSTS,Overall Delivery Related Billing Status,Overall Delivery Related Billing Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVERALLDELIVRELTDBILLGSTST,Ovrl Delivery Related Billing Sts - Text,Ovrl Delivery Related Billing Sts - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_OVERALLGOODSMOVEMENTSTATUS,Overall Goods Movement Status,Overall Goods Movement Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVERALLGOODSMOVEMENTSTATUST,Overall Goods Movement Status - Text,Overall Goods Movement Status - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_OVERALLPACKINGSTATUS,Overall Packing Status,Overall Packing Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVERALLPACKINGSTATUSTEXT,Overall Packing Status - Text,Overall Packing Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_OVERALLPICKINGCONFSTATUS,Overall Picking Confirmation Status,Overall Picking Confirmation Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVERALLPICKINGCONFSTATUSTEXT,Ovrl Picking Confirmation Status - Text,Ovrl Picking Confirmation Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_OVERALLPICKINGSTATUS,Overall Picking Status,Overall Picking Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVERALLPICKINGSTATUSTEXT,Overall Picking Status - Text,Overall Picking Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_OVERALLPROOFOFDELIVSTATUS,Proof of Delivery Status on Header Level,Proof of Delivery Status on Header Level,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVERALLPROOFOFDELIVSTATUST,Proof of Delivery Sts on Hdr Lvl - Text,Proof of Delivery Sts on Hdr Lvl - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_OVRLITMGDSMVTINCOMPLTNSTS,Ovrl Itm Goods Movement Incompletion Sts,Ovrl Itm Goods Movement Incompletion Sts,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVRLITMGDSMVTINCOMPLTNSTST,Ovrl Itm Goods Mvt Incompltn Sts - Text,Ovrl Itm Goods Mvt Incompltn Sts - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_OVRLITMPACKINGINCOMPLTNSTS,Overall Item Packing Incompletion Status,Overall Item Packing Incompletion Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVRLITMPACKINGINCOMPLTNSTST,Ovrl Itm Packing Incompletion Sts - Text,Ovrl Itm Packing Incompletion Sts - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_OVRLITMPICKINGINCOMPLTNSTS,Overall Item Picking Incompletion Status,Overall Item Picking Incompletion Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVRLITMPICKINGINCOMPLTNSTST,Ovrl Itm Picking Incompletion Sts - Text,Ovrl Itm Picking Incompletion Sts - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_OVRLWAREHOUSEACTYSTATUS,Overall Warehouse Activity Status,Overall Warehouse Activity Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_OVRLWAREHOUSEACTYSTATUST,Overall Warehouse Activity Status - Text,Overall Warehouse Activity Status - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_PACKINGSTATUS,Packing Status,Packing Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_PACKINGSTATUSTEXT,Packing Status - Text,Packing Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_PARTIALDELIVERYITEM,Partial Delivery Control Item,Partial Delivery Control Item,LE-SHP-GF,,basic,2,0,,top-level
-I_PARTIALDELIVERYITEMTEXT,Partial Delivery Control Item - Text,Partial Delivery Control Item - Text,LE-SHP-GF,,text,3,0,,top-level
-I_PICKINGCONFIRMATIONSTATUS,Picking Confirmation Status,Picking Confirmation Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_PICKINGCONFIRMATIONSTATUST,Picking Confirmation Status - Text,Picking Confirmation Status - Text,LE-SHP-GF,,basic,5,0,,top-level
-I_PICKINGCONTROL,Picking Control,Picking Control,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_PICKINGCONTROLTEXT,Picking Control - Text,Picking Control - Text,LE-SHP-GF,,text,5,0,,top-level
-I_PICKINGSTATUS,Picking Status,Picking Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_PICKINGSTATUSTEXT,Picking Status - Text,Picking Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_PROOFOFDELIVERYSTATUS,Proof of Delivery Status on Item Level,Proof of Delivery Status on Item Level,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_PROOFOFDELIVERYSTATUSTEXT,Proof of Delivery Sts on Item Lvl - Text,Proof of Delivery Sts on Item Lvl - Text,LE-SHP-GF,,text,5,0,,top-level
-I_PROOFOFDELIVRLVNCECODE,Proof Of Delivery Relevance Code,Proof Of Delivery Relevance Code,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_PROOFOFDELIVRLVNCECODETEXT,ProofOfDelivery Relevance Code - Text,ProofOfDelivery Relevance Code - Text,LE-SHP-GF,,text,6,0,,top-level
-I_PUTAWAYSTATUS,Putaway Status,Putaway Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_PUTAWAYSTATUSTEXT,Putaway Status - Text,Putaway Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_SGLWHSEDELIVCODE,Single Warehouse Delivery Code,Single Warehouse Delivery Code,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_SGLWHSEDELIVCODETEXT,Sgl Whse Delivery Code - Text,Sgl Whse Delivery Code - Text,LE-SHP-GF,,text,6,0,,top-level
-I_SHIPPINGCONDITION,Shipping Condition,Shipping Condition,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_SHIPPINGCONDITIONTEXT,Shipping Condition - Text,Shipping Condition - Text,LE-SHP-GF,,text,5,0,,top-level
-I_SHIPPINGPOINT,Shipping Point,Shipping Point,LE-SHP-GF,Dimension,dimension,11,0,Shipping Point,top-level
-I_SHIPPINGPOINTSTDVH,Shipping Point,Shipping Point,LE-SHP-GF,,value_help,3,0,Shipping Point,top-level
-I_SHIPPINGPOINTTEXT,Shipping Point - Text,Shipping Point - Text,LE-SHP-GF,,text,5,0,Shipping Point,top-level
-I_SHIPPINGTYPE,Shipping Type,Shipping Type,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_SHIPPINGTYPETEXT,Shipping Type - Text,Shipping Type - Text,LE-SHP-GF,,text,5,0,,top-level
-I_SUPLRCARRCONFEXPECTATION,Suplr Carrier Confirmation Expectation,Suplr Carrier Confirmation Expectation,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_SUPLRCARRCONFEXPECTATIONT,Suplr Carr Conf Expectation - Text,Suplr Carr Conf Expectation - Text,LE-SHP-GF,,basic,6,0,,top-level
-I_TOTALBLOCKSTATUS,Total Block Status,Total Block Status,LE-SHP-GF,Dimension,dimension,3,0,,top-level
-I_TOTALBLOCKSTATUSTEXT,Total Block Status - Text,Total Block Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_WAREHOUSE,Warehouse Number,Warehouse Number,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_WAREHOUSEACTIVITYSTATUS,Warehouse Activity Status,Warehouse Activity Status,LE-SHP-GF,Dimension,dimension,2,0,,top-level
-I_WAREHOUSEACTIVITYSTATUSTEXT,Warehouse Activity Status - Text,Warehouse Activity Status - Text,LE-SHP-GF,,text,5,0,,top-level
-I_WAREHOUSETEXT,Warehouse Number - Text,Warehouse Number - Text,LE-SHP-GF,,text,5,0,,top-level
-I_ROUTE,Route,Route,LE-TRA,,basic,6,0,,top-level
-I_TRANSPORTATIONGROUP,Transportation Group,Transportation Group,LE-TRA,,basic,2,0,,top-level
-I_TRANSPORTATIONPLANNINGSTS,Transportation Planning Status,Transportation Planning Status,LE-TRA,Dimension,dimension,3,0,,top-level
-I_TRANSPORTATIONPLANNINGSTST,Transportation Planning Status Text,Transportation Planning Status Text,LE-TRA,,basic,5,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_DSD_CURRENTTOURSTATUS,Current Tour Status,Current Tour Status,LE-DSD,,basic,26,0,,top-level,yes,DSDV,yes
+I_DSD_SETTLEMENTDOCUMENTFLOW,Settlement Document Flow,Settlement Document Flow,LE-DSD,,basic,11,0,Plant,top-level,yes,DSDV,yes
+I_DSD_SETTLEMENTDOCUMENTHEADER,Settlement Document Header,Settlement Document Header,LE-DSD,,basic,56,0,Plant,top-level,yes,DSDV,yes
+I_DSD_SETTLEMENTDOCUMENTITEM,Settlement Document Item,Settlement Document Item,LE-DSD,,basic,6,0,Plant,top-level,yes,DSDV,yes
+I_DSD_SETTLEMENTDOCUMENTS,Merging of Backend Documents,Merging of Backend Documents,LE-DSD,,basic,9,0,Plant; SD/LE Document (generic VBELN),top-level,yes,DSDV,yes
+I_DSD_SETTLEMENTPAYMENTDIFF,Settlement Payment Differences,Settlement Payment Differences,LE-DSD,,basic,18,0,Plant,top-level,yes,DSDV,yes
+I_DSD_SETTLEMENTQUANTITYDIFF,Settlement Quantity Differences,Settlement Quantity Differences,LE-DSD,,basic,44,0,Batch; Material / Product; Plant,top-level,yes,DSDV,yes
+I_DSD_SETTLMTQTYDETERMINATION,Settlement Quantity Determination,Settlement Quantity Determination,LE-DSD,,basic,39,0,Batch; Material / Product; Plant,top-level,yes,DSDV,yes
+I_DSD_STKVISIBILITYTRUCKSTOCK,Stock Visibility Truck Stock,Stock Visibility Truck Stock,LE-DSD,,basic,18,0,Batch; Material / Product; Plant,top-level,yes,DSDV,yes
+I_DSD_TOURSTATUSHISTORY,Tour Status History,Tour Status History,LE-DSD,,basic,9,0,,top-level,yes,DSDV,yes
+C_JITPRODNCONFPROFILEVH,JIT Production Confirmation Profile,JIT Production Confirmation Profile,LE-JIT-S2C,,value_help,2,0,,top-level,yes,NJIT_CORE,no
+I_JITCUSTOMER,JIT Customer,JIT Customer,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_CUSTOMER,no
+I_JITCUSTOMEREXTERNALSTATUS,JIT Customer External Status,JIT Customer External Status,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_CUSTOMER,no
+I_JITCUSTOMERREFERENCETYPE,JIT Customer Reference Type,JIT Customer Reference Type,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_CUSTOMER,no
+I_JITCUSTOMERSUPPLYAREA,JIT Customer Supply Area,JIT Customer Supply Area,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_CUSTOMER,no
+I_JITCUSTOMERSUPPLYAREADESC,JIT Customer Supply Area Description,JIT Customer Supply Area Description,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_CUSTOMER,no
+I_JITDELIVSQNCDEFBASIC,Delivery Sqnc Grp Packing Group Def,Delivery Sqnc Grp Packing Group Def,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_DSG,no
+I_JITDELIVSQNCGRPDESCBASIC,Delivery Sequence Group Description,Delivery Sequence Group Description,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_DSG,no
+I_JITDELIVSQNCGRPHEADERBASIC,Delivery Sequence Group,Delivery Sequence Group,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_DSG,no
+I_JITDELIVSQNCGRPSCHEDGACTY,Delivery Sqnc Grp Scheduling Activity,Delivery Sqnc Grp Scheduling Activity,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_DSG,no
+I_JITDELIVSQNCGRPSCHEDGENTRY,Delivery Sqnc Grp Schedule Entry,Delivery Sqnc Grp Schedule Entry,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_DSG,no
+I_JITDELIVSQNCGRPSQNCNMBRCHK,Delivery Sqnc Grp Sequence Number Check,Delivery Sqnc Grp Sequence Number Check,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_DSG,no
+I_JITDELIVSQNCNMBRSTTGBASIC,Delivery Sqnc Grp Number Settings,Delivery Sqnc Grp Number Settings,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_DSG,no
+I_JITDELIVSQNCSUPCTRLBASIC,Delivery Sqnc Grp Supply Ctrl Assgmt,Delivery Sqnc Grp Supply Ctrl Assgmt,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_DSG,no
+I_JITINBCALLACTIONLOG,JIT Inbound Call Action Log,JIT Inbound Call Action Log,LE-JIT-S2C,,basic,32,0,,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLCOMPDOCREFERENCE,JIT Inbound Call Component Document Ref,JIT Inbound Call Component Document Ref,LE-JIT-S2C,,basic,20,0,,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLCOMPGRPDOCREF,JIT Inbound Call Component Group Doc Ref,JIT Inbound Call Component Group Doc Ref,LE-JIT-S2C,,basic,20,0,,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLCOMPGRPREFTEXT,JIT Inbound Call Component Group Ref Txt,JIT Inbound Call Component Group Ref Txt,LE-JIT-S2C,,text,11,0,,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLCOMPMESSAGE,JIT Inbound Call Component Messages,JIT Inbound Call Component Messages,LE-JIT-S2C,,basic,13,0,,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLCOMPONENT,JIT Inbound Call Component,JIT Inbound Call Component,LE-JIT-S2C,,basic,41,0,Division; Material / Product; Sales Document,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLCOMPONENTGROUP,JIT Inbound Call Component Group,JIT Inbound Call Component Group,LE-JIT-S2C,,basic,96,0,Plant; Shipping Point; Storage Location,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLCOMPRAWMATERIAL,JIT Inbound Call Component Raw Material,JIT Inbound Call Component Raw Material,LE-JIT-S2C,,basic,14,0,Plant,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLCOMPREFTEXT,JIT Inbound Call Component Reference Txt,JIT Inbound Call Component Reference Txt,LE-JIT-S2C,,text,11,0,,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLDOCREFERENCE,JIT Inbound Call Document Reference,JIT Inbound Call Document Reference,LE-JIT-S2C,,basic,18,0,,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBCALLREFERENCETEXT,JIT Inbound Call Reference Text,JIT Inbound Call Reference Text,LE-JIT-S2C,,text,10,0,,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITINBOUNDCALL,JIT Inbound Call,JIT Inbound Call,LE-JIT-S2C,,basic,45,0,Customer; Distribution Channel; Division; Sales Organization,top-level,yes,NJIT_MODEL_INBOUNDCALL,no
+I_JITPCKGGRPACTIONLOGBASIC,JIT Package Group Action Log,JIT Package Group Action Log,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKING_GROUP,no
+I_JITPCKGGRPCELLCNSMPNSTS,JIT Packing Group Consumption,JIT Packing Group Consumption,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKING_GROUP,no
+I_JITPCKGGRPDEF,JIT Packing Group Definition,JIT Packing Group Definition,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKG_GRP_SPEC,no
+I_JITPCKGGRPDEFCELL,JIT Packing Group Cell Definition,JIT Packing Group Cell Definition,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKG_GRP_SPEC,no
+I_JITPCKGGRPDEFHIER,JIT Packing Group Definition Hierarchy,JIT Packing Group Definition Hierarchy,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKG_GRP_SPEC,no
+I_JITPCKGGRPDEFSLOTGRPCNTNT,JIT Packing Group Slot Group Content,JIT Packing Group Slot Group Content,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKG_GRP_SPEC,no
+I_JITPCKGGRPDEFTXT,JIT Packing Group Definition - Text,JIT Packing Group Definition - Text,LE-JIT-S2C,,text,0,0,,top-level,yes,NJIT_MODEL_PACKG_GRP_SPEC,no
+I_JITPCKGGRPDOCREFBASIC,JIT Package Group Document Reference,JIT Package Group Document Reference,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKING_GROUP,no
+I_JITPCKGGRPHEADER,Just In Time Packing Group,Just In Time Packing Group,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKING_GROUP,no
+I_JITPCKGGRPHISTLREF,JIT Packing Group Slot Content Histl Ref,JIT Packing Group Slot Content Histl Ref,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKING_GROUP,no
+I_JITPCKGGRPITEM,JIT Packing Group Slot,JIT Packing Group Slot,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKING_GROUP,no
+I_JITPCKGGRPITEMREF,JIT Packing Group Slot Content,JIT Packing Group Slot Content,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_PACKING_GROUP,no
+I_JITPRODNCONFPROFILE,JIT Production Confirmation Profile,JIT Production Confirmation Profile,LE-JIT-S2C,,basic,3,0,,top-level,yes,NJIT_CORE,no
+I_JITPRODNCONFPROFILEDESC,JIT Production Conf Profile - Text,JIT Production Conf Profile - Text,LE-JIT-S2C,,basic,5,0,,top-level,yes,NJIT_CORE,no
+I_JITSUPPLYCONTROLDESC,JIT Supply Control Description,JIT Supply Control Description,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_SUPPLY_CONTROL,no
+I_JITSUPPLYCONTROLHEADER,JIT Supply Control,JIT Supply Control,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_SUPPLY_CONTROL,no
+I_JITSUPPLYCONTROLTOLLVL,JIT Supply Control Tolerance,JIT Supply Control Tolerance,LE-JIT-S2C,,basic,0,0,,top-level,yes,NJIT_MODEL_SUPPLY_CONTROL,no
+D_CUSTRETCRTDLVITMFRMSLSDOCP,CustRetDel Crt Dlv Itm Frm Sls Doc Param,CustRetDel Crt Dlv Itm Frm Sls Doc Param,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+D_CUSTRETDLVCRTEDLVFRMSLSDOCP,CustRetDel Crte Deliv Frm Sls Doc Param,CustRetDel Crte Deliv Frm Sls Doc Param,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+D_CUSTRETDLVCRTEFRMSLSDOCITEMP,CustRetDel Crte Frm Sls Doc Item P,CustRetDel Crte Frm Sls Doc Item P,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+D_INBDELIVCRTEDELIVFRMPURGDOCP,Inb Deliv Crte Deliv Frm Purg Doc Param,Inb Deliv Crte Deliv Frm Purg Doc Param,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_IBD,no
+D_INBDELIVCRTEFRMPURGDOCITEMP,Inb Deliv Crte Frm Purg Doc Item P,Inb Deliv Crte Frm Purg Doc Item P,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_IBD,no
+D_OUTBDELIVCRTDLVITMFRMSLSDOCP,Outb Deliv Crt Dlv Itm Frm Sls Doc P,Outb Deliv Crt Dlv Itm Frm Sls Doc P,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+D_OUTBDELIVCRTEDELIVFRMSLSDOCP,Outb Deliv Crte Deliv Frm Sls Doc Param,Outb Deliv Crte Deliv Frm Sls Doc Param,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+D_OUTBDELIVCRTEFRMSLSDOCITEMP,Outb Deliv Crte Frm Sls Doc Item P,Outb Deliv Crte Frm Sls Doc Item P,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+I_CUSTOMERRETURNSDELIVERYTP,Customer Returns Delivery - TP,Customer Returns Delivery - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+I_CUSTOMERRETURNSDELIVITEMTP,Customer Returns Delivery Item - TP,Customer Returns Delivery Item - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+I_CUSTRETDELIVITEMSERIALNMBRTP,Customer Returns Deliv Item SrlNmbr - TP,Customer Returns Deliv Item SrlNmbr - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+I_CUSTRETDELIVITEMTEXTTP,Customer Returns Delivery Item - Text TP,Customer Returns Delivery Item - Text TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+I_CUSTRETDELIVPARTNERTP,Customer Returns Delivery Partner - TP,Customer Returns Delivery Partner - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+I_CUSTRETDELIVTEXTTP,Customer Returns Delivery - Text TP,Customer Returns Delivery - Text TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_RET,no
+I_INBDELIVERYPARTNERTP,Inbound Delivery Partner - TP,Inbound Delivery Partner - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_IBD,no
+I_INBDELIVITEMSERIALNUMBERTP,Inbound Delivery Item Serial Number - TP,Inbound Delivery Item Serial Number - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_IBD,no
+I_INBDELIVITEMTEXTTP,Inbound Delivery Item - Text TP,Inbound Delivery Item - Text TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_IBD,no
+I_INBOUNDDELIVERYITEMTP,Inbound Delivery Item - TP,Inbound Delivery Item - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_IBD,no
+I_INBOUNDDELIVERYTEXTTP,Inbound Delivery - Text TP,Inbound Delivery - Text TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_IBD,no
+I_INBOUNDDELIVERYTP,Inbound Delivery - TP,Inbound Delivery - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_IBD,no
+I_OUTBDELIVITEMSERIALNUMBERTP,Outbound Dlv Item Serial Number - TP,Outbound Dlv Item Serial Number - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+I_OUTBOUNDDELIVERYITEMTEXTTP,Outbound Delivery Item - Text TP,Outbound Delivery Item - Text TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+I_OUTBOUNDDELIVERYITEMTP,Outbound Delivery Item - TP,Outbound Delivery Item - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+I_OUTBOUNDDELIVERYPARTNERTP,Outbound Delivery Partner - TP,Outbound Delivery Partner - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+I_OUTBOUNDDELIVERYTEXTTP,Outbound Delivery - Text TP,Outbound Delivery - Text TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+I_OUTBOUNDDELIVERYTP,Outbound Delivery - TP,Outbound Delivery - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+I_OUTBOUNDDELIVERYTP_2,Outbound Delivery - TP,Outbound Delivery - TP,LE-SHP-API-2CL,,basic,0,0,,top-level,yes,RAP_LE_OBD,no
+I_SHPDASPLNDDELIVITEMSCUBE,Delivery Items Shipped as Planned - Cube,Delivery Items Shipped as Planned - Cube,LE-SHP-FIO-ANA-2CL,Cube,cube,65,0,Customer; Material / Product; Plant; Shipping Point; Supplier,top-level,yes,ODATA_LE_SHP_SHPD_AS_PLND,yes
+D_OUTBDELIVDELIVBLOCKCHANGED,Outbound Delivery Delivery Block Changed,Outbound Delivery Delivery Block Changed,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBDELIVGISTATUSCHANGED,Outb Deliv Goods Issue Status Changed,Outb Deliv Goods Issue Status Changed,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBDELIVPACKGSTATUSCHANGED,Outbound Delivery Packing Status Changed,Outbound Delivery Packing Status Changed,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBDELIVPKNGSTATUSCHANGED,Outbound Delivery Picking Status Changed,Outbound Delivery Picking Status Changed,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBOUNDDELIVERYCHANGED,Outbound Delivery Changed,Outbound Delivery Changed,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBOUNDDELIVERYCREATED,Outbound Delivery Created,Outbound Delivery Created,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBOUNDDELIVERYDELETED,Outbound Delivery Deleted,Outbound Delivery Deleted,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBOUNDDELIVERYITEMCHANGED,Outbound Delivery Item Changed,Outbound Delivery Item Changed,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBOUNDDELIVERYITEMCREATED,Outbound Delivery Item Created,Outbound Delivery Item Created,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+D_OUTBOUNDDELIVERYITEMDELETED,Outbound Delivery Item Deleted,Outbound Delivery Item Deleted,LE-SHP-GF-2CL,,basic,0,0,,top-level,yes,VDM_LE_SHP_OBD_EVENTS,no
+I_CUSTOMERRETURNDELIVERY,Customer Returns Delivery Document,Customer Returns Delivery Document,LE-SHP-GF-2CL,Dimension,dimension,165,1,Customer; Delivery; Incoterms; Order (production / maintenance / internal); Sales Office; Sales Organization; Shipping Point; Supplier,top-level,yes,VDM_LE_SHP_RET_COMMON,yes
+I_CUSTOMERRETURNDELIVERYITEM,Customer Returns Delivery Document Item,Customer Returns Delivery Document Item,LE-SHP-GF-2CL,Dimension,dimension,200,2,Batch; Business Area; Controlling Area; Cost Center; Distribution Channel; Division; G/L Account; Inspection Lot; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Group; Sales Office; Storage Location,top-level,yes,VDM_LE_SHP_RET_COMMON,yes
+I_DELIVDOCSUPLRIDNTYPE,Deliv Doc Supplier Identification Type,Deliv Doc Supplier Identification Type,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVDOCSUPLRIDNTYPETEXT,Deliv Doc Suplr Idn Type - Text,Deliv Doc Suplr Idn Type - Text,LE-SHP-GF-2CL,,text,6,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYBLOCKREASON,Delivery Block Reason,Delivery Block Reason,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYBLOCKREASONTEXT,Delivery Block Reason - Text,Delivery Block Reason - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYCATEGORY,Delivery Category,Delivery Category,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYCATEGORYTEXT,Delivery Category - Text,Delivery Category - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYDOCUMENT,Delivery Document,Delivery Document,LE-SHP-GF-2CL,Dimension,dimension,259,1,Customer; Delivery; Document Condition (pricing); Incoterms; Order (production / maintenance / internal); Sales Office; Sales Organization; Shipping Point; Supplier,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYDOCUMENTITEM,Delivery Document Item,Delivery Document Item,LE-SHP-GF-2CL,Dimension,dimension,312,4,Batch; Business Area; Controlling Area; Cost Center; Delivery; Distribution Channel; Division; Functional Area; G/L Account; Inspection Lot; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Group; Sales Office; Storage Location; WBS Element,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYDOCUMENTSTDVH,Delivery Document,Delivery Document,LE-SHP-GF-2CL,,value_help,2,0,Delivery; Shipping Point,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYDOCUMENTTYPE,Delivery Document Type,Delivery Document Type,LE-SHP-GF-2CL,Dimension,dimension,29,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYDOCUMENTTYPETEXT,Delivery Document Type - Text,Delivery Document Type - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYDUEINDEX,Delivery Due Index,Delivery Due Index,LE-SHP-GF-2CL,,basic,39,0,Customer; Distribution Channel; Division; SD/LE Document (generic VBELN); Sales Document Type; Sales Group; Sales Office; Sales Organization; Shipping Point,top-level,yes,VDM_LE_SHP_OBD_COMMON,yes
+I_DELIVERYPICKVIEWHEADER,Delivery Pick List Header,Delivery Pick List Header,LE-SHP-GF-2CL,,basic,31,0,Customer; Delivery; Shipping Point; Supplier,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYPICKVIEWITEM,Delivery Pick List Item,Delivery Pick List Item,LE-SHP-GF-2CL,,basic,62,0,Batch; Delivery; Inspection Lot; Material / Product; Movement Type; Order (production / maintenance / internal); Plant; Storage Location,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYPRIORITY,Delivery Priority,Delivery Priority,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYPRIORITYTEXT,Delivery Priority - Text,Delivery Priority - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYRELATEDBILLGSTATUS,Delivery Related Billing Status,Delivery Related Billing Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DELIVERYRELATEDBILLGSTATUST,Delivery Related Billing Status - Text,Delivery Related Billing Status - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DISTRSTATUSBYDECTRLZDWRHS,Distribution Sts by Decentralized Wrhs,Distribution Sts by Decentralized Wrhs,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_DISTRSTATUSBYDECTRLZDWRHST,Distr Sts by Decentralized Wrhs - Text,Distr Sts by Decentralized Wrhs - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_GOODSMOVEMENTSTATUS,Goods Movement Status,Goods Movement Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_GOODSMOVEMENTSTATUSTEXT,Goods Movement Status - Text,Goods Movement Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_HDRGOODSMVTINCOMPLTNSTATUS,Header Goods Movement Incompletion Sts,Header Goods Movement Incompletion Sts,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_HDRGOODSMVTINCOMPLTNSTATUST,Header Goods Mvt Incompletion Sts - Text,Header Goods Mvt Incompletion Sts - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_HDRPACKINGINCOMPLTNSTATUS,Header Packing Incompletion Status,Header Packing Incompletion Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_HDRPACKINGINCOMPLTNSTATUST,Header Packing Incompletion Sts - Text,Header Packing Incompletion Sts - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_HDRPICKGINCOMPLTNSTATUS,Header Picking Incompletion Status,Header Picking Incompletion Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_HDRPICKGINCOMPLTNSTATUST,Header Picking Incompletion Sts - Text,Header Picking Incompletion Sts - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_INBOUNDDELIVERY,Inbound Delivery,Inbound Delivery,LE-SHP-GF-2CL,Dimension,dimension,179,1,Customer; Delivery; Document Condition (pricing); Incoterms; Order (production / maintenance / internal); Sales Office; Sales Organization; Shipping Point; Supplier,top-level,yes,VDM_LE_SHP_IBD_COMMON,yes
+I_INBOUNDDELIVERYITEM,Inbound Delivery Item,Inbound Delivery Item,LE-SHP-GF-2CL,Dimension,dimension,237,3,Batch; Business Area; Controlling Area; Cost Center; Delivery; Distribution Channel; Division; Functional Area; G/L Account; Inspection Lot; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Group; Sales Office; Storage Location,top-level,yes,VDM_LE_SHP_IBD_COMMON,yes
+I_ITEMGDSMVTINCOMPLETIONSTS,Item Goods Movement Incompletion Status,Item Goods Movement Incompletion Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_ITEMGDSMVTINCOMPLETIONSTST,Item Goods Mvt Incompletion Sts - Text,Item Goods Mvt Incompletion Sts - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_ITEMPACKINGINCOMPLETIONSTS,Item Packing Incompletion Status,Item Packing Incompletion Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_ITEMPACKINGINCOMPLETIONSTST,Item Packing Incompletion Status - Text,Item Packing Incompletion Status - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_ITEMPICKINGINCOMPLETIONSTS,Item Picking Incompletion Status,Item Picking Incompletion Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_ITEMPICKINGINCOMPLETIONSTST,Item Picking Incompletion Status - Text,Item Picking Incompletion Status - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_LOADINGGROUP,Loading Group,Loading Group,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_LOADINGGROUPTEXT,Loading Group - Text,Loading Group - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_LOADINGPOINT,Loading Point,Loading Point,LE-SHP-GF-2CL,Dimension,dimension,4,0,Shipping Point,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_LOADINGPOINTTEXT,Loading Point - Text,Loading Point - Text,LE-SHP-GF-2CL,,text,7,0,Shipping Point,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_LOGISTICSEXECUTIONSCENARIO,Logistics Execution Scenario,Logistics Execution Scenario,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_LOGISTICSEXECUTIONSCENARIOT,LE Scenario - Text,LE Scenario - Text,LE-SHP-GF-2CL,,basic,6,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_MEANSOFTRANSPORTTYPE,Packaging Material Type,Packaging Material Type,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_MEANSOFTRANSPORTTYPETEXT,Packaging Material Type - Text,Packaging Material Type - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OUTBOUNDDELIVERY,Outbound Delivery Document,Outbound Delivery Document,LE-SHP-GF-2CL,Dimension,dimension,199,0,Customer; Delivery; Document Condition (pricing); Incoterms; Order (production / maintenance / internal); Sales Office; Sales Organization; Shipping Point; Supplier,top-level,yes,VDM_LE_SHP_OBD_COMMON,yes
+I_OUTBOUNDDELIVERYITEM,Outbound Delivery Document Item,Outbound Delivery Document Item,LE-SHP-GF-2CL,Dimension,dimension,264,4,Batch; Business Area; Controlling Area; Cost Center; Distribution Channel; Division; Functional Area; G/L Account; Inspection Lot; Material / Product; Material Group; Movement Type; Order (production / maintenance / internal); Plant; Profit Center; Profitability Segment; Sales Group; Sales Office; Storage Location; WBS Element,top-level,yes,VDM_LE_SHP_OBD_COMMON,yes
+I_OVERALLDELIVRELTDBILLGSTS,Overall Delivery Related Billing Status,Overall Delivery Related Billing Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLDELIVRELTDBILLGSTST,Ovrl Delivery Related Billing Sts - Text,Ovrl Delivery Related Billing Sts - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLGOODSMOVEMENTSTATUS,Overall Goods Movement Status,Overall Goods Movement Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLGOODSMOVEMENTSTATUST,Overall Goods Movement Status - Text,Overall Goods Movement Status - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLPACKINGSTATUS,Overall Packing Status,Overall Packing Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLPACKINGSTATUSTEXT,Overall Packing Status - Text,Overall Packing Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLPICKINGCONFSTATUS,Overall Picking Confirmation Status,Overall Picking Confirmation Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLPICKINGCONFSTATUSTEXT,Ovrl Picking Confirmation Status - Text,Ovrl Picking Confirmation Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLPICKINGSTATUS,Overall Picking Status,Overall Picking Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLPICKINGSTATUSTEXT,Overall Picking Status - Text,Overall Picking Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLPROOFOFDELIVSTATUS,Proof of Delivery Status on Header Level,Proof of Delivery Status on Header Level,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVERALLPROOFOFDELIVSTATUST,Proof of Delivery Sts on Hdr Lvl - Text,Proof of Delivery Sts on Hdr Lvl - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVRLITMGDSMVTINCOMPLTNSTS,Ovrl Itm Goods Movement Incompletion Sts,Ovrl Itm Goods Movement Incompletion Sts,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVRLITMGDSMVTINCOMPLTNSTST,Ovrl Itm Goods Mvt Incompltn Sts - Text,Ovrl Itm Goods Mvt Incompltn Sts - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVRLITMPACKINGINCOMPLTNSTS,Overall Item Packing Incompletion Status,Overall Item Packing Incompletion Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVRLITMPACKINGINCOMPLTNSTST,Ovrl Itm Packing Incompletion Sts - Text,Ovrl Itm Packing Incompletion Sts - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVRLITMPICKINGINCOMPLTNSTS,Overall Item Picking Incompletion Status,Overall Item Picking Incompletion Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVRLITMPICKINGINCOMPLTNSTST,Ovrl Itm Picking Incompletion Sts - Text,Ovrl Itm Picking Incompletion Sts - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVRLWAREHOUSEACTYSTATUS,Overall Warehouse Activity Status,Overall Warehouse Activity Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_OVRLWAREHOUSEACTYSTATUST,Overall Warehouse Activity Status - Text,Overall Warehouse Activity Status - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PACKINGSTATUS,Packing Status,Packing Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PACKINGSTATUSTEXT,Packing Status - Text,Packing Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PARTIALDELIVERYITEM,Partial Delivery Control Item,Partial Delivery Control Item,LE-SHP-GF-2CL,,basic,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PARTIALDELIVERYITEMTEXT,Partial Delivery Control Item - Text,Partial Delivery Control Item - Text,LE-SHP-GF-2CL,,text,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PICKINGCONFIRMATIONSTATUS,Picking Confirmation Status,Picking Confirmation Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PICKINGCONFIRMATIONSTATUST,Picking Confirmation Status - Text,Picking Confirmation Status - Text,LE-SHP-GF-2CL,,basic,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PICKINGCONTROL,Picking Control,Picking Control,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PICKINGCONTROLTEXT,Picking Control - Text,Picking Control - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PICKINGSTATUS,Picking Status,Picking Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PICKINGSTATUSTEXT,Picking Status - Text,Picking Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PROOFOFDELIVERYSTATUS,Proof of Delivery Status on Item Level,Proof of Delivery Status on Item Level,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PROOFOFDELIVERYSTATUSTEXT,Proof of Delivery Sts on Item Lvl - Text,Proof of Delivery Sts on Item Lvl - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PROOFOFDELIVRLVNCECODE,Proof Of Delivery Relevance Code,Proof Of Delivery Relevance Code,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PROOFOFDELIVRLVNCECODETEXT,ProofOfDelivery Relevance Code - Text,ProofOfDelivery Relevance Code - Text,LE-SHP-GF-2CL,,text,6,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PUTAWAYSTATUS,Putaway Status,Putaway Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_PUTAWAYSTATUSTEXT,Putaway Status - Text,Putaway Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_ROUTEDETNBYCOUNTRYANDZONE,Route determination by country and zone,Route determination by country and zone,LE-SHP-GF-2CL,,basic,8,0,,top-level,yes,VDM_LE_SHP_COMMON,no
+I_ROUTEDETNSALESDOCUMENT,Route determination in sales document,Route determination in sales document,LE-SHP-GF-2CL,,basic,15,0,,top-level,yes,VDM_LE_SHP_COMMON,no
+I_SGLWHSEDELIVCODE,Single Warehouse Delivery Code,Single Warehouse Delivery Code,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SGLWHSEDELIVCODETEXT,Sgl Whse Delivery Code - Text,Sgl Whse Delivery Code - Text,LE-SHP-GF-2CL,,text,6,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SHIPPINGCONDITION,Shipping Condition,Shipping Condition,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SHIPPINGCONDITIONTEXT,Shipping Condition - Text,Shipping Condition - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SHIPPINGPOINT,Shipping Point,Shipping Point,LE-SHP-GF-2CL,Dimension,dimension,11,0,Shipping Point,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SHIPPINGPOINTSPERPLANT,Shipping points per plant,Shipping points per plant,LE-SHP-GF-2CL,,basic,18,0,Plant,top-level,yes,VDM_LE_SHP_COMMON,no
+I_SHIPPINGPOINTSPERSTORLOC,Shipping points per storage location,Shipping points per storage location,LE-SHP-GF-2CL,,basic,20,0,Plant; Storage Location,top-level,yes,VDM_LE_SHP_COMMON,no
+I_SHIPPINGPOINTSTDVH,Shipping Point,Shipping Point,LE-SHP-GF-2CL,,value_help,3,0,Shipping Point,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SHIPPINGPOINTTEXT,Shipping Point - Text,Shipping Point - Text,LE-SHP-GF-2CL,,text,5,0,Shipping Point,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SHIPPINGTYPE,Shipping Type,Shipping Type,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SHIPPINGTYPETEXT,Shipping Type - Text,Shipping Type - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SUPLRCARRCONFEXPECTATION,Suplr Carrier Confirmation Expectation,Suplr Carrier Confirmation Expectation,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_SUPLRCARRCONFEXPECTATIONT,Suplr Carr Conf Expectation - Text,Suplr Carr Conf Expectation - Text,LE-SHP-GF-2CL,,basic,6,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_TOTALBLOCKSTATUS,Total Block Status,Total Block Status,LE-SHP-GF-2CL,Dimension,dimension,3,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_TOTALBLOCKSTATUSTEXT,Total Block Status - Text,Total Block Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_WAREHOUSE,Warehouse Number,Warehouse Number,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_WAREHOUSEACTIVITYSTATUS,Warehouse Activity Status,Warehouse Activity Status,LE-SHP-GF-2CL,Dimension,dimension,2,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_WAREHOUSEACTIVITYSTATUSTEXT,Warehouse Activity Status - Text,Warehouse Activity Status - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_WAREHOUSETEXT,Warehouse Number - Text,Warehouse Number - Text,LE-SHP-GF-2CL,,text,5,0,,top-level,yes,VDM_LE_SHP_COMMON,yes
+I_ROUTE,Route,Route,LE-TRA,,basic,6,0,,top-level,yes,VDM_LE_TRA,yes
+I_TRANSPORTATIONPLANNINGSTS,Transportation Planning Status,Transportation Planning Status,LE-TRA,Dimension,dimension,3,0,,top-level,yes,VDM_LE_TRA,yes
+I_TRANSPORTATIONPLANNINGSTST,Transportation Planning Status Text,Transportation Planning Status Text,LE-TRA,,basic,5,0,,top-level,yes,VDM_LE_TRA,yes

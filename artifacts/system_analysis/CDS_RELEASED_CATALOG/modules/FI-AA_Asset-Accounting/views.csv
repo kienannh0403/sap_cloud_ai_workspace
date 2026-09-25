@@ -1,10 +1,23 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_FIXEDASSETUSAGEOBJECT,Fixed Asset Usage Object,Fixed Asset Usage Object,FI-AA,,basic,16,0,Company Code,component
-I_FIXEDASSETUSAGEOBJECTPERIOD,Period Units of Fixed Asset Usage Object,Period Units of Fixed Asset Usage Object,FI-AA,,basic,9,0,Company Code,component
-I_FIXEDASSETUSAGEOBJECTTOTAL,Total Units of Fixed Asset Usage Object,Total Units of Fixed Asset Usage Object,FI-AA,,basic,10,0,Company Code,component
-I_CHARTOFDEPRECIATION,Chart of Depreciation,Chart of Depreciation,FI-AA-IS,Dimension,dimension,3,0,,component
-I_CHARTOFDEPRECIATIONTEXT,Chart of Depreciation - Text,Chart of Depreciation - Text,FI-AA-IS,,text,4,0,,component
-I_FIXEDASSET,Fixed Asset,Fixed Asset,FI-AA-IS,Dimension,dimension,142,1,Company Code; Fixed Asset,component
-I_FIXEDASSETASSGMT,Fixed Asset Time Dependent Data,Fixed Asset Time Dependent Data,FI-AA-IS,Dimension,dimension,57,2,Activity Type; Business Area; Company Code; Controlling Area; Cost Center; Fixed Asset; Functional Area; Grant; Personnel; Plant; Profit Center; Segment,component
-I_FIXEDASSETFORLEDGER,Fixed Asset for Ledger,Fixed Asset for Ledger,FI-AA-IS,,basic,15,0,Company Code; Fixed Asset,component
-I_MASTERFIXEDASSET,Master Fixed Asset,Master Fixed Asset,FI-AA-IS,Dimension,dimension,6,0,Company Code; Fixed Asset,component
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+I_FIXEDASSETUSAGEOBJECT,Fixed Asset Usage Object,Fixed Asset Usage Object,FI-AA-2CL,,basic,16,0,Company Code,component,yes,FINS_FAA_UO_VDM,yes
+I_FIXEDASSETUSAGEOBJECTPERIOD,Period Units of Fixed Asset Usage Object,Period Units of Fixed Asset Usage Object,FI-AA-2CL,,basic,9,0,Company Code,component,yes,FINS_FAA_UO_VDM,yes
+I_FIXEDASSETUSAGEOBJECTTOTAL,Total Units of Fixed Asset Usage Object,Total Units of Fixed Asset Usage Object,FI-AA-2CL,,basic,10,0,Company Code,component,yes,FINS_FAA_UO_VDM,yes
+I_ASSETBALANCESKEYFIGURESETVH,Asset Balances Key Figure Group,Asset Balances Key Figure Group,FI-AA-AA-2CL,,value_help,0,0,,component,yes,FINS_FAA_CFG_DB,no
+I_ASSETCAPITALIZATIONTOYEAR,,,FI-AA-AA-2CL,,basic,0,0,,component,no,,no
+I_ASSETDEPRCALCPHASELEVELVALUE,,,FI-AA-AA-2CL,,basic,0,0,,component,no,,no
+I_ASSETDEPRCALCPHASELVLVALTXT,,,FI-AA-AA-2CL,,text,0,0,,component,no,,no
+I_ASSETDEPRECIATIONPHASE,Asset Depreciation Phase,Asset Depreciation Phase,FI-AA-AA-2CL,,basic,0,0,,component,yes,FINS_FAA_CFG_DEPR_PROFILE,no
+I_ASSETDEPRECIATIONPHASETEXT,Asset Depreciation Phase - Text,Asset Depreciation Phase - Text,FI-AA-AA-2CL,,text,0,0,,component,yes,FINS_FAA_CFG_DEPR_PROFILE,no
+I_ASSETDEPRECIATIONTYPE,Asset Depreciation Type,Asset Depreciation Type,FI-AA-AA-2CL,,basic,0,0,,component,yes,FINS_FAA_CFG_DEPR_PROFILE,no
+I_ASSETDEPRECIATIONTYPETEXT,Asset Depreciation Type - Text,Asset Depreciation Type - Text,FI-AA-AA-2CL,,text,0,0,,component,yes,FINS_FAA_CFG_DEPR_PROFILE,no
+I_ASSETKEYFIGURE,Asset Key Figure,Asset Key Figure,FI-AA-AA-2CL,,basic,0,0,,component,yes,FINS_FAA_CFG_DB,no
+I_ASSETKEYFIGURESET,Asset Key Figure Set,Asset Key Figure Set,FI-AA-AA-2CL,,basic,0,0,,component,yes,FINS_FAA_CFG_DB,no
+I_ASSETKEYFIGURESETTEXT,Asset Key Figure Set - Text,Asset Key Figure Set - Text,FI-AA-AA-2CL,,text,0,0,,component,yes,FINS_FAA_CFG_DB,no
+I_ASSETKEYFIGURETEXT,Asset Key Figure - Text,Asset Key Figure - Text,FI-AA-AA-2CL,,text,0,0,,component,yes,FINS_FAA_CFG_DB,no
+I_ASSETSORTEDKEYFIGURESETSPEC,Sorted Fixed Asset Key Figure Set Specification,Sorted Fixed Asset Key Figure Set Specification,FI-AA-AA-2CL,,basic,0,0,,component,yes,FINS_FAA_CFG_DB,no
+I_DEPRECIATIONPROFILE,Depreciation Profile,Depreciation Profile,FI-AA-AA-2CL,,basic,0,0,,component,yes,FINS_FAA_CFG_DEPR_PROFILE,no
+I_DEPRECIATIONPROFILETEXT,Depreciation Profile - Text,Depreciation Profile - Text,FI-AA-AA-2CL,,text,0,0,,component,yes,FINS_FAA_CFG_DEPR_PROFILE,no
+I_DEPRPROFILEPHASE,Depreciation Profile Phase Settings,Depreciation Profile Phase Settings,FI-AA-AA-2CL,,basic,0,0,,component,yes,FINS_FAA_CFG_DEPR_PROFILE,no
+I_DEPRPROFILEPHASELEVEL,Depreciation Profile Phase Level,Depreciation Profile Phase Level,FI-AA-AA-2CL,,basic,0,0,,component,yes,FINS_FAA_CFG_DEPR_PROFILE,no
+I_ASSETREVALUATIONINDEX,Asset Revaluation Index,Asset Revaluation Index,FI-AA-AA-H-2CL,,basic,21,0,,component,yes,FINS_FAA_INDEX,no
+I_ASSETREVALUATIONINDEXITEM,Asset Revaluation Index Item,Asset Revaluation Index Item,FI-AA-AA-H-2CL,,basic,5,0,,component,yes,FINS_FAA_INDEX,no

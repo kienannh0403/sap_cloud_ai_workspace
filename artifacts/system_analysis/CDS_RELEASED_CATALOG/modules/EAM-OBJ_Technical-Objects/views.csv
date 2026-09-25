@@ -1,29 +1,64 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_EQUICATEGORYTEXT,Equipment Category - Text,Equipment Category - Text,PM-EQM-EQ,,text,5,0,,alias
-I_EQUIPMENT,Equipment,Equipment,PM-EQM-EQ,Dimension,dimension,72,0,Batch; Equipment; Material / Product; Plant; Storage Location,alias
-I_EQUIPMENTCATEGORY,Equipment Category,Equipment Category,PM-EQM-EQ,Dimension,dimension,12,0,,alias
-I_EQUIPMENTCATEGORYSTDVH,Equipment Category,Equipment Category,PM-EQM-EQ,,value_help,12,0,,alias
-I_EQUIPMENTSTATUS,Equipment Status,Equipment Status,PM-EQM-EQ,,basic,10,0,Equipment,alias
-I_EQUIPMENTSTDVH,Equipment,Equipment,PM-EQM-EQ,,value_help,8,0,Equipment,alias
-I_EQUIPMENTTEXT,Equipment - Text,Equipment - Text,PM-EQM-EQ,,text,10,0,Equipment,alias
-I_EQUIPMENTTEXTDEX,Data Extraction for Equipment - Text,Data Extraction for Equipment - Text,PM-EQM-EQ,,basic,10,0,Equipment,alias
-I_MAINTPLNRGRPSTDVH,Maintenance Planner Group,Maintenance Planner Group,PM-EQM-EQ,,value_help,4,0,,alias
-I_TECHNICALOBJECT,Technical Object,Technical Object,PM-EQM-EQ,Dimension,dimension,85,0,Distribution Channel; Division; Equipment; Material / Product; Sales Group; Sales Office; Sales Organization,alias
-I_TECHNICALOBJECTTEXT,Technical Object - Text,Technical Object - Text,PM-EQM-EQ,,text,9,0,,alias
-I_TECHNICALOBJECTTYPE,Techncial Object Type,Techncial Object Type,PM-EQM-EQ,Dimension,dimension,3,0,,alias
-I_TECHNICALOBJECTTYPESTDVH,Techncial Object Type,Techncial Object Type,PM-EQM-EQ,,value_help,2,0,,alias
-I_TECHNICALOBJECTTYPETEXT,Technical Object Type - Text,Technical Object Type - Text,PM-EQM-EQ,,text,5,0,,alias
-I_TECHOBJAUTHZNGRP,Technical Object Authorization Group,Technical Object Authorization Group,PM-EQM-EQ,Dimension,dimension,2,0,,alias
-I_TECHOBJAUTHZNGRPTEXT,Technical Object Authorization Group - Text,Technical Object Authorization Group - Text,PM-EQM-EQ,,text,5,0,,alias
-I_TECHOBJINSPECTIONLEVELCODE,Technical Object Inspection Level,Technical Object Inspection Level,PM-EQM-EQ,Dimension,dimension,2,0,,alias
-I_TECHOBJINSPECTIONLEVELTEXT,Technical Object Inspection Level - Text,Technical Object Inspection Level - Text,PM-EQM-EQ,,text,4,0,,alias
-I_TECHOBJISEQUIPORFUNCNLLOC,Technical Object is Equi or Func Loc,Technical Object is Equi or Func Loc,PM-EQM-EQ,Dimension,dimension,2,0,,alias
-I_TECHOBJISEQUIPORFUNCNLLOCT,Tech Object is Equi or Func Loc - Text,Tech Object is Equi or Func Loc - Text,PM-EQM-EQ,,basic,5,0,,alias
-I_FLOCCATEGORYTEXT,Functional Location Category - Text,Functional Location Category - Text,PM-EQM-FL,,text,5,0,,alias
-I_FUNCLOCATIONSTRUCTURE,Functional Location Structure,Functional Location Structure,PM-EQM-FL,,basic,7,0,,alias
-I_FUNCLOCATIONSTRUCTURETEXT,Functional Location Structure - Text,Functional Location Structure - Text,PM-EQM-FL,,text,7,0,,alias
-I_FUNCNLLOCATIONHIERARCHYNODE,Functional Location Hiearchy Interface,Functional Location Hiearchy Interface,PM-EQM-FL,,basic,5,0,,alias
-I_FUNCTIONALLOCATION,Functional Location,Functional Location,PM-EQM-FL,Dimension,dimension,61,0,,alias
-I_FUNCTIONALLOCATIONCATEGORY,Functional Location Category,Functional Location Category,PM-EQM-FL,Dimension,dimension,5,0,,alias
-I_FUNCTIONALLOCATIONSTDVH,Functional Location,Functional Location,PM-EQM-FL,,value_help,8,0,,alias
-I_LOCATIONACCOUNTASSIGNMENT,Location and Account Assignment,Location and Account Assignment,PM-EQM-FL,Dimension,dimension,54,1,Address; Business Area; Company Code; Controlling Area; Cost Center; Distribution Channel; Division; Fixed Asset; Sales Group; Sales Office; Sales Organization; WBS Element,alias
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+C_EQUIPMENTCLFNCHARCVALUEDEX,Equipment Charac Values Data Extraction,Equipment Charac Values Data Extraction,PM-EQM-EQ-2CL,,basic,31,0,Company Code; Equipment,alias,yes,IEQM,no
+C_FUNCNLLOCCLFNCHARCVALUEDEX,Floc Charc Values Data Extraction,Floc Charc Values Data Extraction,PM-EQM-EQ-2CL,,basic,32,0,Company Code,alias,yes,IEQM,no
+C_SERMATITMLASTSERIALNUMBERVH,Last Material Serial Number,Last Material Serial Number,PM-EQM-EQ-2CL,,value_help,8,0,Material / Product; Material Group,alias,yes,VDM_EAM_EQUIPMENT,no
+D_EQUIPCRTEMASSMATLSRLNMBRP,Abstract Parameter for Mass Create,Abstract Parameter for Mass Create,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+D_EQUIPCRTEMASSMATLSRLNMBRR,Abstract Result for Mass Create,Abstract Result for Mass Create,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+D_EQUIPMENTINSTALLATIONP,FuncImport for Equi Install DataTransfer,FuncImport for Equi Install DataTransfer,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,IEQM,no
+D_EQUI_STR_FUNCIMPORTP,Update Equipment Structure,Update Equipment Structure,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,IEQM,no
+D_SERIALIZEDMATLITMCHGMATLP,Change Material Action Parameters,Change Material Action Parameters,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+D_SERIALIZEDMATLITMCHGMATLR,Change Material Action Result,Change Material Action Result,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+D_SERIALIZEDMATLITMCHGSRLNMBRP,Change Serial Number Action Parameters,Change Serial Number Action Parameters,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+D_SERIALIZEDMATLITMCHGSRLNMBRR,Change Serial Number Action Result,Change Serial Number Action Result,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+D_SRLZDMATLITMCHGEQUIPCATP,Change Category Action Parameters,Change Category Action Parameters,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+D_SRLZDMATLITMCHGMAINTPLANTP,Change Maint. Plant Action Parameters,Change Maint. Plant Action Parameters,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+D_SRLZDMATLITMCHGUNQITMIDP,Change UII Action Parameters,Change UII Action Parameters,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,VDM_EAM_EQUIPMENT,no
+I_ABCINDICATOR,ABC Indicator,ABC Indicator,PM-EQM-EQ-2CL,,basic,3,0,,alias,yes,IEQM,no
+I_ABCINDICATORTEXT,ABC Indicator - Text,ABC Indicator - Text,PM-EQM-EQ-2CL,,text,5,0,,alias,yes,IEQM,no
+I_EQUICATEGORYTEXT,Equipment Category - Text,Equipment Category - Text,PM-EQM-EQ-2CL,,text,5,0,,alias,yes,IEQM,yes
+I_EQUIPMATLSERIALNUMBERTP,Material Serial Number - TP,Material Serial Number - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMATLSRLNMBRPRTNTP,Partner of Material Serial Number - TP,Partner of Material Serial Number - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMATLSRLNMBRWARRANTYTP,Warranty of Material Serial Number - TP,Warranty of Material Serial Number - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMENT,Equipment,Equipment,PM-EQM-EQ-2CL,Dimension,dimension,72,0,Batch; Equipment; Material / Product; Plant; Storage Location,alias,yes,IEQM,yes
+I_EQUIPMENTCATEGORY,Equipment Category,Equipment Category,PM-EQM-EQ-2CL,Dimension,dimension,12,0,,alias,yes,IEQM,yes
+I_EQUIPMENTCATEGORYSTDVH,Equipment Category,Equipment Category,PM-EQM-EQ-2CL,,value_help,12,0,,alias,yes,IEQM,yes
+I_EQUIPMENTCLFNCHARVALUETP,Equipment Clfn Class Char Value - TP,Equipment Clfn Class Char Value - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMENTCLFNCLASSCHARTP,Equipment Clfn Class Character - TP,Equipment Clfn Class Character - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMENTCLFNCLASSTP,Equipment Classification Class - TP,Equipment Classification Class - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMENTLONGTEXTTP,Equipment Long Text - TP,Equipment Long Text - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMENTPARTNERTP,Equipment Partner - TP,Equipment Partner - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMENTSTATUS,Equipment Status,Equipment Status,PM-EQM-EQ-2CL,,basic,10,0,Equipment,alias,yes,IEQM,yes
+I_EQUIPMENTSTDVH,Equipment,Equipment,PM-EQM-EQ-2CL,,value_help,8,0,Equipment,alias,yes,IEQM,yes
+I_EQUIPMENTTEXT,Equipment - Text,Equipment - Text,PM-EQM-EQ-2CL,,text,10,0,Equipment,alias,yes,IEQM,yes
+I_EQUIPMENTTEXTDEX,Data Extraction for Equipment - Text,Data Extraction for Equipment - Text,PM-EQM-EQ-2CL,,basic,10,0,Equipment,alias,yes,IEQM,yes
+I_EQUIPMENTTP,Equipment - TP,Equipment - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_EQUIPMENTWRNTYASSGMTTP,Equipment Warranty Assignment - TP,Equipment Warranty Assignment - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_FUNCNLLOCCLFNCHARVALUETP,FL Classification Class Character Value - TP,FL Classification Class Character Value - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_FUNCNLLOCCLFNCLASSCHARTP,FL Classification Class Character - TP,FL Classification Class Character - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_FUNCNLLOCCLFNCLASSTP,FL Classification Class - TP,FL Classification Class - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_FUNCNLLOCWARRANTYASSGMTTP,FL warranty assignment - TP,FL warranty assignment - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_FUNCTIONALLOCATIONLONGTEXTTP,FL Long Text - TP,FL Long Text - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_FUNCTIONALLOCATIONPARTNERTP,Functional Location Partner - TP,Functional Location Partner - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_FUNCTIONALLOCATIONTP,Functional Location - TP,Functional Location - TP,PM-EQM-EQ-2CL,,basic,0,0,,alias,yes,RAP_EAM_EQUIPMENT,no
+I_MAINTPLNRGRPSTDVH,Maintenance Planner Group,Maintenance Planner Group,PM-EQM-EQ-2CL,,value_help,4,0,,alias,yes,IEQM,yes
+I_TECHNICALOBJECT,Technical Object,Technical Object,PM-EQM-EQ-2CL,Dimension,dimension,85,0,Distribution Channel; Division; Equipment; Material / Product; Sales Group; Sales Office; Sales Organization,alias,yes,IEQM,yes
+I_TECHNICALOBJECTSTDVH,Technical Object,Technical Object,PM-EQM-EQ-2CL,,value_help,0,0,,alias,yes,IEQM,no
+I_TECHNICALOBJECTTEXT,Technical Object - Text,Technical Object - Text,PM-EQM-EQ-2CL,,text,9,0,,alias,yes,IEQM,yes
+I_TECHNICALOBJECTTYPE,Techncial Object Type,Techncial Object Type,PM-EQM-EQ-2CL,Dimension,dimension,3,0,,alias,yes,IEQM,yes
+I_TECHNICALOBJECTTYPESTDVH,Techncial Object Type,Techncial Object Type,PM-EQM-EQ-2CL,,value_help,2,0,,alias,yes,IEQM,yes
+I_TECHNICALOBJECTTYPETEXT,Technical Object Type - Text,Technical Object Type - Text,PM-EQM-EQ-2CL,,text,5,0,,alias,yes,IEQM,yes
+I_TECHOBJAUTHZNGRP,Technical Object Authorization Group,Technical Object Authorization Group,PM-EQM-EQ-2CL,Dimension,dimension,2,0,,alias,yes,IEQM,yes
+I_TECHOBJAUTHZNGRPTEXT,Technical Object Authorization Group - Text,Technical Object Authorization Group - Text,PM-EQM-EQ-2CL,,text,5,0,,alias,yes,IEQM,yes
+I_TECHOBJINSPECTIONLEVELCODE,Technical Object Inspection Level,Technical Object Inspection Level,PM-EQM-EQ-2CL,Dimension,dimension,2,0,,alias,yes,EAM_IDMS,yes
+I_TECHOBJINSPECTIONLEVELTEXT,Technical Object Inspection Level - Text,Technical Object Inspection Level - Text,PM-EQM-EQ-2CL,,text,4,0,,alias,yes,EAM_IDMS,yes
+I_TECHOBJISEQUIPORFUNCNLLOC,Technical Object is Equi or Func Loc,Technical Object is Equi or Func Loc,PM-EQM-EQ-2CL,Dimension,dimension,2,0,,alias,yes,IEQM,yes
+I_TECHOBJISEQUIPORFUNCNLLOCT,Tech Object is Equi or Func Loc - Text,Tech Object is Equi or Func Loc - Text,PM-EQM-EQ-2CL,,basic,5,0,,alias,yes,IEQM,yes
+I_FLOCCATEGORYTEXT,Functional Location Category - Text,Functional Location Category - Text,PM-EQM-FL-2CL,,text,5,0,,alias,yes,ILOM,yes
+I_FUNCLOCATIONSTRUCTURE,Functional Location Structure,Functional Location Structure,PM-EQM-FL-2CL,,basic,7,0,,alias,yes,ILOM,yes
+I_FUNCLOCATIONSTRUCTURETEXT,Functional Location Structure - Text,Functional Location Structure - Text,PM-EQM-FL-2CL,,text,7,0,,alias,yes,ILOM,yes
+I_FUNCNLLOCATIONHIERARCHYNODE,Functional Location Hiearchy Interface,Functional Location Hiearchy Interface,PM-EQM-FL-2CL,,basic,5,0,,alias,yes,ILOM,yes
+I_FUNCTIONALLOCATION,Functional Location,Functional Location,PM-EQM-FL-2CL,Dimension,dimension,61,0,,alias,yes,ILOM,yes
+I_FUNCTIONALLOCATIONCATEGORY,Functional Location Category,Functional Location Category,PM-EQM-FL-2CL,Dimension,dimension,5,0,,alias,yes,ILOM,yes
+I_FUNCTIONALLOCATIONSTDVH,Functional Location,Functional Location,PM-EQM-FL-2CL,,value_help,8,0,,alias,yes,ILOM,yes
+I_FUNCTIONALLOCATIONSTDVH_2,Functional Location,Functional Location,PM-EQM-FL-2CL,,value_help,8,0,,alias,yes,ILOM,no
+I_LOCATIONACCOUNTASSIGNMENT,Location and Account Assignment,Location and Account Assignment,PM-EQM-FL-2CL,Dimension,dimension,54,1,Address; Business Area; Company Code; Controlling Area; Cost Center; Distribution Channel; Division; Fixed Asset; Sales Group; Sales Office; Sales Organization; WBS Element,alias,yes,ILOM,yes

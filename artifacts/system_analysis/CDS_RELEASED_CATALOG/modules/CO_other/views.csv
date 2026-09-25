@@ -1,35 +1,99 @@
-view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis
-I_MATLINVTRYLDGRQTYSTRUCTURE,Matl Invtry Ledger with Qty Structure,Matl Invtry Ledger with Qty Structure,CO-PC-ACT,,basic,31,0,Controlling Area; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area; WBS Element,top-level
-I_TRANSBSDMATLVALUECHAINITEM,Transaction-Based Material Value Chain Item,Transaction-Based Material Value Chain Item,CO-PC-ACT,Fact,fact,39,0,Controlling Area; G/L Account; Material / Product; Movement Type; SD/LE Document (generic VBELN); Supplier; Valuation Area; WBS Element,top-level
-I_INVENTORYPRICEBYKEYDATE,Inventory Price By KeyDate,Inventory Price By KeyDate,CO-PC-ML,Cube,cube,31,0,Company Code; Fiscal Year; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area,top-level
-I_MATERIALLEDGERCUBE_LIT,Line Item for Material Ledger - Cube,Line Item for Material Ledger - Cube,CO-PC-ML,Cube,cube,78,0,Company Code; Controlling Area; Fiscal Year; G/L Account; Material / Product; Material Group; Plant; Segment; Valuation Area,top-level
-I_MATERIALVALUATIONTYPEVH,Inventory Valuation Type,Inventory Valuation Type,CO-PC-ML,Dimension,value_help,6,0,Valuation Area,top-level
-I_EVENTBASEDPROCESSINGKEY,Event-Based Posting Processing Key,Event-Based Posting Processing Key,CO-PC-OBJ-ORD,,basic,3,0,,top-level
-I_EVENTBASEDPROCESSINGKEYSTDVH,Event-Based Posting Processing Key,Event-Based Posting Processing Key,CO-PC-OBJ-ORD,,value_help,2,0,,top-level
-I_EVENTBASEDPROCESSINGKEYTEXT,Event-Based Processing Key - Text,Event-Based Processing Key - Text,CO-PC-OBJ-ORD,,text,4,0,,top-level
-I_MFGORDERACTLPLANTGTLDGRCOST,Manufacturing Order Actual Plan Target Ledger Specific Cost,Manufacturing Order Actual Plan Target Ledger Specific Cost,CO-PC-OBJ-ORD,Cube,cube,74,0,Chart of Accounts; Company Code; Controlling Area; G/L Account; Material / Product; Plant; WBS Element,top-level
-I_MFGORDEREVTBSDWIPVARIANCE,Event-Based WIP and Variance of Manufacturing Order,Event-Based WIP and Variance of Manufacturing Order,CO-PC-OBJ-ORD,Cube,cube,62,0,Company Code; Controlling Area; G/L Account; Plant,top-level
-I_PCCACTLTGTCOSTCUBE,Actual and Target Costs for PCC - Cube,Actual and Target Costs for PCC - Cube,CO-PC-OBJ-PER,Cube,cube,38,0,Chart of Accounts; Company Code; Controlling Area; G/L Account; Material / Product; Plant,top-level
-I_PCCEVTBSDWIPVARIANCECUBE,WIP and Variance for Event-Based PCC - Cube,WIP and Variance for Event-Based PCC - Cube,CO-PC-OBJ-PER,Cube,cube,30,0,Company Code; G/L Account; Plant,top-level
-I_COSTCOMPONENTSTDVH,Cost Component,Cost Component,CO-PC-PCP,,value_help,4,0,,top-level
-I_COSTINGOVERHEADGROUP,Costing Overhead Group,Costing Overhead Group,CO-PC-PCP,Dimension,dimension,5,0,Valuation Area,top-level
-I_COSTINGOVERHEADGROUPTEXT,Cost Overhead Group - Text,Cost Overhead Group - Text,CO-PC-PCP,,text,6,0,Valuation Area,top-level
-I_COSTINGTYPE,Costing Type,Costing Type,CO-PC-PCP,Dimension,dimension,8,0,,top-level
-I_COSTINGTYPESTDVH,Costing Type,Costing Type,CO-PC-PCP,,value_help,3,0,,top-level
-I_COSTINGTYPETEXT,Costing Type - Text,Costing Type - Text,CO-PC-PCP,,text,4,0,,top-level
-I_COSTINGVALUATIONVARIANT,Valuation Variant in Costing,Valuation Variant in Costing,CO-PC-PCP,Dimension,dimension,6,0,,top-level
-I_COSTINGVALUATIONVARIANTSTDVH,Valuation Variant,Valuation Variant,CO-PC-PCP,,value_help,9,0,,top-level
-I_COSTINGVALUATIONVARTEXT,Valuation Variant in Costing - Text,Valuation Variant in Costing - Text,CO-PC-PCP,,text,4,0,,top-level
-I_COSTINGVARIANTSTDVH,Costing Variant,Costing Variant,CO-PC-PCP,,value_help,7,0,,top-level
-I_COSTINGVARIANTTEXT,Costing Variant - Text,Costing Variant - Text,CO-PC-PCP,,text,4,0,,top-level
-I_COSTINGVERSION,Costing Version,Costing Version,CO-PC-PCP,Dimension,dimension,9,0,,top-level
-I_COSTINGVERSIONTEXT,Costing Version - Text,Costing Version - Text,CO-PC-PCP,,text,8,0,,top-level
-I_COSTORIGINGROUP,Cost Origin Group,Cost Origin Group,CO-PC-PCP,Dimension,dimension,6,0,Controlling Area,top-level
-I_COSTORIGINGROUPTEXT,Cost Origin Group - Text,Cost Origin Group - Text,CO-PC-PCP,,text,8,0,Controlling Area,top-level
-I_PRODCOSTESTCOSTCOMPRAWDEX,Prod Cost Est Cost Comp Raw Data Ext,Prod Cost Est Cost Comp Raw Data Ext,CO-PC-PCP,Fact,fact,135,0,,top-level
-I_PRODCOSTINGCOSTINGVARIANTVH,Costing Variant,Costing Variant,CO-PC-PCP,,value_help,5,0,,top-level
-I_PRODUCTCOSTESTIMATE,Product Cost Estimate,Product Cost Estimate,CO-PC-PCP,Fact,fact,104,4,Business Area; Company Code; Controlling Area; Material / Product; Plant; Profit Center; Task List (routing) group; Valuation Area,top-level
-I_SLSDOCCOSTINGVARIANTVH,Costing Variant,Costing Variant,CO-PC-PCP,,value_help,2,0,,top-level
-I_SLSORDPROJVALNSTRATEGYSTDVH,Valuationn Strategy,Valuationn Strategy,CO-PC-PCP,,value_help,3,0,,top-level
-I_SLSORDPROJVALNSTRATEGYTEXT,Valuation Strategy - Text,Valuation Strategy - Text,CO-PC-PCP,,text,4,0,,top-level
-I_SLSORDPROJVALUATIONSTRATEGY,Valuation Strategy,Valuation Strategy,CO-PC-PCP,,basic,2,0,,top-level
+view,description,end_user_description,component,data_category,kind,n_fields,n_deprecated_fields,key_entities,match_basis,in_080,package,in_user_file
+D_COSTACCTGDOCUMENTREVERSEP,Cost Accounting Document Reverse,Cost Accounting Document Reverse,CO-FIO-CCA-TRA-2CL,,basic,0,0,,top-level,yes,ODATA_COST_ACCOUNTING_POSTINGS,no
+I_COSTANDREVENUEREASSIGNMENTTP,Reassign Cost and Revenues - TP,Reassign Cost and Revenues - TP,CO-FIO-CCA-TRA-2CL,,basic,0,0,,top-level,yes,ODATA_REASSIGN_COST_REVENUE_2,no
+I_COSTANDREVNREASSGMTITEMTP,Cost and Revenue Reassgmt Item - TP,Cost and Revenue Reassgmt Item - TP,CO-FIO-CCA-TRA-2CL,,basic,0,0,,top-level,yes,ODATA_REASSIGN_COST_REVENUE_2,no
+I_CRREASSGMTRCVRPRFTBLTYSGMTTP,Cost and Revn Reassgmt Rcvr PS - TP,Cost and Revn Reassgmt Rcvr PS - TP,CO-FIO-CCA-TRA-2CL,,basic,0,0,,top-level,yes,ODATA_REASSIGN_COST_REVENUE_2,no
+I_CRREASSGMTSNDRPRFTBLTYSGMTTP,Cost and Revn Reassgmt Sndr PS - TP,Cost and Revn Reassgmt Sndr PS - TP,CO-FIO-CCA-TRA-2CL,,basic,0,0,,top-level,yes,ODATA_REASSIGN_COST_REVENUE_2,no
+I_DIRECTACTIVITYALLOCATIONTP_2,Direct Activity Allocation - TP,Direct Activity Allocation - TP,CO-FIO-CCA-TRA-2CL,,basic,0,0,,top-level,yes,ODATA_MANAGE_DRCT_ACTY_ALLOC_2,no
+I_DRCTACTYALLOCATIONITEMTP_2,Direct Activity Allocation Item - TP,Direct Activity Allocation Item - TP,CO-FIO-CCA-TRA-2CL,,basic,0,0,,top-level,yes,ODATA_MANAGE_DRCT_ACTY_ALLOC_2,no
+I_DRCTACTYALLOCPRFTBLTYSGMTTP,Drct Acty Alloc Rcvr Prftblty Sgmt - TP,Drct Acty Alloc Rcvr Prftblty Sgmt - TP,CO-FIO-CCA-TRA-2CL,,basic,0,0,,top-level,yes,ODATA_MANAGE_DRCT_ACTY_ALLOC_2,no
+I_COMPANYMARGINCUBEDST,Company Margin - Cube,Company Margin - Cube,CO-FIO-PA-2CL,,basic,273,0,,top-level,yes,FCOPA_REP_COMPANY_MARGIN,no
+I_PRJMARGANLYSRPTCRCYFLD,Currency Field of Project Margin Report,Currency Field of Project Margin Report,CO-FIO-PA-2CL,,basic,2,0,,top-level,yes,FINS_COPA_REPORTING,no
+I_PRJMARGANLYSRPTCRCYFLDTXT,Currency Field - Text,Currency Field - Text,CO-FIO-PA-2CL,,text,4,0,,top-level,yes,FINS_COPA_REPORTING,no
+I_PROJMARGPLANNINGCATEGORY,Planning Category of Project Margin,Planning Category of Project Margin,CO-FIO-PA-2CL,,basic,2,0,,top-level,yes,FINS_COPA_REPORTING,no
+I_PROFITABILITYSEGMENT,Profitability Segment,Profitability Segment,CO-PA-2CL,,basic,67,0,Business Area; Company Code; Controlling Area; Customer; Distribution Channel; Division; Functional Area; Material Group; Order (production / maintenance / internal); Plant; Profit Center; Sales Document; Sales Organization; Segment,top-level,yes,FINS_COPA_PROF_SEGMENT,no
+I_ACTCOSTINGRUNTYPEVH,Costing Run Type in Actual Costing,Costing Run Type in Actual Costing,CO-PC-ACT-2CL,,value_help,6,0,Fiscal Year,top-level,yes,FCML4H_DISPLAY,no
+I_ACTLCOSTGMATLVALUECHAINITEM,Actual Costing Material Value Chain Item,Actual Costing Material Value Chain Item,CO-PC-ACT-2CL,,basic,39,0,Controlling Area; G/L Account; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area; WBS Element,top-level,yes,FCML4H_DISPLAY,no
+I_ACTUALCOSTINGACTIVITYRESULT,Actual Costing Run Result Activity Data,Actual Costing Run Result Activity Data,CO-PC-ACT-2CL,,basic,33,0,Activity Type; Company Code; Controlling Area; Cost Center; Fiscal Year; G/L Account; Material / Product; Order (production / maintenance / internal); Valuation Area; WBS Element,top-level,yes,FCML4H_DISPLAY,no
+I_ACTUALCOSTINGRUNRESULT,Actual Costing Run Results,Actual Costing Run Results,CO-PC-ACT-2CL,,basic,30,0,Controlling Area; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area; WBS Element,top-level,yes,FCML4H_DISPLAY,no
+I_MATLINVTRYLDGRQTYSTRUCTURE,Matl Invtry Ledger with Qty Structure,Matl Invtry Ledger with Qty Structure,CO-PC-ACT-2CL,,basic,31,0,Controlling Area; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area; WBS Element,top-level,yes,FCML4H_DISPLAY,yes
+I_TRANSBSDMATLVALUECHAINITEM,Transaction-Based Material Value Chain Item,Transaction-Based Material Value Chain Item,CO-PC-ACT-2CL,Fact,fact,39,0,Controlling Area; G/L Account; Material / Product; Movement Type; SD/LE Document (generic VBELN); Supplier; Valuation Area; WBS Element,top-level,yes,FCML4H_DISPLAY,yes
+I_WIPQUANTITYDOCUMENT,Work In Process Quantity Document,Work In Process Quantity Document,CO-PC-ACT-2CL,,basic,32,0,Activity Type; Controlling Area; Cost Center; Fiscal Year; Material / Product; Plant; SD/LE Document (generic VBELN); WBS Element,top-level,yes,FCML4H_DISPLAY,no
+I_CURRENTMATLVALNPRICEDEX,Current Matl Valn Price for Extraction,Current Matl Valn Price for Extraction,CO-PC-ML-2CL,,basic,0,0,,top-level,yes,FINS_ML_VDM,no
+I_INVENTORYAMTBYFSCLPERD,Inventory Amount for Fiscal Period,Inventory Amount for Fiscal Period,CO-PC-ML-2CL,,basic,21,0,Company Code; Fiscal Year; Material / Product; Valuation Area,top-level,yes,FINS_ML_VDM,no
+I_INVENTORYPRICEBYKEYDATE,Inventory Price By KeyDate,Inventory Price By KeyDate,CO-PC-ML-2CL,Cube,cube,31,0,Company Code; Fiscal Year; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area,top-level,yes,FINS_ML_VDM,yes
+I_INVENTORYPRICEBYKEYDATE_2,Inventory Price By KeyDate,Inventory Price By KeyDate,CO-PC-ML-2CL,,basic,32,0,Company Code; Fiscal Year; Material / Product; SD/LE Document (generic VBELN); Supplier; Valuation Area,top-level,yes,FINS_ML_VDM,no
+I_MATERIALLEDGERCUBE_LIT,Line Item for Material Ledger - Cube,Line Item for Material Ledger - Cube,CO-PC-ML-2CL,Cube,cube,78,0,Company Code; Controlling Area; Fiscal Year; G/L Account; Material / Product; Material Group; Plant; Segment; Valuation Area,top-level,yes,FINS_ML_VDM,yes
+I_MATERIALVALUATIONDEX,Material Valuation for Extraction,Material Valuation for Extraction,CO-PC-ML-2CL,,basic,0,0,,top-level,yes,FINS_ML_VDM,no
+I_MATERIALVALUATIONTYPEVH,Inventory Valuation Type,Inventory Valuation Type,CO-PC-ML-2CL,Dimension,value_help,6,0,Valuation Area,top-level,yes,FINS_ML_VDM,yes
+I_ML_BALANCE,Balance Summary for Material Ledger,Balance Summary for Material Ledger,CO-PC-ML-2CL,,basic,0,0,,top-level,yes,FINS_ML_VDM,no
+I_PRICEDETERMINATIONCONTROL,Price Determination Control,Price Determination Control,CO-PC-ML-2CL,,basic,3,0,,top-level,yes,FINS_ML_VDM,no
+I_PRICEDETERMINATIONCONTROLTXT,Price Determination Control - Text,Price Determination Control - Text,CO-PC-ML-2CL,,text,6,0,,top-level,yes,FINS_ML_VDM,no
+I_EVENTBASEDERRORSITUATION,Event-Based Error for Situation Handling,Event-Based Error for Situation Handling,CO-PC-OBJ-ORD-2CL,,basic,5,0,Company Code,top-level,yes,FINS_PCC_RTPC_SIT2,no
+I_EVENTBASEDORDERPOSTINGRULE,Event-Based Mfg Order Posting Rule,Event-Based Mfg Order Posting Rule,CO-PC-OBJ-ORD-2CL,,basic,45,0,Company Code; Order (production / maintenance / internal); WBS Element,top-level,yes,FINS_PCC_RTPC_POSTG_RULE_RAP,no
+I_EVENTBASEDORDERPOSTINGRULETP,Event-Based Manufacturing Order Posting Rule - TP,Event-Based Manufacturing Order Posting Rule - TP,CO-PC-OBJ-ORD-2CL,,basic,0,0,,top-level,yes,FINS_PCC_RTPC_POSTG_RULE_RAP,no
+I_EVENTBASEDPROCESSINGKEY,Event-Based Posting Processing Key,Event-Based Posting Processing Key,CO-PC-OBJ-ORD-2CL,,basic,3,0,,top-level,yes,FINS_FIS_PCC,yes
+I_EVENTBASEDPROCESSINGKEYSTDVH,Event-Based Posting Processing Key,Event-Based Posting Processing Key,CO-PC-OBJ-ORD-2CL,,value_help,2,0,,top-level,yes,FINS_FIS_PCC,yes
+I_EVENTBASEDPROCESSINGKEYTEXT,Event-Based Processing Key - Text,Event-Based Processing Key - Text,CO-PC-OBJ-ORD-2CL,,text,4,0,,top-level,yes,FINS_FIS_PCC,yes
+I_MFGORDERACTLPLANTGTLDGRCOST,Manufacturing Order Actual Plan Target Ledger Specific Cost,Manufacturing Order Actual Plan Target Ledger Specific Cost,CO-PC-OBJ-ORD-2CL,Cube,cube,74,0,Chart of Accounts; Company Code; Controlling Area; G/L Account; Material / Product; Plant; WBS Element,top-level,yes,FINS_FIS_PCC,yes
+I_MFGORDEREVTBSDWIPVARIANCE,Event-Based WIP and Variance of Manufacturing Order,Event-Based WIP and Variance of Manufacturing Order,CO-PC-OBJ-ORD-2CL,Cube,cube,62,0,Company Code; Controlling Area; G/L Account; Plant,top-level,yes,FINS_FIS_PCC,yes
+I_MFGORDNONMATRCVRACCTDETNMETH,Non-Matl Rcvr Acct Determination Method,Non-Matl Rcvr Acct Determination Method,CO-PC-OBJ-ORD-2CL,,basic,2,0,,top-level,yes,FINS_PCC_RTPC_POSTG_RULE_RAP,no
+I_PCCACTLTGTCOSTCUBE,Actual and Target Costs for PCC - Cube,Actual and Target Costs for PCC - Cube,CO-PC-OBJ-PER-2CL,Cube,cube,38,0,Chart of Accounts; Company Code; Controlling Area; G/L Account; Material / Product; Plant,top-level,yes,FINS_PCC_RTPC_REM,yes
+I_PCCEVTBSDWIPVARIANCECUBE,WIP and Variance for Event-Based PCC - Cube,WIP and Variance for Event-Based PCC - Cube,CO-PC-OBJ-PER-2CL,Cube,cube,30,0,Company Code; G/L Account; Plant,top-level,yes,FINS_PCC_RTPC_REM,yes
+I_ACCOUNTINGSERVICEDOCUMENT,Accounting Service Document,Accounting Service Document,CO-PC-OBJ-SRV-2CL,,basic,106,1,Document Condition (pricing); Sales Group; Sales Office; Sales Organization,top-level,yes,K_SERVICE_DOC_CORE,no
+I_ACCTGSERVICECONTRACTVH,Service Contract,Service Contract,CO-PC-OBJ-SRV-2CL,,value_help,3,0,,top-level,yes,K_SERVICE_DOC_CORE,no
+I_ACCTGSERVICEDOCUMENTITEMVH,Service Document Item ID,Service Document Item ID,CO-PC-OBJ-SRV-2CL,,value_help,15,0,Company Code; Profit Center,top-level,yes,K_SERVICE_DOC_CORE,no
+I_ACCTGSERVICEDOCUMENTTYPE,Accounting Service Document Type,Accounting Service Document Type,CO-PC-OBJ-SRV-2CL,,basic,2,0,,top-level,yes,K_SERVICE_DOC_CORE,no
+I_ACCTGSERVICEDOCUMENTTYPEVH,Service Document Type,Service Document Type,CO-PC-OBJ-SRV-2CL,,value_help,2,0,,top-level,yes,K_SERVICE_DOC_CORE,no
+I_ACCTGSERVICEDOCUMENTVH,Service Document ID,Service Document ID,CO-PC-OBJ-SRV-2CL,,value_help,6,0,Company Code; Profit Center,top-level,yes,K_SERVICE_DOC_CORE,no
+I_ACCTGSRVCDOCUMENTITEMBASIC,Accounting Service Document Item,Accounting Service Document Item,CO-PC-OBJ-SRV-2CL,,basic,123,0,Company Code; Controlling Area; Distribution Channel; Division; Functional Area; Profit Center; Sales Group; Sales Office; Sales Organization,top-level,yes,K_SERVICE_DOC_CORE,no
+C_COSTCOMPONENTASSIGNMENTDEX,Cost Component Assignment for Extraction,Cost Component Assignment for Extraction,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,FINS_PCP_CUST_VDM,no
+C_PRODCOSTESTCOSTCOMPDEX,Product Cost Estimate Cost Component DEX,Product Cost Estimate Cost Component DEX,CO-PC-PCP-2CL,,basic,23,0,Company Code,top-level,yes,FINS_PCP_COSTEST,no
+D_COSTESTCOSTCOMPONENTR,Cost Components,Cost Components,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,RAP_FIN_PCP_PRODCOSTEST,no
+D_COSTESTGETBRKDWNBYCOMPVIEWP,Cost Breakdown by Cost Component View,Cost Breakdown by Cost Component View,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,RAP_FIN_PCP_PRODCOSTEST,no
+D_COSTESTGETBRKDWNBYCOMPVIEWR,Cost Breakdown of Cost Estimate,Cost Breakdown of Cost Estimate,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,RAP_FIN_PCP_PRODCOSTEST,no
+D_COSTINGVARIANTEXPLAINWITHAIP,Importing parameter of AI Explain Request,Importing parameter of AI Explain Request,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,RAP_FIN_PCP_PRODCOSTEST,no
+D_COSTINGVARIANTEXPLAINWITHAIR,Returning entity of AI Explain Request,Returning entity of AI Explain Request,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,RAP_FIN_PCP_PRODCOSTEST,no
+I_COMPONENTBREAKDOWNMETHOD,Component Breakdown Method,Component Breakdown Method,CO-PC-PCP-2CL,,basic,7,0,,top-level,yes,FINS_UCB_CUST,no
+I_COMPONENTBREAKDOWNMETHODTEXT,Component Breakdown Method - Text,Component Breakdown Method - Text,CO-PC-PCP-2CL,,text,5,0,,top-level,yes,FINS_UCB_CUST,no
+I_COSTBREAKDOWNCOMPONENT,Cost Breakdown Component,Cost Breakdown Component,CO-PC-PCP-2CL,,basic,9,0,,top-level,yes,FINS_UCB_CUST,no
+I_COSTBREAKDOWNCOMPONENTTEXT,Cost Breakdown Component - Text,Cost Breakdown Component - Text,CO-PC-PCP-2CL,,text,7,0,,top-level,yes,FINS_UCB_CUST,no
+I_COSTBREAKDOWNMETHOD,Cost Breakdown Method,Cost Breakdown Method,CO-PC-PCP-2CL,,basic,2,0,,top-level,yes,FINS_UCB_CUST,no
+I_COSTBREAKDOWNSTRUCTURE,Cost Breakdown Structure,Cost Breakdown Structure,CO-PC-PCP-2CL,,basic,3,0,,top-level,yes,FINS_UCB_CUST,no
+I_COSTBREAKDOWNSTRUCTURETEXT,Cost Breakdown Structure - Text,Cost Breakdown Structure - Text,CO-PC-PCP-2CL,,text,5,0,,top-level,yes,FINS_UCB_CUST,no
+I_COSTCOMPONENTASSIGNMENT,Cost Component Assignment,Cost Component Assignment,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,FINS_PCP_CUST_VDM,no
+I_COSTCOMPONENTSTDVH,Cost Component,Cost Component,CO-PC-PCP-2CL,,value_help,4,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTCOMPONENTSTRUCTURE,Cost Component Structure,Cost Component Structure,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,FINS_PCP_CUST_VDM,no
+I_COSTCOMPONENTVIEW,Cost Component View,Cost Component View,CO-PC-PCP-2CL,,basic,7,0,,top-level,yes,FINS_PCP_CUST_VDM,no
+I_COSTCOMPONENTVIEWTEXT,Cost Component View - Text,Cost Component View - Text,CO-PC-PCP-2CL,,text,5,0,,top-level,yes,FINS_PCP_CUST_VDM,no
+I_COSTINGOVERHEADGROUP,Costing Overhead Group,Costing Overhead Group,CO-PC-PCP-2CL,Dimension,dimension,5,0,Valuation Area,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGOVERHEADGROUPTEXT,Cost Overhead Group - Text,Cost Overhead Group - Text,CO-PC-PCP-2CL,,text,6,0,Valuation Area,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGTYPE,Costing Type,Costing Type,CO-PC-PCP-2CL,Dimension,dimension,8,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGTYPESTDVH,Costing Type,Costing Type,CO-PC-PCP-2CL,,value_help,3,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGTYPETEXT,Costing Type - Text,Costing Type - Text,CO-PC-PCP-2CL,,text,4,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGVALUATIONVARIANT,Valuation Variant in Costing,Valuation Variant in Costing,CO-PC-PCP-2CL,Dimension,dimension,6,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGVALUATIONVARIANTSTDVH,Valuation Variant,Valuation Variant,CO-PC-PCP-2CL,,value_help,9,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGVALUATIONVARTEXT,Valuation Variant in Costing - Text,Valuation Variant in Costing - Text,CO-PC-PCP-2CL,,text,4,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGVARIANT,Costing Variant,Costing Variant,CO-PC-PCP-2CL,,basic,12,0,,top-level,yes,FINS_PCP_CUST_VDM,no
+I_COSTINGVARIANTSTDVH,Costing Variant,Costing Variant,CO-PC-PCP-2CL,,value_help,7,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGVARIANTTEXT,Costing Variant - Text,Costing Variant - Text,CO-PC-PCP-2CL,,text,4,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGVERSION,Costing Version,Costing Version,CO-PC-PCP-2CL,Dimension,dimension,9,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTINGVERSIONTEXT,Costing Version - Text,Costing Version - Text,CO-PC-PCP-2CL,,text,8,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTORIGINGROUP,Cost Origin Group,Cost Origin Group,CO-PC-PCP-2CL,Dimension,dimension,6,0,Controlling Area,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_COSTORIGINGROUPSTDVH,Cost Origin Group,Cost Origin Group,CO-PC-PCP-2CL,,value_help,6,0,Controlling Area,top-level,yes,FINS_PCP_CUST_VDM,no
+I_COSTORIGINGROUPTEXT,Cost Origin Group - Text,Cost Origin Group - Text,CO-PC-PCP-2CL,,text,8,0,Controlling Area,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_ESTIMATEDCOSTCOSTINGRUNSTDVH,Estimated Cost Costing Run,Estimated Cost Costing Run,CO-PC-PCP-2CL,,value_help,4,0,,top-level,yes,FINS_PCP_COSTING_RUN,no
+I_PRODCOSTESTCOSTCOMPRAWDEX,Prod Cost Est Cost Comp Raw Data Ext,Prod Cost Est Cost Comp Raw Data Ext,CO-PC-PCP-2CL,Fact,fact,135,0,,top-level,yes,FINS_PCP_COSTEST,yes
+I_PRODCOSTINGCOSTINGVARIANTVH,Costing Variant,Costing Variant,CO-PC-PCP-2CL,,value_help,5,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_PRODUCTCOSTESTIMATE,Product Cost Estimate,Product Cost Estimate,CO-PC-PCP-2CL,Fact,fact,104,4,Business Area; Company Code; Controlling Area; Material / Product; Plant; Profit Center; Task List (routing) group; Valuation Area,top-level,yes,FINS_PCP_COSTEST,yes
+I_PRODUCTCOSTESTIMATEDEX,Product Cost Estimate Extraction,Product Cost Estimate Extraction,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,FINS_PCP_COSTEST,no
+I_PRODUCTCOSTESTIMATEITEM,Product Cost Estimate Item,Product Cost Estimate Item,CO-PC-PCP-2CL,,basic,83,1,Activity Type; Business Area; Material / Product; Plant; Purchasing Document; Purchasing Organization; Supplier; WBS Element,top-level,yes,FINS_PCP_COSTEST,no
+I_PRODUCTCOSTESTIMATEITEMDEX,Product Cost Estimate Item Extraction,Product Cost Estimate Item Extraction,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,FINS_PCP_COSTEST,no
+I_PRODUCTCOSTESTIMATEITEMTP,Product Cost Estimate Item - TP,Product Cost Estimate Item - TP,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,RAP_FIN_PCP_PRODCOSTEST,no
+I_PRODUCTCOSTESTIMATETP,Product Cost Estimate - TP,Product Cost Estimate - TP,CO-PC-PCP-2CL,,basic,0,0,,top-level,yes,RAP_FIN_PCP_PRODCOSTEST,no
+I_SALESORDERITEMCOSTESTIMATE, Sales Order Item Cost Estimate, Sales Order Item Cost Estimate,CO-PC-PCP-2CL,,basic,65,0,Company Code; Controlling Area; Material / Product; Plant; Profit Center; Sales Document; Task List (routing) group; Valuation Area,top-level,yes,FINS_PCP_COSTEST,no
+I_SALESORDERITEMCOSTESTITEM,Sales Order Item Cost Estimate Item,Sales Order Item Cost Estimate Item,CO-PC-PCP-2CL,,basic,58,0,Activity Type; Material / Product; Plant; Purchasing Document; Purchasing Organization; Supplier,top-level,yes,FINS_PCP_COSTEST,no
+I_SLSDOCCOSTINGVARIANTVH,Costing Variant,Costing Variant,CO-PC-PCP-2CL,,value_help,2,0,,top-level,yes,FINS_PCP_CUST_VDM,yes
+I_SLSORDPROJVALNSTRATEGYSTDVH,Valuationn Strategy,Valuationn Strategy,CO-PC-PCP-2CL,,value_help,3,0,,top-level,yes,FPC_COSTING_SLSORD,yes
+I_SLSORDPROJVALNSTRATEGYTEXT,Valuation Strategy - Text,Valuation Strategy - Text,CO-PC-PCP-2CL,,text,4,0,,top-level,yes,FPC_COSTING_SLSORD,yes
+I_SLSORDPROJVALUATIONSTRATEGY,Valuation Strategy,Valuation Strategy,CO-PC-PCP-2CL,,basic,2,0,,top-level,yes,FPC_COSTING_SLSORD,yes
