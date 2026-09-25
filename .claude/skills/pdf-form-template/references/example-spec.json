@@ -1,0 +1,395 @@
+{
+ "name": "DEV_F_ZMFGLSX",
+ "locale": "vi_VN",
+ "page": {
+  "size": "A4",
+  "orientation": "landscape",
+  "font": "Arial",
+  "base_size": 10,
+  "margins": {
+   "left": 10,
+   "right": 10,
+   "top": 5,
+   "bottom": 5
+  }
+ },
+ "page_header": {
+  "height": 25,
+  "items": [
+   {
+    "type": "image",
+    "bind": "Header.Logo",
+    "x": 0,
+    "y": 0,
+    "w": 30,
+    "h": 22,
+    "content_type": "image/png"
+   },
+   {
+    "type": "field",
+    "bind": "Header.PlantName",
+    "x": 35,
+    "y": 2,
+    "w": 200,
+    "h": 7,
+    "size": 11,
+    "bold": true
+   },
+   {
+    "type": "field",
+    "bind": "Header.PlantAddress",
+    "x": 35,
+    "y": 10,
+    "w": 200,
+    "h": 7
+   }
+  ]
+ },
+ "page_footer": {
+  "height": 5,
+  "page_number": {
+   "format": "x/y",
+   "align": "right"
+  }
+ },
+ "body": [
+  {
+   "type": "text",
+   "text": "LỆNH SẢN XUẤT",
+   "size": 16,
+   "bold": true,
+   "align": "center",
+   "h": 14
+  },
+  {
+   "type": "info",
+   "bind": "Order",
+   "columns": 2,
+   "caption_width": 60,
+   "items": [
+    [
+     "Loại lệnh sản xuất:",
+     "OrderType"
+    ],
+    [
+     "Lệnh sản xuất:",
+     "ProductionOrder"
+    ],
+    [
+     "Mã sản phẩm:",
+     "Material"
+    ],
+    [
+     "Số lượng:",
+     "Quantity"
+    ],
+    [
+     "Tên sản phẩm:",
+     "MaterialText"
+    ],
+    [
+     "Ngày dự kiến sản xuất:",
+     "BasicStartDate"
+    ],
+    [
+     "Quy cách sản phẩm:",
+     "Specification"
+    ],
+    [
+     "Ngày dự kiến hoàn thành:",
+     "BasicFinishDate"
+    ]
+   ]
+  },
+  {
+   "type": "text",
+   "text": "1.      Công đoạn thực hiện",
+   "bold": true,
+   "h": 9,
+   "space_before": 3,
+   "valign": "bottom"
+  },
+  {
+   "type": "table",
+   "bind": "Operations",
+   "row": "Operation",
+   "row_min_h": 8,
+   "columns": [
+    {
+     "name": "OperationNo",
+     "title": "Mã công đoạn",
+     "w": 17,
+     "align": "center"
+    },
+    {
+     "name": "OperationText",
+     "title": "Mô tả công đoạn",
+     "w": 38,
+     "align": "left"
+    },
+    {
+     "name": "WorkCenterText",
+     "title": "Tổ thực hiện",
+     "w": 25,
+     "align": "left"
+    },
+    {
+     "name": null,
+     "title": "Ngày thực tế thực hiện",
+     "w": 22,
+     "align": "center"
+    },
+    {
+     "name": null,
+     "title": "Thời gian sản xuất",
+     "w": 20,
+     "align": "center"
+    },
+    {
+     "name": "OperationUoM",
+     "title": "ĐVT",
+     "w": 13,
+     "align": "center"
+    },
+    {
+     "name": "OperationQty",
+     "title": "Số lượng dự kiến hoàn thành",
+     "w": 21,
+     "align": "right"
+    },
+    {
+     "name": null,
+     "title": "Tổng số lượng hoàn thành",
+     "w": 20,
+     "align": "right"
+    },
+    {
+     "name": null,
+     "title": "Số lượng đạt",
+     "w": 21,
+     "align": "right"
+    },
+    {
+     "name": null,
+     "title": "Số lượng chưa đạt, thực hiện lại",
+     "w": 20,
+     "align": "right"
+    },
+    {
+     "name": null,
+     "title": "Số lượng không đạt",
+     "w": 20,
+     "align": "right"
+    },
+    {
+     "name": null,
+     "title": "Ghi chú",
+     "w": 40,
+     "align": "left"
+    }
+   ]
+  },
+  {
+   "type": "write_line",
+   "text": "Tổng số lượng sản phẩm đạt nhập kho:",
+   "label_w": 72
+  },
+  {
+   "type": "text",
+   "text": "2.      NVL sử dụng",
+   "bold": true,
+   "h": 9,
+   "space_before": 3,
+   "valign": "bottom"
+  },
+  {
+   "type": "table",
+   "bind": "Components",
+   "row": "Component",
+   "row_min_h": 7,
+   "columns": [
+    {
+     "name": "ItemNo",
+     "title": "STT",
+     "w": 10,
+     "align": "center"
+    },
+    {
+     "name": "OperationNo",
+     "title": "Mã công đoạn",
+     "w": 20,
+     "align": "center"
+    },
+    {
+     "name": "Component",
+     "title": "Mã vật tư",
+     "w": 25,
+     "align": "left"
+    },
+    {
+     "name": "ComponentText",
+     "title": "Tên vật tư",
+     "w": 48,
+     "align": "left"
+    },
+    {
+     "name": "StorageLocation",
+     "title": "Mã kho",
+     "w": 20,
+     "align": "center"
+    },
+    {
+     "name": "Batch",
+     "title": "Mã lô",
+     "w": 20,
+     "align": "center"
+    },
+    {
+     "name": "ComponentScrap",
+     "title": "% cấp bù Component Scrap",
+     "w": 35,
+     "align": "right"
+    },
+    {
+     "name": "OperationScrap",
+     "title": "% cấp bù Operation Scrap",
+     "w": 32,
+     "align": "right"
+    },
+    {
+     "name": "RequiredQty",
+     "title": "Số lượng kế hoạch",
+     "w": 28,
+     "align": "right"
+    },
+    {
+     "name": null,
+     "title": "Số lượng thực tế",
+     "w": 22,
+     "align": "right"
+    },
+    {
+     "name": "ComponentUoM",
+     "title": "ĐVT",
+     "w": 17,
+     "align": "center"
+    }
+   ]
+  },
+  {
+   "type": "signatures",
+   "items": [
+    "Quản đốc phân xưởng",
+    "KCS",
+    "Nhân viên thống kê tại các công đoạn"
+   ],
+   "h": 30
+  }
+ ],
+ "sample": {
+  "Header": {
+   "PlantName": "Nhà máy mẫu",
+   "PlantAddress": "Số 1 Đường Mẫu, Phường Mẫu, Tỉnh Mẫu, Việt Nam",
+   "Logo": "@file:logo_placeholder.png"
+  },
+  "Order": {
+   "OrderType": "YP01",
+   "ProductionOrder": "1000123",
+   "Material": "402000000",
+   "Quantity": "449,550 KG",
+   "MaterialText": "Sản phẩm mẫu 3200 x 1600 x 30",
+   "BasicStartDate": "25.09.2026",
+   "Specification": "3.200 x 1.600 x 30",
+   "BasicFinishDate": "30.09.2026"
+  },
+  "Operations": {
+   "Operation": [
+    {
+     "OperationNo": "0010",
+     "OperationText": "Pha trộn nguyên liệu",
+     "WorkCenterText": "Tổ pha trộn",
+     "OperationUoM": "KG",
+     "OperationQty": "449,550"
+    },
+    {
+     "OperationNo": "0020",
+     "OperationText": "Ép tấm",
+     "WorkCenterText": "Tổ ép",
+     "OperationUoM": "KG",
+     "OperationQty": "449,550"
+    },
+    {
+     "OperationNo": "0030",
+     "OperationText": "Đánh bóng bề mặt",
+     "WorkCenterText": "Tổ hoàn thiện",
+     "OperationUoM": "KG",
+     "OperationQty": "449,550"
+    }
+   ]
+  },
+  "Components": {
+   "Component": [
+    {
+     "ItemNo": "0010",
+     "OperationNo": "0010",
+     "Component": "202000000",
+     "ComponentText": "Nguyên liệu A",
+     "StorageLocation": "1101",
+     "Batch": "B2509001",
+     "ComponentScrap": "0,000",
+     "OperationScrap": "0,000",
+     "RequiredQty": "229,271",
+     "ComponentUoM": "KG"
+    },
+    {
+     "ItemNo": "0020",
+     "OperationNo": "0010",
+     "Component": "201000001",
+     "ComponentText": "Nguyên liệu B",
+     "StorageLocation": "1101",
+     "Batch": "B2509002",
+     "ComponentScrap": "0,000",
+     "OperationScrap": "0,000",
+     "RequiredQty": "148,352",
+     "ComponentUoM": "KG"
+    },
+    {
+     "ItemNo": "0030",
+     "OperationNo": "0010",
+     "Component": "211000000",
+     "ComponentText": "Nguyên liệu C",
+     "StorageLocation": "1101",
+     "Batch": "",
+     "ComponentScrap": "0,000",
+     "OperationScrap": "0,000",
+     "RequiredQty": "71,928",
+     "ComponentUoM": "KG"
+    },
+    {
+     "ItemNo": "0040",
+     "OperationNo": "0020",
+     "Component": "212000000",
+     "ComponentText": "Phụ gia D",
+     "StorageLocation": "1102",
+     "Batch": "",
+     "ComponentScrap": "2,000",
+     "OperationScrap": "0,000",
+     "RequiredQty": "575,424",
+     "ComponentUoM": "G"
+    },
+    {
+     "ItemNo": "0050",
+     "OperationNo": "0030",
+     "Component": "213000000",
+     "ComponentText": "Phụ gia E",
+     "StorageLocation": "1102",
+     "Batch": "",
+     "ComponentScrap": "0,000",
+     "OperationScrap": "1,000",
+     "RequiredQty": "0,937",
+     "ComponentUoM": "KG"
+    }
+   ]
+  }
+ }
+}
