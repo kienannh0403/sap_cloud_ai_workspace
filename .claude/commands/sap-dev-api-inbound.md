@@ -23,6 +23,8 @@ This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rule
 [EXECUTION PROTOCOL — CRITICAL]
 After generating the ABAP code for each step: GENERATE -> VALIDATE (LINTING) -> DEPLOY & ACTIVATE -> [Skill: activation-guard] (all 4 gates must pass before the step counts as done). All errors MUST be caught using `CX_ROOT` or `ZCX_API_FWK` and returned explicitly.
 
+**Target refresh (mandatory when `artifacts/targets/<TARGET>/` already exists):** [Skill: target-refresh] Part A before Phase 0 — a change made outside this workspace since the last recorded version becomes its own version, with its real content, before this run opens a new one; Part B (full preview with evidence per item) after the last phase.
+
 ## Phase 0 — Input Validation Gate
 
 0.0 VALIDATE INPUT: check Package, TR, Request/Response data structure, API Design Details, and Success/Failure Criteria are all present and concrete (not placeholders). Missing/vague → 0.1, else → 0.2.

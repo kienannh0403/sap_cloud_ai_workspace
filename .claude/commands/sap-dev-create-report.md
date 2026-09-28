@@ -20,6 +20,8 @@ This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rule
 
 [EXECUTION PROTOCOL — 4 PHASES]
 
+**Target refresh (mandatory when `artifacts/targets/<TARGET>/` already exists):** [Skill: target-refresh] Part A before Phase 0 — a change made outside this workspace since the last recorded version becomes its own version, with its real content, before this run opens a new one; Part B (full preview with evidence per item) after the last phase.
+
 ## Phase 0 — Input Validation Gate
 
 0.0 VALIDATE INPUT, in order:

@@ -24,6 +24,14 @@ mcp_server_of() {
   echo "${t%%__*}"
 }
 
+# SAP client of MCP server $1, read from env.SAP_CLIENT in the workspace .mcp.json,
+# leading zeros stripped ("080" -> "80"). Empty if the file, the server or the key is missing.
+mcp_client_of() {
+  local f="$HOOK_ROOT/.mcp.json"
+  [[ -f "$f" ]] || return 0
+  jq -r --arg s "$1" '.mcpServers[$s].env.SAP_CLIENT // ""' "$f" 2>/dev/null | tr -d '[:space:]' | awk 'NF { print $1 + 0 }'
+}
+
 # True if word $1 is in the comma/space separated list $2.
 in_list() {
   local item="$1" list="${2//,/ }" w

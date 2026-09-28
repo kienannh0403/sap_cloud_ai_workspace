@@ -32,7 +32,7 @@ Subagents do not see `CLAUDE.md` imports automatically: their agent file tells t
 | FS / TS / functional question in an active module | `configs/<MODULE>/README.md`, then the one topic file needed |
 | Picking a released CDS view | `artifacts/system_analysis/CDS_RELEASED_CATALOG/INDEX.md` (memory `cds-released-catalog`) |
 | Resuming work on a target | `artifacts/targets/<TARGET>/INDEX.md`, then only the `notes/*.md` it links that the task needs (rule §4) |
-| Country-specific requirement (`SAP_COUNTRY=vn`) | no file yet — ask; do not invent localization rules |
+| Country-specific requirement: tax, invoice, statutory accounting, fixed assets, amount/currency or date format (`SAP_COUNTRY=vn`) | `country/vn.md` — its `to verify` regulation rows are questions for the customer, not facts |
 
 ## Tier 4 — per-task kit
 

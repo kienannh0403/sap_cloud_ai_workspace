@@ -24,6 +24,7 @@ Please execute the following sequence:
 
 Step 0: Context & Source Code Extraction
 Action: 
+- If `artifacts/targets/[Target]/` already exists: [Skill: target-refresh] steps 1–3 first (read-only: report any change made outside the workspace since the last recorded version and ask whether to record it; never open a version here).
 - Use whichever MCP tool your environment exposes for reading SAP objects to fetch the complete source code and properties of the object (`sap-dev-rule.md` §9) — if it isn't loaded yet, use `ToolSearch` to find it first.
 - Identify the ABAP version context (e.g. ABAP Cloud restrictions, Classic ABAP).
 

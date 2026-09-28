@@ -20,6 +20,9 @@ TARGETS = ROOT / "artifacts" / "targets"
 HB = ROOT / "artifacts" / "handbook"
 PILL = {"PASS": "pill-ok", "FAIL": "pill-dgr", "WAIT": "pill-wrn", "ACCEPTED": "pill-off",
         "ok": "pill-ok", "wrn": "pill-wrn", "dgr": "pill-dgr", "acc": "pill-acc", "off": "pill-off"}
+EXTERNAL = "sửa ngoài workspace"
+PREVIEW_ITEMS = {"handbook": "Trang handbook", "test": "Chạy thử báo cáo", "atc": "ATC toàn target",
+                 "index": "INDEX.md", "notes": "Notes", "snapshot": "Snapshot source", "objects": "Object liên quan"}
 RESULT_TEXT = {"PASS": "PASS", "FAIL": "FAIL", "WAIT": "chờ user", "ACCEPTED": "PASS — unverified, user-accepted"}
 STATIC_NAV = [("index.html", "Trang chủ"), ("mcp.html", "MCP"), ("cds-catalog.html", "CDS released"),
               ("workspace-build.html", "Dựng workspace")]
@@ -126,12 +129,15 @@ def render(d, targets):
                         "<br>".join(f'<span class="mono">{e(x)}</span>' for x in f.get("files", [])),
                         e(f.get("status"))] for f in forms]) if forms else "<p>Không có form.</p>"
 
-    ver_rows, atc_blocks, test_blocks = [], [], []
+    ver_rows, atc_blocks, test_blocks, preview_blocks = [], [], [], []
     for v in versions:
         atc = v.get("atc") or {}
         atc_cell = pill("ok" if atc.get("result") == "0 findings" else ("wrn" if atc else "off"),
                        atc.get("result", "chưa chạy"))
-        ver_rows.append([f'<b>{e(v["version"])}</b>', e(v.get("date")), e(v.get("source")),
+        src = e(v.get("source"))
+        if v.get("source") == EXTERNAL:
+            src = pill("wrn", EXTERNAL) + (f'<br>{e(v["period"])}' if v.get("period") else "")
+        ver_rows.append([f'<b>{e(v["version"])}</b>', e(v.get("date")), src,
                          "<br>".join(f"• {e(c)}" for c in v.get("changes", [])), atc_cell])
         if atc:
             fnd = atc.get("findings", [])
@@ -140,6 +146,17 @@ def render(d, targets):
                            e(f.get("message")), e(f.get("status"))] for f in fnd]) if fnd else "<p>0 finding.</p>"
             meta = " · ".join(e(x) for x in (atc.get("date"), atc.get("variant"), atc.get("scope")) if x)
             atc_blocks.append(f'<h3>Version {e(v["version"])} — ATC {meta}</h3>{body}')
+        pv = v.get("preview") or {}
+        if pv:
+            snap = v.get("snapshot") or {}
+            meta = f' · snapshot {e(snap.get("taken"))} ({len(snap.get("objects", {}))} object)' if snap else ""
+            preview_blocks.append(
+                f'<h3>Version {e(v["version"])} — preview {e(pv.get("date"))}{meta}</h3>' + table(
+                    ["Mục", "Trạng thái", "Bằng chứng / lý do"],
+                    [[e(PREVIEW_ITEMS.get(i.get("item"), i.get("item"))),
+                      pill("ok", "đã làm") if i.get("status") == "done" else pill("wrn", "không làm được"),
+                      f'<span class="mono">{e(i.get("evidence"))}</span>' + (f'<br>{e(i["note"])}' if i.get("note") else "")]
+                     for i in pv.get("items", [])]))
         for a in v.get("tests", []):
             cases = a.get("cases", [])
             cnt = {k: sum(1 for c in cases if c.get("result") == k) for k in ("PASS", "FAIL", "WAIT", "ACCEPTED")}
@@ -190,6 +207,7 @@ def render(d, targets):
   <section id="phien-ban"><h2>Version và thay đổi</h2>
     {table(["Version", "Ngày", "Nguồn", "Thay đổi", "ATC"], ver_rows) if ver_rows else "<p>Chưa có version.</p>"}</section>
   <section id="atc"><h2>Kết quả ATC theo version</h2>{"".join(atc_blocks) or "<p>Chưa chạy ATC.</p>"}</section>
+  <section id="preview"><h2>Preview theo version</h2>{"".join(preview_blocks) or "<p>Chưa có preview.</p>"}</section>
   <section id="kiem-thu"><h2>Kiểm thử</h2>{"".join(test_blocks) or "<p>Chưa có test case.</p>"}</section>
 
   <footer><p><span class="mono">artifacts/handbook/{page}</span> · nguồn <span class="mono">artifacts/targets/{e(t)}/handbook.json</span></p></footer>

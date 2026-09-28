@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# PreToolUse guard for SAP CUD calls (matcher mcp__sap_[a-z0-9]+_dev__.* in settings.json).
+# PreToolUse guard for SAP CUD calls (matcher mcp__sap_[a-z0-9_]+__.*|mcp__.+__SAP$ in settings.json —
+# every SAP server, whatever its name; which client may be written is tier-readonly-guard.sh's job).
 # Hard-enforces rules from .claude/rules/sap-dev-rule.md §2 that were previously prompt-only:
 #   - Z/Y-only object naming
 #   - Package mandatory for object CUD

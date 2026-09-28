@@ -50,7 +50,7 @@ Threshold (starting heuristic — tighten once real dispatch-timing data exists)
 
 3.0 ARCHITECTURE BRAINSTORM: Only when the Business Logic Draft contains genuinely complex/ambiguous logic (e.g. multi-level fallback chains, period-anchor balance calculations, a real choice between CDS Virtual Element vs. Behavior Pool vs. Custom Entity + Query Provider), generate 2-3 candidate architectures with explicit trade-offs (Clean Core compliance / Performance / Maintainability), pick one, and state why. For straightforward reports with no such ambiguity, skip the multi-option comparison and go straight to the obvious design — do not manufacture false choices just to seem thorough.
 
-3.1 CODING IMPLEMENTATION PLAN (the section `/sap-dev-create-report` depends on entirely): using [Skill: naming-convention] for every object name, produce a complete table of every object to be created:
+3.1 CODING IMPLEMENTATION PLAN (the section `/sap-dev-create-report` depends on entirely): using [Skill: naming-convention] for every object name, and [Skill: z-object-catalog] to reuse an existing Z/Y object (utility class, CDS view over the same released source) instead of planning a duplicate, produce a complete table of every object to be created:
 
 | # | Object Name | Type | Purpose | Source/Base + Join/Association | Field Mapping (which TS output field(s) it delivers) | Corresponding create-report Step |
 |---|---|---|---|---|---|---|

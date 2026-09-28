@@ -33,8 +33,13 @@ Shared, not per target: `artifacts/handbook/`, `artifacts/documents/` (UM, namin
                                                                     // names not in objects = released sources
   "forms": [ { "name": "DEV_F_ZAA01", "type": "PDF", "files": ["forms/DEV_F_ZAA01.xdp"], "status": "preview OK" } ],
   "versions": [ {
-      "version": "1.1", "date": "2026-10-02", "source": "bug-fix | create-report | change request",
+      "version": "1.1", "date": "2026-10-02", "source": "bug-fix | create-report | change request | sửa ngoài workspace",
+      "period": "giữa 2026-09-23 và 2026-10-02",                    // only for "sửa ngoài workspace"
       "changes": ["Sửa công thức (22) khấu hao lũy kế đầu kỳ: thêm c2 legacy data"],
+      "snapshot": { "taken": "2026-10-02", "dir": "artifacts/targets/ZAA01/build/snapshot/20261002",
+                    "objects": { "ZR_FI_ZAA01": "<sha256>" } },     // written by drift_check.py --record
+      "preview": { "date": "2026-10-02", "items": [ { "item": "handbook|test|atc|index|notes|snapshot|objects",
+                   "status": "done|skipped", "evidence": "path", "note": "reason when skipped" } ] },
       "atc": { "date": "2026-10-02", "variant": "ABAP_CLOUD_DEVELOPMENT_DEFAULT", "scope": "mọi object của target",
                "result": "0 findings | <n> findings", "findings": [ { "object": "", "priority": "", "check": "",
                "message": "", "status": "fixed | accepted by user | open" } ] },
@@ -48,6 +53,7 @@ Shared, not per target: `artifacts/handbook/`, `artifacts/documents/` (UM, namin
 ## When to write it
 | Event | Update |
 |---|---|
+| **Any workflow touching an existing target** | [Skill: target-refresh] first (pull sources, `drift_check.py`, change made outside the workspace → its own version with its real content) and its full preview at the end (`preview` + `snapshot` on the version) |
 | First workflow on the target (fs-analytic, code-analysis, bug-fix on an unknown object…) | create folder, `INDEX.md`, `handbook.json` (target, title, kind, module, purpose, status) |
 | TS done | `forms` from TS §8, status "TS xong" |
 | Every object DONE in a build | append to `objects` with its `uses` |

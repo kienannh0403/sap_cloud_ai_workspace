@@ -24,6 +24,8 @@ This workflow operates under the Iron Laws, Red Flags, and Token Efficiency rule
 
 [EXECUTION PROTOCOL — 4 PHASES]
 
+**Target refresh (mandatory when `artifacts/targets/<TARGET>/` already exists):** [Skill: target-refresh] Part A before Phase 0 — a change made outside this workspace since the last recorded version becomes its own version, with its real content, before this run opens a new one; Part B (full preview with evidence per item) after the last phase.
+
 ## Phase 0 — Input Validation Gate
 
 0.0 VALIDATE INPUT, in order:
@@ -50,7 +52,7 @@ Per step: GENERATE (draft per the row's spec) → check the name against [Skill:
 
 **Step 0 — DDIC Foundation:** [Skill: ddic-foundation] + [Skill: naming-convention].
 
-*Step 0.pre — Reuse probe (run ONCE, before creating the first object).* Per `sap-dev-rule.md` §2 (global name check before creating) and [Skill: ddic-foundation] Step 0: (a) for every field that is a standard business key/quantity, confirm the **SAP released Data Element** via MCP and reuse it instead of minting a Z clone — never assume the name, look it up; (b) search the target package for existing Z/Y Domain/Data Element/Table and **read their actual source/structure** — do not infer from names — and reuse anything covering the same business meaning (two differently-named domains both encoding "Active/Inactive" is the classic duplication); (c) if the package is empty or holds nothing comparable, say so and use the [Skill: naming-convention] defaults — do not invent a "house convention" from zero samples. Record what was reused vs. newly created in the ledger, so Phase 3's walkthrough can state it.
+*Step 0.pre — Reuse probe (run ONCE, before creating the first object).* Per `sap-dev-rule.md` §2 (global name check before creating) and [Skill: ddic-foundation] Step 0: (a) for every field that is a standard business key/quantity, confirm the **SAP released Data Element** via MCP and reuse it instead of minting a Z clone — never assume the name, look it up; (b) look up [Skill: z-object-catalog] (project-wide inventory) and search the target package for existing Z/Y Domain/Data Element/Table and **read their actual source/structure** — do not infer from names — and reuse anything covering the same business meaning (two differently-named domains both encoding "Active/Inactive" is the classic duplication); (c) if the package is empty or holds nothing comparable, say so and use the [Skill: naming-convention] defaults — do not invent a "house convention" from zero samples. Record what was reused vs. newly created in the ledger, so Phase 3's walkthrough can state it.
 
 Then build in dependency order: Domain(s) → Data Element(s) → Structure(s) (e.g. action-parameter or mapper-output structures) → Number Range Object (only if TS §5 numbering is Number-Range-based rather than BDEF-managed numbering) → Message Class (with the exact messages TS §5/§10 requires) → Database Table, **Persist** (root + every composition child, keys/foreign-keys per TS §3.1) → Database Table, **Draft** (mirrored structure + the RAP draft-admin include; the table-side syntax is in [Skill: ddic-foundation], the `with draft;` behavior side in [Skill: rap]). Check every table name against [Skill: naming-convention]'s length limits **before** pushing — this step mints more brand-new names than any other. Execute: Naming Check → Push → Activate → [Skill: activation-guard].
 

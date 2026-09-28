@@ -3,7 +3,7 @@
   "hooks": {
     "PreToolUse": [
       {
-        "matcher": "mcp__sap_[a-z0-9]+_dev__.*",
+        "matcher": "mcp__sap_[a-z0-9_]+__.*|mcp__.+__SAP$",
         "hooks": [
           {
             "type": "command",
@@ -13,7 +13,7 @@
         ]
       },
       {
-        "matcher": "mcp__sap_[a-z0-9_]+__.*",
+        "matcher": "mcp__sap_[a-z0-9_]+__.*|mcp__.+__SAP$",
         "hooks": [
           {
             "type": "command",
@@ -50,7 +50,7 @@
     ],
     "PostToolUse": [
       {
-        "matcher": "mcp__sap_[a-z0-9_]+__.*",
+        "matcher": "mcp__sap_[a-z0-9_]+__.*|mcp__.+__SAP$",
         "hooks": [
           {
             "type": "command",
@@ -67,6 +67,28 @@
           {
             "type": "command",
             "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/session-start.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/verify-subagent-output.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/target-refresh-remind.sh\"",
             "timeout": 10
           }
         ]

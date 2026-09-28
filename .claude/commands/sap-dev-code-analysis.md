@@ -27,6 +27,7 @@ Please execute the following sequence:
 Step 0: System Scanning & Component Discovery
 Required Skill: [Skill: scratchpad]
 Action:
+- If `artifacts/targets/[Target]/` already exists: [Skill: target-refresh] steps 1–3 first (read-only: report any change made outside the workspace since the last recorded version and ask whether to record it; never open a version here).
 - Use whichever MCP tool your environment exposes for reading/searching SAP objects to get the initial structure/list of objects (`sap-dev-rule.md` §9) — if it isn't loaded yet, use `ToolSearch` to find it first.
 - Create `artifacts/targets/[Target]/build/scratchpad_analysis.md` (`sap-dev-rule.md` §4 — one sub-folder per target).
 - Document the tree structure in the scratchpad and select the top priority objects that contain the core logic/data models.

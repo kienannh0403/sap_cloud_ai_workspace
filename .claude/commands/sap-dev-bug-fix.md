@@ -19,6 +19,8 @@ Arguments: $ARGUMENTS
 
 ## Skill Execution Sequence (Routing)
 
+**Target refresh (mandatory when `artifacts/targets/<TARGET>/` already exists):** [Skill: target-refresh] Part A before Phase 1 (once the target is known) — a change made outside this workspace since the last recorded version becomes its own version, with its real content, before this run opens a new one; Part B (full preview with evidence per item) after the last phase.
+
 ### Phase 1: Context Initialization & Mock Data Gathering
 1. **Load `grill-me` & `scratchpad`**:
    - Initialize `scratchpad` to document the entire troubleshooting process.
