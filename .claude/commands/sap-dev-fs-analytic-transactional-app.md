@@ -64,10 +64,10 @@ Threshold (starting heuristic — tighten once real dispatch-timing data exists)
 
 3.0 ARCHITECTURE BRAINSTORM: always resolve these transactional-app-specific decisions explicitly (they don't exist in the read-only fs-analytic flow): numbering mechanism per key field (Number Range vs. managed/early/late numbering, and batch-safety if multiple child rows can be created in one request), draft-enabled vs. not, and — only when genuinely complex/ambiguous (e.g. a multi-branch status machine, a real choice between CDS Virtual Element vs. Behavior Pool vs. Custom Entity + Query Provider) — generate 2-3 candidate architectures with explicit trade-offs (Clean Core compliance / Performance / Maintainability), pick one, and state why. For straightforward pieces with no such ambiguity, skip the multi-option comparison and go straight to the obvious design.
 
-3.1 CODING IMPLEMENTATION PLAN (the section `/sap-dev-create-transactional-app` depends on entirely): using [Skill: naming-convention] for every object name (TS-explicit names always win, see Phase 1.0(b)), produce a complete table of every object to be created:
+3.1 CODING IMPLEMENTATION PLAN (the section `/sap-dev-create-transactional-app` depends on entirely): using [Skill: naming-convention] for every object name (TS-explicit names always win, see Phase 1.0(b)), and [Skill: z-object-catalog] to reuse an existing Z/Y object instead of planning a duplicate, produce a complete table of every object to be created. Decide every row by climbing the Decision Ladder in `.claude/common/decision-ladder.md` (read it now — Tier 4) and stopping at the first rung that fully satisfies the requirement; a rung that would drop FS scope (1-3, e.g. a standard app or Custom Fields already covering the need) is asked of the user, never decided silently:
 
-| # | Object Name | Type | Purpose | Source/Base + Join/Association | Field Mapping (which TS output field(s) it delivers) | Corresponding create-transactional-app Step |
-|---|---|---|---|---|---|---|
+| # | Object Name | Type | Purpose | Source/Base + Join/Association | Field Mapping (which TS output field(s) it delivers) | Ladder (rung — evidence) | Corresponding create-transactional-app Step |
+|---|---|---|---|---|---|---|---|
 
 This table MUST include, in dependency order, every step group `/sap-dev-create-transactional-app` executes:
 - **Step 0 — DDIC Foundation**: every Domain, Data Element, Structure, Number Range Object, Message Class, and DB Table (Persist + Draft) the New Table Design (Phase 1.0(b)) requires — this is the group `/sap-dev-fs-analytic`'s template never needs, and the one most often missed.
@@ -97,6 +97,7 @@ This table must cover 100% of what create-transactional-app's Steps 0-8 will nee
 - If the FS implies a status/lifecycle, the Status Machine is 100% specified: every state, every transition, its trigger and precondition — not just "some statuses."
 - Every key field that isn't pure user input has an explicit numbering mechanism decided (Number Range / managed / early / late), including batch-safety if multiple rows can be created in one request.
 - Every row in the Coding Implementation Plan has a clear source/target, references no field absent from the Verified Data Model, and Step 0 (DDIC Foundation) is present and complete if TS §3 defines any new table.
+- Every row in the Coding Implementation Plan has a Ladder entry (rung + evidence per `.claude/common/decision-ladder.md`); every rung-8 row states why rungs 4-7 did not fit, and no FS requirement was dropped at rungs 1-3 without a user decision recorded in `INDEX.md`.
 
 PASS → Phase 6. FAIL → fix the specific gap in the phase it belongs to, then re-run this gate. Log each attempt in the Scratchpad ledger's Verify Attempts table (see Scratchpad skill) so the 3-iteration cap is tracked, not just remembered. After 3 failed iterations, STOP — list the exact unresolved blockers and ask the user instead of continuing to guess (Red Flags, `sap-dev-rule.md` §7).
 

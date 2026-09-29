@@ -156,12 +156,16 @@ Rule trong prompt có thể bị bỏ qua, hook thì không.
 | `pre-cud-guard.sh` | Trước mọi lệnh MCP SAP (không phụ thuộc tên server) | Chỉ cho sửa object Z/Y (cả `edit`); create/delete phải có package và TR; **các package trong `ZLOCAL` hoặc `$TMP` được miễn TR** (danh sách `LOCAL_NO_TR_PACKAGES` trong `common/system-config.md`); agent không được tạo/sửa/xoá TR |
 | `tier-readonly-guard.sh` | Trước mọi lệnh MCP SAP | Chặn create/edit/delete trên client 100 (`READONLY_SERVERS`) và trên mọi server có `SAP_CLIENT` (trong `.mcp.json`) không thuộc `WRITE_CLIENTS` (080), không rõ client cũng chặn; tạo/release/xoá TR qua `system` luôn chặn; `execute_abap` chặn trên 100, hỏi trên 080; `debug` hỏi trên 080; nếu `SAP_TIER` khác DEV thì chặn mọi thao tác ghi |
 | `block-forbidden-tables.sh` | Trước MCP `query` và Bash `datapreview` | So SQL với `exceptions/`: nhóm cấm → chặn, nhóm nhạy cảm → hỏi người dùng |
+| `sap-edit-fact-gate.sh` | Trước lệnh MCP SAP `edit`/`delete` | Lần đầu sửa/xoá một object (mỗi server, mỗi phiên) bị chặn cho đến khi agent nêu object phụ thuộc (lệnh Gate 3) và căn cứ (dòng TS / yêu cầu của người dùng); gọi lại thì cho qua |
 | `workspace-write-guard.sh` | Trước Write/Edit/Bash | Khoá `.claude/` (chỉ mở khi **người dùng** tự tạo `.claude/.unlock`); file mới phải nằm trong `artifacts/` |
 | `activation-verify.sh` | Sau khi ghi object trên 080 | Nhắc chạy đủ 4 gate của activation-guard |
 | `session-start.sh` | Mở / resume / sau compact | Tóm tắt cấu hình, cảnh báo nếu `.unlock` còn, chỉ ledger/handoff gần nhất; lúc mở phiên thì kiểm tra SAP có phát hành gì mới không (xem mục dưới) |
 | `verify-subagent-output.sh` | Khi subagent của team dừng | Tin nhắn cuối phải nêu file đã ghi trong `artifacts/`, file phải có thật và không rỗng; sai thì bắt subagent làm tiếp (một lần). Trả lời chỉ-đọc ghi `OUTPUT: none` |
 | `target-refresh-remind.sh` | Khi người dùng gửi prompt | Prompt nhắc tên một target đã có `handbook.json` → nhắc chạy `target-refresh` trước (chỉ nhắc, không chặn) |
 | `pre-compact.sh` | Trước compact | Ghi snapshot trạng thái vào `artifacts/scratchpads/_session/`, nhắc chạy handoff |
+| `report-language-guard.sh` | Khi agent kết thúc lượt trả lời | Câu trả lời có kết luận kiểu "should work", "chắc là chạy", "có vẻ đúng" (rule §8) → bắt làm tiếp một lần để thay bằng bằng chứng; bỏ qua nội dung trong ngoặc kép và code |
+
+4 hook chặn cần `jq`, thiếu `jq` thì chặn (fail closed): `pre-cud-guard.sh` và `tier-readonly-guard.sh` chặn mọi lệnh MCP SAP; `workspace-write-guard.sh` chặn mọi Write/Edit và lệnh Bash nhắc tới `.claude/`; `block-forbidden-tables.sh` chặn `query` và `datapreview`. Bash thường vẫn chạy để cài lại `jq`. Các hook nhắc nhở thiếu `jq` thì bỏ qua.
 
 Hook đảm bảo "việc đó có xảy ra hay không". Còn "làm có tốt không" vẫn do rule quyết định.
 

@@ -29,10 +29,11 @@ Reading more than ONE file outside Tier 1-4 means your dispatch was under-specif
 3. **Ledger evidence**: every DONE row carries evidence for all 4 activation-guard gates (activation log with warnings assessed, confirmed active state, ripple check, 0 new ATC findings). A DONE row without that evidence is a finding.
 4. **Verify coverage**: the Verify Attempts actually exercised the TS's key rules (status transitions, boundary values, batch-safety where specified) with concrete pasted data — not a bare "ok" (§11). "PASS — unverified, user-accepted" rows are listed, not re-judged.
 5. **Clean Core & naming**: no unreleased API, no direct table access or direct INSERT/UPDATE (§3), names per the naming-convention skill unless the TS names them explicitly.
+6. **Decision Ladder justification**: every Coding Implementation Plan row carries a Ladder entry (rung + evidence); every rung-8 (build new) row states why reuse (rungs 4-7: own Z object, released CDS/API/class, declarative framework feature, extending an existing Z object) did not fit. A missing or evidence-free entry is a finding against the TS (CHANGES_REQUIRED, fixed in the TS — never by the builder skipping a row). A TS written before the Ladder column existed is listed under Limitations, not judged.
 
 ## Verdict rules
 
-- **APPROVE** — no finding in items 1-4, and item 5 has none or only cosmetic ones (listed).
+- **APPROVE** — no finding in items 1-4 and 6, and item 5 has none or only cosmetic ones (listed).
 - **CHANGES_REQUIRED** — concrete, fixable findings within the TS's scope. Each finding names the object, the TS reference, and what must change.
 - **BLOCK** — the problem is not fixable within the TS as written: the TS itself is wrong/contradictory, a required object cannot exist in ABAP Cloud, or the build diverged architecturally. The user must decide.
 

@@ -12,6 +12,11 @@
 # Adapted from sc4sap tier-readonly-guard.mjs.
 # Fails CLOSED for mutations when system-config.md is missing: the tier is then unknown.
 set -euo pipefail
+
+# Fail CLOSED without jq: deny()/ask() need jq to emit a decision, and a hook that errors with an exit code
+# other than 2 is non-blocking — the SAP call would pass unchecked. exit 2 blocks without needing jq.
+command -v jq >/dev/null 2>&1 || { echo "tier-readonly-guard: jq not found on PATH - blocking SAP call (fail closed). Install jq and restart VS Code." >&2; exit 2; }
+
 source "$(dirname "$0")/lib-config.sh"
 
 input=$(cat)

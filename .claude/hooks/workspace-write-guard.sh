@@ -13,6 +13,18 @@
 set -euo pipefail
 
 input=$(cat)
+
+# Fail CLOSED without jq, but only for what this hook polices (crude match on the raw payload): every
+# Write/Edit/NotebookEdit, and a Bash command that mentions .claude/. Other Bash passes, so jq can be reinstalled.
+if ! command -v jq >/dev/null 2>&1; then
+  if echo "$input" | grep -qE '"tool_name"[[:space:]]*:[[:space:]]*"(Write|Edit|NotebookEdit)"' \
+     || echo "$input" | grep -q '\.claude/'; then
+    echo "workspace-write-guard: jq not found on PATH - blocking file writes and .claude/ commands (fail closed). Install jq (winget install --id jqlang.jq -e) and restart VS Code." >&2
+    exit 2
+  fi
+  exit 0
+fi
+
 tool_name=$(echo "$input" | jq -r '.tool_name // ""')
 root="${CLAUDE_PROJECT_DIR:-$PWD}"
 unlock="$root/.claude/.unlock"

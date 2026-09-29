@@ -15,6 +15,10 @@
 #   - package lives in "package" OR "package_name"
 set -euo pipefail
 
+# Fail CLOSED without jq: deny() needs jq to emit a decision, and a hook that errors with an exit code
+# other than 2 is non-blocking — the SAP call would pass unchecked. exit 2 blocks without needing jq.
+command -v jq >/dev/null 2>&1 || { echo "pre-cud-guard: jq not found on PATH - blocking SAP call (fail closed). Install jq and restart VS Code." >&2; exit 2; }
+
 # --- Local (non-transportable) packages exempt from the TR requirement (rule §2). ---
 # Single source: LOCAL_NO_TR_PACKAGES in .claude/common/system-config.md = $TMP + package ZLOCAL
 # + every package below ZLOCAL (the hook only sees the package NAME, not the SAP hierarchy, so

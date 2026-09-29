@@ -50,10 +50,10 @@ Threshold (starting heuristic — tighten once real dispatch-timing data exists)
 
 3.0 ARCHITECTURE BRAINSTORM: Only when the Business Logic Draft contains genuinely complex/ambiguous logic (e.g. multi-level fallback chains, period-anchor balance calculations, a real choice between CDS Virtual Element vs. Behavior Pool vs. Custom Entity + Query Provider), generate 2-3 candidate architectures with explicit trade-offs (Clean Core compliance / Performance / Maintainability), pick one, and state why. For straightforward reports with no such ambiguity, skip the multi-option comparison and go straight to the obvious design — do not manufacture false choices just to seem thorough.
 
-3.1 CODING IMPLEMENTATION PLAN (the section `/sap-dev-create-report` depends on entirely): using [Skill: naming-convention] for every object name, and [Skill: z-object-catalog] to reuse an existing Z/Y object (utility class, CDS view over the same released source) instead of planning a duplicate, produce a complete table of every object to be created:
+3.1 CODING IMPLEMENTATION PLAN (the section `/sap-dev-create-report` depends on entirely): using [Skill: naming-convention] for every object name, and [Skill: z-object-catalog] to reuse an existing Z/Y object (utility class, CDS view over the same released source) instead of planning a duplicate, produce a complete table of every object to be created. Decide every row by climbing the Decision Ladder in `.claude/common/decision-ladder.md` (read it now — Tier 4) and stopping at the first rung that fully satisfies the requirement; a rung that would drop FS scope (1-3) is asked of the user, never decided silently:
 
-| # | Object Name | Type | Purpose | Source/Base + Join/Association | Field Mapping (which TS output field(s) it delivers) | Corresponding create-report Step |
-|---|---|---|---|---|---|---|
+| # | Object Name | Type | Purpose | Source/Base + Join/Association | Field Mapping (which TS output field(s) it delivers) | Ladder (rung — evidence) | Corresponding create-report Step |
+|---|---|---|---|---|---|---|---|
 
 This table must cover 100% of what create-report's Steps 1-7 will need (Interface View, DCL, Behavior Definition, Behavior Pool Class, Projection View, Metadata Extension, Projection Behavior, Service Definition/Binding) — enough that create-report performs zero independent design or lookup. Forms from §8 add rows too: the template artifact (Type `Form template PDF` / `Form template Excel`, built by create step "Form templates") and the ABAP that fills and renders it (data class, print/export action) in the normal class/behavior steps.
 
@@ -69,6 +69,7 @@ This table must cover 100% of what create-report's Steps 1-7 will need (Interfac
 - 100% of the FS's UI requirements (text, tables and transcribed mockups) appear in TS §4/§7 as `UI-nn` rows citing their FS source, with the FS wording kept (labels, order) — no FS screen element without a row, no row without an FS source.
 - Every form sample found in 2.F has a §8 row whose every `(n)` marker is mapped (data field, blank or static), and §8 has no form without an FS sample.
 - Every row in the Coding Implementation Plan has a clear source/target and references no field absent from the Verified Data Model.
+- Every row in the Coding Implementation Plan has a Ladder entry (rung + evidence per `.claude/common/decision-ladder.md`); every rung-8 row states why rungs 4-7 did not fit, and no FS requirement was dropped at rungs 1-3 without a user decision recorded in `INDEX.md`.
 
 PASS → Phase 6. FAIL → fix the specific gap in the phase it belongs to, then re-run this gate. Log each attempt in the Scratchpad ledger's Verify Attempts table (see Scratchpad skill) so the 3-iteration cap is tracked, not just remembered. After 3 failed iterations, STOP — list the exact unresolved blockers and ask the user instead of continuing to guess (Red Flags, `sap-dev-rule.md` §7).
 
