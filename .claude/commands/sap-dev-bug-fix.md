@@ -32,7 +32,7 @@ Arguments: $ARGUMENTS
 2. **Load `fs-data-model-extractor` (Trace mode) & `fs-logic-behavior-translator`**:
    - Starting from the reported Object, trace down the source code from the UI/Consumption layer to the Base/Database layer.
    - Pinpoint the exact line of code, JOIN condition, or logic block (e.g., CASE/WHEN) causing the issue by running a dry-run analysis with the provided Mock Data.
-   - Where the object is readable on client 100, also reproduce the bug on real data (see Context: count assertions via `fetch.sh`, or a read-only SQL query) and save the output under `artifacts/targets/[ObjectName]/build/repro/` — this is the *trước sửa* evidence of the `R-nn` rows in step 7; re-run the same query after the fix for the *sau sửa* row.
+   - Where the object is readable on client 100, also reproduce the bug on real data (see Context: count assertions via `fetch.sh`, or a read-only SQL query) and save the output under `artifacts/targets/[ObjectName]/build/repro/` — this is the *trước sửa* evidence of the `R-nn` rows in step 7; re-run the same query after the fix for the *sau sửa* row. A bug seen on the app screen (value help empty, wrong label, filter without effect, error dialog) is reproduced the same way with [Skill: fiori-ui-check] (read-only, VI + EN logon): its steps file and summary go to `build/repro/` (screenshots with amounts stay outside the workspace), re-run unchanged after the fix.
 3. **Execute Impact Analysis**:
    - Check where else this View/Logic is being used. Evaluate if changing this logic poses a risk to other dependent Apps or reports.
 

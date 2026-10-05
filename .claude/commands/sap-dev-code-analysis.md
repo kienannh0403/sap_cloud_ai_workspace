@@ -48,7 +48,7 @@ Create the final, comprehensive Markdown document.
 Location: `artifacts/targets/[Target]/analysis/analysis_report.md`.
 Then create or update `artifacts/targets/[Target]/INDEX.md` per `sap-dev-rule.md` §4 — the short entry point (what the object is, status, open questions, blockers, file map) that later sessions read instead of this full report. Findings worth keeping beyond this report (traps, decisions, data-preview results) go to `artifacts/targets/[Target]/notes/<topic>.md`, one per file, each linked from INDEX.md.
 
-Handbook record: create/refresh `artifacts/targets/[Target]/handbook.json` (`.claude/common/handbook-target.md`) with `purpose` and `objects` (each analysed object with its `uses`, so the page shows the object diagram) — no version is opened by an analysis — then run `python .claude/scripts/handbook/render_target.py [Target]`.
+Handbook record: create/refresh `artifacts/targets/[Target]/handbook.json` (`.claude/common/handbook-target.md`) with `purpose` and `objects` (each analysed object with its `uses`, so the page shows the object diagram) — no version is opened by an analysis (versions are versions of the report/function, opened only by a code change); an analysis of an existing target is logged in today's `records` entry — one per day, created or extended (`kind` += "phân tích", `applies_to` = the function version analysed, one `summary` line) — then run `python .claude/scripts/handbook/render_target.py [Target]`.
 Format the report exactly as follows:
 
 # [Tên Đối Tượng/Package] - System Analysis Report

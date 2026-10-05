@@ -26,9 +26,10 @@ Schema of `snapshot` / `preview` / `period`: `.claude/common/handbook-target.md`
    exact error; a refresh with a missing object is not a refresh.
 3. **Compare:** `python .claude/scripts/handbook/drift_check.py <TARGET>`
    - exit 0 → no drift, go on to the workflow.
-   - exit 2 → no baseline yet: record it into the newest version
-     (`drift_check.py <TARGET> --record <newest version>`) and go on. Say so to the user — changes made
-     before this first snapshot cannot be detected.
+   - exit 2 → no baseline yet: record it into the newest version if the target has one
+     (`drift_check.py <TARGET> --record <newest version>`); otherwise into today's `records` entry
+     (`--record-date today`, created if missing) — never open a version just to hold the baseline.
+     Go on, and say so to the user — changes made before this first snapshot cannot be detected.
    - exit 1 → drift, do step 4 before anything else.
    - exit 3 → input problem, fix it (message says what), never skip.
 4. **Record the external change as its own version**, completely, before the new work starts:
@@ -50,17 +51,21 @@ and ask whether to record the intermediate version — they never open a new ver
 
 ## Part B — at the end (always, even when nothing drifted and even for a small change)
 
-Run the full preview and write one `preview` block into the version just closed:
+Run the full preview and write one `preview` block into the version just closed — or, when this touch
+changed no code (analysis, preview, re-test, plain refresh), into **today's** `records` entry — one entry
+per day: create it, or extend it if today already has one (add `kind` and a `summary` line, append
+`tests`, overwrite `preview` / `atc` with this run); `applies_to` = the function version checked; schema
+in handbook-target.md. Versions are versions of the report/function only; a check never opens one:
 
 | item | what to do | evidence |
 |---|---|---|
-| `test` | run the report/app: data preview / OData verify per the workflow's verify phase | `build/odata_verify/…` |
-| `atc` | ATC over **every** object of the target (not only the diff) | the version's `atc` block |
+| `test` | run the report/app: data preview / OData verify per the workflow's verify phase, **plus** [Skill: fiori-ui-check] (VI + EN logon, read-only) when the target has a deployed Fiori app or a published OData V4 service (preview mode) — `skipped` with the reason if it has neither | `build/odata_verify/…`, `…_ui_check.md` |
+| `atc` | ATC over **every** object of the target (not only the diff) | the version's / record's `atc` block |
 | `objects` | `objects[]` matches what exists in SAP (added/removed objects, `uses` edges) | `handbook.json` |
-| `snapshot` | pull sources again (Part A step 2) and `drift_check.py <TARGET> --record <version>` | `build/snapshot/<yyyymmdd>/` |
+| `snapshot` | pull sources again (Part A step 2) and `drift_check.py <TARGET> --record <version>` (or `--record-date today`) | `build/snapshot/<yyyymmdd>/` |
 | `index` | INDEX.md status, open questions, file map up to date | `INDEX.md` |
 | `notes` | every finding worth keeping as `notes/<topic>.md`, linked from INDEX.md | `notes/…` or "không có finding mới" |
-| `handbook` | `python .claude/scripts/handbook/render_target.py <TARGET>` | `artifacts/handbook/<target>.html` |
+| `handbook` | `python .claude/scripts/handbook/render_target.py <TARGET>` | `artifacts/handbook_targets/<target>.html` |
 
 Each item: `{"item": "...", "status": "done|skipped", "evidence": "<path>", "note": "..."}`. An item that
 cannot be done (e.g. 080 has no data-read authorization) is `skipped` **with the reason in `note`** — never

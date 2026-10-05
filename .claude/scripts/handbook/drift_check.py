@@ -2,12 +2,16 @@
 
     python .claude/scripts/handbook/drift_check.py <TARGET> [--dir <snapshot dir>]
     python .claude/scripts/handbook/drift_check.py <TARGET> [--dir <snapshot dir>] --record <VERSION>
+    python .claude/scripts/handbook/drift_check.py <TARGET> [--dir <snapshot dir>] --record-date <YYYY-MM-DD|today>
 
 Input : artifacts/targets/<TARGET>/build/snapshot/<yyyymmdd>/<OBJECT>.<ext>  (default: today's folder)
         one file per Z object, source exactly as SAP returned it (skill target-refresh step 2)
-Base  : "snapshot" of the newest version in artifacts/targets/<TARGET>/handbook.json that has one
+Base  : the newest "snapshot" in artifacts/targets/<TARGET>/handbook.json, looked up in both
+        `versions` (function/report versions = code changes) and `records` (checks without code change)
 Output: object list changed / added / removed; unified diff written to <snapshot dir>/drift.diff
---record <VERSION> : store this snapshot (date, dir, sha256 per object) into that version of handbook.json
+--record <VERSION>         : store this snapshot (date, dir, sha256 per object) into that function version
+--record-date <DATE>      : store it into that day's entry of `records` instead (checks without code
+                            change: analysis / preview / re-test / refresh); the entry is created if missing
 
 Sources are compared after normalising line ends and trailing blanks, so a CRLF/LF or
 pretty-print whitespace difference is not reported as a change.
@@ -54,14 +58,25 @@ def sha(text):
 def parse_args(argv):
     if not argv or argv[0].startswith("-"):
         fail(__doc__)
-    opts = {"target": argv[0], "dir": None, "record": None}
+    opts = {"target": argv[0], "dir": None, "record": None, "record_date": None}
     rest = argv[1:]
     while rest:
         key = rest.pop(0)
-        if key not in ("--dir", "--record") or not rest:
+        if key not in ("--dir", "--record", "--record-date") or not rest:
             fail(f"unknown or incomplete option '{key}'\n{__doc__}")
-        opts[key[2:]] = rest.pop(0)
+        opts[key[2:].replace("-", "_")] = rest.pop(0)
+    if opts["record"] and opts["record_date"]:
+        fail("use either --record <VERSION> or --record-date <DATE>, not both")
     return opts
+
+
+def newest_snapshot(hb):
+    """Newest snapshot over versions and records; ties on the date go to the later 'taken_at'."""
+    found = [(f"version {v.get('version')}", v["snapshot"]) for v in hb.get("versions", []) if v.get("snapshot")]
+    found += [(f"record {r.get('date')}", r["snapshot"]) for r in hb.get("records", []) if r.get("snapshot")]
+    if not found:
+        return None, None
+    return max(found, key=lambda f: (f[1].get("taken", ""), f[1].get("taken_at", "")))
 
 
 def main(argv):
@@ -82,17 +97,16 @@ def main(argv):
         fail(f"snapshot folder {snap_dir} is empty")
     now_hash = {n: sha(s) for n, s in now.items()}
 
-    base_ver = next((v for v in hb.get("versions", []) if v.get("snapshot")), None)
+    base_label, base = newest_snapshot(hb)
     status = 2
-    if base_ver is None:
-        print(f"NO BASELINE - no version of {opts['target']} has a snapshot yet; this snapshot becomes the baseline")
+    if base is None:
+        print(f"NO BASELINE - no version or record of {opts['target']} has a snapshot yet; this snapshot becomes the baseline")
     else:
-        base = base_ver["snapshot"]
         old_hash = base.get("objects", {})
         changed = sorted(n for n in now_hash if n in old_hash and now_hash[n] != old_hash[n])
         added = sorted(n for n in now_hash if n not in old_hash)
         removed = sorted(n for n in old_hash if n not in now_hash)
-        print(f"baseline: version {base_ver.get('version')} snapshot {base.get('taken')} ({base.get('dir')})")
+        print(f"baseline: {base_label} snapshot {base.get('taken')} ({base.get('dir')})")
         if not (changed or added or removed):
             print(f"NO DRIFT - {len(now_hash)} object(s) identical to the baseline")
             status = 0
@@ -117,14 +131,30 @@ def main(argv):
             out.write_text("".join(diff), encoding="utf-8")
             print(f"diff written: {rel(out)}")
 
-    if opts["record"]:
-        ver = next((v for v in hb.get("versions", []) if v.get("version") == opts["record"]), None)
-        if ver is None:
-            fail(f"version {opts['record']} not found in handbook.json - add the version block first")
-        ver["snapshot"] = {"taken": datetime.date.today().isoformat(),
-                           "dir": rel(snap_dir), "objects": now_hash}
+    if opts["record"] or opts["record_date"]:
+        if opts["record"]:
+            entry = next((v for v in hb.get("versions", []) if v.get("version") == opts["record"]), None)
+            label = f"version {opts['record']}"
+        else:
+            day = datetime.date.today().isoformat() if opts["record_date"] == "today" else opts["record_date"]
+            try:
+                datetime.date.fromisoformat(day)
+            except ValueError:
+                fail(f"--record-date needs YYYY-MM-DD or 'today', got '{day}'")
+            records = hb.setdefault("records", [])
+            entry = next((r for r in records if r.get("date") == day), None)
+            if entry is None:
+                entry = {"date": day}
+                records.append(entry)
+                records.sort(key=lambda r: r.get("date", ""), reverse=True)
+            label = f"record {day}"
+        if entry is None:
+            fail(f"{label} not found in handbook.json - add that block first")
+        now_ts = datetime.datetime.now()
+        entry["snapshot"] = {"taken": now_ts.date().isoformat(), "taken_at": now_ts.isoformat(timespec="seconds"),
+                             "dir": rel(snap_dir), "objects": now_hash}
         hb_path.write_text(json.dumps(hb, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(f"snapshot recorded into version {opts['record']} ({len(now_hash)} object(s))")
+        print(f"snapshot recorded into {label} ({len(now_hash)} object(s))")
     sys.exit(status)
 
 

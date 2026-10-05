@@ -4,7 +4,7 @@
 ```
 artifacts/targets/<TARGET>/          <TARGET> = tcode / app / API name
 ├── INDEX.md          agent entry point (~2 KB): status, open questions, decisions beyond spec, blockers, file map
-├── handbook.json     the user-facing record → rendered into artifacts/handbook/<target>.html
+├── handbook.json     the user-facing record → rendered into artifacts/handbook_targets/<target>.html
 ├── fs/               FS as received + fs_markdown.md + extracted images
 ├── ts/               TS.md
 ├── build/            ledger (scratchpad.md), drafts, final_source.md, review_verdict.md, ui_checklist.md,
@@ -17,10 +17,11 @@ artifacts/targets/<TARGET>/          <TARGET> = tcode / app / API name
 ├── notes/<topic>.md  per-target findings, each linked from INDEX.md
 └── walkthrough*.md   walkthrough.md / walkthrough_bugfix.md / walkthrough_inbound.md …
 ```
-Shared, not per target: `artifacts/handbook/`, `artifacts/documents/` (UM, naming convention),
+Shared, not per target: `artifacts/handbook_targets/` (report/function handbook, generated),
+`artifacts/handbook/` (workspace handbook), `artifacts/documents/` (UM, naming convention),
 `artifacts/system_analysis/CDS_RELEASED_CATALOG/`, `artifacts/scratchpads/_session/` (hooks).
 
-## handbook.json — one per target, newest version first
+## handbook.json — one per target, newest version / record first
 ```jsonc
 {
   "target": "ZAA01", "title": "Báo cáo tình hình tăng giảm TSCĐ",
@@ -46,20 +47,50 @@ Shared, not per target: `artifacts/handbook/`, `artifacts/documents/` (UM, namin
       "tests": [ { "title": "Lần 1 — 2026-10-02", "summary": "lần đầu / what changed since the previous attempt",
                    "cases": [ { "id": "TC-01|UI-01|M-01|R-01|UT-01|REG-01", "group": "Data|UI|Manual|Tái hiện|Unit test|Hồi quy",
                                 "case": "", "source": "TS §5 / FS …", "input": "", "expected": "", "actual": "",
-                                "result": "PASS|FAIL|WAIT|ACCEPTED", "evidence": "build/odata_verify/…" } ] } ] } ]
+                                "result": "PASS|FAIL|WAIT|ACCEPTED", "evidence": "build/odata_verify/…" } ] } ] } ],
+  "records": [ {                                                    // ONE entry per day, newest first
+      "date": "2026-10-05",                                         // the key — no id
+      "kind": ["phân tích", "preview"],                             // every kind of check done that day
+      "applies_to": "1.1 | hiện trạng — chưa có version do workspace tạo",
+      "summary": ["one line per check of the day: what was checked and the outcome"],
+      "snapshot": { "...": "same shape as above, written by drift_check.py --record-date 2026-10-05" },
+      "preview": { }, "atc": { },                                   // the day's latest run (overwrite)
+      "tests": [ ]                                                  // append a block per test run of the day
+  } ]
 }
 ```
+
+### `versions` vs `records` (user 2026-10-05)
+- **`versions` = versions of the report/function itself.** A version is opened only when the target's code
+  changes: a build (create-report, create-transactional-app), a bug fix, a change request, or a change made
+  outside the workspace (drift). Its `changes`, `atc`, `tests`, `preview`, `snapshot` belong to that change.
+- **`records` = checks of the target that change no code**: code analysis, a preview / data check, a re-test,
+  a refresh on request. **One entry per day** (user 2026-10-05: by date, not by touch): a second check on
+  the same day extends that day's entry — add its `kind`, add a `summary` line, append its `tests` block,
+  overwrite `preview` / `atc` / `snapshot` with the latest run. `applies_to` names the function version
+  that was checked. Rendered in the section "Lịch sử kiểm tra hồ sơ", never in the version
+  sections. Never open a version just to hold a check.
+- `drift_check.py` takes its baseline from the newest snapshot of **either** list.
 
 ## When to write it
 | Event | Update |
 |---|---|
-| **Any workflow touching an existing target** | [Skill: target-refresh] first (pull sources, `drift_check.py`, change made outside the workspace → its own version with its real content) and its full preview at the end (`preview` + `snapshot` on the version) |
+| **Any workflow touching an existing target** | [Skill: target-refresh] first (pull sources, `drift_check.py`, change made outside the workspace → its own version with its real content) and its full preview at the end (`preview` + `snapshot` on the version just closed, or on today's `records` entry when the touch changed no code) |
 | First workflow on the target (fs-analytic, code-analysis, bug-fix on an unknown object…) | create folder, `INDEX.md`, `handbook.json` (target, title, kind, module, purpose, status) |
+| Analysis / preview / re-test with no code change | today's `records` entry (create or extend: `date`, `kind`, `applies_to`, `summary`, `snapshot` via `--record-date today`, `preview`, `atc`, `tests`) — no version |
 | TS done | `forms` from TS §8, status "TS xong" |
 | Every object DONE in a build | append to `objects` with its `uses` |
 | Every Phase-2 / bug-fix test attempt | add a `tests` block to the current version (never rewrite older blocks) |
 | Build or fix finished | open/close the version: `changes`, and **ATC over every object of the target** (not only the diff) into `atc` |
 
-Then run `python .claude/scripts/handbook/render_target.py <TARGET>` — it writes the page and syncs the nav and
-the index cards. Never hand-edit the generated page. No business data in the JSON (counts, field names,
+Then run `python .claude/scripts/handbook/render_target.py <TARGET>` — it writes the page and regenerates the
+report/function handbook's own `index.html` + nav. Never hand-edit the generated page.
+
+**Two separate handbooks (user 2026-10-05: report/function pages are not mixed with other work):**
+- `artifacts/handbook_targets/` — report/function handbook, fully generated: `index.html` (one card per
+  target) + `<target>.html` + its own `assets/site.css` (copied from the workspace handbook on every render).
+  Nav = home + targets only.
+- `artifacts/handbook/` — workspace handbook (MCP, CDS released, workspace build, maintenance), hand-written.
+- **No link either way** between the two. The renderer strips any target card (`<!-- targets:start -->`
+  block), target nav link or old generated target page left in `artifacts/handbook/`. No business data in the JSON (counts, field names,
 outcomes only — `.claude/exceptions/`).

@@ -2,7 +2,7 @@
 
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-native-7A5AF8)
 ![SAP](https://img.shields.io/badge/SAP-ABAP%20Cloud%20%C2%B7%20Clean%20Core-0FAAFF)
-![Skills](https://img.shields.io/badge/skills-62-2EA44F)
+![Skills](https://img.shields.io/badge/skills-63-2EA44F)
 ![Workflows](https://img.shields.io/badge/workflows-9-E8590C)
 ![Subagents](https://img.shields.io/badge/subagents-7-8957E5)
 ![Modules](https://img.shields.io/badge/modules-11-0FAAFF)
@@ -10,7 +10,7 @@
 
 Workspace lập trình cặp với Claude Code trên **SAP S/4HANA Cloud Public Edition** (ABAP Cloud, Clean Core). Claude làm việc như một developer SAP có kỷ luật:
 
-- **62 skill** tự kích hoạt khi mô tả khớp với yêu cầu: 44 skill kỹ thuật ABAP Cloud và 18 skill nghiệp vụ SAP Public Cloud.
+- **63 skill** tự kích hoạt khi mô tả khớp với yêu cầu: 45 skill kỹ thuật ABAP Cloud và 18 skill nghiệp vụ SAP Public Cloud.
 - **9 workflow** dạng slash command, đi từ FS tới code đã activate.
 - **7 subagent**: 3 nhóm Consultant / Dev / Tester (mỗi nhóm có Lead và Executor) và `reviewer-lead` duyệt độc lập trước khi đóng build.
 - **Tầng tham chiếu cho 11 module**, cộng blocklist dữ liệu nhạy cảm.
@@ -34,7 +34,7 @@ flowchart LR
         CM --> CFG["common/system-config.md<br/>hệ thống · module · tier"]
     end
     subgraph ONDEMAND["Nạp khi cần (theo tầng)"]
-        SK["62 skill<br/>.claude/skills/*"] --> REF["references/*<br/>template, deep-dive"]
+        SK["63 skill<br/>.claude/skills/*"] --> REF["references/*<br/>template, deep-dive"]
         WF["9 workflow<br/>.claude/commands/*"]
         AG["7 subagent<br/>Consultant/Dev/Tester × Lead/Executor + Reviewer"]
         LAYER["common/ · configs/&lt;MODULE&gt;/ · country/ · exceptions/"]
@@ -94,7 +94,7 @@ WORK_SPACE/
 │   ├── configs/<MODULE>/            # 📘 Kiến thức Public Cloud của 11 module: CDS / RAP BO / BAdI released
 │   ├── country/vn.md                # 🇻🇳 Bản địa hoá VN: eDocument released, VND/ngày, quy định (đánh dấu cần xác minh)
 │   ├── exceptions/                  # 🚫 Blocklist dữ liệu nhạy cảm (profile standard)
-│   ├── skills/<name>/SKILL.md       # 📚 62 skill (+ references/ nạp khi cần)
+│   ├── skills/<name>/SKILL.md       # 📚 63 skill (+ references/ nạp khi cần)
 │   ├── agents/<team>-<layer>.md     # 🤖 7 subagent
 │   ├── commands/                    # ⚙️ 9 workflow dạng slash command
 │   ├── hooks/                       # 🔒 9 hook (xem bảng bên dưới)
@@ -194,7 +194,7 @@ Mô tả của class / interface / BDEF / CDS mới được đọc trên tenant
 
 ---
 
-## 📚 Danh mục skill (62)
+## 📚 Danh mục skill (63)
 
 **🔎 Phân tích FS / Consultant (10):**
 - `ask-consultant`: hỏi nhanh nghiệp vụ một module, trả lời theo cấu hình workspace (config module, sap-process, country/vn, catalog), có nguồn cho từng ý, chỉ đọc.
@@ -249,8 +249,9 @@ Mô tả của class / interface / BDEF / CDS mới được đọc trên tenant
 - `btp-diagram-generator`: sơ đồ BTP dạng draw.io.
 - `sap-fiori-apps-reference`: link Fiori Launchpad.
 
-**🧭 Quản trị & năng suất (9):**
+**🧭 Quản trị & năng suất (10):**
 - `sap-doctor`: kiểm sức khỏe workspace (tool, cookie từng tenant, hook, integrity, `.unlock`) + MCP còn sống + cách refresh cookie.
+- `fiori-ui-check`: mở app Fiori bằng Chrome headless (cookie client 100) — app đã deploy, hoặc chế độ preview dựng tạm từ service binding đã publish khi app chưa deploy; đăng nhập VI + EN, gõ bộ lọc, mở value help, đọc cột / nút / object page, chụp màn hình + lỗi console, chỉ xem — không bấm Post/Save; chụp kiểm tra trang sổ tay.
 - `z-object-catalog`: kho object Z/Y của dự án theo package; tra trước khi tạo domain/data element/class/CDS mới để khỏi tạo trùng.
 - `target-refresh`: mỗi lần đụng tới một báo cáo/chức năng đã có — so source trên SAP với snapshot của version gần nhất (`drift_check.py`); ai đó sửa ngoài workspace thì ghi thành version riêng kèm nội dung thay đổi thật, rồi mới làm việc mới; cuối cùng preview đầy đủ (chạy thử, ATC toàn target, INDEX/notes, snapshot, handbook) có bằng chứng từng mục.
 - `activation-guard`: **4 gate** sau mỗi lần ghi object (log activation, trạng thái active, ảnh hưởng dây chuyền, 0 lỗi ATC mới).
@@ -345,7 +346,7 @@ Với `/sap-dev-create-report` và `/sap-dev-create-transactional-app`, Manager 
 | 2.0b | Manager | Data qua OData, bằng count assertion (chỉ in số dòng, không in giá trị). Mỗi rule TS §5 có 2 case (dương `total=N`, âm `total=0`). Rule có ngưỡng thêm case biên. Mỗi filter TS §2 có 2 case |
 | 2.U | Manager | Dựng `ui_checklist.md` từ FS + TS (ID `UI-nn`), so với `$metadata` qua `ui-check.js`: cột, thứ tự, label, filter, value help, text, action, facet. Có cả chiều ngược: phần nào có trên màn mà spec không có là **thừa**. FS và TS lệch nhau thì dừng lại hỏi |
 | 2.M | Người dùng | Phần metadata không chứng minh được: bấm F4 thật, lỗi hiển thị, action/lifecycle. Gửi screenshot, Manager đối chiếu |
-| 2.3 | Manager | Ghi **mọi case** (TC-nn / UI-nn / M-nn) cùng mong đợi, thực tế, PASS/FAIL, evidence vào `artifacts/targets/<TARGET>/handbook.json`, render ra `artifacts/handbook/<target>.html#kiem-thu`. Lần mới ở trên, không xóa lần cũ |
+| 2.3 | Manager | Ghi **mọi case** (TC-nn / UI-nn / M-nn) cùng mong đợi, thực tế, PASS/FAIL, evidence vào `artifacts/targets/<TARGET>/handbook.json`, render ra `artifacts/handbook_targets/<target>.html#kiem-thu`. Lần mới ở trên, không xóa lần cũ |
 
 Script dùng chung: `.claude/scripts/odata-verify/fetch.sh` (samecode / srvurl / metadata / sample) và `ui-check.js`. Chạy không kèm tham số để xem hướng dẫn. Script chỉ gọi GET, lấy host và cookie từ `.mcp.json`. Hạn chế đã biết: endpoint F4 (`srvd_f4`) trả 403 với user dev, nên F4 vẫn phải kiểm tay.
 
