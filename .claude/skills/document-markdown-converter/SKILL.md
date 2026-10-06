@@ -1,6 +1,6 @@
 ---
 name: document-markdown-converter
-description: Hướng dẫn tiền xử lý (pre-processing) tài liệu FS nhị phân (DOCX, XLSX, PDF, PPTX, HTML, v.v.) thành Markdown (MD) trước khi phân tích trong các workflow SAP — dùng `scripts/office_to_md.py` cho DOCX/XLSX (giữ ảnh, giữ mã số SAP) và MarkItDown cho PDF/PPTX/HTML. Sử dụng khi một tài liệu thiết kế FS/spec được cung cấp làm đầu vào cho workflow phân tích (fs-analytic, bug-fix...) — KHÔNG dùng cho các thao tác PDF/Word/Excel tổng quát (tạo, chỉnh sửa, merge file — việc đó thuộc các skill pdf/docx/xlsx chuyên dụng). Triggers: `markitdown`, `office_to_md`, `convert fs`, `parse FS document`, `tiền xử lý tài liệu FS`, `đọc file FS`, `convert docx sang md`, `convert excel sang md`.
+description: Hướng dẫn tiền xử lý (pre-processing) tài liệu FS nhị phân (DOCX, XLSX, PDF, PPTX, HTML, v.v.) thành Markdown (MD) trước khi phân tích trong các workflow SAP — dùng `.claude/scripts/office_to_md.py` cho DOCX/XLSX (giữ ảnh, giữ mã số SAP) và MarkItDown cho PDF/PPTX/HTML. Sử dụng khi một tài liệu thiết kế FS/spec được cung cấp làm đầu vào cho workflow phân tích (fs-analytic, bug-fix...) — KHÔNG dùng cho các thao tác PDF/Word/Excel tổng quát (tạo, chỉnh sửa, merge file — việc đó thuộc các skill pdf/docx/xlsx chuyên dụng). Triggers: `markitdown`, `office_to_md`, `convert fs`, `parse FS document`, `tiền xử lý tài liệu FS`, `đọc file FS`, `convert docx sang md`, `convert excel sang md`.
 ---
 
 # Document Markdown Converter
@@ -15,8 +15,8 @@ Never read raw binary files (`.pdf`, `.docx`, `.xlsx`) directly. Convert to stru
 
 | Input | Tool | Why |
 |---|---|---|
-| `.docx` | `scripts/office_to_md.py` | Extracts embedded images to real files. MarkItDown destroys them. |
-| `.xlsx` / `.xls` | `scripts/office_to_md.py` | Reads every cell as text. MarkItDown corrupts SAP numeric codes. |
+| `.docx` | `.claude/scripts/office_to_md.py` | Extracts embedded images to real files. MarkItDown destroys them. |
+| `.xlsx` / `.xls` | `.claude/scripts/office_to_md.py` | Reads every cell as text. MarkItDown corrupts SAP numeric codes. |
 | `.pdf` / `.pptx` / `.html` / `.csv` / `.msg` | MarkItDown CLI | `office_to_md.py` does not support these. |
 
 ## Environment
@@ -36,16 +36,22 @@ python -m venv .venv_markitdown && ./.venv_markitdown/Scripts/pip.exe install 'm
 ## 1. DOCX — use `office_to_md.py`, keep the images
 
 ```bash
-./.venv_markitdown/Scripts/python.exe -X utf8 scripts/office_to_md.py \
-  "FS/[Target]/[File].docx" -o "artifacts/targets/[Target]/build/"
+./.venv_markitdown/Scripts/python.exe .claude/scripts/office_to_md.py \
+  "artifacts/targets/[Target]/fs/[File].docx" -o "artifacts/targets/[Target]/fs/"
 ```
 
 Produces `[File].md` plus a sibling `[File]_assets/` folder holding the real embedded images, and prints how many it extracted.
 
-Two invocation rules, both verified on this machine — skipping either one breaks the run:
+Invocation rules (script adapted 2026-10-06 from StormShynn/sap-abap-agent, MIT):
 
-- **`-X utf8` is mandatory.** The workspace path contains non-ASCII characters ("dự án"); without it Windows Python encodes stdout as cp1252 and the script dies with `UnicodeEncodeError: 'charmap' codec can't encode character 'ự'`.
-- **Always pass the input path and `-o` explicitly.** The script's built-in defaults resolve to `in/` and `out/` one level *above* this workspace (it assumes it lives in `reference/scripts/`, not `scripts/`). Never rely on them.
+- **Input path and `-o` are both required** — the script has no default folders. Write into the target's `fs/` folder (rule §4), e.g. `-o "artifacts/targets/[Target]/fs/"`.
+- UTF-8 output is forced inside the script, so `-X utf8` is no longer needed for non-ASCII paths.
+- Exit code is non-zero when any file fails — read the `[ERROR]` / `[skip]` lines, never report success on exit 1.
+
+**Files the script refuses (verified on this workspace's FS files):**
+
+- **Legacy `.doc`** (e.g. ZAA01's FS) → `[skip] ... Save As .docx`. Ask the user to re-save it in Word; do not fall back to MarkItDown for it.
+- **A `.docx` that is really an OLE container** (header `d0 cf 11 e0`, e.g. ZMFGLSX's `... - Copy.docx`): a renamed `.doc` or a password/IRM-protected file → `[ERROR] ... OLE container`. Same fix: open in Word, remove protection, Save As `.docx`.
 
 ### Why not MarkItDown for DOCX
 
@@ -67,8 +73,8 @@ The 332 KB image was a legible Fiori screenshot with a business rule highlighted
 ## 2. XLSX / XLS — never use MarkItDown
 
 ```bash
-./.venv_markitdown/Scripts/python.exe -X utf8 scripts/office_to_md.py \
-  "FS/[Target]/[File].xlsx" -o "artifacts/targets/[Target]/build/"
+./.venv_markitdown/Scripts/python.exe .claude/scripts/office_to_md.py \
+  "artifacts/targets/[Target]/fs/[File].xlsx" -o "artifacts/targets/[Target]/fs/"
 ```
 
 One Markdown table per sheet, each under an `## <SheetName>` heading.
@@ -84,7 +90,7 @@ Material, Plant, Order and Batch numbers are all numeric-looking codes that may 
 ## 3. PDF / PPTX / other — MarkItDown CLI
 
 ```bash
-./.venv_markitdown/Scripts/markitdown.exe "FS/[Target]/[File].pdf" \
+./.venv_markitdown/Scripts/markitdown.exe "artifacts/targets/[Target]/fs/[File].pdf" \
   -o "artifacts/targets/[Target]/fs/fs_markdown.md"
 ```
 

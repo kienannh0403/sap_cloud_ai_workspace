@@ -7,6 +7,23 @@ description: Find released ABAP classes for ABAP Cloud Development. Use when use
 
 Reference for released ABAP classes available in ABAP for Cloud Development (SAP BTP ABAP Environment).
 
+## Verify the release state first (S/4HANA Cloud Public Edition)
+
+The tables below are a starting point, not proof. Before a TS or code relies on a class, interface, BDEF, BAdI,
+function group or authorization object, look it up in the local index built from SAP's official list
+(`artifacts/system_analysis/CDS_RELEASED_CATALOG/released_objects/`, one CSV per type, README has the counts and the
+SAP list date):
+
+```bash
+grep -i "^CL_ABAP_TX," artifacts/system_analysis/CDS_RELEASED_CATALOG/released_objects/CLAS.csv
+```
+
+- `released` → usable. `deprecated` → use the name in the `successors` column instead. `notToBeReleased` or no
+  row at all → not usable in ABAP Cloud; never invent a released alternative, climb the decision ladder
+  (`.claude/common/decision-ladder.md`).
+- Every fully named class/interface in the tables below was checked against that index on 2026-10-06 (SAP list
+  2026-09-04): 47 of 47 `released`.
+
 ## Quick Reference by Category
 
 | Category | Key Classes |
