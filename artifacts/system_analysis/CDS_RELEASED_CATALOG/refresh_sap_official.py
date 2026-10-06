@@ -8,8 +8,7 @@ Run from the workspace root:
 Source: github.com/SAP/abap-atc-cr-cv-s4hc, src/objectReleaseInfoLatest.json (S/4HANA Cloud Public Edition).
 Refresh = download + filter DDLS -> sap_official/objectReleaseInfo_DDLS.json, read descriptions of views not yet in
 sap_official/descriptions_080.json from tenant 080 (ADT quickSearch, cookie tools/vsp/cookies_dev.txt), rebuild the
-catalog with build_catalog.py, rebuild released_objects/ (classes, interfaces, BDEFs, BAdIs...) with
-build_object_index.py, append what changed to sap_official/changelog.md.
+catalog with build_catalog.py, append what changed to sap_official/changelog.md.
 
 Exit codes (--check): 0 = up to date, 10 = newer version available, 2 = could not reach GitHub.
 """
@@ -99,10 +98,6 @@ def refresh(remote_date, remote_msg):
     old = local_state()
     raw = json.loads(fetch(RAW_URL, timeout=300))
     objects = [o for o in raw["objectReleaseInfo"] if o["tadirObject"] == "DDLS"]
-    # Classes, interfaces, BDEFs, BAdIs... from the same download, so both catalogs stay on one SAP version.
-    sys.path.insert(0, OUT)
-    import build_object_index
-    object_summary = build_object_index.build(raw["objectReleaseInfo"], remote_date)
 
     old_state = {o["objectKey"]: o["state"] for o in old["objects"]}
     new_state = {o["objectKey"]: o["state"] for o in objects}
@@ -139,8 +134,7 @@ def refresh(remote_date, remote_msg):
              f"- previous SAP update {old.get('sap_last_update')}; {summary}",
              f"- newly released: {len(added)}" + (f" — {', '.join(added[:40])}{' …' if len(added) > 40 else ''}" if added else ""),
              f"- no longer released: {len(dropped)}" + (f" — {', '.join(dropped[:40])}{' …' if len(dropped) > 40 else ''}" if dropped else ""),
-             f"- {desc_note or 'no view without description'}",
-             *(f"- released_objects/{line}" for line in object_summary), ""]
+             f"- {desc_note or 'no view without description'}", ""]
     header = "# Changelog — SAP official released CDS list\n\n" if not os.path.exists(CHANGELOG) else ""
     with open(CHANGELOG, "a", encoding="utf-8") as fh:
         fh.write(header + "\n".join(lines) + "\n")

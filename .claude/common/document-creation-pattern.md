@@ -10,13 +10,13 @@ table is ordinary RAP (`rap`). Adapted from StormShynn/sap-abap-agent `docs/sap-
 
 | # | Interface | Use when | Check in |
 |---|---|---|---|
-| 1 | **EML on a released BDEF** — `MODIFY ENTITIES OF <I_xxxTP> ENTITY … CREATE / EXECUTE` | the document's BO has a released BDEF with the operation you need | `CDS_RELEASED_CATALOG/released_objects/BDEF.csv`, then read the BDEF on ADT for its operations, actions and numbering |
+| 1 | **EML on a released BDEF** — `MODIFY ENTITIES OF <I_xxxTP> ENTITY … CREATE / EXECUTE` | the document's BO has a released BDEF with the operation you need | `artifacts/system_analysis/SAP_RELEASE_WATCH/released_objects/objects.csv` (type `BDEF`), then read the BDEF on ADT for its operations, actions and numbering |
 | 2 | **Standard OData / SOAP API** over a Communication Arrangement | no released BDEF, the BDEF lacks the operation, or the number is needed synchronously but the BDEF uses late numbering | decision ladder rung 5b; api.sap.com filtered on S/4HANA Cloud Public Edition; [Skill: odata] |
-| 3 | **Released function module** | only when it is in `released_objects/FUGR.csv` with state `released` | 41 released in total (2026-09-04), mostly technical (`BAPI_TRANSACTION_COMMIT`, `BALW_*`) |
+| 3 | **Released function module** | only when `objects.csv` lists it (type `FUGR`) with state `released` | 41 released in total (2026-09-04), mostly technical (`BAPI_TRANSACTION_COMMIT`, `BALW_*`) |
 
 Classic document BAPIs are **not** released for Public Cloud; SAP names the BDEF that replaces them — e.g.
 `BAPI_GOODSMVT_CREATE` → `I_MATERIALDOCUMENTTP`, `BAPI_ACC_DOCUMENT_POST` → `I_JOURNALENTRYTP` (`notToBeReleased`,
-`successors` column of `FUGR.csv`). Never plan on a BAPI because it is familiar; never read or write the standard
+`successors` column of `objects.csv`). Never plan on a BAPI because it is familiar; never read or write the standard
 table directly (rule §3). Nothing fits → decision ladder sub-ladder 5c/5d.
 
 ## 2. Nine mandatory steps, whatever the trigger

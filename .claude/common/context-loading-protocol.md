@@ -31,7 +31,7 @@ Subagents do not see `CLAUDE.md` imports automatically: their agent file tells t
 | Any business-data read (`SAP(action="query")`, data preview, curl `datapreview/freestyle`) | `exceptions/README.md` (hook `block-forbidden-tables.sh` enforces it anyway) |
 | FS / TS / functional question in an active module | `configs/<MODULE>/README.md`, then the one topic file needed |
 | Picking a released CDS view | `artifacts/system_analysis/CDS_RELEASED_CATALOG/INDEX.md` (memory `cds-released-catalog`) |
-| Relying on a standard class / interface / BDEF / BAdI / function module | `artifacts/system_analysis/CDS_RELEASED_CATALOG/released_objects/README.md`, then grep the one CSV |
+| Relying on a standard class / interface / BDEF / BAdI / function module | `artifacts/system_analysis/SAP_RELEASE_WATCH/released_objects/objects.csv` (grep the name; `type` column, `successors` for deprecated) |
 | Custom code creates or changes a standard SAP document (EML on a standard BO, standard API, upload, inbound API) | `common/document-creation-pattern.md` |
 | Resuming work on a target | `artifacts/targets/<TARGET>/INDEX.md`, then only the `notes/*.md` it links that the task needs (rule §4) |
 | Country-specific requirement: tax, invoice, statutory accounting, fixed assets, amount/currency or date format (`SAP_COUNTRY=vn`) | `country/vn.md` — its `to verify` regulation rows are questions for the customer, not facts |

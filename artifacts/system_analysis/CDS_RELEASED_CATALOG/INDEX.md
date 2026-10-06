@@ -62,8 +62,7 @@ chưa có trên tenant 080 (`in_080 = no`); 218 view deprecated/notToBeReleased 
 | `_fields_only/` | view có ở sheet Fields nhưng SAP không released (74) |
 | `_deprecated/` | 218 view deprecated/notToBeReleased + view thay thế (`successors`) |
 | `sap_official/` | nguồn SAP (JSON lọc DDLS), mô tả đọc từ 080, `released_ddls_public_cloud.csv` (danh sách phẳng, sinh tự động), README |
-| `released_objects/` | **object released ngoài CDS** (từ cùng file SAP): `CLAS.csv`, `INTF.csv`, `BDEF.csv` (RAP BO gọi bằng EML), `BADI.csv`, `FUGR.csv`, `SUSO.csv` (authorization object) + README (số lượng, cách tra). Sinh bởi `build_object_index.py`, từ 2026-10-06 |
+| `../SAP_RELEASE_WATCH/released_objects/objects.csv` | **object released ngoài CDS** (class, interface, BDEF, BAdI, function module, authorization object…, kèm mô tả) — cùng file SAP, do release watch giữ cập nhật; catalog này chỉ chia CDS theo module |
 | `verified_external/` | field/bẫy CDS **đã verify thật** đối chiếu từ dự án khác (FI, CO, PP, LE-TM, QM) — tin cậy hơn `views.csv` |
-| `refresh_sap_official.py` | kiểm tra SAP có danh sách mới không, có thì tải + đọc mô tả 080 + chạy `build_catalog.py` + `build_object_index.py` + ghi `changelog.md` |
-| `build_object_index.py` | sinh lại `released_objects/` (chạy riêng được: `python -X utf8 artifacts/system_analysis/CDS_RELEASED_CATALOG/build_object_index.py`) |
+| `refresh_sap_official.py` | kiểm tra SAP có danh sách mới không, có thì tải + đọc mô tả 080 + chạy `build_catalog.py` + ghi `changelog.md` |
 | `build_catalog.py` | sinh lại `modules/`, `catalog_all.csv`, `module_map.md`, `relations/`, `_fields_only/`, `_deprecated/`, `sap_official/released_ddls_public_cloud.csv` khi nguồn đổi: `python -X utf8 artifacts/system_analysis/CDS_RELEASED_CATALOG/build_catalog.py`. **Không đụng** `verified_external/`, `process_flows.md` (viết tay) |

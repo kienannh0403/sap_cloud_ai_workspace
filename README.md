@@ -65,7 +65,7 @@ flowchart LR
     TS --> G1{{"👤 Người duyệt TS"}}
     G1 --> CR["/sap-dev-create-report"]
     G1 --> CTA["/sap-dev-create-transactional-app"]
-    CR --> BUILD["Build RAP tuần tự<br/>mỗi object: Lint → Activate<br/>→ activation-guard 4 gate"]
+    CR --> BUILD["Build RAP tuần tự<br/>mỗi object: Lint → kiểm released → Activate<br/>→ activation-guard 4 gate"]
     CTA --> BUILD
     BUILD --> SV["🧪 Phase 2 tự kiểm trên client 100<br/>data: case dương / âm / biên<br/>UI: metadata + chạy app thật VI/EN"]
     SV --> G2{{"👤 Phần còn lại người dùng kiểm<br/>action đổi dữ liệu, in ấn — tối đa 3 vòng"}}
@@ -91,7 +91,7 @@ flowchart LR
 
    Mỗi tenant một file cookie riêng. Không commit `.mcp.json`, `vsp.exe` hay file cookie.
 4. **Lấy cookie:** `vsp.exe --browser-auth … --cookie-save tools/vsp/cookies_<dev|cus>.txt`, đăng nhập SSO trên Chrome (nên đóng Chrome trước). Restart VS Code để server MCP đọc cookie mới, rồi chạy `bash .claude/scripts/sap-doctor.sh` (hoặc nói với Claude "kiểm tra workspace"): cookie từng tenant, tool, hook, integrity phải PASS hết.
-5. FS dạng PDF/PPTX/HTML cần venv MarkItDown: `python -m venv .venv_markitdown` rồi `.venv_markitdown\Scripts\pip install "markitdown[all]"`.
+5. Đọc FS cần venv MarkItDown: `python -m venv .venv_markitdown` rồi `.venv_markitdown\Scripts\pip install "markitdown[all]"`. PDF / PPTX / HTML đi qua MarkItDown; **DOCX / XLSX đi qua `.claude/scripts/office_to_md.py`** trong cùng venv (giữ ảnh nhúng, giữ mã SAP có số 0 đầu). File `.doc` cũ hoặc docx có mật khẩu: mở Word, Save As `.docx` trước.
 6. Bỏ FS vào `artifacts/targets/<TARGET>/fs/`.
 7. **Khoá `.claude/`:** muốn sửa rule/skill/hook thì **người dùng** tự tạo file rỗng `.claude/.unlock` (agent không bao giờ được tạo file này). Sửa xong chạy `bash .claude/scripts/integrity-check.sh`, rồi xoá `.unlock`.
 
@@ -125,6 +125,8 @@ flowchart LR
 /sap-dev-code-review <OBJECT> "<trọng tâm>"                  # review nghiêm ngặt, chỉ tư vấn
 ```
 
+Trước khi đẩy object lên SAP, workflow build chạy `python -X utf8 .claude/scripts/released_check.py <bản nháp>`: mọi class / interface / CDS / BDEF / function module chuẩn trong bản nháp được tra trong danh sách SAP; object deprecated hay chưa released bị chặn ngay (kèm tên thay thế), không đợi tới ATC. Code tạo chứng từ SAP chuẩn (sales order, goods movement, journal entry…) theo `.claude/common/document-creation-pattern.md`: EML trên BDEF released trước, API chuẩn sau — BAPI cổ điển như `BAPI_GOODSMVT_CREATE` không released trên Public Cloud — và chống tạo trùng khi gọi lại.
+
 Mọi workflow build đều hỏi lại thông tin còn thiếu (package, TR, chỗ hổng trong TS) trước khi động vào hệ thống. Không có bằng chứng activation thì không đánh dấu xong; activate được chưa có nghĩa là đúng.
 
 ### Phase 2 — kiểm tra chạy thật
@@ -140,6 +142,8 @@ Với `/sap-dev-create-report` và `/sap-dev-create-transactional-app`, Manager 
 | 2.3 | Manager | Ghi **mọi case** (`TC-nn` / `UI-nn` / `M-nn`) cùng mong đợi, thực tế, PASS/FAIL, evidence vào `handbook.json` của version đang build, rồi render sổ tay. Lần mới ở trên, không xoá lần cũ |
 
 Script dùng chung: `.claude/scripts/odata-verify/fetch.sh` (samecode / srvurl / metadata / sample) và `ui-check.js` — chạy không tham số để xem hướng dẫn; chỉ gọi GET, lấy host và cookie từ `.mcp.json`.
+
+**Lỗi đã gặp — error codex:** gặp lỗi (dump, popup, mã HTTP, exception), Claude tra `artifacts/system_analysis/ERROR_CODEX/` theo mã lỗi trước khi lần dấu từ đầu: `python -X utf8 artifacts/system_analysis/ERROR_CODEX/codex.py find "<mã lỗi>"`. Mỗi **nguyên nhân gốc** là một entry (mã lỗi, triệu chứng, cách sửa, `verified` + bằng chứng, các lần gặp). Sửa xong mà cùng nguyên nhân thì chỉ thêm một dòng `occurrences`, không tạo bản trùng (`codex.py check` báo trùng); gặp ≥ 3 lần ở các target thì Claude đề xuất phòng ngừa. Skill `sap-analyze-symptom` và `/sap-dev-bug-fix` làm việc này tự động.
 
 `/sap-dev-bug-fix` ghi sổ tay theo cùng cách: `R-nn` tái hiện bug trước và sau khi sửa (trên data thật của client 100 khi được; lỗi nhìn thấy trên màn hình thì tái hiện bằng `fiori-ui-check`), `UT-nn` unit test theo ma trận dương / âm / biên, `REG-nn` hồi quy cho từng object phụ thuộc.
 
@@ -224,7 +228,8 @@ WORK_SPACE/
 │   │   ├── system-config.md         #   Tier 1: hệ thống, 11 module, country, tier, blocklist, server ghi/đọc
 │   │   ├── context-loading-protocol.md  # 4 tầng nạp context
 │   │   ├── cloud-abap-constraints.md    # Câu lệnh cấm + API thay thế
-│   │   ├── decision-ladder.md       #   Dùng lại trước khi tạo mới
+│   │   ├── decision-ladder.md       #   Dùng lại trước khi tạo mới (+ 5a–5d khi object chưa released)
+│   │   ├── document-creation-pattern.md # Tạo chứng từ SAP chuẩn: thứ tự interface, 9 bước, chống trùng
 │   │   └── handbook-target.md       #   Layout folder target + schema handbook.json (versions / records)
 │   ├── configs/<MODULE>/            # 📘 Kiến thức Public Cloud của 11 module
 │   ├── country/vn.md                # 🇻🇳 Bản địa hoá Việt Nam
@@ -236,6 +241,8 @@ WORK_SPACE/
 │   ├── scripts/integrity-check.sh   # ✅ Kiểm tra toàn vẹn sau mọi thay đổi .claude/
 │   ├── scripts/odata-verify/        # 🧪 fetch.sh + ui-check.js: kiểm data / UI qua OData (chỉ đọc)
 │   ├── scripts/handbook/            # 📒 render_target.py (sổ tay) · drift_check.py (sửa ngoài workspace)
+│   ├── scripts/office_to_md.py      # 📄 FS docx/xlsx → Markdown (giữ ảnh, giữ mã SAP)
+│   ├── scripts/released_check.py    # 🔎 Bản nháp có dùng object chưa released / deprecated không
 │   ├── scripts/sap-doctor.sh        # 🩺 Sức khỏe workspace: tool, cookie 080/100, hook, integrity, .unlock
 │   ├── scripts/z_catalog/           # 🗃️ build_z_catalog.py: kho object Z dùng lại (quét qua ADT, chỉ đọc)
 │   └── settings.json                # Đăng ký hook + thư mục memory
@@ -247,6 +254,7 @@ WORK_SPACE/
     ├── system_analysis/CDS_RELEASED_CATALOG/  # 7.893 CDS view released chia theo module
     ├── system_analysis/SAP_RELEASE_WATCH/     # Theo dõi SAP phát hành gì mới
     ├── system_analysis/Z_OBJECT_CATALOG/ 🔒   # Kho object Z/Y của dự án theo package
+    ├── system_analysis/ERROR_CODEX/           # Lỗi đã gặp, tra theo mã lỗi (codex.py find)
     └── scratchpads/_session/        #   Snapshot của hook pre-compact
 ```
 
@@ -301,7 +309,7 @@ Khi chọn object để dùng (CDS view, class, BDEF, API, event, BAdI), Claude 
 
 | Nguồn | Nội dung | Lưu ở |
 |---|---|---|
-| Cloudification Repository (`SAP/abap-atc-cr-cv-s4hc`), cũng là danh sách ATC dùng | ~37.000 object dùng được trong ABAP Cloud, trạng thái released / deprecated, object thay thế | `SAP_RELEASE_WATCH/released_objects/` |
+| Cloudification Repository (`SAP/abap-atc-cr-cv-s4hc`), cũng là danh sách ATC dùng | ~37.000 object dùng được trong ABAP Cloud (mọi loại: class, interface, BDEF, BAdI, function module…), trạng thái released / deprecated, object thay thế, mô tả — nguồn của `released_check.py` | `SAP_RELEASE_WATCH/released_objects/` |
 | SAP Business Accelerator Hub (gói Public Edition) | API OData / SOAP / REST, business event, BAdI, BO interface, CDS | `SAP_RELEASE_WATCH/api_hub/` |
 | Danh sách CDS ở trên, chia theo module | 7.893 CDS view released, mô tả đọc từ 080, view deprecated kèm view thay thế | `CDS_RELEASED_CATALOG/` (đọc `INDEX.md` trước) |
 | SAP Help — What's New | Tính năng mới, app bị gỡ theo release | `SAP_RELEASE_WATCH/whats_new/<release>.md` |

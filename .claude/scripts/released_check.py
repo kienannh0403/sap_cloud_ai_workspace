@@ -2,9 +2,9 @@
 """Released-object check for draft ABAP / CDS / BDEF source, before it is pushed to SAP.
 
 Finds every standard SAP object a draft names (classes, interfaces, exception classes, XCO, CDS views, BDEFs,
-called function modules) and looks it up in the local copy of SAP's official release list:
-  artifacts/system_analysis/CDS_RELEASED_CATALOG/sap_official/objectReleaseInfo_DDLS.json   (CDS views)
-  artifacts/system_analysis/CDS_RELEASED_CATALOG/released_objects/*.csv                      (CLAS, INTF, BDEF, FUNC...)
+called function modules) and looks it up in the local copy of SAP's official release list, every object type in one
+file kept current by the session-start release watch:
+  artifacts/system_analysis/SAP_RELEASE_WATCH/released_objects/objects.csv
 Catches "not released / deprecated" before Push, instead of in ATC (Gate 4) after activation. It does not replace
 ATC: it only knows names, not statements or field-level release.
 
@@ -21,9 +21,7 @@ import re
 import sys
 from pathlib import Path
 
-CATALOG = Path("artifacts/system_analysis/CDS_RELEASED_CATALOG")
-DDLS_JSON = CATALOG / "sap_official" / "objectReleaseInfo_DDLS.json"
-OBJECT_DIR = CATALOG / "released_objects"
+OBJECTS_CSV = Path("artifacts/system_analysis/SAP_RELEASE_WATCH/released_objects/objects.csv")
 SOURCE_SUFFIXES = {".abap", ".asddls", ".asbdef", ".ddlx", ".asddlxs", ".srvd", ".acds", ".txt"}
 
 # Prefixes that are only ever SAP objects: an unknown name here is a real finding wherever it appears.
@@ -42,17 +40,14 @@ CALL_FUNCTION = re.compile(r"\bCALL\s+FUNCTION\s+'([A-Z0-9_/]+)'", re.IGNORECASE
 
 
 def load_index():
-    if not DDLS_JSON.exists() or not OBJECT_DIR.exists():
-        sys.exit(f"released index missing: {DDLS_JSON} / {OBJECT_DIR} — run build_object_index.py (see its INDEX.md)")
+    if not OBJECTS_CSV.exists():
+        print(f"released list missing: {OBJECTS_CSV} — run from the workspace root, or refresh it with "
+              "artifacts/system_analysis/SAP_RELEASE_WATCH/refresh_sap_release_watch.py --force", file=sys.stderr)
+        sys.exit(2)
     index = {}
-    for obj in json.loads(DDLS_JSON.read_text(encoding="utf-8"))["objects"]:
-        succ = ";".join(s.get("objectKey", "") for s in obj.get("successors", []))
-        index.setdefault(obj["objectKey"].upper(), []).append(("DDLS", obj["state"], succ))
-    for path in sorted(OBJECT_DIR.glob("*.csv")):
-        with path.open(encoding="utf-8", newline="") as fh:
-            for row in csv.DictReader(fh):
-                index.setdefault(row["object_key"].upper(), []).append(
-                    (row["object_type"], row["state"], row["successors"]))
+    with OBJECTS_CSV.open(encoding="utf-8-sig", newline="") as fh:
+        for row in csv.DictReader(fh):
+            index.setdefault(row["name"].upper(), []).append((row["type"], row["state"], row["successors"]))
     return index
 
 
@@ -91,7 +86,8 @@ def scan_file(path: Path, index):
                 findings.append((no, up, "source" if up in positioned else "weak"))
         for up in positioned:  # data source with any non-Z name (e.g. a view without a prefix)
             if not WEAK_PREFIX.match(up) and not STRONG.fullmatch(up) and not up.startswith(("Z", "Y", "$")):
-                if up in index:
+                # only a data source / BO counts here — not e.g. an EML entity alias or the keyword TABLE
+                if any(hit[0] in ("DDLS", "BDEF") for hit in index.get(up, [])):
                     findings.append((no, up, "source"))
     seen, unique = set(), []
     for item in findings:
