@@ -1,0 +1,37 @@
+{
+  "severity": "High",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "Object page empty / 'Failed to drill-down': single-row read returns several rows",
+  "module": "RAP / ABAP Cloud",
+  "msgKeys": [
+    "SADL_GW/054",
+    "SADL_GW 054",
+    "Multiple instances returned for entity",
+    "Failed to drill-down"
+  ],
+  "symptom": "GET <Entity>(<key>) answers 'Multiple instances returned for entity <X> using given key'; browser console shows 'Failed to drill-down'. The object page may seem to work only because FE reuses the list cache.",
+  "rootCause": "A query implementation (custom entity / query provider class) ignores the key filters of a single-row read and returns the whole result set.",
+  "solutions": [
+    {
+      "label": "Honour the key filter in the query provider",
+      "recommended": true,
+      "body": "When the key fields arrive as filter, return exactly the matching row. Keys must be stable: a running number (STT) that changes when other filters change is not a key."
+    }
+  ],
+  "prevention": "Test the object page with a filter that changes the list (so FE cannot use its cache).",
+  "evidence": [
+    "artifacts/targets/ZMA01/notes/single-row-read-key.md",
+    "artifacts/targets/ZMA01/build/odata_verify/20261005_ui_check.md"
+  ],
+  "occurrences": [
+    {
+      "target": "ZMA01",
+      "date": "2026-10-06",
+      "note": "notes/single-row-read-key.md"
+    }
+  ],
+  "createdAt": "2026-10-06"
+}

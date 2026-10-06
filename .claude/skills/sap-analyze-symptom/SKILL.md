@@ -12,6 +12,12 @@ Read-only. This skill never edits, activates, deletes, runs ABAP (`analyze type=
 What the user did (app / service / report + action), when (date, time, roughly), which system/client (080 dev test or
 100 test — both readable), the exact message text or a screenshot. Everything else comes from the system.
 
+**Then look the error up in the codex before collecting anything:** `python -X utf8 artifacts/system_analysis/ERROR_CODEX/codex.py find "<message ID / HTTP status /
+exception / log text>"` (try 2-3 keys from the message). A hit gives known root causes with their proof
+(`verified`, `evidence`) — Step 2 then checks whether THIS case matches one of them instead of starting blind;
+an entry with `verified: false` is a hypothesis, not a finding. Several hits on one key = several known causes:
+the evidence decides which. Format and rules: `artifacts/system_analysis/ERROR_CODEX/README.md`.
+
 ## Step 2 — collect evidence from SAP (`mcp__<server>__SAP`, load with ToolSearch first — rule §9)
 Run on the client where the symptom happened; cookie dead → [Skill: sap-doctor].
 
@@ -46,5 +52,8 @@ INDEX.md; no folder yet → create folder + INDEX.md per rule §4):
 - symptom as reported · evidence collected (call + what it returned) · root cause **confirmed / probable** with the
   proof · affected objects · suggested fix direction (no code) · regression risk.
 - One line in the target's INDEX.md; a trap worth remembering → `notes/<topic>.md`.
+- Root cause **confirmed** → update the codex (README "Khi nào ghi"): same cause as an entry → add an
+  `occurrences` row; new cause → new entry with `evidence` pointing at this report. Then `codex.py check` exit 0.
+  A probable (unproven) cause is not written to the codex.
 Then offer `/sap-dev-bug-fix` with this report as its input — the report replaces its "mock data" interview only for
 the facts it proved.

@@ -1,0 +1,39 @@
+{
+  "severity": "High",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "MODIFY … UPDATE FIELDS ( … ) blanks a field that already had a value",
+  "module": "RAP / ABAP Cloud",
+  "msgKeys": [
+    "UPDATE FIELDS",
+    "%control",
+    "field wiped",
+    "value lost after update"
+  ],
+  "symptom": "After a write-back (e.g. results of an external API call), rows that already had a result lose it: the field is initial in the database.",
+  "rootCause": "UPDATE FIELDS ( f1 f2 ) builds the control flags from the field list for every row alike, so a row with an initial f1 overwrites the stored value with blank.",
+  "solutions": [
+    {
+      "label": "Drop those rows from the write pipeline",
+      "recommended": true,
+      "body": "Filter right after READ ENTITIES (e.g. DELETE lt_row WHERE Result IS NOT INITIAL) so the rows that must keep their value never reach the MODIFY."
+    },
+    {
+      "label": "Two MODIFY statements",
+      "body": "One per field group; the second fed only with the rows that should get the value. (Per-row %control with UPDATE SET FIELDS WITH: not verified.)"
+    }
+  ],
+  "prevention": "Unit-test write-backs with a mix of filled and initial values.",
+  "evidence": [
+    "memory rap-modify-control-vs-update-fields (2026-08-24)"
+  ],
+  "occurrences": [
+    {
+      "target": "(old workspace)",
+      "date": "2026-08-24"
+    }
+  ],
+  "createdAt": "2026-08-24"
+}

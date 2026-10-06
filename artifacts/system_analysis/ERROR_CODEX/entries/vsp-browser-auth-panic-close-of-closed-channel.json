@@ -1,0 +1,36 @@
+{
+  "severity": "High",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "vsp --browser-auth panics 'close of closed channel' right after SSO redirect",
+  "module": "Tooling / MCP",
+  "msgKeys": [
+    "panic: close of closed channel",
+    "allocate.go",
+    "chrome failed to start",
+    "SSO redirect in progress"
+  ],
+  "symptom": "vsp prints 'SSO redirect in progress' (or 'error reading cookies: chrome failed to start') then 'panic: close of closed channel' in chromedp allocate.go within seconds.",
+  "rootCause": "chromedp cannot start its browser: default Edge auto-detect fails, and a running Chrome instance can block it even with --browser-exec Chrome.",
+  "solutions": [
+    {
+      "label": "Close Chrome, use --browser-exec Chrome",
+      "recommended": true,
+      "body": "Get-Process chrome must be 0 (ask the user, never kill it), pass --browser-exec \"C:/Program Files/Google/Chrome/Application/chrome.exe\" and --browser-auth-timeout 5m. Never pipe through head."
+    }
+  ],
+  "prevention": "sap-doctor step 3 checks Chrome before running the refresh.",
+  "evidence": [
+    "memory sap-cloud-dev-connection (2026-08-11, 2026-09-03, 2026-09-21)",
+    "this session 2026-10-05: Chrome closed -> both tenants 'Authentication successful! Extracted 2 cookies'"
+  ],
+  "occurrences": [
+    {
+      "target": "(workspace)",
+      "date": "2026-09-21"
+    }
+  ],
+  "createdAt": "2026-08-11"
+}

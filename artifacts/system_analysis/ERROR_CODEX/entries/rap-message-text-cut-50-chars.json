@@ -1,0 +1,44 @@
+{
+  "severity": "Medium",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "RAP message text silently cut after 50 characters",
+  "module": "RAP / ABAP Cloud",
+  "msgKeys": [
+    "new_message_with_text",
+    "SABP_BEHV 100",
+    "SABP_BEHV/100",
+    "message truncated",
+    "msgv1"
+  ],
+  "symptom": "A long text passed to new_message_with_text( text = … ) arrives in Fiori cut at 50 characters (Vietnamese diacritics count as 1).",
+  "rootCause": "CL_ABAP_BEHV->NEW_MESSAGE_WITH_TEXT puts the whole text into v1 of message SABP_BEHV 100; msgv1 is TYPE symsgv (CHAR 50). Cut in the backend, before OData.",
+  "solutions": [
+    {
+      "label": "Long text in an abap.string field of the entity",
+      "recommended": true,
+      "body": "Result/message column with @UI.lineItem; keep %msg short and pointing at it."
+    },
+    {
+      "label": "Own message class",
+      "body": "INHERITING FROM cx_static_check, INTERFACES if_abap_behv_message, redefine if_message~get_text returning a string. One new object (TR if transportable)."
+    },
+    {
+      "label": "T100 with &1&2&3&4",
+      "body": "4 x 50 chars, split on word boundaries. Weakest option."
+    }
+  ],
+  "prevention": "Never route API/BAPI error texts through new_message_with_text.",
+  "evidence": [
+    "memory rap-message-text-50-char-limit (SAP source CL_ABAP_BEHV read on the DEV tenant 2026-08-24)"
+  ],
+  "occurrences": [
+    {
+      "target": "(old workspace)",
+      "date": "2026-08-24"
+    }
+  ],
+  "createdAt": "2026-08-24"
+}

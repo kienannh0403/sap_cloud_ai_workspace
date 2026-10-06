@@ -1,0 +1,39 @@
+{
+  "severity": "Medium",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "Released view returns 0 rows although data exists (privileged-only association target)",
+  "module": "CDS / Fiori Elements",
+  "msgKeys": [
+    "0 rows",
+    "privilegedAssociations",
+    "I_MRPController"
+  ],
+  "symptom": "SELECT from a released view (e.g. I_MRPController) returns no rows for the user even without WHERE, on a client where business data is readable.",
+  "rootCause": "The view is only reachable through @AccessControl.privilegedAssociations of another view (I_ManufacturingOrder lists _MRPController), so direct access is filtered to nothing.",
+  "solutions": [
+    {
+      "label": "Use the released value-help view",
+      "recommended": true,
+      "body": "e.g. I_MRPControllerVH: rows for every plant, applies the viewer's own authorization."
+    },
+    {
+      "label": "WITH PRIVILEGED ACCESS",
+      "body": "Not chosen: drops the authority checks of the whole SELECT."
+    }
+  ],
+  "prevention": "An empty result from a released view is a finding to explain, not a fact about the data.",
+  "evidence": [
+    "artifacts/targets/ZMA01/notes/mrp-controller-name-source.md"
+  ],
+  "occurrences": [
+    {
+      "target": "ZMA01",
+      "date": "2026-10-06",
+      "note": "notes/mrp-controller-name-source.md"
+    }
+  ],
+  "createdAt": "2026-10-06"
+}

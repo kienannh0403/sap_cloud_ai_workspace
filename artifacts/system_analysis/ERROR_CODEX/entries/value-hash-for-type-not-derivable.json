@@ -1,0 +1,35 @@
+{
+  "severity": "Low",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "VALUE #( FOR … ) does not compile in APPEND LINES OF / inline DATA( )",
+  "module": "RAP / ABAP Cloud",
+  "msgKeys": [
+    "VALUE #(",
+    "APPEND LINES OF VALUE #",
+    "DATA(",
+    "type cannot be derived"
+  ],
+  "symptom": "Syntax error on APPEND LINES OF VALUE #( FOR … ) TO failed-entity, or DATA(x) = VALUE #( FOR … ). (Exact SAP message text not recorded — add it at the next occurrence.)",
+  "rootCause": "# needs a typed target or a typed expression inside; the source position of APPEND LINES OF and an inline declaration provide neither, and FOR does not either.",
+  "solutions": [
+    {
+      "label": "Declare first or APPEND VALUE per row",
+      "recommended": true,
+      "body": "DATA lt_x LIKE lt_src. lt_x = VALUE #( FOR … ). — or LOOP + APPEND VALUE #( … ) TO <typed>."
+    }
+  ],
+  "prevention": "Frequent in RAP handlers filling failed-/reported- tables.",
+  "evidence": [
+    "memory abap-value-hash-type-inference-traps (user review 2026-08-24)"
+  ],
+  "occurrences": [
+    {
+      "target": "(old workspace)",
+      "date": "2026-08-24"
+    }
+  ],
+  "createdAt": "2026-08-24"
+}

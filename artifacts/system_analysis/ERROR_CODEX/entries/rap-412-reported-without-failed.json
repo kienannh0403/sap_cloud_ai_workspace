@@ -1,0 +1,46 @@
+{
+  "severity": "High",
+  "verified": true,
+  "refs": [
+    "SAP Help: Fiori Elements OData V4 — Confirmation Popups (strict handling)",
+    "Other cause with the same 412: ETag not refreshed by the behaviour (StormShynn/sap-error-codex rap-draft-save-412-precondition-failed-etag, not verified here)"
+  ],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "RAP action shows a 'Warning … Proceed anyway?' popup instead of a red error (HTTP 412)",
+  "module": "RAP / ABAP Cloud",
+  "msgKeys": [
+    "412 Precondition Failed",
+    "HTTP 412",
+    "Proceed anyway?",
+    "handling=strict"
+  ],
+  "symptom": "Fiori Elements (OData V4) action: dialog titled 'Warning' with the ABAP message + 'Proceed anyway?' and Execute / Cancel, although the handler reported a severity-error message. Network: HTTP 412.",
+  "rootCause": "FE sends actions with 'Prefer: handling=strict'. A blocking message in REPORTED without a matching FAILED entry makes RAP answer 412; FE renders its own confirmation popup (title and text are FE's, not the ABAP message). Pressing Execute re-sends the same request WITHOUT the header, so the handler runs a second time (duplicate external calls / documents). A state message (%state_area) breaks it.",
+  "solutions": [
+    {
+      "label": "Persist the per-row result instead of a %msg",
+      "recommended": true,
+      "body": "For mass/staging screens: write a status criticality column + an abap.string message column, report no %msg -> no popup, results survive. FAILED would roll back everything the request wrote."
+    },
+    {
+      "label": "Real hard error",
+      "body": "Fill FAILED together with REPORTED (transition message). Trade-off: the changeset rolls back, including values written for other, successful rows."
+    },
+    {
+      "label": "Switch strict handling off in the app",
+      "body": "manifest.json: disableStrictHandling: true (per app or per action)."
+    }
+  ],
+  "prevention": "Decide per action: hard error (FAILED) or persisted result column — never REPORTED alone for errors. Make handlers that call external APIs idempotent (document-creation-pattern.md step 7).",
+  "evidence": [
+    "memory rap-failed-vs-reported-412-popup (observed 2026-08-24, Public Cloud DEV tenant)"
+  ],
+  "occurrences": [
+    {
+      "target": "(old workspace, action calling an external API)",
+      "date": "2026-08-24"
+    }
+  ],
+  "createdAt": "2026-08-24"
+}

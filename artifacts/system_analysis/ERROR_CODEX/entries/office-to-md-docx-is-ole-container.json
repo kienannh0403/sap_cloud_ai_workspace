@@ -1,0 +1,35 @@
+{
+  "severity": "Low",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "FS .docx will not convert: 'Could not find the body element: are you sure this is a docx file?'",
+  "module": "Tooling / MCP",
+  "msgKeys": [
+    "Could not find the body element",
+    "OLE container",
+    "d0 cf 11 e0",
+    "legacy .doc"
+  ],
+  "symptom": "office_to_md.py: '[ERROR] … file is an OLE container, not a docx zip' (mammoth: 'Could not find the body element: are you sure this is a docx file?').",
+  "rootCause": "The file is a legacy .doc renamed to .docx, or a password/IRM-protected Office file (Compound File Binary header d0 cf 11 e0).",
+  "solutions": [
+    {
+      "label": "Save As .docx in Word",
+      "recommended": true,
+      "body": "Open in Word, remove protection if any, Save As .docx, convert again. Do not fall back to MarkItDown."
+    }
+  ],
+  "prevention": "Ask for FS files as real .docx.",
+  "evidence": [
+    "this session 2026-10-06: artifacts/targets/ZMFGLSX/fs/PTB_GO_FS_MFG_ZMFGLSX_LenhSanXuat_V1.0 - Copy.docx header d0 cf 11 e0"
+  ],
+  "occurrences": [
+    {
+      "target": "ZMFGLSX",
+      "date": "2026-10-06"
+    }
+  ],
+  "createdAt": "2026-10-06"
+}

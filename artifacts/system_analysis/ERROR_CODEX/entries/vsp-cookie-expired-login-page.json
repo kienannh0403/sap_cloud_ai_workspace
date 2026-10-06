@@ -1,0 +1,35 @@
+{
+  "severity": "Blocker",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "SAP MCP calls fail: cookie expired, server answers with the HTML login page",
+  "module": "Tooling / MCP",
+  "msgKeys": [
+    "cookie rejected",
+    "got 200 text/html",
+    "expected element type <objectReferences> but have <html>",
+    "login page"
+  ],
+  "symptom": "sap-doctor: 'cookie rejected (got 200 text/html …)'; MCP read fails with 'expected element type <objectReferences> but have <html>'.",
+  "rootCause": "The SSO session cookie in tools/vsp/cookies_*.txt has expired (seen after ~7 days).",
+  "solutions": [
+    {
+      "label": "Refresh with vsp --browser-auth, then restart VS Code",
+      "recommended": true,
+      "body": "Skill sap-doctor step 3: close Chrome first, run vsp with --browser-exec Chrome and --cookie-save per tenant in the background, user logs in, restart VS Code (vsp reads the cookie only at start)."
+    }
+  ],
+  "prevention": "Run sap-doctor at session start / new day.",
+  "evidence": [
+    "this session 2026-10-05: sap-doctor FAIL on both clients (cookie 161h old) -> refresh -> PASS, search ZCL_* returned rows on both servers"
+  ],
+  "occurrences": [
+    {
+      "target": "(workspace)",
+      "date": "2026-10-05"
+    }
+  ],
+  "createdAt": "2026-10-05"
+}

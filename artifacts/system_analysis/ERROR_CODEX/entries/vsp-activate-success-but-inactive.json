@@ -1,0 +1,35 @@
+{
+  "severity": "High",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "MCP ACTIVATE returns success:true but the object is still inactive",
+  "module": "Tooling / MCP",
+  "msgKeys": [
+    "\"success\": true",
+    "messages: []",
+    "inactive_objects",
+    "ACTIVATE"
+  ],
+  "symptom": "SAP(action=edit, target=ACTIVATE) on sap_cloud_dev returns {\"success\": true, \"messages\": []} while the object has severity E errors and stays in the inactive list.",
+  "rootCause": "vsp does not surface activation errors in that response.",
+  "solutions": [
+    {
+      "label": "Prove state with inactive_objects + syntax_check",
+      "recommended": true,
+      "body": "syntax_check with the full source BEFORE push (real messages); analyze inactive_objects AFTER (object name absent = active). activation-guard Gate 2; .claude/scripts/atc/atc_check.py."
+    }
+  ],
+  "prevention": "Never report 'activated' from the ACTIVATE boolean.",
+  "evidence": [
+    "memory activate-success-is-not-active (ZTB_ZMFGKH01_A, 2026-08-11)"
+  ],
+  "occurrences": [
+    {
+      "target": "ZMFGKH01",
+      "date": "2026-08-11"
+    }
+  ],
+  "createdAt": "2026-08-11"
+}

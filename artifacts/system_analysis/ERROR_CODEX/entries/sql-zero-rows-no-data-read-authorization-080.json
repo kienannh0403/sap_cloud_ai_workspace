@@ -1,0 +1,39 @@
+{
+  "severity": "Medium",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "SQL query on client 080 succeeds with zero rows (no data-read authorization)",
+  "module": "Basis / Auth",
+  "msgKeys": [
+    "No authorization to view data",
+    "S_ABPLNGVS",
+    "\"Rows\": []",
+    "datapreview/freestyle"
+  ],
+  "symptom": "SAP(action=query) on sap_cloud_dev returns column metadata and \"Rows\": [] with no error; system INFO fails with 'No authorization to view data' (S_ABPLNGVS).",
+  "rootCause": "The dev user on GM2/080 has no data-read authorization. Metadata, source, ATC and activation work.",
+  "solutions": [
+    {
+      "label": "Read data on client 100 (sap_gm2_cus_ro)",
+      "recommended": true,
+      "body": "Read-only client with data; respect .claude/exceptions/ (blocklist)."
+    },
+    {
+      "label": "Ask for the evidence",
+      "body": "Screenshot from the Fiori app or the functional author."
+    }
+  ],
+  "prevention": "Never quote an empty result from 080 as a finding.",
+  "evidence": [
+    "memory sap-dev-no-data-read-authorization (I_CompanyCode 0 rows, 2026-07-28)"
+  ],
+  "occurrences": [
+    {
+      "target": "(old workspace ZPM01_EX)",
+      "date": "2026-07-28"
+    }
+  ],
+  "createdAt": "2026-07-28"
+}

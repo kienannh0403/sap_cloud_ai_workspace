@@ -29,6 +29,9 @@ Arguments: $ARGUMENTS
      - (2) **Mock Data**: The incorrect input/output behavior observed by the User (e.g., "When passing SO Type = ZOR2, expected Output = 10 but got 0").
 
 ### Phase 2: Root Cause Analysis (RCA) & Impact Analysis
+0. **Codex first:** `python -X utf8 artifacts/system_analysis/ERROR_CODEX/codex.py find "<message ID / HTTP status / exception / log text>"`. A hit lists the
+   known root causes of that error with their proof — confirm or rule out each against this case before tracing
+   from scratch. `verified: false` entries are hypotheses. Rules: `artifacts/system_analysis/ERROR_CODEX/README.md`.
 2. **Load `fs-data-model-extractor` (Trace mode) & `fs-logic-behavior-translator`**:
    - Starting from the reported Object, trace down the source code from the UI/Consumption layer to the Base/Database layer.
    - Pinpoint the exact line of code, JOIN condition, or logic block (e.g., CASE/WHEN) causing the issue by running a dry-run analysis with the provided Mock Data.
@@ -63,6 +66,11 @@ Arguments: $ARGUMENTS
    - `source` = the user's report / TS section / Cross-Impact line; `input` = synthetic mock values only (field names and codes, never amounts or partner data — `.claude/exceptions/`); `result` = PASS / FAIL / ACCEPTED; `evidence` = the ABAP Unit output under `artifacts/targets/<TARGET>/build/unit_test/` or the activation-guard log.
    - When the fix is done: run ATC on **every object of the target** (not only the edited one) and record `atc` on the version (date, variant, scope, result, each finding + handling); update `objects` if the fix added/removed one; set `status`.
    - Run `python .claude/scripts/handbook/render_target.py <TARGET>`. A FAIL means the fix is not done: fix, re-run, and log a new block.
+   - **Error codex** (only once the fix is verified): same root cause as an existing entry → add an `occurrences`
+     row (target, date, note) and, if that entry was `verified: false` and this fix proved it, set `true` + `evidence`;
+     new root cause → new entry (`evidence` = this walkthrough / note). Never a second file for a known cause.
+     `python -X utf8 artifacts/system_analysis/ERROR_CODEX/codex.py check` must exit 0 (3 = possible duplicate → merge). An entry reaching 3 occurrences on
+     different targets → propose a skill/rule patch that prevents it (rule §14, user approves).
 
 ## Output Format
 

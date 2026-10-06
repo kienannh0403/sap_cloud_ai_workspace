@@ -1,0 +1,41 @@
+{
+  "severity": "High",
+  "verified": true,
+  "refs": [],
+  "source": "own",
+  "updatedAt": "2026-10-06",
+  "title": "Z value help empty / every value rejected when logged on in Vietnamese",
+  "module": "CDS / Fiori Elements",
+  "msgKeys": [
+    "DDCDS_CUSTOMER_DOMAIN_VALUE_T",
+    "không tồn tại",
+    "Không có dữ liệu",
+    "$session.system_language"
+  ],
+  "symptom": "VI logon: value help list empty and a typed value is rejected ('Giá trị … không tồn tại'), so a mandatory filter blocks the search. EN logon works.",
+  "rootCause": "The value-help view reads DDCDS_CUSTOMER_DOMAIN_VALUE_T WHERE language = $session.system_language, but the domain fixed-value texts exist only in language E.",
+  "solutions": [
+    {
+      "label": "Translate the domain fixed values to VI",
+      "recommended": true,
+      "body": "Maintain the texts in VI for every domain the value help uses."
+    },
+    {
+      "label": "Fall back to E in the view",
+      "body": "When no text exists in the logon language, use the E text."
+    }
+  ],
+  "prevention": "Check every Z value help in both VI and EN logon (skill fiori-ui-check runs both).",
+  "evidence": [
+    "artifacts/targets/ZMA01/notes/ui-vietnamese-logon-value-help.md",
+    "artifacts/targets/ZMA01/build/odata_verify/20261005_ui_check.md"
+  ],
+  "occurrences": [
+    {
+      "target": "ZMA01",
+      "date": "2026-10-05",
+      "note": "notes/ui-vietnamese-logon-value-help.md"
+    }
+  ],
+  "createdAt": "2026-10-05"
+}
