@@ -33,7 +33,7 @@ TYPES = {
     "INTF": ("INTF", "interfaces"),
     "BDEF": ("BDEF", "behavior definitions (RAP BOs callable with EML)"),
     "ENHS": ("BADI", "BAdI definitions (object_key = BAdI name, tadir_name = enhancement spot)"),
-    "FUGR": ("FUGR", "function groups (released = callable function modules inside)"),
+    "FUGR": ("FUGR", "function modules (object_key = function module, tadir_name = function group)"),
     "SUSO": ("SUSO", "authorization objects"),
 }
 COLUMNS = ["object_key", "tadir_name", "object_type", "state", "app_component", "software_component", "successors"]

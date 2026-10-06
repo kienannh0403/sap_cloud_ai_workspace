@@ -23,6 +23,7 @@ Read the "Processing Logic" or "Business Rules" sections of the FS carefully:
    - Flag them as violations of Clean Core in S/4HANA Cloud.
    - Propose replacements using **Released Standard CDS Views** (e.g., `I_AccountingDocumentJournal`, `I_MaterialDocumentItem_2`), **Released BTP APIs**, or standard BAdIs/EML patterns.
    - **MANDATORY MCP USAGE**: You MUST search official SAP documentation for valid Cloud-ready replacements and to verify ABAP Cloud syntax/EML patterns before proposing them — do not guess the APIs. Use whichever MCP server/tool your environment exposes for SAP documentation search (`sap-dev-rule.md` §9 — do not assume a hardcoded server name). In Claude Code specifically, a not-yet-loaded MCP tool appears as a deferred stub — use the `ToolSearch` tool with a relevant query to find and load its schema before calling it.
+5b. **Standard document creation:** If an action, upload or interface creates or changes a standard SAP document (sales order, goods movement, journal entry…), capture for each: the document type, the business key that makes a retry safe (idempotency), and whether the number must be returned at once. Design it per `.claude/common/document-creation-pattern.md` (EML on a released BDEF first, standard OData/SOAP API second, released function module last — classic BAPIs such as `BAPI_GOODSMVT_CREATE` are not released).
 6. **Extract Authorization Rules:** Identify standard SAP authorization objects mentioned or specific Data Control Language (DCL) requirements (e.g., restricting by Company Code).
 
 # EXPECTED OUTPUT
@@ -35,5 +36,6 @@ Then provide a clear breakdown of the business logic:
 - **Actions/Determinations:** [List actions with UI placement + enable condition, or write "None"]
 - **Status Machine:** [State table: status → allowed transitions → triggering action → field locks; or "None"]
 - **Numbering Strategy:** [managed UUID / early / late + Number Range object; or "N/A (read-only)"]
+- **Standard Document Creation:** [Per document: type, interface (released BDEF / OData-SOAP API / released FM) with its state from `released_objects/`, idempotency business key, number needed at once yes/no; or "None"]
 - **Clean Core & Cloud Extensibility Check:** [List any violations of Clean Core in the FS and suggest released standard CDS views/APIs replacements]
 - **Authorization Check:** [Specify auth objects or PFCG requirements]

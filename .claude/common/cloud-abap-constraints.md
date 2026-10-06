@@ -7,6 +7,11 @@ task writes, reviews, or designs ABAP/CDS code. Adapted from sc4sap `common/clou
 repository (SAP/abap-atc-cr-cv-s4hc). "Released (A)" = found, state `released`, Clean Core level A.
 Anything not marked that way is **unverified** — check it the same way before using it.
 
+**Draft check before Push:** `python -X utf8 .claude/scripts/released_check.py <draft file or build/ folder>`
+looks up every standard class, interface, CDS view, BDEF and called function module the draft names in the local
+copy of SAP's list (`CDS_RELEASED_CATALOG/`), and prints deprecated ones with their successor. Exit 0 = nothing to
+fix. It knows names only — ATC (activation-guard Gate 4) still decides on statements.
+
 Classic features on the left are **not available** in ABAP for Cloud Development; propose the right-hand
 equivalent instead (fail fast — do not try to "make it work").
 

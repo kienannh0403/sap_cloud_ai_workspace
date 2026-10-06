@@ -10,7 +10,7 @@ CDS views are in the main catalog (`../INDEX.md`), not here.
 | `INTF.csv` | interfaces | 3356 | 12 | 17 |
 | `BDEF.csv` | behavior definitions (RAP BOs callable with EML) | 360 | 8 | 0 |
 | `BADI.csv` | BAdI definitions (object_key = BAdI name, tadir_name = enhancement spot) | 1239 | 16 | 14 |
-| `FUGR.csv` | function groups (released = callable function modules inside) | 41 | 0 | 327 |
+| `FUGR.csv` | function modules (object_key = function module, tadir_name = function group) | 41 | 0 | 327 |
 | `SUSO.csv` | authorization objects | 501 | 29 | 0 |
 
 ## How to look up

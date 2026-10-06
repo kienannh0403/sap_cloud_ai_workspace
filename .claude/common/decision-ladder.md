@@ -54,6 +54,10 @@ Ladder column, e.g. `5b — API_MATERIAL_DOCUMENT_SRV, BDEF I_MaterialDocumentTP
 project's real case; `I_MaterialDocumentTP` is a released BDEF — check its numbering in the BDEF itself before
 relying on this on our tenant).
 
+A row that **creates or changes a standard SAP document** (any rung) also follows
+`.claude/common/document-creation-pattern.md`: interface order, error reading, commit point, document number,
+idempotency key and log — the TS row names each of them.
+
 ## Never cut to climb higher
 
 The ladder removes what is unnecessary, never what is mandatory:
