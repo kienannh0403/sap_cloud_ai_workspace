@@ -79,6 +79,10 @@ Always run **VI and EN**: Z value helps on `DDCDS_CUSTOMER_DOMAIN_VALUE_T` filte
 come back empty for VI when the domain texts exist only in E — a real defect, found this way on ZMA01 (2026-10-05).
 
 ## Step 4 — judge and record
+Read only the screenshots that prove a row, cropped first: `python .claude/skills/fiori-ui-check/scripts/crop.py
+<png> <x0> <y0> <x1> <y1>` (or `--rows y0 y1`); prefer the step-log values for anything that is not visual
+(`.claude/common/lean-sap-io.md` §4).
+
 1. **Look at the screenshots** (Read tool) for every step whose result matters — a returned value is not a picture:
    overlapping or cut-off text, wrong/missing labels, untranslated text, empty columns, error dialogs.
 2. Judge each UI requirement (the `ui_checklist.md` row, or the FS/TS line) PASS / FAIL with the step result or

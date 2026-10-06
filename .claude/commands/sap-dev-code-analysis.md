@@ -35,7 +35,7 @@ Action:
 Step 1: Deep Dive Analysis
 Required Skill: [Skill: fs-logic-behavior-translator] & [Skill: fs-data-model-extractor]
 Action:
-- Sequentially read the source codes of the prioritized objects using the same verified MCP tool.
+- Sequentially read the source codes of the prioritized objects using the same verified MCP tool — `include_context: false`, pull each source to a file once and grep it afterwards instead of re-reading (`.claude/common/lean-sap-io.md` §2).
 - Analyze:
   - Data Model: How tables and CDS views are linked (Joins, Associations).
   - Business Logic: What the main ABAP Classes/Methods do.

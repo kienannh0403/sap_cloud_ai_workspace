@@ -22,6 +22,9 @@ Immediately after every DEPLOY & ACTIVATE (or DELETE) of any SAP object, in any 
 
 ## Protocol — 4 gates, all must pass before DONE
 
+Token-lean I/O for the edit and the gates (short unique `EDITSOURCE` anchors + whole-source diff afterwards,
+reading by method/grep, condensed check output): `.claude/common/lean-sap-io.md`.
+
 ### Gate 1 — Full Activation Log Capture (never trust a boolean)
 
 - Capture the COMPLETE activation result — every message, not just top-line pass/fail.
@@ -34,8 +37,10 @@ Immediately after every DEPLOY & ACTIVATE (or DELETE) of any SAP object, in any 
 
 ### Gate 2 — Confirmed Active State (don't trust the tool's return message alone)
 
-- A tool can report "success" while the object is still flagged inactive/revised server-side (e.g. a downstream inconsistency). Independently confirm:
-  `SAP(action="analyze", params={"type": "inactive_objects"})`
+- A tool can report "success" while the object is still flagged inactive/revised server-side (e.g. a downstream inconsistency). Independently confirm — token-lean, prints only the watched names:
+  `python .claude/scripts/atc/atc_check.py inactive --names <OBJ1>,<OBJ2>,<PREFIX>*`
+  (exit 0 none inactive · 1 a watched object is inactive · 2 session/SAP error → refresh the cookie, or fall back to
+  `SAP(action="analyze", params={"type": "inactive_objects"})`, which lists every inactive object of every user).
 - The object you just touched must NOT appear in that list. If it does, treat it exactly like a Gate 1 error — diagnose the real message behind it, fix, re-activate, re-run both gates.
 
 ### Gate 3 — Ripple / Cross-Impact Check (the gate most builds skip entirely)
@@ -58,25 +63,34 @@ it now, object by object, means a TR move never has to stop and re-check — tha
 2026-09-23): *"bắt buộc phải ATC check, sửa tất cả các lỗi ATC... để khi move TR không cần phải check lại."*
 Applies to **every package**, local or transportable — not just objects headed for a TR.
 
-- Run: `SAP(action="test", params={"type": "atc", "object_url": "<uri of the object>"})`.
-  Result shape: `summary.errors` (priority 1), `summary.warnings` (priority 2), `summary.infos` (priority 3);
-  each item in `worklist.objects[].findings[]` carries `priority` (1/2/3) and `line`.
-- **Scope = diff, not the whole object** (user-approved 2026-09-23): a finding blocks DONE only if it lands on a
-  line you added or changed in THIS step. Pre-existing findings on untouched lines do not block — the object may
-  already carry legacy findings from before this session touched it, and this gate is not a mandate to retroactively
-  clean unrelated old code.
-  - Get the changed-line set the same way Gate 1 does for warnings (`sap-cloud-dev-connection.md` memory: diff the
-    pre-edit and post-edit source with `difflib` opcodes). Match each finding's `line` against that set.
-  - Findings whose line is NOT in the changed set: note the count in the ledger evidence (e.g. "12 pre-existing
-    ATC findings untouched, not introduced by this step"), do not fix them as part of this step, do not let them
-    block DONE.
-  - Findings whose line IS in the changed set: **all three priorities (1 error / 2 warning / 3 info) must be
-    fixed to 0** before this gate passes — same standard as Gate 1's "no unassessed warning," now applied to ATC.
+- **Run with the script (default, user 2026-10-06 — same ATC run on SAP, condensed output):**
+  1. BEFORE the edit (existing object): `python .claude/scripts/atc/atc_check.py baseline --target <T> --label <l> --uri <adt uri>`
+  2. AFTER the edit: `python .claude/scripts/atc/atc_check.py run --target <T> --label <l> --uri <adt uri>`
+     (new object: `run … --new`, baseline = empty → every finding is new). `--uri` may repeat; a package uri checks
+     the whole package tree.
+  It runs the system check variant (`ABAP_CLOUD_DEVELOPMENT_DEFAULT` on this tenant) through the ADT API with the
+  `.mcp.json` cookie, saves every finding to `artifacts/targets/<T>/build/atc/<stamp>_<label>_<baseline|run>.json`
+  (the evidence — cite that path in the ledger), and prints one line per object plus full details of NEW findings
+  only. Exit 0 = no new finding · 1 = NEW findings (gate fails) · 2 = SAP/session error (never a pass: refresh the
+  cookie or fall back) · 3 = usage (e.g. no baseline). Validated 2026-10-06 against the MCP ATC of package ZMA01:
+  67 findings, identical per object.
+- Fallback when the script exits 2: `SAP(action="test", params={"type": "atc", "object_url": "<uri>"})` (full JSON
+  into the conversation — expensive), then compare by hand the same way.
+- **Scope = what this step introduced, not the whole object** (user-approved 2026-09-23): pre-existing findings do
+  not block — the object may carry legacy findings, and this gate is not a mandate to clean unrelated old code.
+  - "New" is decided by signature, not by line number: object + check + message id + message text, counted as a
+    multiset. A legacy finding that only moved because lines were inserted stays "kept" (comparing raw line numbers
+    would call every shifted finding new); one more occurrence of an existing signature IS new. A message whose
+    text embeds a line/variable name may look new after an edit — the script then prints it in full, check it.
+  - Kept findings: note the count in the ledger evidence (e.g. "21 = baseline, NEW 0"), do not fix them as part of
+    this step, do not let them block DONE.
+  - NEW findings: **all three priorities (1 error / 2 warning / 3 info) must be fixed to 0** before this gate
+    passes — same standard as Gate 1's "no unassessed warning," now applied to ATC.
 - If a genuinely new finding cannot be fixed (architectural constraint, ATC rule doesn't apply to this pattern,
   etc.), do not silently accept it: stop and ask the user, and only record `PASS — unverified, user-accepted`
   (rule §11) with the user's explicit written acceptance — never a plain PASS with an unresolved new finding.
-- New object (nothing pre-existing) → the changed-line set is the whole file; Gate 4 then IS "zero findings,
-  whole object" for that object, which is the correct outcome for brand-new code.
+- New object (nothing pre-existing) → `run … --new`: the baseline is empty, so Gate 4 IS "zero findings, whole
+  object" for that object, which is the correct outcome for brand-new code.
 
 ## Ledger integration
 
