@@ -27,6 +27,14 @@ Action:
 - If `artifacts/targets/[Target]/` already exists: [Skill: target-refresh] steps 1–3 first (read-only: report any change made outside the workspace since the last recorded version and ask whether to record it; never open a version here).
 - Use whichever MCP tool your environment exposes for reading SAP objects to fetch the complete source code and properties of the object (`sap-dev-rule.md` §9) — if it isn't loaded yet, use `ToolSearch` to find it first.
 - Identify the ABAP version context (e.g. ABAP Cloud restrictions, Classic ABAP).
+- Save every fetched source verbatim to `artifacts/targets/[Target]/build/review_src/<OBJECT>.<ext>` (`.abap` for classes/behavior pools, `.asddls` for CDS, `.asbdef` for BDEF) — Step 0.B scans these files, and the report cites their line numbers.
+
+Step 0.B: Deterministic Pre-pass (scripts first, LLM judgement second)
+Principle: what a script can match, a script matches — completely and the same way every run; the LLM spends its reading on what a script cannot see (logic, authorization design, business impact). The pre-pass output is a candidate list, never a verdict.
+Action:
+- Pattern scan: `python -X utf8 .claude/scripts/review/review_prepass.py --target [Target]` → `build/review_prepass.md` (rules P1–P4 performance, S1/S3/S5/S7 security, R1/R2 exceptions, M1/M2 maintainability; CDS/BDEF files are listed as not scanned).
+- ATC with the system's own check variant, read-only: `python .claude/scripts/atc/atc_check.py run --target [Target] --label review --new --uri <ADT URI>` (repeat `--uri` per object). With `--new` the baseline is empty, so every current finding is listed in full — exit 1 here means "findings exist", not a script failure; exit 2 (session/login error) means ATC did not run — say so in the report, never read it as clean.
+- **Coverage rule:** Steps 1–3 must give EVERY pre-pass candidate and EVERY ATC finding a disposition — a finding in §2/§3/§4 of the report, or `ĐÃ XEM XÉT` in §2.b with the one-line reason (fill the Disposition column of `review_prepass.md`). Do not re-hunt by eye for what the script already lists; spend Steps 1–3 on the blind spots the script header names (a SELECT reached from a loop through a helper method, logic errors, authorization design, CDS/BDEF sources).
 
 Step 1: Risk & Security Analysis (Code Linting & Bug Hunting)
 Required Skill: [Skill: abap]
@@ -92,6 +100,7 @@ Format the document exactly as follows:
 
 ## 1. Đánh Giá Tổng Quan (Executive Summary)
 - Tóm tắt về chất lượng code hiện tại, độ phức tạp và mức độ rủi ro (Cao/Trung bình/Thấp).
+- **Pre-pass coverage (Step 0.B):** `<N>` candidate từ `review_prepass.py` + `<M>` ATC finding → `<X>` finding, `<Y>` ĐÃ XEM XÉT, 0 chưa xử lý. Nếu ATC không chạy được (exit 2) thì ghi rõ ở đây.
 
 ## 2. Rủi Ro & Lỗi Tiềm Ẩn (Risks & Potential Bugs)
 *(Chỉ ra rõ Line/Method nào vi phạm, mô tả rủi ro và gợi ý cách fix. Với finding bảo mật, ghi kèm mã S1-S8 và kịch bản khai thác — theo Step 1.C, finding không có kịch bản thì không phải finding.)*

@@ -28,6 +28,7 @@ Pair-programming workspace for **SAP S/4HANA Cloud Public Edition** (ABAP Cloud,
 
 - `sap_cloud_dev` — `tools/vsp/vsp.exe`, client 080 (write), cookie `tools/vsp/cookies_dev.txt`. Write permission follows the client, not the server name: `tier-readonly-guard.sh` allows create/edit/delete only when the server's `SAP_CLIENT` in `.mcp.json` is in `WRITE_CLIENTS` (080); `pre-cud-guard.sh` runs on every SAP server.
 - `sap_gm2_cus_ro` — `tools/vsp/vsp.exe`, client 100 (read / test / debug only — `tier-readonly-guard.sh` denies create/edit/delete: listed in `READONLY_SERVERS` and client not in `WRITE_CLIENTS`).
+- `sap_gm2_prd_ro` — `tools/vsp/vsp.exe`, **PRODUCTION** my441205, client 100, cookie `tools/vsp/cookies_prd.txt` (read / test / debug only — same guards as `sap_gm2_cus_ro`; the one non-DEV connection allowed by rule §2).
 - `sap-docs-upstream` — SAP documentation search + API release state (`sap_search_objects`, `sap_get_object_details`) — the lookup for released CDS / classes / BDEFs.
 - Released CDS views by module: the local catalog `artifacts/system_analysis/CDS_RELEASED_CATALOG/` (the old `cds-kb` MCP endpoint is dead).
 

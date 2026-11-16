@@ -1,0 +1,19 @@
+# Secrets and machine-local files
+.mcp.json
+tools/vsp/cookies*.txt
+tools/vsp/vsp.exe
+.venv*/
+.claude/.unlock
+.claude/settings.local.json
+
+# Customer documents and personal data — never push
+artifacts/handbook/
+artifacts/handbook_targets/
+artifacts/documents/
+artifacts/targets/*/fs/
+artifacts/targets/*/forms/logo_*
+artifacts/targets/*/forms/*_data.xml
+artifacts/targets/*/forms/*.spec.json
+artifacts/system_analysis/Z_OBJECT_CATALOG/
+artifacts/targets/*/build/snapshot/
+artifacts/targets/*/test/

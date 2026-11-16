@@ -93,7 +93,7 @@ flowchart LR
 4. **Lấy cookie:** `vsp.exe --browser-auth … --cookie-save tools/vsp/cookies_<dev|cus>.txt`, đăng nhập SSO trên Chrome (nên đóng Chrome trước). Restart VS Code để server MCP đọc cookie mới, rồi chạy `bash .claude/scripts/sap-doctor.sh` (hoặc nói với Claude "kiểm tra workspace"): cookie từng tenant, tool, hook, integrity phải PASS hết.
 5. Đọc FS cần venv MarkItDown: `python -m venv .venv_markitdown` rồi `.venv_markitdown\Scripts\pip install "markitdown[all]"`. PDF / PPTX / HTML đi qua MarkItDown; **DOCX / XLSX đi qua `.claude/scripts/office_to_md.py`** trong cùng venv (giữ ảnh nhúng, giữ mã SAP có số 0 đầu). File `.doc` cũ hoặc docx có mật khẩu: mở Word, Save As `.docx` trước.
 6. Bỏ FS vào `artifacts/targets/<TARGET>/fs/`.
-7. **Khoá `.claude/`:** muốn sửa rule/skill/hook thì **người dùng** tự tạo file rỗng `.claude/.unlock` (agent không bao giờ được tạo file này). Sửa xong chạy `bash .claude/scripts/integrity-check.sh`, rồi xoá `.unlock`.
+7. **Khoá `.claude/`:** muốn sửa rule/skill/hook thì **người dùng** tự tạo file rỗng `.claude/.unlock` (agent không bao giờ được tạo file này). Sửa xong chạy `bash .claude/scripts/integrity-check.sh` (đổi skill/description thì chạy thêm `.claude/scripts/skill-eval/`), rồi xoá `.unlock`.
 
 ### 9 workflow
 
@@ -243,6 +243,8 @@ WORK_SPACE/
 │   ├── scripts/handbook/            # 📒 render_target.py (sổ tay) · drift_check.py (sửa ngoài workspace)
 │   ├── scripts/office_to_md.py      # 📄 FS docx/xlsx → Markdown (giữ ảnh, giữ mã SAP)
 │   ├── scripts/released_check.py    # 🔎 Bản nháp có dùng object chưa released / deprecated không
+│   ├── scripts/review/review_prepass.py # 🧹 Code review: quét tất định trước (P/S/R/M) — LLM chỉ phán xét
+│   ├── scripts/skill-eval/          # 🎯 skill_lint.py + run_trigger_eval.py: skill có kích hoạt đúng không
 │   ├── scripts/sap-doctor.sh        # 🩺 Sức khỏe workspace: tool, cookie 080/100, hook, integrity, .unlock
 │   ├── scripts/z_catalog/           # 🗃️ build_z_catalog.py: kho object Z dùng lại (quét qua ADT, chỉ đọc)
 │   └── settings.json                # Đăng ký hook + thư mục memory

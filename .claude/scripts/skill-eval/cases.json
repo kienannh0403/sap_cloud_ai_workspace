@@ -1,0 +1,198 @@
+{
+  "_doc": "Trigger cases for run_trigger_eval.py. expect = any-of list of skill/workflow names the FIRST Skill call must hit; [] = no skill must be invoked. forbid = names that must not be invoked. Add a case whenever a skill is added or its description changes; keep prompts realistic (how the user actually asks, VI or EN).",
+  "cases": [
+    {
+      "id": "rap-bdef",
+      "prompt": "Viết behavior definition cho BO đơn hàng có draft và action approve",
+      "expect": [
+        "rap"
+      ]
+    },
+    {
+      "id": "virtual-element",
+      "prompt": "Thêm một field tính lúc runtime, không lưu DB, vào CDS ZR_SD_ZSD01",
+      "expect": [
+        "cds-virtual-element"
+      ]
+    },
+    {
+      "id": "ddic",
+      "prompt": "Tạo domain, data element và bảng DB cho app quản lý nhân viên mới",
+      "expect": [
+        "ddic-foundation"
+      ]
+    },
+    {
+      "id": "naming",
+      "prompt": "Đặt tên chuẩn cho service binding OData V4 của report ZSD05 giúp anh",
+      "expect": [
+        "naming-convention"
+      ]
+    },
+    {
+      "id": "query-provider",
+      "prompt": "Custom entity cần implement IF_RAP_QUERY_PROVIDER, xử lý paging và filter thế nào?",
+      "expect": [
+        "rap-query-provider"
+      ]
+    },
+    {
+      "id": "released-class",
+      "prompt": "Trong ABAP Cloud có class released nào để gửi email không?",
+      "expect": [
+        "released-abap-classes"
+      ]
+    },
+    {
+      "id": "pdf-form",
+      "prompt": "Vẽ form in Adobe cho phiếu xuất kho",
+      "expect": [
+        "pdf-form-template"
+      ]
+    },
+    {
+      "id": "symptom",
+      "prompt": "App ZEMP bấm Go thì báo lỗi 500, tìm nguyên nhân giúp anh, chỉ đọc thôi đừng sửa gì",
+      "expect": [
+        "sap-analyze-symptom",
+        "fiori-ui-check",
+        "sap-dev-bug-fix"
+      ]
+    },
+    {
+      "id": "z-catalog",
+      "prompt": "Liệt kê các Z object đang có trong package ZFPT_SD",
+      "expect": [
+        "z-object-catalog"
+      ]
+    },
+    {
+      "id": "pkg-process",
+      "prompt": "Phân tích package ZFPT_FI xem nó phục vụ quy trình nghiệp vụ nào",
+      "expect": [
+        "package-to-process"
+      ]
+    },
+    {
+      "id": "events",
+      "prompt": "Raise business event khi đơn hàng được duyệt trong RAP",
+      "expect": [
+        "rap-business-events"
+      ]
+    },
+    {
+      "id": "odata",
+      "prompt": "Expose CDS ZC_SD_ZSD01 thành OData V4 service: tạo service definition và service binding",
+      "expect": [
+        "odata"
+      ]
+    },
+    {
+      "id": "returns",
+      "prompt": "Quy trình bán hàng trả lại chạy thế nào trong Public Cloud?",
+      "expect": [
+        "ask-consultant",
+        "sap-process-o2c-customer-returns"
+      ]
+    },
+    {
+      "id": "down-payment",
+      "prompt": "Down payment request trong billing hoạt động ra sao?",
+      "expect": [
+        "ask-consultant",
+        "sap-process-o2c-down-payment-billing"
+      ]
+    },
+    {
+      "id": "doctor",
+      "prompt": "Kiểm tra workspace giúp anh, MCP còn sống không?",
+      "expect": [
+        "sap-doctor"
+      ]
+    },
+    {
+      "id": "find-cds",
+      "prompt": "Tìm released CDS view lấy tên khách hàng theo sales area",
+      "expect": [
+        "find-released-cds-view"
+      ]
+    },
+    {
+      "id": "unit-test-existing-target",
+      "prompt": "Viết unit test cho class ZCL_FA_ENITY_ZGL02_3, dùng CDS test double",
+      "expect": [
+        "target-refresh"
+      ],
+      "_why": "names an existing target -> rule §4 makes target-refresh the first step"
+    },
+    {
+      "id": "unit-test",
+      "prompt": "Viết ABAP unit test cho class tính giá mới ZCL_SD_PRICING_CALC, dùng CDS test double",
+      "expect": [
+        "abap-unit-testing"
+      ]
+    },
+    {
+      "id": "lint",
+      "prompt": "Lint đoạn ABAP này giúp anh: DATA lv TYPE i. MOVE 1 TO lv.",
+      "expect": [
+        "abap"
+      ]
+    },
+    {
+      "id": "patterns",
+      "prompt": "Bộ tính giá này nên dùng factory hay strategy pattern?",
+      "expect": [
+        "oo-design-patterns"
+      ]
+    },
+    {
+      "id": "ui-check",
+      "prompt": "Mở app Fiori ZEMP lên xem value help có ra dữ liệu không",
+      "expect": [
+        "fiori-ui-check"
+      ]
+    },
+    {
+      "id": "excel-form",
+      "prompt": "Tạo template Excel cho báo cáo công nợ để upload vào Tools Export Excel",
+      "expect": [
+        "excel-form-template"
+      ]
+    },
+    {
+      "id": "sql-window",
+      "prompt": "Dùng window function và CTE trong ABAP SQL như thế nào?",
+      "expect": [
+        "abap-sql-amdp"
+      ]
+    },
+    {
+      "id": "iam-existing-target",
+      "prompt": "Tạo IAM app và business catalog cho app ZEMP",
+      "expect": [
+        "target-refresh"
+      ],
+      "_why": "names an existing target -> rule §4 makes target-refresh the first step"
+    },
+    {
+      "id": "iam",
+      "prompt": "Tạo IAM app, business catalog và restriction type cho app duyệt đơn hàng mới",
+      "expect": [
+        "authorization-iam"
+      ]
+    },
+    {
+      "id": "badi",
+      "prompt": "Tìm BAdI để thêm field tự tính vào form in hoá đơn bán hàng",
+      "expect": [
+        "badi-enhancement"
+      ]
+    },
+    {
+      "id": "negative",
+      "prompt": "Giải thích giúp anh git rebase khác git merge chỗ nào?",
+      "expect": []
+    }
+  ]
+}

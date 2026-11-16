@@ -48,7 +48,8 @@ Arguments: $ARGUMENTS
 
 ### Phase 4: Fix Implementation & Quality Assurance
 4. **Load `cds-view-entities`, `cds-analytical-views`, `rap`, `modern-abap-syntax`, `oo-design-patterns` & `abap`**:
-   - Implement the code changes based on the approved solution. Ensure the code uses modern ABAP syntax and strictly follows Clean ABAP principles (checked via `abap`). Apply an OO design pattern only if refactoring complex logic genuinely warrants one.
+   - Implement the code changes based on the approved solution — **surgical changes only** (`sap-dev-rule.md` §3): edit exactly the lines the approved fix needs, keep the object's existing style, and do not refactor, reformat or modernise surrounding code. The lines you write use modern ABAP syntax and follow Clean ABAP principles (checked via `abap`). Refactoring, or applying an OO design pattern, only when the approved solution in Phase 3 explicitly includes it; other cleanup you notice goes into the final report as a suggestion.
+   - Before activating, diff the new source against the pre-fix source (the target-refresh snapshot, or the source read in Phase 2 — save it to `build/repro/<OBJECT>_before.*` if no snapshot exists): every changed hunk must map to the approved fix. A hunk that doesn't → revert it.
    - If the approved fix's root cause requires extending SAP standard behavior rather than editing a Z/Y object directly, also load `[Skill: badi-enhancement]` to find/implement the appropriate released BAdI instead of any other extension mechanism.
 5. **Load `abap-unit-testing`**:
    - Create or update the Local Test Class (`cl_abap_unit_assert`) using Test Doubles and the Mock Data provided by the User — one test method per case of the minimum matrix in step 7 (reproduction + dương/âm/biên per rule the fix touches).
