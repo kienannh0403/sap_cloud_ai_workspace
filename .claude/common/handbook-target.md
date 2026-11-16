@@ -81,7 +81,9 @@ Shared, not per target: `artifacts/handbook_targets/` (report/function handbook,
 | TS done | `forms` from TS §8, status "TS xong" |
 | Every object DONE in a build | append to `objects` with its `uses` |
 | Every Phase-2 / bug-fix test attempt | add a `tests` block to the current version (never rewrite older blocks) |
-| Build or fix finished | open/close the version: `changes`, and **ATC over every object of the target** (not only the diff) into `atc` |
+| Build or fix finished | open/close the version: `changes`, and **ATC over every object of the target** (not only the diff) into `atc` — only the newest run is shown |
+
+ATC is shown for the newest run only (user 2026-11-16): the page renders the most recent `atc` block among versions and records; older versions' `atc` is neither rendered nor back-filled — never re-run ATC for an old version.
 
 Then run `python .claude/scripts/handbook/render_target.py <TARGET>` — it writes the page and regenerates the
 report/function handbook's own `index.html` + nav. Never hand-edit the generated page.

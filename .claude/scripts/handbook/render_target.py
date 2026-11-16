@@ -283,15 +283,17 @@ def render(d, targets):
                         "<br>".join(f'<span class="mono">{e(x)}</span>' for x in f.get("files", [])),
                         e(f.get("status"))] for f in forms]) if forms else "<p>Không có form.</p>"
 
-    ver_rows, atc_blocks, test_blocks, preview_blocks = [], [], [], []
+    # ATC: only the newest run is shown (user 2026-11-16) - the latest version's, or a later re-check record
+    ver_rows, atc_cands, test_blocks, preview_blocks = [], [], [], []
     for v in versions:
         src = e(v.get("source"))
         if v.get("source") == EXTERNAL:
             src = pill("wrn", EXTERNAL) + (f'<br>{e(v["period"])}' if v.get("period") else "")
         ver_rows.append([f'<b>{e(v["version"])}</b>', e(v.get("date")), src,
-                         "<br>".join(f"• {e(c)}" for c in v.get("changes", [])), atc_cell(v)])
+                         "<br>".join(f"• {e(c)}" for c in v.get("changes", []))])
         a, p, ts = detail_blocks(f'Version {e(v["version"])}', v)
-        atc_blocks += a
+        if a:
+            atc_cands.append(((v.get("atc") or {}).get("date", "") or v.get("date", ""), a))
         preview_blocks += p
         test_blocks += ts
 
@@ -301,9 +303,13 @@ def render(d, targets):
     for r in sorted(d.get("records", []), key=lambda r: r.get("date", ""), reverse=True):
         href = record_page_name(t, r.get("date", ""))
         rec_rows.append([f'<a class="row" href="{href}"><b>{e(r.get("date"))}</b></a>', e(kinds_of(r)),
-                         e(r.get("applies_to")), test_cell(r), atc_cell(r),
+                         e(r.get("applies_to")), test_cell(r),
                          f'<span class="more">Xem chi tiết →</span>'])
-    records_html = ('<div class="rec">' + table(["Ngày", "Loại", "Áp dụng cho version", "Kiểm thử", "ATC", ""], rec_rows)
+        if r.get("atc"):
+            a, _, _ = detail_blocks(f'Kiểm tra {e(r.get("date"))} (version {e(r.get("applies_to"))})', r)
+            atc_cands.append((r["atc"].get("date", "") or r.get("date", ""), a))
+    atc_blocks = max(atc_cands, key=lambda c: c[0])[1] if atc_cands else []
+    records_html = ('<div class="rec">' + table(["Ngày", "Loại", "Áp dụng cho version", "Kiểm thử", ""], rec_rows)
                     + "</div>") if rec_rows else "<p>Chưa có ngày kiểm tra nào.</p>"
 
     page = f"{slug(t)}.html"
@@ -340,8 +346,8 @@ def render(d, targets):
   <section id="so-do"><h2>Sơ đồ object</h2>{so_do}</section>
   <section id="form"><h2>Form</h2>{form_html}</section>
   <section id="phien-ban"><h2>Version và thay đổi</h2>
-    {table(["Version", "Ngày", "Nguồn", "Thay đổi", "ATC"], ver_rows) if ver_rows else "<p>Chưa có version.</p>"}</section>
-  <section id="atc"><h2>Kết quả ATC theo version</h2>{"".join(atc_blocks) or "<p>Chưa chạy ATC.</p>"}</section>
+    {table(["Version", "Ngày", "Nguồn", "Thay đổi"], ver_rows) if ver_rows else "<p>Chưa có version.</p>"}</section>
+  <section id="atc"><h2>Kết quả ATC (lần chạy mới nhất)</h2>{"".join(atc_blocks) or "<p>Chưa chạy ATC.</p>"}</section>
   <section id="preview"><h2>Preview theo version</h2>{"".join(preview_blocks) or "<p>Chưa có preview.</p>"}</section>
   <section id="kiem-thu"><h2>Kiểm thử theo version</h2>{"".join(test_blocks) or "<p>Chưa có test case.</p>"}</section>
   <section id="lich-su-kiem-tra"><h2>Lịch sử kiểm tra hồ sơ</h2>

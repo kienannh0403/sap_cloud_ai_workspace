@@ -32,6 +32,7 @@ reading by method/grep, condensed check output): `.claude/common/lean-sap-io.md`
 - Classify every message:
   - **Error** → hard stop. Fix and retry Gate 1 before moving to Gate 2.
   - **Warning** → do NOT default to "unavoidable." Assess it against strict(2)/Clean Core (`sap-dev-rule.md`). Only accept it as unavoidable if fixing it is genuinely impossible or out of the TS/FS's scope — and say so explicitly, quoting the exact warning text. A warning dismissed without that assessment is an unverified claim per `sap-dev-rule.md` §8/§11.
+- The `edit` result reaches you compacted by `tool-output-shrink.sh` (`lean-sap-io.md` §3a): first edit of an object in the session → `syntaxWarnings_grouped` (every distinct text + its lines — assess each); later edits → `syntaxWarnings_new` only (the unchanged ones were assessed at the first edit). `syntaxErrors_grouped` lists texts never seen as a warning first — quote those exactly. The verbatim response is in the file named by `full_output`; cite it as the Gate 1 evidence.
 - If any doubt remains about whether an error was fully cleared, re-run an explicit syntax check rather than re-trusting the activate response:
   `SAP(action="analyze", params={"type": "syntax_check", "object_url": "...", "content": "..."})`
 

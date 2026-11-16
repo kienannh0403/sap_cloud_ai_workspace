@@ -56,6 +56,16 @@
             "timeout": 15
           }
         ]
+      },
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/sap-bash-write-guard.sh\"",
+            "timeout": 10
+          }
+        ]
       }
     ],
     "PostToolUse": [
@@ -66,6 +76,16 @@
             "type": "command",
             "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/activation-verify.sh\"",
             "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|PowerShell|mcp__sap_[a-z0-9_]+__.*|mcp__.+__SAP$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/tool-output-shrink.sh\"",
+            "timeout": 15
           }
         ]
       }
@@ -89,6 +109,11 @@
             "type": "command",
             "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/report-language-guard.sh\"",
             "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/context-budget.sh\"",
+            "timeout": 10
           }
         ]
       }
@@ -110,6 +135,11 @@
           {
             "type": "command",
             "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/target-refresh-remind.sh\"",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/context-budget.sh\"",
             "timeout": 10
           }
         ]

@@ -237,7 +237,7 @@ WORK_SPACE/
 │   ├── skills/<name>/SKILL.md       # 📚 63 skill (+ references/, scripts/ khi cần)
 │   ├── agents/<team>-<layer>.md     # 🤖 7 subagent
 │   ├── commands/                    # ⚙️ 9 workflow dạng slash command
-│   ├── hooks/                       # 🔒 11 hook (bảng bên dưới)
+│   ├── hooks/                       # 🔒 14 hook (bảng bên dưới)
 │   ├── scripts/integrity-check.sh   # ✅ Kiểm tra toàn vẹn sau mọi thay đổi .claude/
 │   ├── scripts/odata-verify/        # 🧪 fetch.sh + ui-check.js: kiểm data / UI qua OData (chỉ đọc)
 │   ├── scripts/handbook/            # 📒 render_target.py (sổ tay) · drift_check.py (sửa ngoài workspace)
@@ -300,6 +300,9 @@ Rule trong prompt có thể bị bỏ qua, hook thì không.
 | `target-refresh-remind.sh` | Khi người dùng gửi prompt | Nhắc tên một target đã có `handbook.json` → nhắc chạy `target-refresh` trước |
 | `pre-compact.sh` | Trước compact | Ghi snapshot trạng thái vào `artifacts/scratchpads/_session/`, nhắc handoff |
 | `report-language-guard.sh` | Khi agent kết thúc lượt | Kết luận kiểu "should work", "chắc là chạy" (rule §8) → bắt làm tiếp một lần để thay bằng bằng chứng |
+| `sap-bash-write-guard.sh` | Trước Bash / PowerShell | Chặn ghi SAP từ shell (curl/wget/Invoke-WebRequest gửi PUT/POST/DELETE hoặc body tới `/sap/...`, code inline có POST/PUT/DELETE kèm đường dẫn SAP, `vsp deploy/execute/transport/...`) — mọi thao tác ghi phải qua MCP để 3 hook trên được chạy. Đọc bằng curl GET vẫn được |
+| `tool-output-shrink.sh` | Sau Bash / PowerShell / MCP SAP | Tiết kiệm token: kết quả `edit` bỏ phần lặp `oldString/newString`, warning chỉ hiện cái **mới**; output Bash > 6k, SQL > 4k, SAP khác > 15k ký tự → giữ đầu + cuối, bản đầy đủ lưu ở `artifacts/scratchpads/_session/tool-output/`; trang login SAML (cookie hết hạn) → 1 dòng. `#full-output` trong lệnh Bash để bỏ cắt |
+| `context-budget.sh` | Khi gửi prompt + khi agent kết thúc lượt | Context phiên > 120k token (rồi mỗi +40k) → nhắc agent dừng sau lần fix hiện tại, ghi notes/INDEX.md; hiện cho người dùng lệnh `/compact` có tên báo cáo (mỗi session một báo cáo, compact giữa các lần fix) |
 
 4 hook chặn (`pre-cud-guard`, `tier-readonly-guard`, `workspace-write-guard`, `block-forbidden-tables`) cần `jq`; thiếu `jq` thì chặn (fail closed) trong phạm vi của từng hook, Bash thường vẫn chạy để cài lại `jq`. Hook đảm bảo "việc đó có xảy ra hay không"; "làm có tốt không" vẫn do rule quyết định.
 

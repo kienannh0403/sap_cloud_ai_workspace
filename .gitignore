@@ -17,3 +17,12 @@ artifacts/targets/*/forms/*.spec.json
 artifacts/system_analysis/Z_OBJECT_CATALOG/
 artifacts/targets/*/build/snapshot/
 artifacts/targets/*/test/
+
+# Hook session state and full tool outputs (may hold SQL results / business data) — local only
+artifacts/scratchpads/_session/tool-output/
+artifacts/scratchpads/_session/tool-output-state/
+artifacts/scratchpads/_session/context-budget/
+artifacts/scratchpads/_session/sap-fact-gate/
+
+# Python bytecode
+__pycache__/

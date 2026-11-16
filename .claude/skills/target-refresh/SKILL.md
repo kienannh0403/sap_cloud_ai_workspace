@@ -60,7 +60,7 @@ in handbook-target.md. Versions are versions of the report/function only; a chec
 | item | what to do | evidence |
 |---|---|---|
 | `test` | run the report/app: data preview / OData verify per the workflow's verify phase, **plus** [Skill: fiori-ui-check] (VI + EN logon, read-only) when the target has a deployed Fiori app or a published OData V4 service (preview mode) — `skipped` with the reason if it has neither | `build/odata_verify/…`, `…_ui_check.md` |
-| `atc` | ATC over **every** object of the target (not only the diff) | the version's / record's `atc` block |
+| `atc` | ATC over **every** object of the target (not only the diff) — on the current code only; the page shows only the newest run | the version's / record's `atc` block |
 | `objects` | `objects[]` matches what exists in SAP (added/removed objects, `uses` edges) | `handbook.json` |
 | `snapshot` | pull sources again (Part A step 2) and `drift_check.py <TARGET> --record <version>` (or `--record-date today`) | `build/snapshot/<yyyymmdd>/` |
 | `index` | INDEX.md status, open questions, file map up to date | `INDEX.md` |

@@ -79,21 +79,30 @@ Always run **VI and EN**: Z value helps on `DDCDS_CUSTOMER_DOMAIN_VALUE_T` filte
 come back empty for VI when the domain texts exist only in E — a real defect, found this way on ZMA01 (2026-10-05).
 
 ## Step 4 — judge and record
-Read only the screenshots that prove a row, cropped first: `python .claude/skills/fiori-ui-check/scripts/crop.py
-<png> <x0> <y0> <x1> <y1>` (or `--rows y0 y1`); prefer the step-log values for anything that is not visual
-(`.claude/common/lean-sap-io.md` §4).
+**Judge from the step log — text, not pictures** (user 2026-11-16: screenshots are taken and kept as evidence for
+the user, but not opened by default — every image read costs ~1–2k tokens and stays in the context).
 
-1. **Look at the screenshots** (Read tool) for every step whose result matters — a returned value is not a picture:
-   overlapping or cut-off text, wrong/missing labels, untranslated text, empty columns, error dialogs.
-2. Judge each UI requirement (the `ui_checklist.md` row, or the FS/TS line) PASS / FAIL with the step result or
-   screenshot as evidence. Each finding = one case `UI-nn`, `group: "UI"`, with input (filters, language) and actual.
-3. Things this run cannot prove stay `Proof: manual` (actions that change data, printing/forms, exact visual taste,
+1. Judge each row from `<LANG>_log.json`: value-help entry counts (0 = "Không có dữ liệu"), row count + distinct
+   values, column headers in order, toolbar actions + enabled state, messages / dialogs (their text), console
+   errors, HTTP ≥ 400, object-page header / sections / field count. Labels are checked as text too: a header that
+   is empty or equals the technical element name = missing label; the same header in the VI and EN logs where the
+   TS expects a Vietnamese text = untranslated.
+2. **Open a screenshot only when** (a) a checklist row is visual by nature — overlap, cut-off text, layout,
+   alignment — and the TS/FS really asks for it, or (b) the log shows something its text cannot explain (empty
+   page, 0 columns, a dialog without text, a step that failed without a message). Crop first:
+   `python .claude/skills/fiori-ui-check/scripts/crop.py <png> <x0> <y0> <x1> <y1>` (or `--rows y0 y1`); at most
+   ~3 images per run — more means the log needs another `eval` step instead.
+3. Judge each UI requirement (the `ui_checklist.md` row, or the FS/TS line) PASS / FAIL with the step-log value as
+   evidence, and name the screenshot file of that step (`<out>/<LANG>_<nn>.png`, nn = step number) so the user can open it.
+   Each finding = one case `UI-nn`, `group: "UI"`, with input (filters, language) and actual. A visual-only row
+   that was not opened stays `Proof: manual` with the screenshot path — never PASS unseen.
+4. Things this run cannot prove stay `Proof: manual` (actions that change data, printing/forms, exact visual taste,
    FLP tile/navigation, personalization; in preview mode also every `manifest.json`-only setting) — never mark them
    PASS. Say in the evidence which mode ran (`deployed app` / `preview mode`).
-4. Write `artifacts/targets/<TARGET>/build/odata_verify/<yyyymmdd>_ui_check.md` (table UI-nn · check · result ·
+5. Write `artifacts/targets/<TARGET>/build/odata_verify/<yyyymmdd>_ui_check.md` (table UI-nn · check · result ·
    evidence, no amounts) and record the cases where the calling workflow says (version `tests` block for a build or
    fix; today's `records` entry for a check without code change — `.claude/common/handbook-target.md`).
-5. A test artefact is not an app defect (e.g. a "required fields" dialog because Enter was pressed while other
+6. A test artefact is not an app defect (e.g. a "required fields" dialog because Enter was pressed while other
    mandatory filters were still empty) — name it as such.
 
 ## Local HTML pages (handbook) — screenshot only

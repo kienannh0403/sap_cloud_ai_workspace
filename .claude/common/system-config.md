@@ -17,6 +17,11 @@ WRITE_SERVERS=sap_cloud_dev
 READONLY_SERVERS=sap_gm2_cus_ro,sap_gm2_prd_ro
 WRITE_CLIENTS=080
 LOCAL_NO_TR_PACKAGES=$TMP,ZLOCAL,YTEST_UPLOAD_EXCEL,ZANLTK2,ZBOOK_RAP,ZHAIHT32,ZHOANGTD21,ZNNAM,ZTEST_N,ZTIENNBH,ZTRAIN,ZTRUCTT19,ZVIHT9,ZWRK_JOB_DECL,YTRUCTT01,YTRUCTT02,YTRUCTT03,YTRUCTT04,ZTRUCTT_PRJ01
+CONTEXT_BUDGET_TOKENS=120000
+CONTEXT_BUDGET_STEP=40000
+TOOL_OUTPUT_CAP_BASH=6000
+TOOL_OUTPUT_CAP_SQL=4000
+TOOL_OUTPUT_CAP_SAP=15000
 ```
 
 ## Meaning
@@ -34,6 +39,8 @@ LOCAL_NO_TR_PACKAGES=$TMP,ZLOCAL,YTEST_UPLOAD_EXCEL,ZANLTK2,ZBOOK_RAP,ZHAIHT32,Z
 | `LOCAL_NO_TR_PACKAGES` | `$TMP` + `ZLOCAL` + every package below it | User 2026-09-24: packages under ZLOCAL or `$TMP` need no TR. `pre-cud-guard.sh` sees only the package name, so the ZLOCAL tree is listed by name — read on 080 2026-09-24 (`SAP read DEVC`): 12 children + 5 grandchildren under ZTRUCTT19, no deeper level. **A new package created under ZLOCAL must be added here**, otherwise the hook asks for a TR (fail-safe). Not in the list = TR required |
 | `WRITE_CLIENTS` | `080` | User 2026-09-28: write permission follows the SAP client, not the server name. `tier-readonly-guard.sh` reads the server's `env.SAP_CLIENT` from `.mcp.json` and denies create/edit/delete unless it is in this list (leading zeros ignored: `80` = `080`). Server not in `.mcp.json` or no `SAP_CLIENT` → denied (fail closed) |
 | `READONLY_SERVERS` | `sap_gm2_cus_ro`, `sap_gm2_prd_ro` | `sap_gm2_cus_ro`: host my437557, client 100 — read / test / debug only. `sap_gm2_prd_ro`: host my441205, client 100, **PRODUCTION** — user 2026-10-27: read / test / debug only (rule §2 exception), cookie `tools/vsp/cookies_prd.txt`. `tier-readonly-guard.sh` denies create/edit/delete/activate and `execute_abap` on both; listed by name so they stay read-only even if client 100 is ever added to `WRITE_CLIENTS` |
+| `CONTEXT_BUDGET_TOKENS` / `_STEP` | `120000` / `40000` | User 2026-11-16 (token budget): `context-budget.sh` warns the agent (UserPromptSubmit) and the user (Stop) when the session context first reaches the budget, then every step above it — at the next fix boundary: notes + INDEX.md → `/compact` (one report per session). Measured: ZGL02 session 624dbb89 ended at ~424k context, 395M cache-read tokens over 1,563 turns ≈ 70% of its cost |
+| `TOOL_OUTPUT_CAP_BASH` / `_SQL` / `_SAP` | `6000` / `4000` / `15000` chars | User 2026-11-16: `tool-output-shrink.sh` (PostToolUse) cuts a longer Bash/PowerShell output, SAP `query` output, or other SAP output to head + tail and saves the full text under `artifacts/scratchpads/_session/tool-output/`. SAP `edit` results are compacted instead (no echo of old/new string, only NEW syntax warnings). `#full-output` in a Bash command opts out. Rules: `lean-sap-io.md` |
 
 ## Not recorded here (on purpose)
 
